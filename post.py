@@ -214,7 +214,8 @@ def tweet_text(q, prev):
 
 def post_x(text, img):
     import tweepy
-    k = [os.environ.get(x) for x in ("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_SECRET")]
+    k = [re.sub(r"\s", "", os.environ.get(x) or "") for x in ("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_SECRET")]
+    print("X key lengths:", [len(v) for v in k])
     if not all(k): print("X: 鍵が未設定なのでスキップ"); return
     auth = tweepy.OAuth1UserHandler(*k); api = tweepy.API(auth)
     m = api.media_upload(img)
@@ -222,7 +223,8 @@ def post_x(text, img):
     r = c.create_tweet(text=text, media_ids=[m.media_id]); print("X:", r.data)
 
 def post_youtube(q, mp4):
-    cid, cs, rt = (os.environ.get(x) for x in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"))
+    cid, cs, rt = (re.sub(r"\s", "", os.environ.get(x) or "") for x in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"))
+    print("YT id ends with googleusercontent.com:", cid.endswith(".apps.googleusercontent.com"), "lengths:", len(cid), len(cs), len(rt))
     if not all((cid, cs, rt)): print("YouTube: 鍵が未設定なのでスキップ"); return
     from google.oauth2.credentials import Credentials
     from googleapiclient.discovery import build
