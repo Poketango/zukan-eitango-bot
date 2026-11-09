@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 SITE = "https://pokemon-eitango.netlify.app"
 START = datetime.date(2026, 11, 16)          # この日を1日目として順番に出題
-FONT_B = os.environ.get("FONT_B", "/usr/share/fonts/opentype/noto/NotoSansCJK-Black.ttc")
+FONT_B = os.environ.get("FONT_B", "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc")
 FONT_R = os.environ.get("FONT_R", "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc")
 RED, DARK, CREAM, YEL, GRN = (214,40,40), (36,36,44), (255,250,240), (255,224,102), (46,160,90)
 EXCLUDE = set("""about above after again all although always and any as because before below both but by can can't each either ever every few for from has have had here how if in into is it its it's just least less out many more most much now of on once one only or over since some sometimes such than that the their them then there these they this though through to under until very was we were what when where which while who whom whose why will with without would yet you are be been being said says other others another also even still its itself his her him she he our your may might could should must does did done make makes made like likely there's""".split())
