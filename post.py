@@ -216,7 +216,7 @@ def post_x(text, img):
     import tweepy
     k = [re.sub(r"\s", "", os.environ.get(x) or "") for x in ("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_SECRET")]
     print("X key lengths:", [len(v) for v in k])
-    if not all(k): print("X: 鍵が未設定なのでスキップ"); return
+    if not all(k) or min(len(v) for v in k) < 20: print("X: 鍵が未設定なのでスキップ（Xはブラウザの予約投稿で運用）"); return
     auth = tweepy.OAuth1UserHandler(*k); api = tweepy.API(auth)
     m = api.media_upload(img)
     c = tweepy.Client(consumer_key=k[0], consumer_secret=k[1], access_token=k[2], access_token_secret=k[3])
