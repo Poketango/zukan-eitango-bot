@@ -88,9 +88,11 @@ def topic_stat(fact, d):
     n = len(d["stats"])
     rank = f"{n}匹の中で{'いちばん' if r == 1 else str(r) + '番目に'}{'高い' if hl == 'high' else '低い'}"
     lines = [("z", f"{jn}の{sj}って、どれくらいなのだ？"), ("h", f"{sj}は{v}。"), ("h", f"実はこれ、全ポケモン{rank}の。"),
-             ("z", random.choice(["そんなにすごかったのだ！？", "意外すぎるのだ！", "もっと大事にするのだ…！"])),
+             ("z", random.choice(["そんなにすごかったのだ！？", "意外すぎるのだ！", "もっと大事にするのだ…！"]) if hl == "high"
+              else random.choice(["そんなに低かったのだ！？", "逆にすごいのだ…！", "ほかで勝負するタイプなのだ！"])),
              ("h", f"英語の名前は{P.ename(k)}。英語版の図鑑も、プロフィールのサイトで読めるよ。", "英語版の図鑑も、プロフィールのサイトで読めるよ。")]
-    title = f"{jn}の{sj}、全ポケモンで{'1位' if r == 1 else str(r) + '位'}{'' if hl == 'high' else '（低い方から）'}【ポケモン雑学】"
+    if hl == "high": title = f"{jn}の{sj}、全ポケモンで{'1位' if r == 1 else str(r) + '位'}【ポケモン雑学】"
+    else: title = f"{jn}の{sj}、全ポケモンで{'いちばん低い' if r == 1 else '下から' + str(r) + '番目'}【ポケモン雑学】"
     return dict(kind="stat", key=k, title=title, lines=lines, stat=(sj, v, rank))
 
 
