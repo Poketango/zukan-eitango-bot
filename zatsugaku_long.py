@@ -231,6 +231,8 @@ def wrap_jp(text, fname, size, maxw):
     def bcost(j):
         a, b = text[j - 1], text[j]
         if b in NG_START or a in NG_END: return None
+        if (a in ".．" and b.isdigit()) or (b in ".．%％" and a.isdigit()): return None   # 2.9 や 5% を分けない
+        if a in "」』" and cclass(b) == "h": return 30                                # 「まっさら」から を分けない
         if a in "。！？!?」』": return -3
         if a in "、…　": return 0
         ca, cb = cclass(a), cclass(b)
