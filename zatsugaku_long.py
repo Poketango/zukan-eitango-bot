@@ -1,6 +1,6 @@
-# ずんだもんと冥鳴ひまりの「ポケモン雑学」週末まとめ（横動画 1920x1080・毎週日曜）
-#   ・台本は scripts/long/NNNN.json（裏どりした雑学を人が書く／Claude が毎週書き足す）
-#       NNNN は 2026-11-08 からの週番号。台本が無い週は投稿しない（品質を保つため）
+# ずんだもんと冥鳴ひまりの「ポケモン雑学」まとめ（横動画 1920x1080・毎日 19:35）
+#   ・台本は scripts/long/NNNN.json（裏どりした雑学を人が書く／Claude が毎日書き足す）
+#       NNNN は 2026-11-13 からの日数（0000＝11-13、0001＝11-14）。台本が無い日は投稿しない（品質を保つため）
 #   ・画像は assets/img/ に置く（art_25.png＝公式イラスト、rb_＝赤緑、gold_＝金銀、frlg_＝ファイアレッドのドット絵）
 #   ・台本の各せりふに "img": ["art:25|説明", ...] を付けると、その画像を出す（次に指定があるまで出し続ける）
 import os, re, sys, json, random, datetime, subprocess, wave
@@ -13,7 +13,7 @@ W, H, FPS, SR = 1920, 1080, 24, P.SR
 F, FONT_B, FONT_K = P.F, P.FONT_B, P.FONT_K
 CHAR = Z.CHAR
 HERE = Z.HERE
-START = datetime.date(2026, 11, 8)     # 週番号0の基準（第1回は 2026-11-13 に先行公開、11-15 が週番号1）
+START = datetime.date(2026, 11, 13)    # 回番号0の日（2026-11-14 から毎日更新）
 N_TOPICS = 6
 PIXEL_KINDS = ("rb", "gold", "frlg")
 
@@ -363,9 +363,9 @@ if __name__ == "__main__":
     d = dict(names=P.get_json("pokemon_names_jp.json"), stats=P.get_json("pokedex_stats.json"),
              origins=P.get_json("name_origins.json"), back=P.get_json("backstories.json"))
     now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=9)
-    week = int(os.environ["WEEK"]) if os.environ.get("WEEK") else max(0, (now.date() - START).days // 7)
+    week = int(os.environ["WEEK"]) if os.environ.get("WEEK") else max(0, (now.date() - START).days)
     if not os.path.exists(os.path.join(HERE, "scripts", "long", f"{week:04d}.json")) and os.environ.get("ALLOW_AUTO") != "1":
-        print(f"週番号 {week} の台本がまだ無いので、今週は投稿しません"); sys.exit()
+        print(f"回番号 {week} の台本がまだ無いので、今日は投稿しません"); sys.exit()
     sc = script_for(week, d)
     voiced, total, chapters = build(sc, "zatsugaku_long.mp4")
     title, desc = meta(sc, voiced, chapters); print(title); print(desc); print("長さ", round(total), "秒")

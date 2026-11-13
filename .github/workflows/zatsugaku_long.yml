@@ -1,8 +1,8 @@
-name: zatsugaku-weekly
-# ずんだもんと冥鳴ひまりのポケモン雑学・週末まとめ（横動画）。毎週日曜 19:35（日本時間）
+name: zatsugaku-daily-long
+# ずんだもんと冥鳴ひまりのポケモン雑学・まとめ（横動画）。毎日 19:35（日本時間）
 on:
   schedule:
-    - cron: "35 10 * * 0"
+    - cron: "35 10 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
