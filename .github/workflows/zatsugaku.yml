@@ -1,0 +1,47 @@
+name: zatsugaku-shorts
+# ずんだもんと冥鳴ひまりのポケモン雑学（別チャンネル）。鍵は YT2_CLIENT_ID / YT2_CLIENT_SECRET / YT2_REFRESH_TOKEN
+on:
+  schedule:
+    - cron: "35 23 * * *"  # 朝 8:35（日本時間）
+    - cron: "35 11 * * *"  # 夜 20:35
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "1にすると投稿せず動画だけ作る"
+        default: "1"
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    services:
+      voicevox:
+        image: voicevox/voicevox_engine:cpu-latest
+        ports:
+          - 50021:50021
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra ffmpeg
+      - run: pip install -q pillow numpy google-api-python-client google-auth
+      - name: VOICEVOX の起動を待つ
+        run: |
+          for i in $(seq 1 60); do
+            if curl -sf http://127.0.0.1:50021/version; then echo " ready"; exit 0; fi
+            sleep 3
+          done
+          echo "VOICEVOX が起動しなかったので、ナレーションなしで作ります"
+      - run: python zatsugaku.py
+        env:
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          YT2_CLIENT_ID: ${{ secrets.YT2_CLIENT_ID }}
+          YT2_CLIENT_SECRET: ${{ secrets.YT2_CLIENT_SECRET }}
+          YT2_REFRESH_TOKEN: ${{ secrets.YT2_REFRESH_TOKEN }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: zatsugaku
+          path: |
+            zatsugaku.mp4
+            thumb.png
