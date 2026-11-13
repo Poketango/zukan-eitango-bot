@@ -1,0 +1,44 @@
+name: zatsugaku-weekly
+# ずんだもんと冥鳴ひまりのポケモン雑学・週末まとめ（横動画）。毎週日曜 19:35（日本時間）
+on:
+  schedule:
+    - cron: "35 10 * * 0"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "1にすると投稿せず動画だけ作る"
+        default: "1"
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    services:
+      voicevox:
+        image: voicevox/voicevox_engine:cpu-latest
+        ports:
+          - 50021:50021
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra ffmpeg
+      - run: pip install -q pillow numpy google-api-python-client google-auth cryptography
+      - name: VOICEVOX の起動を待つ
+        run: |
+          for i in $(seq 1 60); do
+            if curl -sf http://127.0.0.1:50021/version; then echo " ready"; exit 0; fi
+            sleep 3
+          done
+      - run: python zatsugaku_long.py
+        env:
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: zatsugaku-long
+          path: |
+            zatsugaku_long.mp4
+            thumb_long.jpg
