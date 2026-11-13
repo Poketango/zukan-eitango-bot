@@ -159,14 +159,235 @@ def flow_card(spec):
     return im
 
 
+# ---------- 自作の図 ----------
+INK = (40, 34, 50)
+REDC = (230, 30, 30)
+
+
+def _canvas(w, h):
+    im = Image.new("RGBA", (w, h), (0, 0, 0, 0)); return im, ImageDraw.Draw(im)
+
+
+def fig_eye():
+    """目の断面図。網膜を太い赤い帯で示し、赤い丸でかこむ"""
+    im, d = _canvas(1100, 620)
+    cx, cy, R = 560, 320, 250
+    d.ellipse([cx - R, cy - R, cx + R, cy + R], fill=(255, 250, 245), outline=(120, 110, 130), width=10)        # 白目（強膜）
+    d.arc([cx - R + 10, cy - R + 10, cx + R - 10, cy + R - 10], -75, 75, fill=(235, 70, 90), width=30)           # 網膜（奥の内側の層）
+    d.chord([cx - R - 40, cy - 120, cx - R + 70, cy + 120], 90, 270, fill=(200, 230, 255), outline=(90, 140, 200), width=6)   # 角膜
+    d.ellipse([cx - R + 40, cy - 95, cx - R + 120, cy + 95], fill=(255, 245, 200), outline=(200, 160, 60), width=6)         # 水晶体
+    d.rectangle([cx + R - 10, cy - 30, cx + R + 150, cy + 30], fill=(250, 210, 120), outline=(190, 140, 50), width=5)      # 視神経
+    f = FF(FPOP, 40)
+    d.text((cx - R - 20, cy - 165), "角膜", font=f, fill=INK, anchor="mm")
+    d.text((cx - R + 80, cy + 150), "水晶体", font=f, fill=INK, anchor="mm")
+    d.text((cx + R + 150, cy + 80), "視神経", font=f, fill=INK, anchor="mm")
+    d.polygon([(60, cy - 20), (170, cy - 20), (170, cy - 44), (230, cy), (170, cy + 44), (170, cy + 20), (60, cy + 20)], fill=(255, 210, 60))
+    d.text((100, cy - 70), "光", font=FF(FPOP, 54), fill=(220, 150, 0), anchor="mm")
+    # 網膜を赤い丸でかこむ
+    d.ellipse([cx + R - 190, cy - 270, cx + R + 40, cy + 270], outline=REDC, width=12)
+    d.rounded_rectangle([cx + R - 160, 0, cx + R + 140, 70], 24, fill=REDC)
+    d.text((cx + R - 10, 35), "ここが網膜", font=FF(FPOP, 44), fill=(255, 255, 255), anchor="mm")
+    return im
+
+
+def fig_retina():
+    """網膜の中のつながり。視細胞と双極細胞のつなぎ目にピカチュリン"""
+    im, d = _canvas(1200, 560)
+    f = FF(FPOP, 40)
+    d.polygon([(30, 250), (150, 250), (150, 222), (210, 280), (150, 338), (150, 310), (30, 310)], fill=(255, 210, 60))
+    d.text((90, 200), "光", font=FF(FPOP, 54), fill=(220, 150, 0), anchor="mm")
+    # 視細胞
+    for i, x in enumerate((300, 380, 460)):
+        d.rounded_rectangle([x, 150, x + 50, 400], 25, fill=(150, 200, 255), outline=(60, 110, 200), width=5)
+    d.text((405, 450), "視細胞", font=f, fill=(60, 110, 200), anchor="mm")
+    d.text((405, 495), "光を受けとる", font=FF(FPOP, 30), fill=INK, anchor="mm")
+    # 双極細胞
+    for x in (700, 800):
+        d.ellipse([x, 230, x + 70, 330], fill=(190, 240, 200), outline=(40, 150, 90), width=5)
+        d.line([(x, 280), (520, 280)], fill=(40, 150, 90), width=6)
+        d.line([(x + 70, 280), (960, 280)], fill=(40, 150, 90), width=6)
+    d.text((770, 450), "双極細胞", font=f, fill=(40, 150, 90), anchor="mm")
+    d.rounded_rectangle([960, 220, 1170, 340], 30, fill=(255, 235, 240), outline=(200, 80, 120), width=6)
+    d.text((1065, 280), "脳へ", font=f, fill=(200, 80, 120), anchor="mm")
+    # つなぎ目を赤でかこむ
+    d.ellipse([500, 170, 690, 390], outline=REDC, width=12)
+    d.rounded_rectangle([370, 20, 830, 110], 26, fill=REDC)
+    d.text((600, 65), "つなぎ目にピカチュリン", font=FF(FPOP, 34), fill=(255, 255, 255), anchor="mm")
+    return im
+
+
+def fig_bars(spec):
+    """bars:コスモッグ=0.1,カビゴン=460 → 横棒グラフ。max=100 で目盛りの最大をそろえられる"""
+    items = []; mx = None
+    for p in spec.split(","):
+        k, _, v = p.partition("=")
+        try:
+            if k.strip() == "max": mx = float(v); continue
+            items.append((k.strip(), float(v)))
+        except ValueError: pass
+    if not items: return None
+    mx = mx or max(v for _, v in items) or 1
+    f = FF(FPOP, 42)
+    while max(f.getlength(k) for k, _ in items) > 420 and f.size > 24: f = FF(FPOP, f.size - 2)
+    lw = int(max(f.getlength(k) for k, _ in items)) + 30
+    im, d = _canvas(lw + 600 + 230, 120 * len(items) + 40)
+    cols = [(124, 78, 178), (40, 118, 200), (214, 84, 60), (24, 140, 112), (196, 64, 136)]
+    for i, (k, v) in enumerate(items):
+        y = 30 + i * 120
+        d.text((lw - 20, y + 45), k, font=f, fill=INK, anchor="rm")
+        w = max(8, int(600 * v / mx))
+        d.rounded_rectangle([lw, y + 10, lw + w, y + 80], 18, fill=cols[i % len(cols)])
+        d.text((lw + 10 + w, y + 45), (f"{v:g}"), font=FF(FD, 46), fill=cols[i % len(cols)], anchor="lm")
+    return im
+
+
+def fig_slots(text):
+    """slots:フシギバナ → 1文字ずつ箱に入れて文字数を見せる"""
+    chars = list(text); n = len(chars)
+    s = 150 if n <= 6 else max(70, int(1100 / n) - 10)
+    im, d = _canvas(n * (s + 14) + 20, s + 110)
+    f = FF(FD, int(s * 0.62))
+    for i, c in enumerate(chars):
+        x = 10 + i * (s + 14)
+        d.rounded_rectangle([x, 10, x + s, 10 + s], 22, fill=(255, 255, 255), outline=(124, 78, 178), width=8)
+        d.text((x + s / 2, 10 + s / 2), c, font=f, fill=INK, anchor="mm")
+        d.text((x + s / 2, s + 60), str(i + 1), font=FF(FPOP, 40), fill=REDC, anchor="mm")
+    return im
+
+
+TYPE_COL = {"ノーマル": (168, 167, 122), "ほのお": (238, 129, 48), "みず": (99, 144, 240), "でんき": (247, 208, 44), "くさ": (122, 199, 76),
+            "こおり": (150, 217, 214), "かくとう": (194, 46, 40), "どく": (163, 62, 161), "じめん": (226, 191, 101), "ひこう": (169, 143, 243),
+            "エスパー": (249, 85, 135), "むし": (166, 185, 26), "いわ": (182, 161, 54), "ゴースト": (115, 87, 151), "ドラゴン": (111, 53, 252),
+            "あく": (112, 87, 70), "はがね": (183, 183, 206), "フェアリー": (214, 133, 173)}
+
+
+def fig_vs(spec):
+    """vs:ゴースト>エスパー=×0 → タイプ相性の図"""
+    left, _, rest = spec.partition(">"); right, _, res = rest.partition("=")
+    im, d = _canvas(1150, 330)
+    f = FF(FD, 64)
+    for x, t in ((40, left), (720, right)):
+        c = TYPE_COL.get(t.strip(), (120, 120, 140))
+        d.rounded_rectangle([x, 60, x + 390, 210], 75, fill=c, outline=(255, 255, 255), width=8)
+        d.text((x + 195, 135), t.strip(), font=f, fill=(255, 255, 255), anchor="mm", stroke_width=4, stroke_fill=(60, 50, 60))
+    d.polygon([(460, 115), (620, 115), (620, 85), (690, 135), (620, 185), (620, 155), (460, 155)], fill=INK)
+    if res:
+        bad = bool(re.match(r"(×0(?![.．])|0(?![.．])|こうかなし|効果なし)", res.strip()))
+        d.rounded_rectangle([380, 225, 770, 320], 30, fill=REDC if bad else ((230, 130, 30) if "いまひとつ" in res else (40, 150, 90)))
+        d.text((575, 272), res.strip(), font=FF(FD, 52), fill=(255, 255, 255), anchor="mm")
+        if bad:
+            d.line([(470, 70), (690, 200)], fill=REDC, width=18); d.line([(470, 200), (690, 70)], fill=REDC, width=18)
+    return im
+
+
+def fig_spell(spec):
+    """spell:alligator>Feraligatr → 2つのつづりを並べ、ちがう文字を赤で示す"""
+    a, _, b = spec.partition(">")
+    im, d = _canvas(1150, 330)
+    f = FF(FD, 96)
+    import difflib
+    sm = difflib.SequenceMatcher(None, a.lower(), b.lower())
+    def draw(word, y, other_is_a):
+        x = 575 - f.getlength(word) / 2
+        keep = set()
+        for tag, i1, i2, j1, j2 in sm.get_opcodes():
+            if tag == "equal": keep.update(range(j1, j2) if not other_is_a else range(i1, i2))
+        for i, ch in enumerate(word):
+            col = INK if i in keep else REDC
+            d.text((x, y), ch, font=f, fill=col, anchor="lm"); x += f.getlength(ch)
+    draw(a, 90, True); draw(b, 240, False)
+    return im
+
+
+def fig_palette(spec):
+    """palette:トキワ=#007B43,ニビ=#727171 → 色見本のチップと名前を並べる"""
+    items = []
+    for p in spec.split(","):
+        k, _, v = p.partition("=")
+        if k.strip(): items.append((k.strip(), v.strip()))
+    n = len(items); cols = min(n, 5); rows = (n + cols - 1) // cols
+    cw, chh = 220, 260
+    im, d = _canvas(cols * cw + 20, rows * chh + 20)
+    for i, (k, v) in enumerate(items):
+        x = 10 + (i % cols) * cw; y = 10 + (i // cols) * chh
+        if v == "rainbow":
+            chip = rainbow(170)
+        else:
+            c = tuple(int(v.lstrip("#")[j:j + 2], 16) for j in (0, 2, 4))
+            chip = Image.new("RGBA", (170, 170), c + (255,))
+        m = Image.new("L", (170, 170), 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, 169, 169], 34, fill=255)
+        im.paste(chip, (x + 25, y), m)
+        d.rounded_rectangle([x + 25, y, x + 195, y + 170], 34, outline=(60, 50, 80), width=6)
+        f = FF(FPOP, 40)
+        while f.getlength(k) > cw - 10 and f.size > 22: f = FF(FPOP, f.size - 2)
+        d.text((x + 110, y + 215), k, font=f, fill=INK, anchor="mm")
+    return im
+
+
+def rainbow(sz):
+    """玉虫色・にじ色の見本"""
+    a = np.linspace(0, 1, sz)
+    hsv = np.stack([np.tile(a[None, :], (sz, 1)) * 255, np.full((sz, sz), 180), np.full((sz, sz), 235)], -1).astype(np.uint8)
+    return Image.fromarray(hsv, "HSV").convert("RGBA")
+
+
+def fig_sign(spec):
+    """sign:1行目|2行目 → ゲームの町にある木の看板の絵"""
+    lines = [x for x in spec.split("/") if x]
+    f = FF(FPOP, 64)
+    w = int(max(f.getlength(t) for t in lines)) + 140; h = len(lines) * 90 + 90
+    im, d = _canvas(w, h + 200)
+    d.rectangle([w / 2 - 22, h - 10, w / 2 + 22, h + 190], fill=(150, 100, 60), outline=(90, 60, 30), width=5)
+    d.rounded_rectangle([0, 0, w - 1, h], 26, fill=(214, 168, 108), outline=(110, 72, 36), width=10)
+    d.rounded_rectangle([24, 24, w - 25, h - 24], 16, fill=(255, 252, 240), outline=(170, 130, 80), width=4)
+    for i, t in enumerate(lines):
+        d.text((w / 2, 45 + 45 + i * 90), t, font=f, fill=INK, anchor="mm")
+    return im
+
+
+def annotate(im, spec):
+    """mark=x,y,w,h（画像に対する0〜1の位置）を赤い丸でかこむ。label=文字 で札を付ける。はみ出さないよう周りに余白を足す"""
+    try:
+        x, y, w, h = [float(v) for v in spec.get("mark", "").split(",")]
+    except ValueError:
+        return im
+    W0, H0 = im.size
+    lw = max(6, int(min(W0, H0) / 45))
+    f = FF(FPOP, max(30, int(max(W0, H0) / 12)))
+    pad = int(f.size + 50)
+    out = Image.new("RGBA", (W0 + pad * 2, H0 + pad * 2), (0, 0, 0, 0)); out.alpha_composite(im, (pad, pad))
+    d = ImageDraw.Draw(out)
+    ex = 0.04
+    box = [pad + (x - ex) * W0, pad + (y - ex) * H0, pad + (x + w + ex) * W0, pad + (y + h + ex) * H0]
+    d.ellipse(box, outline=(255, 255, 255), width=lw + 8)
+    d.ellipse(box, outline=REDC, width=lw)
+    lab = spec.get("label")
+    if lab:
+        tw = f.getlength(lab) + 40; th = f.size + 20
+        tx = min(max(0, (box[0] + box[2]) / 2 - tw / 2), out.width - tw)
+        ty = box[1] - th - 6 if box[1] - th - 6 >= 0 else min(out.height - th, box[3] + 6)
+        d.rounded_rectangle([tx, ty, tx + tw, ty + th], 16, fill=REDC)
+        d.text((tx + tw / 2, ty + th / 2), lab, font=f, fill=(255, 255, 255), anchor="mm")
+    return out
+
+
 def load_img(ref):
     """'art:25' などから画像を読む。commons:ファイル名 / word:言葉 / color:#色 / flow:A>B>C も使える"""
     if ref in _IMG: return _IMG[ref]
-    kind, _, num = ref.partition(":")
+    base, _, opt = ref.partition("@")
+    spec = dict(o.split("=", 1) for o in opt.split("@") if "=" in o) if opt else {}
+    kind, _, num = base.partition(":")
     im = None
-    if kind == "commons": im = commons_img(num)
+    if kind == "fig": im = {"eye": fig_eye, "retina": fig_retina}.get(num, lambda: None)()
+    elif kind == "bars": im = fig_bars(num)
+    elif kind == "slots": im = fig_slots(num)
+    elif kind == "vs": im = fig_vs(num)
+    elif kind == "spell": im = fig_spell(num)
+    elif kind == "palette": im = fig_palette(num)
+    elif kind == "sign": im = fig_sign(num)
+    elif kind == "commons": im = commons_img(num)
     elif kind == "word": im = word_card(num)
-    elif kind == "color": im = color_card(num)
+    elif kind == "color": im = color_card(num) if num != "rainbow" else rainbow(420)
     elif kind == "flow": im = flow_card(num)
     else:
         p = os.path.join(HERE, "assets", "img", f"{kind}_{num}.png")
@@ -176,6 +397,10 @@ def load_img(ref):
             if bb: im = im.crop(bb)
         else:
             print("画像なし:", ref)
+    if im is not None and spec.get("crop"):
+        cx_, cy_, cw_, ch_ = [float(v) for v in spec["crop"].split(",")]
+        im = im.crop((int(cx_ * im.width), int(cy_ * im.height), int((cx_ + cw_) * im.width), int((cy_ + ch_) * im.height)))
+    if im is not None and spec.get("mark"): im = annotate(im, spec)
     _IMG[ref] = im
     return im
 
@@ -258,17 +483,45 @@ def panel(im, refs, tin, theme):
         return
     d.rounded_rectangle([x0, y0, x1, y1], 36, fill=(255, 255, 255), outline=theme[0], width=8)
     gap = 30
-    cw = (x1 - x0 - 60 - gap * (n - 1)) / n
-    for i, (ref, s, cap) in enumerate(items):
+    # 横に並べるか、縦に積むか。画像が大きく見える方を選ぶ（横長の図は縦に積む）
+    AW, AH = x1 - x0 - 60, y1 - y0 - 60
+    capw = 60 if any(c for _, _, c in items) else 0
+    def row_layout():
+        ih = AH - capw; asp = [s.width / s.height for _, s, _ in items]
+        tot = sum(asp) * ih + gap * (n - 1)
+        k = min(1.0, (AW - gap * (n - 1)) / (sum(asp) * ih)) if tot > AW else 1.0
+        hh = ih * k; out = []; x = x0 + 30 + (AW - (sum(asp) * hh + gap * (n - 1))) / 2
+        for a in asp:
+            w_ = a * hh; out.append((x + w_ / 2, y0 + 30 + ih / 2, w_, hh, y1 - 50, w_ + 40)); x += w_ + gap
+        return out
+    def col_layout():
+        rh = (AH - gap * (n - 1)) / n; out = []
+        for i, (_, s, cap) in enumerate(items):
+            top = y0 + 30 + i * (rh + gap)
+            if cap:
+                out.append((x0 + 30 + (AW - 300) / 2, top + rh / 2, AW - 340, rh, top + rh / 2, 300))
+            else:
+                out.append((x0 + 30 + AW / 2, top + rh / 2, AW, rh, None, 0))
+        return out
+    def area(L):
+        a = 0
+        for (cx, cy, bw, bh, _, _), (_, s, _) in zip(L, items):
+            k = min(bw / s.width, bh / s.height); a += min(k * s.width * k * s.height, bw * bh)
+        return a
+    L = row_layout()
+    if n <= 3:
+        L2 = col_layout()
+        if area(L2) > area(L) * 1.15: L = L2
+    for i, ((cx, cy, bw, bh, capy, capw_), (ref, s, cap)) in enumerate(zip(L, items)):
         pix = ref.split(":")[0] in PIXEL_KINDS
-        ih = (y1 - y0 - 60) - (60 if cap else 0)
-        s = fit(s, cw, ih, pix)
+        s = fit(s, bw, bh, pix)
         z = ease_back((tin - i * 0.14) / 0.3)                     # 1枚ずつ順番に出る
         if z <= 0.02: continue
         s = scaled(s, z * (1 + 0.015 * np.sin(tin * 2 + i)), pix)
-        cx = x0 + 30 + (cw + gap) * i + cw / 2; cy = y0 + 30 + ih / 2
         im.paste(s, (int(cx - s.width / 2), int(cy - s.height / 2)), s)
-        if cap and tin > i * 0.14 + 0.15: cap_tag(d, cx, y1 - 50, cw - 20, cap, theme)
+        if cap and tin > i * 0.14 + 0.15:
+            if capw_ == 300: cap_tag(d, x1 - 30 - 150, capy, 290, cap, theme)
+            else: cap_tag(d, cx, capy, max(200, capw_), cap, theme)
 
 
 def header(d, sub, theme):
