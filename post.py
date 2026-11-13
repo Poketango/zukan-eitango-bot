@@ -9,7 +9,7 @@ import urllib.request, urllib.parse
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps, ImageEnhance
 
-SITE = "https://poketango.github.io"
+SITE = "https://poketango.com"
 START = datetime.date(2026, 11, 14)
 SLOTS_PER_DAY = 3                              # 1日の投稿回数（workflow の cron と合わせる）
 FONT_B = os.environ.get("FONT_B", "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc")

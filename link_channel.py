@@ -26,7 +26,7 @@ if __name__ == "__main__":
     body = urllib.parse.urlencode({
         "code": code, "grant_type": "authorization_code",
         "client_id": "".join(os.environ["YT_CLIENT_ID"].split()), "client_secret": "".join(os.environ["YT_CLIENT_SECRET"].split()),
-        "redirect_uri": os.environ.get("REDIRECT_URI", "https://poketango.github.io/oauth.html")}).encode()
+        "redirect_uri": os.environ.get("REDIRECT_URI", "https://poketango.com/oauth.html")}).encode()
     try:
         r = json.loads(urllib.request.urlopen(urllib.request.Request("https://oauth2.googleapis.com/token", data=body), timeout=60).read())
     except urllib.error.HTTPError as e:
