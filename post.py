@@ -401,11 +401,13 @@ def meta(q, voiced):
     if q["kind"] == "name":
         title = f"この英語名、どのポケモン？「{ename(q['key'])}」【英語名クイズ】 #shorts"
         desc = (f"正解は{q['jn']}！\n英語名の由来：{q.get('origin', '')}\n\n{q['jn']}の英語版図鑑と日本語訳 → {page}\n"
-                f"英語名がダジャレなポケモンまとめ → {SITE}/p/pun.html{credit}\n\n#ポケモン #ポケモン英語 #英語名")
+                f"英語名がダジャレなポケモンまとめ → {SITE}/p/pun.html\n"
+                f"📚 ポケモン図鑑で覚える英単語(中1〜大学) → {SITE}/p/words.html\n🖨️ 無料の英単語プリント → {SITE}/p/print.html{credit}\n\n#ポケモン #ポケモン英語 #英語名")
     else:
         title = f"英語版のポケモン図鑑が怖すぎる…【{q['jn']}】 #shorts"
         desc = (f"英語版の図鑑より\n{q['sent']}\n→ {q['ja']}\n\n{q['jn']}の英語版図鑑と日本語訳 → {page}\n"
-                f"英語版の図鑑が怖すぎるポケモンまとめ → {SITE}/p/scary.html{credit}\n\n#ポケモン #ポケモン図鑑 #ホラー")
+                f"英語版の図鑑が怖すぎるポケモンまとめ → {SITE}/p/scary.html\n"
+                f"📚 ポケモン図鑑で覚える英単語(中1〜大学) → {SITE}/p/words.html{credit}\n\n#ポケモン #ポケモン図鑑 #ホラー")
     return title[:100], desc
 
 

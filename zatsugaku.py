@@ -265,7 +265,7 @@ def meta(q, voiced):
     credit = ("\n\n音声：VOICEVOX:ずんだもん、VOICEVOX:冥鳴ひまり" if voiced else "") + \
         "\n立ち絵：東北ずん子・ずんだもんプロジェクト（ずんだもん）、冥鳴ひまり公式（冥鳴ひまり／イラスト Sameta様）"
     src = f"\n参考：{q['src']}" if q.get("src") else ""
-    desc = (f"{body}\n\n{q['jn']}の英語版図鑑と日本語訳 → {page}\nポケモン図鑑で英単語 → {SITE}/{src}{credit}\n\n"
+    desc = (f"{body}\n\n{q['jn']}の英語版図鑑と日本語訳 → {page}\nポケモン図鑑で英単語 → {SITE}/p/words.html\n無料の英単語プリント → {SITE}/p/print.html{src}{credit}\n\n"
             "#ポケモン #ポケモン雑学 #ずんだもん #冥鳴ひまり #shorts")
     return (q["title"] + " #shorts")[:100], desc
 
