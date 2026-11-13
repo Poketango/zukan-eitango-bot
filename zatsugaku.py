@@ -282,7 +282,7 @@ def upload(title, desc, mp4):
             pass
     if not all(env.values()): print("雑学チャンネル: まだチャンネルにつながっていないのでアップロードはしない"); return
     os.environ.update({k: v for k, v in env.items()})
-    P.post_youtube(title, desc, mp4)
+    return P.post_youtube(title, desc, mp4)
 
 
 if __name__ == "__main__":

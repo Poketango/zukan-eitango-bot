@@ -271,4 +271,5 @@ if __name__ == "__main__":
     voiced, total, chapters = build(sc, "zatsugaku_long.mp4")
     title, desc = meta(sc, voiced, chapters); print(title); print(desc); print("長さ", round(total), "秒")
     if os.environ.get("DRY_RUN") == "1": sys.exit()
+    os.environ["THUMB"] = "thumb_long.jpg"
     Z.upload(title, desc, "zatsugaku_long.mp4")

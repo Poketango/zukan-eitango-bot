@@ -423,6 +423,13 @@ def post_youtube(title, desc, mp4):
             "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False}}
     r = yt.videos().insert(part="snippet,status", body=body, media_body=MediaFileUpload(mp4, mimetype="video/mp4")).execute()
     print("YouTube:", r.get("id"), r.get("status", {}).get("privacyStatus"))
+    thumb = os.environ.get("THUMB")
+    if thumb and os.path.exists(thumb) and r.get("id"):
+        try:   # サムネイルの設定は、電話番号で確認済みのチャンネルだけできる。できなければ自動のサムネイルのまま
+            yt.thumbnails().set(videoId=r["id"], media_body=MediaFileUpload(thumb)).execute(); print("サムネイルを設定しました")
+        except Exception as e:
+            print("サムネイルは設定できませんでした:", str(e)[:150])
+    return r.get("id")
 
 
 def slot_now(now):
