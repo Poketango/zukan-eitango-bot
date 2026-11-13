@@ -118,6 +118,34 @@ def bg():
 BG = None
 
 
+HERE = os.path.dirname(os.path.abspath(__file__))
+_TACHIE = {}
+
+
+def tachie(name, h):
+    """立ち絵の上半身（頭から腰まで）を高さ h にして返す"""
+    k = (name, h)
+    if k not in _TACHIE:
+        im = Image.open(os.path.join(HERE, "chara", name + ".png")).convert("RGBA")
+        im = im.crop((0, 0, im.width, int(im.height * (0.56 if name == "zundamon" else 0.5))))
+        im = im.resize((round(im.width * h / im.height), h), Image.LANCZOS)
+        dim = im.copy(); px = np.array(dim).astype(np.float32); px[..., :3] *= 0.62; dim = Image.fromarray(px.astype(np.uint8))
+        _TACHIE[k] = (im, dim)
+    return _TACHIE[k]
+
+
+def put_tachie(im, who, active, t):
+    """話している方は明るく、少し大きく弾む。聞いている方は少し暗く"""
+    name = "zundamon" if who == "z" else ("himari" if active else "himari_jito")
+    h = 800 if active else 760
+    img, dim = tachie(name, h)
+    src = img if active else dim
+    bob = int(abs(np.sin(t * 8)) * 14) if active else 0
+    x = -40 if who == "z" else VW - src.width + 60
+    y = VH - 170 - h + 120 - bob
+    im.paste(src, (x, y), src)
+
+
 def char_badge(d, cx, cy, c, active, t):
     """キャラの名札（絵は使わず、色と名前で表す）。話している方は少し大きく、上下に弾む"""
     bob = int(abs(np.sin(t * 9)) * 10) if active else 0
@@ -147,18 +175,21 @@ def frame(q, sp, who, text, t, info=None):
     if info:
         d.rounded_rectangle([140, 1030, VW - 140, 1110], 40, fill=(255, 236, 120))
         d.text((VW // 2, 1070), info, font=F(FONT_K, 46), fill=(60, 40, 0), anchor="mm")
-    char_badge(d, 170, 1190, CHAR["z"], who == "z", t)
-    char_badge(d, VW - 170, 1190, CHAR["h"], who == "h", t)
+    # 聞いている方を先に、話している方を手前に描く
+    other = "h" if who == "z" else "z"
+    put_tachie(im, other, False, t); put_tachie(im, who, True, t)
+    d = ImageDraw.Draw(im)
     # 字幕
     c = CHAR[who]; f = F(FONT_K, 60)
     lines = P.jwrap(d, text, f, VW - 150)[:3]
-    top = 1420; h = 70 + 82 * len(lines)
+    h = 70 + 82 * len(lines); top = VH - 150 - h
     d.rounded_rectangle([40, top, VW - 40, top + h], 34, fill=(255, 255, 255), outline=c["col"], width=10)
     d.rounded_rectangle([70, top - 30, 70 + 40 + 44 * len(c["name"]), top + 26], 26, fill=c["col"])
     d.text((90, top - 2), c["name"], font=F(FONT_B, 40), fill=(255, 255, 255), anchor="lm")
     for i, ln in enumerate(lines):
         d.text((VW // 2, top + 70 + 82 * i), ln, font=f, fill=(40, 34, 50), anchor="mm")
-    d.text((VW // 2, VH - 70), "英語版の図鑑と和訳は プロフィールのサイトで", font=F(FONT_B, 38), fill=(120, 110, 130), anchor="mm")
+    d.rectangle([0, VH - 120, VW, VH], fill=(124, 78, 178))
+    d.text((VW // 2, VH - 60), "英語版の図鑑と和訳は プロフィールのサイトで", font=F(FONT_B, 40), fill=(255, 255, 255), anchor="mm")
     return im
 
 
@@ -229,7 +260,8 @@ def render_with(segs, voices, total, out):
 def meta(q, voiced):
     page = f"{SITE}/p/{q['key'].replace(' ', '_').replace('.', '')}.html"
     body = "\n".join(f"{CHAR[l[0]]['name']}「{l[1]}」" for l in q["lines"])
-    credit = "\n\n音声：VOICEVOX:ずんだもん、VOICEVOX:冥鳴ひまり" if voiced else ""
+    credit = ("\n\n音声：VOICEVOX:ずんだもん、VOICEVOX:冥鳴ひまり" if voiced else "") + \
+        "\n立ち絵：東北ずん子・ずんだもんプロジェクト（ずんだもん）、冥鳴ひまり公式（冥鳴ひまり／イラスト Sameta様）"
     src = f"\n参考：{q['src']}" if q.get("src") else ""
     desc = (f"{body}\n\n{q['jn']}の英語版図鑑と日本語訳 → {page}\nポケモン図鑑で英単語 → {SITE}/{src}{credit}\n\n"
             "#ポケモン #ポケモン雑学 #ずんだもん #冥鳴ひまり #shorts")
