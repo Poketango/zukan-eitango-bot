@@ -9,6 +9,9 @@ on:
       dry_run:
         description: "1にすると投稿せず動画だけ作る"
         default: "1"
+      n:
+        description: "ネタの番号（空欄なら日時から自動。手動で追加投稿するときは過去の番号を指定）"
+        default: ""
 jobs:
   post:
     runs-on: ubuntu-latest
@@ -35,6 +38,7 @@ jobs:
       - run: python zatsugaku.py
         env:
           DRY_RUN: ${{ github.event.inputs.dry_run }}
+          N: ${{ github.event.inputs.n }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT2_REFRESH_TOKEN: ${{ secrets.YT2_REFRESH_TOKEN }}
