@@ -5,7 +5,7 @@
 #   ・台本の各せりふに "img": ["art:25|説明", ...] を付けると、その画像を出す（次に指定があるまで出し続ける）
 import os, re, sys, json, random, datetime, subprocess, wave
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 import post as P
 import zatsugaku as Z
 
@@ -25,14 +25,53 @@ def say_fix(s):
     return s
 
 
-def bg():
-    im = Image.new("RGB", (W, H), (250, 247, 240)); d = ImageDraw.Draw(im)
+# ---------- フォント ----------
+FONT_DIR = os.path.join(HERE, "fonts")
+FD, FR, FRB, FPOP, FROCK = ("DelaGothicOne-Regular.ttf", "MPLUSRounded1c-ExtraBold.ttf", "MPLUSRounded1c-Black.ttf",
+                            "MochiyPopOne-Regular.ttf", "RocknRollOne-Regular.ttf")
+_FF = {}
+
+
+def FF(name, size):
+    k = (name, size)
+    if k not in _FF:
+        try: _FF[k] = ImageFont.truetype(os.path.join(FONT_DIR, name), size)
+        except Exception: _FF[k] = F(FONT_K, size)
+    return _FF[k]
+
+
+# 話題ごとに色を変える（ヘッダー、アクセント、強調）
+THEMES = [((124, 78, 178), (96, 176, 56), (255, 236, 120)), ((214, 84, 60), (250, 178, 40), (255, 250, 200)),
+          ((40, 118, 200), (250, 140, 60), (255, 236, 120)), ((24, 140, 112), (236, 88, 120), (255, 240, 150)),
+          ((84, 84, 176), (56, 186, 200), (255, 236, 120)), ((196, 64, 136), (110, 180, 60), (255, 240, 170)),
+          ((60, 60, 72), (230, 70, 70), (255, 220, 90))]
+RED = (224, 52, 40)
+
+
+def ease_back(x):
+    x = min(max(x, 0.0), 1.0); c = 1.70158
+    return 1 + (c + 1) * (x - 1) ** 3 + c * (x - 1) ** 2
+
+
+def ease_out(x):
+    x = min(max(x, 0.0), 1.0)
+    return 1 - (1 - x) ** 3
+
+
+_BG = {}
+
+
+def bg(theme=THEMES[0]):
+    if theme in _BG: return _BG[theme]
+    base = tuple(int(250 * 0.93 + c * 0.07) for c in theme[0])
+    dot = tuple(int(b * 0.94) for b in base)
+    im = Image.new("RGB", (W, H), base); d = ImageDraw.Draw(im)
     for y in range(0, H, 56):
-        for x in range(0 if (y // 56) % 2 else 28, W, 56): d.ellipse([x, y, x + 7, y + 7], fill=(236, 230, 218))
+        for x in range(0 if (y // 56) % 2 else 28, W, 56): d.ellipse([x, y, x + 7, y + 7], fill=dot)
+    _BG[theme] = im
     return im
 
 
-BG = bg()
 _T, _IMG = {}, {}
 
 
@@ -70,12 +109,45 @@ def fit(im, w, h, pixel):
     return im.resize((max(1, int(im.width * s)), max(1, int(im.height * s))), Image.NEAREST if pixel else Image.LANCZOS)
 
 
-def panel(im, refs, t):
-    """画面中央の白いボードに画像を並べる（説明付き）"""
+def scaled(s, z, pix):
+    if abs(z - 1) < 0.004: return s
+    return s.resize((max(1, int(s.width * z)), max(1, int(s.height * z))), Image.NEAREST if pix else Image.BILINEAR)
+
+
+_SPOT = {}
+
+
+def spot_bg(w, h, theme):
+    """1枚だけ見せるときの、色つきの集中線ボード"""
+    k = (w, h, theme)
+    if k not in _SPOT:
+        c1 = tuple(int(255 * 0.82 + c * 0.18) for c in theme[0]); c2 = tuple(int(255 * 0.9 + c * 0.1) for c in theme[0])
+        b = Image.new("RGB", (w, h), c1); d = ImageDraw.Draw(b)
+        cx, cy, R = w / 2, h / 2, w
+        for i in range(24):
+            a0 = 2 * np.pi * i / 24; a1 = a0 + np.pi / 24
+            d.polygon([(cx, cy), (cx + R * np.cos(a0), cy + R * np.sin(a0)), (cx + R * np.cos(a1), cy + R * np.sin(a1))], fill=c2)
+        g = Image.new("L", (w, h), 0); ImageDraw.Draw(g).ellipse([cx - 330, cy - 230, cx + 330, cy + 230], fill=255)
+        b = Image.composite(Image.new("RGB", (w, h), (255, 255, 250)), b, g.filter(ImageFilter.GaussianBlur(90)))
+        m = Image.new("L", (w, h), 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, w - 1, h - 1], 36, fill=255)
+        out = Image.new("RGBA", (w, h), (0, 0, 0, 0)); out.paste(b, (0, 0), m)
+        _SPOT[k] = out
+    return _SPOT[k]
+
+
+def cap_tag(d, cx, y, w, cap, theme):
+    f = FF(FPOP, 34)
+    tw = min(w, f.getlength(cap) + 60)
+    d.rounded_rectangle([cx - tw / 2, y - 28, cx + tw / 2, y + 28], 26, fill=theme[0])
+    d.text((cx, y), cap, font=f, fill=(255, 255, 255), anchor="mm")
+
+
+def panel(im, refs, tin, theme):
+    """画面中央に画像を出す。1枚なら集中線ボードで大きく、複数なら白いボードに並べる。出るときはポンと弾む"""
     d = ImageDraw.Draw(im)
-    x0, y0, x1, y1 = 400, 130, W - 400, 735
-    d.rounded_rectangle([x0, y0, x1, y1], 36, fill=(255, 255, 255), outline=(230, 222, 240), width=8)
+    x0, y0, x1, y1 = 400, 128, W - 400, 735
     if refs == ["unown"]:
+        d.rounded_rectangle([x0, y0, x1, y1], 36, fill=(255, 255, 255), outline=theme[0], width=8)
         keys = [f"frlg:201-{c}" for c in "abcdefghijklmnopqrstuvwxyz"] + ["frlg:201-exclamation", "frlg:201-question"]
         cols, rows = 7, 4
         cw, ch = (x1 - x0 - 60) / cols, (y1 - y0 - 50) / rows
@@ -83,78 +155,315 @@ def panel(im, refs, t):
             s = load_img(k)
             if s is None: continue
             s = fit(s, cw - 14, ch - 14, True)
-            cx = x0 + 30 + cw * (i % cols) + cw / 2; cy = y0 + 25 + ch * (i // cols) + ch / 2
-            cy += np.sin(t * 3 + i) * 4
+            z = ease_back((tin - i * 0.03) / 0.25)
+            if z <= 0.02: continue
+            s = scaled(s, z, True)
+            cx = x0 + 30 + cw * (i % cols) + cw / 2; cy = y0 + 25 + ch * (i // cols) + ch / 2 + np.sin(tin * 3 + i) * 4
             im.paste(s, (int(cx - s.width / 2), int(cy - s.height / 2)), s)
         return
-    n = len(refs); gap = 30
-    cw = (x1 - x0 - 60 - gap * (n - 1)) / n
-    for i, r in enumerate(refs):
+    items = []
+    for r in refs:
         ref, _, cap = r.partition("|")
         s = load_img(ref)
-        if s is None: continue
+        if s is not None: items.append((ref, s, cap))
+    if not items: return
+    n = len(items)
+    if n == 1 and items[0][0].split(":")[0] not in PIXEL_KINDS:
+        ref, s, cap = items[0]
+        im.paste(spot_bg(x1 - x0, y1 - y0, theme), (x0, y0), spot_bg(x1 - x0, y1 - y0, theme))
+        ih = (y1 - y0 - 50) - (70 if cap else 0)
+        s = fit(s, x1 - x0 - 120, ih, False)
+        z = ease_back(tin / 0.32) * (1 + min(tin, 8) * 0.006)        # ポンと出て、ゆっくりズーム
+        s = scaled(s, z, False)
+        cx = (x0 + x1) / 2; cy = y0 + 25 + ih / 2
+        with_shadow(im, s, (int(cx - s.width / 2), int(cy - s.height / 2)), blur=12, alpha=0.3, off=(8, 10), outline=6)
+        if cap: cap_tag(ImageDraw.Draw(im), cx, y1 - 46, x1 - x0 - 80, cap, theme)
+        return
+    d.rounded_rectangle([x0, y0, x1, y1], 36, fill=(255, 255, 255), outline=theme[0], width=8)
+    gap = 30
+    cw = (x1 - x0 - 60 - gap * (n - 1)) / n
+    for i, (ref, s, cap) in enumerate(items):
         pix = ref.split(":")[0] in PIXEL_KINDS
         ih = (y1 - y0 - 60) - (60 if cap else 0)
         s = fit(s, cw, ih, pix)
-        z = 1 + 0.02 * np.sin(t * 2 + i)
-        if not pix and z != 1: s = s.resize((int(s.width * z), int(s.height * z)), Image.LANCZOS)
+        z = ease_back((tin - i * 0.14) / 0.3)                     # 1枚ずつ順番に出る
+        if z <= 0.02: continue
+        s = scaled(s, z * (1 + 0.015 * np.sin(tin * 2 + i)), pix)
         cx = x0 + 30 + (cw + gap) * i + cw / 2; cy = y0 + 30 + ih / 2
         im.paste(s, (int(cx - s.width / 2), int(cy - s.height / 2)), s)
-        if cap:
-            d.rounded_rectangle([cx - cw / 2 + 10, y1 - 78, cx + cw / 2 - 10, y1 - 22], 24, fill=(124, 78, 178))
-            d.text((cx, y1 - 50), cap, font=F(FONT_K, 34), fill=(255, 255, 255), anchor="mm")
+        if cap and tin > i * 0.14 + 0.15: cap_tag(d, cx, y1 - 50, cw - 20, cap, theme)
 
 
-def header(d, sub):
-    d.rectangle([0, 0, W, 96], fill=(124, 78, 178)); d.rectangle([0, 96, W, 106], fill=(96, 176, 56))
-    d.text((40, 48), "ずんだもんと冥鳴ひまりの ポケモン雑学", font=F(FONT_K, 44), fill=(255, 255, 255), anchor="lm")
-    if sub: d.text((W - 40, 48), sub, font=F(FONT_K, 42), fill=(255, 236, 120), anchor="rm")
+def header(d, sub, theme):
+    d.rectangle([0, 0, W, 96], fill=theme[0]); d.rectangle([0, 96, W, 106], fill=theme[1])
+    d.text((40, 48), "ずんだもんと冥鳴ひまりの ポケモン雑学", font=FF(FPOP, 40), fill=(255, 255, 255), anchor="lm")
+    if sub: d.text((W - 40, 48), sub, font=FF(FROCK, 40), fill=theme[2], anchor="rm")
 
 
-def frame(sub, refs, who, text, t, big_title=None):
-    im = BG.copy(); d = ImageDraw.Draw(im)
-    header(d, sub)
-    if refs: panel(im, refs, t)
+# ---------- 字幕の改行 ----------
+NG_START = set("、。，．・！？!?」』）)]ーっゃゅょぁぃぅぇぉッャュョァィゥェォ…〜～")
+NG_END = set("「『（([")
+GOOD_END = set("、。！？!?」』…　")
+
+
+def cclass(c):
+    o = ord(c)
+    if c.isascii() and c.isalnum() or "０" <= c <= "９": return "a"
+    if 0x30A0 <= o <= 0x30FF: return "k"
+    if 0x3040 <= o <= 0x309F: return "h"
+    if 0x4E00 <= o <= 0x9FFF or c in "々〆": return "c"
+    return "p"
+
+
+_WRAP = {}
+
+
+def wrap_jp(text, fname, size, maxw):
+    """読みやすい位置で改行する。句読点や助詞のあとで切り、行の長さをそろえ、記号だけの行や行頭の句読点を作らない"""
+    k = (text, fname, size, maxw)
+    if k in _WRAP: return _WRAP[k]
+    f = FF(fname, size); n = len(text)
+    pre = [0.0] + [f.getlength(text[:i]) for i in range(1, n + 1)]
+    total = pre[n]
+    if total <= maxw:
+        _WRAP[k] = [text]; return [text]
+
+    def bcost(j):
+        a, b = text[j - 1], text[j]
+        if b in NG_START or a in NG_END: return None
+        if a in "。！？!?」』": return -3
+        if a in "、…　": return 0
+        ca, cb = cclass(a), cclass(b)
+        if cb == "h" and b in "をにがはでともへやのねよかなだ" and ca != "h": return 30    # 行頭に助詞を置かない
+        if a in "はがをにでともへやねよか" and cb != "h": return 1
+        if ca == cb and ca in "akc": return 30                                        # 単語の途中
+        if ca == cb == "h": return 40                                                 # ひらがなの途中（「あとな|のだ」など）
+        if text[j:j + 2] in ("さん", "くん", "ちゃん") or b in "用的性製版": return 30
+        return 4
+
+    best = None; INF = 1e18
+    lmin = int(np.ceil(total / maxw))
+    for L in range(lmin, lmin + 2):
+        target = total / L
+        dp = [[INF] * (L + 1) for _ in range(n + 1)]; bk = [[0] * (L + 1) for _ in range(n + 1)]
+        dp[0][0] = 0
+        for j in range(1, n + 1):
+            bc = 0 if j == n else bcost(j)
+            if bc is None: continue
+            for l in range(1, L + 1):
+                for i in range(j - 1, -1, -1):
+                    w = pre[j] - pre[i]
+                    if w > maxw: break
+                    if dp[i][l - 1] >= INF or j - i < 4: continue
+                    c = dp[i][l - 1] + bc + ((w - target) / target) ** 2 * 30
+                    if c < dp[j][l]: dp[j][l] = c; bk[j][l] = i
+        if dp[n][L] < INF:
+            c = dp[n][L] + (L - lmin) * 12
+            if best is None or c < best[0]:
+                out = []; j = n
+                for l in range(L, 0, -1): i = bk[j][l]; out.append(text[i:j]); j = i
+                best = (c, [s.strip("　 ") for s in out[::-1]])
+    res = best[1] if best else P.jwrap(ImageDraw.Draw(Image.new("L", (1, 1))), text, f, maxw)
+    _WRAP[k] = res
+    return res
+
+
+def colors_for(text, accent):
+    """「」『』の中はアクセント色、数字（と単位）は赤"""
+    cols = [None] * len(text); depth = 0
+    for i, c in enumerate(text):
+        if c in "「『": depth += 1
+        if depth: cols[i] = accent
+        if c in "」』": depth = max(0, depth - 1)
+    i = 0
+    while i < len(text):
+        if text[i].isdigit():
+            j = i
+            while j < len(text) and (text[j].isdigit() or text[j] in ",.，．万億千百十"): j += 1
+            while j < len(text) and text[j] in "年月日回キロメートル％%匹人番種倍分秒時間歳円位": j += 1
+            for x in range(i, j): cols[x] = RED
+            i = j
+        else: i += 1
+    return cols
+
+
+def draw_rich(d, lines, full, f, cy0, lh, accent):
+    cols = colors_for(full, accent); pos = 0
+    for li, ln in enumerate(lines):
+        k = full.find(ln, pos); k = pos if k < 0 else k; pos = k + len(ln)
+        x = W / 2 - f.getlength(ln) / 2; y = cy0 + lh * li
+        run, rc = "", None
+        for ci, ch in enumerate(ln):
+            c = cols[k + ci] or (40, 34, 50)
+            if c != rc and run:
+                d.text((x, y), run, font=f, fill=rc, anchor="lm"); x += f.getlength(run); run = ""
+            run += ch; rc = c
+        if run: d.text((x, y), run, font=f, fill=rc, anchor="lm")
+
+
+def is_shock(who, text):
+    return who == "z" and ("！？" in text or text.startswith(("えっ", "ええっ", "えーっ")))
+
+
+def frame(sub, refs, who, text, t, big_title=None, theme=THEMES[0], tin=9.0, big=None):
+    im = bg(theme).copy().convert("RGBA"); d = ImageDraw.Draw(im)
+    header(d, sub, theme)
+    if refs: panel(im, refs, tin, theme)
     elif big_title:
-        d.text((W // 2, 330), big_title[0], font=F(FONT_K, 90), fill=(40, 34, 50), anchor="mm")
-        d.text((W // 2, 480), big_title[1], font=F(FONT_K, 140), fill=(124, 78, 178), anchor="mm", stroke_width=10, stroke_fill=(255, 255, 255))
+        z = max(0.05, ease_back(tin / 0.4))
+        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        outlined(lay, (W // 2, 330), big_title[0], 96, (40, 34, 50), inner=(255, 255, 255), outer=theme[0], w1=10, w2=20, font=FD)
+        outlined(lay, (W // 2, 500), big_title[1], 150, theme[2], inner=(40, 30, 60), outer=(255, 255, 255), w1=14, w2=30, font=FD)
+        if z < 0.999:
+            lay = lay.resize((int(W * z), int(H * z)), Image.BILINEAR); im.alpha_composite(lay, (int((W - lay.width) / 2), int((H - lay.height) / 2 - 80 * (1 - z))))
+        else: im.alpha_composite(lay)
+    if big:                                    # 大きなテロップ
+        z = ease_back(t / 0.3)
+        if z > 0.02:
+            f = FF(FD, 84)
+            while f.getlength(big) > W - 900 and f.size > 50: f = FF(FD, f.size - 6)
+            lay = Image.new("RGBA", (int(f.getlength(big)) + 120, 170), (0, 0, 0, 0))
+            outlined(lay, (lay.width // 2, 85), big, f.size, (255, 255, 255), inner=theme[0], outer=(255, 255, 255), w1=10, w2=22, font=FD)
+            lay = scaled(lay, z, False)
+            im.alpha_composite(lay, (int(W / 2 - lay.width / 2), int(190 - lay.height / 2)))
+    shock = is_shock(who, text)
     for c in ([("h" if who == "z" else "z")] + [who]):
         act = c == who
         name = "zundamon" if c == "z" else ("himari" if act else "himari_jito")
         img = tachie(name, 820 if act else 780, not act)
         bob = int(abs(np.sin(t * 8)) * 12) if act else 0
+        if act and shock and t < 0.35: bob = int(60 * np.sin(t / 0.35 * np.pi))     # びっくりして跳ねる
         x = -40 if c == "z" else W - img.width + 40
         im.paste(img, (x, H - img.height + 60 - bob), img)
     d = ImageDraw.Draw(im)
+    if shock and t < 1.6:                     # 頭の上に「！？」
+        z = ease_back(t / 0.25)
+        lay = Image.new("RGBA", (260, 200), (0, 0, 0, 0))
+        outlined(lay, (130, 100), "！？", 120, RED, inner=(255, 255, 255), outer=(40, 30, 60), w1=8, w2=16, font=FD)
+        lay = scaled(lay, z, False); im.alpha_composite(lay, (int(250 - lay.width / 2), int(330 - lay.height / 2)))
     c = CHAR[who]
-    for size in (52, 46, 40):                       # 長いせりふは文字を小さくして、全部表示する
-        f = F(FONT_K, size); lines = P.jwrap(d, text, f, 1180)
+    for size in (54, 48, 42):                       # 長いせりふは文字を小さくして、全部表示する
+        f = FF(FR, size); lines = wrap_jp(text, FR, size, 1150)
         if len(lines) <= 3: break
-    lh = int(size * 1.35)
-    h = 56 + lh * len(lines); top = H - 30 - h
+    lh = int(size * 1.42)
+    h = 50 + lh * len(lines); top = H - 30 - h
+    slide = int((1 - ease_out(t / 0.15)) * 24)
+    top += slide
     d.rounded_rectangle([340, top, W - 340, top + h], 30, fill=(255, 255, 255), outline=c["col"], width=9)
-    d.rounded_rectangle([370, top - 28, 370 + 40 + 40 * len(c["name"]), top + 24], 24, fill=c["col"])
-    d.text((390, top - 2), c["name"], font=F(FONT_B, 36), fill=(255, 255, 255), anchor="lm")
-    for i, ln in enumerate(lines): d.text((W // 2, top + 28 + lh // 2 + lh * i), ln, font=f, fill=(40, 34, 50), anchor="mm")
+    tag = FF(FPOP, 34)
+    d.rounded_rectangle([370, top - 30, 370 + 50 + tag.getlength(c["name"]), top + 24], 24, fill=c["col"])
+    d.text((395, top - 3), c["name"], font=tag, fill=(255, 255, 255), anchor="lm")
+    draw_rich(d, lines, text, f, top + 25 + lh / 2, lh, c["col"] if who == "h" else (40, 140, 30))
+    im = im.convert("RGB")
+    if shock and t < 0.4:                     # 画面がゆれる
+        a = 14 * (1 - t / 0.4); dx, dy = int(a * np.sin(t * 90)), int(a * np.cos(t * 70))
+        im = ImageChops_offset(im, dx, dy)
     return im
 
 
-def card(no, label, ref):
-    im = Image.new("RGB", (W, H), (124, 78, 178)); d = ImageDraw.Draw(im)
-    d.polygon([(0, 0), (W * 0.55, 0), (W * 0.45, H), (0, H)], fill=(96, 176, 56))
-    s = load_img(ref) if ref else None
-    if s is not None:
-        s = fit(s, 520, 520, ref.split(":")[0] in PIXEL_KINDS)
-        sh = s.split()[3].filter(ImageFilter.GaussianBlur(10))
-        shadow = Image.new("RGBA", s.size, (0, 0, 0, 0)); shadow.putalpha(sh.point(lambda v: int(v * 0.35)))
-        im.paste(shadow, (W // 2 - s.width // 2 + 10, 470 - s.height // 2 + 12), shadow)
-        im.paste(s, (W // 2 - s.width // 2, 470 - s.height // 2), s)
-    d.text((W // 2, 120), f"その{no}", font=F(FONT_K, 110), fill=(255, 236, 120), anchor="mm", stroke_width=12, stroke_fill=(40, 30, 60))
-    d.text((W // 2, 900), label, font=F(FONT_K, 96), fill=(255, 255, 255), anchor="mm", stroke_width=12, stroke_fill=(40, 30, 60))
-    return im
+def ImageChops_offset(im, dx, dy):
+    from PIL import ImageChops
+    return ImageChops.offset(im, dx, dy)
+
+
+# ---------- アイキャッチ ----------
+def eyecatch(no, label, ref, theme, dur):
+    s0 = load_img(ref) if ref else None
+    pix = bool(ref) and ref.split(":")[0] in PIXEL_KINDS
+    if s0 is not None: s0 = fit(s0, 500, 500, pix)
+    zface = face("zundamon", 420)
+    lab_f = FF(FD, 92)
+    while lab_f.getlength(label) > W - 160 and lab_f.size > 56: lab_f = FF(FD, lab_f.size - 6)
+
+    def fn(t):
+        im = Image.new("RGBA", (W, H), theme[0]); d = ImageDraw.Draw(im)
+        # 斜めの帯が流れこむ
+        p = ease_out(t / 0.35); q = ease_out((t - (dur - 0.35)) / 0.35)
+        off = -W * (1 - p) + W * 1.3 * q
+        for k, (col, wdt) in enumerate([(theme[1], 520), (theme[2], 90), ((255, 255, 255), 30)]):
+            x = off + 250 + k * 520
+            d.polygon([(x, 0), (x + wdt, 0), (x + wdt - 300, H), (x - 300, H)], fill=col)
+        for i in range(0, W + H, 90):                                   # うすい斜線
+            d.line([(i - H + (t * 120) % 90, H), (i + (t * 120) % 90, 0)], fill=tuple(min(255, c + 18) for c in theme[0]), width=6)
+        if s0 is not None:
+            z = ease_back((t - 0.25) / 0.4)
+            if z > 0.02:
+                s = scaled(s0, z, pix); y = 450 + int(10 * np.sin(t * 4))
+                with_shadow(im, s, (int(W / 2 - s.width / 2), int(y - s.height / 2)), blur=14, alpha=0.4, outline=8)
+        z = ease_back((t - 0.1) / 0.35) if t < dur - 0.3 else 1
+        if z > 0.02:
+            lay = Image.new("RGBA", (700, 220), (0, 0, 0, 0))
+            outlined(lay, (350, 110), f"その{no}", 128, theme[2], inner=(40, 30, 60), outer=(255, 255, 255), w1=12, w2=26, font=FD)
+            lay = scaled(lay, 0.6 + 0.4 * z if z < 1 else z, False)
+            im.alpha_composite(lay, (int(W / 2 - lay.width / 2), int(130 - lay.height / 2)))
+        a = ease_out((t - 0.5) / 0.3)
+        if a > 0:
+            lay = Image.new("RGBA", (W, 200), (0, 0, 0, 0))
+            outlined(lay, (W // 2, 100), label, lab_f.size, (255, 255, 255), inner=(40, 30, 60), outer=theme[0], w1=12, w2=24, font=FD)
+            im.alpha_composite(lay, (int(-60 * (1 - a)), 820))
+        fx = int(W - 330 + 360 * (1 - ease_back((t - 0.6) / 0.4)))       # ずんだもんがのぞきこむ
+        im.alpha_composite(zface, (fx, H - zface.height + 40))
+        return im.convert("RGB")
+    return fn
+
+
+# ---------- 効果音・BGM ----------
+def se(kind):
+    sr = SR
+    if kind == "pop":
+        tt = np.arange(int(0.09 * sr)) / sr; f = 700 + 900 * tt / 0.09
+        return (np.sin(2 * np.pi * np.cumsum(f) / sr) * np.exp(-tt * 40) * 0.22).astype(np.float32)
+    if kind == "whoosh":
+        n = int(0.45 * sr); rng = np.random.default_rng(1); x = rng.standard_normal(n).astype(np.float32)
+        k = 60; x = np.convolve(x, np.ones(k) / k, mode="same"); env = np.sin(np.linspace(0, np.pi, n)) ** 2
+        return (x * env * 0.9).astype(np.float32)
+    if kind == "jan":
+        tt = np.arange(int(0.7 * sr)) / sr; s = sum(np.sin(2 * np.pi * f * tt) for f in (523, 659, 784, 1047))
+        return (s * np.exp(-tt * 5) * 0.07).astype(np.float32)
+    if kind == "don":
+        tt = np.arange(int(0.3 * sr)) / sr; f = 140 * np.exp(-tt * 8) + 50
+        return (np.sin(2 * np.pi * np.cumsum(f) / sr) * np.exp(-tt * 10) * 0.45).astype(np.float32)
+    return np.zeros(1, np.float32)
+
+
+PATTERNS = [([523, 659, 784, 659, 587, 698, 880, 698], 0.30), ([392, 494, 587, 494, 440, 523, 659, 523], 0.26),
+            ([659, 784, 988, 784, 698, 880, 1047, 880], 0.34), ([440, 523, 659, 784, 698, 587, 523, 494], 0.24),
+            ([587, 740, 880, 740, 659, 784, 988, 784], 0.28), ([523, 587, 659, 784, 880, 784, 659, 587], 0.32)]
+
+
+def bgm_sections(total, sections):
+    """話題ごとに旋律とテンポを変えたBGM（同じ曲がずっと続かないように）"""
+    n = int(total * SR); out = np.zeros(n, dtype=np.float32)
+    bounds = [s for s, _ in sections] + [total]
+    for si, (start, pi) in enumerate(sections):
+        notes, step = PATTERNS[pi % len(PATTERNS)]; end = bounds[si + 1]; x = start; k = 0
+        while x < end - 0.2:
+            tt = np.arange(int(min(0.28, step) * SR)) / SR
+            s = np.sin(2 * np.pi * notes[k % len(notes)] * tt) * np.exp(-tt * 9) * 0.05
+            if k % 4 == 0:                                                  # 低音
+                s = s + np.sin(2 * np.pi * notes[0] / 4 * tt) * np.exp(-tt * 6) * 0.05
+            a = int(x * SR); b = min(n, a + len(s)); out[a:b] += s[:b - a].astype(np.float32); x += step; k += 1
+    return out
+
+
+# ---------- テンポ ----------
+def pacing(ln, nxt):
+    """せりふの速さと、次のせりふまでの間を変える"""
+    t = ln.get("say") or ln["t"]; who = ln["w"]
+    speed, inton, gap = 1.0, 1.0, 0.32
+    if who == "z":
+        if "！" in t or "？" in t: speed, inton = 1.06, 1.25
+        if len(t) <= 18: gap = 0.16
+    else:
+        if len(t) >= 50: gap = 0.42
+        if t.startswith(("実は", "ところが", "でもね", "それがね")): inton = 1.1
+    if nxt is not None and nxt["w"] == who: gap = max(gap, 0.25)
+    if t.endswith(("？", "?")): gap = min(gap, 0.22)
+    return speed, inton, gap
 
 
 # ---------- 台本 ----------
+
 def script_for(week, d):
     p = os.path.join(HERE, "scripts", "long", f"{week:04d}.json")
     if os.path.exists(p):
@@ -181,36 +490,53 @@ def script_for(week, d):
 
 def build(sc, out):
     os.makedirs("_w", exist_ok=True)
-    segs, voices = [], []
+    segs, voices, sfx, sections = [], [], [], [(0.0, 0)]
     state = dict(t=0.0, voiced=False)
 
-    def add_line(sub, refs, ln, big_title=None):
+    def add_line(sub, refs, ln, nxt, big_title=None, theme=THEMES[0], tin0=None):
         c = CHAR[ln["w"]]
         say = say_fix(ln.get("say") or P.voice_text(say_fix(ln["t"])) or ln["t"])
-        v = P.tts(say, c["sp"], c["speed"])
+        sp, inton, gap = pacing(ln, nxt)
+        v = P.tts(say, c["sp"], c["speed"] * sp, 0.0, inton)
         if v is not None: state["voiced"] = True
-        dur = (len(v) / SR + 0.35) if v is not None else max(1.8, len(say) * 0.17 + 0.35)
-        segs.append((lambda t, sub=sub, refs=refs, ln=ln: frame(sub, refs, ln["w"], ln["t"], t, big_title), dur))
-        voices.append((state["t"] + 0.1, v)); state["t"] += dur
+        dur = (len(v) / SR + gap) if v is not None else max(1.6, len(say) * 0.16 + gap)
+        base = state["tin"] if tin0 is None else tin0
+        segs.append((lambda t, sub=sub, refs=refs, ln=ln, base=base: frame(sub, refs, ln["w"], ln["t"], t, big_title, theme, base + t, ln.get("big")), dur, 2))
+        if ln.get("img"): sfx.append((state["t"], "pop"))
+        if ln.get("big"): sfx.append((state["t"], "jan"))
+        if is_shock(ln["w"], ln["t"]): sfx.append((state["t"], "don"))
+        voices.append((state["t"] + 0.08, v)); state["t"] += dur; state["tin"] = base + dur
 
     chapters = [(0.0, "オープニング")]
     bt = ("ポケモンの", "意外な裏話")
-    for ln in sc["opening"]: add_line(None, ln.get("img"), ln, bt)
+    state["tin"] = 0.0
+    sfx.append((0.0, "jan"))
+    ops = sc["opening"]
+    for i, ln in enumerate(ops):
+        add_line(None, ln.get("img"), ln, ops[i + 1] if i + 1 < len(ops) else None, bt, THEMES[0], 0.0 if ln.get("img") else None)
     for no, tp in enumerate(sc["topics"], 1):
+        theme = THEMES[no % len(THEMES)]
         chapters.append((state["t"], f"その{no} {tp['label']}"))
+        sections.append((state["t"], no))
         first_img = next((r.split("|")[0] for ln in tp["lines"] for r in ln.get("img", []) if r != "unown"), None)
-        im = card(no, tp["label"], first_img)
-        segs.append((lambda t, im=im: im, 2.0)); state["t"] += 2.0
-        refs = None
-        for ln in tp["lines"]:
-            refs = ln.get("img", refs)
-            add_line(f"その{no}　{tp['jn']}", refs, ln)
+        ed = 2.6
+        segs.append((eyecatch(no, tp["label"], first_img, theme, ed), ed, 1))
+        sfx.append((state["t"], "whoosh")); sfx.append((state["t"] + 0.3, "jan"))
+        state["t"] += ed
+        refs = None; lines = tp["lines"]
+        for i, ln in enumerate(lines):
+            if ln.get("img"): refs = ln["img"]; tin0 = 0.0
+            else: tin0 = None
+            add_line(f"その{no}　{tp['jn']}", refs, ln, lines[i + 1] if i + 1 < len(lines) else None, None, theme, tin0)
     chapters.append((state["t"], "エンディング"))
-    for ln in sc["ending"]: add_line(None, ln.get("img"), ln, bt)
-    total = sum(round(dd * FPS) / FPS for _, dd in segs)
+    sections.append((state["t"], 0))
+    eds = sc["ending"]
+    for i, ln in enumerate(eds):
+        add_line(None, ln.get("img"), ln, eds[i + 1] if i + 1 < len(eds) else None, bt, THEMES[0], 0.0 if i == 0 else None)
+    total = sum(round(dd * FPS) / FPS for _, dd, _ in segs)
     parts = []
-    for k, (fn, dur) in enumerate(segs):
-        nfr = max(1, int(round(dur * FPS))); step = 3
+    for k, (fn, dur, step) in enumerate(segs):
+        nfr = max(1, int(round(dur * FPS)))
         for i in range(0, nfr, step): fn(i / FPS).save(f"_w/s{k}_{i // step:04d}.jpg", quality=90)
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS / step), "-i", f"_w/s{k}_%04d.jpg", "-t", f"{nfr / FPS:.3f}",
                         "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-pix_fmt", "yuv420p", "-r", str(FPS), f"_w/s{k}.mp4"], check=True)
@@ -218,7 +544,10 @@ def build(sc, out):
         parts.append(f"_w/s{k}.mp4")
     open("_wlist.txt", "w").write("".join(f"file '{p}'\n" for p in parts))
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", "_wlist.txt", "-c", "copy", "_wv.mp4"], check=True)
-    mix = Z.bgm(total) * 0.6
+    mix = bgm_sections(total, sections) * 0.6
+    for t0, kind in sfx:
+        s = se(kind); a = int(t0 * SR); b = min(len(mix), a + len(s))
+        if b > a: mix[a:b] += s[:b - a]
     for t0, v in voices:
         if v is None: continue
         a = int(t0 * SR); b = min(len(mix), a + len(v)); mix[a:b] = mix[a:b] * 0.5 + v[:b - a]
@@ -231,9 +560,9 @@ def build(sc, out):
     return state["voiced"], total, chapters
 
 
-def outlined(base, xy, text, size, fill, anchor="mm", inner=(20, 14, 30), outer=(255, 255, 255), w1=14, w2=30, grad=None):
+def outlined(base, xy, text, size, fill, anchor="mm", inner=(20, 14, 30), outer=(255, 255, 255), w1=14, w2=30, grad=None, font=None):
     """太い二重縁取りの文字（外側が白、内側が黒）。grad=(上の色, 下の色) でグラデーション"""
-    f = F(FONT_K, size)
+    f = FF(font, size) if font else F(FONT_K, size)
     lay = Image.new("RGBA", base.size, (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
     d.text(xy, text, font=f, fill=outer, anchor=anchor, stroke_width=w2, stroke_fill=outer)
     d.text(xy, text, font=f, fill=inner, anchor=anchor, stroke_width=w1, stroke_fill=inner)

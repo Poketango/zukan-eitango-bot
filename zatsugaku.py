@@ -303,10 +303,10 @@ if __name__ == "__main__":
     now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=9)
     n = int(os.environ["N"]) if os.environ.get("N") else max(0, (now.date() - START).days) * SLOTS + (0 if now.hour < 14 else 1)
     # 投稿済みのネタは飛ばす（同じ種類のネタの次へ進む）
-    hist = load_hist(); used = {h["id"] for h in hist}
+    hist = load_hist(); used = {h["id"] for h in hist} | {h.get("title") for h in hist if h.get("title")}
     for _ in range(400):
         q = pick(n, d)
-        if topic_id(q) not in used: break
+        if topic_id(q) not in used and q["title"] not in used: break
         print("投稿済みなので飛ばす:", topic_id(q)); n += 4
     q["jn"] = d["names"][q["key"]]
     print(json.dumps(q, ensure_ascii=False))
@@ -315,5 +315,5 @@ if __name__ == "__main__":
     if os.environ.get("DRY_RUN") == "1": sys.exit()
     vid = upload(title, desc, "zatsugaku.mp4")
     if vid:
-        hist.append({"id": topic_id(q), "n": n, "video": vid, "date": now.strftime("%Y-%m-%d %H:%M")})
+        hist.append({"id": topic_id(q), "title": q["title"], "n": n, "video": vid, "date": now.strftime("%Y-%m-%d %H:%M")})
         json.dump(hist, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
