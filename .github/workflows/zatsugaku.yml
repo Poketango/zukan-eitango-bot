@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra ffmpeg
-      - run: pip install -q pillow numpy google-api-python-client google-auth
+      - run: pip install -q pillow numpy google-api-python-client google-auth cryptography
       - name: VOICEVOX の起動を待つ
         run: |
           for i in $(seq 1 60); do
