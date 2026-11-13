@@ -1,0 +1,27 @@
+name: set-thumbnail
+# 投稿済みの週末まとめに、台本のサムネイルを付け直す
+on:
+  workflow_dispatch:
+    inputs:
+      video_id:
+        description: "YouTubeの動画ID（例 UtN2n9MtFG4）"
+        required: true
+      week:
+        description: "台本の週番号（scripts/long/NNNN.json の番号）"
+        default: "0"
+jobs:
+  thumb:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra
+      - run: pip install -q pillow numpy google-api-python-client google-auth cryptography
+      - run: python set_thumb.py
+        env:
+          VIDEO_ID: ${{ github.event.inputs.video_id }}
+          WEEK: ${{ github.event.inputs.week }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
