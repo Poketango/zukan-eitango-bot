@@ -112,6 +112,7 @@ def tts(text, speaker, speed=1.0, pitch=0.0, intonation=1.0):
 
 def voice_text(s):
     """英単語＋（意味）の形は、日本語の意味だけ読む"""
+    s = s.replace("「！」", "びっくりマーク").replace("「？」", "はてなマーク")
     s = re.sub(r"[A-Za-z][A-Za-z' .\-]*（([^）]+)）", r"\1", s)
     s = re.sub(r"[A-Za-z][A-Za-z'\-]*", "", s)
     return re.sub(r"\s+", "", s)
