@@ -375,7 +375,7 @@ def eyecatch(no, label, ref, theme, dur):
     if s0 is not None: s0 = fit(s0, 500, 500, pix)
     zface = face("zundamon", 420)
     lab_f = FF(FD, 92)
-    while lab_f.getlength(label) > W - 160 and lab_f.size > 56: lab_f = FF(FD, lab_f.size - 6)
+    while lab_f.getlength(label) > W - 640 and lab_f.size > 48: lab_f = FF(FD, lab_f.size - 4)   # 右下のずんだもんと重ならない幅
 
     def fn(t):
         im = Image.new("RGBA", (W, H), theme[0]); d = ImageDraw.Draw(im)
@@ -401,7 +401,7 @@ def eyecatch(no, label, ref, theme, dur):
         a = ease_out((t - 0.5) / 0.3)
         if a > 0:
             lay = Image.new("RGBA", (W, 200), (0, 0, 0, 0))
-            outlined(lay, (W // 2, 100), label, lab_f.size, (255, 255, 255), inner=(40, 30, 60), outer=theme[0], w1=12, w2=24, font=FD)
+            outlined(lay, ((W - 380) // 2, 100), label, lab_f.size, (255, 255, 255), inner=(40, 30, 60), outer=theme[0], w1=12, w2=24, font=FD)
             im.alpha_composite(lay, (int(-60 * (1 - a)), 820))
         fx = int(W - 330 + 360 * (1 - ease_back((t - 0.6) / 0.4)))       # ずんだもんがのぞきこむ
         im.alpha_composite(zface, (fx, H - zface.height + 40))
