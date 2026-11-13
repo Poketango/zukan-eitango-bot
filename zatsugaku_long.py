@@ -87,18 +87,95 @@ def tachie(name, h, dim):
     return _T[k]
 
 
+CREDITS = {}      # ウィキメディア・コモンズの画像の出典（概要欄に書く）
+UA = {"User-Agent": "poke-zatsugaku-bot/1.0 (https://poketango.com; YouTube channel video maker)"}
+
+
+def commons_img(name):
+    """ウィキメディア・コモンズの画像を取ってくる（GitHub Actions 上で）。自由なライセンスのものだけ使い、出典を記録する"""
+    import urllib.request, urllib.parse, html
+    os.makedirs(os.path.join(HERE, "_cache"), exist_ok=True)
+    title = "File:" + name.replace("_", " ")
+    q = urllib.parse.urlencode(dict(action="query", titles=title, prop="imageinfo", iiprop="url|extmetadata", iiurlwidth=1400, format="json"))
+    try:
+        with urllib.request.urlopen(urllib.request.Request("https://commons.wikimedia.org/w/api.php?" + q, headers=UA), timeout=30) as r:
+            page = next(iter(json.loads(r.read().decode())["query"]["pages"].values()))
+        ii = page["imageinfo"][0]; md = ii.get("extmetadata", {})
+        lic = md.get("LicenseShortName", {}).get("value", "")
+        if not lic or "fair use" in lic.lower() or "non-free" in lic.lower():
+            print("自由なライセンスでないので使わない:", name, lic); return None
+        url = ii.get("thumburl") or ii["url"]
+        fn = os.path.join(HERE, "_cache", re.sub(r"[^A-Za-z0-9._-]", "_", name))
+        if not os.path.exists(fn):
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r: open(fn, "wb").write(r.read())
+        artist = re.sub(r"<[^>]+>", "", html.unescape(md.get("Artist", {}).get("value", ""))).strip()
+        CREDITS[name] = f"{name}（{artist + '、' if artist else ''}{lic}、ウィキメディア・コモンズ）"
+        im = Image.open(fn)
+        if im.mode in ("P", "LA", "L"): im = im.convert("RGBA")
+        im = im.convert("RGBA")
+        if im.getchannel("A").getextrema()[0] == 255:            # 写真は角を丸めて白いふちを付ける
+            r = max(8, min(im.size) // 30)
+            m = Image.new("L", im.size, 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, im.width - 1, im.height - 1], r, fill=255)
+            im.putalpha(m)
+        return im
+    except Exception as e:
+        print("コモンズの画像を取れない:", name, repr(e)); return None
+
+
+def word_card(text, sub=""):
+    """知らない固有名詞を大きな文字で見せるカード"""
+    f = FF(FD, 120)
+    while f.getlength(text) > 1000 and f.size > 50: f = FF(FD, f.size - 6)
+    w = int(f.getlength(text)) + 140; h = f.size + 120
+    im = Image.new("RGBA", (max(w, 500), h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    d.rounded_rectangle([0, 0, im.width - 1, h - 1], 40, fill=(255, 255, 255), outline=(60, 50, 80), width=8)
+    d.text((im.width / 2, h / 2), text, font=f, fill=(40, 34, 50), anchor="mm")
+    return im
+
+
+def color_card(hexcol):
+    c = tuple(int(hexcol.lstrip("#")[i:i + 2], 16) for i in (0, 2, 4))
+    im = Image.new("RGBA", (420, 420), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    d.rounded_rectangle([0, 0, 419, 419], 60, fill=c, outline=(60, 50, 80), width=10)
+    return im
+
+
+def flow_card(spec):
+    """「光>視細胞>双極細胞>脳」のような流れの図"""
+    parts = [x.strip() for x in spec.split(">") if x.strip()]
+    f = FF(FPOP, 54)
+    boxes = [int(f.getlength(t)) + 80 for t in parts]; gap = 110; h = 170
+    W2 = sum(boxes) + gap * (len(parts) - 1) + 20
+    im = Image.new("RGBA", (W2, h + 20), (0, 0, 0, 0)); d = ImageDraw.Draw(im); x = 10
+    cols = [(124, 78, 178), (40, 118, 200), (24, 140, 112), (214, 84, 60), (196, 64, 136), (84, 84, 176)]
+    for i, (t, bw) in enumerate(zip(parts, boxes)):
+        c = cols[i % len(cols)]
+        d.rounded_rectangle([x, 10, x + bw, 10 + h], 36, fill=(255, 255, 255), outline=c, width=10)
+        d.text((x + bw / 2, 10 + h / 2), t, font=f, fill=c, anchor="mm")
+        if i < len(parts) - 1:
+            ax = x + bw + 18; ay = 10 + h / 2
+            d.polygon([(ax, ay - 26), (ax + gap - 46, ay - 26), (ax + gap - 46, ay - 48), (ax + gap - 10, ay), (ax + gap - 46, ay + 48), (ax + gap - 46, ay + 26), (ax, ay + 26)], fill=(230, 60, 60))
+        x += bw + gap
+    return im
+
+
 def load_img(ref):
-    """'art:25' などから画像を読む"""
+    """'art:25' などから画像を読む。commons:ファイル名 / word:言葉 / color:#色 / flow:A>B>C も使える"""
     if ref in _IMG: return _IMG[ref]
-    kind, num = ref.split(":")
-    p = os.path.join(HERE, "assets", "img", f"{kind}_{num}.png")
+    kind, _, num = ref.partition(":")
     im = None
-    if os.path.exists(p):
-        im = Image.open(p).convert("RGBA")
-        bb = im.getbbox()
-        if bb: im = im.crop(bb)
+    if kind == "commons": im = commons_img(num)
+    elif kind == "word": im = word_card(num)
+    elif kind == "color": im = color_card(num)
+    elif kind == "flow": im = flow_card(num)
     else:
-        print("画像なし:", ref)
+        p = os.path.join(HERE, "assets", "img", f"{kind}_{num}.png")
+        if os.path.exists(p):
+            im = Image.open(p).convert("RGBA")
+            bb = im.getbbox()
+            if bb: im = im.crop(bb)
+        else:
+            print("画像なし:", ref)
     _IMG[ref] = im
     return im
 
@@ -684,6 +761,7 @@ def meta(sc, voiced, chapters):
     lines += [f"{int(t // 60)}:{int(t % 60):02d} {name}" for t, name in chapters]
     srcs = "\n".join(f"・{tp['jn']}　" + "／".join(s for s in tp.get("sources", []) if s) for tp in sc["topics"])
     credit = ("\n\n音声 VOICEVOX:ずんだもん、VOICEVOX:冥鳴ひまり" if voiced else "") + \
+        ("\n画像の出典\n" + "\n".join("・" + c for c in CREDITS.values()) if CREDITS else "") + \
         "\n立ち絵 東北ずん子・ずんだもんプロジェクト、冥鳴ひまり公式（イラスト Sameta様）"
     desc = "\n".join(lines) + f"\n\n英語版のポケモン図鑑と日本語訳 → {P.SITE}/\nポケモン図鑑で覚える英単語 → {P.SITE}/p/words.html\n無料の英単語プリント → {P.SITE}/p/print.html\n\n参考にした資料\n{srcs}{credit}\n\n" \
         "※ファンが運営する非公式のチャンネルです。\n#ポケモン #ポケモン雑学 #ずんだもん #冥鳴ひまり"
