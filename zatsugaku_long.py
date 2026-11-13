@@ -509,7 +509,7 @@ def panel(im, refs, tin, theme):
             k = min(bw / s.width, bh / s.height); a += min(k * s.width * k * s.height, bw * bh)
         return a
     L = row_layout()
-    if n <= 3:
+    if 2 <= n <= 3:
         L2 = col_layout()
         if area(L2) > area(L) * 1.15: L = L2
     for i, ((cx, cy, bw, bh, capy, capw_), (ref, s, cap)) in enumerate(zip(L, items)):
