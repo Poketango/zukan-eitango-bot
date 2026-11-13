@@ -231,23 +231,120 @@ def build(sc, out):
     return state["voiced"], total, chapters
 
 
+def outlined(base, xy, text, size, fill, anchor="mm", inner=(20, 14, 30), outer=(255, 255, 255), w1=14, w2=30, grad=None):
+    """太い二重縁取りの文字（外側が白、内側が黒）。grad=(上の色, 下の色) でグラデーション"""
+    f = F(FONT_K, size)
+    lay = Image.new("RGBA", base.size, (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    d.text(xy, text, font=f, fill=outer, anchor=anchor, stroke_width=w2, stroke_fill=outer)
+    d.text(xy, text, font=f, fill=inner, anchor=anchor, stroke_width=w1, stroke_fill=inner)
+    sh = lay.split()[3].filter(ImageFilter.GaussianBlur(10))
+    shadow = Image.new("RGBA", base.size, (0, 0, 0, 0)); shadow.putalpha(sh.point(lambda v: int(v * 0.5)))
+    base.alpha_composite(shadow, (8, 10)); base.alpha_composite(lay)
+    m = Image.new("L", base.size, 0); ImageDraw.Draw(m).text(xy, text, font=f, fill=255, anchor=anchor)
+    if grad:
+        bb = m.getbbox() or (0, 0, 1, 1)
+        g = Image.new("RGBA", base.size, grad[0] + (255,)); gd = ImageDraw.Draw(g)
+        for y in range(bb[1], bb[3] + 1):
+            r = (y - bb[1]) / max(1, bb[3] - bb[1])
+            gd.line([(0, y), (base.width, y)], fill=tuple(int(grad[0][i] * (1 - r) + grad[1][i] * r) for i in range(3)) + (255,))
+        base.paste(g, (0, 0), m)
+    else:
+        base.paste(Image.new("RGBA", base.size, fill + (255,)), (0, 0), m)
+
+
+def burst(size, c1, c2, n=28, center=None):
+    """集中線（放射状の背景）"""
+    w, h = size; cx, cy = center or (w / 2, h / 2)
+    im = Image.new("RGB", size, c1); d = ImageDraw.Draw(im)
+    R = (w + h) * 1.2
+    for i in range(n):
+        a0 = 2 * np.pi * i / n; a1 = a0 + np.pi / n
+        d.polygon([(cx, cy), (cx + R * np.cos(a0), cy + R * np.sin(a0)), (cx + R * np.cos(a1), cy + R * np.sin(a1))], fill=c2)
+    glow = Image.new("L", size, 0); ImageDraw.Draw(glow).ellipse([cx - 520, cy - 420, cx + 520, cy + 420], fill=255)
+    im = Image.composite(Image.new("RGB", size, (255, 252, 220)), im, glow.filter(ImageFilter.GaussianBlur(160)))
+    vig = Image.new("L", size, 0); ImageDraw.Draw(vig).rectangle([0, 0, w, h], fill=0)
+    y, x = np.ogrid[:h, :w]
+    r = np.sqrt(((x - w / 2) / (w * 0.7)) ** 2 + ((y - h / 2) / (h * 0.75)) ** 2)
+    a = (np.clip(r - 0.55, 0, 1) * 300).clip(0, 140).astype(np.uint8)
+    return Image.composite(Image.new("RGB", size, (60, 10, 0)), im, Image.fromarray(a))
+
+
+def face(name, h, ratio=None):
+    """立ち絵の上半身を大きく切り出し、下のほうはなめらかに消す"""
+    im = Image.open(os.path.join(HERE, "chara", name + ".png")).convert("RGBA")
+    r = ratio or (0.48 if name == "zundamon" else 0.42)
+    im = im.crop((0, 0, im.width, int(im.height * r)))
+    im = im.resize((round(im.width * h / im.height), h), Image.LANCZOS)
+    a = np.array(im.split()[3]).astype(np.float32)
+    fade = np.clip((h - np.arange(h)) / (h * 0.22), 0, 1)[:, None]
+    im.putalpha(Image.fromarray((a * fade).astype(np.uint8)))
+    return im
+
+
+def with_shadow(base, img, pos, blur=14, alpha=0.45, off=(10, 14), outline=None):
+    a = img.split()[3]
+    if outline:
+        o = a.filter(ImageFilter.MaxFilter(outline * 2 + 1))
+        ol = Image.new("RGBA", img.size, (255, 255, 255, 0)); ol.putalpha(o)
+        base.alpha_composite(ol, pos)
+    sh = Image.new("RGBA", img.size, (0, 0, 0, 0)); sh.putalpha(a.filter(ImageFilter.GaussianBlur(blur)).point(lambda v: int(v * alpha)))
+    base.alpha_composite(sh, (pos[0] + off[0], pos[1] + off[1])); base.alpha_composite(img, pos)
+
+
 def thumb(sc):
-    th = Image.new("RGB", (W, H), (124, 78, 178)); d = ImageDraw.Draw(th)
-    d.polygon([(0, 0), (W * 0.55, 0), (W * 0.45, H), (0, H)], fill=(96, 176, 56))
+    """よく見る解説動画のサムネイルの型：集中線＋主役の大きな画像＋太い二重縁取りの大文字＋キャラの顔とふきだし
+    台本の thumb: top（上の文字）, main（下の特大文字）, hero（主役の画像）, sub（比べる画像）, sub_label, bubble（ふきだし）, badge"""
     tb = sc.get("thumb") or {}
-    refs = tb.get("imgs") or [next((r.split("|")[0] for ln in tp["lines"] for r in ln.get("img", []) if r != "unown"), None) for tp in sc["topics"][:3]]
-    refs = [r for r in refs if r][:3]
-    for i, r in enumerate(refs):
-        s = load_img(r)
-        if s is None: continue
-        s = fit(s, 420, 420, r.split(":")[0] in PIXEL_KINDS)
-        cx = W // 2 + (i - (len(refs) - 1) / 2) * 400
-        th.paste(s, (int(cx - s.width / 2), 560 - s.height // 2), s)
-    d.text((W // 2, 170), tb.get("text1", "ポケモンの意外な裏話"), font=F(FONT_K, 130), fill=(255, 255, 255), anchor="mm", stroke_width=14, stroke_fill=(40, 30, 60))
-    d.text((W // 2, 920), tb.get("text2", f"{len(sc['topics'])}選"), font=F(FONT_K, 150), fill=(255, 236, 120), anchor="mm", stroke_width=16, stroke_fill=(40, 30, 60))
-    z = tachie("zundamon", 700, False); h = tachie("himari", 680, False)
-    th.paste(z, (-60, H - z.height + 90), z); th.paste(h, (W - h.width + 60, H - h.height + 90), h)
-    return th
+    top = tb.get("top") or tb.get("text1") or "ポケモンの"
+    main = tb.get("main") or tb.get("text2") or "意外な裏話"
+    hero = tb.get("hero") or (tb.get("imgs") or [None])[0]
+    sub = tb.get("sub")
+    bubble = tb.get("bubble") or "知らなかったのだ！"
+    badge = tb.get("badge") or f"ポケモン雑学 {len(sc['topics'])}選"
+    th = burst((W, H), (92, 40, 160), (124, 70, 200), n=32, center=(W * 0.47, H * 0.50)).convert("RGBA")
+    d = ImageDraw.Draw(th)
+    # 主役の画像（大きく、太い白フチ）
+    if hero:
+        s = load_img(hero)
+        if s is not None:
+            s = fit(s, 640, 600, hero.split(":")[0] in PIXEL_KINDS)
+            with_shadow(th, s, (int(W * 0.47 - s.width / 2), int(H * 0.53 - s.height / 2)), outline=14, alpha=0.6)
+    # 比べる画像（赤丸で囲んで矢印）
+    if sub:
+        s = load_img(sub)
+        if s is not None:
+            s = fit(s, 270, 270, sub.split(":")[0] in PIXEL_KINDS)
+            cx, cy, r = 250, 540, 180
+            d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(255, 255, 255), outline=(230, 20, 30), width=18)
+            th.alpha_composite(s, (cx - s.width // 2, cy - s.height // 2))
+            ax = cx + r + 10
+            d.polygon([(ax, cy - 34), (ax + 90, cy - 34), (ax + 90, cy - 85), (ax + 190, cy), (ax + 90, cy + 85), (ax + 90, cy + 34), (ax, cy + 34)],
+                      fill=(230, 20, 30), outline=(255, 255, 255), width=8)
+            tag = tb.get("sub_label", "初期")
+            d.rounded_rectangle([cx - 100, cy - r - 46, cx + 100, cy - r + 30], 20, fill=(230, 20, 30), outline=(255, 255, 255), width=6)
+            d.text((cx, cy - r - 8), tag, font=F(FONT_K, 48), fill=(255, 255, 255), anchor="mm")
+    # ずんだもん（右側）とふきだし
+    z = face("zundamon", 640)
+    zx, zy = W - z.width + 10, H - z.height - 60
+    with_shadow(th, z, (zx, zy), outline=0, alpha=0.5)
+    bx, by = W - 300, 150
+    d.rounded_rectangle([bx - 270, by - 66, bx + 270, by + 66], 60, fill=(255, 255, 255), outline=(20, 14, 30), width=8)
+    d.polygon([(bx - 20, by + 58), (bx + 40, by + 150), (bx + 60, by + 58)], fill=(255, 255, 255), outline=(20, 14, 30))
+    d.rectangle([bx - 16, by + 52, bx + 56, by + 64], fill=(255, 255, 255))
+    bs = 56
+    while F(FONT_K, bs).getlength(bubble) > 500: bs -= 4
+    d.text((bx, by), bubble, font=F(FONT_K, bs), fill=(20, 14, 30), anchor="mm")
+    # 左上のバッジ
+    d.polygon([(0, 0), (600, 0), (540, 116), (0, 116)], fill=(230, 20, 30))
+    d.text((40, 58), badge, font=F(FONT_K, 64), fill=(255, 255, 255), anchor="lm")
+    # 大きな文字（上に小さめ、下に特大）。右下は再生時間が重なるので空ける
+    ts = 112
+    while F(FONT_K, ts).getlength(top) > W * 0.52 and ts > 70: ts -= 6
+    outlined(th, (W * 0.36, 210), top, ts, (255, 255, 255), inner=(20, 14, 30), outer=(230, 20, 30), w1=12, w2=26)
+    size = 210
+    while F(FONT_K, size).getlength(main) > W * 0.74 and size > 120: size -= 10
+    outlined(th, (W * 0.39, 930), main, size, (255, 240, 0), grad=((255, 250, 130), (255, 130, 0)), w1=18, w2=36)
+    return th.convert("RGB").resize((1280, 720), Image.LANCZOS)
 
 
 def meta(sc, voiced, chapters):
