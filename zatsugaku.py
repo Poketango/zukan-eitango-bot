@@ -269,7 +269,9 @@ def meta(q, voiced):
 
 
 def upload(title, desc, mp4):
-    env = {k: os.environ.get(k.replace("YT_", "YT2_")) for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")}
+    # アプリの鍵（CLIENT_ID・SECRET）は今のチャンネルと共通。新チャンネル用に要るのは YT2_REFRESH_TOKEN だけ
+    env = {k: os.environ.get(k.replace("YT_", "YT2_")) or (os.environ.get(k) if k != "YT_REFRESH_TOKEN" else None)
+           for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")}
     if not all(env.values()): print("雑学チャンネル: 鍵（YT2_*）が未設定なのでアップロードはしない"); return
     os.environ.update({k: v for k, v in env.items()})
     P.post_youtube(title, desc, mp4)

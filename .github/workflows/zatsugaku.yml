@@ -1,5 +1,5 @@
 name: zatsugaku-shorts
-# ずんだもんと冥鳴ひまりのポケモン雑学（別チャンネル）。鍵は YT2_CLIENT_ID / YT2_CLIENT_SECRET / YT2_REFRESH_TOKEN
+# ずんだもんと冥鳴ひまりのポケモン雑学（別チャンネル @poke_zatsugaku）。アプリの鍵は共通、チャンネル用に YT2_REFRESH_TOKEN
 on:
   schedule:
     - cron: "35 23 * * *"  # 朝 8:35（日本時間）
@@ -35,8 +35,8 @@ jobs:
       - run: python zatsugaku.py
         env:
           DRY_RUN: ${{ github.event.inputs.dry_run }}
-          YT2_CLIENT_ID: ${{ secrets.YT2_CLIENT_ID }}
-          YT2_CLIENT_SECRET: ${{ secrets.YT2_CLIENT_SECRET }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT2_REFRESH_TOKEN: ${{ secrets.YT2_REFRESH_TOKEN }}
       - uses: actions/upload-artifact@v4
         if: always()
