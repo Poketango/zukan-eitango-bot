@@ -230,7 +230,16 @@
       "commons:Hong_Kong_Harbour_Night_2019-06-11.jpg|2019年の香港"
      ]
     }
-   ]
+   ],
+   "x": {
+    "head": "ピカチュウの名前が変わって、香港でデモが起きた",
+    "img": [
+     "flow:比卡超>皮卡丘",
+     "art:25"
+    ],
+    "bubble": "名前でデモ！？",
+    "post": "2016年、香港でピカチュウの漢字の名前が「比卡超」から「皮卡丘」に統一された。\n香港の広東語で読むと、ピカチュウが「ペイカーヤウ」になってしまう。\n日本の総領事館の前で抗議が起きた。\n\n知ってた？"
+   }
   },
   {
    "key": "pokemon-gene",
@@ -336,7 +345,16 @@
       "commons:West_European_Hedgehog_(Erinaceus_europaeus)1.jpg|今もそのまま"
      ]
     }
-   ]
+   ],
+   "x": {
+    "head": "「Pokemon」という名前の遺伝子があった",
+    "img": [
+     "flow:Pokemon>Zbtb7",
+     "commons:DNA_double_helix_vertikal.PNG"
+    ],
+    "bubble": "強そうなのだ",
+    "post": "2005年、アメリカのがん研究所が見つけた遺伝子の名前は「Pokemon」。\nでも、がんを進める働きだったので、ポケモンのアメリカの会社が抗議。\n今は「Zbtb7」という名前に変わっている。\n\nどっちの名前が好き？"
+   }
   },
   {
    "key": "bosnia-mine",
@@ -430,7 +448,15 @@
       "commons:Landmine_warning_sign_in_BiH.jpg|地雷の看板"
      ]
     }
-   ]
+   ],
+   "x": {
+    "head": "「地雷原でポケモンを探すな」と警告された国",
+    "img": [
+     "commons:Landmine_warning_sign_in_BiH.jpg"
+    ],
+    "bubble": "命がけなのだ",
+    "post": "2016年、ボスニア・ヘルツェゴビナで「ポケモンGOのために地雷の残る場所に入らないで」と呼びかけが出た。\n1990年代の戦争の地雷が、今も残っている国。\n\n遊ぶ場所、気をつけてる？"
+   }
   },
   {
    "key": "saudi-fatwa",
@@ -686,7 +712,16 @@
       "art:25|基地では遊ばないで"
      ]
     }
-   ]
+   ],
+   "x": {
+    "head": "ポケモンGOを世界で初めて全面禁止した国",
+    "img": [
+     "commons:Iran_(orthographic_projection).svg",
+     "art:25"
+    ],
+    "bubble": "どこの国なのだ",
+    "post": "2016年8月、ポケモンGOを国としてまるごと禁止した国が出た。\n答えはイラン。世界で初めてと報道された。\n理由は「安全上の心配」。位置情報で人が集まるのを警戒したと言われている。\n\n予想できた？"
+   }
   }
  ],
  "ending": [
