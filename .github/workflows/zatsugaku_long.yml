@@ -8,6 +8,9 @@ on:
       dry_run:
         description: "1にすると投稿せず動画だけ作る"
         default: "1"
+      week:
+        description: "回番号（空なら今日の回）。台本の確認用に先の回を作るとき"
+        default: ""
 jobs:
   post:
     runs-on: ubuntu-latest
@@ -33,6 +36,7 @@ jobs:
       - run: python zatsugaku_long.py
         env:
           DRY_RUN: ${{ github.event.inputs.dry_run }}
+          WEEK: ${{ github.event.inputs.week }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
       - uses: actions/upload-artifact@v4

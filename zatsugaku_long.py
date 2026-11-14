@@ -89,6 +89,7 @@ def tachie(name, h, dim):
 
 
 CREDITS = {}      # ウィキメディア・コモンズの画像の出典（概要欄に書く）
+SRC = {}          # 動画で使った素材のファイル → どこから取ったか（out/…_素材 に保存する）
 UA = {"User-Agent": "poke-zatsugaku-bot/1.0 (https://poketango.com; YouTube channel video maker)"}
 
 
@@ -111,6 +112,7 @@ def commons_img(name):
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r: open(fn, "wb").write(r.read())
         artist = re.sub(r"<[^>]+>", "", html.unescape(md.get("Artist", {}).get("value", ""))).strip()
         CREDITS[name] = f"{name}（{artist + '、' if artist else ''}{lic}、ウィキメディア・コモンズ）"
+        SRC[fn] = "commons_" + name + "（" + CREDITS[name] + "）"
         im = Image.open(fn)
         if im.mode in ("P", "LA", "L"): im = im.convert("RGBA")
         im = im.convert("RGBA")
@@ -473,6 +475,7 @@ def web_img(url):
         os.makedirs(os.path.dirname(fn), exist_ok=True)
         if not os.path.exists(fn):
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r: open(fn, "wb").write(r.read())
+        SRC[fn] = "web_" + url.rsplit("/", 1)[-1] + "（" + url + "）"
         im = Image.open(fn).convert("RGBA")
         if im.width < 500:                                   # 小さいゲーム画面はくっきり拡大
             k = max(1, 900 // im.width); im = im.resize((im.width * k, im.height * k), Image.NEAREST)
@@ -514,6 +517,7 @@ def _load_img(ref):
     else:
         p = os.path.join(HERE, "assets", "img", f"{kind}_{num}.png")
         if os.path.exists(p):
+            SRC[p] = f"{kind}_{num}.png（ポケモンの画像）"
             im = Image.open(p).convert("RGBA")
             bb = im.getbbox()
             if bb: im = im.crop(bb)
@@ -1189,6 +1193,23 @@ def meta(sc, voiced, chapters):
     return sc["title"][:100], desc[:4900]
 
 
+def save_materials(folder):
+    """動画で使った素材（コモンズ・ネット・ポケモンの画像）を1つのフォルダにまとめ、出典の一覧を書く"""
+    import shutil
+    os.makedirs(folder, exist_ok=True)
+    rows = []
+    for i, (path, info) in enumerate(sorted(SRC.items(), key=lambda x: x[1]), 1):
+        name = info.split("（", 1)[0]
+        ext = os.path.splitext(path)[1] or os.path.splitext(name)[1] or ".png"
+        dst = f"{i:03d}_" + re.sub(r'[\\/:*?"<>|]', "_", os.path.splitext(name)[0])[:80] + ext
+        try:
+            shutil.copy(path, os.path.join(folder, dst)); rows.append(f"{dst}\t{info}")
+        except OSError as e:
+            print("素材を保存できない:", path, e)
+    open(os.path.join(folder, "出典.txt"), "w", encoding="utf-8").write("\n".join(rows) + "\n")
+    print("素材", len(rows), "個 →", folder)
+
+
 if __name__ == "__main__":
     d = dict(names=P.get_json("pokemon_names_jp.json"), stats=P.get_json("pokedex_stats.json"),
              origins=P.get_json("name_origins.json"), back=P.get_json("backstories.json"))
@@ -1204,6 +1225,7 @@ if __name__ == "__main__":
     if os.environ.get("GITHUB_ENV"):
         open(os.environ["GITHUB_ENV"], "a").write(f"OUT_NAME={base}\n")
     voiced, total, chapters = build(sc, mp4)
+    save_materials(f"out/{base}_素材")                   # 使った素材も成果物に入れて保存する
     title, desc = meta(sc, voiced, chapters); print(title); print(desc); print("長さ", round(total), "秒")
     if os.environ.get("DRY_RUN") == "1": sys.exit()
     os.environ["THUMB"] = jpg
