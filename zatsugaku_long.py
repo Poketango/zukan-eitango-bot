@@ -1219,7 +1219,7 @@ if __name__ == "__main__":
         print(f"回番号 {week} の台本がまだ無いので、今日は投稿しません"); sys.exit()
     sc = script_for(week, d)
     day = START + datetime.timedelta(days=week)
-    base = f"ポケモン雑学_{day.isoformat()}_第{week:03d}回"          # 毎日作るので、日付と回番号で見分けられる名前にする
+    base = f"ポケモン雑学_{day.isoformat()}_第{week:03d}回_{now:%m%d-%H%M}作成"   # 日付・回番号・作成時刻で見分けられる名前にする（同じ日に何本も作ることがある）
     mp4, jpg = f"out/{base}.mp4", f"out/{base}_サムネイル.jpg"
     os.makedirs("out", exist_ok=True)
     if os.environ.get("GITHUB_ENV"):
