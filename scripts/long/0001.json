@@ -237,7 +237,7 @@
      "w": "h",
      "t": "じゃあ旅の話。赤・緑の最初の町、マサラタウン。この名前、どういう意味だと思う？",
      "img": [
-      "web:https://archives.bulbagarden.net/media/upload/c/c7/Pallet_Town_RBY.png^kanto:マサラ|マサラタウン（赤・緑）"
+      "town:masara|マサラタウン（赤・緑）"
      ]
     },
     {
@@ -265,7 +265,7 @@
      "w": "z",
      "t": "はじまりの色！　旅に出る町が真っ白って、なんだかかっこいいのだ。",
      "img": [
-      "web:https://archives.bulbagarden.net/media/upload/c/c7/Pallet_Town_RBY.png^kanto:マサラ|白くて小さなはじまりの町"
+      "town:masara|白くて小さなはじまりの町"
      ]
     },
     {
@@ -279,9 +279,9 @@
      "w": "h",
      "t": "トキワは常磐色で緑、ニビは鈍色で灰色、ハナダは縹色で青。ジムのタイプと見くらべてみて。",
      "img": [
-      "web:https://archives.bulbagarden.net/media/upload/2/2f/Viridian_City_RBY.png^kanto:トキワ|トキワシティ",
-      "web:https://archives.bulbagarden.net/media/upload/c/c2/Pewter_City_RBY.png^kanto:ニビ|ニビシティ",
-      "web:https://archives.bulbagarden.net/media/upload/0/01/Cerulean_City_RBY.png^kanto:ハナダ|ハナダシティ"
+      "town:tokiwa|トキワシティ",
+      "town:nibi|ニビシティ",
+      "town:hanada|ハナダシティ"
      ]
     },
     {
@@ -296,8 +296,8 @@
      "w": "h",
      "t": "クチバは朽葉色でオレンジがかった茶色、シオンは紫苑色で紫。お墓のタワーがある町が紫って、ちょっとこわい雰囲気でしょ。",
      "img": [
-      "web:https://archives.bulbagarden.net/media/upload/e/ed/Vermilion_City_RBY.png^kanto:クチバ|クチバシティ",
-      "web:https://archives.bulbagarden.net/media/upload/3/3b/Lavender_Town_RBY.png^kanto:シオン|シオンタウン"
+      "town:kuchiba|クチバシティ",
+      "town:shion|シオンタウン"
      ]
     },
     {
@@ -327,7 +327,7 @@
      "w": "z",
      "t": "お墓のタワーがある町に、お墓に植える花の名前…！？　ただの色の名前じゃなかったのだ。",
      "img": [
-      "web:https://archives.bulbagarden.net/media/upload/3/3b/Lavender_Town_RBY.png^kanto:シオン|シオンタウンのタワー"
+      "town:shion|シオンタウンのタワー"
      ]
     },
     {
@@ -343,14 +343,14 @@
      "w": "h",
      "t": "そしてグレンは紅蓮、燃えるような赤ね。",
      "img": [
-      "web:https://archives.bulbagarden.net/media/upload/5/5a/Cinnabar_Island_RBY.png^kanto:グレン|グレンじま"
+      "town:guren|グレンじま"
      ]
     },
     {
      "w": "z",
      "t": "グレンタウンは炎のジムなのだ。町の名前を見るだけでジムのタイプが当てられそうなのだ！",
      "img": [
-      "web:https://archives.bulbagarden.net/media/upload/5/5a/Cinnabar_Island_RBY.png^kanto:グレン|グレンじま",
+      "town:guren|グレンじま",
       "art:126|グレンジム　ブーバー"
      ]
     },

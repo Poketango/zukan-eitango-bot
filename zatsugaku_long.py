@@ -15,7 +15,7 @@ CHAR = Z.CHAR
 HERE = Z.HERE
 START = datetime.date(2026, 11, 13)    # 回番号0の日（2026-11-14 から毎日更新）
 N_TOPICS = 6
-PIXEL_KINDS = ("rb", "gold", "frlg")
+PIXEL_KINDS = ("rb", "gold", "frlg", "town")
 
 
 def say_fix(s):
@@ -533,7 +533,7 @@ def _load_img(ref):
 
 def fit(im, w, h, pixel):
     s = min(w / im.width, h / im.height)
-    if pixel and s > 1: s = max(1, int(s))           # ドット絵は整数倍でくっきり
+    if pixel and s >= 2: s = int(s)                  # ドット絵は整数倍でくっきり（2倍未満はそのまま合わせる）
     return im.resize((max(1, int(im.width * s)), max(1, int(im.height * s))), Image.NEAREST if pixel else Image.LANCZOS)
 
 
