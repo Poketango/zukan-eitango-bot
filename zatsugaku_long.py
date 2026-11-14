@@ -168,12 +168,13 @@ def _canvas(w, h):
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0)); return im, ImageDraw.Draw(im)
 
 
-def fig_eye():
+def fig_eye(mark=True):
     """目の断面図。網膜を太い赤い帯で示し、赤い丸でかこむ"""
     im, d = _canvas(1100, 620)
     cx, cy, R = 560, 320, 250
     d.ellipse([cx - R, cy - R, cx + R, cy + R], fill=(255, 250, 245), outline=(120, 110, 130), width=10)        # 白目（強膜）
-    d.arc([cx - R + 10, cy - R + 10, cx + R - 10, cy + R - 10], -75, 75, fill=(235, 70, 90), width=30)           # 網膜（奥の内側の層）
+    if mark:
+        d.arc([cx - R + 10, cy - R + 10, cx + R - 10, cy + R - 10], -75, 75, fill=(235, 70, 90), width=30)           # 網膜（奥の内側の層）
     d.chord([cx - R - 40, cy - 120, cx - R + 70, cy + 120], 90, 270, fill=(200, 230, 255), outline=(90, 140, 200), width=6)   # 角膜
     d.ellipse([cx - R + 40, cy - 95, cx - R + 120, cy + 95], fill=(255, 245, 200), outline=(200, 160, 60), width=6)         # 水晶体
     d.rectangle([cx + R - 10, cy - 30, cx + R + 150, cy + 30], fill=(250, 210, 120), outline=(190, 140, 50), width=5)      # 視神経
@@ -183,6 +184,8 @@ def fig_eye():
     d.text((cx + R + 150, cy + 80), "視神経", font=f, fill=INK, anchor="mm")
     d.polygon([(60, cy - 20), (170, cy - 20), (170, cy - 44), (230, cy), (170, cy + 44), (170, cy + 20), (60, cy + 20)], fill=(255, 210, 60))
     d.text((100, cy - 70), "光", font=FF(FPOP, 54), fill=(220, 150, 0), anchor="mm")
+    if not mark:
+        return im
     # 網膜を赤い丸でかこむ
     d.ellipse([cx + R - 190, cy - 270, cx + R + 40, cy + 270], outline=REDC, width=12)
     d.rounded_rectangle([cx + R - 160, 0, cx + R + 140, 70], 24, fill=REDC)
@@ -216,28 +219,51 @@ def fig_retina():
     return im
 
 
+def _nice_step(mx):
+    raw = mx / 4; p = 10 ** np.floor(np.log10(raw))
+    for m in (1, 2, 2.5, 5, 10):
+        if raw <= m * p: return m * p
+    return 10 * p
+
+
 def fig_bars(spec):
-    """bars:コスモッグ=0.1,カビゴン=460 → 横棒グラフ。max=100 で目盛りの最大をそろえられる"""
-    items = []; mx = None
+    """bars:コスモッグ=0.1,カビゴン=460,unit=kg → 0から始まる目盛りつきの横棒グラフ。max=100 で目盛りの最大をそろえる"""
+    items = []; mx = None; unit = ""
     for p in spec.split(","):
         k, _, v = p.partition("=")
+        k = k.strip()
+        if k == "unit": unit = v.strip(); continue
         try:
-            if k.strip() == "max": mx = float(v); continue
-            items.append((k.strip(), float(v)))
+            if k == "max": mx = float(v); continue
+            items.append((k, float(v)))
         except ValueError: pass
     if not items: return None
-    mx = mx or max(v for _, v in items) or 1
+    top = mx or max(v for _, v in items) or 1
+    step = _nice_step(top); axmax = step * np.ceil(top / step - 1e-9)
     f = FF(FPOP, 42)
     while max(f.getlength(k) for k, _ in items) > 420 and f.size > 24: f = FF(FPOP, f.size - 2)
     lw = int(max(f.getlength(k) for k, _ in items)) + 30
-    im, d = _canvas(lw + 600 + 230, 120 * len(items) + 40)
+    BW = 620; rowh = 110
+    H2 = rowh * len(items) + 110
+    im, d = _canvas(lw + BW + 260, H2)
+    ft = FF(FPOP, 28)
+    # 目盛り（0から始める）
+    t = 0.0
+    while t <= axmax + 1e-9:
+        x = lw + BW * t / axmax
+        d.line([(x, 10), (x, H2 - 70)], fill=(200, 200, 210), width=2)
+        d.text((x, H2 - 40), f"{t:g}", font=ft, fill=(90, 90, 100), anchor="mm")
+        t += step
+    if unit: d.text((lw + BW + 50, H2 - 40), f"（{unit}）", font=ft, fill=(90, 90, 100), anchor="lm")
+    d.line([(lw, 10), (lw, H2 - 70)], fill=INK, width=5)                       # 0の線
     cols = [(124, 78, 178), (40, 118, 200), (214, 84, 60), (24, 140, 112), (196, 64, 136)]
     for i, (k, v) in enumerate(items):
-        y = 30 + i * 120
-        d.text((lw - 20, y + 45), k, font=f, fill=INK, anchor="rm")
-        w = max(8, int(600 * v / mx))
-        d.rounded_rectangle([lw, y + 10, lw + w, y + 80], 18, fill=cols[i % len(cols)])
-        d.text((lw + 10 + w, y + 45), (f"{v:g}"), font=FF(FD, 46), fill=cols[i % len(cols)], anchor="lm")
+        y = 20 + i * rowh
+        d.text((lw - 20, y + 40), k, font=f, fill=INK, anchor="rm")
+        w = BW * v / axmax
+        if w >= 2:
+            d.rounded_rectangle([lw, y + 8, lw + w, y + 72], min(16, w / 2), fill=cols[i % len(cols)])
+        d.text((lw + max(w, 0) + 12, y + 40), f"{v:g}{unit}", font=FF(FD, 44), fill=cols[i % len(cols)], anchor="lm")
     return im
 
 
@@ -345,6 +371,43 @@ def fig_sign(spec):
     return im
 
 
+KANTO = {  # 町の位置（だいたいの配置）と、名前のもとになった色
+    "マサラ": ((1.6, 7.6), "#FFFFFF"), "トキワ": ((1.6, 5.0), "#007B43"), "ニビ": ((1.6, 2.0), "#727171"),
+    "ハナダ": ((6.2, 1.4), "#2792C3"), "ヤマブキ": ((6.2, 4.2), "#F8B500"), "クチバ": ((6.2, 6.8), "#917347"),
+    "シオン": ((9.0, 4.2), "#867BA9"), "タマムシ": ((4.0, 4.2), "rainbow"), "セキチク": ((4.8, 8.8), "#E5ABBE"),
+    "グレン": ((1.6, 10.2), "#E83929")}
+KANTO_ROADS = [("マサラ", "トキワ"), ("トキワ", "ニビ"), ("ニビ", "ハナダ"), ("ハナダ", "ヤマブキ"), ("ヤマブキ", "クチバ"),
+               ("ハナダ", "シオン"), ("シオン", "ヤマブキ"), ("ヤマブキ", "タマムシ"), ("シオン", "クチバ"), ("クチバ", "セキチク"),
+               ("タマムシ", "セキチク"), ("セキチク", "グレン"), ("グレン", "マサラ")]
+
+
+def fig_kanto(spec):
+    """kanto:all（全部の町に色）／kanto:トキワ,ニビ（その町だけ色をつけて赤丸）→ カントー地方の町の地図"""
+    sel = list(KANTO) if spec.strip() in ("all", "") else [x.strip() for x in spec.split(",")]
+    im, d = _canvas(1180, 760)
+    d.rounded_rectangle([0, 0, 1179, 759], 40, fill=(214, 236, 250))                      # 海
+    d.rounded_rectangle([40, 30, 1060, 590], 60, fill=(200, 232, 170), outline=(150, 190, 120), width=6)   # 陸
+    P2 = lambda k: (90 + KANTO[k][0][0] * 100, 60 + KANTO[k][0][1] * 56)
+    for a, b in KANTO_ROADS:
+        d.line([P2(a), P2(b)], fill=(240, 225, 180), width=18)
+    f = FF(FPOP, 36)
+    for k, ((_, _), col) in KANTO.items():
+        x, y = P2(k); on = k in sel
+        r = 46 if on else 26
+        if on and col == "rainbow":
+            chip = rainbow(r * 2); m = Image.new("L", (r * 2, r * 2), 0); ImageDraw.Draw(m).ellipse([0, 0, r * 2 - 1, r * 2 - 1], fill=255)
+            im.paste(chip, (int(x - r), int(y - r)), m)
+            d.ellipse([x - r, y - r, x + r, y + r], outline=(60, 50, 80), width=5)
+        else:
+            c = col if on else "#B8B8C0"
+            d.ellipse([x - r, y - r, x + r, y + r], fill=c, outline=(60, 50, 80), width=5)
+        if on and len(sel) < len(KANTO):
+            d.ellipse([x - r - 16, y - r - 16, x + r + 16, y + r + 16], outline=REDC, width=8)
+        d.text((x, y + r + 30), k, font=FF(FPOP, 50) if on else FF(FPOP, 40), fill=INK if on else (110, 110, 120), anchor="mm",
+               stroke_width=5, stroke_fill=(255, 255, 255))
+    return im
+
+
 def annotate(im, spec):
     """mark=x,y,w,h（画像に対する0〜1の位置）を赤い丸でかこむ。label=文字 で札を付ける。はみ出さないよう周りに余白を足す"""
     try:
@@ -378,13 +441,14 @@ def load_img(ref):
     spec = dict(o.split("=", 1) for o in opt.split("@") if "=" in o) if opt else {}
     kind, _, num = base.partition(":")
     im = None
-    if kind == "fig": im = {"eye": fig_eye, "retina": fig_retina}.get(num, lambda: None)()
+    if kind == "fig": im = {"eye": fig_eye, "eye0": lambda: fig_eye(False), "retina": fig_retina}.get(num, lambda: None)()
     elif kind == "bars": im = fig_bars(num)
     elif kind == "slots": im = fig_slots(num)
     elif kind == "vs": im = fig_vs(num)
     elif kind == "spell": im = fig_spell(num)
     elif kind == "palette": im = fig_palette(num)
     elif kind == "sign": im = fig_sign(num)
+    elif kind == "kanto": im = fig_kanto(num)
     elif kind == "commons": im = commons_img(num)
     elif kind == "word": im = word_card(num)
     elif kind == "color": im = color_card(num) if num != "rainbow" else rainbow(420)
@@ -439,6 +503,7 @@ def spot_bg(w, h, theme):
 
 def cap_tag(d, cx, y, w, cap, theme):
     f = FF(FPOP, 34)
+    while f.getlength(cap) + 60 > w and f.size > 22: f = FF(FPOP, f.size - 2)      # 札からはみ出さないよう文字を小さく
     tw = min(w, f.getlength(cap) + 60)
     d.rounded_rectangle([cx - tw / 2, y - 28, cx + tw / 2, y + 28], 26, fill=theme[0])
     d.text((cx, y), cap, font=f, fill=(255, 255, 255), anchor="mm")
@@ -475,7 +540,7 @@ def panel(im, refs, tin, theme):
         im.paste(spot_bg(x1 - x0, y1 - y0, theme), (x0, y0), spot_bg(x1 - x0, y1 - y0, theme))
         ih = (y1 - y0 - 50) - (70 if cap else 0)
         s = fit(s, x1 - x0 - 120, ih, False)
-        z = ease_back(tin / 0.32) * (1 + min(tin, 8) * 0.006)        # ポンと出て、ゆっくりズーム
+        z = ease_back(tin / 0.32)        # ポンと出たら、あとは動かさない
         s = scaled(s, z, False)
         cx = (x0 + x1) / 2; cy = y0 + 25 + ih / 2
         with_shadow(im, s, (int(cx - s.width / 2), int(cy - s.height / 2)), blur=12, alpha=0.3, off=(8, 10), outline=6)
@@ -492,7 +557,7 @@ def panel(im, refs, tin, theme):
         k = min(1.0, (AW - gap * (n - 1)) / (sum(asp) * ih)) if tot > AW else 1.0
         hh = ih * k; out = []; x = x0 + 30 + (AW - (sum(asp) * hh + gap * (n - 1))) / 2
         for a in asp:
-            w_ = a * hh; out.append((x + w_ / 2, y0 + 30 + ih / 2, w_, hh, y1 - 50, w_ + 40)); x += w_ + gap
+            w_ = a * hh; out.append((x + w_ / 2, y0 + 30 + ih / 2, w_, hh, y1 - 50, max(w_ + 40, (AW - gap * (n - 1)) / n))); x += w_ + gap
         return out
     def col_layout():
         rh = (AH - gap * (n - 1)) / n; out = []
@@ -517,11 +582,13 @@ def panel(im, refs, tin, theme):
         s = fit(s, bw, bh, pix)
         z = ease_back((tin - i * 0.14) / 0.3)                     # 1枚ずつ順番に出る
         if z <= 0.02: continue
-        s = scaled(s, z * (1 + 0.015 * np.sin(tin * 2 + i)), pix)
+        s = scaled(s, z, pix)          # 出たあとは動かさない
         im.paste(s, (int(cx - s.width / 2), int(cy - s.height / 2)), s)
         if cap and tin > i * 0.14 + 0.15:
             if capw_ == 300: cap_tag(d, x1 - 30 - 150, capy, 290, cap, theme)
-            else: cap_tag(d, cx, capy, max(200, capw_), cap, theme)
+            else:
+                cw_ = min(capw_, 2 * min(cx - x0 - 10, x1 - 10 - cx))     # 枠の外へ出さない
+                cap_tag(d, cx, capy, cw_, cap, theme)
 
 
 def header(d, sub, theme):
@@ -600,6 +667,9 @@ def wrap_jp(text, fname, size, maxw):
     return res
 
 
+UNIT_RE = re.compile(r"(?:キロメートル|キロ|メートル|センチ|ミリ|トン|グラム|パーセント|か所|カ所|文字|世代|市町村|時間|年代|年|月|日|回|匹|人|番|種類|種|倍|分|秒|歳|円|位|枚|機|本|話|色|kg|km|cm|m|g|t|%|％)")
+
+
 def colors_for(text, accent):
     """「」『』の中はアクセント色、数字（と単位）は赤"""
     cols = [None] * len(text); depth = 0
@@ -612,7 +682,8 @@ def colors_for(text, accent):
         if text[i].isdigit():
             j = i
             while j < len(text) and (text[j].isdigit() or text[j] in ",.，．万億千百十"): j += 1
-            while j < len(text) and text[j] in "年月日回キロメートル％%匹人番種倍分秒時間歳円位": j += 1
+            m = UNIT_RE.match(text, j)
+            if m: j = m.end()
             for x in range(i, j): cols[x] = RED
             i = j
         else: i += 1
@@ -857,9 +928,13 @@ def build(sc, out):
         state["t"] += ed
         refs = None; lines = tp["lines"]
         for i, ln in enumerate(lines):
-            if ln.get("img"): refs = ln["img"]; tin0 = 0.0
-            else: tin0 = None
-            add_line(f"その{no}　{tp['jn']}", refs, ln, lines[i + 1] if i + 1 < len(lines) else None, None, theme, tin0)
+            same = bool(ln.get("img")) and refs is not None and [r.split("|")[0] for r in ln["img"]] == [r.split("|")[0] for r in refs]
+            if ln.get("img") and not same: refs = ln["img"]; tin0 = 0.0
+            else:
+                if same: refs = ln["img"]           # 同じ画像なら出し直さず、札だけ変える
+                tin0 = None
+            ln2 = {k: v for k, v in ln.items() if not (same and k == "img")}
+            add_line(f"その{no}　{tp['jn']}", refs, ln2, lines[i + 1] if i + 1 < len(lines) else None, None, theme, tin0)
     chapters.append((state["t"], "エンディング"))
     sections.append((state["t"], 0))
     eds = sc["ending"]
