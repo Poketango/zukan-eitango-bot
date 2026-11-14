@@ -10,7 +10,7 @@ on:
         description: "1にすると投稿せず動画だけ作る"
         default: "1"
       kind:
-        description: "name（英語名クイズ）か scary（怖い図鑑）を指定すると、その型で作る（空欄なら自動）"
+        description: "name/plus/scary/real3/speed5/which/rank のどれかを指定すると、その型で作る（空欄なら順番どおり）"
         default: ""
 jobs:
   post:

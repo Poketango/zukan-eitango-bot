@@ -1,6 +1,7 @@
 # ポケモン英語図鑑 YouTubeショート自動投稿（GitHub Actions で1日3回実行）
 # 2026-11-13 てこ入れ版
-#   ・2つのエンタメ型を交互に出す
+#   ・2026-11-14 型を7つに増やした（新しい5つは formats.py）。投稿ごとに順番に回す
+#   ・もとの2つのエンタメ型
 #       英語名シルエットクイズ「この英語名、だーれだ？」（ナレーション：VOICEVOX ずんだもん）
 #       英語版の図鑑が怖すぎる（ホラー演出・ナレーション：VOICEVOX 冥鳴ひまり）
 #   ・VOICEVOX エンジン（Actions の docker で起動）が無いときは、ナレーションなしで作る
@@ -439,17 +440,30 @@ def slot_now(now):
     return 0 if now.hour < 10 else (1 if now.hour < 16 else 2)
 
 
+# 2026-11-14 型を7つに増やし、投稿ごとに順番に回す（どの型が伸びるかを比べるため）
+KINDS = ["name", "plus", "scary", "real3", "speed5", "which", "rank"]
+
 if __name__ == "__main__":
     en, jp, names, stats, origins = (get_json(n) for n in ("pokedex_en.json", "pokedex_jp.json", "pokemon_names_jp.json", "pokedex_stats.json", "name_origins.json"))
     now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=9)
     n = int(os.environ["N"]) if os.environ.get("N") else (now.date() - START).days * SLOTS_PER_DAY + slot_now(now)
-    q = pick(n, names, origins, stats, en)
-    if os.environ.get("KIND"): q = pick(n + (q["kind"] != os.environ["KIND"]), names, origins, stats, en)
-    q["jn"] = names[q["key"]]
-    if q["kind"] == "name": q["origin"] = short_origin(origins[q["key"]]["t"])
-    else: q["sent"], q["ja"] = scary_text(q["key"], en, jp)
-    print(json.dumps(q, ensure_ascii=False))
-    voiced = build(q, "short.mp4")
-    title, desc = meta(q, voiced); print(title); print(desc)
+    kind = os.environ.get("KIND") or KINDS[n % len(KINDS)]
+    m = n // len(KINDS)
+    if kind in ("name", "scary"):
+        q = pick(2 * (m + 1) + (kind == "scary"), names, origins, stats, en)   # 11-14朝・昼に出した1本目どうしを飛ばす
+        q["jn"] = names[q["key"]]
+        if q["kind"] == "name": q["origin"] = short_origin(origins[q["key"]]["t"])
+        else: q["sent"], q["ja"] = scary_text(q["key"], en, jp)
+        print(json.dumps(q, ensure_ascii=False))
+        voiced = build(q, "short.mp4")
+        title, desc = meta(q, voiced)
+    else:
+        import formats
+        D = dict(en=en, jp=jp, names=names, stats=stats, origins=origins)
+        q = formats.make(kind, m, D, "short.mp4")
+        title, desc = formats.meta(kind, q, D)
+        voice = "VOICEVOX:冥鳴ひまり" if kind == "rank" else "VOICEVOX:ずんだもん"
+        desc += f"\n\nナレーション：{voice}"
+    print(kind, n); print(title); print(desc)
     if os.environ.get("DRY_RUN") == "1": sys.exit()
     post_youtube(title, desc, "short.mp4")
