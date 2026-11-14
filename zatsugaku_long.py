@@ -930,17 +930,26 @@ PATTERNS = [([523, 659, 784, 659, 587, 698, 880, 698], 0.30), ([392, 494, 587, 4
             ([587, 740, 880, 740, 659, 784, 988, 784], 0.28), ([523, 587, 659, 784, 880, 784, 659, 587], 0.32)]
 
 
+ED_PATTERN = ([392, 523, 659, 523, 440, 523, 698, 659, 349, 440, 587, 523, 392, 494, 587, 494], 0.42)   # 終わりの曲（ゆったりした分散和音）
+
+
 def bgm_sections(total, sections):
-    """話題ごとに旋律とテンポを変えたBGM（同じ曲がずっと続かないように）"""
+    """話題ごとに旋律とテンポを変えたBGM（同じ曲がずっと続かないように）。エンディング（"ed"）は別のゆったりした曲"""
     n = int(total * SR); out = np.zeros(n, dtype=np.float32)
     bounds = [s for s, _ in sections] + [total]
     for si, (start, pi) in enumerate(sections):
-        notes, step = PATTERNS[pi % len(PATTERNS)]; end = bounds[si + 1]; x = start; k = 0
+        ed = pi == "ed"
+        notes, step = ED_PATTERN if ed else PATTERNS[pi % len(PATTERNS)]; end = bounds[si + 1]; x = start; k = 0
         while x < end - 0.2:
-            tt = np.arange(int(min(0.28, step) * SR)) / SR
-            s = np.sin(2 * np.pi * notes[k % len(notes)] * tt) * np.exp(-tt * 9) * 0.05
-            if k % 4 == 0:                                                  # 低音
-                s = s + np.sin(2 * np.pi * notes[0] / 4 * tt) * np.exp(-tt * 6) * 0.05
+            tt = np.arange(int((0.9 if ed else min(0.28, step)) * SR)) / SR
+            if ed:      # やわらかい音（倍音を少し足し、ゆっくり消える）
+                f0 = notes[k % len(notes)]
+                s = (np.sin(2 * np.pi * f0 * tt) + 0.3 * np.sin(2 * np.pi * f0 * 2 * tt)) * np.exp(-tt * 3.2) * 0.04
+                if k % 4 == 0: s = s + np.sin(2 * np.pi * notes[(k // 4 * 4) % len(notes)] / 2 * tt) * np.exp(-tt * 2.2) * 0.05
+            else:
+                s = np.sin(2 * np.pi * notes[k % len(notes)] * tt) * np.exp(-tt * 9) * 0.05
+                if k % 4 == 0:                                                  # 低音
+                    s = s + np.sin(2 * np.pi * notes[0] / 4 * tt) * np.exp(-tt * 6) * 0.05
             a = int(x * SR); b = min(n, a + len(s)); out[a:b] += s[:b - a].astype(np.float32); x += step; k += 1
     return out
 
@@ -1032,7 +1041,7 @@ def build(sc, out):
             ln2 = {k: v for k, v in ln.items() if not (same and k == "img")}
             add_line(f"その{no}　{tp['jn']}", refs, ln2, lines[i + 1] if i + 1 < len(lines) else None, None, theme, tin0)
     chapters.append((state["t"], "エンディング"))
-    sections.append((state["t"], 0))
+    sections.append((state["t"], "ed"))          # エンディングは本編と別の曲にして区切りをつける
     eds = sc["ending"]
     for i, ln in enumerate(eds):
         add_line(None, ln.get("img"), ln, eds[i + 1] if i + 1 < len(eds) else None, bt, THEMES[0], 0.0 if i == 0 else None)
@@ -1278,7 +1287,17 @@ def thumb(sc):
             if i % 3 == 0:
                 d.line([(x + 30, h - hh + 40), (x + 55, h - hh - 50)], fill=(5, 3, 8), width=16)
                 d.ellipse([x + 42, h - hh - 75, x + 72, h - hh - 45], fill=(5, 3, 8))
-    hero = tb.get("hero")
+    heroes = tb.get("heroes") or []
+    if len(heroes) >= 2:
+        for i, ref in enumerate(heroes[:2]):
+            s = load_img(ref)
+            if s is None: continue
+            s = fit(s, 230, 360, ref.split(":")[0] in PIXEL_KINDS)
+            bx = 680 + i * 330
+            _glow_paste(th, s, (int(bx + (230 - s.width) / 2), int(180 + (360 - s.height) / 2)), (120, 220, 255) if scene == "lab" else (255, 210, 0))
+        if tb.get("equal"):
+            ImageDraw.Draw(th).text((960, 360), tb["equal"], font=FMIN(90), fill=(255, 255, 255), anchor="mm", stroke_width=8, stroke_fill=(0, 0, 0))
+    hero = tb.get("hero") if len(heroes) < 2 else None
     if hero:
         s = load_img(hero)
         if s is not None:

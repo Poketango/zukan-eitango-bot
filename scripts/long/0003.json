@@ -1,11 +1,46 @@
 {
- "title": "【ポケモン雑学】ピカチュウが国のお金になった？ポケモンで育った人の脳はポケモンに反応する？意外すぎるポケモンの裏話6選【ずんだもん・冥鳴ひまり】",
+ "title": "ピカチュウは、国のお金になっていた。意外すぎるポケモンの裏話6選【ポケモン雑学】【ずんだもん・冥鳴ひまり】",
+ "summary": "南太平洋の島国が出したピカチュウの硬貨、日本だけで出た最初のスタジアム、ポケモンに反応する脳の場所など、意外すぎるポケモンの裏話を6つ紹介します。",
+ "links": [
+  [
+   "ピカチュウ",
+   "pikachu"
+  ],
+  [
+   "ニャース",
+   "meowth"
+  ],
+  [
+   "ヒトカゲ",
+   "charmander"
+  ],
+  [
+   "ゼニガメ",
+   "squirtle"
+  ],
+  [
+   "フシギダネ",
+   "bulbasaur"
+  ],
+  [
+   "ツボツボ",
+   "shuckle"
+  ],
+  [
+   "ミュウツー",
+   "mewtwo"
+  ]
+ ],
  "thumb": {
   "top": "ピカチュウが",
-  "main": "国のお金に！？",
-  "hero": "web:https://coinscatalog.net/images/big/52/dollar-2001-niue-r-76174.jpg^art:25",
-  "bubble": "1枚ほしいのだ！",
-  "badge": "ポケモン雑学 6選"
+  "lines": [
+   "国のお金に",
+   "なっていた。"
+  ],
+  "accent": 1,
+  "accent_color": "yellow",
+  "scene": "",
+  "hero": "web:https://coinscatalog.net/images/big/52/dollar-2001-niue-r-76174.jpg^art:25"
  },
  "opening": [
   {
