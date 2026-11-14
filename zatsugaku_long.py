@@ -22,6 +22,7 @@ def say_fix(s):
     """読み上げで記号やアルファベットが飛ばないようにする"""
     s = s.replace("「！」", "びっくりマーク").replace("「？」", "はてなマーク")
     s = re.sub(r"『([^』]*)』", r"\1", s)
+    s = re.sub(r"([0-9０-９一二三四五六七八九十百千]+)文字", r"\1もじ", s)      # 「十文字」を「じゅうもんじ」と読まないように
     return s
 
 
@@ -434,7 +435,33 @@ def annotate(im, spec):
     return out
 
 
+def web_img(url):
+    """web:URL → ゲームやアニメの画像などをネットから取る（取れなければ None）"""
+    import urllib.request
+    try:
+        fn = os.path.join(HERE, "_cache", "web_" + re.sub(r"[^A-Za-z0-9._-]", "_", url)[-120:])
+        os.makedirs(os.path.dirname(fn), exist_ok=True)
+        if not os.path.exists(fn):
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r: open(fn, "wb").write(r.read())
+        im = Image.open(fn).convert("RGBA")
+        if im.width < 500:                                   # 小さいゲーム画面はくっきり拡大
+            k = max(1, 900 // im.width); im = im.resize((im.width * k, im.height * k), Image.NEAREST)
+        return im
+    except Exception as e:
+        print("ネットの画像を取れない:", url, repr(e)); return None
+
+
 def load_img(ref):
+    """「A^B」と書くと、Aが取れないときはBを使う"""
+    if "^" in ref.split("@")[0]:
+        for alt in ref.split("^"):
+            im = load_img(alt)
+            if im is not None: return im
+        return None
+    return _load_img(ref)
+
+
+def _load_img(ref):
     """'art:25' などから画像を読む。commons:ファイル名 / word:言葉 / color:#色 / flow:A>B>C も使える"""
     if ref in _IMG: return _IMG[ref]
     base, _, opt = ref.partition("@")
@@ -450,6 +477,7 @@ def load_img(ref):
     elif kind == "sign": im = fig_sign(num)
     elif kind == "kanto": im = fig_kanto(num)
     elif kind == "commons": im = commons_img(num)
+    elif kind == "web": im = web_img(num)
     elif kind == "word": im = word_card(num)
     elif kind == "color": im = color_card(num) if num != "rainbow" else rainbow(420)
     elif kind == "flow": im = flow_card(num)
@@ -708,6 +736,40 @@ def is_shock(who, text):
     return who == "z" and ("！？" in text or text.startswith(("えっ", "ええっ", "えーっ")))
 
 
+# ---------- 終わりの画面（YouTube の終了画面で、動画2本とチャンネル登録のボタンを重ねる場所） ----------
+END_DUR = 20.0
+END_BOX_L = (130, 300, 770, 660)     # 左の動画枠（16:9）
+END_BOX_R = (1150, 300, 1790, 660)   # 右の動画枠
+END_SUB = (960, 470, 120)            # チャンネル登録の丸（中心x, 中心y, 半径）
+
+
+def end_card(t):
+    theme = THEMES[0]
+    im = bg(theme).copy().convert("RGBA"); d = ImageDraw.Draw(im)
+    header(d, None, theme)
+    z = max(0.05, ease_back(t / 0.4))
+    lay = Image.new("RGBA", (W, 200), (0, 0, 0, 0))
+    outlined(lay, (W // 2, 100), "最後まで見てくれてありがとう！", 84, (40, 34, 50), inner=(255, 255, 255), outer=theme[0], w1=10, w2=20, font=FD)
+    lay = scaled(lay, z, False); im.alpha_composite(lay, (int(W / 2 - lay.width / 2), int(195 - lay.height / 2)))
+    f = FF(FPOP, 40)
+    for (x0, y0, x1, y1), cap in ((END_BOX_L, "前回の動画"), (END_BOX_R, "おすすめの動画")):
+        d.rounded_rectangle([x0 - 10, y0 - 10, x1 + 10, y1 + 10], 26, fill=(255, 255, 255), outline=theme[0], width=8)
+        d.rounded_rectangle([x0, y0, x1, y1], 18, fill=(236, 232, 244))
+        cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+        d.polygon([(cx - 40, cy - 50), (cx - 40, cy + 50), (cx + 52, cy)], fill=(200, 192, 216))
+        d.rounded_rectangle([cx - 150, y1 + 26, cx + 150, y1 + 86], 30, fill=theme[0])
+        d.text((cx, y1 + 56), cap, font=f, fill=(255, 255, 255), anchor="mm")
+    sx, sy, r = END_SUB
+    d.ellipse([sx - r - 12, sy - r - 12, sx + r + 12, sy + r + 12], fill=(255, 255, 255), outline=(230, 40, 40), width=10)
+    d.rounded_rectangle([sx - 150, sy + r + 30, sx + 150, sy + r + 90], 30, fill=(230, 40, 40))
+    d.text((sx, sy + r + 60), "チャンネル登録", font=f, fill=(255, 255, 255), anchor="mm")
+    for name, x in (("zundamon", 470), ("himari", 1450)):
+        img = tachie(name, 360, False)
+        bob = int(abs(np.sin(t * 3 + (0 if name == "zundamon" else 1.5))) * 10)
+        im.paste(img, (int(x - img.width / 2), H - img.height + 40 - bob), img)
+    return im.convert("RGB")
+
+
 def frame(sub, refs, who, text, t, big_title=None, theme=THEMES[0], tin=9.0, big=None):
     im = bg(theme).copy().convert("RGBA"); d = ImageDraw.Draw(im)
     header(d, sub, theme)
@@ -859,7 +921,7 @@ def pacing(ln, nxt):
         if len(t) <= 18: gap = 0.16
     else:
         if len(t) >= 50: gap = 0.42
-        if t.startswith(("実は", "ところが", "でもね", "それがね")): inton = 1.1
+        pass                                     # ひまりは抑揚を一定にして、落ち着いた声にそろえる
     if nxt is not None and nxt["w"] == who: gap = max(gap, 0.25)
     if t.endswith(("？", "?")): gap = min(gap, 0.22)
     return speed, inton, gap
@@ -940,6 +1002,7 @@ def build(sc, out):
     eds = sc["ending"]
     for i, ln in enumerate(eds):
         add_line(None, ln.get("img"), ln, eds[i + 1] if i + 1 < len(eds) else None, bt, THEMES[0], 0.0 if i == 0 else None)
+    segs.append((end_card, END_DUR, 2)); sfx.append((state["t"], "jan")); state["t"] += END_DUR      # 終わりの画面
     total = sum(round(dd * FPS) / FPS for _, dd, _ in segs)
     parts = []
     for k, (fn, dur, step) in enumerate(segs):
@@ -963,7 +1026,7 @@ def build(sc, out):
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 30000).astype(np.int16).tobytes())
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", "_wv.mp4", "-i", "_wa.wav", "-map", "0:v", "-map", "1:a", "-c:v", "copy",
                     "-c:a", "aac", "-b:a", "160k", "-shortest", out], check=True)
-    thumb(sc).save("thumb_long.jpg", quality=92)
+    thumb(sc).save(out[:-4] + "_サムネイル.jpg", quality=92)
     return state["voiced"], total, chapters
 
 
@@ -1104,8 +1167,14 @@ if __name__ == "__main__":
     if not os.path.exists(os.path.join(HERE, "scripts", "long", f"{week:04d}.json")) and os.environ.get("ALLOW_AUTO") != "1":
         print(f"回番号 {week} の台本がまだ無いので、今日は投稿しません"); sys.exit()
     sc = script_for(week, d)
-    voiced, total, chapters = build(sc, "zatsugaku_long.mp4")
+    day = START + datetime.timedelta(days=week)
+    base = f"ポケモン雑学_{day.isoformat()}_第{week:03d}回"          # 毎日作るので、日付と回番号で見分けられる名前にする
+    mp4, jpg = f"out/{base}.mp4", f"out/{base}_サムネイル.jpg"
+    os.makedirs("out", exist_ok=True)
+    if os.environ.get("GITHUB_ENV"):
+        open(os.environ["GITHUB_ENV"], "a").write(f"OUT_NAME={base}\n")
+    voiced, total, chapters = build(sc, mp4)
     title, desc = meta(sc, voiced, chapters); print(title); print(desc); print("長さ", round(total), "秒")
     if os.environ.get("DRY_RUN") == "1": sys.exit()
-    os.environ["THUMB"] = "thumb_long.jpg"
-    Z.upload(title, desc, "zatsugaku_long.mp4")
+    os.environ["THUMB"] = jpg
+    Z.upload(title, desc, mp4)
