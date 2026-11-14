@@ -282,7 +282,7 @@ def upload(title, desc, mp4):
             pass
     if not all(env.values()): print("雑学チャンネル: まだチャンネルにつながっていないのでアップロードはしない"); return
     os.environ.update({k: v for k, v in env.items()})
-    return P.post_youtube(title, desc, mp4)
+    return P.post_youtube(title, desc, mp4, campaign="zatsugaku")
 
 
 HIST = os.path.join(HERE, "posted_zatsugaku.json")

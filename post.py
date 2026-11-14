@@ -413,7 +413,14 @@ def meta(q, voiced):
     return title[:100], desc
 
 
-def post_youtube(title, desc, mp4):
+def tag_links(text, source="youtube", medium="video", campaign="eitango"):
+    """概要欄の poketango.com のリンクに、どこから来たか分かる目印（utm）を付ける。Googleアナリティクスで流入元を見分けるため"""
+    q = f"utm_source={source}&utm_medium={medium}&utm_campaign={campaign}"
+    return re.sub(r"(https://poketango\.com[^\s?#）)]*)", lambda m: m.group(1) + "?" + q, text)
+
+
+def post_youtube(title, desc, mp4, campaign="eitango"):
+    desc = tag_links(desc, campaign=campaign)
     cid, cs, rt = (re.sub(r"\s", "", os.environ.get(x) or "") for x in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"))
     if not all((cid, cs, rt)): print("YouTube: 鍵が未設定なのでスキップ"); return
     from google.oauth2.credentials import Credentials
