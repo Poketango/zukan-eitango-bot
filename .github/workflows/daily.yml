@@ -12,6 +12,8 @@ on:
       kind:
         description: "name/plus/scary/real3/speed5/which/rank のどれかを指定すると、その型で作る（空欄なら順番どおり）"
         default: ""
+permissions:
+  contents: write
 jobs:
   post:
     runs-on: ubuntu-latest
@@ -43,6 +45,19 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      - name: 投稿の記録を保存（型ごとの再生数を比べるため）
+        if: success()
+        run: |
+          if [ -f /tmp/new_log_line ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            for i in 1 2 3; do
+              git fetch -q --depth=1 origin ${{ github.ref_name }} && git reset -q --hard FETCH_HEAD
+              cat /tmp/new_log_line >> shorts_log.jsonl
+              git add shorts_log.jsonl && git commit -qm "ショート動画の投稿記録" && git push -q && break
+              sleep 5
+            done
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:

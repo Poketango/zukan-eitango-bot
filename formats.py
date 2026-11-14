@@ -9,6 +9,7 @@ import os, sys, json, random, re, math, subprocess, wave
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageEnhance
 import post as P
+import music
 from post import F, FONT_K, FONT_B, FONT_M, VW, VH, FPS, SR, ZUNDA, HIMARI, tts, big, silhouette, ename, center, jwrap, ewrap
 
 DARK, WHITE = (31, 41, 51), (255, 255, 255)
@@ -74,30 +75,25 @@ def timer(d, cx, cy, frac, n):
 
 # ---------- 効果音 ----------
 class Mix:
-    def __init__(s, total): s.n = int(total * SR) + SR; s.a = np.zeros(s.n, np.float32)
+    def __init__(s, total, st=None):
+        s.n = int(total * SR) + SR; s.a = np.zeros(s.n, np.float32); s.total = total
+        s.st = st or music.style(0); s.fx = music.SFX_SETS[s.st["sfx"]]
 
     def put(s, t0, sig, vol=1.0):
         a = int(t0 * SR); b = min(s.n, a + len(sig))
         if 0 <= a < s.n: s.a[a:b] += sig[:b - a] * vol
 
-    @staticmethod
-    def tone(f, l, v, shape="sq"):
-        t = np.arange(int(l * SR)) / SR; ph = (t * f) % 1
-        w = np.where(ph < 0.5, 1, -1) if shape == "sq" else np.sin(2 * np.pi * ph)
-        return (w * np.minimum(1, t * 200) * np.clip(1 - t / l, 0, 1) ** 0.7 * v).astype(np.float32)
+    def music(s, t0=0.0, t1=None, vol=1.0):
+        """t0〜t1 にBGMを流す（毎回ちがう自作の曲）"""
+        t1 = t1 or s.total; seg = music.bgm(s.st, t1 - t0, vol); s.put(t0, seg[:int((t1 - t0) * SR)])
 
-    def loop(s, mel, step, vol, t0, t1, shape="sq"):
-        k = 0; x = t0
-        while x < t1 - 0.2: s.put(x, s.tone(mel[k % len(mel)], step * 0.9, vol, shape)); x += step; k += 1
-
-    def tick(s, t): s.put(t, s.tone(1046, 0.12, 0.16, "sin"))
+    def tick(s, t): s.put(t, s.fx["tick"]())
+    def ding(s, t): s.put(t, s.fx["ding"]())
+    def buzz(s, t): s.put(t, s.fx["buzz"]())
+    def pon(s, t): s.put(t, s.fx["pop"]())
     def whoosh(s, t):
         n = np.arange(int(0.35 * SR)) / SR
         s.put(t, (np.random.default_rng(int(t * 100)).standard_normal(len(n)) * np.sin(np.pi * n / 0.35) * 0.08).astype(np.float32))
-    def ding(s, t):
-        for k, fr in enumerate([784, 988, 1175, 1568, 2093]): s.put(t + k * 0.07, s.tone(fr, 0.3, 0.12))
-    def buzz(s, t): s.put(t, s.tone(110, 0.35, 0.14))
-    def pon(s, t): s.put(t, s.tone(660, 0.1, 0.12, "sin")); s.put(t + 0.06, s.tone(990, 0.12, 0.1, "sin"))
     def boom(s, t):
         n = np.arange(int(1.0 * SR)) / SR
         s.put(t, ((np.random.default_rng(3).standard_normal(len(n)) * 0.4 + np.sin(2 * np.pi * 45 * n)) * np.exp(-n * 3.5) * 0.55).astype(np.float32))
@@ -186,8 +182,8 @@ def plus_video(q, sp):
     segs = [(lambda t: plus_frame(q, sp, t, {}), t_in)]
     for c in (3, 2, 1): segs.append((lambda t, c=c: plus_frame(q, sp, 9, {"count": c, "frac": (c - t) / 3}), 1.0))
     segs.append((lambda t: plus_frame(q, sp, 9, {"reveal": t}), dur(v2, 3.6)))
-    st, total = seq(segs); m = Mix(total)
-    m.loop([523, 659, 784, 659, 587, 698, 880, 698], 0.22, 0.035, 0, st[1])
+    st, total = seq(segs); m = Mix(total, STYLE)
+    m.music(0, total)
     m.whoosh(0.3); m.whoosh(0.75)
     for c in range(3): m.tick(st[1 + c])
     m.ding(st[4]); m.voice(0.15, v1); m.voice(st[4] + 0.25, v2)
@@ -249,8 +245,8 @@ def real3_video(q, sp, D):
     segs = [(lambda t: real3_frame(q, sp, {"t": t}, D), t_in)]
     for c in (3, 2, 1): segs.append((lambda t, c=c: real3_frame(q, sp, {"count": c, "frac": (c - t) / 3}, D), 1.0))
     segs.append((lambda t: real3_frame(q, sp, {"reveal": t}, D), dur(v2, 3.4)))
-    st, total = seq(segs); m = Mix(total)
-    m.loop([659, 784, 988, 784, 659, 587, 659, 523], 0.2, 0.03, 0, st[1])
+    st, total = seq(segs); m = Mix(total, STYLE)
+    m.music(0, total)
     for i in range(3): m.pon(0.2 + i * 0.25)
     for c in range(3): m.tick(st[1 + c])
     m.ding(st[4]); m.voice(0.1, v1); m.voice(st[4] + 0.25, v2)
@@ -314,8 +310,8 @@ def speed5_video(q, sps, D):
         segs.append((lambda t, i=i: speed5_frame(q, sps, {"i": i, "rev": 1, "t": 1, "spin": t * 20}, D), 1.1))
     v9 = tts("何問わかった？コメントで教えてほしいのだ！", ZUNDA, 1.15)
     segs.append((lambda t: speed5_frame(q, sps, {"spin": t * 20}, D), dur(v9, 2.2)))
-    st, total = seq(segs); m = Mix(total)
-    m.loop([440, 523, 659, 523, 440, 392, 440, 523], 0.15, 0.03, 0, total)
+    st, total = seq(segs); m = Mix(total, STYLE)
+    m.music(0, total)
     for i in range(5):
         t0 = st[1 + 2 * i]; m.whoosh(t0)
         for s in (1.0, 1.5, 2.0): m.tick(t0 + s)
@@ -384,8 +380,8 @@ def which_video(q, sps, D):
     segs = [(lambda t: which_frame(q, sps, {}, D), dur(v1, 2.6))]
     for c in (5, 4, 3, 2, 1): segs.append((lambda t, c=c: which_frame(q, sps, {"count": c, "frac": (c - t) / 5}, D), 1.0))
     segs.append((lambda t: which_frame(q, sps, {"reveal": t}, D), dur(v2, 4.5)))
-    st, total = seq(segs); m = Mix(total)
-    m.loop([523, 587, 659, 784, 659, 587, 523, 440], 0.24, 0.03, 0, st[1])
+    st, total = seq(segs); m = Mix(total, STYLE)
+    m.music(0, total)
     for c in range(5): m.tick(st[1 + c])
     m.ding(st[6]); m.voice(0.1, v1); m.voice(st[6] + 0.25, v2)
     return segs, m, which_frame(q, sps, {"count": 5, "frac": 1}, D)
@@ -441,9 +437,10 @@ def rank_video(q, sps, D):
         v = tts(items[i][1], HIMARI, 0.85, -0.06, 0.6); vs.append(v)
         segs.append((lambda t, i=i: rank_frame(q, sps, {"i": i, "t": t}, D, items), 2.2))
         segs.append((lambda t, i=i: rank_frame(q, sps, {"i": i, "t": 2.2 + t, "ja": 1}, D, items), dur(v, 3.6)))
-    st, total = seq(segs); m = Mix(total)
-    t = np.arange(m.n) / SR
-    m.a += (0.08 * np.sin(2 * np.pi * 55 * t) + 0.05 * np.sin(2 * np.pi * 58.3 * t)).astype(np.float32)
+    st, total = seq(segs); m = Mix(total, STYLE)
+    t = np.arange(m.n) / SR; r = random.Random(STYLE["seed"]); f0 = r.choice([41.2, 46.2, 49.0, 55.0, 61.7]); beat = r.uniform(0.8, 4.0)
+    m.a += (0.08 * np.sin(2 * np.pi * f0 * t) + 0.05 * np.sin(2 * np.pi * (f0 + beat) * t) + 0.02 * np.sin(2 * np.pi * f0 * r.choice([5.04, 6.73, 7.12]) * t)
+            * (0.5 + 0.5 * np.sin(2 * np.pi * r.uniform(0.1, 0.4) * t))).astype(np.float32)
     for i in range(3):
         m.boom(st[1 + 2 * i]) if i == 2 else m.buzz(st[1 + 2 * i])
         m.voice(st[2 + 2 * i] + 0.2, vs[i])
@@ -452,9 +449,14 @@ def rank_video(q, sps, D):
 
 # =========================================================
 FORMATS = ["plus", "real3", "speed5", "which", "rank"]
+MOOD = {"plus": "quiz", "real3": "quiz", "speed5": "fast", "which": "calm", "rank": "calm"}
+STYLE = music.style(0)
 
 
-def make(fmt, n, D, out="short.mp4"):
+def make(fmt, n, D, out="short.mp4", seed=None):
+    global STYLE
+    STYLE = music.style(seed if seed is not None else n * 101 + FORMATS.index(fmt), MOOD[fmt])
+    print("BGM:", music.label(STYLE))
     if fmt == "plus":
         pool = plus_pool(D); random.Random(9).shuffle(pool); q = pool[n % len(pool)]; q["jn"] = D["names"][q["key"]]
         segs, m, th = plus_video(q, P.sprite(q["key"]))

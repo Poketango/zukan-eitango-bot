@@ -332,14 +332,15 @@ def bgm(kind, dur, marks):
         env = np.minimum(1, tt * 200) * np.clip(1 - tt / length, 0, 1) ** 0.7
         return (v * env * vol).astype(np.float32)
     if kind == "name":
-        mel = [784, 659, 784, 1047, 988, 784, 659, 587, 659, 784, 880, 784, 659, 523, 587, 659]
-        k = 0; x = 0.0
-        while x < dur - 0.3: put(x, tone(mel[k % 16], 0.18, 0.04)); x += 0.2; k += 1
-        for s in range(3): put(marks["count"] + s, tone(1046, 0.15, 0.18, "sin"))
-        for s, fr in enumerate([784, 988, 1175, 1568, 2093]): put(marks["reveal"] + s * 0.08, tone(fr, 0.3, 0.13))
+        # 2026-11-14 BGMと効果音を毎回ちがう自作のものにした（music.py）
+        import music
+        out += music.bgm(STYLE, dur)[:n]; fx = music.SFX_SETS[STYLE["sfx"]]
+        for s in range(3): put(marks["count"] + s, fx["tick"]())
+        put(marks["reveal"], fx["ding"]())
     else:
         # 低いうなり＋不協和音＋心臓の鼓動＋最後に衝撃音
-        out += (0.10 * np.sin(2 * np.pi * 55 * t) + 0.06 * np.sin(2 * np.pi * 58.3 * t) + 0.05 * np.sin(2 * np.pi * 82.4 * t * (1 + 0.002 * np.sin(t)))).astype(np.float32)
+        r = random.Random(STYLE["seed"]); f0 = r.choice([41.2, 46.2, 49.0, 55.0, 61.7]); bt = r.uniform(0.8, 4.0)
+        out += (0.10 * np.sin(2 * np.pi * f0 * t) + 0.06 * np.sin(2 * np.pi * (f0 + bt) * t) + 0.05 * np.sin(2 * np.pi * f0 * 1.5 * t * (1 + 0.002 * np.sin(t)))).astype(np.float32)
         out += (0.025 * np.sin(2 * np.pi * 466 * t + 3 * np.sin(2 * np.pi * 0.3 * t)) * (0.5 + 0.5 * np.sin(2 * np.pi * 0.17 * t))).astype(np.float32)
         hb = np.arange(int(0.12 * SR)) / SR
         beat = (np.sin(2 * np.pi * 50 * hb) * np.exp(-hb * 30) * 0.5).astype(np.float32)
@@ -442,6 +443,8 @@ def slot_now(now):
 
 # 2026-11-14 型を7つに増やし、投稿ごとに順番に回す（どの型が伸びるかを比べるため）
 KINDS = ["name", "plus", "scary", "real3", "speed5", "which", "rank"]
+STYLE = None
+LOG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "shorts_log.jsonl")   # 型の比べ用の記録
 
 if __name__ == "__main__":
     en, jp, names, stats, origins = (get_json(n) for n in ("pokedex_en.json", "pokedex_jp.json", "pokemon_names_jp.json", "pokedex_stats.json", "name_origins.json"))
@@ -449,6 +452,9 @@ if __name__ == "__main__":
     n = int(os.environ["N"]) if os.environ.get("N") else (now.date() - START).days * SLOTS_PER_DAY + slot_now(now)
     kind = os.environ.get("KIND") or KINDS[n % len(KINDS)]
     m = n // len(KINDS)
+    import music
+    STYLE = music.style(n * 101 + KINDS.index(kind), "quiz")
+    bgm_label = music.label(STYLE) if kind != "scary" else "horror/" + str(STYLE["seed"])
     if kind in ("name", "scary"):
         q = pick(2 * (m + 1) + (kind == "scary"), names, origins, stats, en)   # 11-14朝・昼に出した1本目どうしを飛ばす
         q["jn"] = names[q["key"]]
@@ -460,10 +466,16 @@ if __name__ == "__main__":
     else:
         import formats
         D = dict(en=en, jp=jp, names=names, stats=stats, origins=origins)
-        q = formats.make(kind, m, D, "short.mp4")
+        q = formats.make(kind, m, D, "short.mp4", seed=n * 101 + KINDS.index(kind))
+        bgm_label = music.label(formats.STYLE) if kind != "rank" else "horror/" + str(formats.STYLE["seed"])
         title, desc = formats.meta(kind, q, D)
         voice = "VOICEVOX:冥鳴ひまり" if kind == "rank" else "VOICEVOX:ずんだもん"
         desc += f"\n\nナレーション：{voice}"
     print(kind, n); print(title); print(desc)
+    print("BGM:", bgm_label)
     if os.environ.get("DRY_RUN") == "1": sys.exit()
-    post_youtube(title, desc, "short.mp4")
+    vid = post_youtube(title, desc, "short.mp4")
+    line = json.dumps({"date": now.strftime("%Y-%m-%d %H:%M"), "n": n, "kind": kind, "id": vid, "title": title, "bgm": bgm_label}, ensure_ascii=False) + "\n"
+    open("/tmp/new_log_line", "w", encoding="utf-8").write(line)
+    with open(LOG, "a", encoding="utf-8") as fp:
+        fp.write(json.dumps({"date": now.strftime("%Y-%m-%d %H:%M"), "n": n, "kind": kind, "id": vid, "title": title, "bgm": bgm_label}, ensure_ascii=False) + "\n")
