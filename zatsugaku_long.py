@@ -194,6 +194,36 @@ def fig_eye(mark=True):
     return im
 
 
+def fig_brain(mark=True):
+    """横から見た頭と脳。耳の後ろあたり、脳の下側のしわ（後頭側頭溝）を赤い丸でかこむ"""
+    im, d = _canvas(1100, 760)
+    skin = (255, 226, 200); line = (150, 110, 90)
+    head = [(330, 120), (420, 70), (560, 50), (700, 60), (820, 110), (900, 200), (940, 320), (930, 450), (880, 540),
+            (820, 600), (780, 700), (560, 700), (540, 640), (440, 640), (400, 600), (380, 540), (330, 520), (345, 490),
+            (310, 470), (330, 440), (300, 400), (330, 330), (310, 230)]
+    d.polygon(head, fill=skin, outline=line, width=8)
+    d.ellipse([370, 85, 900, 470], fill=(250, 196, 205), outline=(190, 110, 130), width=8)        # 大脳
+    for k in range(5):                                                                              # しわ
+        d.arc([420 + k * 70, 120 + (k % 2) * 30, 560 + k * 70, 300 + (k % 2) * 30], 200, 340, fill=(200, 120, 140), width=6)
+    d.arc([470, 230, 760, 400], 160, 330, fill=(200, 120, 140), width=7)
+    d.ellipse([780, 420, 900, 515], fill=(240, 170, 185), outline=(190, 110, 130), width=7)        # 小脳
+    d.ellipse([560, 330, 640, 450], fill=(255, 210, 180), outline=line, width=7)                   # 耳
+    d.ellipse([350, 270, 400, 300], fill=(60, 50, 60))                                              # 目
+    f = FF(FPOP, 40)
+    d.text((420, 330), "目", font=f, fill=INK, anchor="mm")
+    d.text((600, 490), "耳", font=f, fill=INK, anchor="mm")
+    d.text((850, 555), "小脳", font=FF(FPOP, 34), fill=INK, anchor="mm")
+    d.text((620, 40), "脳", font=FF(FPOP, 44), fill=(190, 80, 110), anchor="mm")
+    if not mark:
+        return im
+        d.ellipse([635, 385, 785, 495], outline=(255, 255, 255), width=20)
+    d.ellipse([635, 385, 785, 495], outline=REDC, width=12)
+    d.rounded_rectangle([700, 620, 1090, 700], 24, fill=REDC)
+    d.text((895, 660), "ポケモンに反応", font=FF(FPOP, 40), fill=(255, 255, 255), anchor="mm")
+    d.line([(730, 495), (800, 620)], fill=REDC, width=10)
+    return im
+
+
 def fig_retina():
     """網膜の中のつながり。視細胞と双極細胞のつなぎ目にピカチュリン"""
     im, d = _canvas(1200, 560)
@@ -468,7 +498,7 @@ def _load_img(ref):
     spec = dict(o.split("=", 1) for o in opt.split("@") if "=" in o) if opt else {}
     kind, _, num = base.partition(":")
     im = None
-    if kind == "fig": im = {"eye": fig_eye, "eye0": lambda: fig_eye(False), "retina": fig_retina}.get(num, lambda: None)()
+    if kind == "fig": im = {"eye": fig_eye, "eye0": lambda: fig_eye(False), "retina": fig_retina, "brain": fig_brain, "brain0": lambda: fig_brain(False)}.get(num, lambda: None)()
     elif kind == "bars": im = fig_bars(num)
     elif kind == "slots": im = fig_slots(num)
     elif kind == "vs": im = fig_vs(num)
