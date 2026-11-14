@@ -290,7 +290,7 @@
      "w": "z",
      "t": "ひとつ前があったのだ？　ぼくの知ってるスタジアムは、最初のじゃなかったのだ？",
      "img": [
-      "commons:N64-Console-Set.jpg|ひとつ前があった？"
+      "web:https://serebii.net/stadiumjp/box.jpg^commons:N64-Console-Set.jpg|日本だけの最初の1作"
      ]
     },
     {
@@ -314,7 +314,8 @@
      "w": "z",
      "t": "自分のリザードンが、テレビの中で炎をはくのだ！？　当時の子どもは大よろこびなのだ。",
      "img": [
-      "web:https://serebii.net/stadiumjp/01.jpg^commons:N64-Console-Set.jpg|テレビで3Dのバトル"
+      "web:https://upload.wikimedia.org/wikipedia/en/5/54/Pok%C3%A9mon_Stadium_Dragonite_vs._Parasect.png^commons:N64-Console-Set.jpg|64の3Dバトル",
+      "web:https://serebii.net/stadiumjp/01.jpg^rb:6|最初のスタジアム"
      ]
     },
     {
@@ -381,7 +382,7 @@
      "t": "残りのポケモンは、64DDという、ニンテンドー64の下につなぐディスクの機械を使って、あとから使えるようにする予定だったと言われているの。",
      "say": "残りのポケモンは、ろくよんディーディーという、ニンテンドーろくじゅうよんの下につなぐディスクの機械を使って、あとから使えるようにする予定だったと言われているの。",
      "img": [
-      "commons:N64-Console-Set.jpg|64DDで追加の予定"
+      "commons:64DD-Attached.png|下につなぐ64DD"
      ]
     },
     {
@@ -389,7 +390,7 @@
      "t": "でも64DDの発売が大きく遅れて、その追加のディスクは、結局発売されなかったのよ。",
      "say": "でもろくよんディーディーの発売が大きく遅れて、その追加のディスクは、結局発売されなかったのよ。",
      "img": [
-      "commons:N64-Console-Set.jpg|出なかったディスク"
+      "commons:Nintendo-64DD-Disk-Top.jpg|64DDのディスク"
      ],
      "big": "幻の追加ディスク"
     },
@@ -406,6 +407,7 @@
      "t": "そのかわり、翌年の1999年4月に『ポケモンスタジアム2』が出て、こちらは151匹全部が使えるようになったの。",
      "say": "そのかわり、翌年の千九百九十九年四月に、ポケモンスタジアムツーが出て、こちらは百五十一匹全部が使えるようになったの。",
      "img": [
+      "web:https://upload.wikimedia.org/wikipedia/en/b/ba/Pok%C3%A9mon_Stadium_2_Coverart.png^commons:N64-Console-Set.jpg|日本のスタジアム2",
       "bars:最初のスタジアム=42,スタジアム2=151,unit=匹"
      ]
     },
@@ -414,8 +416,8 @@
      "t": "そして海外で『ポケモンスタジアム』として発売されたのは、この日本の『2』のほう。海外のファンにとって、最初のスタジアムは見たことのないゲームなのよ。",
      "say": "そして海外で、ポケモンスタジアムとして発売されたのは、この日本のツーのほう。海外のファンにとって、最初のスタジアムは見たことのないゲームなのよ。",
      "img": [
-      "commons:United_States_(orthographic_projection).svg|海外ではこれが1作目",
-      "commons:N64-Console-Set.jpg"
+      "web:https://upload.wikimedia.org/wikipedia/en/7/70/Pokemonstadiumbox.jpg^commons:N64-Console-Set.jpg|海外版の1作目",
+      "web:https://upload.wikimedia.org/wikipedia/en/b/ba/Pok%C3%A9mon_Stadium_2_Coverart.png^commons:N64-Console-Set.jpg|中身は日本の2"
      ]
     },
     {
@@ -423,7 +425,7 @@
      "t": "ぼくが遊んでたのも、たぶん2のほうなのだ。名前がそっくりだから、ずっと気づかなかったのだ。",
      "say": "ぼくが遊んでたのも、たぶんツーのほうなのだ。名前がそっくりだから、ずっと気づかなかったのだ。",
      "img": [
-      "commons:N64-Console-Set.jpg|ぼくが遊んだのは2？"
+      "web:https://upload.wikimedia.org/wikipedia/en/8/81/Pokemon_Stadium_2_Graveler_vs._Ekans.png^commons:N64-Console-Set.jpg|海外版の画面"
      ]
     },
     {
@@ -724,8 +726,8 @@
      "t": "そのあと、金・銀とつながる『ポケットピカチュウカラー』という新しい型も出たの。",
      "say": "そのあと、きん・ぎんとつながる、ポケットピカチュウカラーという新しい型も出たの。",
      "img": [
-      "gold:25|金・銀のピカチュウ",
-      "commons:Pokémon_Pikachu_digital_pet.JPG^art:25"
+      "web:https://upload.wikimedia.org/wikipedia/en/4/4c/Pok%C3%A9mon_box_art_-_Gold_Version.png^gold:25|金・銀",
+      "commons:Pokémon_Pikachu_digital_pet.JPG^art:25|ポケットピカチュウ"
      ]
     },
     {
@@ -754,7 +756,8 @@
      "w": "h",
      "t": "ポケウォーカーは、ハートゴールドとソウルシルバーについてきた歩数計。こちらも、歩くとワットがたまるのよ。",
      "img": [
-      "commons:Poke-Walker.jpg^art:25|ポケウォーカー"
+      "commons:Poke-Walker.jpg^art:25|ポケウォーカー",
+      "web:https://serebii.net/heartgoldsoulsilver/pokewalker/Full_Layout.png^art:25|画面の作り"
      ]
     },
     {
@@ -976,15 +979,15 @@
      "t": "最後は映画の話。1998年に日本で公開された『劇場版ポケットモンスター ミュウツーの逆襲』は覚えてる？",
      "say": "最後は映画の話。千九百九十八年に日本で公開された、劇場版ポケットモンスター、ミュウツーの逆襲は覚えてる？",
      "img": [
-      "art:150|ミュウツー"
+      "web:https://upload.wikimedia.org/wikipedia/en/c/c9/Pokemon-mewtwo-strikes-back.jpg^art:150|ミュウツーの逆襲"
      ]
     },
     {
      "w": "z",
      "t": "もちろんなのだ。ミュウツーとミュウがぶつかり合う、泣ける映画なのだ。",
      "img": [
-      "art:150",
-      "art:151"
+      "web:https://upload.wikimedia.org/wikipedia/en/c/c9/Pokemon-mewtwo-strikes-back.jpg^art:150|海外版のポスター",
+      "art:151|ミュウ"
      ]
     },
     {
@@ -1009,8 +1012,7 @@
      "t": "結果は、公開した週末の興行収入ランキングで、全米1位。週末の3日間だけで、およそ3100万ドルを売り上げたの。",
      "say": "結果は、公開した週末の興行収入ランキングで、全米一位。週末の三日間だけで、およそ三千百万ドルを売り上げたの。",
      "img": [
-      "commons:Cinema_Seats_I_(51830912465).jpg",
-      "art:150|全米1位"
+      "web:https://upload.wikimedia.org/wikipedia/en/c/c9/Pokemon-mewtwo-strikes-back.jpg^art:150|全米1位"
      ],
      "big": "全米1位"
     },
@@ -1018,7 +1020,7 @@
      "w": "z",
      "t": "ハリウッドの映画に勝っちゃったのだ！？",
      "img": [
-      "art:150|ハリウッドに勝った"
+      "web:https://upload.wikimedia.org/wikipedia/en/c/c9/Pokemon-mewtwo-strikes-back.jpg^art:150|ハリウッドに勝った"
      ]
     },
     {
