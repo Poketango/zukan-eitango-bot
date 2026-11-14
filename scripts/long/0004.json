@@ -1,0 +1,719 @@
+{
+ "title": "ピカチュウの名前で、デモが起きた。ポケモンが起こした世界の大騒動6選【ポケモン雑学】【ずんだもん・冥鳴ひまり】",
+ "summary": "ポケモンが原因で、世界ではデモや禁止令、命にかかわる警告まで出ていました。知ると誰かに話したくなる、ポケモンが起こした世界の大騒動を6つ紹介します。",
+ "links": [
+  [
+   "ピカチュウ",
+   "pikachu"
+  ],
+  [
+   "ドガース",
+   "koffing"
+  ],
+  [
+   "ヒトカゲ",
+   "charmander"
+  ],
+  [
+   "リザード",
+   "charmeleon"
+  ],
+  [
+   "リザードン",
+   "charizard"
+  ],
+  [
+   "ソルガレオ",
+   "solgaleo"
+  ],
+  [
+   "ルナアーラ",
+   "lunala"
+  ]
+ ],
+ "thumb": {
+  "top": "ピカチュウの名前で",
+  "lines": [
+   "デモが",
+   "起きた。"
+  ],
+  "accent": 1,
+  "accent_color": "yellow",
+  "scene": "demo",
+  "hero": "art:25",
+  "placards": [
+   "名前を返せ！",
+   "変えるな！"
+  ]
+ },
+ "opening": [
+  {
+   "w": "z",
+   "t": "ひまり、ポケモンって世界中で愛されてるのだ。きらわれることなんて、ないと思うのだ。",
+   "img": [
+    "art:25|世界中で人気"
+   ]
+  },
+  {
+   "w": "h",
+   "t": "ところがね、ポケモンが原因で、デモや禁止令や、命にかかわる警告まで出た国があるのよ。",
+   "img": [
+    "commons:Hong_Kong_Night_Skyline.jpg",
+    "commons:Landmine_warning_sign_in_BiH.jpg",
+    "commons:Iran_(orthographic_projection).svg"
+   ]
+  },
+  {
+   "w": "z",
+   "t": "えっ、かわいいポケモンで、なんでそんな騒ぎになるのだ！？",
+   "img": [
+    "art:25|なんで騒ぎに？"
+   ]
+  },
+  {
+   "w": "h",
+   "t": "今日は、ポケモンが起こした世界の大騒動を6つ紹介するわ。最後まで見ていってね。",
+   "say": "今日は、ポケモンが起こした世界の大騒動を六つ紹介するわ。最後まで見ていってね。",
+   "img": [
+    "commons:Hong_Kong_Night_Skyline.jpg",
+    "commons:Landmine_warning_sign_in_BiH.jpg",
+    "commons:Iran_(orthographic_projection).svg"
+   ]
+  }
+ ],
+ "topics": [
+  {
+   "key": "hk-pikachu",
+   "jn": "ピカチュウ",
+   "label": "ピカチュウの名前で起きたデモ",
+   "sources": [
+    "BBC「Why the plan to rename Pikachu has made Hong Kong angry」2016-05-31",
+    "Quartz「Nintendo is renaming Pikachu in one of its largest markets, and Hong Kongers are not happy」2016-05-30（約20人が日本総領事館前で抗議、任天堂香港が「ピカチュウ」と読むよう手紙）",
+    "Language Log「What's in a name — Pikachu, Beikaciu, Pikaqiu?」（比卡超＝広東語でベイカーチウ、皮卡丘＝北京語でピカチウ、広東語でペイカーヤウ）",
+    "LMU Asia Media 2016-07-05（反対のFacebookグループに6000人）",
+    "Goldthread「Hong Kong protest: Why Pikachu was at the march」2019-06-12"
+   ],
+   "lines": [
+    {
+     "w": "h",
+     "t": "最初は2016年の香港。ピカチュウの名前をめぐって、デモが起きたの。",
+     "say": "最初は二千十六年の香港。ピカチュウの名前をめぐって、デモが起きたの。",
+     "img": [
+      "commons:Hong_Kong_Night_Skyline.jpg|2016年の香港"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "名前でデモ！？　ピカチュウは、世界中どこでもピカチュウじゃないのだ？",
+     "img": [
+      "art:25|名前でデモ？"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "中国語を使う地域では、ポケモンの名前は漢字で書かれているのよ。",
+     "img": [
+      "art:25|中国語では漢字"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "香港では長いあいだ、ピカチュウを「比卡超」と書いていたの。比べるの比、カードの卡、超えるの超ね。",
+     "img": [
+      "word:比卡超"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "なんて読むのだ？",
+     "img": [
+      "word:比卡超"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "香港の人が話す広東語、つまり香港などで使われる中国語の方言で読むと、ベイカーチウ。ピカチュウにかなり近い音なのよ。",
+     "img": [
+      "commons:Hong_Kong_on_the_globe_(Hong_Kong_centered_with_inset).svg|香港の言葉は広東語"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "たしかに、ピカチュウっぽいのだ。",
+     "img": [
+      "word:比卡超"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "ところが2016年、サン・ムーンが中国語に対応したとき、名前が「皮卡丘」に統一されたの。",
+     "say": "ところが二千十六年、サン・ムーンが中国語に対応したとき、名前が皮卡丘に統一されたの。",
+     "img": [
+      "art:791",
+      "art:792",
+      "flow:比卡超>皮卡丘"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "皮卡丘は、中国でいちばん広く話される北京語で読むとピカチウ。でも広東語で読むと、ペイカーヤウになってしまうのよ。",
+     "img": [
+      "flow:皮卡丘>北京語 ピカチウ",
+      "flow:皮卡丘>広東語 ペイカーヤウ"
+     ],
+     "big": "ペイカーヤウ"
+    },
+    {
+     "w": "z",
+     "t": "ペイカーヤウ……もう別のポケモンなのだ。",
+     "img": [
+      "art:25|ペイカーヤウ？"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "香港の人たちは、自分たちの言葉を軽く見られたと感じたのね。20人ほどが、日本の総領事館の前で抗議したの。",
+     "say": "香港の人たちは、自分たちの言葉を軽く見られたと感じたのね。二十人ほどが、日本の総領事館の前で抗議したの。",
+     "img": [
+      "commons:HK_中環_Central_交易廣場_Exchange_Square_lift_lobby_sign_Consulate-General_of_Japan_December_2019_SS2.jpg|日本の総領事館"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "総領事館ってなんなのだ？",
+     "img": [
+      "commons:HK_中環_Central_交易廣場_Exchange_Square_lift_lobby_sign_Consulate-General_of_Japan_December_2019_SS2.jpg|総領事館"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "外国にある、日本の役所のことよ。そこに住む日本人を助けたり、手続きをしたりする場所なの。",
+     "img": [
+      "commons:HK_中環_Central_交易廣場_Exchange_Square_lift_lobby_sign_Consulate-General_of_Japan_December_2019_SS2.jpg|外国にある日本の役所"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "ネットでも反対のグループができて、6000人ほどが集まったそうよ。",
+     "say": "ネットでも反対のグループができて、六千人ほどが集まったそうよ。",
+     "img": [
+      "bars:総領事館の前=20,ネットのグループ=6000,unit=人"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "任天堂は、どうしたのだ？",
+     "img": [
+      "art:25|任天堂の返事は？"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "香港の任天堂は、字は皮卡丘でも、ピカチュウと読んでくださいという手紙を出したの。",
+     "img": [
+      "word:皮卡丘",
+      "art:25|ピカチュウと読んで"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "それなら最初から、比卡超のままでよかったのだ……。",
+     "img": [
+      "word:比卡超"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "しかもピカチュウは、そのあと香港の抗議の場でたびたび見かける存在になって、2019年の大きなデモでもピカチュウの看板が掲げられたのよ。",
+     "say": "しかもピカチュウは、そのあと香港の抗議の場でたびたび見かける存在になって、二千十九年の大きなデモでもピカチュウの看板が掲げられたのよ。",
+     "img": [
+      "commons:Hong_Kong_Harbour_Night_2019-06-11.jpg|2019年の香港"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "pokemon-gene",
+   "jn": "ポケモン遺伝子",
+   "label": "ポケモンの会社に名前を変えられた遺伝子",
+   "sources": [
+    "Nature 438, 897（2005）「Pokémon blocks gene name」",
+    "inside-games 2005-12-21「ポケモンUSAの抗議で癌を引き起こす遺伝子『POKEMON』が変更に」",
+    "Maeda et al., Nature 433, 278–285（2005）",
+    "Wikipedia「Zbtb7」"
+   ],
+   "lines": [
+    {
+     "w": "z",
+     "t": "次はどんな騒ぎなのだ？",
+     "img": [
+      "commons:DNA_double_helix_vertikal.PNG"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "2005年、アメリカのがん研究所が、新しく調べた遺伝子に「Pokemon」と名前をつけたの。",
+     "say": "二千五年、アメリカのがん研究所が、新しく調べた遺伝子にポケモンと名前をつけたの。",
+     "img": [
+      "commons:DNA_double_helix_vertikal.PNG|遺伝子の名前がPokemon"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "ポケモン遺伝子！　強そうなのだ。",
+     "img": [
+      "commons:DNA_double_helix_vertikal.PNG|ポケモン遺伝子"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "POKという仲間の遺伝子の、英語の正式な名前の頭文字をつないだら、たまたまポケモンになった、ということになっているの。",
+     "img": [
+      "word:POKEMON"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "たまたま……ちょっと強引で面白いのだ。",
+     "img": [
+      "word:POKEMON"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "問題は、この遺伝子が、がんを進める働きをするものだったことよ。",
+     "img": [
+      "commons:Cell_Division;_Normal_versus_Cancerous.png|がんを進める遺伝子"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "論文が出ると、ネットには、ポケモンががんを起こす、という見出しまで出てしまったの。",
+     "img": [
+      "commons:Cell_Division;_Normal_versus_Cancerous.png|ポケモンががん？"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "それは、ポケモンの会社が怒るのだ。",
+     "img": [
+      "art:25|会社は？"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "そう。ポケモンのアメリカの会社が、名前をやめないなら訴えると伝えたの。",
+     "img": [
+      "commons:DNA_double_helix_vertikal.PNG|やめないなら訴える"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "それで研究所は、遺伝子の名前を、Zbtb7という番号のような名前に変えたのよ。",
+     "say": "それで研究所は、遺伝子の名前を、ゼットビーティービーセブンという番号のような名前に変えたのよ。",
+     "img": [
+      "flow:Pokemon>Zbtb7"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "ポケモンから、ゼットビーティービーセブン……一気に味気ないのだ。",
+     "img": [
+      "flow:Pokemon>Zbtb7"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "ちなみに、ゲームのソニックからとった、ソニック・ヘッジホッグという遺伝子もあるけど、こちらは今もその名前のままなのよ。",
+     "img": [
+      "commons:West_European_Hedgehog_(Erinaceus_europaeus)1.jpg|ヘッジホッグ＝ハリネズミ"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "ハリネズミのほうは、許してもらえてるのだ。",
+     "img": [
+      "commons:West_European_Hedgehog_(Erinaceus_europaeus)1.jpg|今もそのまま"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "bosnia-mine",
+   "jn": "ポケモンGO",
+   "label": "地雷原でポケモンを探すな",
+   "sources": [
+    "AFP／phys.org「Bosnia's Pokemon Go players urged to avoid wartime mine fields」2016-07-19",
+    "CNN／Daily Beast 2016-07-20（Posavina bez minaの呼びかけ）",
+    "euronews 2016-07-20（戦後に地雷で約600人が死亡）",
+    "Complex 2016-07（負傷約1100人）"
+   ],
+   "lines": [
+    {
+     "w": "z",
+     "t": "3つ目はなんなのだ？",
+     "say": "三つ目はなんなのだ？",
+     "img": [
+      "commons:Bosnia_and_Herzegovina_in_Europe_(-rivers_-mini_map).svg"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "ヨーロッパの、ボスニア・ヘルツェゴビナという国で出た警告よ。",
+     "img": [
+      "commons:Bosnia_and_Herzegovina_in_Europe_(-rivers_-mini_map).svg|ボスニア・ヘルツェゴビナ"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "この国では1990年代に戦争があって、今も地面に地雷が残っている場所があるの。",
+     "say": "この国では千九百九十年代に戦争があって、今も地面に地雷が残っている場所があるの。",
+     "img": [
+      "commons:Landmine_warning_sign_in_BiH.jpg|地雷の警告の看板"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "地雷……ほんとうに危ないやつなのだ。",
+     "img": [
+      "commons:Landmine_warning_sign_in_BiH.jpg"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "戦争が終わってから、地雷で約600人が亡くなり、約1100人がけがをしたといわれているわ。",
+     "say": "戦争が終わってから、地雷でやく六百人が亡くなり、やく千百人がけがをしたといわれているわ。",
+     "img": [
+      "bars:亡くなった人=600,けがをした人=1100,unit=人"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "そこへ2016年、ポケモンGOがやってきたの。",
+     "say": "そこへ二千十六年、ポケモンGOがやってきたの。",
+     "img": [
+      "commons:Pokemon_Go_Setagaya_Park_Tokio.jpg|2016年 ポケモンGO"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "まさか……。",
+     "img": [
+      "commons:Pokemon_Go_Setagaya_Park_Tokio.jpg"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "ポケモンを探して、地雷があるかもしれない森に入る人が出てきたの。",
+     "img": [
+      "commons:Landmine_warning_sign_in_BiH.jpg|地雷のある森へ"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "それで、地雷を取り除く活動をしている団体が、ポケモンのために危ない場所に入らないで、と呼びかけたのよ。",
+     "img": [
+      "commons:Landmine_warning_sign_in_BiH.jpg|入らないで"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "命がけのポケモン探しなんて、だめなのだ……。",
+     "img": [
+      "commons:Landmine_warning_sign_in_BiH.jpg"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "地雷の看板を守って、知らない場所には入らないで、とも書かれていたわ。",
+     "img": [
+      "commons:Landmine_warning_sign_in_BiH.jpg|地雷の看板"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "saudi-fatwa",
+   "jn": "ポケモンカード",
+   "label": "ポケモンを禁じた宗教の判断",
+   "sources": [
+    "ABC News「Saudi Issues 'Fatwa' Against Pokemon」2001-03-26",
+    "AP／Courthouse News 2016-07（賭け事・進化論などの理由）",
+    "Gulf News 2016-07（サウジアラビアの学者評議会は新しいファトワを否定）",
+    "Bulbapedia「Pokémon in the Arab world」（店頭からカードが消えた）"
+   ],
+   "lines": [
+    {
+     "w": "z",
+     "t": "4つ目なのだ！",
+     "say": "四つ目なのだ！",
+     "img": [
+      "commons:Saudi_Arabia_(orthographic_projection).svg"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "2001年、中東のサウジアラビアで、ポケモンを禁じる宗教の判断が出されたの。",
+     "say": "二千一年、中東のサウジアラビアで、ポケモンを禁じる宗教の判断が出されたの。",
+     "img": [
+      "commons:Saudi_Arabia_(orthographic_projection).svg|サウジアラビア"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "宗教の判断って、なんなのだ？",
+     "img": [
+      "commons:Saudi_Arabia_(orthographic_projection).svg"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "イスラム教のえらい学者が、これは教えに合うかどうかを示すものよ。ファトワと呼ばれているわ。",
+     "img": [
+      "commons:Saudi_Arabia_(orthographic_projection).svg|ファトワ"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "ポケモンの、どこがだめだったのだ？",
+     "img": [
+      "art:25|どこがだめ？"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "ひとつは、カードゲームが賭け事に近いということ。",
+     "img": [
+      "commons:Gare_Centrale_distributeur_cartes_pokémon.jpg|カードが賭け事に近い？"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "もうひとつは、ポケモンが進化することが、宗教の考え方と合わない進化論にもとづいている、という点よ。",
+     "img": [
+      "art:4",
+      "web:https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png^art:4",
+      "art:6"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "進化がだめなんて、ポケモンの根っこなのだ！",
+     "img": [
+      "art:4",
+      "art:6"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "この判断で、サウジアラビアでは、お店からポケモンのカードが消えたそうよ。",
+     "img": [
+      "commons:Gare_Centrale_distributeur_cartes_pokémon.jpg|お店から消えた"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "2016年にポケモンGOが出たときは、この判断がまた出されたと報道されたけど、学者の会議は、新しく出したものではないと否定したわ。",
+     "say": "二千十六年にポケモンGOが出たときは、この判断がまた出されたと報道されたけど、学者の会議は、新しく出したものではないと否定したわ。",
+     "img": [
+      "flow:また出された？>否定"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "holocaust-museum",
+   "jn": "ドガース",
+   "label": "博物館の「ここでは遊ばないで」",
+   "sources": [
+    "NPR「Holocaust Museum, Arlington National Cemetery Plead: No Pokémon」2016-07-12",
+    "TIME「Holocaust Museum Asks Guests to Stop Playing Pokémon Go There」",
+    "Washington Free Beacon 2016-07（館内でドガースが出たという報道）"
+   ],
+   "lines": [
+    {
+     "w": "z",
+     "t": "5つ目なのだ。",
+     "say": "五つ目なのだ。",
+     "img": [
+      "commons:United_States_Holocaust_Memorial_Museum.jpeg"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "アメリカの首都ワシントンにある、ホロコースト記念博物館の話よ。",
+     "img": [
+      "commons:United_States_Holocaust_Memorial_Museum.jpeg|ホロコースト記念博物館"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "ホロコーストって、聞いたことはあるけど……。",
+     "img": [
+      "commons:United_States_Holocaust_Memorial_Museum.jpeg"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "第二次世界大戦のとき、ナチス・ドイツがユダヤ人などをたくさん殺した出来事よ。その犠牲になった人たちを悼む博物館なの。",
+     "img": [
+      "commons:United_States_Holocaust_Memorial_Museum.jpeg|犠牲者を悼む博物館"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "ところがポケモンGOでは、この博物館がポケストップ、つまり道具がもらえる場所になっていたの。",
+     "img": [
+      "commons:Pokemon_Go_Setagaya_Park_Tokio.jpg|ポケストップ＝道具がもらえる場所"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "それじゃあ、遊びに来る人が出ちゃうのだ……。",
+     "img": [
+      "commons:Pokemon_Go_Setagaya_Park_Tokio.jpg"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "館内でポケモンを探す人が出てきて、博物館は、ここで遊ぶのはふさわしくないと呼びかけたの。",
+     "img": [
+      "commons:United_States_Holocaust_Memorial_Museum.jpeg|ここで遊ばないで"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "しかも館内に、毒ガスを出すポケモンのドガースが出た、と報道されたのよ。",
+     "img": [
+      "web:https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png^art:25|ドガース"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "よりによって、そのポケモンなのだ……。",
+     "img": [
+      "web:https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png^art:25"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "博物館は、ゲームから外してもらえるよう動いたそうよ。戦没者が眠るアーリントン国立墓地も、同じお願いを出したわ。",
+     "img": [
+      "commons:Civil_War_Unknowns_Memorial_-_looking_E_-_Arlington_National_Cemetery_-_2011.JPG|アーリントン国立墓地"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "iran-ban",
+   "jn": "ポケモンGO",
+   "label": "ポケモンGOを初めて禁止した国",
+   "sources": [
+    "Engadget「Iran bans 'Pokémon Go' over security jitters」2016-08-06",
+    "AP／phys.org「Iran bans 'Pokemon Go' over security concerns」2016-08",
+    "The Hacker News 2016-08（サーバーの国内設置などの条件）",
+    "The Christian Science Monitor 2016-08-07（イスラエル軍が基地でのプレイを制限）"
+   ],
+   "lines": [
+    {
+     "w": "z",
+     "t": "最後なのだ！",
+     "img": [
+      "art:25|最後の騒ぎ"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "2016年の8月、ポケモンGOを、国としてまるごと禁止した国が出てきたの。どこだと思う？",
+     "say": "二千十六年の八月、ポケモンGOを、国としてまるごと禁止した国が出てきたの。どこだと思う？",
+     "img": [
+      "art:25|どこの国？"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "うーん……さっきのサウジアラビアなのだ？",
+     "img": [
+      "art:25|サウジアラビア？"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "サウジアラビアではないの。正解は、イランよ。",
+     "img": [
+      "commons:Iran_(orthographic_projection).svg|正解はイラン"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "ポケモンGOを全国で禁止したのは、イランが世界で初めてと報道されたわ。",
+     "img": [
+      "commons:Tehran_in_a_clean_day.jpg|イランの首都テヘラン"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "どうして禁止したのだ？",
+     "img": [
+      "commons:Tehran_in_a_clean_day.jpg"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "安全上の心配、とだけ発表されたの。ポケモンGOは、スマホの位置情報で、人を実際の場所に集めるでしょう？",
+     "img": [
+      "commons:Pokemon_Go_Setagaya_Park_Tokio.jpg|位置情報で人が集まる"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "イランは、ゲームのサーバーを国の中に置くことや、大事な場所をゲームに載せないことを、条件にしていたそうよ。",
+     "img": [
+      "commons:Iran_(orthographic_projection).svg|サーバーは国内に"
+     ]
+    },
+    {
+     "w": "z",
+     "t": "軍の基地に、ポケストップがあったら大変なのだ。",
+     "img": [
+      "commons:Pokemon_Go_Setagaya_Park_Tokio.jpg"
+     ]
+    },
+    {
+     "w": "h",
+     "t": "実際に、イスラエルの軍は、兵士に基地の中でポケモンGOを遊ばないよう指示していたのよ。",
+     "img": [
+      "art:25|基地では遊ばないで"
+     ]
+    }
+   ]
+  }
+ ],
+ "ending": [
+  {
+   "w": "z",
+   "t": "ポケモンって、世界をこんなに騒がせてたのだ。名前ひとつで、デモまで起きるなんて思わなかったのだ。",
+   "img": [
+    "commons:Hong_Kong_Night_Skyline.jpg",
+    "commons:Landmine_warning_sign_in_BiH.jpg",
+    "commons:Iran_(orthographic_projection).svg"
+   ]
+  },
+  {
+   "w": "h",
+   "t": "どの騒動がいちばん驚いたか、コメントで教えてね。",
+   "img": [
+    "art:25"
+   ]
+  },
+  {
+   "w": "z",
+   "t": "チャンネル登録と高評価もよろしくなのだ！　また明日なのだ！",
+   "img": [
+    "art:25",
+    "art:6",
+    "art:4"
+   ]
+  }
+ ]
+}

@@ -1124,71 +1124,193 @@ def with_shadow(base, img, pos, blur=14, alpha=0.45, off=(10, 14), outline=None)
     base.alpha_composite(sh, (pos[0] + off[0], pos[1] + off[1])); base.alpha_composite(img, pos)
 
 
+FONT_MIN = "/usr/share/fonts/opentype/noto/NotoSerifCJK-Black.ttc"     # サムネイルの太い明朝体（fonts-noto-cjk-extra）
+
+
+def FMIN(size):
+    try: return ImageFont.truetype(FONT_MIN, size, index=0)
+    except Exception: return F(FONT_K, size)
+
+
+def _radial(size, c_in, c_out, center=(0.65, 0.45), r=1.0):
+    w, h = size
+    y, x = np.mgrid[0:h, 0:w].astype(np.float32)
+    d = np.sqrt(((x - w * center[0]) / (w * r)) ** 2 + ((y - h * center[1]) / (w * r)) ** 2)
+    t = np.clip(d, 0, 1)[..., None]
+    arr = np.array(c_in, np.float32) * (1 - t) + np.array(c_out, np.float32) * t
+    return Image.fromarray(arr.astype(np.uint8), "RGB").convert("RGBA")
+
+
+def _bokeh(im, n, cols, seed, y0=0, y1=None):
+    rnd = random.Random(seed); y1 = y1 or im.height
+    lay = Image.new("RGBA", im.size, (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    for i in range(n):
+        x, y, r = rnd.random() * im.width, y0 + rnd.random() * (y1 - y0), 8 + rnd.random() * 46
+        c = cols[i % len(cols)]
+        d.ellipse([x - r, y - r, x + r, y + r], fill=c + (int(70 + rnd.random() * 90),))
+    im.alpha_composite(lay.filter(ImageFilter.GaussianBlur(12)))
+
+
+def _rot_paste(base, img, center, angle):
+    r = img.rotate(angle, resample=Image.BICUBIC, expand=True)
+    base.alpha_composite(r, (int(center[0] - r.width / 2), int(center[1] - r.height / 2)))
+
+
+def _glow_paste(base, img, pos, col=(255, 210, 0), blur=40, strength=1.6):
+    pad = blur * 3
+    a = Image.new("L", (img.width + pad * 2, img.height + pad * 2), 0)
+    a.paste(img.split()[3].point(lambda v: 255 if v > 128 else 0), (pad, pad))
+    a = a.filter(ImageFilter.GaussianBlur(blur)).point(lambda v: min(255, int(v * strength)))
+    g = Image.new("RGBA", a.size, col + (0,)); g.putalpha(a)
+    base.alpha_composite(g, (pos[0] - pad, pos[1] - pad)) if pos[0] >= pad and pos[1] >= pad else _paste_clip(base, g, (pos[0] - pad, pos[1] - pad))
+    base.alpha_composite(img, pos)
+
+
+def _paste_clip(base, img, pos):
+    lay = Image.new("RGBA", base.size, (0, 0, 0, 0)); lay.paste(img, pos, img); base.alpha_composite(lay)
+
+
+def _left_shade(im):
+    w, h = im.size
+    x = np.arange(w, dtype=np.float32) / w
+    a = np.interp(x, [0, 0.4, 0.62, 1], [190, 80, 0, 0])
+    y, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+    v = np.sqrt(((xx - w / 2) / (w * 0.5)) ** 2 + ((y - h / 2) / (h * 0.5)) ** 2)
+    a = np.clip(a[None, :] + np.clip(v - 0.75, 0, 1) * 220, 0, 230)
+    sh = Image.new("RGBA", (w, h), (0, 0, 0, 0)); sh.putalpha(Image.fromarray(a.astype(np.uint8)))
+    im.alpha_composite(sh)
+
+
+def _mincho(im, xy, text, size, fill, maxw):
+    f = FMIN(size)
+    while f.getlength(text) > maxw and f.size > 30: f = FMIN(f.size - 4)
+    sh = Image.new("RGBA", im.size, (0, 0, 0, 0)); ds = ImageDraw.Draw(sh)
+    ds.text(xy, text, font=f, fill=(0, 0, 0, 230), anchor="ls", stroke_width=max(4, f.size // 9), stroke_fill=(0, 0, 0, 230))
+    im.alpha_composite(sh.filter(ImageFilter.GaussianBlur(f.size // 7)))
+    ImageDraw.Draw(im).text(xy, text, font=f, fill=fill, anchor="ls", stroke_width=max(3, f.size // 14), stroke_fill=(0, 0, 0))
+
+
+def _placard(text, w=250, h=124):
+    pad = 20
+    im = Image.new("RGBA", (w + pad * 2, h + 420), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    d.rectangle([w / 2 + pad - 6, h, w / 2 + pad + 6, h + 400], fill=(138, 106, 58))
+    d.rectangle([pad, 0, pad + w, h], fill=(251, 248, 240), outline=(17, 17, 17), width=6)
+    f = FF(FD, 72)
+    while f.getlength(text) > w - 30: f = FF(FD, f.size - 2)
+    d.text((pad + w / 2, h / 2), text, font=f, fill=(196, 0, 24), anchor="mm")
+    return im
+
+
+def _scene(th, scene, seed=21):
+    """サムネイルの背景の舞台。話題に合わせて作り込む"""
+    w, h = th.size; d = ImageDraw.Draw(th); rnd = random.Random(seed)
+    if scene == "demo":            # 夜の街とデモの群衆
+        sky = Image.new("RGBA", (w, h)); arr = np.zeros((h, w, 4), np.uint8)
+        top, mid, bot = np.array((11, 10, 36)), np.array((42, 18, 64)), np.array((18, 6, 20))
+        for yy in range(h):
+            t = yy / h
+            c = top * (1 - t / 0.6) + mid * (t / 0.6) if t < 0.6 else mid * (1 - (t - 0.6) / 0.4) + bot * ((t - 0.6) / 0.4)
+            arr[yy, :, :3] = c; arr[yy, :, 3] = 255
+        th.alpha_composite(Image.fromarray(arr, "RGBA"))
+        for i in range(22):
+            bw, bh, x = 50 + rnd.random() * 90, 180 + rnd.random() * 380, i * 62 - 20
+            d.rectangle([x, 600 - bh, x + bw, h], fill=(10, 9, 24))
+            yy = 600 - bh + 14
+            while yy < 600:
+                xx = x + 8
+                while xx < x + bw - 8:
+                    if rnd.random() < 0.35:
+                        d.rectangle([xx, yy, xx + 8, yy + 10], fill=(255, 214, 120) if rnd.random() < 0.5 else (140, 200, 255))
+                    xx += 16
+                yy += 22
+        _bokeh(th, 40, [(255, 79, 160), (63, 224, 255), (255, 212, 59), (255, 122, 61)], 9, 120, 560)
+    elif scene == "mine":          # 霧の草原と有刺鉄線
+        arr = np.zeros((h, w, 4), np.uint8); a, m, b = np.array((92, 97, 88)), np.array((58, 66, 52)), np.array((21, 26, 16))
+        for yy in range(h):
+            t = yy / h
+            arr[yy, :, :3] = a * (1 - t / 0.45) + m * (t / 0.45) if t < 0.45 else m * (1 - (t - 0.45) / 0.55) + b * ((t - 0.45) / 0.55); arr[yy, :, 3] = 255
+        th.alpha_composite(Image.fromarray(arr, "RGBA"))
+        pts = [(0, 360)] + [(x, 300 - rnd.random() * 60) for x in range(0, w + 20, 20)] + [(w, 360)]
+        d.polygon(pts, fill=(38, 45, 34))
+        fog = Image.new("RGBA", (w, h), (0, 0, 0, 0)); df = ImageDraw.Draw(fog)
+        for i in range(6): df.rectangle([0, 300 + i * 40, w, 340 + i * 40], fill=(200, 205, 195, 26))
+        th.alpha_composite(fog.filter(ImageFilter.GaussianBlur(25)))
+        d.rectangle([0, 420, w, h], fill=(35, 43, 24))
+        for i in range(900):
+            x, y = rnd.random() * w, 420 + rnd.random() * 300; hh = 10 + rnd.random() * 30 * (y - 400) / 300
+            d.line([(x, y), (x + (rnd.random() - .5) * 10, y - hh)], fill=(62, 76, 39) if rnd.random() < .5 else (45, 56, 28), width=3)
+        for x in (640, 900, 1180): d.line([(x, 560), (x + 6, 390)], fill=(20, 18, 14), width=12)
+        for y in (420, 470, 520):
+            d.line([(600, y + 10), (900, y + 18), (1280, y)], fill=(20, 18, 14), width=3)
+    elif scene == "lab":           # 研究室の光と分子
+        th.alpha_composite(_radial((w, h), (15, 94, 110), (2, 10, 18), (0.7, 0.45), 0.75))
+        pts = [(600 + rnd.random() * 700, rnd.random() * h) for _ in range(40)]
+        for i, p in enumerate(pts):
+            for q in pts[i + 1:]:
+                if np.hypot(p[0] - q[0], p[1] - q[1]) < 150: d.line([p, q], fill=(120, 230, 255, 40), width=2)
+            d.ellipse([p[0] - 4, p[1] - 4, p[0] + 4, p[1] + 4], fill=(150, 240, 255, 90))
+        _bokeh(th, 30, [(63, 224, 255), (124, 255, 178), (42, 140, 255)], 5)
+    else:                          # 話題の色を使った暗い背景
+        th.alpha_composite(_radial((w, h), (60, 40, 110), (6, 4, 12), (0.7, 0.45), 0.8))
+        _bokeh(th, 26, [(255, 255, 255), (255, 214, 120)], seed)
+
+
 def thumb(sc):
-    """よく見る解説動画のサムネイルの型：集中線＋主役の大きな画像＋太い二重縁取りの大文字＋キャラの顔とふきだし
-    台本の thumb: top（上の文字）, main（下の特大文字）, hero（主役の画像）, sub（比べる画像）, sub_label, bubble（ふきだし）, badge"""
+    """サムネイルの指示書（docs/動画制作の指示書.md）にそった型：
+    話題に合わせて作り込んだ暗めの舞台＋右に話題そのものの画像＋左に太い明朝体の文字3行まで（いちばん強い言葉だけ赤か黄）。
+    キャラ・ふきだし・札・集中線は使わない。外国語の文字は使わない。
+    台本の thumb: top（小さい前置き）, lines（大きい2行）, accent（強調する行の番号 0/1）, accent_color（red/yellow）,
+    scene（demo/mine/lab/無し）, hero（主役の画像）, placards（デモの看板の言葉）, file（作った画像をそのまま使う）"""
     tb = sc.get("thumb") or {}
-    top = tb.get("top") or tb.get("text1") or "ポケモンの"
-    main = tb.get("main") or tb.get("text2") or "意外な裏話"
-    hero = tb.get("hero") or (tb.get("imgs") or [None])[0]
-    sub = tb.get("sub")
-    bubble = tb.get("bubble") or "知らなかったのだ！"
-    badge = tb.get("badge") or f"ポケモン雑学 {len(sc['topics'])}選"
-    th = burst((W, H), (92, 40, 160), (124, 70, 200), n=32, center=(W * 0.47, H * 0.50)).convert("RGBA")
-    d = ImageDraw.Draw(th)
-    # 主役の画像（大きく、太い白フチ）
+    if tb.get("file") and os.path.exists(os.path.join(HERE, tb["file"])):
+        return Image.open(os.path.join(HERE, tb["file"])).convert("RGB").resize((1280, 720), Image.LANCZOS)
+    w, h = 1280, 720
+    th = Image.new("RGBA", (w, h), (0, 0, 0, 255))
+    scene = tb.get("scene", "")
+    _scene(th, scene)
+    if scene == "demo":
+        for txt, cx, cy, ang in zip(tb.get("placards", ["名前を返せ！", "変えるな！"]), (830, 1105), (205, 185), (3.4, -2.9)):
+            _rot_paste(th, _placard(txt), (cx, cy + 200), ang)
+        d = ImageDraw.Draw(th)
+        for i in range(20):
+            x, hh = i * 70 + (i * 37) % 25, 110 + (i * 53) % 60
+            d.ellipse([x - 30, h - hh - 30, x + 30, h - hh + 30], fill=(5, 3, 8)); d.rectangle([x - 40, h - hh + 24, x + 40, h], fill=(5, 3, 8))
+            if i % 3 == 0:
+                d.line([(x + 30, h - hh + 40), (x + 55, h - hh - 50)], fill=(5, 3, 8), width=16)
+                d.ellipse([x + 42, h - hh - 75, x + 72, h - hh - 45], fill=(5, 3, 8))
+    hero = tb.get("hero")
     if hero:
         s = load_img(hero)
         if s is not None:
-            s = fit(s, 640, 600, hero.split(":")[0] in PIXEL_KINDS)
-            with_shadow(th, s, (int(W * 0.47 - s.width / 2), int(H * 0.53 - s.height / 2)), outline=14, alpha=0.6)
-    # 比べる画像（赤丸で囲んで矢印）
-    if sub:
-        s = load_img(sub)
-        if s is not None:
-            s = fit(s, 270, 270, sub.split(":")[0] in PIXEL_KINDS)
-            cx, cy, r = 250, 540, 180
-            d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(255, 255, 255), outline=(230, 20, 30), width=18)
-            th.alpha_composite(s, (cx - s.width // 2, cy - s.height // 2))
-            ax = cx + r + 10
-            d.polygon([(ax, cy - 34), (ax + 90, cy - 34), (ax + 90, cy - 85), (ax + 190, cy), (ax + 90, cy + 85), (ax + 90, cy + 34), (ax, cy + 34)],
-                      fill=(230, 20, 30), outline=(255, 255, 255), width=8)
-            tag = tb.get("sub_label", "初期")
-            d.rounded_rectangle([cx - 100, cy - r - 46, cx + 100, cy - r + 30], 20, fill=(230, 20, 30), outline=(255, 255, 255), width=6)
-            d.text((cx, cy - r - 8), tag, font=F(FONT_K, 48), fill=(255, 255, 255), anchor="mm")
-    # ずんだもん（右側）とふきだし
-    z = face("zundamon", 640)
-    zx, zy = W - z.width + 10, H - z.height - 60
-    with_shadow(th, z, (zx, zy), outline=0, alpha=0.5)
-    bx, by = W - 300, 150
-    d.rounded_rectangle([bx - 270, by - 66, bx + 270, by + 66], 60, fill=(255, 255, 255), outline=(20, 14, 30), width=8)
-    d.polygon([(bx - 20, by + 58), (bx + 40, by + 150), (bx + 60, by + 58)], fill=(255, 255, 255), outline=(20, 14, 30))
-    d.rectangle([bx - 16, by + 52, bx + 56, by + 64], fill=(255, 255, 255))
-    bs = 56
-    while F(FONT_K, bs).getlength(bubble) > 500: bs -= 4
-    d.text((bx, by), bubble, font=F(FONT_K, bs), fill=(20, 14, 30), anchor="mm")
-    # 左上のバッジ
-    d.polygon([(0, 0), (600, 0), (540, 116), (0, 116)], fill=(230, 20, 30))
-    d.text((40, 58), badge, font=F(FONT_K, 64), fill=(255, 255, 255), anchor="lm")
-    # 大きな文字（上に小さめ、下に特大）。右下は再生時間が重なるので空ける
-    ts = 112
-    while F(FONT_K, ts).getlength(top) > W * 0.52 and ts > 70: ts -= 6
-    outlined(th, (W * 0.36, 210), top, ts, (255, 255, 255), inner=(20, 14, 30), outer=(230, 20, 30), w1=12, w2=26)
-    size = 210
-    while F(FONT_K, size).getlength(main) > W * 0.74 and size > 120: size -= 10
-    outlined(th, (W * 0.39, 930), main, size, (255, 240, 0), grad=((255, 250, 130), (255, 130, 0)), w1=18, w2=36)
-    return th.convert("RGB").resize((1280, 720), Image.LANCZOS)
+            box = tb.get("hero_box", [730, 290, 390, 390] if scene == "demo" else [720, 140, 480, 460])
+            s = fit(s, box[2], box[3], hero.split(":")[0] in PIXEL_KINDS)
+            pos = (int(box[0] + (box[2] - s.width) / 2), int(box[1] + (box[3] - s.height) / 2))
+            _glow_paste(th, s, pos, (255, 210, 0) if scene in ("demo", "") else (120, 220, 255))
+    _left_shade(th)
+    top = tb.get("top", "")
+    lines = tb.get("lines") or [tb.get("main") or "意外な裏話"]
+    acc = tb.get("accent", len(lines) - 1)
+    acol = (255, 212, 59) if tb.get("accent_color", "yellow") == "yellow" else (255, 59, 59)
+    if top: _mincho(th, (55, 150), top, 80, (255, 255, 255), 600)
+    for i, t in enumerate(lines[:2]):
+        _mincho(th, (45, 400 + i * 240), t, 190, acol if i == acc else (255, 255, 255), 600)
+    return th.convert("RGB")
 
 
 def meta(sc, voiced, chapters):
+    """概要欄：1行目に動画の要約、すぐ下に poketango.com、そのあと動画に出たポケモンの個別ページ（台本の links）"""
     names = "・".join(tp["jn"] for tp in sc["topics"])
-    lines = ["ずんだもんと冥鳴ひまりが、ポケモンの意外な雑学をくわしく紹介します。", "今回のポケモン：" + names, ""]
-    lines += [f"{int(t // 60)}:{int(t % 60):02d} {name}" for t, name in chapters]
-    srcs = "\n".join(f"・{tp['jn']}　" + "／".join(s for s in tp.get("sources", []) if s) for tp in sc["topics"])
+    lines = [sc.get("summary") or "ずんだもんと冥鳴ひまりが、ポケモンの意外な雑学をくわしく紹介します。", f"{P.SITE}/", ""]
+    if sc.get("links"):
+        lines += ["▼動画に出たポケモン"] + [f"{jn} {P.SITE}/p/{key.lower()}.html" for jn, key in sc["links"]] + [""]
+    else:
+        lines += ["今回の話題：" + names, ""]
+    lines += ["▼目次"] + [f"{int(t // 60)}:{int(t % 60):02d} {name}" for t, name in chapters]
+    srcs = "\n".join(f"・{tp['label']}　" + "／".join(s for s in tp.get("sources", []) if s) for tp in sc["topics"])
     credit = ("\n\n音声 VOICEVOX:ずんだもん、VOICEVOX:冥鳴ひまり" if voiced else "") + \
         ("\n画像の出典\n" + "\n".join("・" + c for c in CREDITS.values()) if CREDITS else "") + \
         "\n立ち絵 東北ずん子・ずんだもんプロジェクト、冥鳴ひまり公式（イラスト Sameta様）"
-    desc = "\n".join(lines) + f"\n\n英語版のポケモン図鑑と日本語訳 → {P.SITE}/\nポケモン図鑑で覚える英単語 → {P.SITE}/p/words.html\n無料の英単語プリント → {P.SITE}/p/print.html\n\n参考にした資料\n{srcs}{credit}\n\n" \
+    desc = "\n".join(lines) + f"\n\nポケモン図鑑で覚える英単語 → {P.SITE}/p/words.html\n無料の英単語プリント → {P.SITE}/p/print.html\n\n参考にした資料\n{srcs}{credit}\n\n" \
         "※ファンが運営する非公式のチャンネルです。\n#ポケモン #ポケモン雑学 #ずんだもん #冥鳴ひまり"
     return sc["title"][:100], desc[:4900]
 
