@@ -1,9 +1,10 @@
 name: zatsugaku-shorts
 # ずんだもんと冥鳴ひまりのポケモン雑学（別チャンネル @poke_zatsugaku）。アプリの鍵は共通、チャンネル用に YT2_REFRESH_TOKEN
 on:
-  schedule:
-    - cron: "35 23 * * *"  # 朝 8:35（日本時間）
-    - cron: "35 11 * * *"  # 夜 20:35
+  # 2026-11-15 停止：古い形式のショートが自動で出ないよう、改善版の作り方に切り替えるまで止める
+  # schedule:
+  #   - cron: "35 23 * * *"  # 朝 8:35（日本時間）
+  #   - cron: "35 11 * * *"  # 夜 20:35
   workflow_dispatch:
     inputs:
       dry_run:
