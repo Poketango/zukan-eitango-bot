@@ -1269,7 +1269,7 @@ def thumb(sc):
     話題に合わせて作り込んだ暗めの舞台＋右に話題そのものの画像＋左に太い明朝体の文字3行まで（いちばん強い言葉だけ赤か黄）。
     キャラ・ふきだし・札・集中線は使わない。外国語の文字は使わない。
     台本の thumb: top（小さい前置き）, lines（大きい2行）, accent（強調する行の番号 0/1）, accent_color（red/yellow）,
-    scene（demo/mine/lab/無し）, hero（主役の画像）, placards（デモの看板の言葉）, file（作った画像をそのまま使う）"""
+    scene（demo/mine/lab/無し）, hero（主役の画像）, heroes（2つ並べて比べる）, equal（間の記号）, hero_labels（下の数字）, placards（デモの看板の言葉）, file（作った画像をそのまま使う）"""
     tb = sc.get("thumb") or {}
     if tb.get("file") and os.path.exists(os.path.join(HERE, tb["file"])):
         return Image.open(os.path.join(HERE, tb["file"])).convert("RGB").resize((1280, 720), Image.LANCZOS)
@@ -1295,6 +1295,10 @@ def thumb(sc):
             s = fit(s, 230, 360, ref.split(":")[0] in PIXEL_KINDS)
             bx = 680 + i * 330
             _glow_paste(th, s, (int(bx + (230 - s.width) / 2), int(180 + (360 - s.height) / 2)), (120, 220, 255) if scene == "lab" else (255, 210, 0))
+            labs = tb.get("hero_labels") or []
+            if i < len(labs):       # 画像の下の数字など（例 急所率）
+                ImageDraw.Draw(th).text((bx + 115, int(180 + (360 + s.height) / 2 + 55)), labs[i], font=FMIN(64), fill=(255, 212, 59) if i == 1 else (255, 255, 255), anchor="mm",
+                                        stroke_width=6, stroke_fill=(0, 0, 0))
         if tb.get("equal"):
             ImageDraw.Draw(th).text((960, 360), tb["equal"], font=FMIN(90), fill=(255, 255, 255), anchor="mm", stroke_width=8, stroke_fill=(0, 0, 0))
     hero = tb.get("hero") if len(heroes) < 2 else None
