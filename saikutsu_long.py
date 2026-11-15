@@ -409,6 +409,40 @@ def style_id(ln):
     return STYLES[w].get(v, STYLES[w]["normal"])
 
 
+# 読みとアクセントの直し表。VOICEVOX の読み（AquesTalk 風表記）を OJAD（東京大学のアクセント辞典・スズキクン）で確かめて決めたもの。
+# ' がアクセントの下がり目（句の最後に ' があれば平板）、/ は区切りなしの句の境目
+KFIX = [
+    ("カブ_シキガ'/イシャポ'ケモンニ", "カブ'シキガイシャ/ポケモンニ'"),          # 株式会社ポケモン（途中で切れていた）
+    ("センハッピャ_クキュウジュウニ'/トシ'", "セ'ンハッピャク/キュ'ウジュウ/ニ'ネン"),  # 1892年（「とし」と読んでいた）
+    ("ニ_クショ_クキョオリュウタルボサウル'スノ", "ニクショクキョオリュウ/タルボサ'ウルスノ"),
+    ("ズ'ガイ/ド'ス", "ズガ'イドス"), ("ズ'_ツ/キ'/ポケモンナ'", "ズツキポケモンナ'"),
+    ("パキ'/ケファロサウル'_ス", "パキケファロサ'ウル_ス"), ("パキ'/ケファロサウル'ス", "パキケファロサ'ウルス"),
+    ("ティ'ラ/ノ'/ナ'/ノダ'", "ティラノナ'/ノダ'"), ("ティ'ラ/ノ'/ホド'", "ティラノホド'"), ("ティ'ラ/ノ'/ヨ'リ", "ティラノヨリ'"),
+    ("レ'タエ/ウス'", "レタエ'ウス"), ("アノ'/プ'_ス", "アノプ'_ス"), ("アノ'/プ'ス", "アノプ'ス"),
+    ("ペ'イ/ト'イアッテ", "ペイトイアッテ'"), ("ペ'イ/ト'イアガ", "ペイトイアガ'"),
+    ("ウィ'ッティン/ト'ンサンノ", "ウィッティントンサンノ'"), ("キョ_ク'/ヒド'ウ/ブ'ツノ", "キョクヒド'オブツノ"),
+    ("_シカ'モ/ヒャク'ゴオナ/ノダ'", "_シカ'モ/ユリナ'/ノダ'"), ("ヒャク'ゴオッテ", "ユリッテ'"),       # 百合（「ひゃくごう」と読んでいた）
+    ("ショ'_クシュニ/ヒャク'ゴオ", "ショクシュニユリ'"), ("ナマエノ'/ヒャク'ゴオワ", "ナマエノ'/ユリワ'"),
+    ("ゾ'ルン/ホオ'/フェ'ンッテ/イ'ウ", "ゾルンホ'オフェンッテ/イウ'"), ("モ'ン/_スペ'", "モンスペ'"),
+    ("リリイラガ_クサ'/タ'イプナ", "リ'リイラガ/クサタ'イプナ"), ("リリイラノ'", "リ'リイラノ"), ("リリイラワ'", "リ'リイラワ"), ("リリイラ'", "リ'リイラ"),
+    ("ア'アマルド", "アアマ'ルド"), ("ユレイ'ドル", "ユレ'イドル"), ("ニッポ'ンノ", "ニホ'ンノ"), ("ニッポ'ンデワ", "ニホ'ンデワ"),
+]
+
+
+def fixed_kana(ln, speaker):
+    """VOICEVOX の読みに直し表を当てる。直すところが無ければ None"""
+    import urllib.request, urllib.parse
+    if ln.get("kana"): return ln["kana"]
+    text = ln.get("say") or ln["t"]
+    try:
+        q = json.loads(urllib.request.urlopen(urllib.request.Request(P.VV + "/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": speaker}), method="POST"), timeout=90).read())
+    except Exception:
+        return None
+    k0 = q.get("kana", ""); k = k0
+    for a, b in KFIX: k = k.replace(a, b)
+    return k if k != k0 else None
+
+
 def durations(L, voiced_lines):
     segs, voices, t0 = [], [], 0.2
     for i, ln in enumerate(L):
@@ -493,6 +527,7 @@ def accent_dump(L, out_dir):
         text = ln.get("say") or ln["t"]
         q = json.loads(req("/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": 3})))
         k = ln.get("kana") or q.get("kana", "")
+        for a, b in KFIX: k = k.replace(a, b)
         out.append(f"{i}\t{ln.get('w')}\t{text.replace(chr(10), '')}\t{k}")
     open(os.path.join(out_dir, "accent.txt"), "w", encoding="utf-8").write("\n".join(out))
 
@@ -508,7 +543,8 @@ def build(d, out_dir):
     vs = []
     for ln in L:
         if ln.get("type") in ("title", "ed") or not ln.get("t"): vs.append(None); continue
-        vs.append(SS.tts(ln, style_id(ln)))
+        k = fixed_kana(ln, style_id(ln))
+        vs.append(SS.tts(dict(ln, kana=k) if k else ln, style_id(ln)))
     segs, voices, total = durations(L, vs)
     os.makedirs("_l", exist_ok=True); parts = []
     for k, (i, dur, talk) in enumerate(segs):
