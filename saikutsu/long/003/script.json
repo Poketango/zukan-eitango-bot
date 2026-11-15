@@ -362,7 +362,7 @@
    "w": "m",
    "face": "normal",
    "t": "同じ時代の同じ地域からは、頭が平らでトゲトゲの\nドラコレックスも見つかってたの。",
-   "img": "csearch:Dracorex hogwartsia skull^wiki:en:Dracorex",
+   "img": "csearch:Dracorex hogwartsia Childrens Museum Indianapolis^csearch:Dracorex holotype skull^wiki:en:Dracorex",
    "label": "ドラコレックス"
   },
   {
@@ -376,68 +376,70 @@
    "w": "m",
    "face": "normal",
    "t": "どちらも、パキケファロサウルスとはちがう種類の恐竜として、\nそれぞれ名前が付いてたの。",
-   "img": "row:csearch:Dracorex hogwartsia skull|ドラコレックス;wiki:en:Stygimoloch|スティギモロク;wiki:en:Pachycephalosaurus|パキケファロサウルス",
+   "img": "row:csearch:Dracorex hogwartsia Childrens Museum Indianapolis^csearch:Dracorex holotype skull|ドラコレックス;wiki:en:Stygimoloch|スティギモロク;wiki:en:Pachycephalosaurus|パキケファロサウルス",
    "label": "3つのちがう種類として名前が付いた"
   },
   {
    "w": "m",
    "face": "happy",
    "t": "ドラコレックスの正式な名前は、\nドラコレックス・ホグワーツィア。",
-   "img": "csearch:Dracorex hogwartsia skull^wiki:en:Dracorex",
+   "img": "csearch:Dracorex hogwartsia Childrens Museum Indianapolis^csearch:Dracorex holotype skull^wiki:en:Dracorex",
    "label": "Dracorex hogwartsia"
   },
   {
    "w": "m",
    "face": "happy",
    "t": "ハリー・ポッターに出てくる魔法学校、\nホグワーツから取った名前よ。",
-   "img": "csearch:Dracorex hogwartsia skull^wiki:en:Dracorex",
+   "img": "csearch:Dracorex hogwartsia Childrens Museum Indianapolis^csearch:Dracorex holotype skull^wiki:en:Dracorex",
    "label": "Dracorex hogwartsia"
   },
   {
    "w": "z",
    "face": "happy",
    "t": "かっこいい名前なのだ。",
-   "img": "csearch:Dracorex hogwartsia skull^wiki:en:Dracorex",
+   "img": "csearch:Dracorex hogwartsia Childrens Museum Indianapolis^csearch:Dracorex holotype skull^wiki:en:Dracorex",
    "label": "Dracorex hogwartsia"
   },
   {
    "w": "m",
    "face": "think",
    "t": "ところが2009年、ホーナーさんとグッドウィンさんという研究者が\n「この3つは同じ恐竜の成長段階だ」と発表したの。",
-   "img": "row:csearch:Dracorex hogwartsia skull|ドラコレックス;wiki:en:Stygimoloch|スティギモロク;wiki:en:Pachycephalosaurus|パキケファロサウルス",
+   "img": "row:csearch:Dracorex hogwartsia Childrens Museum Indianapolis^csearch:Dracorex holotype skull|ドラコレックス;wiki:en:Stygimoloch|スティギモロク;wiki:en:Pachycephalosaurus|パキケファロサウルス",
    "label": "3つとも同じ恐竜？"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "ドラコレックスとスティギモロクは、\n子どもの頭の骨しか見つかってなくて…",
-   "img": "row:csearch:Dracorex hogwartsia skull|子どもだけ;wiki:en:Stygimoloch|子どもだけ;wiki:en:Pachycephalosaurus|大人だけ"
+   "img": "row:csearch:Dracorex hogwartsia Childrens Museum Indianapolis^csearch:Dracorex holotype skull|子どもだけ;wiki:en:Stygimoloch|子どもだけ;wiki:en:Pachycephalosaurus|大人だけ"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "パキケファロサウルスは、\n大人しか見つかってなかった。",
-   "img": "row:csearch:Dracorex hogwartsia skull|子どもだけ;wiki:en:Stygimoloch|子どもだけ;wiki:en:Pachycephalosaurus|大人だけ"
+   "img": "row:csearch:Dracorex hogwartsia Childrens Museum Indianapolis^csearch:Dracorex holotype skull|子どもだけ;wiki:en:Stygimoloch|子どもだけ;wiki:en:Pachycephalosaurus|大人だけ"
   },
   {
    "w": "z",
    "face": "surprise",
    "t": "子どもだけの種類と、大人だけの種類…\nたしかに怪しいのだ。",
-   "img": "row:csearch:Dracorex hogwartsia skull|子どもだけ;wiki:en:Stygimoloch|子どもだけ;wiki:en:Pachycephalosaurus|大人だけ"
+   "img": "row:csearch:Dracorex hogwartsia Childrens Museum Indianapolis^csearch:Dracorex holotype skull|子どもだけ;wiki:en:Stygimoloch|子どもだけ;wiki:en:Pachycephalosaurus|大人だけ"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "若いうちは頭が平らで、後ろに大きなトゲがある。\n大人になるにつれてトゲが縮んで丸くなり…",
-   "img": "row:csearch:Dracorex hogwartsia skull|若い>wiki:en:Stygimoloch|少し育つ>wiki:en:Pachycephalosaurus|大人",
-   "label": "成長すると頭の形が変わる"
+   "img": "commons:Pachycephalosaurus_ontogeny_skulls_-_Museum_of_the_Rockies_-_2013-07-08.jpg",
+   "label": "成長の順に並べた頭の骨",
+   "cap": "ロッキー博物館（アメリカ）の展示"
   },
   {
    "w": "m",
    "face": "happy",
    "t": "ドームが盛り上がっていく。\nそう考えると、3つがきれいに1列に並ぶの。",
-   "img": "row:csearch:Dracorex hogwartsia skull|若い>wiki:en:Stygimoloch|少し育つ>wiki:en:Pachycephalosaurus|大人",
-   "label": "成長すると頭の形が変わる"
+   "img": "commons:Pachycephalosaurus_ontogeny_skulls_-_Museum_of_the_Rockies_-_2013-07-08.jpg",
+   "label": "成長の順に並べた頭の骨",
+   "cap": "ロッキー博物館（アメリカ）の展示"
   },
   {
    "w": "z",
@@ -622,7 +624,7 @@
    "w": "z",
    "face": "normal",
    "t": "子どもを大人と思ったり、\n大人を子どもと思ったり、忙しいのだ。",
-   "img": "row:csearch:Dracorex hogwartsia skull|子どもを別の種類に;wiki:en:Nanotyrannus|大人を子どもに"
+   "img": "row:csearch:Dracorex hogwartsia Childrens Museum Indianapolis^csearch:Dracorex holotype skull|子どもを別の種類に;wiki:en:Nanotyrannus|大人を子どもに"
   },
   {
    "type": "title",
