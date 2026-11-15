@@ -1,8 +1,7 @@
 name: uchu-upload
-# 宇宙の衝撃ファイル：uchu-queue ブランチに動画が押し込まれたらアップロードし、記録を main に残してキューを空にする
+# 宇宙の衝撃ファイル：uchu-queue ブランチの動画をアップロードし、記録を main の uchu/posted.jsonl に残す
+#   使い方：動画と json を uchu-queue に force-push してから、この処理を workflow_dispatch で動かす（記録済みの動画は二度上げない）
 on:
-  push:
-    branches: [uchu-queue]
   workflow_dispatch:
 permissions:
   contents: write
@@ -30,7 +29,7 @@ jobs:
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-      - name: 記録を保存してキューを空にする
+      - name: 記録を保存する
         if: success()
         run: |
           git config user.name "github-actions[bot]"
@@ -39,5 +38,3 @@ jobs:
             git add uchu/posted.jsonl && git commit -qm "宇宙の衝撃ファイル：投稿記録を更新"
             for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
           fi
-          git checkout -q --orphan empty && git rm -rqf --cached . && echo "投稿待ちの動画はここに置く" > README.md && git add README.md
-          git commit -qm "キューを空にする" && git push -qf origin empty:uchu-queue
