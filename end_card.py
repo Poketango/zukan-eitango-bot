@@ -27,7 +27,7 @@ def _voice():
         q["accent_phrases"] = json.loads(req("/accent_phrases?" + urllib.parse.urlencode({"text": KANA, "speaker": post.ZUNDA, "is_kana": "true"})))
     except Exception as ex:
         print("アクセント指定なしで読む:", repr(ex)[:100])
-    q.update(speedScale=1.15, outputSamplingRate=SR, volumeScale=1.3, prePhonemeLength=0.05, postPhonemeLength=0.15)
+    q.update(speedScale=post.SPEED, outputSamplingRate=SR, volumeScale=1.3, prePhonemeLength=0.05, postPhonemeLength=0.15)
     wav = req(f"/synthesis?speaker={post.ZUNDA}", json.dumps(q).encode())
     with wave.open(io.BytesIO(wav)) as w:
         a = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768

@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     services:
-      # 読み上げ（ずんだもん・冥鳴ひまり）用の VOICEVOX エンジン
+      # 読み上げ（ずんだもん・四国めたん）用の VOICEVOX エンジン
       voicevox:
         image: voicevox/voicevox_engine:cpu-latest
         ports:

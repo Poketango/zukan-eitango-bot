@@ -10,17 +10,15 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageEnhance
 import post as P
 import music
-from post import F, FONT_K, FONT_B, FONT_M, VW, VH, FPS, SR, ZUNDA, HIMARI, tts, big, silhouette, ename, center, jwrap, ewrap
+from post import F, FONT_K, FONT_B, FONT_M, VW, VH, FPS, SR, ZUNDA, METAN, SPEED, tts, big, silhouette, ename, center, jwrap, ewrap
+from post import F_DELA, F_ROUND, F_ROCK, F_MOCHI, kana, same_as_jp, fit, ruby, footer_left
+import chara_overlay
 
 DARK, WHITE = (31, 41, 51), (255, 255, 255)
 
 
 def jwrap2(d, text, font, maxw):
-    lines = jwrap(d, text, font, maxw)
-    for k in range(1, len(lines)):
-        while lines[k] and lines[k][0] in "。、」』！？）":
-            lines[k - 1] += lines[k][0]; lines[k] = lines[k][1:]
-    return [l for l in lines if l]
+    return jwrap(d, text, font, maxw)      # post.jwrap が文節で折るようになった（2026-11-15）
 
 
 def ease(x):
@@ -55,15 +53,20 @@ def paste_c(im, sp, cx, cy, scale=1.0):
     im.paste(sp, (int(cx - sp.width / 2), int(cy - sp.height / 2)), sp)
 
 
-def header(d, text, color, sub=None):
+def header(d, text, color, sub=None, font=None):
     d.rounded_rectangle([60, 70, VW - 60, 230], 40, fill=color)
-    center(d, 150, text, F(FONT_K, 76), WHITE)
-    if sub: center(d, 290, sub, F(FONT_K, 56), DARK)
+    center(d, 150, text, fit(d, text, font or F_DELA, 76, VW - 180), WHITE)
+    if sub: center(d, 290, sub, fit(d, sub, F_ROUND, 56, VW - 120), DARK)
 
 
-def footer(d, line1="答えと由来は全部サイトに", line2="プロフィールのリンクから"):
-    d.rectangle([0, VH - 210, VW, VH], fill=DARK)
-    center(d, VH - 140, line1, F(FONT_B, 44), WHITE); center(d, VH - 80, line2, F(FONT_B, 44), (255, 224, 102))
+def footer(d, line1="答えと由来は全部サイトに", line2="「もんすぺ！」で検索", bg=DARK):
+    footer_left(d, line1, line2, top=VH - 210, bg=bg, c2=(255, 224, 102))
+
+
+def pron_say(key, jn):
+    """正解のあとに言う英語名の発音。日本語名と同じ読みなら言わない（指示書）"""
+    k = kana(key)
+    return f"英語名は、{k}なのだ。" if k and not same_as_jp(key, jn) else ""
 
 
 def timer(d, cx, cy, frac, n):
@@ -78,6 +81,7 @@ class Mix:
     def __init__(s, total, st=None):
         s.n = int(total * SR) + SR; s.a = np.zeros(s.n, np.float32); s.total = total
         s.st = st or music.style(0); s.fx = music.SFX_SETS[s.st["sfx"]]
+        s.talker = chara_overlay.Talker()
 
     def put(s, t0, sig, vol=1.0):
         a = int(t0 * SR); b = min(s.n, a + len(sig))
@@ -98,16 +102,22 @@ class Mix:
         n = np.arange(int(1.0 * SR)) / SR
         s.put(t, ((np.random.default_rng(3).standard_normal(len(n)) * 0.4 + np.sin(2 * np.pi * 45 * n)) * np.exp(-n * 3.5) * 0.55).astype(np.float32))
 
-    def voice(s, t, v):
+    def voice(s, t, v, face=None):
         if v is None: return
         a = int(t * SR); b = min(s.n, a + len(v)); s.a[a:b] = s.a[a:b] * 0.4 + v[:b - a]
+        if face: s.talker.add(t, v, face)          # しゃべる立ち絵の口と表情
 
 
 def render(segs, mix, out):
     os.makedirs("_f", exist_ok=True); parts = []
+    T0 = 0.0; tk = mix.talker if mix.talker.talks else None
     for k, (fn, d) in enumerate(segs):
         nfr = max(1, int(round(d * FPS)))
-        for i in range(nfr): fn(i / FPS).save(f"_f/s{k}_{i:04d}.jpg", quality=92)
+        for i in range(nfr):
+            im = fn(i / FPS)
+            if tk: im = tk.draw(im, T0 + i / FPS)
+            im.save(f"_f/s{k}_{i:04d}.jpg", quality=92)
+        T0 += nfr / FPS
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", f"_f/s{k}_%04d.jpg", "-c:v", "libx264", "-preset", "veryfast",
                         "-crf", "21", "-pix_fmt", "yuv420p", f"_f/s{k}.mp4"], check=True)
         for f in os.listdir("_f"):
@@ -146,47 +156,48 @@ def plus_pool(D):
 
 def plus_frame(q, sp, t, st):
     im = dots(grad((255, 236, 179), (255, 196, 120)), (227, 53, 13)); d = ImageDraw.Draw(im)
-    header(d, "英語名の足し算クイズ", (227, 53, 13), "このポケモン、だーれだ？")
+    header(d, "英語名の足し算クイズ", (227, 53, 13), "このポケモン、だーれだ？", F_DELA)
     cards = [(q["w1"], q["m1"]), (q["w2"], q["m2"])]
     for i, (w, m) in enumerate(cards):
         x = ease((t - 0.3 - i * 0.45) / 0.4)
         if x <= 0: continue
-        y0 = 400 + i * 300; off = int((1 - x) * VW)
-        d.rounded_rectangle([90 + off, y0, VW - 90 + off, y0 + 230], 36, fill=WHITE, outline=DARK, width=6)
-        fw = F(FONT_K, 104 if len(w) <= 9 else 80)
-        d.text((VW // 2 + off, y0 + 95), w, font=fw, fill=DARK, anchor="mm")
-        d.text((VW // 2 + off, y0 + 185), m, font=F(FONT_B, 46), fill=(184, 41, 10), anchor="mm")
+        y0 = 370 + i * 280; off = int((1 - x) * VW)
+        d.rounded_rectangle([90 + off, y0, VW - 90 + off, y0 + 220], 36, fill=WHITE, outline=DARK, width=6)
+        d.text((VW // 2 + off, y0 + 90), w, font=fit(d, w, F_ROCK, 104, VW - 260, 60), fill=DARK, anchor="mm")
+        d.text((VW // 2 + off, y0 + 178), m, font=fit(d, m, F_ROUND, 46, VW - 260), fill=(184, 41, 10), anchor="mm")
         if i == 0 and x >= 1:
-            d.text((VW // 2, y0 + 265), "＋", font=F(FONT_K, 90), fill=DARK, anchor="mm")
-    cy = 1350
+            d.text((VW // 2, y0 + 250), "＋", font=F(FONT_K, 90), fill=DARK, anchor="mm")   # Dela Gothic に「＋」の字が無い
+    cy = 1300
     if st.get("count") is not None:
-        d.text((VW // 2, 1040), "＝", font=F(FONT_K, 90), fill=DARK, anchor="mm")
-    if st.get("count") is not None:
-        d.ellipse([VW // 2 - 230, cy - 230, VW // 2 + 230, cy + 230], fill=WHITE)
-        if sp: paste_c(im, silhouette(big(sp, 360)), VW // 2, cy)
-        timer(d, VW - 170, cy - 170, st["frac"], st["count"])
+        d.text((VW // 2, 950), "＝ ？", font=F(F_DELA, 90), fill=DARK, anchor="mm")
+        d.ellipse([VW // 2 - 220, cy - 220, VW // 2 + 220, cy + 220], fill=WHITE)
+        if sp: paste_c(im, silhouette(big(sp, 340)), VW // 2, cy)
+        timer(d, VW - 170, cy - 160, st["frac"], st["count"])
     if st.get("reveal") is not None:
         s = pop(st["reveal"] / 0.35)
-        d.ellipse([VW // 2 - 230, cy - 230, VW // 2 + 230, cy + 230], fill=WHITE)
-        if sp: paste_c(im, big(sp, 360), VW // 2, cy, max(0.05, s))
-        center(d, 1045, "＝ " + q["en"], F(FONT_K, 96 if len(q["en"]) <= 10 else 80), WHITE, 12, DARK)
-        center(d, 1640, q["jn"] + "！", F(FONT_K, 96), (227, 53, 13), 10, WHITE)
+        d.ellipse([VW // 2 - 220, cy - 220, VW // 2 + 220, cy + 220], fill=WHITE)
+        if sp: paste_c(im, big(sp, 340), VW // 2, cy, max(0.05, s))
+        txt = "＝ " + q["en"]
+        center(d, 950, txt, fit(d, txt, F_ROCK, 96, VW - 120, 60), WHITE, 12, DARK)
+        ruby(d, VW // 2, 1040, q["key"], size=46)
+        f = fit(d, q["jn"] + "！", F_DELA, 96, 700)
+        d.text((420, 1600), q["jn"] + "！", font=f, fill=(227, 53, 13), anchor="mm", stroke_width=10, stroke_fill=WHITE)
     footer(d)
     return im
 
 
 def plus_video(q, sp):
-    v1 = tts(f"{voice_word(q['m1'])}、たす、{voice_word(q['m2'])}。このポケモン、だーれだ？", ZUNDA, 1.15)
-    v2 = tts(f"正解は、{q['jn']}なのだ！", ZUNDA, 1.12)
+    v1 = tts(f"{voice_word(q['m1'])}、たす、{voice_word(q['m2'])}。このポケモン、だーれだ？", ZUNDA, SPEED)
+    v2 = tts(f"正解は、{q['jn']}なのだ！" + pron_say(q["key"], q["jn"]), ZUNDA, SPEED)
     t_in = dur(v1, 2.4)
     segs = [(lambda t: plus_frame(q, sp, t, {}), t_in)]
     for c in (3, 2, 1): segs.append((lambda t, c=c: plus_frame(q, sp, 9, {"count": c, "frac": (c - t) / 3}), 1.0))
-    segs.append((lambda t: plus_frame(q, sp, 9, {"reveal": t}), dur(v2, 3.6)))
+    segs.append((lambda t: plus_frame(q, sp, 9, {"reveal": t}), dur(v2, 3.6) + 0.3))
     st, total = seq(segs); m = Mix(total, STYLE)
     m.music(0, total)
     m.whoosh(0.3); m.whoosh(0.75)
     for c in range(3): m.tick(st[1 + c])
-    m.ding(st[4]); m.voice(0.15, v1); m.voice(st[4] + 0.25, v2)
+    m.ding(st[4]); m.voice(0.15, v1, "happy"); m.voice(st[4] + 0.25, v2, "proud")
     return segs, m, plus_frame(q, sp, 9, {"reveal": 1})
 
 
@@ -212,7 +223,7 @@ def real3_pick(D, n):
 
 def real3_frame(q, sp, st, D):
     im = dots(grad((198, 232, 255), (120, 180, 240)), (31, 90, 145)); d = ImageDraw.Draw(im)
-    header(d, "本物の英語名はどれ？", (31, 90, 145), f"「{q['jn']}」の英語名は…")
+    header(d, "本物の英語名はどれ？", (31, 90, 145), f"「{q['jn']}」の英語名は…", F_ROCK)
     d.ellipse([VW // 2 - 230, 360, VW // 2 + 230, 820], fill=WHITE)
     if sp: paste_c(im, big(sp, 360), VW // 2, 590)
     rv = st.get("reveal")
@@ -226,30 +237,35 @@ def real3_frame(q, sp, st, D):
         d.rounded_rectangle([90 + off, y, VW - 90 + off, y + 170], 40, fill=fill, outline=outl, width=8)
         d.ellipse([120 + off, y + 35, 220 + off, y + 135], fill=(31, 90, 145))
         d.text((170 + off, y + 85), "ABC"[i], font=F(FONT_K, 64), fill=WHITE, anchor="mm")
-        E = ename(k); d.text((VW // 2 + 50 + off, y + 85), E, font=F(FONT_K, 86 if len(E) <= 10 else 66),
-                            fill=DARK if (rv is None or ok) else (150, 150, 150), anchor="mm")
+        E = ename(k); ey = y + 85 if rv is None else y + 62     # 答えの後は下に「発音」「これは〇〇」を出すので上に寄せる
+        d.text((VW // 2 + 50 + off, ey), E, font=fit(d, E, F_ROCK, 86, VW - 420, 50),
+               fill=DARK if (rv is None or ok) else (150, 150, 150), anchor="mm")
         if rv is not None:
-            if ok: d.text((VW - 150, y + 85), "◎", font=F(FONT_K, 90), fill=(47, 168, 79), anchor="mm")
+            if ok:
+                d.text((VW - 150, y + 85), "◎", font=F(FONT_K, 90), fill=(47, 168, 79), anchor="mm")
+                if kana(k) and not same_as_jp(k, q["jn"]): d.text((VW // 2 + 50, y + 135), f"発音 {kana(k)}", font=fit(d, "発音 " + kana(k), F_ROUND, 40, VW - 420), fill=(47, 120, 60), anchor="mm")
             else:
                 d.text((VW - 150, y + 85), "×", font=F(FONT_K, 90), fill=(227, 53, 13), anchor="mm")
-                d.text((VW // 2 + 50, y + 150), f"↑ これは{D['names'][k]}", font=F(FONT_B, 36), fill=(120, 120, 120), anchor="mm")
+                d.text((VW // 2 + 50, y + 135), f"↑ これは{D['names'][k]}", font=F(F_ROUND, 36), fill=(120, 120, 120), anchor="mm")
     if st.get("count"): timer(d, VW - 160, 600, st["frac"], st["count"])
-    footer(d, "全ポケモンの英語名は", "プロフィールのサイトで")
+    footer(d, "全ポケモンの英語名は", "「もんすぺ！」で検索")
     return im
 
 
 def real3_video(q, sp, D):
-    v1 = tts(f"{q['jn']}の、本物の英語名はどれ？", ZUNDA, 1.15)
-    v2 = tts(f"正解は、{['エー', 'ビー', 'シー'][q['opts'].index(q['key'])]}なのだ！", ZUNDA, 1.12)
+    v1 = tts(f"{q['jn']}の、本物の英語名はどれ？", ZUNDA, SPEED)
+    k = kana(q["key"]) if not same_as_jp(q["key"], q["jn"]) else ""
+    v2 = tts(f"正解は、{['エー', 'ビー', 'シー'][q['opts'].index(q['key'])]}の、{k}なのだ！" if k else
+             f"正解は、{['エー', 'ビー', 'シー'][q['opts'].index(q['key'])]}なのだ！", ZUNDA, SPEED)
     t_in = dur(v1, 1.8)
     segs = [(lambda t: real3_frame(q, sp, {"t": t}, D), t_in)]
     for c in (3, 2, 1): segs.append((lambda t, c=c: real3_frame(q, sp, {"count": c, "frac": (c - t) / 3}, D), 1.0))
-    segs.append((lambda t: real3_frame(q, sp, {"reveal": t}, D), dur(v2, 3.4)))
+    segs.append((lambda t: real3_frame(q, sp, {"reveal": t}, D), dur(v2, 3.4) + 0.3))
     st, total = seq(segs); m = Mix(total, STYLE)
     m.music(0, total)
     for i in range(3): m.pon(0.2 + i * 0.25)
     for c in range(3): m.tick(st[1 + c])
-    m.ding(st[4]); m.voice(0.1, v1); m.voice(st[4] + 0.25, v2)
+    m.ding(st[4]); m.voice(0.1, v1, "think"); m.voice(st[4] + 0.25, v2, "proud")
     return segs, m, real3_frame(q, sp, {"count": 3, "frac": 1}, D)
 
 
@@ -270,45 +286,47 @@ def speed5_frame(q, sps, st, D):
     for k in range(18):
         a0 = k * 20; d.pieslice([-900, -300, VW + 900, VH + 1500], a0 + st.get("spin", 0), a0 + 10 + st.get("spin", 0), fill=(60, 50, 100))
     d.rounded_rectangle([60, 70, VW - 60, 230], 40, fill=(255, 203, 5))
-    center(d, 150, f"英語名5連発【{q['level']}】", F(FONT_K, 72), DARK)
+    t_ = f"英語名5連発【{q['level']}】"; center(d, 150, t_, fit(d, t_, F_DELA, 72, VW - 180), DARK)
     i = st.get("i")
     if i is None:
-        center(d, 760, "1問2.5秒！", F(FONT_K, 120), WHITE, 10, DARK)
-        center(d, 920, "英語名だけで", F(FONT_K, 92), (255, 224, 102))
-        center(d, 1040, "ポケモンを当てろ", F(FONT_K, 92), (255, 224, 102))
-        center(d, 1240, "何問わかった？", F(FONT_K, 80), WHITE)
-        center(d, 1340, "コメントで教えて！", F(FONT_K, 80), WHITE)
+        center(d, 760, "1問2.5秒！", F(F_DELA, 120), WHITE, 10, DARK)
+        center(d, 920, "英語名だけで", F(F_DELA, 92), (255, 224, 102))
+        center(d, 1040, "ポケモンを当てろ", F(F_DELA, 92), (255, 224, 102))
+        center(d, 1240, "何問わかった？", F(F_ROUND, 80), WHITE)
+        center(d, 1340, "コメントで教えて！", F(F_ROUND, 80), WHITE)
+        footer(d, "全ポケモンの英語名と由来は", "「もんすぺ！」で検索", (20, 18, 40))
         return im
     for j in range(5):
         c = (255, 203, 5) if j < i else ((255, 255, 255) if j == i else (90, 80, 130))
         d.ellipse([VW // 2 - 250 + j * 110, 280, VW // 2 - 190 + j * 110, 340], fill=c)
     k = q["keys"][i]; E = ename(k)
-    center(d, 470, f"第{i + 1}問", F(FONT_K, 70), (255, 224, 102))
+    center(d, 440, f"第{i + 1}問", F(F_DELA, 70), (255, 224, 102))
     s = pop(st.get("t", 1) / 0.25)
-    fE = F(FONT_K, int((140 if len(E) <= 9 else 110) * max(0.2, s)))
-    center(d, 620, E, fE, WHITE, 12, DARK)
+    base = fit(d, E, F_DELA, 140, VW - 120, 70).size
+    center(d, 580, E, F(F_DELA, int(base * max(0.2, s))), WHITE, 12, DARK)
+    if s >= 1: ruby(d, VW // 2, 700, k, size=44)
     d.ellipse([VW // 2 - 300, 760, VW // 2 + 300, 1360], fill=WHITE)
     sp = sps[i]
     if st.get("rev"):
         paste_c(im, big(sp, 470), VW // 2, 1060) if sp else None
-        center(d, 1500, D["names"][k], F(FONT_K, 110), (255, 203, 5), 10, DARK)
+        center(d, 1460, D["names"][k], fit(d, D["names"][k], F_DELA, 110, VW - 160), (255, 203, 5), 10, DARK)
     else:
         if sp: paste_c(im, silhouette(big(sp, 470), (40, 34, 70)), VW // 2, 1060)
         fr = st.get("frac", 1)
         d.rounded_rectangle([140, 1460, VW - 140, 1510], 25, fill=(60, 50, 100))
         d.rounded_rectangle([140, 1460, 140 + int((VW - 280) * fr), 1510], 25, fill=(227, 53, 13) if fr < 0.35 else (255, 203, 5))
-    d.rectangle([0, VH - 210, VW, VH], fill=(20, 18, 40))
-    center(d, VH - 140, "全ポケモンの英語名と由来は", F(FONT_B, 44), WHITE); center(d, VH - 80, "プロフィールのサイトで", F(FONT_B, 44), (255, 224, 102))
+    footer(d, "全ポケモンの英語名と由来は", "「もんすぺ！」で検索", (20, 18, 40))
     return im
 
 
 def speed5_video(q, sps, D):
-    v0 = tts("英語名だけで、ポケモンを当てるのだ！", ZUNDA, 1.2)
+    v0 = tts("英語名だけで、ポケモンを当てるのだ！", ZUNDA, SPEED)
+    vk = [tts(kana(k), ZUNDA, SPEED) if kana(k) else None for k in q["keys"]]   # 各問の英語名を読み上げる
     segs = [(lambda t: speed5_frame(q, sps, {"spin": t * 20}, D), dur(v0, 2.0))]
     for i in range(5):
         segs.append((lambda t, i=i: speed5_frame(q, sps, {"i": i, "t": t, "frac": 1 - t / 2.5, "spin": t * 20}, D), 2.5))
         segs.append((lambda t, i=i: speed5_frame(q, sps, {"i": i, "rev": 1, "t": 1, "spin": t * 20}, D), 1.1))
-    v9 = tts("何問わかった？コメントで教えてほしいのだ！", ZUNDA, 1.15)
+    v9 = tts("何問わかった？コメントで教えてほしいのだ！", ZUNDA, SPEED)
     segs.append((lambda t: speed5_frame(q, sps, {"spin": t * 20}, D), dur(v9, 2.2)))
     st, total = seq(segs); m = Mix(total, STYLE)
     m.music(0, total)
@@ -316,7 +334,8 @@ def speed5_video(q, sps, D):
         t0 = st[1 + 2 * i]; m.whoosh(t0)
         for s in (1.0, 1.5, 2.0): m.tick(t0 + s)
         m.ding(st[2 + 2 * i])
-    m.voice(0.1, v0); m.voice(st[-1] + 0.1, v9)
+        m.voice(t0 + 0.3, vk[i], "normal")       # 英語名が大きく出きってから読む（文字より先に声を出さない）
+    m.voice(0.1, v0, "happy"); m.voice(st[-1] + 0.1, v9, "happy")
     return segs, m, speed5_frame(q, sps, {"i": 0, "t": 1, "frac": 0.6}, D)
 
 
@@ -345,18 +364,24 @@ def which_pick(D, n):
 
 def which_frame(q, sps, st, D):
     im = dots(grad((214, 245, 214), (150, 214, 160)), (30, 120, 70)); d = ImageDraw.Draw(im)
-    header(d, "この図鑑、どのポケモン？", (30, 120, 70))
+    header(d, "この図鑑、どのポケモン？", (30, 120, 70), font=F_MOCHI)
     f = F(FONT_B, 54); lines = ewrap(d, "“" + q["sent"] + "”", f, VW - 200)
     h = 70 * len(lines) + 60
     d.rounded_rectangle([70, 280, VW - 70, 280 + h], 36, fill=WHITE, outline=DARK, width=5)
     for k, ln in enumerate(lines): d.text((110, 320 + k * 70), ln, font=f, fill=DARK)
     y0 = 280 + h + 50
     if st.get("reveal") is not None:
-        fj = F(FONT_B, 44); jl = jwrap2(d, q["ja"], fj, VW - 200)[:4]
-        d.rounded_rectangle([70, y0 - 20, VW - 70, y0 + 60 * len(jl) + 10], 30, fill=(255, 250, 220))
-        for k, ln in enumerate(jl): d.text((110, y0 + k * 60), ln, font=fj, fill=DARK)
-        y0 += 60 * len(jl) + 50
-    cw, ch = 440, 400
+        key = q["key"]; E = ename(key)
+        head = f"{D['names'][key]} ＝ {E}" + (f"（{kana(key)}）" if kana(key) and not same_as_jp(key, D['names'][key]) else "")
+        fh = fit(d, head, F_MOCHI, 46, VW - 200)
+        fj = F(F_ROUND, 42); jl = jwrap2(d, q["ja"], fj, VW - 200)[:4]
+        d.rounded_rectangle([70, y0 - 20, VW - 70, y0 + 70 + 58 * len(jl) + 10], 30, fill=(255, 250, 220))
+        d.text((110, y0 + 10), head, font=fh, fill=(30, 120, 70), anchor="lm")
+        for k, ln in enumerate(jl): d.text((110, y0 + 70 + k * 58), ln, font=fj, fill=DARK)
+        y0 += 70 + 58 * len(jl) + 50
+    cw = 440
+    # 右下はずんだもんが立つので、カードは y=1550 まで。数え中は下にタイマーを置くので 1400 まで
+    ch = max(240, min(400, ((1400 if st.get("count") or st.get("reveal") is None else 1550) - y0 - 20) // 2))
     for i, k in enumerate(q["opts"]):
         x = 90 + (i % 2) * (cw + 20); y = y0 + (i // 2) * (ch + 20)
         ok = k == q["key"]; rv = st.get("reveal") is not None
@@ -364,26 +389,26 @@ def which_frame(q, sps, st, D):
         d.rounded_rectangle([x, y, x + cw, y + ch], 36, fill=fill, outline=(47, 168, 79) if rv and ok else DARK, width=10 if rv and ok else 5)
         sp = sps[i]
         if sp:
-            s = big(sp, 250)
+            s = big(sp, int(ch * 0.62))
             if rv and not ok: s = ImageEnhance.Brightness(s).enhance(0.45)
-            paste_c(im, s, x + cw // 2, y + 170)
-        d.text((x + 40, y + 40), "ABCD"[i], font=F(FONT_K, 54), fill=(30, 120, 70), anchor="mm")
-        d.text((x + cw // 2, y + ch - 55), D["names"][k], font=F(FONT_K, 52), fill=DARK, anchor="mm")
-    if st.get("count"): timer(d, VW // 2, min(VH - 320, y0 + 2 * ch + 20 + 120), st["frac"], st["count"])
-    footer(d, "英語版の図鑑と日本語訳は", "プロフィールのサイトで")
+            paste_c(im, s, x + cw // 2, y + int(ch * 0.43))
+        d.text((x + 40, y + 40), "ABCD"[i], font=F(F_DELA, 54), fill=(30, 120, 70), anchor="mm")
+        d.text((x + cw // 2, y + ch - 45), D["names"][k], font=fit(d, D["names"][k], F_MOCHI, 52, cw - 40), fill=DARK, anchor="mm")
+    if st.get("count"): timer(d, VW // 2, y0 + 2 * ch + 20 + 105, st["frac"], st["count"])
+    footer(d, "英語版の図鑑と日本語訳は", "「もんすぺ！」で検索")
     return im
 
 
 def which_video(q, sps, D):
-    v1 = tts("この英語版の図鑑、どのポケモンのこと？", ZUNDA, 1.15)
-    v2 = tts(f"正解は、{D['names'][q['key']]}なのだ！", ZUNDA, 1.12)
+    v1 = tts("この英語版の図鑑、どのポケモンのこと？", ZUNDA, SPEED)
+    v2 = tts(f"正解は、{D['names'][q['key']]}なのだ！" + pron_say(q["key"], D["names"][q["key"]]), ZUNDA, SPEED)
     segs = [(lambda t: which_frame(q, sps, {}, D), dur(v1, 2.6))]
     for c in (5, 4, 3, 2, 1): segs.append((lambda t, c=c: which_frame(q, sps, {"count": c, "frac": (c - t) / 5}, D), 1.0))
-    segs.append((lambda t: which_frame(q, sps, {"reveal": t}, D), dur(v2, 4.5)))
+    segs.append((lambda t: which_frame(q, sps, {"reveal": t}, D), dur(v2, 4.5) + 0.5))
     st, total = seq(segs); m = Mix(total, STYLE)
     m.music(0, total)
     for c in range(5): m.tick(st[1 + c])
-    m.ding(st[6]); m.voice(0.1, v1); m.voice(st[6] + 0.25, v2)
+    m.ding(st[6]); m.voice(0.1, v1, "think"); m.voice(st[6] + 0.25, v2, "proud")
     return segs, m, which_frame(q, sps, {"count": 5, "frac": 1}, D)
 
 
@@ -412,14 +437,15 @@ def rank_frame(q, sps, st, D, items):
     sp = sps[i]
     if sp:
         s = big(sp, 440); g = ImageEnhance.Color(s).enhance(0.15); g = ImageEnhance.Brightness(g).enhance(0.7)
-        zoom = 1 + 0.06 * st.get("t", 0)
-        paste_c(im, g, VW // 2 + int(math.sin(st.get("t", 0) * 30) * 4 * (rank == 1)), 820, zoom)
-    center(d, 1090, D["names"][k], F(FONT_M, 64), (232, 226, 214))
+        paste_c(im, g, VW // 2, 820)          # 指示書：画像を揺らしたりズームしたりしない
+    center(d, 1080, D["names"][k], F(FONT_M, 64), (232, 226, 214))
+    if kana(k) and not same_as_jp(k, D["names"][k]):
+        center(d, 1150, f"{ename(k)}（{kana(k)}）", fit(d, f"{ename(k)}（{kana(k)}）", FONT_M, 38, VW - 180), (170, 150, 150))
     fe = F(FONT_B, 46); el = ewrap(d, sent, fe, VW - 180)[:4]
-    for j, ln in enumerate(el): center(d, 1200 + j * 62, ln, fe, (232, 226, 214))
+    for j, ln in enumerate(el): center(d, 1230 + j * 62, ln, fe, (232, 226, 214))
     if st.get("ja"):
         fj = F(FONT_M, 48); jl = jwrap2(d, ja, fj, VW - 180)[:4]
-        y = 1220 + 62 * len(el)
+        y = 1250 + 62 * len(el)
         for j, ln in enumerate(jl): center(d, y + j * 66, ln, fj, (235, 60, 60))
     d.rectangle([0, VH - 170, VW, VH], fill=(30, 0, 4))
     center(d, VH - 85, "怖い図鑑のまとめはプロフィールのサイトで", F(FONT_B, 40), (232, 226, 214))
@@ -434,7 +460,7 @@ def rank_video(q, sps, D):
     segs = [(lambda t: rank_frame(q, sps, {}, D, items), 1.8)]
     vs = []
     for i in range(3):
-        v = tts(items[i][1], HIMARI, 0.85, -0.06, 0.6); vs.append(v)
+        v = tts(items[i][1], METAN, 0.95, -0.06, 0.6); vs.append(v)
         segs.append((lambda t, i=i: rank_frame(q, sps, {"i": i, "t": t}, D, items), 2.2))
         segs.append((lambda t, i=i: rank_frame(q, sps, {"i": i, "t": 2.2 + t, "ja": 1}, D, items), dur(v, 3.6)))
     st, total = seq(segs); m = Mix(total, STYLE)
@@ -453,21 +479,28 @@ MOOD = {"plus": "quiz", "real3": "quiz", "speed5": "fast", "which": "calm", "ran
 STYLE = music.style(0)
 
 
-def make(fmt, n, D, out="short.mp4", seed=None):
+def pick(fmt, n, D):
+    """n 番目の出題を選ぶ（まだ動画は作らない）"""
+    if fmt == "plus":
+        pool = plus_pool(D); random.Random(9).shuffle(pool); q = dict(pool[n % len(pool)]); q["jn"] = D["names"][q["key"]]
+    elif fmt == "real3":
+        q = real3_pick(D, n); q["jn"] = D["names"][q["key"]]
+    elif fmt == "speed5": q = speed5_pick(D, n)
+    elif fmt == "which": q = which_pick(D, n)
+    else: q = rank_pick(D, n)
+    return q
+
+
+def make(fmt, n, D, out="short.mp4", seed=None, q=None):
     global STYLE
     STYLE = music.style(seed if seed is not None else n * 101 + FORMATS.index(fmt), MOOD[fmt])
     print("BGM:", music.label(STYLE))
-    if fmt == "plus":
-        pool = plus_pool(D); random.Random(9).shuffle(pool); q = pool[n % len(pool)]; q["jn"] = D["names"][q["key"]]
-        segs, m, th = plus_video(q, P.sprite(q["key"]))
-    elif fmt == "real3":
-        q = real3_pick(D, n); q["jn"] = D["names"][q["key"]]; segs, m, th = real3_video(q, P.sprite(q["key"]), D)
-    elif fmt == "speed5":
-        q = speed5_pick(D, n); segs, m, th = speed5_video(q, [P.sprite(k) for k in q["keys"]], D)
-    elif fmt == "which":
-        q = which_pick(D, n); segs, m, th = which_video(q, [P.sprite(k) for k in q["opts"]], D)
-    else:
-        q = rank_pick(D, n); segs, m, th = rank_video(q, [P.sprite(k) for k in q["keys"]], D)
+    q = q or pick(fmt, n, D)
+    if fmt == "plus": segs, m, th = plus_video(q, P.sprite(q["key"]))
+    elif fmt == "real3": segs, m, th = real3_video(q, P.sprite(q["key"]), D)
+    elif fmt == "speed5": segs, m, th = speed5_video(q, [P.sprite(k) for k in q["keys"]], D)
+    elif fmt == "which": segs, m, th = which_video(q, [P.sprite(k) for k in q["opts"]], D)
+    else: segs, m, th = rank_video(q, [P.sprite(k) for k in q["keys"]], D)
     render(segs, m, out); th.save("thumb.png")
     return q
 

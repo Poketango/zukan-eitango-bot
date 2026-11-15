@@ -19,14 +19,44 @@ FONT_M = os.environ.get("FONT_M", "/usr/share/fonts/opentype/noto/NotoSerifCJK-B
 VW, VH, FPS, SR = 1080, 1920, 24, 44100
 LOCAL = os.environ.get("LOCAL_DATA")
 VV = os.environ.get("VOICEVOX_URL", "http://127.0.0.1:50021")
-ZUNDA, HIMARI = 3, 14                          # VOICEVOX 話者ID（ずんだもん ノーマル／冥鳴ひまり）
+ZUNDA, METAN = 3, 2                            # VOICEVOX 話者ID（ずんだもん ノーマル／四国めたん ノーマル）。冥鳴ひまりは四国めたんに替えた（2026-11-15 指示書）
+HIMARI = METAN                                 # 古い名前で呼んでいる所のため
+SPEED = 1.3                                    # 指示書：話す速さは1.3倍くらい
+HERE = os.path.dirname(os.path.abspath(__file__))
+FD = os.path.join(HERE, "fonts")
+F_DELA = os.path.join(FD, "DelaGothicOne-Regular.ttf")      # 型ごとに書体を変えて単調にしない（指示書：フォントを多様に）
+F_ROUND = os.path.join(FD, "MPLUSRounded1c-Black.ttf")
+F_ROCK = os.path.join(FD, "RocknRollOne-Regular.ttf")
+F_MOCHI = os.path.join(FD, "MochiyPopOne-Regular.ttf")
+try: KANA = json.load(open(os.path.join(HERE, "en_kana.json"), encoding="utf-8"))   # 英語名の発音（カタカナ）。1〜649番
+except Exception: KANA = {}
+
+
+def kana(key):
+    """英語名の発音のカタカナ。無ければ空"""
+    return KANA.get(key, "")
+
+
+def same_as_jp(key, jn):
+    """英語名の発音が日本語名とほぼ同じ（ピカチュウなど）なら True。指示書：そういうポケモンの英語名は紹介しない"""
+    norm = lambda s: re.sub(r"[ー・\s]", "", s or "").replace("ヴ", "ブ")
+    return bool(kana(key)) and norm(kana(key)) == norm(jn)
 
 SCARY = ["haunter", "cubone", "drifloon", "victreebel", "banette", "golbat", "yamask", "phantump", "froslass", "dusknoir",
          "mimikyu", "spiritomb", "marowak", "duskull", "gourgeist", "lampent", "mandibuzz", "cursola", "bramblin", "misdreavus",
          "drifblim", "dhelmise", "sableye", "litwick", "chandelure", "shuppet", "gengar", "jellicent", "trevenant", "polteageist"]
 
 
+_FONTS = {}
+
+
 def F(p, s):
+    k = (p, s)
+    if k not in _FONTS: _FONTS[k] = _F(p, s)      # 同じフォントを何度も読み込まない
+    return _FONTS[k]
+
+
+def _F(p, s):
     # 太いフォントが無い環境では、ある太さで代用する
     for cand in (p, p.replace("Black", "Bold"), FONT_B):
         if os.path.exists(cand): return ImageFont.truetype(cand, s, index=0)
@@ -69,12 +99,59 @@ def short_origin(t):
     return re.sub(r"(と考えられている|とされる|である)$", "", t)
 
 
+NG_HEAD = "、。，．」』）〕！？ぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮー…・"
+
+
+def _kind(c):
+    if "ぁ" <= c <= "ゖ": return "h"
+    if c in "、。，．！？」』）…": return "p"
+    return "o"
+
+
+def _phrases(text):
+    """文節くらいの単位に分ける。ひらがな（や句読点）の直後に漢字・カタカナ・英字・「（が来る所でだけ区切る。
+    英単語と（ ）の中は1つのかたまりにする"""
+    out, cur, i = [], "", 0
+    while i < len(text):
+        c = text[i]
+        if c == "（":                                    # （ ）は丸ごと前にくっつける
+            j = text.find("）", i); j = len(text) - 1 if j < 0 else j
+            cur += text[i:j + 1]; i = j + 1; continue
+        # 「吸い取る」「組み合わせる」のような複合動詞は、送りがなの後でも切らない
+        compound = (len(cur) >= 2 and cur[-1] in "いきしちにみりびぎ" and _kind(cur[-2]) == "o" and c in "取込出上下合付続返切直始回抜入替立掛")
+        if cur and _kind(cur[-1]) in "hp" and _kind(c) == "o" and c not in NG_HEAD and not compound:
+            out.append(cur); cur = ""
+        cur += c; i += 1
+    if cur: out.append(cur)
+    return out
+
+
+def _split_long(d, s, font, maxw):
+    """1つの文節が1行に入らないときだけ、字で折る（行頭に句読点や小さい字を置かない）"""
+    out = []
+    while d.textlength(s, font=font) > maxw:
+        k = len(s)
+        while k > 1 and d.textlength(s[:k], font=font) > maxw: k -= 1
+        while k > 1 and s[k] in NG_HEAD: k -= 1
+        while k > 1 and s[k - 1].isascii() and s[k].isascii() and s[k].isalpha(): k -= 1   # 英単語の途中で切らない
+        out.append(s[:k]); s = s[k:]
+    return out + [s]
+
+
 def jwrap(d, text, font, maxw):
-    lines, cur = [], ""
-    for ch in text:
-        if d.textlength(cur + ch, font=font) > maxw and cur: lines.append(cur); cur = ch
-        else: cur += ch
-    if cur: lines.append(cur)
+    """日本語の折り返し（指示書：単語・数字・（ ）の途中や、句読点だけの行・行頭の句読点を作らない）"""
+    lines = []
+    for para in text.split("\n"):
+        cur = ""
+        for ph in _phrases(para):
+            if d.textlength(cur + ph, font=font) <= maxw: cur += ph; continue
+            k = cur.rfind("、")                       # 行の後半に読点があれば、そこで切ってバランスを取る
+            if 0 < k < len(cur) - 1 and k >= len(cur) * 0.5 and d.textlength(cur[k + 1:] + ph, font=font) <= maxw:
+                lines.append(cur[:k + 1]); cur = cur[k + 1:] + ph; continue
+            if cur: lines.append(cur); cur = ""
+            parts = _split_long(d, ph, font, maxw)
+            lines += parts[:-1]; cur = parts[-1]
+        if cur: lines.append(cur)
     return lines
 
 
@@ -120,10 +197,20 @@ def voice_text(s):
 
 
 # ---------- 出題 ----------
+import functools
+
+
+@functools.lru_cache(maxsize=None)
+def origin_fits(s):
+    d = ImageDraw.Draw(Image.new("RGB", (8, 8)))
+    return any(len(jwrap(d, s, F(F_ROUND, z), 650)) <= 3 for z in range(44, 29, -2))
+
+
 def pick(n, names, origins, stats, en):
     ids = {k: int(stats[k]["id"]) for k in en if k in stats and k in names}
     if n % 2 == 0:
-        pool = [k for k in ids if k in origins and ids[k] <= 493 and ("組み合わせ" in origins[k]["t"] or "もじ" in origins[k]["t"])]
+        pool = [k for k in ids if k in origins and ids[k] <= 493 and ("組み合わせ" in origins[k]["t"] or "もじ" in origins[k]["t"])
+                and origins[k]["t"].startswith("英語名") and origin_fits(short_origin(origins[k]["t"]))]   # 由来が画面に収まるものだけ（途中で切らない）
         pool.sort(key=lambda k: ids[k]); random.Random(20261114).shuffle(pool)
         return dict(kind="name", key=pool[(n // 2) % len(pool)])
     pool = [k for k in SCARY if k in ids]
@@ -147,45 +234,75 @@ def scary_text(key, en, jp):
 BG1, RED, YEL, DARK, WHITE = (255, 214, 64), (227, 53, 13), (255, 240, 170), (31, 41, 51), (255, 255, 255)
 
 
+def fit(d, text, path, size, maxw, minsize=40):
+    """枠からはみ出さない大きさのフォントを返す（指示書：文字を枠からはみ出させない）"""
+    f = F(path, size)
+    while size > minsize and d.textlength(text, font=f) > maxw: size -= 4; f = F(path, size)
+    return f
+
+
+def ruby(d, cx, y, key, fill=DARK, size=50, path=None, box=True):
+    """英語名の下に発音のカタカナを振る（指示書：英語名とその発音を入れる）"""
+    k = kana(key)
+    if not k: return
+    f = fit(d, k, path or F_ROUND, size, VW - 220)
+    w = d.textlength(k, font=f)
+    if box: d.rounded_rectangle([cx - w / 2 - 28, y - size * 0.72, cx + w / 2 + 28, y + size * 0.72], int(size * 0.7), fill=WHITE)
+    d.text((cx, y), k, font=f, fill=fill, anchor="mm")
+
+
+def footer_left(d, l1, l2, top=VH - 230, bg=DARK, c1=WHITE, c2=YEL):
+    """下の帯。右下はずんだもんが立つので、文字は左に寄せる"""
+    d.rectangle([0, top, VW, VH], fill=bg)
+    d.text((50, top + 80), l1, font=fit(d, l1, F_ROUND, 46, 700), fill=c1, anchor="lm")
+    d.text((50, top + 150), l2, font=fit(d, l2, F_ROUND, 46, 700), fill=c2, anchor="lm")
+
+
 def name_scene(q, sp, phase, count=None):
     im = Image.new("RGB", (VW, VH), BG1); d = ImageDraw.Draw(im)
     for k in range(14):
         a0 = k * (360 / 14); d.pieslice([-900, -500, VW + 900, VH + 900], a0, a0 + 360 / 28, fill=(255, 200, 40))
-    d.rectangle([0, 0, VW, 190], fill=RED); center(d, 95, "英語名クイズ", F(FONT_K, 84), WHITE)
-    d.rectangle([0, VH - 230, VW, VH], fill=DARK)
-    center(d, VH - 150, "全1000匹の英語名と由来は", F(FONT_B, 46), WHITE); center(d, VH - 85, "プロフィールのサイトで", F(FONT_B, 46), YEL)
+    d.rectangle([0, 0, VW, 190], fill=RED); center(d, 95, "英語名クイズ", F(F_DELA, 84), WHITE)
+    footer_left(d, "全1000匹の英語名と由来は", "「もんすぺ！」で検索")
     E, J = ename(q["key"]), q["jn"]
-    center(d, 330, "この英語名、だーれだ？" if phase != "reveal" else "正解は…", F(FONT_K, 72), DARK)
-    center(d, 520, E, F(FONT_K, 150 if len(E) <= 9 else 118), WHITE, stroke=14, sfill=DARK)
+    center(d, 300, "この英語名、だーれだ？" if phase != "reveal" else "正解は…", F(F_ROUND, 72), DARK)
+    center(d, 470, E, fit(d, E, F_DELA, 150, VW - 120, 80), WHITE, stroke=14, sfill=DARK)
+    ruby(d, VW // 2, 600, q["key"])
+    cx, cy = VW // 2, 1000
     if sp:
-        s = big(sp, 620); img = s if phase == "reveal" else silhouette(s)
-        cx, cy = VW // 2, 1030
-        d.ellipse([cx - 360, cy - 360, cx + 360, cy + 360], fill=WHITE)
+        s = big(sp, 560); img = s if phase == "reveal" else silhouette(s)
+        d.ellipse([cx - 330, cy - 330, cx + 330, cy + 330], fill=WHITE)
         im.paste(img, (cx - img.width // 2, cy - img.height // 2), img)
     if phase == "q" and count:
-        d.ellipse([VW // 2 - 90, 1420, VW // 2 + 90, 1600], fill=RED)
-        d.text((VW // 2, 1510), str(count), font=F(FONT_K, 120), fill=WHITE, anchor="mm")
+        d.ellipse([VW // 2 - 80, 1350, VW // 2 + 80, 1510], fill=RED)
+        d.text((VW // 2, 1430), str(count), font=F(F_DELA, 110), fill=WHITE, anchor="mm")
     if phase == "reveal":
-        center(d, 1440, J + "！", F(FONT_K, 110), RED, stroke=10, sfill=WHITE)
+        center(d, 1410, J + "！", fit(d, J + "！", F_DELA, 110, VW - 120), RED, stroke=10, sfill=WHITE)
         o = q.get("origin", "")
         if o:
-            f = F(FONT_B, 48); lines = jwrap(d, o, f, VW - 160)[:2]
-            d.rounded_rectangle([60, 1520, VW - 60, 1520 + 66 * len(lines) + 30], 30, fill=WHITE)
-            for k, ln in enumerate(lines): center(d, 1568 + k * 66, ln, f, DARK)
+            size = 44                       # 途中で切らずに全部入るまで字を小さくする（3行まで）
+            while True:
+                f = F(F_ROUND, size); lines = jwrap(d, o, f, 650)
+                if len(lines) <= 3 or size <= 30: break
+                size -= 2
+            lh = int(size * 1.36)
+            d.rounded_rectangle([50, 1480, 760, 1480 + lh * len(lines) + 30], 30, fill=WHITE)
+            for k, ln in enumerate(lines): d.text((80, 1495 + k * lh + lh // 2), ln, font=f, fill=DARK, anchor="lm")
     return im
 
 
 def name_video(q, sp):
     """(フレームを返す関数, 秒数) の並びと、ナレーションの配置を返す"""
-    v1 = tts("この英語名のポケモン、だーれだ？", ZUNDA, 1.15)
+    k = kana(q["key"])
+    v1 = tts(f"この英語名、{k}。だーれだ？" if k else "この英語名のポケモン、だーれだ？", ZUNDA, SPEED)
     vo = voice_text(q.get("origin", ""))
-    v2 = tts(f"正解は、{q['jn']}なのだ！" + (f"{vo}、が由来なのだ。" if vo else ""), ZUNDA, 1.12)
-    intro = max(1.6, (len(v1) / SR + 0.2) if v1 is not None else 0)
-    rev = max(5.0, (len(v2) / SR + 0.6) if v2 is not None else 0)
+    v2 = tts(f"正解は、{q['jn']}なのだ！" + (f"{vo}、が由来なのだ。" if vo else ""), ZUNDA, SPEED)
+    intro = max(1.6, (len(v1) / SR + 0.3) if v1 is not None else 0)
+    rev = max(5.0, (len(v2) / SR + 0.7) if v2 is not None else 0)
     imgs = {"i": name_scene(q, sp, "intro"), 3: name_scene(q, sp, "q", 3), 2: name_scene(q, sp, "q", 2), 1: name_scene(q, sp, "q", 1),
             "r": name_scene(q, sp, "reveal")}
     segs = [(lambda t: imgs["i"], intro), (lambda t: imgs[3], 1.0), (lambda t: imgs[2], 1.0), (lambda t: imgs[1], 1.0), (lambda t: imgs["r"], rev)]
-    voices = [(0.1, v1), (intro + 3.0 + 0.2, v2)]
+    voices = [(0.1, v1, "happy"), (intro + 3.0 + 0.2, v2, "proud")]
     return segs, voices, imgs["i"]
 
 
@@ -223,17 +340,16 @@ def horror_frame(q, spr, t, total, state):
     glow = Image.new("RGB", (VW, VH), (0, 0, 0)); gd = ImageDraw.Draw(glow)
     gd.ellipse([VW / 2 - 520, 380, VW / 2 + 520, 1300], fill=(70, 0, 8))
     im = Image.blend(im, glow.filter(ImageFilter.GaussianBlur(120)), 0.9); d = ImageDraw.Draw(im)
-    # ポケモン：ゆっくり近づく＋小刻みに揺れる＋ときどき本来の色が一瞬だけ見える
+    # ポケモン：止めて見せる（指示書：画像を揺らしたりゆっくりズームしたりしない）。ときどき本来の色が一瞬だけ見え、最後に一度だけ飛び出す
     if spr:
         s, tinted = spr
-        z = 0.85 + 0.35 * min(1, t / total)
+        z = 1.0
         if state.get("lunge"): z = 1.9
         w, h = int(tinted.width * z), int(tinted.height * z)
         flick = (int(t * FPS) % 37 == 0)
         src = s if flick else tinted
         img = src.resize((w, h), Image.NEAREST)
-        jx = int(math.sin(t * 23) * 6 + (rng.integers(-10, 10) if int(t * FPS) % 11 == 0 else 0))
-        jy = int(math.cos(t * 17) * 4)
+        jx = jy = 0
         y0 = 760 if not state.get("lunge") else 900
         shadow = silhouette(img, (120, 0, 10)).filter(ImageFilter.GaussianBlur(28))
         im.paste(shadow, (VW // 2 - w // 2 + jx, y0 - h // 2 + jy + 10), shadow)
@@ -252,6 +368,8 @@ def horror_frame(q, spr, t, total, state):
     d.text((VW // 2 + gx + 5, 140), title, font=tf, fill=(120, 0, 0), anchor="mm")
     d.text((VW // 2 + gx, 140), title, font=tf, fill=(235, 30, 40), anchor="mm", stroke_width=2, stroke_fill=(0, 0, 0))
     d.text((VW // 2, 245), f"{q['jn']}　{ename(q['key'])}", font=F(FONT_M, 54), fill=BONE, anchor="mm")
+    if kana(q["key"]) and not same_as_jp(q["key"], q["jn"]):
+        d.text((VW // 2, 310), f"英語名の発音 {kana(q['key'])}", font=F(FONT_M, 36), fill=(170, 150, 150), anchor="mm")
     # 英文：タイプライターで1文字ずつ。怖い単語は赤
     n = int(len(q["sent"]) * state.get("en", 0))
     if n:
@@ -291,7 +409,7 @@ def horror_frame(q, spr, t, total, state):
 
 def scary_video(q, sp):
     spr = horror_sprite(sp) if sp else None
-    vja = tts(q["ja"], HIMARI, 0.82, -0.06, 0.6)
+    vja = tts(q["ja"], METAN, 0.95, -0.06, 0.6)
     t_type = min(4.5, 1.2 + len(q["sent"]) / 30)      # 英文のタイプ時間
     t_ja = max(4.5, (len(vja) / SR + 0.8) if vja is not None else 0)
     total = 1.0 + t_type + 1.0 + t_ja + 1.6
@@ -313,7 +431,7 @@ def scary_video(q, sp):
         lunge = t > 0.55
         return horror_frame(q, spr, total - 1.6 + t, total, {"en": 0, "ja": 0, "end": not lunge, "lunge": lunge, "flash": 0.55 < t < 0.75})
     segs = [(seg_intro, 1.0), (seg_type, t_type), (seg_hold, 1.0), (seg_ja, t_ja), (seg_end, 1.6)]
-    voices = [(2.0 + t_type + 0.3, vja)]
+    voices = [(2.0 + t_type + 0.3, vja, None)]
     thumb = horror_frame(q, spr, total * 0.7, total, {"en": 1, "ja": 1})
     return segs, voices, thumb
 
@@ -358,6 +476,16 @@ def bgm(kind, dur, marks):
 def render(segs, voices, kind, marks, out):
     os.makedirs("_f", exist_ok=True)
     parts = []
+    talker = None
+    if any(v is not None and f for _, v, f in voices):     # しゃべる立ち絵（ずんだもん）を右下に重ねる
+        import chara_overlay
+        talker = chara_overlay.Talker()
+        for t0, v, f in voices:
+            if f: talker.add(t0, v, f)
+        T0 = 0.0; wrapped = []
+        for fn, dur in segs:
+            wrapped.append((lambda t, fn=fn, T0=T0: talker.draw(fn(t), T0 + t), dur)); T0 += round(dur * FPS) / FPS
+        segs = wrapped
     for k, (fn, dur) in enumerate(segs):
         nfr = max(1, int(round(dur * FPS)))
         first = fn(0.0); still = all(fn(i / FPS) is first for i in (1, nfr // 2)) if nfr > 2 else True
@@ -373,7 +501,7 @@ def render(segs, voices, kind, marks, out):
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", "_list.txt", "-c", "copy", "_v.mp4"], check=True)
     total = sum(round(d * FPS) / FPS for _, d in segs)
     mix = bgm(kind, total, marks)
-    for t0, v in voices:
+    for t0, v, _ in voices:
         if v is None: continue
         a = int(t0 * SR); b = min(len(mix), a + len(v))
         mix[a:b] = mix[a:b] * 0.45 + v[:b - a]          # 声の間はBGMを下げる
@@ -394,15 +522,16 @@ def build(q, out):
         marks = {"hit": sum(d for _, d in segs) - 1.6 + 0.55}
     render(segs, voices, q["kind"], marks, out)
     thumb.save("thumb.png")
-    return any(v is not None for _, v in voices)
+    return any(v is not None for _, v, _ in voices)
 
 
 def meta(q, voiced):
     page = f"{SITE}/p/{q['key'].replace(' ', '_').replace('.', '')}.html"
-    credit = ("\n\nナレーション：VOICEVOX:ずんだもん" if q["kind"] == "name" else "\n\nナレーション：VOICEVOX:冥鳴ひまり") if voiced else ""
+    credit = ("\n\nナレーション：VOICEVOX:ずんだもん\n立ち絵：坂本アヒル様" if q["kind"] == "name" else "\n\nナレーション：VOICEVOX:四国めたん") if voiced else ""
     if q["kind"] == "name":
         title = f"この英語名、どのポケモン？「{ename(q['key'])}」【英語名クイズ】 #shorts"
-        desc = (f"正解は{q['jn']}！\n英語名の由来：{q.get('origin', '')}\n\n{q['jn']}の英語版図鑑と日本語訳 → {page}\n"
+        pron = f"（発音：{kana(q['key'])}）" if kana(q["key"]) else ""
+        desc = (f"正解は{q['jn']}！\n{ename(q['key'])}{pron}\n英語名の由来：{q.get('origin', '')}\n\n{q['jn']}の英語版図鑑と日本語訳 → {page}\n"
                 f"英語名がダジャレなポケモンまとめ → {SITE}/p/pun.html\n"
                 f"📚 ポケモン図鑑で覚える英単語(中1〜大学) → {SITE}/p/words.html\n🖨️ 無料の英単語プリント → {SITE}/p/print.html{credit}\n\n#ポケモン #ポケモン英語 #英語名")
     else:
@@ -462,21 +591,31 @@ if __name__ == "__main__":
     import music
     STYLE = music.style(n * 101 + KINDS.index(kind), "quiz")
     bgm_label = music.label(STYLE) if kind != "scary" else "horror/" + str(STYLE["seed"])
+    # 指示書：同じ内容のショートは二度と上げない。これまでに出した題名と同じになる出題は飛ばす
+    try: done = {json.loads(l)["title"] for l in open(LOG, encoding="utf-8") if l.strip()}
+    except Exception: done = set()
+    import formats
+    D = dict(en=en, jp=jp, names=names, stats=stats, origins=origins)
+    for skip in range(200):
+        mm = m + skip
+        if kind in ("name", "scary"):
+            q = pick(2 * (mm + 1) + (kind == "scary"), names, origins, stats, en)   # 11-14朝・昼に出した1本目どうしを飛ばす
+            q["jn"] = names[q["key"]]
+            if q["kind"] == "name": q["origin"] = short_origin(origins[q["key"]]["t"])
+            else: q["sent"], q["ja"] = scary_text(q["key"], en, jp)
+            title, desc = meta(q, True)
+        else:
+            q = formats.pick(kind, mm, D); title, desc = formats.meta(kind, q, D)
+        if title not in done: break
+        print("出したことのある題名なので飛ばす:", title)
+    print(json.dumps(q, ensure_ascii=False))
     if kind in ("name", "scary"):
-        q = pick(2 * (m + 1) + (kind == "scary"), names, origins, stats, en)   # 11-14朝・昼に出した1本目どうしを飛ばす
-        q["jn"] = names[q["key"]]
-        if q["kind"] == "name": q["origin"] = short_origin(origins[q["key"]]["t"])
-        else: q["sent"], q["ja"] = scary_text(q["key"], en, jp)
-        print(json.dumps(q, ensure_ascii=False))
         voiced = build(q, "short.mp4")
         title, desc = meta(q, voiced)
     else:
-        import formats
-        D = dict(en=en, jp=jp, names=names, stats=stats, origins=origins)
-        q = formats.make(kind, m, D, "short.mp4", seed=n * 101 + KINDS.index(kind))
+        formats.make(kind, mm, D, "short.mp4", seed=n * 101 + KINDS.index(kind), q=q)
         bgm_label = music.label(formats.STYLE) if kind != "rank" else "horror/" + str(formats.STYLE["seed"])
-        title, desc = formats.meta(kind, q, D)
-        voice = "VOICEVOX:冥鳴ひまり" if kind == "rank" else "VOICEVOX:ずんだもん"
+        voice = "VOICEVOX:四国めたん" if kind == "rank" else "VOICEVOX:ずんだもん\n立ち絵：坂本アヒル様"
         desc += f"\n\nナレーション：{voice}"
     import end_card; end_card.add("short.mp4")   # 最後に「もんすぺ！で検索」とサイトのホーム画面（2026-11-15）
     print(kind, n); print(title); print(desc)
