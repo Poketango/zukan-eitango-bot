@@ -351,7 +351,9 @@ def which_pick(D, n):
         es = [s for s in re.split(r"(?<=[.!?])\s+", D["en"][key].replace("\n", " ")) if s]
         js = [s for s in re.split(r"(?<=[。！？])", D["jp"].get(key, "")) if s.strip()]
         E = ename(key)
-        cand = [i for i, s in enumerate(es) if 40 <= len(s) <= 120]
+        # 英語名が文の頭以外に出る文は「this Pokémon sightings」のように崩れるので使わない
+        ok_ = lambda s: E.lower() not in s.lower() or (s.startswith(E) and s.lower().count(E.lower()) == 1)
+        cand = [i for i, s in enumerate(es) if 40 <= len(s) <= 120 and ok_(s)]
         if not cand or len(js) != len(es): continue
         i = cand[0]
         sent = re.sub(r"(^|[.!?]\s+)" + re.escape(E), lambda m_: m_.group(1) + "This Pokémon", es[i])
