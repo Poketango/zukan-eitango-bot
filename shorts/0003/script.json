@@ -70,7 +70,8 @@
   {
    "w": "z",
    "t": "キモリとジュカインは、\nとなりにいたのだ！",
-   "img": "sp2:treecko,sceptile"
+   "img": "sp2:treecko,sceptile",
+   "face": "surprise"
   },
   {
    "w": "m",
@@ -97,7 +98,8 @@
   {
    "w": "z",
    "t": "下の動画から、\n本編に行けるのだ！",
-   "img": "honpen.jpg"
+   "img": "honpen.jpg",
+   "face": "happy"
   }
  ]
 }

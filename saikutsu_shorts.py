@@ -59,11 +59,28 @@ def tts(line, speaker):
 _TACH = {}
 
 
-def tachie(who, open_, h):
-    k = (who, open_, h)
+FACES = ("normal", "happy", "proud", "surprise", "sad", "shock", "think")
+
+
+def face_of(ln):
+    """台本の face があればそれ。なければせりふの終わり方から選ぶ"""
+    if ln.get("face") in FACES: return ln["face"]
+    t = ln["t"].replace("\n", "")
+    if "！？" in t or "!?" in t: return "surprise"
+    if t.endswith("……") or t.endswith("……。"): return "sad"
+    if ln["w"] == "z" and t.endswith("？"): return "think"
+    if ln["w"] == "z" and t.endswith("！"): return "proud"
+    return "normal"
+
+
+def tachie(who, open_, h, face="normal"):
+    k = (who, open_, h, face)
     if k not in _TACH:
-        name = CH[who]["img"] + ("_open" if open_ else "")
-        im = Image.open(os.path.join(HERE, "chara", name + ".png")).convert("RGBA")
+        name = CH[who]["img"] + "_" + face + ("_open" if open_ else "")
+        path = os.path.join(HERE, "chara", name + ".png")
+        if not os.path.exists(path):      # 表情の絵がなければ前の1枚絵
+            path = os.path.join(HERE, "chara", CH[who]["img"] + ("_open" if open_ else "") + ".png")
+        im = Image.open(path).convert("RGBA")
         im = im.crop((0, 0, im.width, int(im.height * 0.62)))         # 頭から腰まで
         im = im.resize((round(im.width * h / im.height), h), Image.LANCZOS)
         if who == "m": im = im.transpose(Image.FLIP_LEFT_RIGHT)      # めたんは左の隅から右を向く
@@ -150,6 +167,13 @@ class Short:
             stroked(d, (VW // 2, y), txt, f, col, 11, (0, 0, 0))
         return im
 
+    def listen_face(self, i, who):
+        """聞いている方は、自分が直前に言ったときの顔を少し引きずる（驚き・ショックだけ）"""
+        for j in range(i - 1, -1, -1):
+            if self.s["lines"][j]["w"] == who:
+                f = face_of(self.s["lines"][j]); return f if f in ("shock", "sad") else "normal"
+        return "normal"
+
     def frame(self, i, t, dur, talking):
         ln = self.s["lines"][i]
         im = self.bg.copy()
@@ -186,7 +210,8 @@ class Short:
         # 立ち絵（話している方は口を動かし、明るく）
         for who, left in (("m", True), ("z", False)):
             act = ln["w"] == who
-            th = tachie(who, act and talking and int(t * 9) % 2 == 0, 470)
+            fc = face_of(ln) if act else ("normal" if i == 0 else self.listen_face(i, who))
+            th = tachie(who, act and talking and int(t * 9) % 2 == 0, 470, fc)
             if not act:
                 th = th.copy(); px = np.array(th).astype(np.float32); px[..., :3] *= 0.6; th = Image.fromarray(px.astype(np.uint8))
             bob = int(abs(np.sin(t * 7)) * 8) if act else 0

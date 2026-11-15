@@ -21,7 +21,8 @@
   {
    "w": "z",
    "t": "ニョロトノは、\nボクの雨の王様なのだ！",
-   "img": "sp:politoed"
+   "img": "sp:politoed",
+   "face": "proud"
   },
   {
    "w": "m",
@@ -48,7 +49,8 @@
   {
    "w": "z",
    "t": "カエルのおなかの中……\n王様が、寄生虫になってるのだ……",
-   "img": "frog.jpg"
+   "img": "frog.jpg",
+   "face": "shock"
   },
   {
    "w": "m",
@@ -78,7 +80,8 @@
   {
    "w": "z",
    "t": "下の動画から、\n本編に行けるのだ！",
-   "img": "honpen.jpg"
+   "img": "honpen.jpg",
+   "face": "happy"
   }
  ]
 }
