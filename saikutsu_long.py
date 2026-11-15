@@ -236,8 +236,8 @@ def header(sec):
     return im
 
 
-def place_image(base, src, label=None, cap=None, mark=None, zoom=1.0, alpha=1.0):
-    bx0, by0, bx1, by1 = BOX
+def place_image(base, src, label=None, cap=None, mark=None, zoom=1.0, alpha=1.0, reserve=0):
+    bx0, by0, bx1, by1 = BOX; by1 -= reserve
     top = by0 + (70 if label else 0)
     bw, bh = bx1 - bx0, by1 - top
     s = min(bw / src.width, bh / src.height); s = min(s, 4.0)
@@ -325,7 +325,8 @@ class Long:
         im = self.bg.copy()
         src = _IMG.get(ln.get("_img"))
         if src is not None:
-            place_image(im, src, ln.get("label"), ln.get("cap"), ln.get("mark"), zoom, alpha)
+            ety = ln.get("ety"); nrow = (len(ety) if isinstance(ety[0], (list, tuple)) else 1) if ety else 0
+            place_image(im, src, ln.get("label"), ln.get("cap"), ln.get("mark"), zoom, alpha, reserve=104 * nrow + 16 if nrow else 0)
         if ln.get("ety") and alpha >= 1: ety_panel(im, ln["ety"])
         h = header(ln["_sec"]); im.paste(h, (0, 0), h)
         return im
@@ -512,6 +513,47 @@ def bgm_tracks(total, sections, bgms, segs):
     return out * 0.22
 
 
+def thumbnail(d, out_dir):
+    """サムネイル（1280×720）。台本の "thumb" に従う：{"pre": 前置き, "big": [大きい2行], "hl": 色を変える行の番号, "main": 主役の画像, "back": 背景の写真, "row": [下に並べる画像]}"""
+    import glob
+    th = json.load(open(os.path.join(d, "script.json"), encoding="utf-8")).get("thumb")
+    if not th: return
+    W, H = 1280, 720
+    cand = sorted(glob.glob("/usr/share/fonts/**/NotoSerifCJK-Black.ttc", recursive=True) + glob.glob("/usr/share/fonts/**/NotoSerifCJK-Bold.ttc", recursive=True))
+    FM = cand[0] if cand else F_HOOK
+    im = Image.new("RGBA", (W, H), (18, 14, 12, 255))
+    back = load(th["back"]) if th.get("back") else None
+    if back is not None:                           # 右側に化石の写真をぼかさずに置き、左へ向けて暗くする
+        b = back.convert("RGB"); s = max(W * 0.72 / b.width, H / b.height); b = b.resize((int(b.width * s), int(b.height * s)), Image.LANCZOS)
+        x0 = W - b.width; y0 = (H - b.height) // 2; im.paste(b, (x0, y0))
+    g = np.zeros((H, W, 4), dtype=np.uint8); xs = np.linspace(0, 1, W)
+    a = np.clip(1.05 - xs * 1.25, 0.18, 0.96); g[..., 3] = (a[None, :] * 255).astype(np.uint8); g[..., :3] = (14, 10, 8)
+    im.alpha_composite(Image.fromarray(g, "RGBA"))
+    main = load(th["main"]) if th.get("main") else None
+    if main is not None:
+        s = 470 / max(main.width, main.height); m = main.resize((int(main.width * s), int(main.height * s)), Image.LANCZOS)
+        sh = Image.new("RGBA", m.size, (0, 0, 0, 0)); sh.putalpha(m.getchannel("A").point(lambda v: int(v * 0.6))); sh = sh.filter(ImageFilter.GaussianBlur(12))
+        im.alpha_composite(sh, (W - m.width - 40 + 10, 20 + 14)); im.alpha_composite(m, (W - m.width - 40, 20))
+    row = [load(r) for r in th.get("row", [])]
+    row = [r for r in row if r is not None]
+    for k, r in enumerate(row):                    # 下に小さく並べる（ほかに出てくるポケモン）
+        s = 150 / max(r.width, r.height); rr = r.resize((int(r.width * s), int(r.height * s)), Image.LANCZOS)
+        x = W - (len(row) - k) * 165 - 20; y = H - rr.height - 18
+        im.alpha_composite(rr, (x, y))
+    d_ = ImageDraw.Draw(im)
+    fp = ImageFont.truetype(FM, 50); y = 110
+    d_.text((60, y), th["pre"], font=fp, fill=(255, 255, 255), stroke_width=6, stroke_fill=(0, 0, 0), anchor="lm")
+    y += 70
+    for k, t in enumerate(th["big"]):
+        f = ImageFont.truetype(FM, 150)
+        while d_.textlength(t, font=f) > 700: f = ImageFont.truetype(FM, f.size - 6)
+        col = (255, 214, 40) if k == th.get("hl", -1) else (255, 255, 255)
+        d_.text((66, y + f.size // 2 + 8), t, font=f, fill=(0, 0, 0, 200), anchor="lm")           # 影
+        d_.text((58, y + f.size // 2), t, font=f, fill=col, stroke_width=12, stroke_fill=(0, 0, 0), anchor="lm")
+        y += f.size + 30
+    im.convert("RGB").save(os.path.join(out_dir, "thumbnail.png"))
+
+
 def accent_dump(L, out_dir):
     """全行の読みとアクセント（VOICEVOX の AquesTalk 風表記）を書き出す。' がアクセントの山、/ と 、が句の区切り"""
     import urllib.request, urllib.parse
@@ -538,6 +580,8 @@ def build(d, out_dir):
     json.dump(CREDITS, open(os.path.join(out_dir, "credits.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if os.environ.get("MODE", "full") == "sheet":
         sheet(S, out_dir); return
+    thumbnail(d, out_dir)
+    if os.environ.get("MODE") == "thumb": return
     if os.environ.get("MODE") == "accent":
         accent_dump(L, out_dir); return
     vs = []

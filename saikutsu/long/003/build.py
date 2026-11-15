@@ -201,7 +201,7 @@ S("m", "normal", "しかも子どものころは海を泳いでいて、\n大人
 S("z", "think", "花びらが腕…触手みたいなのだ。", "art:345", label="リリーラ")
 S("m", "happy", "まさにそれ。リリーラの中国語の名前は「触手百合」。\n日本語で読むと、しょくしゅゆり。", "art:345", big="触手百合",
   say="まさにそれ。リリーラの中国語の名前は、チューショウ・バイホー。日本語で読むと、しょくしゅゆり。")
-S("z", "surprise", "し、触手…\nしかも百合なのだ。", "art:345", big="触手百合", bgm="gudaguda")
+S("z", "surprise", "し、触手…\nしかも百合なのだ。", "art:345", label="触手百合", bgm="gudaguda")
 S("m", "think", "百合って、日本では女の子どうしの恋愛を\n表す言葉でもあるのよね。", "art:345", label="触手 ＋ 百合")
 S("z", "happy", "触手に百合…\nインターネットが大喜びしそうな組み合わせなのだ。", "art:345", label="健全なポケモンです")
 S("m", "normal", "変な想像しないの。\n名前の百合は、ただの花のユリよ。", "art:345", label="健全なポケモンです", v="tsun")
@@ -261,7 +261,9 @@ S("m", "happy", "もんすぺ！には、ポケモンの面白い雑学のコラ
 S("z", "happy", "今日の採掘はここまでなのだ。\nチャンネル登録もよろしくなのだ。", "site:", label="「もんすぺ！」で検索")
 L.append({"type": "ed"})
 
-sc = {"no": 3, "title": "化石ポケモンのモデルになった古生物、一挙解説！　プテラの名前をもらった翼竜も", "lines": L}
+sc = {"no": 3, "title": "化石ポケモンのモデルになった古生物、一挙解説！　プテラの名前をもらった翼竜も", "lines": L,
+      "thumb": {"pre": "化石ポケモンの元ネタ", "big": ["古生物を", "一挙解説！"], "hl": 1, "main": "art:142",
+                "back": "wiki:en:Pterodactylus", "row": ["art:408", "art:697", "art:347", "art:345"]}}
 d = sys.argv[1]
 os.makedirs(d, exist_ok=True)
 json.dump(sc, open(os.path.join(d, "script.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)

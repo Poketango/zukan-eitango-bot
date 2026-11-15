@@ -960,7 +960,7 @@
    "face": "surprise",
    "t": "し、触手…\nしかも百合なのだ。",
    "img": "art:345",
-   "big": "触手百合",
+   "label": "触手百合",
    "bgm": "gudaguda"
   },
   {
@@ -1289,5 +1289,21 @@
   {
    "type": "ed"
   }
- ]
+ ],
+ "thumb": {
+  "pre": "化石ポケモンの元ネタ",
+  "big": [
+   "古生物を",
+   "一挙解説！"
+  ],
+  "hl": 1,
+  "main": "art:142",
+  "back": "wiki:en:Pterodactylus",
+  "row": [
+   "art:408",
+   "art:697",
+   "art:347",
+   "art:345"
+  ]
+ }
 }
