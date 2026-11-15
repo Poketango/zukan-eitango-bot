@@ -5,7 +5,7 @@ import os, sys, json, base64, hashlib, urllib.request, urllib.parse
 from cryptography.fernet import Fernet
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-REDIRECT = "https://poketango.com/oauth.html"
+REDIRECT = "https://poketango.github.io/oauth.html"
 SCOPE = "https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube"
 
 
