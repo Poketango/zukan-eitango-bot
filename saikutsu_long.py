@@ -265,6 +265,21 @@ def place_image(base, src, label=None, cap=None, mark=None, zoom=1.0, alpha=1.0)
         stroked(d, ((bx0 + bx1) // 2, by0 + 36), label, f, (255, 230, 80), 10, (0, 0, 0))
 
 
+def ety_panel(base, ety):
+    """学名の言語と意味のテロップ（画像の下のほうに重ねる）。ety = [名前, 説明] か [[名前, 説明], ...]"""
+    rows = ety if isinstance(ety[0], (list, tuple)) else [ety]
+    d = ImageDraw.Draw(base); bx0, by0, bx1, by1 = BOX
+    fn, fe = font(F_SUB, 44), font(F_SMALL, 36)
+    hh = 104 * len(rows); y0 = by1 - hh - 6
+    w = max(max(d.textlength(a, font=fn), d.textlength(b, font=fe)) for a, b in rows) + 60
+    w = min(w, bx1 - bx0); x0 = (bx0 + bx1 - w) // 2
+    d.rounded_rectangle([x0, y0, x0 + w, y0 + hh], 18, fill=(20, 24, 40, 228), outline=(255, 214, 90), width=4)
+    for k, (a, b) in enumerate(rows):
+        yy = y0 + 104 * k
+        d.text((x0 + 30, yy + 32), a, font=fn, fill=(255, 220, 90), anchor="lm")
+        d.text((x0 + 30, yy + 76), b, font=fe, fill=(255, 255, 255), anchor="lm")
+
+
 def subtitle(d, ln):
     c = CH[ln["w"]]; text = ln["t"]
     lines = text.split("\n")
@@ -311,6 +326,7 @@ class Long:
         src = _IMG.get(ln.get("_img"))
         if src is not None:
             place_image(im, src, ln.get("label"), ln.get("cap"), ln.get("mark"), zoom, alpha)
+        if ln.get("ety") and alpha >= 1: ety_panel(im, ln["ety"])
         h = header(ln["_sec"]); im.paste(h, (0, 0), h)
         return im
 
@@ -375,11 +391,22 @@ class Long:
             d.ellipse([VW // 2 - 110, 700, VW // 2 + 110, 920], fill=(220, 210, 190), outline=(120, 90, 50), width=6)
             d.text((VW // 2, 810), "登録", font=font(F_SUB, 48), fill=(120, 90, 50), anchor="mm")
             d.rounded_rectangle([110, 730, 760, 900], 20, fill=(255, 255, 255), outline=(30, 30, 30), width=5)
-            d.text((435, 790), "ポケモンの英語名は", font=font(F_SMALL, 40), fill=(30, 30, 30), anchor="mm")
+            d.text((435, 790), "英語名も、雑学コラムも", font=font(F_SMALL, 40), fill=(30, 30, 30), anchor="mm")
             d.text((435, 850), "「もんすぺ！」で検索", font=font(F_SUB, 52), fill=(214, 64, 140), anchor="mm")
             for who, x in (("m", 1380), ("z", 1680)):
                 th = SS.tachie(who, False, 330, "happy"); im.paste(th, (x - th.width // 2, VH - th.height + 10), th)
         return im.convert("RGB")
+
+
+# VOICEVOX の声色（スタイル）。ID は /speakers で確かめたもの
+STYLES = {"m": {"normal": 2, "amaama": 0, "tsun": 6, "sexy": 4, "sasayaki": 36, "hiso": 37},
+          "z": {"normal": 3, "amaama": 1, "tsun": 7, "sexy": 5, "sasayaki": 22, "hiso": 38, "hero": 75, "namida": 76}}
+AUTO = {"z": {"sad": "namida", "happy": "amaama"}, "m": {}}
+
+
+def style_id(ln):
+    w = ln.get("w", "m"); v = ln.get("v") or AUTO[w].get(SS.face_of(ln) if not ln.get("type") else "happy", "normal")
+    return STYLES[w].get(v, STYLES[w]["normal"])
 
 
 def durations(L, voiced_lines):
@@ -413,16 +440,74 @@ def sheet(L_obj, out):
         if i < len(L): L_obj.frame(i, 1.0, 2.0, False).save(os.path.join(out, f"full_{i:03d}.jpg"), quality=88)
 
 
+BGM_DIR = os.path.join(HERE, "assets", "bgm")
+BGM_ROTATION = ["ichimono", "nichiyou", "manabiya", "taai", "haru"]
+
+
+def load_mp3(name):
+    p = os.path.join(BGM_DIR, name + ".mp3")
+    raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", p, "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True, check=True).stdout
+    return np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768
+
+
+def bgm_tracks(total, sections, bgms, segs):
+    """区切りごとに曲を変える。行に "bgm" があればその曲に切り替える。前後は0.8秒でフェード"""
+    n = int(total * SR); out = np.zeros(n, dtype=np.float32)
+    # 行ごとの開始時刻
+    starts, t = [], 0.2
+    for (_, dur, _) in segs: starts.append(t); t += round(dur * FPS) / FPS
+    cuts = []                                    # (時刻, 曲名)
+    rot = 0
+    sec_times = [st for st, _ in sections]
+    for k, st in enumerate(starts):
+        if bgms[k]: cuts.append((st, bgms[k])); continue
+        hit = [p for (x, p) in sections if abs(x - st) < 1e-3]
+        if hit:
+            if hit[-1] == "ed": cuts.append((st, "ed"))
+            else: cuts.append((st, BGM_ROTATION[rot % len(BGM_ROTATION)])); rot += 1
+    cuts.sort(); cache = {}
+    for j, (st, name) in enumerate(cuts):
+        en = cuts[j + 1][0] if j + 1 < len(cuts) else total
+        if en - st < 0.5: continue
+        if name not in cache: cache[name] = load_mp3(name)
+        src = cache[name]; a, b = int(st * SR), min(n, int(en * SR)); L_ = b - a
+        seg = np.tile(src, L_ // len(src) + 1)[:L_].copy()
+        f = min(int(0.8 * SR), L_ // 3)
+        seg[:f] *= np.linspace(0, 1, f); seg[-f:] *= np.linspace(1, 0, f)
+        out[a:b] += seg
+    return out * 0.22
+
+
+def accent_dump(L, out_dir):
+    """全行の読みとアクセント（VOICEVOX の AquesTalk 風表記）を書き出す。' がアクセントの山、/ と 、が句の区切り"""
+    import urllib.request, urllib.parse
+    vv = SS.P.VV
+    def req(path, data=None):
+        h = {"Content-Type": "application/json"} if data else {}
+        return urllib.request.urlopen(urllib.request.Request(vv + path, data=data, headers=h, method="POST"), timeout=90).read()
+    open(os.path.join(out_dir, "speakers.json"), "wb").write(req("/speakers"))
+    out = []
+    for i, ln in enumerate(L):
+        if ln.get("type") in ("title", "ed") or not ln.get("t"): continue
+        text = ln.get("say") or ln["t"]
+        q = json.loads(req("/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": 3})))
+        k = ln.get("kana") or q.get("kana", "")
+        out.append(f"{i}\t{ln.get('w')}\t{text.replace(chr(10), '')}\t{k}")
+    open(os.path.join(out_dir, "accent.txt"), "w", encoding="utf-8").write("\n".join(out))
+
+
 def build(d, out_dir):
     S = Long(d); L = S.L
     os.makedirs(out_dir, exist_ok=True)
     json.dump(CREDITS, open(os.path.join(out_dir, "credits.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if os.environ.get("MODE", "full") == "sheet":
         sheet(S, out_dir); return
+    if os.environ.get("MODE") == "accent":
+        accent_dump(L, out_dir); return
     vs = []
     for ln in L:
         if ln.get("type") in ("title", "ed") or not ln.get("t"): vs.append(None); continue
-        vs.append(SS.tts(ln, CH[ln.get("w", "m")]["sp"]))
+        vs.append(SS.tts(ln, style_id(ln)))
     segs, voices, total = durations(L, vs)
     os.makedirs("_l", exist_ok=True); parts = []
     for k, (i, dur, talk) in enumerate(segs):
@@ -445,7 +530,7 @@ def build(d, out_dir):
         if ln.get("type") in ("op", "title") or i == 0: sections.append((t, pi)); pi += 1
         if ln.get("type") == "ed": sections.append((t, "ed"))
         t += round(dur * FPS) / FPS
-    mix = ZL.bgm_sections(total, sections) * 0.8
+    mix = bgm_tracks(total, sections, [L[i].get("bgm") for (i, _, _) in segs], segs)
     t = 0.2
     for (i, dur, _) in segs:
         ln = L[i]

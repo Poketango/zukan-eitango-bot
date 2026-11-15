@@ -1,6 +1,6 @@
 {
  "no": 3,
- "title": "世界で初めて見つかった翼竜の子どもに、ポケモンのプテラの名前が付けられていた",
+ "title": "化石ポケモンのモデルになった古生物、一挙解説！　プテラの名前をもらった翼竜も",
  "lines": [
   {
    "w": "z",
@@ -44,14 +44,26 @@
    "w": "z",
    "face": "proud",
    "t": "ダイヤモンド・パールのころ、プテラは\nきあいのタスキを持って先発に出てたのだ。",
-   "img": "wiki:en:Pokémon_Diamond_and_Pearl"
+   "img": "dp_lead.png",
+   "cap": "ダイヤモンド・パールの通信対戦（海外版・2008年）",
+   "bgm": "battle"
   },
   {
    "w": "z",
    "face": "proud",
    "t": "ちょうはつとステルスロックで、\n相手の作戦をつぶしまくっていたのだ。",
-   "img": "table:持ち物=きあいのタスキ;技1=ちょうはつ;技2=ステルスロック;技3=ストーンエッジ;技4=じしん",
-   "label": "第4世代の先発プテラの型"
+   "img": "dp_rockslide.png",
+   "label": "第4世代の先発プテラの型",
+   "ety": [
+    [
+     "持ち物",
+     "きあいのタスキ"
+    ],
+    [
+     "技",
+     "ちょうはつ／ステルスロック／ストーンエッジ／じしん"
+    ]
+   ]
   },
   {
    "w": "m",
@@ -64,7 +76,8 @@
    "w": "m",
    "face": "think",
    "t": "でもそれ、もう20年近く前の話でしょ。",
-   "img": "wiki:en:Pokémon_Diamond_and_Pearl"
+   "img": "dp_lead.png",
+   "cap": "ダイヤモンド・パールの通信対戦（海外版・2008年）"
   },
   {
    "w": "m",
@@ -157,18 +170,31 @@
    "w": "m",
    "face": "happy",
    "t": "はいはい。今日はその化石の話。\nポケモンの化石と本物の化石を並べた展示があるの。",
-   "img": "csearch:Pokémon Fossil Museum^wiki:en:Pokémon_Fossil_Museum^wiki:en:National_Museum_of_Nature_and_Science"
+   "img": "csearch:Pokémon Fossil Museum^wiki:en:Pokémon_Fossil_Museum^wiki:en:National_Museum_of_Nature_and_Science",
+   "v": "tsun"
   },
   {
    "w": "m",
    "face": "happy",
-   "t": "そこから、化石の世界の\nちょっと怪しい話を掘っていくわよ。",
-   "img": "row:art:142|プテラ;art:138|オムナイト;art:697|ガチゴラス;art:345|リリーラ"
+   "t": "そこから、化石ポケモンのモデルになった古生物を、\nまとめて掘っていくわよ。",
+   "img": "row:art:408|ズガイドス;art:697|ガチゴラス;art:347|アノプス;art:345|リリーラ;art:142|プテラ"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "古生物？　恐竜じゃないのだ？",
+   "img": "row:art:408|ズガイドス;art:697|ガチゴラス;art:347|アノプス;art:345|リリーラ;art:142|プテラ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "恐竜もいるけど、海の生き物や翼竜もいるの。\nだから、大昔の生き物をまとめて古生物って呼ぶのよ。",
+   "img": "row:art:408|恐竜;art:697|恐竜;art:347|海の生き物;art:345|海の生き物;art:142|翼竜"
   },
   {
    "type": "title",
    "sub": "本日の採掘",
-   "t": "化石の世界の「しんか前」問題"
+   "t": "化石ポケモンのモデル、一挙解説"
   },
   {
    "type": "title",
@@ -186,9 +212,10 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "日本の15か所を回って、今年の5月からは\nアメリカのシカゴにあるフィールド自然史博物館でやってる。",
+   "t": "日本の15か所を回って、2026年の5月からは\nアメリカのシカゴにあるフィールド自然史博物館でやってる。",
    "img": "csearch:Pokémon Fossil Museum^wiki:en:Field_Museum_of_Natural_History",
-   "cap": "フィールド自然史博物館（シカゴ）"
+   "cap": "フィールド自然史博物館（シカゴ）",
+   "say": "日本の15か所を回って、にせんにじゅうろくねんの5月からは、アメリカのシカゴにあるフィールド自然史博物館でやってる。"
   },
   {
    "w": "z",
@@ -221,7 +248,8 @@
    "w": "m",
    "face": "happy",
    "t": "それで、自分で株式会社ポケモンに\n企画を持ち込んだんだって。",
-   "img": "row:art:140|カブト;wiki:en:Horseshoe_crab|カブトガニ"
+   "img": "row:art:140|カブト;wiki:en:Horseshoe_crab|カブトガニ",
+   "say": "それで、自分でかぶしきがいしゃポケモンに、企画を持ち込んだんだって。"
   },
   {
    "w": "z",
@@ -239,7 +267,11 @@
    "w": "m",
    "face": "normal",
    "t": "その奥には、本物の肉食恐竜タルボサウルスの骨格。\nモンゴルで見つかった、ティラノサウルスの仲間よ。",
-   "img": "row:art:697|ガチゴラス;wiki:en:Tarbosaurus|タルボサウルス"
+   "img": "row:art:697|ガチゴラス;wiki:en:Tarbosaurus|タルボサウルス",
+   "ety": [
+    "Tarbosaurus（タルボサウルス）",
+    "ギリシャ語　tarbos（恐れ）＋ sauros（トカゲ）"
+   ]
   },
   {
    "w": "m",
@@ -349,7 +381,11 @@
    "w": "m",
    "face": "normal",
    "t": "たとえばズガイドス。モデルは、頭のてっぺんの骨が\nドームみたいに分厚い恐竜、パキケファロサウルス。",
-   "img": "row:art:408|ズガイドス;wiki:en:Pachycephalosaurus|パキケファロサウルス"
+   "img": "row:art:408|ズガイドス;wiki:en:Pachycephalosaurus|パキケファロサウルス",
+   "ety": [
+    "Pachycephalosaurus（パキケファロサウルス）",
+    "ギリシャ語　pachys（厚い）＋ kephalē（頭）＋ sauros（トカゲ）"
+   ]
   },
   {
    "w": "z",
@@ -363,14 +399,22 @@
    "face": "normal",
    "t": "同じ時代の同じ地域からは、頭が平らでトゲトゲの\nドラコレックスも見つかってたの。",
    "img": "csearch:Dracorex hogwartsia Childrens Museum Indianapolis^csearch:Dracorex holotype skull^wiki:en:Dracorex",
-   "label": "ドラコレックス"
+   "label": "ドラコレックス",
+   "ety": [
+    "Dracorex（ドラコレックス）",
+    "ラテン語　draco（竜）＋ rex（王）"
+   ]
   },
   {
    "w": "m",
    "face": "normal",
    "t": "頭の後ろに長いトゲがある\nスティギモロクもね。",
    "img": "wiki:en:Stygimoloch",
-   "label": "スティギモロク"
+   "label": "スティギモロク",
+   "ety": [
+    "Stygimoloch（スティギモロク）",
+    "ギリシャ神話の冥界の川ステュクス ＋ 古代の神の名モロク"
+   ]
   },
   {
    "w": "m",
@@ -391,7 +435,17 @@
    "face": "happy",
    "t": "ハリー・ポッターに出てくる魔法学校、\nホグワーツから取った名前よ。",
    "img": "csearch:Dracorex hogwartsia Childrens Museum Indianapolis^csearch:Dracorex holotype skull^wiki:en:Dracorex",
-   "label": "Dracorex hogwartsia"
+   "label": "Dracorex hogwartsia",
+   "ety": [
+    [
+     "Dracorex（ドラコレックス）",
+     "ラテン語　draco（竜）＋ rex（王）"
+    ],
+    [
+     "hogwartsia（ホグワーツィア）",
+     "魔法学校「ホグワーツ」から"
+    ]
+   ]
   },
   {
    "w": "z",
@@ -483,7 +537,11 @@
    "w": "m",
    "face": "normal",
    "t": "じゃあ逆の話。ガチゴラスのモデルは、\nティラノサウルス。",
-   "img": "row:art:697|ガチゴラス;wiki:en:Sue_(dinosaur)|ティラノサウルス「スー」"
+   "img": "row:art:697|ガチゴラス;wiki:en:Sue_(dinosaur)|ティラノサウルス「スー」",
+   "ety": [
+    "Tyrannosaurus（ティラノサウルス）",
+    "ギリシャ語　tyrannos（暴君）＋ sauros（トカゲ）"
+   ]
   },
   {
    "w": "m",
@@ -497,7 +555,11 @@
    "face": "think",
    "t": "ナノ…小さいティラノなのだ？",
    "img": "wiki:en:Nanotyrannus",
-   "label": "ナノティラヌス"
+   "label": "ナノティラヌス",
+   "ety": [
+    "Nanotyrannus（ナノティラヌス）",
+    "ギリシャ語　nanos（小人）＋ tyrannos（暴君）"
+   ]
   },
   {
    "w": "m",
@@ -599,7 +661,11 @@
    "face": "normal",
    "t": "名前はナノティラヌス・レタエウス。\nギリシャ神話に出てくる忘れの川、レーテーから。",
    "img": "wiki:en:Lethe",
-   "label": "Nanotyrannus lethaeus"
+   "label": "Nanotyrannus lethaeus",
+   "ety": [
+    "lethaeus（レタエウス）",
+    "ギリシャ神話の忘却の川レーテーから"
+   ]
   },
   {
    "w": "m",
@@ -635,22 +701,43 @@
   {
    "w": "m",
    "face": "happy",
-   "t": "次は私の推し、アノプス！",
-   "img": "art:347",
-   "label": "アノプス"
+   "t": "次はアノプス。\n進化するとアーマルドになるポケモンね。",
+   "img": "row:art:347|アノプス>art:348|アーマルド"
   },
   {
    "w": "z",
    "face": "normal",
-   "t": "地味なのだ。",
-   "img": "art:347",
-   "label": "推しに失礼"
+   "t": "アーマルドって、対戦ではあんまり見ないのだ。",
+   "img": "art:348",
+   "label": "アーマルド"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "そこがいいのよ。アーマルドは、\n「こうそくスピン」で場を片づける役ができるの。",
+   "img": "art:348",
+   "label": "アーマルド　こうそくスピン",
+   "v": "amaama"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "地味じゃない。モデルはアノマロカリス。\n5億年くらい前、カンブリア紀の海にいた生き物よ。",
-   "img": "row:art:347|アノプス;wiki:en:Anomalocaris|アノマロカリス"
+   "t": "こうそくスピンは、さっきのステルスロックみたいに\n相手がまいた岩を取り除く技。",
+   "img": "art:348",
+   "label": "こうそくスピン　→　ステルスロックを片づける"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "プテラがまいた岩を、アーマルドが片づける…\nめたんは、マイナーなポケモンの通な戦い方が好きなのだ。",
+   "img": "row:art:142|ステルスロックをまく;art:348|片づける"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そういうこと。で、アノプスとアーマルドのモデルはアノマロカリス。\n5億年くらい前、カンブリア紀の海にいた生き物よ。",
+   "img": "row:art:347|アノプス;wiki:en:Anomalocaris|アノマロカリス",
+   "bgm": "manabiya"
   },
   {
    "w": "m",
@@ -678,19 +765,31 @@
    "face": "happy",
    "t": "アノマロカリスって名前は、\n「奇妙なエビ」って意味なの。",
    "img": "csearch:Anomalocaris canadensis frontal appendage",
-   "label": "アノマロカリス＝奇妙なエビ"
+   "label": "アノマロカリス＝奇妙なエビ",
+   "ety": [
+    "Anomalocaris（アノマロカリス）",
+    "ギリシャ語　anomalos（奇妙な）＋ karis（エビ）"
+   ]
   },
   {
    "w": "m",
    "face": "normal",
    "t": "次に、丸い口がクラゲだと思われて、\nペイトイアって名前が付いた。",
-   "img": "row:wiki:en:Peytoia|口の化石;wiki:en:Jellyfish|クラゲ"
+   "img": "row:wiki:en:Peytoia|口の化石;wiki:en:Jellyfish|クラゲ",
+   "ety": [
+    "Peytoia（ペイトイア）",
+    "カナダの地名ペイトー（山岳ガイドのビル・ペイトーにちなむ湖と山）から"
+   ]
   },
   {
    "w": "m",
    "face": "normal",
    "t": "胴体はナマコだと思われて、ラガニア。",
-   "img": "row:csearch:Laggania cambria|胴体の化石;wiki:en:Sea_cucumber|ナマコ"
+   "img": "row:csearch:Laggania cambria|胴体の化石;wiki:en:Sea_cucumber|ナマコ",
+   "ety": [
+    "Laggania（ラガニア）",
+    "カナダの鉄道の駅名ラガン（今のレイク・ルイーズ）から"
+   ]
   },
   {
    "w": "m",
@@ -764,14 +863,42 @@
   {
    "w": "m",
    "face": "happy",
-   "t": "もう1匹、私の推しのリリーラ。",
-   "img": "art:345",
-   "label": "リリーラ"
+   "t": "次はリリーラ。\n進化するとユレイドルになるわ。",
+   "img": "row:art:345|リリーラ>art:346|ユレイドル"
   },
   {
    "w": "z",
    "face": "normal",
-   "t": "いわとくさタイプの、\n花みたいなやつなのだ。",
+   "t": "ユレイドルも、対戦ではあんまり見ないのだ。",
+   "img": "art:346",
+   "label": "ユレイドル"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "そこがいいの。とくせいの「よびみず」で、\nみずタイプの技を引き寄せて、効かなくできる。",
+   "img": "art:346",
+   "label": "とくせい　よびみず",
+   "v": "amaama"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "「じこさいせい」で体力を戻しながら、\nステルスロックもまける、守りの役ね。",
+   "img": "art:346",
+   "label": "じこさいせい・ステルスロック"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "めたん、ほんとに渋い戦い方が好きなのだ。",
+   "img": "art:346",
+   "label": "ユレイドル"
+  },
+  {
+   "w": "z",
+   "face": "normal",
+   "t": "リリーラは、いわとくさタイプの、\n花みたいなポケモンなのだ。",
    "img": "art:345",
    "label": "いわ・くさタイプ"
   },
@@ -779,7 +906,11 @@
    "w": "m",
    "face": "normal",
    "t": "分類はウミユリポケモン。\nでもモデルのウミユリは、植物じゃなくて動物なの。",
-   "img": "row:art:345|リリーラ;wiki:en:Crinoid|ウミユリ"
+   "img": "row:art:345|リリーラ;wiki:en:Crinoid|ウミユリ",
+   "ety": [
+    "Crinoidea（ウミユリのなかま）",
+    "ギリシャ語　krinon（ユリ）＋ eidos（形）"
+   ]
   },
   {
    "w": "m",
@@ -827,14 +958,37 @@
   {
    "w": "z",
    "face": "surprise",
-   "t": "し、触手…\nちょっといかがわしい響きなのだ。",
+   "t": "し、触手…\nしかも百合なのだ。",
+   "img": "art:345",
+   "big": "触手百合",
+   "bgm": "gudaguda"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "百合って、日本では女の子どうしの恋愛を\n表す言葉でもあるのよね。",
+   "img": "art:345",
+   "label": "触手 ＋ 百合"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "触手に百合…\nインターネットが大喜びしそうな組み合わせなのだ。",
    "img": "art:345",
    "label": "健全なポケモンです"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "変な想像しないの。ポケモンシールドの図鑑にも、\n花びらのような触手で獲物をからめとるって書いてある。",
+   "t": "変な想像しないの。\n名前の百合は、ただの花のユリよ。",
+   "img": "art:345",
+   "label": "健全なポケモンです",
+   "v": "tsun"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンシールドの図鑑にも、\n花びらのような触手で獲物をからめとるって書いてある。",
    "img": "art:345",
    "label": "ポケモンシールドの図鑑より"
   },
@@ -849,13 +1003,15 @@
    "face": "normal",
    "t": "…正直すぎるのも考えものなのだ。",
    "img": "art:345",
-   "label": "触手百合"
+   "label": "触手百合",
+   "v": "hero"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "大昔の海にはウミユリが群れになって生えていて、\n岩がほとんどウミユリの化石でできた石灰岩もあるくらい。",
-   "img": "wiki:en:Crinoidal_limestone^csearch:crinoidal limestone"
+   "img": "wiki:en:Crinoidal_limestone^csearch:crinoidal limestone",
+   "bgm": "taai"
   },
   {
    "w": "m",
@@ -886,7 +1042,8 @@
    "w": "z",
    "face": "normal",
    "t": "…でも、プテラの話がまだなのだ。\n最初のやつ。",
-   "img": "sil:wiki:en:Aerodactylus^sil:wiki:en:Pterodactylus"
+   "img": "sil:wiki:en:Aerodactylus^sil:wiki:en:Pterodactylus",
+   "bgm": "kamikakushi"
   },
   {
    "w": "m",
@@ -900,7 +1057,11 @@
    "face": "happy",
    "t": "「アエロダクティルス」。",
    "img": "wiki:en:Aerodactylus",
-   "label": "Aerodactylus（アエロダクティルス）"
+   "label": "Aerodactylus（アエロダクティルス）",
+   "ety": [
+    "Aerodactylus（アエロダクティルス）",
+    "ギリシャ語　aēr（空気）＋ daktylos（指）"
+   ]
   },
   {
    "w": "z",
@@ -913,7 +1074,7 @@
    "w": "m",
    "face": "normal",
    "t": "そっくりどころか、論文にはっきり\n「ポケモンのエアロダクティルにちなむ」って書いてあるの。",
-   "img": "paper:PLOS ONE（2014年）|名前の由来：Aero（風）＋ dactylus（指）。/任天堂のポケモン Aerodactyl から取った。|論文の「名前の由来」の部分（日本語訳）"
+   "img": "paper:PLOS ONE（2014年）|名前の由来：Aero（空気）＋ dactylus（指）。/任天堂のポケモン Aerodactyl から取った。|論文の「名前の由来」の部分（日本語訳）"
   },
   {
    "w": "z",
@@ -926,7 +1087,8 @@
    "w": "m",
    "face": "think",
    "t": "…問題はここから。その論文の題名、\n日本語にすると…",
-   "img": "paper:PLOS ONE（2014年）|Pterodactylus scolopaciceps … :/The Problem of Cryptic Pterosaur Taxa/in Early Ontogeny|論文の題名"
+   "img": "paper:PLOS ONE（2014年）|Pterodactylus scolopaciceps … :/The Problem of Cryptic Pterosaur Taxa/in Early Ontogeny|論文の題名",
+   "v": "hiso"
   },
   {
    "w": "m",
@@ -951,7 +1113,8 @@
    "w": "z",
    "face": "sad",
    "t": "…いやな予感がするのだ。",
-   "img": "wiki:en:Aerodactylus"
+   "img": "wiki:en:Aerodactylus",
+   "v": "hero"
   },
   {
    "w": "m",
@@ -964,14 +1127,22 @@
    "face": "normal",
    "t": "2024年には、スマイスさんとアンウィンさんが、アエロダクティルスは\n「プテロダクティルス・アンティクウスの子ども」だと結論づけたの。",
    "img": "row:wiki:en:Aerodactylus|子ども>wiki:en:Pterodactylus|大人",
-   "label": "アエロダクティルス ＝ プテロダクティルスの子ども"
+   "label": "アエロダクティルス ＝ プテロダクティルスの子ども",
+   "ety": [
+    "antiquus（アンティクウス）",
+    "ラテン語で「古い」"
+   ]
   },
   {
    "w": "m",
    "face": "normal",
    "t": "プテロダクティルスは、約250年前に同じドイツで見つかった、\n世界で最初に見つかった翼竜よ。",
    "img": "wiki:en:Pterodactylus",
-   "label": "世界で最初に見つかった翼竜"
+   "label": "世界で最初に見つかった翼竜",
+   "ety": [
+    "Pterodactylus（プテロダクティルス）",
+    "ギリシャ語　pteron（翼）＋ daktylos（指）"
+   ]
   },
   {
    "w": "z",
@@ -1029,7 +1200,8 @@
    "face": "happy",
    "t": "プテラはもうメガシンカしてるけどね。",
    "img": "art:10042",
-   "label": "メガプテラ"
+   "label": "メガプテラ",
+   "bgm": "ichimono"
   },
   {
    "w": "z",
@@ -1099,6 +1271,13 @@
    "t": "今日出てきたポケモンの英語名は、\n英単語帳サイト「もんすぺ！」でも調べられるわ。",
    "img": "site:",
    "label": "「もんすぺ！」で検索"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "もんすぺ！には、ポケモンの面白い雑学のコラムもあるの。\n動画の続きみたいに読めるわよ。",
+   "img": "site:",
+   "label": "「もんすぺ！」雑学コラムもあります"
   },
   {
    "w": "z",

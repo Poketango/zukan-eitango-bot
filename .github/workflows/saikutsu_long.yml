@@ -41,7 +41,7 @@ jobs:
             python -c "import json,sys;d=json.load(open('$f'));print('NUM=%d'%d['num']);print('MODE='+d.get('mode','sheet'))" >> $GITHUB_ENV
           fi
       - name: VOICEVOX の起動を待つ
-        if: env.MODE == 'full'
+        if: env.MODE != 'sheet'
         run: |
           for i in $(seq 1 80); do
             if curl -sf http://127.0.0.1:50021/version; then echo " ready"; exit 0; fi
