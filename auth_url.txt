@@ -1,0 +1,1 @@
+https://accounts.google.com/o/oauth2/v2/auth?client_id=262748652139-gqicbfiqutqs4idjaq6tn4h2lqfc5qmu.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fpoketango.com%2Foauth.html&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.upload+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube&access_type=offline&prompt=consent+select_account
