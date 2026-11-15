@@ -11,7 +11,28 @@ DUR = 3.4
 HOME = os.path.join(HERE, "assets", "img", "site_home.png")
 FB = os.path.join(HERE, "fonts", "DelaGothicOne-Regular.ttf")
 FM = os.path.join(HERE, "fonts", "MPLUSRounded1c-ExtraBold.ttf")
-LINE = "ポケモンの英語名と図鑑は、もんすぺ、で検索なのだ！"
+LINE = "ポケモンの英語名と図鑑は、もんすぺで検索なのだ！"
+# 読みとアクセントを指定（エンジン任せだと「もんすぺ、で」で切れて「のだ」が浮いた）
+KANA = "ポケモンノ'/エエゴ'メエト/ズカンワ'、モンスペ'デ/ケンサクナ'ノダ"
+
+
+def _voice():
+    import post, json, io, urllib.request, urllib.parse
+    vv = post.VV
+    def req(path, data=None):
+        h = {"Content-Type": "application/json"} if data else {}
+        return urllib.request.urlopen(urllib.request.Request(vv + path, data=data, headers=h, method="POST"), timeout=60).read()
+    q = json.loads(req("/audio_query?" + urllib.parse.urlencode({"text": LINE, "speaker": post.ZUNDA})))
+    try:
+        q["accent_phrases"] = json.loads(req("/accent_phrases?" + urllib.parse.urlencode({"text": KANA, "speaker": post.ZUNDA, "is_kana": "true"})))
+    except Exception as ex:
+        print("アクセント指定なしで読む:", repr(ex)[:100])
+    q.update(speedScale=1.15, outputSamplingRate=SR, volumeScale=1.3, prePhonemeLength=0.05, postPhonemeLength=0.15)
+    wav = req(f"/synthesis?speaker={post.ZUNDA}", json.dumps(q).encode())
+    with wave.open(io.BytesIO(wav)) as w:
+        a = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
+        if w.getnchannels() == 2: a = a.reshape(-1, 2).mean(axis=1)
+    return a
 
 
 def ease(x):
@@ -104,8 +125,7 @@ def add(mp4, voice=True):
         a = _chime()
         if voice:
             try:
-                import post
-                v = post.tts(LINE, post.ZUNDA, 1.15)
+                v = _voice()
                 if v is not None:
                     s = int(0.25 * SR); e = min(len(a), s + len(v)); a[s:e] += v[:e - s]
             except Exception as ex:
