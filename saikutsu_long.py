@@ -1,0 +1,470 @@
+# ポケモン雑学採掘所の横動画（1920×1080、@poke_zatsugaku、2026-11-16〜）
+#   台本と素材は saikutsu/long/NNN/script.json と同じフォルダの画像。
+#   画面：背景は採掘場。左上にチャンネル名、右上に「いま何の話か」の帯、中央に大きな画像、
+#         左下にめたん、右下にずんだもん、下の中央に字幕（話者ごとに縁取りの色を変える）。
+#   特別な行：{"type":"op"} チャンネルOP、{"type":"title","t":"見出し","sub":"小見出し"} 区切り、{"type":"ed"} 終わりの画面
+#   画像の書き方（img）：
+#     art:142            ポケモンの公式アートワーク（全国図鑑番号。メガシンカなどは PokeAPI の番号）
+#     wiki:en:Title      ウィキペディアの記事の代表画像（ja: も可）
+#     commons:File.jpg   ウィキメディア・コモンズのファイル
+#     csearch:検索語      コモンズの画像検索の1件目
+#     row:A|札;B|札      画像を横に並べる（「>」で区切ると矢印でつなぐ）。A は上の書き方
+#     table:左=右;左=右   文字の表（技・持ち物・用語の説明用）
+#     tiers:強調する階級  Smogon の階級の階段の図
+#     sil:A              A を黒いシルエットにして「？」を重ねる（答えを言う前）
+#     ファイル名          台本と同じフォルダの画像
+#     「A^B」は A が取れないとき B を使う
+#   行のほかの項目：label（画像の上の札）、cap（画像の左下の説明）、mark [x,y,r]（赤い丸。画像の中の割合）、
+#     big（画面いっぱいの大きな文字）、sec（右上の帯を変える）、face、say、kana
+#   環境変数：NUM（回番号）、MODE=sheet（音声なしで1行1コマの一覧だけ作る）／full（動画を作る）
+import os, sys, json, re, io, math, wave, subprocess, urllib.request, urllib.parse
+import numpy as np
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
+
+import post as P
+import saikutsu_shorts as SS
+import zatsugaku_long as ZL
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+VW, VH, FPS, SR = 1920, 1080, 24, 44100
+FD = os.path.join(HERE, "fonts")
+F_HOOK = os.path.join(FD, "DelaGothicOne-Regular.ttf")
+F_SUB = os.path.join(FD, "MPLUSRounded1c-Black.ttf")
+F_SMALL = os.path.join(FD, "MPLUSRounded1c-ExtraBold.ttf")
+F_POP = os.path.join(FD, "RocknRollOne-Regular.ttf")
+CH = SS.CH
+UA = ZL.UA
+CREDITS = {}
+font = SS.font
+stroked = SS.stroked
+BOX = (330, 92, 1590, 830)          # 画像を置く場所（立ち絵と字幕を避ける）
+
+
+# ---------- 画像 ----------
+def _get(url, name):
+    os.makedirs(os.path.join(HERE, "_cache"), exist_ok=True)
+    fn = os.path.join(HERE, "_cache", re.sub(r"[^A-Za-z0-9._-]", "_", name)[-150:])
+    if not os.path.exists(fn):
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r: open(fn, "wb").write(r.read())
+    return Image.open(fn).convert("RGBA")
+
+
+def art(n):
+    url = f"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{n}.png"
+    im = _get(url, f"art_{n}.png"); bb = im.getbbox()
+    return im.crop(bb) if bb else im
+
+
+def wiki(spec):
+    lang, _, title = spec.partition(":")
+    url = f"https://{lang}.wikipedia.org/api/rest_v1/page/summary/" + urllib.parse.quote(title.replace(" ", "_"), safe="")
+    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r: js = json.loads(r.read().decode())
+    src = (js.get("originalimage") or js.get("thumbnail") or {}).get("source")
+    if not src: raise RuntimeError("画像のない記事")
+    if src.lower().endswith(".svg") and js.get("thumbnail"): src = js["thumbnail"]["source"]
+    w = (js.get("originalimage") or {}).get("width", 0)
+    if w > 1600 and "/commons/" in src and "/thumb/" not in src:      # 大きすぎる原寸は縮小版を使う
+        base = src.split("/wikipedia/commons/")[1]; fname = base.rsplit("/", 1)[-1]
+        src = f"https://upload.wikimedia.org/wikipedia/commons/thumb/{base}/1600px-{fname}"
+    CREDITS[spec] = f"{title}（{lang}.wikipedia.org の記事の画像。{src.rsplit('/', 1)[-1]}）"
+    return _get(src, "wiki_" + lang + "_" + title)
+
+
+def csearch(q):
+    p = urllib.parse.urlencode(dict(action="query", generator="search", gsrsearch=q + " filetype:bitmap", gsrnamespace=6, gsrlimit=1,
+                                    prop="imageinfo", iiprop="url", iiurlwidth=1600, format="json"))
+    with urllib.request.urlopen(urllib.request.Request("https://commons.wikimedia.org/w/api.php?" + p, headers=UA), timeout=30) as r:
+        pages = json.loads(r.read().decode())["query"]["pages"]
+    pg = next(iter(pages.values())); ii = pg["imageinfo"][0]
+    CREDITS["csearch:" + q] = pg["title"] + "（ウィキメディア・コモンズ）"
+    return _get(ii.get("thumburl") or ii["url"], "cs_" + q)
+
+
+def fig_row(spec):
+    arrow = ">" in spec
+    parts = [p for p in re.split(r"[;>]", spec) if p]
+    items = []
+    for p in parts:
+        ref, _, lab = p.partition("|"); items.append((load(ref), lab))
+    n = len(items); H = 640; gap = 110 if arrow else 50
+    cw = (1800 - gap * (n - 1)) // n
+    W = cw * n + gap * (n - 1)
+    im = Image.new("RGBA", (W, H + 90), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    for i, (src, lab) in enumerate(items):
+        x0 = i * (cw + gap)
+        if src is not None:
+            s = min(cw / src.width, (H - 20) / src.height); w, h = int(src.width * s), int(src.height * s)
+            pic = src.resize((w, h), Image.LANCZOS); px, py = x0 + (cw - w) // 2, (H - h) // 2
+            if pic.getchannel("A").getextrema()[0] == 255:
+                d.rectangle([px - 8, py - 8, px + w + 8, py + h + 8], fill=(250, 244, 230, 255))
+            im.paste(pic, (px, py), pic)
+        if lab:
+            f = font(F_SUB, 54)
+            while d.textlength(lab, font=f) > cw - 10 and f.size > 28: f = font(F_SUB, f.size - 2)
+            stroked(d, (x0 + cw // 2, H + 45), lab, f, (255, 255, 255), 8, (0, 0, 0))
+        if arrow and i < n - 1:
+            ax = x0 + cw + gap // 2; ay = H // 2
+            d.polygon([(ax - 34, ay - 40), (ax + 36, ay), (ax - 34, ay + 40)], fill=(255, 214, 90, 255), outline=(0, 0, 0, 255), width=5)
+    return im
+
+
+def fig_table(spec):
+    rows = [r.split("=", 1) for r in spec.split(";")]
+    f1, f2 = font(F_SUB, 60), font(F_SMALL, 56)
+    tmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
+    w1 = max(tmp.textlength(a, font=f1) for a, b in rows) + 70
+    w2 = max(tmp.textlength(b, font=f2) for a, b in rows) + 70
+    rh = 104; W, H = int(w1 + w2), rh * len(rows)
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    for i, (a, b) in enumerate(rows):
+        y = i * rh
+        d.rectangle([0, y, w1, y + rh - 6], fill=(40, 70, 130, 245))
+        d.rectangle([w1, y, W, y + rh - 6], fill=(250, 246, 236, 245))
+        d.text((w1 / 2, y + rh / 2 - 3), a, font=f1, fill=(255, 255, 255), anchor="mm")
+        d.text((w1 + 35, y + rh / 2 - 3), b, font=f2, fill=(30, 30, 30), anchor="lm")
+    return im
+
+
+def fig_tiers(hl):
+    tiers = [("Ubers", "強すぎて禁止"), ("OU", "よく使われる（約4.5%以上）"), ("UU", "あまり使われない"), ("RU", "めったに使われない")]
+    if hl.startswith("upto:"):
+        tiers = [t for t in tiers if t[0] in hl[5:].split(",")]; hl = ""
+    elif hl != "Ubers":
+        tiers = tiers[1:]                 # Ubers はその説明をするまで出さない
+    W, rh = 1500, 150; im = Image.new("RGBA", (W, rh * len(tiers) + 20), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    for i, (name, desc) in enumerate(tiers):
+        y = i * rh; indent = i * 90
+        on = name == hl
+        d.rounded_rectangle([indent, y, W - 1, y + rh - 18], 18, fill=(255, 214, 90, 255) if on else (250, 244, 230, 245),
+                            outline=(255, 40, 40, 255) if on else (0, 0, 0, 255), width=10 if on else 4)
+        d.text((indent + 40, y + (rh - 18) / 2), name, font=font(F_HOOK, 70), fill=(30, 30, 30), anchor="lm")
+        d.text((indent + 330, y + (rh - 18) / 2), desc, font=font(F_SUB, 52), fill=(30, 30, 30), anchor="lm")
+    return im
+
+
+def fig_sil(ref):
+    src = load(ref)
+    if src is None: return None
+    a = src.getchannel("A"); im = Image.new("RGBA", src.size, (20, 18, 16, 255)); im.putalpha(a)
+    if a.getextrema()[0] == 255:      # 写真は黒くつぶして輪郭をぼかす
+        g = src.convert("L").point(lambda v: 255 if v < 140 else 0).filter(ImageFilter.GaussianBlur(3))
+        im = Image.new("RGBA", src.size, (40, 36, 30, 255)); ov = Image.new("RGBA", src.size, (10, 8, 6, 255)); im.paste(ov, (0, 0), g)
+    d = ImageDraw.Draw(im); s = int(min(im.size) * 0.7)
+    stroked(d, (im.width // 2, im.height // 2), "？", font(F_HOOK, s), (255, 214, 90), max(6, s // 18), (0, 0, 0))
+    return im
+
+
+def fig_paper(spec):
+    """論文の題名を、論文の1ページ目に見立てて見せる（実物の画面がとれないとき）"""
+    journal, title, sub = (spec.split("|") + ["", ""])[:3]
+    W, H = 1400, 760; im = Image.new("RGBA", (W, H), (252, 251, 247, 255)); d = ImageDraw.Draw(im)
+    d.rectangle([0, 0, W, 90], fill=(30, 60, 110, 255)); d.text((40, 45), journal, font=font(F_SMALL, 44), fill=(255, 255, 255), anchor="lm")
+    y = 150
+    for ln in title.split("/"):
+        f = font(F_SUB, 54)
+        while d.textlength(ln, font=f) > W - 100: f = font(F_SUB, f.size - 2)
+        d.text((50, y), ln, font=f, fill=(20, 20, 20), anchor="lm"); y += f.size + 26
+    if sub: d.text((50, y + 30), sub, font=font(F_SMALL, 40), fill=(90, 90, 90), anchor="lm")
+    for k in range(6): d.rectangle([50, H - 250 + k * 36, W - 50 - (k % 3) * 120, H - 236 + k * 36], fill=(215, 212, 205, 255))
+    return im
+
+
+_IMG = {}
+DIR = None
+
+
+def load(ref):
+    if ref in _IMG: return _IMG[ref]
+    im = None
+    for alt in ref.split("^"):
+        try:
+            kind, _, arg = alt.partition(":")
+            if kind == "art": im = art(arg)
+            elif kind == "wiki": im = wiki(arg)
+            elif kind == "commons": im = ZL.commons_img(arg)
+            elif kind == "csearch": im = csearch(arg)
+            elif kind == "row": im = fig_row(arg)
+            elif kind == "table": im = fig_table(arg)
+            elif kind == "tiers": im = fig_tiers(arg)
+            elif kind == "sil": im = fig_sil(arg)
+            elif kind == "paper": im = fig_paper(arg)
+            elif kind == "site": im = Image.open(os.path.join(HERE, "assets", "img", "site_home.png")).convert("RGBA")
+            else: im = Image.open(os.path.join(DIR, alt)).convert("RGBA")
+        except Exception as e:
+            print("画像を取れない:", alt, repr(e)[:160]); im = None
+        if im is not None: break
+    _IMG[ref] = im
+    return im
+
+
+# ---------- 背景・飾り ----------
+def background():
+    rng = np.random.default_rng(11)
+    noise = rng.normal(0, 1, (VH // 8, VW // 8)).astype(np.float32)
+    noise = np.array(Image.fromarray(((noise + 3) * 40).clip(0, 255).astype(np.uint8)).resize((VW, VH), Image.BICUBIC).filter(ImageFilter.GaussianBlur(6))) / 255.0
+    y = np.linspace(0, 1, VH)[:, None]
+    base = np.stack([46 + 30 * noise - 18 * y, 34 + 22 * noise - 14 * y, 26 + 16 * noise - 10 * y], -1)
+    xx, yy = np.meshgrid(np.linspace(-1, 1, VW), np.linspace(-1, 1, VH))
+    glow = np.exp(-((xx) ** 2 * 1.1 + (yy + 0.2) ** 2 * 1.3) * 1.5)[..., None]
+    base = base + glow * np.array([70, 44, 18])
+    im = Image.fromarray(base.clip(0, 255).astype(np.uint8), "RGB").convert("RGBA")
+    d = ImageDraw.Draw(im)
+    for x in (120, VW - 120):              # 坑道の柱
+        d.rectangle([x - 26, 0, x + 26, VH], fill=(70, 48, 28, 255)); d.rectangle([x - 26, 0, x - 18, VH], fill=(95, 66, 38, 255))
+    d.rectangle([0, 0, VW, 30], fill=(70, 48, 28, 255))
+    for x in (380, 960, 1540):             # 吊りランプ
+        d.line([x, 30, x, 58], fill=(40, 30, 20, 255), width=4)
+        g = Image.new("RGBA", (220, 220), (0, 0, 0, 0)); ImageDraw.Draw(g).ellipse([60, 60, 160, 160], fill=(255, 200, 90, 120))
+        g = g.filter(ImageFilter.GaussianBlur(30)); im.paste(g, (x - 110, -40), g)
+        d.ellipse([x - 12, 52, x + 12, 76], fill=(255, 224, 140, 255))
+    return im
+
+
+def header(sec):
+    im = Image.new("RGBA", (VW, 90), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    d.rounded_rectangle([24, 18, 360, 74], 28, fill=(20, 16, 12, 235)); d.text((192, 46), "ポケモン雑学採掘所", font=font(F_SMALL, 32), fill=(255, 214, 90), anchor="mm")
+    if sec:
+        f = font(F_SMALL, 34); w = d.textlength(sec, font=f) + 60
+        d.rectangle([VW - 24 - w, 18, VW - 24, 74], fill=(28, 44, 80, 235)); d.rectangle([VW - 24 - w, 18, VW - 16 - w, 74], fill=(255, 214, 90, 255))
+        d.text((VW - 24 - w / 2 + 4, 46), sec, font=f, fill=(255, 255, 255), anchor="mm")
+    return im
+
+
+def place_image(base, src, label=None, cap=None, mark=None, zoom=1.0, alpha=1.0):
+    bx0, by0, bx1, by1 = BOX
+    top = by0 + (70 if label else 0)
+    bw, bh = bx1 - bx0, by1 - top
+    s = min(bw / src.width, bh / src.height); s = min(s, 4.0)
+    w0, h0 = int(src.width * s), int(src.height * s)
+    w, h = int(w0 * zoom), int(h0 * zoom)
+    pic = src.resize((w, h), Image.LANCZOS)
+    x, y = bx0 + (bw - w) // 2, top + (bh - h) // 2
+    photo = src.getchannel("A").getextrema()[0] == 255
+    d = ImageDraw.Draw(base)
+    if photo:
+        sh = Image.new("RGBA", (w + 60, h + 60), (0, 0, 0, 0)); ImageDraw.Draw(sh).rectangle([30, 38, w + 30, h + 38], fill=(0, 0, 0, int(170 * alpha)))
+        sh = sh.filter(ImageFilter.GaussianBlur(16)); base.paste(sh, (x - 30, y - 30), sh)
+        d.rectangle([x - 10, y - 10, x + w + 10, y + h + 10], fill=(250, 244, 230, int(255 * alpha)))
+    if alpha < 1: pic = pic.copy(); pic.putalpha(Image.eval(pic.getchannel("A"), lambda v: int(v * alpha)))
+    base.paste(pic, (x, y), pic)
+    if mark and alpha >= 1:
+        mx, my, mr = mark; cx, cy, r = x + mx * w, y + my * h, mr * max(w, h)
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], outline=(255, 40, 40), width=12)
+    if cap and alpha >= 1:
+        f = font(F_SMALL, 34); tw = d.textlength(cap, font=f)
+        d.rectangle([x, y + h - 56, x + tw + 36, y + h], fill=(0, 0, 0, 230)); d.text((x + 18, y + h - 28), cap, font=f, fill=(255, 255, 255), anchor="lm")
+    if label:
+        f = font(F_SUB, 60)
+        while d.textlength(label, font=f) > bw - 40 and f.size > 30: f = font(F_SUB, f.size - 2)
+        stroked(d, ((bx0 + bx1) // 2, by0 + 36), label, f, (255, 230, 80), 10, (0, 0, 0))
+
+
+def subtitle(d, ln):
+    c = CH[ln["w"]]; text = ln["t"]
+    lines = text.split("\n")
+    size = 62; f = font(F_SUB, size); maxw = 1220
+    if len(lines) == 1 and d.textlength(text, font=f) > maxw:
+        lines = SS.wrap(d, text, f, maxw)
+    while size > 40 and max(d.textlength(x, font=f) for x in lines) > maxw: size -= 2; f = font(F_SUB, size)
+    lh = f.size + 16; n = len(lines); cy = 960 - (n - 1) * lh / 2 + (12 if n == 1 else 0)
+    if n >= 3: cy = 1060 - n * lh + lh / 2
+    for j, s_ in enumerate(lines):
+        stroked(d, (VW // 2, int(cy + j * lh)), s_, f, (255, 255, 255), 12, c["col"])
+
+
+# ---------- 動画 ----------
+class Long:
+    def __init__(self, d):
+        global DIR
+        DIR = d
+        self.d = d; self.s = json.load(open(os.path.join(d, "script.json"), encoding="utf-8"))
+        self.L = self.s["lines"]
+        self.bg = background()
+        sec = ""; last = None
+        for ln in self.L:
+            if ln.get("sec"): sec = ln["sec"]
+            ln["_sec"] = sec
+            if ln.get("type"): continue
+            if ln.get("img"): last = ln["img"]
+            ln["_img"] = last
+        for ln in self.L:
+            if ln.get("_img"): load(ln["_img"])
+        self.static = {}
+
+    def listen_face(self, i, who):
+        for j in range(i - 1, -1, -1):
+            l2 = self.L[j]
+            if l2.get("type"): return "normal"
+            if l2["w"] == who:
+                f = SS.face_of(l2); return f if f in ("shock", "sad", "think") else "normal"
+        return "normal"
+
+    def base(self, i, zoom, alpha):
+        ln = self.L[i]
+        im = self.bg.copy()
+        src = _IMG.get(ln.get("_img"))
+        if src is not None:
+            place_image(im, src, ln.get("label"), ln.get("cap"), ln.get("mark"), zoom, alpha)
+        h = header(ln["_sec"]); im.paste(h, (0, 0), h)
+        return im
+
+    def frame(self, i, t, dur, talking):
+        ln = self.L[i]
+        if ln.get("type"): return self.special(ln, t, dur, talking)
+        prev = self.L[i - 1] if i > 0 else {}
+        same = prev.get("_img") == ln.get("_img") and not prev.get("type")
+        alpha = 1.0 if same else SS.ease(t / 0.25)
+        im = self.base(i, 1.0, alpha)
+        d = ImageDraw.Draw(im)
+        for who, left in (("m", True), ("z", False)):
+            act = ln["w"] == who
+            fc = SS.face_of(ln) if act else self.listen_face(i, who)
+            th = SS.tachie(who, act and talking and int(t * 9) % 2 == 0, 420, fc)
+            if not act:
+                th = th.copy(); px = np.array(th).astype(np.float32); px[..., :3] *= 0.62; th = Image.fromarray(px.astype(np.uint8))
+            bob = int(abs(np.sin(t * 7)) * 7) if act else 0
+            xx = -30 if left else VW - th.width + 30
+            im.paste(th, (xx, VH - th.height + 24 - bob), th)
+        if ln.get("big"):
+            k = SS.ease(t / 0.18)
+            ov = Image.new("RGBA", (VW, VH), (0, 0, 0, int(110 * k))); im.alpha_composite(ov)
+            d = ImageDraw.Draw(im)
+            f = font(F_HOOK, int(170 * (0.7 + 0.3 * k)))
+            while d.textlength(ln["big"], font=f) > VW - 200 and f.size > 60: f = font(F_HOOK, f.size - 6)
+            stroked(d, (VW // 2, 440), ln["big"], f, (255, 70, 50) if ln.get("bigcol") == "red" else (255, 230, 80), 16, (0, 0, 0))
+        d = ImageDraw.Draw(im)
+        subtitle(d, ln)
+        return im.convert("RGB")
+
+    def special(self, ln, t, dur, talking):
+        im = self.bg.copy(); d = ImageDraw.Draw(im)
+        typ = ln["type"]
+        if typ == "op":
+            ov = Image.new("RGBA", (VW, VH), (0, 0, 0, 150)); im.alpha_composite(ov); d = ImageDraw.Draw(im)
+            k = SS.ease(t / 0.5)
+            stroked(d, (VW // 2, 300), "ポケモンの「深い雑学」を掘り出す", font(F_SUB, 64), (255, 255, 255), 10, (0, 0, 0))
+            f = font(F_HOOK, int(150 * (0.8 + 0.2 * k)))
+            stroked(d, (VW // 2, 470), "ポケモン雑学採掘所", f, (255, 214, 90), 18, (0, 0, 0))
+            for who, x in (("m", 200), ("z", 1720)):
+                th = SS.tachie(who, ln.get("w") == who and talking and int(t * 9) % 2 == 0, 400, "happy")
+                im.paste(th, (x - th.width // 2, VH - th.height + 20), th)
+            if ln.get("t"): subtitle(ImageDraw.Draw(im), ln)
+        elif typ == "title":
+            ov = Image.new("RGBA", (VW, VH), (0, 0, 0, 0)); od = ImageDraw.Draw(ov)
+            sh = int(-VW + (VW + 300) * SS.ease(t / 0.35))
+            for k in range(-4, 30): od.polygon([(sh + k * 120, 0), (sh + k * 120 + 60, 0), (sh + k * 120 - 300, VH), (sh + k * 120 - 360, VH)], fill=(28, 44, 80, 255))
+            im.alpha_composite(ov); d = ImageDraw.Draw(im)
+            if t > 0.3:
+                d.rectangle([0, 360, VW, 720], fill=(20, 16, 12, 235))
+                stroked(d, (VW // 2, 440), ln.get("sub", ""), font(F_SUB, 56), (255, 214, 90), 8, (0, 0, 0))
+                f = font(F_HOOK, 110)
+                while d.textlength(ln["t"], font=f) > VW - 160: f = font(F_HOOK, f.size - 4)
+                stroked(d, (VW // 2, 590), ln["t"], f, (255, 255, 255), 14, (0, 0, 0))
+        elif typ == "ed":
+            im = Image.new("RGBA", (VW, VH), (243, 236, 220, 255)); d = ImageDraw.Draw(im)
+            d.text((VW // 2, 90), "今日の採掘はここまで", font=font(F_HOOK, 70), fill=(60, 40, 20), anchor="mm")
+            for x0 in (110, 990):                 # おすすめ動画の枠（YouTube の終了画面の要素を重ねる）
+                d.rounded_rectangle([x0, 190, x0 + 820, 190 + 461], 16, fill=(220, 210, 190), outline=(120, 90, 50), width=6)
+                d.text((x0 + 410, 190 + 230), "おすすめの動画", font=font(F_SUB, 48), fill=(120, 90, 50), anchor="mm")
+            d.ellipse([VW // 2 - 110, 700, VW // 2 + 110, 920], fill=(220, 210, 190), outline=(120, 90, 50), width=6)
+            d.text((VW // 2, 810), "登録", font=font(F_SUB, 48), fill=(120, 90, 50), anchor="mm")
+            d.rounded_rectangle([110, 730, 760, 900], 20, fill=(255, 255, 255), outline=(30, 30, 30), width=5)
+            d.text((435, 790), "ポケモンの英語名は", font=font(F_SMALL, 40), fill=(30, 30, 30), anchor="mm")
+            d.text((435, 850), "「もんすぺ！」で検索", font=font(F_SUB, 52), fill=(214, 64, 140), anchor="mm")
+            for who, x in (("m", 1380), ("z", 1680)):
+                th = SS.tachie(who, False, 330, "happy"); im.paste(th, (x - th.width // 2, VH - th.height + 10), th)
+        return im.convert("RGB")
+
+
+def durations(L, voiced_lines):
+    segs, voices, t0 = [], [], 0.2
+    for i, ln in enumerate(L):
+        v = voiced_lines[i]
+        if ln.get("type") == "ed": dur, talk = 20.0, 0
+        elif ln.get("type") == "title": dur, talk = 2.6, 0
+        else:
+            talk = (len(v) / SR) if v is not None else max(1.4, len(ln.get("t", "")) * 0.11)
+            dur = talk + (0.9 if ln.get("type") == "op" else 0.28)
+            if ln.get("big"): dur += 0.4
+        segs.append((i, dur, talk)); voices.append((t0 + (0.6 if ln.get("type") == "op" else 0.0), v)); t0 += dur
+    return segs, voices, t0
+
+
+def sheet(L_obj, out):
+    """1行1コマの一覧（確認用）"""
+    L = L_obj.L; tiles = []
+    for i, ln in enumerate(L):
+        fr = L_obj.frame(i, 1.0, 2.0, False).resize((480, 270), Image.LANCZOS)
+        d = ImageDraw.Draw(fr); d.rectangle([0, 0, 60, 30], fill=(0, 0, 0)); d.text((4, 2), str(i), font=font(F_SMALL, 22), fill=(255, 255, 0))
+        tiles.append(fr)
+    os.makedirs(out, exist_ok=True)
+    per = 20
+    for k in range(0, len(tiles), per):
+        g = Image.new("RGB", (480 * 4, 270 * 5), (0, 0, 0))
+        for j, tl in enumerate(tiles[k:k + per]): g.paste(tl, ((j % 4) * 480, (j // 4) * 270))
+        g.save(os.path.join(out, f"sheet_{k // per:02d}.jpg"), quality=82)
+    for i in (3, 20, 60):                 # 原寸でも数枚
+        if i < len(L): L_obj.frame(i, 1.0, 2.0, False).save(os.path.join(out, f"full_{i:03d}.jpg"), quality=88)
+
+
+def build(d, out_dir):
+    S = Long(d); L = S.L
+    os.makedirs(out_dir, exist_ok=True)
+    json.dump(CREDITS, open(os.path.join(out_dir, "credits.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    if os.environ.get("MODE", "full") == "sheet":
+        sheet(S, out_dir); return
+    vs = []
+    for ln in L:
+        if ln.get("type") in ("title", "ed") or not ln.get("t"): vs.append(None); continue
+        vs.append(SS.tts(ln, CH[ln.get("w", "m")]["sp"]))
+    segs, voices, total = durations(L, vs)
+    os.makedirs("_l", exist_ok=True); parts = []
+    for k, (i, dur, talk) in enumerate(segs):
+        nfr = max(1, int(round(dur * FPS))); step = 2
+        for j in range(0, nfr, step):
+            tt = j / FPS
+            S.frame(i, tt, dur, tt < talk).save(f"_l/f_{j // step:04d}.jpg", quality=88)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS / step), "-i", "_l/f_%04d.jpg", "-t", f"{nfr / FPS:.3f}",
+                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-pix_fmt", "yuv420p", "-r", str(FPS), f"_l/p{k:04d}.mp4"], check=True)
+        for fn in os.listdir("_l"):
+            if fn.startswith("f_"): os.remove(os.path.join("_l", fn))
+        parts.append(f"p{k:04d}.mp4")
+    open("_l/list.txt", "w").write("".join(f"file '{p}'\n" for p in parts))
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", "_l/list.txt", "-c", "copy", "_l/v.mp4"], check=True)
+    total = sum(round(dur * FPS) / FPS for _, dur, _ in segs)
+    # BGM：区切りごとに旋律を変え、終わりの画面は別の曲
+    sections, t, pi = [], 0.2, 0
+    for (i, dur, _) in segs:
+        ln = L[i]
+        if ln.get("type") in ("op", "title") or i == 0: sections.append((t, pi)); pi += 1
+        if ln.get("type") == "ed": sections.append((t, "ed"))
+        t += round(dur * FPS) / FPS
+    mix = ZL.bgm_sections(total, sections) * 0.8
+    t = 0.2
+    for (i, dur, _) in segs:
+        ln = L[i]
+        if ln.get("type") == "title": s = ZL.se("whoosh") * 0.6; a = int(t * SR); mix[a:a + len(s)] += s[:len(mix) - a]
+        if ln.get("big"): s = ZL.se("don"); a = int(t * SR); mix[a:a + len(s)] += s[:len(mix) - a]
+        t += round(dur * FPS) / FPS
+    for t0, v in voices:
+        if v is None: continue
+        a = int(t0 * SR); b = min(len(mix), a + len(v)); mix[a:b] = mix[a:b] * 0.4 + v[:b - a]
+    mix = np.clip(mix, -1, 1)
+    with wave.open("_l/a.wav", "w") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 30000).astype(np.int16).tobytes())
+    mp4 = os.path.join(out_dir, "saikutsu_long.mp4")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", "_l/v.mp4", "-i", "_l/a.wav", "-map", "0:v", "-map", "1:a", "-c:v", "copy",
+                    "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-shortest", mp4], check=True)
+    # 確認用：数秒おきのコマ一覧と、行ごとの開始時刻
+    tl, t = [], 0.2
+    for (i, dur, _) in segs:
+        tl.append({"i": i, "start": round(t, 2), "dur": round(dur, 2), "t": L[i].get("t", L[i].get("type", ""))}); t += round(dur * FPS) / FPS
+    json.dump(tl, open(os.path.join(out_dir, "timeline.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp4, "-vf", "fps=1/6,scale=384:216,tile=5x6", os.path.join(out_dir, "frames_%02d.jpg")], check=True)
+    print("長さ", round(total, 1), "秒")
+
+
+if __name__ == "__main__":
+    num = int(os.environ.get("NUM", "3"))
+    d = os.path.join(HERE, "saikutsu", "long", f"{num:03d}")
+    build(d, os.path.join(HERE, "out"))

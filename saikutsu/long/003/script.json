@@ -1,0 +1,1106 @@
+{
+ "no": 3,
+ "title": "世界で初めて見つかった翼竜の子どもに、ポケモンのプテラの名前が付けられていた",
+ "lines": [
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ねえめたん！\nプテラの名前をもらった\n本物の翼竜がいるって知ってたのだ？",
+   "img": "art:142",
+   "sec": "ポケモン雑学採掘所"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "知ってる。その翼竜、いまじゃ\n「世界で最初に見つかった翼竜の、\n子どもだった」って言われてるけどね。",
+   "img": "sil:wiki:en:Aerodactylus^sil:wiki:en:Pterodactylus"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "えっ。",
+   "big": "えっ。"
+  },
+  {
+   "type": "op",
+   "w": "m",
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘所。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学採掘所。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日もほこりっぽいわね。\nあ、この岩、渦巻きの模様が入ってる。",
+   "img": "wiki:en:Ammonoidea",
+   "sec": "導入　昔のプテラ"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "化石なのだ！\n化石といえばプテラなのだ。",
+   "img": "art:142"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "ダイヤモンド・パールのころ、プテラは\nきあいのタスキを持って先発に出てたのだ。",
+   "img": "wiki:en:Pokémon_Diamond_and_Pearl"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "ちょうはつとステルスロックで、\n相手の作戦をつぶしまくっていたのだ。",
+   "img": "table:持ち物=きあいのタスキ;技1=ちょうはつ;技2=ステルスロック;技3=ストーンエッジ;技4=じしん",
+   "label": "第4世代の先発プテラの型"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "ステルスロックは、交代で出てきた相手に\n毎回ダメージを与える岩をまく技ね。",
+   "img": "table:ステルスロック=交代で出てきた相手に毎回ダメージ;ちょうはつ=相手に補助技を使わせない;きあいのタスキ=満タンから一撃では倒れない",
+   "label": "技と持ち物"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "でもそれ、もう20年近く前の話でしょ。",
+   "img": "wiki:en:Pokémon_Diamond_and_Pearl"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ブラック・ホワイトで、対戦の前に\nお互いの6匹を見せ合うルールが入ったの。",
+   "img": "wiki:en:Pokémon_Black_and_White"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それから、先発の読み合いで得をする役は\n価値が下がったのよ。",
+   "img": "wiki:en:Pokémon_Black_and_White"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "英語圏の対戦コミュニティ、Smogonの格付けでも、\nプテラはOUからRUまで落ちたわ。",
+   "img": "tiers:upto:OU,UU,RU",
+   "say": "英語圏の対戦コミュニティ、スモーゴンの格付けでも、プテラはオーユーからアールユーまで落ちたわ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "OUとかRUって、何の階級なのだ？",
+   "img": "tiers:upto:OU,UU,RU",
+   "say": "オーユーとかアールユーって、何の階級なのだ？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "使われている割合で分けた階級よ。\nOUはオーバーユーズド、よく使われるポケモン。",
+   "img": "tiers:OU",
+   "say": "使われている割合で分けた階級よ。オーユーはオーバーユーズド、よく使われるポケモン。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "組まれたチームのうち、だいたい4.5パーセント以上に\n入っているポケモンがOUになるの。",
+   "img": "tiers:OU",
+   "say": "組まれたチームのうち、だいたい4.5パーセント以上に入っているポケモンがオーユーになるの。"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "22チームに1チームくらいね。",
+   "img": "tiers:OU"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "OUから外れたポケモンだけでUUの対戦をして、\nそこでまた使われている割合を数えるの。",
+   "img": "tiers:UU",
+   "say": "オーユーから外れたポケモンだけでユーユーの対戦をして、そこでまた使われている割合を数えるの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "UUはアンダーユーズド、RUはレアリーユーズド。\nつまり、めったに使われないって意味。",
+   "img": "tiers:RU",
+   "say": "ユーユーはアンダーユーズド、アールユーはレアリーユーズド。つまり、めったに使われないって意味。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "階級は、何か月かごとの使われ方で\n入れかわるの。",
+   "img": "tiers:RU"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "いちばん上には、強すぎてOUで禁止された\n伝説のポケモンなどを集めたUbersもあるわ。",
+   "img": "tiers:Ubers",
+   "say": "いちばん上には、強すぎてオーユーで禁止された伝説のポケモンなどを集めたウーバーズもあるわ。"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "プテラが、めったに使われない側に…",
+   "img": "tiers:RU",
+   "big": "めったに使われない側"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "見せ合いさえなければ、\n今でもプテラは最強だったのだ…",
+   "img": "art:142",
+   "label": "あの頃は…"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "はいはい。今日はその化石の話。\nポケモンの化石と本物の化石を並べた展示があるの。",
+   "img": "csearch:Pokémon Fossil Museum^wiki:en:Pokémon_Fossil_Museum^wiki:en:National_Museum_of_Nature_and_Science"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "そこから、化石の世界の\nちょっと怪しい話を掘っていくわよ。",
+   "img": "row:art:142|プテラ;art:138|オムナイト;art:697|ガチゴラス;art:345|リリーラ"
+  },
+  {
+   "type": "title",
+   "sub": "本日の採掘",
+   "t": "化石の世界の「しんか前」問題"
+  },
+  {
+   "type": "title",
+   "sub": "第一層",
+   "t": "ポケモン化石博物館",
+   "sec": "第一層　ポケモン化石博物館"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモン化石博物館。\n2021年に、北海道の三笠市立博物館から始まったの。",
+   "img": "wiki:ja:三笠市立博物館^wiki:en:Mikasa_City_Museum",
+   "say": "ポケモン化石博物館。2021年に、北海道の、みかさしりつはくぶつかんから始まったの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "日本の15か所を回って、今年の5月からは\nアメリカのシカゴにあるフィールド自然史博物館でやってる。",
+   "img": "wiki:en:Field_Museum_of_Natural_History",
+   "cap": "フィールド自然史博物館（シカゴ）"
+  },
+  {
+   "w": "z",
+   "face": "normal",
+   "t": "ポケモンの会社が考えた企画なのだ？",
+   "img": "wiki:en:Field_Museum_of_Natural_History"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ちがうの。言い出したのは、三笠市立博物館の\n学芸員だった相場大佑さん。",
+   "img": "wiki:ja:三笠市立博物館^wiki:en:Mikasa_City_Museum",
+   "say": "ちがうの。言い出したのは、みかさしりつはくぶつかんの、がくげいいんだった、あいばだいすけさん。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "学芸員は、博物館で資料を研究して\n展示を作る専門家ね。",
+   "img": "wiki:en:Ammonoidea",
+   "say": "がくげいいんは、博物館で資料を研究して展示を作る専門家ね。",
+   "cap": "三笠市立博物館はアンモナイトの展示数が日本一"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "子どものころ、ポケモンに似た生き物を\n図鑑で探していたのが、科学者になった原点。",
+   "img": "row:art:140|カブト;wiki:en:Horseshoe_crab|カブトガニ"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "それで、自分で株式会社ポケモンに\n企画を持ち込んだんだって。",
+   "img": "row:art:140|カブト;wiki:en:Horseshoe_crab|カブトガニ"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "熱いのだ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "東京会場の真ん中には、実物大のガチゴラスの\n骨格模型が立っていたの。",
+   "img": "art:697",
+   "label": "ガチゴラス"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その奥には、本物の肉食恐竜タルボサウルスの骨格。\nモンゴルで見つかった、ティラノサウルスの仲間よ。",
+   "img": "row:art:697|ガチゴラス;wiki:en:Tarbosaurus|タルボサウルス"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "でも私がいちばん面白いと思ったのは、展示の解説。\nポケモンの「しんか」と本物の「進化」は別物だって。",
+   "img": "table:しんか=？;進化=？",
+   "label": "同じ言葉なのに？"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "同じ言葉なのに？",
+   "img": "table:しんか=？;進化=？",
+   "label": "同じ言葉なのに？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "カブトがカブトプスになるのは、\n1匹の体が変わることでしょ。",
+   "img": "row:art:140|カブト>art:141|カブトプス",
+   "label": "ポケモンのしんか　1匹の体が変わる"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "本物の進化は、たくさんの生き物が\n何世代もかけて変わっていくこと。",
+   "img": "row:wiki:en:Eusthenopteron|魚>wiki:en:Tiktaalik|ティクターリク>wiki:en:Acanthostega|アカントステガ",
+   "label": "本物の進化　何世代もかけて変わる"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "魚の仲間から両生類が生まれて、\n陸に上がったみたいにね。",
+   "img": "row:wiki:en:Eusthenopteron|魚>wiki:en:Tiktaalik|ティクターリク>wiki:en:Acanthostega|アカントステガ",
+   "label": "本物の進化　何世代もかけて変わる"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "だからポケモンの「しんか」は、\n現実でいえば「成長」に近いんだって。",
+   "img": "row:art:140|カブト>art:141|カブトプス",
+   "label": "しんか ≒ 成長"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "たしかに、カブトが子どもを産んで、\n何世代もたってカブトプスになるわけじゃないのだ。",
+   "img": "row:art:140|カブト>art:141|カブトプス",
+   "label": "しんか ≒ 成長"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。で、ここからが本題。\n化石って、死んだ瞬間の姿しか残らないでしょ。",
+   "img": "wiki:en:Fossil"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "だから子どもの化石と大人の化石が、\n別々の場所で見つかると…",
+   "img": "wiki:en:Fossil"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "同じ生き物なのに、\nちがう種類だと思われちゃうことがあるの。",
+   "img": "wiki:en:Fossil",
+   "big": "同じ生き物なのに別の名前"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ポケモンでいえば、カブトとカブトプスを、\nしんかでつながらない無関係のポケモンだと思うようなものなのだ。",
+   "img": "row:art:140|カブト;art:141|カブトプス"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "…あれ、でもポケモン図鑑では\n番号がちがうのだ。",
+   "img": "row:art:140|No.140;art:141|No.141"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "そこがポケモンと現実のちがうところね。\n現実の生き物で、同じ種類の子どもと大人に…",
+   "img": "row:art:140|No.140;art:141|No.141"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ちがう名前を付けたら、\nそれは「間違い」なのよ。",
+   "img": "row:art:140|No.140;art:141|No.141"
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "ズガイドスのモデルの恐竜",
+   "sec": "第二層　ズガイドスのモデル"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "たとえばズガイドス。モデルは、頭のてっぺんの骨が\nドームみたいに分厚い恐竜、パキケファロサウルス。",
+   "img": "row:art:408|ズガイドス;wiki:en:Pachycephalosaurus|パキケファロサウルス"
+  },
+  {
+   "w": "z",
+   "face": "normal",
+   "t": "ずつきポケモンなのだ。",
+   "img": "art:408",
+   "label": "ずつきポケモン　ズガイドス"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "同じ時代の同じ地域からは、頭が平らでトゲトゲの\nドラコレックスも見つかってたの。",
+   "img": "wiki:en:Dracorex",
+   "label": "ドラコレックス"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "頭の後ろに長いトゲがある\nスティギモロクもね。",
+   "img": "wiki:en:Stygimoloch",
+   "label": "スティギモロク"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "どちらも、パキケファロサウルスとはちがう種類の恐竜として、\nそれぞれ名前が付いてたの。",
+   "img": "row:wiki:en:Dracorex|ドラコレックス;wiki:en:Stygimoloch|スティギモロク;wiki:en:Pachycephalosaurus|パキケファロサウルス",
+   "label": "3つのちがう種類として名前が付いた"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "ドラコレックスの正式な名前は、\nドラコレックス・ホグワーツィア。",
+   "img": "wiki:en:Dracorex",
+   "label": "Dracorex hogwartsia"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "ハリー・ポッターに出てくる魔法学校、\nホグワーツから取った名前よ。",
+   "img": "wiki:en:Dracorex",
+   "label": "Dracorex hogwartsia"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "かっこいい名前なのだ。",
+   "img": "wiki:en:Dracorex",
+   "label": "Dracorex hogwartsia"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "ところが2009年、ホーナーさんとグッドウィンさんという研究者が\n「この3つは同じ恐竜の成長段階だ」と発表したの。",
+   "img": "row:wiki:en:Dracorex|ドラコレックス;wiki:en:Stygimoloch|スティギモロク;wiki:en:Pachycephalosaurus|パキケファロサウルス",
+   "label": "3つとも同じ恐竜？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ドラコレックスとスティギモロクは、\n子どもの頭の骨しか見つかってなくて…",
+   "img": "row:wiki:en:Dracorex|子どもだけ;wiki:en:Stygimoloch|子どもだけ;wiki:en:Pachycephalosaurus|大人だけ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "パキケファロサウルスは、\n大人しか見つかってなかった。",
+   "img": "row:wiki:en:Dracorex|子どもだけ;wiki:en:Stygimoloch|子どもだけ;wiki:en:Pachycephalosaurus|大人だけ"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "子どもだけの種類と、大人だけの種類…\nたしかに怪しいのだ。",
+   "img": "row:wiki:en:Dracorex|子どもだけ;wiki:en:Stygimoloch|子どもだけ;wiki:en:Pachycephalosaurus|大人だけ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "若いうちは頭が平らで、後ろに大きなトゲがある。\n大人になるにつれてトゲが縮んで丸くなり…",
+   "img": "row:wiki:en:Dracorex|若い>wiki:en:Stygimoloch|少し育つ>wiki:en:Pachycephalosaurus|大人",
+   "label": "成長すると頭の形が変わる"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "ドームが盛り上がっていく。\nそう考えると、3つがきれいに1列に並ぶの。",
+   "img": "row:wiki:en:Dracorex|若い>wiki:en:Stygimoloch|少し育つ>wiki:en:Pachycephalosaurus|大人",
+   "label": "成長すると頭の形が変わる"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "まさにズガイドスから\nラムパルドへのしんかなのだ。",
+   "img": "row:art:408|ズガイドス>art:409|ラムパルド"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2016年には、赤ちゃんの頭の骨にも、\n3つと同じ場所にこぶが並んでることが報告された。",
+   "img": "wiki:en:Pachycephalosaurus"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "ただ、スティギモロクだけは見つかる地層が少し新しいから、\nパキケファロサウルスの子どもではない、",
+   "img": "wiki:en:Hell_Creek_Formation",
+   "cap": "ヘルクリーク層（アメリカ）"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "独立した種類だって考える研究者もいて、\n完全には決着してないの。",
+   "img": "wiki:en:Stygimoloch",
+   "label": "スティギモロク"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "化石の世界でも、\nしんかの途中かどうかで揉めてるのだ。",
+   "img": "row:art:408|ズガイドス>art:409|ラムパルド"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "ガチゴラスのモデルの恐竜",
+   "sec": "第三層　ガチゴラスのモデル"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "じゃあ逆の話。ガチゴラスのモデルは、\nティラノサウルス。",
+   "img": "row:art:697|ガチゴラス;wiki:en:Sue_(dinosaur)|ティラノサウルス「スー」"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのティラノサウルスに、ナノティラヌスっていう\n小さめの仲間が本当にいたのかどうか、大論争があったの。",
+   "img": "wiki:en:Nanotyrannus",
+   "label": "ナノティラヌス"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ナノ…小さいティラノなのだ？",
+   "img": "wiki:en:Nanotyrannus",
+   "label": "ナノティラヌス"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1940年代に見つかった頭の骨が始まりで、\n体が細くて、足が長い。",
+   "img": "wiki:en:Nanotyrannus",
+   "label": "ナノティラヌス"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "長いあいだ、多くの研究者が\n「これはティラノサウルスの10代の子どもだ」って考えてた。",
+   "img": "row:wiki:en:Nanotyrannus|子ども？>wiki:en:Sue_(dinosaur)|ティラノサウルス",
+   "label": "ティラノの子ども？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "チゴラスが、ガチゴラスになる前の\n姿みたいにね。",
+   "img": "row:art:696|チゴラス>art:697|ガチゴラス"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "違ったのだ？",
+   "img": "row:wiki:en:Nanotyrannus|子ども？>wiki:en:Sue_(dinosaur)|ティラノサウルス",
+   "label": "ティラノの子ども？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "去年の10月、世界でいちばん有名な科学雑誌の1つ、\nネイチャーに論文が出たの。",
+   "img": "paper:Nature（2025年10月30日）|Nanotyrannus and Tyrannosaurus/coexisted at the close of the Cretaceous|ナノティラヌスとティラノサウルスは白亜紀の終わりに共存していた"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "決め手は「決闘する恐竜」って呼ばれる化石。\nアメリカのモンタナ州で見つかったものよ。",
+   "img": "wiki:en:Dueling_Dinosaurs^csearch:Dueling Dinosaurs fossil",
+   "cap": "決闘する恐竜"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "トリケラトプスと一緒に埋まっていた、\n肉食恐竜の全身の骨格なの。",
+   "img": "wiki:en:Dueling_Dinosaurs^csearch:Dueling Dinosaurs fossil",
+   "cap": "決闘する恐竜"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "骨には、木の年輪みたいな成長の線が残ってて…",
+   "img": "row:wiki:en:Dendrochronology|木の年輪;csearch:bone histology growth lines|骨の成長線"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "それを数えると、死んだときは約20歳。\nもう成長が止まった大人だった。",
+   "img": "row:wiki:en:Dendrochronology|木の年輪;csearch:bone histology growth lines|骨の成長線",
+   "say": "それを数えると、死んだときは、やく、にじゅっさい。もう成長が止まった大人だった。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "大人なのに小さかった…ってことは。",
+   "img": "wiki:en:Nanotyrannus",
+   "label": "ナノティラヌス"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ティラノの子どもじゃなくて、大人になってもティラノほど大きくならない、\nナノティラヌスという種類の恐竜だったの。",
+   "img": "wiki:en:Nanotyrannus",
+   "label": "ナノティラヌス　大人でこの大きさ",
+   "big": "子どもではなかった",
+   "bigcol": "red"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "手はティラノよりずっと長くて、\n上腕と前腕を合わせたのと同じくらいあったの。",
+   "img": "row:wiki:en:Sue_(dinosaur)|ティラノサウルス;wiki:en:Nanotyrannus|ナノティラヌス",
+   "say": "手はティラノよりずっと長くて、じょうわんと、ぜんわんを合わせたのと同じくらいあったの。"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "論文を書いた研究者は「これがティラノの子どもなら、\n背骨のある動物の成長の決まりを全部破ることになる」とまで言ってる。",
+   "img": "paper:Nature（2025年10月30日）|Nanotyrannus and Tyrannosaurus/coexisted at the close of the Cretaceous|ナノティラヌスとティラノサウルスは白亜紀の終わりに共存していた"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "さらに、ほかにもティラノの子どもとされてた骨格を調べ直して、\nナノティラヌスの2つ目の種類にしたの。",
+   "img": "wiki:en:Nanotyrannus"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "名前はナノティラヌス・レタエウス。\nギリシャ神話に出てくる忘れの川、レーテーから。",
+   "img": "wiki:en:Lethe",
+   "label": "Nanotyrannus lethaeus"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "何十年も忘れられてた種類、\nって意味なの。",
+   "img": "wiki:en:Lethe",
+   "label": "Nanotyrannus lethaeus"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "チゴラスだと思ってたら、しんかしない、\n大人でもその大きさのポケモンだったのだ。",
+   "img": "row:art:696|チゴラス>sil:art:697|しんかしない"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "うまいこと言うじゃない。ただ、2つ目の種類のほうは、\nまだ納得していない研究者もいるみたい。",
+   "img": "wiki:en:Nanotyrannus"
+  },
+  {
+   "w": "z",
+   "face": "normal",
+   "t": "子どもを大人と思ったり、\n大人を子どもと思ったり、忙しいのだ。",
+   "img": "row:wiki:en:Dracorex|子どもを別の種類に;wiki:en:Nanotyrannus|大人を子どもに"
+  },
+  {
+   "type": "title",
+   "sub": "第四層",
+   "t": "アノプスのモデルの生き物",
+   "sec": "第四層　アノプスのモデル"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "次は私の推し、アノプス！",
+   "img": "art:347",
+   "label": "アノプス"
+  },
+  {
+   "w": "z",
+   "face": "normal",
+   "t": "地味なのだ。",
+   "img": "art:347",
+   "label": "推しに失礼"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "地味じゃない。モデルはアノマロカリス。\n5億年くらい前、カンブリア紀の海にいた生き物よ。",
+   "img": "row:art:347|アノプス;wiki:en:Anomalocaris|アノマロカリス"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この仲間は、成長どころか、体の部品がバラバラに見つかって、\nそれぞれちがう生き物の化石だと思われてたの。",
+   "img": "wiki:en:Anomalocaris",
+   "label": "アノマロカリス"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "部品？",
+   "img": "wiki:en:Anomalocaris",
+   "label": "アノマロカリス"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "まず1892年、前についてるトゲトゲの腕が、\nエビの胴体だと思われた。",
+   "img": "row:csearch:Anomalocaris canadensis frontal appendage|前の腕の化石;wiki:en:Shrimp|エビ",
+   "say": "まず、せんはっぴゃくきゅうじゅうに年、前についてるトゲトゲの腕が、エビの胴体だと思われた。"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "アノマロカリスって名前は、\n「奇妙なエビ」って意味なの。",
+   "img": "csearch:Anomalocaris canadensis frontal appendage",
+   "label": "アノマロカリス＝奇妙なエビ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "次に、丸い口がクラゲだと思われて、\nペイトイアって名前が付いた。",
+   "img": "row:wiki:en:Peytoia|口の化石;wiki:en:Jellyfish|クラゲ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "胴体はナマコだと思われて、ラガニア。",
+   "img": "row:csearch:Laggania cambria|胴体の化石;wiki:en:Sea_cucumber|ナマコ"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "しかもラガニアは、あとで調べたら\n口と海綿が重なった化石だった。",
+   "img": "wiki:en:Sponge",
+   "label": "海綿",
+   "say": "しかもラガニアは、あとで調べたら、口と、かいめんが重なった化石だった。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "海綿は、海の底にくっついて暮らす、\nスポンジみたいな動物ね。",
+   "img": "wiki:en:Sponge",
+   "label": "海綿",
+   "say": "かいめんは、海の底にくっついて暮らす、スポンジみたいな動物ね。"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "1匹の生き物が、\nエビとクラゲとナマコに分かれてたのだ！？",
+   "img": "row:wiki:en:Shrimp|エビ;wiki:en:Jellyfish|クラゲ;wiki:en:Sea_cucumber|ナマコ",
+   "big": "エビとクラゲとナマコ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。1970年代の終わりから80年代にかけて、\nブリッグスさんやウィッティントンさんの研究で…",
+   "img": "wiki:en:Anomalocaris"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "腕と口がつながったままの化石が見つかって、\nやっと1匹の大きな生き物だってわかったの。",
+   "img": "wiki:en:Anomalocaris",
+   "label": "ぜんぶ1匹の部品だった"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ポケモンでいえば、アノプスの腕と口と胴体が、\n別々のカセキから復元されたようなものなのだ。",
+   "img": "art:347",
+   "label": "ツメのカセキ　→　アノプス"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "ちなみに、学名は先に付いた名前が優先される決まり。\nだから、クラゲと間違えられたペイトイアが…",
+   "img": "wiki:en:Peytoia",
+   "label": "ペイトイア"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "その生き物の正式な名前として、\n今も使われてるの。",
+   "img": "wiki:en:Peytoia",
+   "label": "ペイトイア"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "クラゲ扱いの名前が勝ったのだ…",
+   "img": "wiki:en:Jellyfish"
+  },
+  {
+   "type": "title",
+   "sub": "第五層",
+   "t": "リリーラのモデルの生き物",
+   "sec": "第五層　リリーラのモデル"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "もう1匹、私の推しのリリーラ。",
+   "img": "art:345",
+   "label": "リリーラ"
+  },
+  {
+   "w": "z",
+   "face": "normal",
+   "t": "いわとくさタイプの、\n花みたいなやつなのだ。",
+   "img": "art:345",
+   "label": "いわ・くさタイプ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "分類はウミユリポケモン。\nでもモデルのウミユリは、植物じゃなくて動物なの。",
+   "img": "row:art:345|リリーラ;wiki:en:Crinoid|ウミユリ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ウニやヒトデと同じ、\n棘皮動物の仲間。",
+   "img": "row:wiki:en:Crinoid|ウミユリ;wiki:en:Sea_urchin|ウニ;wiki:en:Starfish|ヒトデ",
+   "label": "棘皮動物の仲間",
+   "say": "ウニやヒトデと同じ、きょくひどうぶつの仲間。"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "花なのに動物なのだ！？",
+   "img": "wiki:en:Crinoid",
+   "big": "花なのに動物"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "花びらに見えるのは腕で、\n流れてくるプランクトンを捕まえて食べるの。",
+   "img": "wiki:en:Crinoid",
+   "label": "花びらに見えるのは腕"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "しかも子どものころは海を泳いでいて、\n大人になると岩にくっついて暮らす。",
+   "img": "wiki:en:Crinoid"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "花びらが腕…触手みたいなのだ。",
+   "img": "art:345",
+   "label": "リリーラ"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "まさにそれ。リリーラの中国語の名前は「触手百合」。\n日本語で読むと、しょくしゅゆり。",
+   "img": "art:345",
+   "big": "触手百合",
+   "say": "まさにそれ。リリーラの中国語の名前は、チューショウ・バイホー。日本語で読むと、しょくしゅゆり。"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "し、触手…\nちょっといかがわしい響きなのだ。",
+   "img": "art:345",
+   "label": "健全なポケモンです"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "変な想像しないの。ポケモンシールドの図鑑にも、\n花びらのような触手で獲物をからめとるって書いてある。",
+   "img": "art:345",
+   "label": "ポケモンシールドの図鑑より"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "本物のウミユリの体のつくりにも合ってるし、\nいちばん正直な名前なのよ。",
+   "img": "wiki:en:Crinoid"
+  },
+  {
+   "w": "z",
+   "face": "normal",
+   "t": "…正直すぎるのも考えものなのだ。",
+   "img": "art:345",
+   "label": "触手百合"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "大昔の海にはウミユリが群れになって生えていて、\n岩がほとんどウミユリの化石でできた石灰岩もあるくらい。",
+   "img": "wiki:en:Crinoidal_limestone^csearch:crinoidal limestone"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今は主に深い海で生き残ってて、\n「生きた化石」って呼ばれてるの。",
+   "img": "wiki:en:Crinoid"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "泳ぐ子どもと、くっついて動かない大人。\n化石だけ見たら、子どもと大人がちがう生き物だと思われそうなのだ。",
+   "img": "wiki:en:Crinoid"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "でしょ。リリーラがくさタイプなのは見た目からだろうけど、\n中身は立派な動物なのよ。",
+   "img": "art:345",
+   "label": "中身は動物"
+  },
+  {
+   "type": "title",
+   "sub": "最深層",
+   "t": "プテラの名前をもらった翼竜",
+   "sec": "最深層　プテラの名前をもらった翼竜"
+  },
+  {
+   "w": "z",
+   "face": "normal",
+   "t": "…でも、プテラの話がまだなのだ。\n最初のやつ。",
+   "img": "sil:wiki:en:Aerodactylus^sil:wiki:en:Pterodactylus"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そうだった。2014年、ドイツのゾルンホーフェンっていう場所の石灰岩から出た\n小さな翼竜の化石に、新しい名前が付いたの。",
+   "img": "wiki:en:Solnhofen_Limestone",
+   "cap": "ゾルンホーフェンの石灰岩（ドイツ）"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "「アエロダクティルス」。",
+   "img": "wiki:en:Aerodactylus",
+   "label": "Aerodactylus（アエロダクティルス）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "プテラの英語名、\nエアロダクティルにそっくりなのだ！",
+   "img": "row:art:142|Aerodactyl;wiki:en:Aerodactylus|Aerodactylus",
+   "say": "プテラの英語名、エアロダクティルにそっくりなのだ！"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そっくりどころか、論文にはっきり\n「ポケモンのエアロダクティルにちなむ」って書いてあるの。",
+   "img": "paper:PLOS ONE（2014年）|名前の由来：Aero（風）＋ dactylus（指）。/任天堂のポケモン Aerodactyl から取った。|論文の「名前の由来」の部分（日本語訳）"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "プテラが本物の科学に名前を残したのだ！\nやっぱりプテラは最強なのだ！",
+   "img": "art:142",
+   "big": "やっぱり最強"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "…問題はここから。その論文の題名、\n日本語にすると…",
+   "img": "paper:PLOS ONE（2014年）|Pterodactylus scolopaciceps … :/The Problem of Cryptic Pterosaur Taxa/in Early Ontogeny|論文の題名"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "「成長の初めのころの翼竜に、\n見分けにくい種類がまぎれている問題」。",
+   "img": "paper:PLOS ONE（2014年）|Pterodactylus scolopaciceps … :/The Problem of Cryptic Pterosaur Taxa/in Early Ontogeny|成長の初めのころの翼竜に、見分けにくい種類がまぎれている問題"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "今日の話そのままなのだ。",
+   "img": "wiki:en:Aerodactylus"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アエロダクティルスとされた化石は6つ。\n全部、子どもなの。",
+   "img": "wiki:en:Aerodactylus",
+   "label": "6つとも子ども"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "…いやな予感がするのだ。",
+   "img": "wiki:en:Aerodactylus"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2018年に、ベネットさんという研究者が\n「プテロダクティルスとほとんど区別がつかない」と反論して…",
+   "img": "row:wiki:en:Aerodactylus|アエロダクティルス;wiki:en:Pterodactylus|プテロダクティルス"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2024年には、スマイスさんとアンウィンさんが、アエロダクティルスは\n「プテロダクティルス・アンティクウスの子ども」だと結論づけたの。",
+   "img": "row:wiki:en:Aerodactylus|子ども>wiki:en:Pterodactylus|大人",
+   "label": "アエロダクティルス ＝ プテロダクティルスの子ども"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "プテロダクティルスは、約250年前に同じドイツで見つかった、\n世界で最初に見つかった翼竜よ。",
+   "img": "wiki:en:Pterodactylus",
+   "label": "世界で最初に見つかった翼竜"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "プテラの名前の翼竜が…\nしんか前だったのだ…",
+   "img": "row:wiki:en:Aerodactylus|しんか前>wiki:en:Pterodactylus|しんか後",
+   "big": "しんか前",
+   "say": "プテラの名前の翼竜が…しんかまえだったのだ…"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ちなみに、あの石灰岩から子どもの翼竜ばかり見つかる理由も、\n去年の研究でわかってきたの。",
+   "img": "wiki:en:Solnhofen_Limestone"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "生まれたばかりの翼竜の化石に、\n腕の骨が折れたあとがあって…",
+   "img": "csearch:Pterodactylus juvenile^wiki:en:Pterodactylus"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "嵐に巻き込まれて落ち、\nすぐ泥に埋まったらしいの。",
+   "img": "wiki:en:Storm"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "大人は嵐に強いから、\nあまり化石に残らなかった。",
+   "img": "wiki:en:Pterodactylus"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "子どもの化石ばっかり見つかるから、大人と比べられなくて、\n子どもを新しい種類だと勘違いしやすいのだ。",
+   "img": "wiki:en:Solnhofen_Limestone"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そういうこと。研究者は、何十年もかけて化石を見比べて、\nどれが子どもでどれが大人かを確かめてるの。",
+   "img": "wiki:en:Fossil"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "…つまり、プテラの翼竜はまだしんか前。\nこれからもっと強くなるってことなのだ。",
+   "img": "art:142",
+   "say": "…つまり、プテラの翼竜はまだしんかまえ。これからもっと強くなるってことなのだ。"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "プテラはもうメガシンカしてるけどね。",
+   "img": "art:10042",
+   "label": "メガプテラ"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "メガプテラの話は、また今度なのだ！",
+   "img": "art:10042",
+   "label": "メガプテラ"
+  },
+  {
+   "type": "title",
+   "sub": "おまけ",
+   "t": "今日のポケモンの英語名",
+   "sec": "今日のポケモンの英語名"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "今日のポケモンの英語名。\n1匹目はプテラ。",
+   "img": "art:142",
+   "label": "Aerodactyl（エアロダクティル）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "エアロダクティル。",
+   "img": "art:142",
+   "label": "Aerodactyl（エアロダクティル）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ギリシャ語の「空気」と「指」。翼竜の翼は、\nうんと長くのびた薬指で張られていたの。",
+   "img": "wiki:en:Pterosaur",
+   "label": "翼は長い薬指で張られる"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "2匹目はアノプス。アノリス。",
+   "img": "art:347",
+   "label": "Anorith（アノリス）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "頭の「アノ」は、\nモデルのアノマロカリスから。",
+   "img": "art:347",
+   "label": "Anorith（アノリス）"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "3匹目はリリーラ。リリープ。",
+   "img": "art:345",
+   "label": "Lileep（リリープ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ユリを表す英語のリリーが入ってるの。\n中身は動物だけどね。",
+   "img": "art:345",
+   "label": "Lileep（リリープ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日出てきたポケモンの英語名は、\n英単語帳サイト「もんすぺ！」でも調べられるわ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の採掘はここまでなのだ。\nチャンネル登録もよろしくなのだ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "type": "ed"
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+name: saikutsu-long
+# ポケモン雑学採掘所の横動画（1920×1080）を作る。saikutsu/long/NNN/render.json を書き換えて push すると動く。
+#   render.json の例 {"num": 3, "mode": "sheet"}（音声なしで1行1コマの一覧だけ）／{"num": 3, "mode": "full"}（動画まで）
+#   できたものは render-saikutsu-NNN ブランチに置く（動画は 45MB ごとに分けて saikutsu_long.mp4.part-aa ... ）。
+#   アップロードはしない（公開は Claude が確認してから別の手順で行う）。
+on:
+  push:
+    branches: [main]
+    paths: ["saikutsu/long/*/render.json"]
+  workflow_dispatch:
+    inputs:
+      num: { description: "回番号", default: "3" }
+      mode: { description: "sheet か full", default: "sheet" }
+permissions:
+  contents: write
+concurrency:
+  group: saikutsu-long
+  cancel-in-progress: true
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    services:
+      voicevox:
+        image: voicevox/voicevox_engine:cpu-latest
+        ports:
+          - 50021:50021
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk ffmpeg
+      - run: pip install -q pillow numpy
+      - name: どの回を作るか
+        run: |
+          if [ -n "${{ github.event.inputs.num }}" ]; then
+            echo "NUM=${{ github.event.inputs.num }}" >> $GITHUB_ENV; echo "MODE=${{ github.event.inputs.mode }}" >> $GITHUB_ENV
+          else
+            f=$(git diff --name-only HEAD~1 HEAD | grep 'saikutsu/long/.*/render.json' | head -1)
+            python -c "import json,sys;d=json.load(open('$f'));print('NUM=%d'%d['num']);print('MODE='+d.get('mode','sheet'))" >> $GITHUB_ENV
+          fi
+      - name: VOICEVOX の起動を待つ
+        if: env.MODE == 'full'
+        run: |
+          for i in $(seq 1 80); do
+            if curl -sf http://127.0.0.1:50021/version; then echo " ready"; exit 0; fi
+            sleep 3
+          done
+          echo "VOICEVOX が起動しなかった"; exit 1
+      - run: python saikutsu_long.py
+      - name: できたものを render-saikutsu-NNN ブランチに置く
+        if: always()
+        run: |
+          B=render-saikutsu-$(printf %03d $NUM)
+          mkdir -p /tmp/o && cp -r out/* /tmp/o/ 2>/dev/null || true
+          cd /tmp/o
+          if [ -f saikutsu_long.mp4 ]; then split -b 45m saikutsu_long.mp4 saikutsu_long.mp4.part- && rm saikutsu_long.mp4; fi
+          echo "${{ github.run_id }} $MODE $(date -u +%FT%TZ)" > run.txt
+          git init -q && git checkout -q -b $B
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A && git commit -qm "採掘所 第$NUM回 $MODE"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" $B
