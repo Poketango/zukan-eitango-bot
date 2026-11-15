@@ -485,7 +485,8 @@ def accent_dump(L, out_dir):
     def req(path, data=None):
         h = {"Content-Type": "application/json"} if data else {}
         return urllib.request.urlopen(urllib.request.Request(vv + path, data=data, headers=h, method="POST"), timeout=90).read()
-    open(os.path.join(out_dir, "speakers.json"), "wb").write(req("/speakers"))
+    sp = urllib.request.urlopen(vv + "/speakers", timeout=60).read()
+    open(os.path.join(out_dir, "speakers.json"), "wb").write(sp)
     out = []
     for i, ln in enumerate(L):
         if ln.get("type") in ("title", "ed") or not ln.get("t"): continue
