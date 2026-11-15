@@ -120,16 +120,18 @@ def _chime():
 def add(mp4, voice=True):
     """mp4 の最後に締めの場面を足して、同じ名前で上書きする。失敗しても元の動画はそのまま残す"""
     try:
+        global DUR
         os.makedirs("_end", exist_ok=True)
+        v = None
+        if voice:
+            try: v = _voice()
+            except Exception as ex: print("締めの声なし:", repr(ex)[:120])
+        # 声が最後まで入るように、締めの場面の長さを声に合わせてのばす（声のあとに0.6秒の余白）
+        DUR = max(3.4, 0.25 + (len(v) / SR if v is not None else 0) + 0.6)
         for i, im in enumerate(frames()): im.save(f"_end/{i:04d}.jpg", quality=92)
         a = _chime()
-        if voice:
-            try:
-                v = _voice()
-                if v is not None:
-                    s = int(0.25 * SR); e = min(len(a), s + len(v)); a[s:e] += v[:e - s]
-            except Exception as ex:
-                print("締めの声なし:", repr(ex)[:120])
+        if v is not None:
+            s = int(0.25 * SR); e = min(len(a), s + len(v)); a[s:e] += v[:e - s]
         a = np.clip(a, -1, 1)
         with wave.open("_end/a.wav", "w") as w:
             w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((a * 30000).astype(np.int16).tobytes())
