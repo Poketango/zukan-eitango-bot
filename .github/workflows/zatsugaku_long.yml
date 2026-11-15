@@ -1,8 +1,9 @@
 name: zatsugaku-daily-long
 # ずんだもんと冥鳴ひまりのポケモン雑学・まとめ（横動画）。毎日 19:35（日本時間）
 on:
-  schedule:
-    - cron: "35 10 * * *"
+  # 旧形式（ずんだもん・冥鳴ひまり）の台本を自動で上げないよう止めた（2026-11-15）。採掘所の形式の動画はClaudeが作って上げる
+  # schedule:
+  #   - cron: "35 10 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
