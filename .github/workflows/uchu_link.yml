@@ -22,12 +22,13 @@ jobs:
           AUTH_CODE: ${{ github.event.inputs.code }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-      - uses: actions/upload-artifact@v4
+      - name: 承認ページのアドレスを uchu-auth ブランチに置く
         if: github.event.inputs.code == ''
-        with:
-          name: auth_url
-          path: auth_url.txt
-          retention-days: 1
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mv auth_url.txt /tmp/ && git checkout -q --orphan a && git rm -rqf --cached . && cp /tmp/auth_url.txt . && git add auth_url.txt
+          git commit -qm "承認ページのアドレス" && git push -qf origin a:uchu-auth
       - name: 暗号化した鍵を保存
         if: github.event.inputs.code != ''
         run: |
