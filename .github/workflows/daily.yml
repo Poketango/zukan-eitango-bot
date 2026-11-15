@@ -45,6 +45,13 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      - name: 試し実行のときは、できた動画を確認用に残す
+        if: github.event.inputs.dry_run == '1'
+        uses: actions/upload-artifact@v4
+        with:
+          name: short-preview
+          path: short.mp4
+          retention-days: 3
       - name: 投稿の記録を保存（型ごとの再生数を比べるため）
         if: success()
         run: |
