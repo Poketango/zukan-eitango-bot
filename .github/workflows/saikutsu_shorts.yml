@@ -8,7 +8,7 @@ on:
       dry_run:
         description: "1にすると投稿せず動画だけ作る"
         default: "1"
-      no:
+      num:
         description: "台本の番号（空欄なら、まだ出していない一番若い番号）"
         default: ""
 permissions:
@@ -45,7 +45,7 @@ jobs:
       - run: python saikutsu_shorts.py
         env:
           DRY_RUN: ${{ github.event.inputs.dry_run }}
-          NO: ${{ github.event.inputs.no }}
+          NO: ${{ github.event.inputs.num }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT2_REFRESH_TOKEN: ${{ secrets.YT2_REFRESH_TOKEN }}
