@@ -181,7 +181,8 @@ DIR = None
 def load(ref):
     if ref in _IMG: return _IMG[ref]
     im = None
-    for alt in ref.split("^"):
+    alts = [ref] if ref.startswith("row:") else ref.split("^")      # 並べる図は、中のそれぞれの画像で予備を選ぶ
+    for alt in alts:
         try:
             kind, _, arg = alt.partition(":")
             if kind == "art": im = art(arg)
