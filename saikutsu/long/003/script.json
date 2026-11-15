@@ -53,16 +53,9 @@
    "face": "proud",
    "t": "ちょうはつとステルスロックで、\n相手の作戦をつぶしまくっていたのだ。",
    "img": "dp_rockslide.png",
-   "label": "第4世代の先発プテラの型",
    "ety": [
-    [
-     "持ち物",
-     "きあいのタスキ"
-    ],
-    [
-     "技",
-     "ちょうはつ／ステルスロック／ストーンエッジ／じしん"
-    ]
+    "第4世代の先発プテラの型",
+    "きあいのタスキ　ちょうはつ／ステルスロック／ストーンエッジ／じしん"
    ]
   },
   {
@@ -171,7 +164,8 @@
    "face": "happy",
    "t": "はいはい。今日はその化石の話。\nポケモンの化石と本物の化石を並べた展示があるの。",
    "img": "csearch:Pokémon Fossil Museum^wiki:en:Pokémon_Fossil_Museum^wiki:en:National_Museum_of_Nature_and_Science",
-   "v": "tsun"
+   "v": "tsun",
+   "bgm": "oyaoya"
   },
   {
    "w": "m",

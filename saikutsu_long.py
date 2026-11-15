@@ -430,6 +430,9 @@ KFIX = [
 ]
 
 
+FIXLOG = []
+
+
 def fixed_kana(ln, speaker):
     """VOICEVOX の読みに直し表を当てる。直すところが無ければ None"""
     import urllib.request, urllib.parse
@@ -500,7 +503,14 @@ def bgm_tracks(total, sections, bgms, segs):
         if hit:
             if hit[-1] == "ed": cuts.append((st, "ed"))
             else: cuts.append((st, BGM_ROTATION[rot % len(BGM_ROTATION)])); rot += 1
-    cuts.sort(); cache = {}
+    cuts.sort()
+    explicit = {(starts[k], bgms[k]) for k in range(len(starts)) if bgms[k]}
+    merged = []
+    for st, name in cuts:                         # 区切りの直後（5秒以内）に指定の曲があれば、区切りから指定の曲を流す
+        if (st, name) in explicit and merged and st - merged[-1][0] < 5.0 and (merged[-1][0], merged[-1][1]) not in explicit:
+            merged[-1] = (merged[-1][0], name); continue
+        merged.append((st, name))
+    cuts = merged; cache = {}
     for j, (st, name) in enumerate(cuts):
         en = cuts[j + 1][0] if j + 1 < len(cuts) else total
         if en - st < 0.5: continue
@@ -588,6 +598,7 @@ def build(d, out_dir):
     for ln in L:
         if ln.get("type") in ("title", "ed") or not ln.get("t"): vs.append(None); continue
         k = fixed_kana(ln, style_id(ln))
+        if k: FIXLOG.append(f"{len(vs)}\t{k}")
         vs.append(SS.tts(dict(ln, kana=k) if k else ln, style_id(ln)))
     segs, voices, total = durations(L, vs)
     os.makedirs("_l", exist_ok=True); parts = []
@@ -632,6 +643,7 @@ def build(d, out_dir):
     for (i, dur, _) in segs:
         tl.append({"i": i, "start": round(t, 2), "dur": round(dur, 2), "t": L[i].get("t", L[i].get("type", ""))}); t += round(dur * FPS) / FPS
     json.dump(tl, open(os.path.join(out_dir, "timeline.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    open(os.path.join(out_dir, "kana_fixed.txt"), "w", encoding="utf-8").write("\n".join(FIXLOG))
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp4, "-vf", "fps=1/6,scale=384:216,tile=5x6", os.path.join(out_dir, "frames_%02d.jpg")], check=True)
     print("長さ", round(total, 1), "秒")
 
