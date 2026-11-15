@@ -478,6 +478,7 @@ if __name__ == "__main__":
         title, desc = formats.meta(kind, q, D)
         voice = "VOICEVOX:冥鳴ひまり" if kind == "rank" else "VOICEVOX:ずんだもん"
         desc += f"\n\nナレーション：{voice}"
+    import end_card; end_card.add("short.mp4")   # 最後に「もんすぺ！で検索」とサイトのホーム画面（2026-11-15）
     print(kind, n); print(title); print(desc)
     print("BGM:", bgm_label)
     if os.environ.get("DRY_RUN") == "1": sys.exit()

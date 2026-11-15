@@ -311,6 +311,7 @@ if __name__ == "__main__":
     q["jn"] = d["names"][q["key"]]
     print(json.dumps(q, ensure_ascii=False))
     voiced = build(q, "zatsugaku.mp4")
+    import end_card; end_card.add("zatsugaku.mp4")   # 最後に「もんすぺ！で検索」とサイトのホーム画面
     title, desc = meta(q, voiced); print(title); print(desc)
     if os.environ.get("DRY_RUN") == "1": sys.exit()
     vid = upload(title, desc, "zatsugaku.mp4")
