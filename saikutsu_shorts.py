@@ -186,7 +186,7 @@ class Short:
         # 立ち絵（話している方は口を動かし、明るく）
         for who, left in (("m", True), ("z", False)):
             act = ln["w"] == who
-            th = tachie(who, act and talking and int(t * 9) % 2 == 0, 560)
+            th = tachie(who, act and talking and int(t * 9) % 2 == 0, 470)
             if not act:
                 th = th.copy(); px = np.array(th).astype(np.float32); px[..., :3] *= 0.6; th = Image.fromarray(px.astype(np.uint8))
             bob = int(abs(np.sin(t * 7)) * 8) if act else 0
@@ -240,6 +240,10 @@ def build(d, out):
                     "-c:a", "aac", "-b:a", "160k", "-shortest", out], check=True)
     import end_card
     end_card.add(out)
+    # 音の大きさをそろえる（長い動画と同じ基準）
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", out, "-c:v", "copy", "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
+                    "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "_s/norm.mp4"], check=True)
+    os.replace("_s/norm.mp4", out)
     S.frame(1, 1.0, 2.0, False).save("thumb.png")
     return voiced
 
