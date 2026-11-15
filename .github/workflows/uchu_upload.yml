@@ -1,0 +1,43 @@
+name: uchu-upload
+# 宇宙の衝撃ファイル：uchu-queue ブランチに動画が押し込まれたらアップロードし、記録を main に残してキューを空にする
+on:
+  push:
+    branches: [uchu-queue]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: uchu-upload
+  cancel-in-progress: false
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: キューを取り出す
+        run: |
+          git fetch -q --depth=1 origin uchu-queue
+          mkdir -p q && git --work-tree=q checkout FETCH_HEAD -- . && git reset -q
+          ls -la q/queue || echo "キューは空"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q google-api-python-client google-auth cryptography
+      - run: python uchu/upload.py q/queue
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      - name: 記録を保存してキューを空にする
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain uchu/posted.jsonl)" ]; then
+            git add uchu/posted.jsonl && git commit -qm "宇宙の衝撃ファイル：投稿記録を更新"
+            for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
+          fi
+          git checkout -q --orphan empty && git rm -rqf --cached . && echo "投稿待ちの動画はここに置く" > README.md && git add README.md
+          git commit -qm "キューを空にする" && git push -qf origin empty:uchu-queue
