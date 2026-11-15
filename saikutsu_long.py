@@ -63,11 +63,16 @@ def wiki(spec):
     if not src: raise RuntimeError("画像のない記事")
     if src.lower().endswith(".svg") and js.get("thumbnail"): src = js["thumbnail"]["source"]
     w = (js.get("originalimage") or {}).get("width", 0)
-    if w > 1600 and "/commons/" in src and "/thumb/" not in src:      # 大きすぎる原寸は縮小版を使う
-        base = src.split("/wikipedia/commons/")[1]; fname = base.rsplit("/", 1)[-1]
-        src = f"https://upload.wikimedia.org/wikipedia/commons/thumb/{base}/1600px-{fname}"
-    CREDITS[spec] = f"{title}（{lang}.wikipedia.org の記事の画像。{src.rsplit('/', 1)[-1]}）"
-    return _get(src, "wiki_" + lang + "_" + title)
+    if w > 1920 and "/thumb/" not in src and re.search(r"/wikipedia/(commons|en|ja)/", src):   # 大きすぎる原寸は決まった大きさ（1280px）の縮小版
+        m = re.search(r"/wikipedia/([a-z]+)/(.+)$", src); fname = m.group(2).rsplit("/", 1)[-1]
+        src = f"https://upload.wikimedia.org/wikipedia/{m.group(1)}/thumb/{m.group(2)}/1280px-{fname}"
+    src = re.sub(r"/(\d{3,4})px-", lambda mm: "/1280px-" if int(mm.group(1)) not in (1280, 1920, 3840, 960, 500) else mm.group(0), src)
+    CREDITS[spec] = f"{title}（{lang}.wikipedia.org の記事の画像。{src.rsplit('/', 1)[-1].split('?')[0]}）"
+    try:
+        return _get(src, "wiki_" + lang + "_" + title)
+    except Exception:                      # 縮小版が取れなければ、記事が示すままの画像
+        alt = (js.get("thumbnail") or js.get("originalimage"))["source"]
+        return _get(alt, "wiki2_" + lang + "_" + title)
 
 
 def csearch(q):
