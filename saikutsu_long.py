@@ -494,23 +494,27 @@ def bgm_tracks(total, sections, bgms, segs):
     # 行ごとの開始時刻
     starts, t = [], 0.2
     for (_, dur, _) in segs: starts.append(t); t += round(dur * FPS) / FPS
-    cuts = []                                    # (時刻, 曲名)
-    rot = 0
-    sec_times = [st for st, _ in sections]
+    cuts = []                                    # (時刻, 曲名 か None＝ローテーション, 指定かどうか)
     for k, st in enumerate(starts):
-        if bgms[k]: cuts.append((st, bgms[k])); continue
+        if bgms[k]: cuts.append([st, bgms[k], True]); continue
         hit = [p for (x, p) in sections if abs(x - st) < 1e-3]
-        if hit:
-            if hit[-1] == "ed": cuts.append((st, "ed"))
-            else: cuts.append((st, BGM_ROTATION[rot % len(BGM_ROTATION)])); rot += 1
-    cuts.sort()
-    explicit = {(starts[k], bgms[k]) for k in range(len(starts)) if bgms[k]}
+        if hit: cuts.append([st, "ed" if hit[-1] == "ed" else None, hit[-1] == "ed"])
+    cuts.sort(key=lambda c: c[0])
     merged = []
-    for st, name in cuts:                         # 区切りの直後（5秒以内）に指定の曲があれば、区切りから指定の曲を流す
-        if (st, name) in explicit and merged and st - merged[-1][0] < 5.0 and (merged[-1][0], merged[-1][1]) not in explicit:
-            merged[-1] = (merged[-1][0], name); continue
-        merged.append((st, name))
-    cuts = merged; cache = {}
+    for c in cuts:                                # 5秒以内に続く切り替えはまとめる（指定の曲を優先し、始まりは前の時刻）
+        if merged and c[0] - merged[-1][0] < 5.0:
+            if c[2] or not merged[-1][2]: merged[-1] = [merged[-1][0], c[1], c[2]]
+            continue
+        merged.append(c)
+    rot = 0; prev = None; out_cuts = []
+    for st, name, ex in merged:                   # ローテーションは直前と同じ曲を選ばない
+        if name is None:
+            for _ in range(len(BGM_ROTATION)):
+                name = BGM_ROTATION[rot % len(BGM_ROTATION)]; rot += 1
+                if name != prev: break
+        if name == prev: continue                 # 同じ曲ならそのまま流し続ける
+        out_cuts.append((st, name)); prev = name
+    cuts = out_cuts; cache = {}
     for j, (st, name) in enumerate(cuts):
         en = cuts[j + 1][0] if j + 1 < len(cuts) else total
         if en - st < 0.5: continue
