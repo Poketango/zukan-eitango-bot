@@ -1,0 +1,69 @@
+name: saikutsu-shorts
+# ポケモン雑学採掘所のショート（@poke_zatsugaku）。台本は shorts/NNNN/ に Claude が足していく。毎日 20:35（日本時間）
+on:
+  # schedule:
+  #   - cron: "35 11 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "1にすると投稿せず動画だけ作る"
+        default: "1"
+      no:
+        description: "台本の番号（空欄なら、まだ出していない一番若い番号）"
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: saikutsu-shorts
+  cancel-in-progress: false
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    services:
+      voicevox:
+        image: voicevox/voicevox_engine:cpu-latest
+        ports:
+          - 50021:50021
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk ffmpeg
+      - run: pip install -q pillow numpy google-api-python-client google-auth cryptography
+      - name: VOICEVOX の起動を待つ
+        run: |
+          for i in $(seq 1 60); do
+            if curl -sf http://127.0.0.1:50021/version; then echo " ready"; exit 0; fi
+            sleep 3
+          done
+          echo "VOICEVOX が起動しなかったので、ナレーションなしで作ります"
+      - name: 最新の投稿記録を取り込む（同じ台本を二度出さないため）
+        run: |
+          git fetch -q --depth=1 origin ${{ github.ref_name }} && git checkout FETCH_HEAD -- posted_saikutsu.json || true
+      - run: python saikutsu_shorts.py
+        env:
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          NO: ${{ github.event.inputs.no }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT2_REFRESH_TOKEN: ${{ secrets.YT2_REFRESH_TOKEN }}
+      - name: 投稿した台本を記録
+        if: success()
+        run: |
+          if [ -f posted_saikutsu.json ] && ! git diff --quiet -- posted_saikutsu.json 2>/dev/null || [ -n "$(git status --porcelain posted_saikutsu.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add posted_saikutsu.json
+            git commit -m "採掘所ショートの投稿記録を更新"
+            for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: saikutsu
+          path: |
+            saikutsu.mp4
+            thumb.png
+          retention-days: 7
