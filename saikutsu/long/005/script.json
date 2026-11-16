@@ -330,6 +330,19 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "キーホールで地図を作っていたブライアン・マクレンドンさんも、\nのちにナイアンティックの技術の責任者になったの。",
+   "img": "wiki:en:Brian_McClendon",
+   "label": "ブライアン・マクレンドンさん"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "地図を作っていた人たちが、\nゲームを作ったのだ。",
+   "img": "wiki:en:Brian_McClendon"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "最初の大きなゲームが、2012年のイングレス。現実の建物や\n像を「ポータル」という陣地にして取り合うゲームよ。",
    "img": "wiki:en:Ingress_(video_game)",
    "label": "イングレス（2012年）"
@@ -373,10 +386,10 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "ナイアンティックの技術の責任者は、\nGPSの青い点は50mずれることもよくある、と言ってる。",
+   "t": "そのマクレンドンさんは、スマホの地図の青い点は、\nGPSのずれで50mずれることもよくある、と言ってる。",
    "img": "wiki:en:Global_Positioning_System",
    "label": "GPSのずれ",
-   "say": "ナイアンティックの技術の責任者は、ジーピーエスの青い点は50メートルずれることもよくある、と言ってる。"
+   "say": "そのマクレンドンさんは、スマホの地図の青い点は、ジーピーエスのずれで50メートルずれることもよくある、と言ってる。"
   },
   {
    "w": "z",
@@ -505,6 +518,26 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "そのスキャンで、場所ごとに小さなAIを学習させてるの。\nその数は5000万個以上。",
+   "img": "table:学習させたAI=場所ごとに5000万個以上;中の数値（パラメータ）=合わせて150兆以上;もとにしたもの=プレイヤーのスキャン",
+   "label": "2024年11月の発表"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "AIの中で調整される数値、パラメータは、\n合わせて150兆を超えるそうよ。",
+   "img": "table:学習させたAI=場所ごとに5000万個以上;中の数値（パラメータ）=合わせて150兆以上;もとにしたもの=プレイヤーのスキャン",
+   "label": "2024年11月の発表"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "150兆…。シャワーズの個体値とは、\nけたが違いすぎるのだ。",
+   "img": "art:134"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "そして2025年3月。ナイアンティックは、\nポケモンGOなどのゲームを売ると発表したの。",
    "img": "row:wiki:en:Scopely|Scopely（ゲーム）;wiki:en:Niantic_Spatial|Niantic Spatial（地図とAI）"
   },
@@ -527,8 +560,8 @@
    "w": "m",
    "face": "normal",
    "t": "ゲームを売る発表の文には、こう書いてあるわ。\n「300億枚を超える、位置つきの画像のデータ」",
-   "img": "wiki:en:Niantic_Spatial",
-   "label": "Niantic Spatial",
+   "img": "paper:Niantic の発表（2025年3月12日）|300億枚を超える、位置つきの画像の/データベースの上にモデルを作っている|Niantic Spatial（ナイアンティック・スペーシャル）の説明",
+   "label": "Niantic の発表（2025年3月）",
    "ans": true
   },
   {
@@ -628,7 +661,7 @@
    "x": {
     "head": "ポケモンGOのスキャンで\nAIを育てた会社が、国防の\n衛星の会社と提携した",
     "img": [
-     "web:https://lh3.googleusercontent.com/FtKVMwYyYZHg7OccXshrzfaAWQy9qoSJfapLgWrBMI2hDr2ZmrxkOgIrS4d1yUUcypBby20saCkqdV_pLmhjAqgAwiWS9I_HBXyPXI-oUd2hyg=e365-pa-nu-w1440-rw^wiki:en:WorldView_Legion"
+     "web:https://lh3.googleusercontent.com/FtKVMwYyYZHg7OccXshrzfaAWQy9qoSJfapLgWrBMI2hDr2ZmrxkOgIrS4d1yUUcypBby20saCkqdV_pLmhjAqgAwiWS9I_HBXyPXI-oUd2hyg=e365-pa-nu-w1440-rw^wiki:en:Satellite_imagery"
     ],
     "bubble": "つながったのだ",
     "who": "z",
@@ -639,7 +672,7 @@
    "w": "m",
    "face": "normal",
    "t": "2025年12月16日。ナイアンティック・スペーシャルは、\nVantorという会社との提携を発表したの。",
-   "img": "web:https://lh3.googleusercontent.com/FtKVMwYyYZHg7OccXshrzfaAWQy9qoSJfapLgWrBMI2hDr2ZmrxkOgIrS4d1yUUcypBby20saCkqdV_pLmhjAqgAwiWS9I_HBXyPXI-oUd2hyg=e365-pa-nu-w1440-rw^wiki:en:WorldView_Legion",
+   "img": "web:https://lh3.googleusercontent.com/FtKVMwYyYZHg7OccXshrzfaAWQy9qoSJfapLgWrBMI2hDr2ZmrxkOgIrS4d1yUUcypBby20saCkqdV_pLmhjAqgAwiWS9I_HBXyPXI-oUd2hyg=e365-pa-nu-w1440-rw^wiki:en:Satellite_imagery",
    "label": "提携の発表（2025年12月）",
    "say": "2025年12月16日。ナイアンティック・スペーシャルは、ヴァンターという会社との提携を発表したの。"
   },
@@ -647,7 +680,7 @@
    "w": "m",
    "face": "normal",
    "t": "Vantorは、地球を撮る衛星を持っていて、\nアメリカの国防や情報機関に画像を売る会社よ。",
-   "img": "wiki:en:WorldView_Legion",
+   "img": "web:https://lh3.googleusercontent.com/B0u3jFoqHCW6PFSbr--c-cdOp-Jk3Iy0fsMeCFzeRk4JSvkOI1utGWhNii1rOYyGhIl_qvCsSe8PtljbDhBjqc9d4hj7lMg0woAmAWyMOuC_Ig=e365-pa-nu-w1440-rw^wiki:en:Satellite_imagery",
    "label": "Vantorが運用する撮影衛星",
    "say": "ヴァンターは、地球を撮る衛星を持っていて、アメリカの国防や情報機関に画像を売る会社よ。"
   },
@@ -655,14 +688,14 @@
    "w": "m",
    "face": "normal",
    "t": "提携の中身は、GPSが妨害されたときでも、\n空のドローンと地上の人が同じ位置を共有すること。",
-   "img": "row:wiki:en:WorldView_Legion|空から（Vantor）>web:https://lh3.googleusercontent.com/06jKW5x3FnIu1iepBOwkORzFMzOk_XQ2ceo7Qnp2hWZgf_m90tDAwR8ZXWvuD_6rGCyyRUqG3kLqqd6H5PuoaFC3C7brCDK2WjwvObCsKm8Bww=e365-pa-nu-w1360-rw|地上から（Niantic Spatial）",
+   "img": "row:web:https://lh3.googleusercontent.com/B0u3jFoqHCW6PFSbr--c-cdOp-Jk3Iy0fsMeCFzeRk4JSvkOI1utGWhNii1rOYyGhIl_qvCsSe8PtljbDhBjqc9d4hj7lMg0woAmAWyMOuC_Ig=e365-pa-nu-w1440-rw|空から（Vantor）>web:https://lh3.googleusercontent.com/06jKW5x3FnIu1iepBOwkORzFMzOk_XQ2ceo7Qnp2hWZgf_m90tDAwR8ZXWvuD_6rGCyyRUqG3kLqqd6H5PuoaFC3C7brCDK2WjwvObCsKm8Bww=e365-pa-nu-w1360-rw|地上から（Niantic Spatial）",
    "label": "空と地上で同じ位置を共有"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "空からの位置はVantorの衛星画像で、地上からの位置は\nナイアンティック・スペーシャルのVPSで割り出すの。",
-   "img": "row:wiki:en:WorldView_Legion|空から（Vantor）>web:https://lh3.googleusercontent.com/06jKW5x3FnIu1iepBOwkORzFMzOk_XQ2ceo7Qnp2hWZgf_m90tDAwR8ZXWvuD_6rGCyyRUqG3kLqqd6H5PuoaFC3C7brCDK2WjwvObCsKm8Bww=e365-pa-nu-w1360-rw|地上から（Niantic Spatial）",
+   "img": "row:web:https://lh3.googleusercontent.com/B0u3jFoqHCW6PFSbr--c-cdOp-Jk3Iy0fsMeCFzeRk4JSvkOI1utGWhNii1rOYyGhIl_qvCsSe8PtljbDhBjqc9d4hj7lMg0woAmAWyMOuC_Ig=e365-pa-nu-w1440-rw|空から（Vantor）>web:https://lh3.googleusercontent.com/06jKW5x3FnIu1iepBOwkORzFMzOk_XQ2ceo7Qnp2hWZgf_m90tDAwR8ZXWvuD_6rGCyyRUqG3kLqqd6H5PuoaFC3C7brCDK2WjwvObCsKm8Bww=e365-pa-nu-w1360-rw|地上から（Niantic Spatial）",
    "label": "空と地上で同じ位置を共有",
    "say": "空からの位置はヴァンターの衛星画像で、地上からの位置はナイアンティック・スペーシャルのブイピーエスで割り出すの。"
   },
@@ -742,6 +775,32 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "ただ、使い道は軍事だけじゃないわ。\n2026年3月には、配達ロボットの会社と提携したの。",
+   "img": "web:https://lh3.googleusercontent.com/3AQNV7_z0MLdgKxSSIhy7jcg2NMcgwmacOe-BaAe7LjawyLI5UqnZVUsjno7gfcp_TqpshV5kqyxqyPhZwks7P--nPgvSrdQx3YRzWbEtbv-aA=e365-pa-nu-w1440-rw^wiki:en:Delivery_robot",
+   "label": "配達ロボットの会社 Coco Robotics と提携"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ビルの谷間でGPSが乱れても、\nロボットが自分の位置をつかめるようにするためよ。",
+   "img": "web:https://lh3.googleusercontent.com/3AQNV7_z0MLdgKxSSIhy7jcg2NMcgwmacOe-BaAe7LjawyLI5UqnZVUsjno7gfcp_TqpshV5kqyxqyPhZwks7P--nPgvSrdQx3YRzWbEtbv-aA=e365-pa-nu-w1440-rw^wiki:en:Delivery_robot"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "9月には、シンガポールの地図の役所と、\n国全体のVPSの地図を作れるか確かめ始めたわ。",
+   "img": "web:https://lh3.googleusercontent.com/DAgRKdu4vREs9B0tvwUneiOWYiqKp0B4ALiVyM2XwWR-16aXgSXxh-vKN0RdRmvalS8XpnvC_148YrA4doR2zw3fOLPCGkaLxThk_whwiq2T2Q=e365-pa-nu-w1440-rw^wiki:en:Singapore",
+   "label": "シンガポール土地庁との覚え書き（2026年9月）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ロボットにも、ドローンにも、\n同じ地図のAIが使われるのだ。",
+   "img": "web:https://lh3.googleusercontent.com/DAgRKdu4vREs9B0tvwUneiOWYiqKp0B4ALiVyM2XwWR-16aXgSXxh-vKN0RdRmvalS8XpnvC_148YrA4doR2zw3fOLPCGkaLxThk_whwiq2T2Q=e365-pa-nu-w1440-rw^wiki:en:Singapore"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "Vantorの衛星画像を買っている先には、\nあのNIMAが名前を変えたNGAも入ってるの。",
    "img": "wiki:en:National_Geospatial-Intelligence_Agency",
    "say": "ヴァンターの衛星画像を買っている先には、あのニーマが名前を変えた、エヌジーエーも入ってるの。"
@@ -750,7 +809,7 @@
    "w": "z",
    "face": "surprise",
    "t": "2003年にキーホールの地図を\n使った役所なのだ！",
-   "img": "row:wiki:en:Iraq_War|2003年 NIMAが使う>wiki:en:Pokémon_Go|2016年 ポケモンGO>wiki:en:WorldView_Legion|2025年 Vantorと提携",
+   "img": "row:wiki:en:Iraq_War|2003年 NIMAが使う>wiki:en:Pokémon_Go|2016年 ポケモンGO>web:https://lh3.googleusercontent.com/B0u3jFoqHCW6PFSbr--c-cdOp-Jk3Iy0fsMeCFzeRk4JSvkOI1utGWhNii1rOYyGhIl_qvCsSe8PtljbDhBjqc9d4hj7lMg0woAmAWyMOuC_Ig=e365-pa-nu-w1440-rw|2025年 Vantorと提携",
    "label": "2003年から2025年まで",
    "ans": "idea"
   },
@@ -758,7 +817,7 @@
    "w": "m",
    "face": "normal",
    "t": "地図ソフトから始まった道が、ゲームを通って、\nまた同じ役所の近くに戻ってきたのね。",
-   "img": "row:wiki:en:Iraq_War|2003年 NIMAが使う>wiki:en:Pokémon_Go|2016年 ポケモンGO>wiki:en:WorldView_Legion|2025年 Vantorと提携",
+   "img": "row:wiki:en:Iraq_War|2003年 NIMAが使う>wiki:en:Pokémon_Go|2016年 ポケモンGO>web:https://lh3.googleusercontent.com/B0u3jFoqHCW6PFSbr--c-cdOp-Jk3Iy0fsMeCFzeRk4JSvkOI1utGWhNii1rOYyGhIl_qvCsSe8PtljbDhBjqc9d4hj7lMg0woAmAWyMOuC_Ig=e365-pa-nu-w1440-rw|2025年 Vantorと提携",
    "label": "2003年から2025年まで"
   },
   {
@@ -772,7 +831,7 @@
    "w": "m",
    "face": "normal",
    "t": "でも、その景色で育ったAIは、いま、\nGPSの届かない場所の位置を探す技術になってる。",
-   "img": "web:https://lh3.googleusercontent.com/FtKVMwYyYZHg7OccXshrzfaAWQy9qoSJfapLgWrBMI2hDr2ZmrxkOgIrS4d1yUUcypBby20saCkqdV_pLmhjAqgAwiWS9I_HBXyPXI-oUd2hyg=e365-pa-nu-w1440-rw^wiki:en:WorldView_Legion"
+   "img": "web:https://lh3.googleusercontent.com/FtKVMwYyYZHg7OccXshrzfaAWQy9qoSJfapLgWrBMI2hDr2ZmrxkOgIrS4d1yUUcypBby20saCkqdV_pLmhjAqgAwiWS9I_HBXyPXI-oUd2hyg=e365-pa-nu-w1440-rw^wiki:en:Satellite_imagery"
   },
   {
    "w": "z",
