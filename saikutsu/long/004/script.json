@@ -1,0 +1,818 @@
+{
+ "no": 4,
+ "title": "ポケモンカードのパックは「賭博」だと、任天堂が訴えられた。",
+ "neta": "カードのパックは賭博だと訴えられた",
+ "lines": [
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ねえめたん！\nポケモンカードのパックは賭博だって、\n裁判になったことがあるのだ？",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
+   "sec": "ポケモン雑学採掘所"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "あるわよ。しかも裁判所は最後まで、\n「賭博ではない」とは言わなかったの。",
+   "img": "wiki:en:United_States_Court_of_Appeals_for_the_Ninth_Circuit^wiki:en:James_R._Browning_United_States_Court_of_Appeals_Building"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "えっ。",
+   "big": "えっ。"
+  },
+  {
+   "type": "op",
+   "w": "m",
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘所。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学採掘所。"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "見てほしいのだ。坑道の奥から、\n昔のポケモンカードの箱が出てきたのだ。",
+   "img": "wiki:en:Pokémon_Trading_Card_Game",
+   "sec": "導入　1999年のポケモンカード"
+  },
+  {
+   "w": "m",
+   "face": "surprise",
+   "t": "英語版の第1弾ね。\n1999年にアメリカで発売されたシリーズよ。",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
+   "label": "英語版の第1弾（1999年）"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "このころのアメリカの大会は、\nエビワラーのデッキが最強だったのだ。",
+   "img": "art:107",
+   "bgm": "battle"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "「ヘイメーカー」って呼ばれたデッキね。\nボクシングの大振りのパンチのことよ。",
+   "img": "row:art:107|エビワラー;art:125|エレブー;art:123|ストライク",
+   "label": "ヘイメーカーの主力"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "進化しないポケモンだけで組んで、\n1ターン目からすぐに殴るの。",
+   "img": "row:art:107|エビワラー;art:125|エレブー;art:123|ストライク"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "第1弾のエビワラーは、闘エネルギー1枚で\n20ダメージ。3枚あれば40ダメージなのだ。",
+   "img": "table:ジャブ=闘エネルギー1枚で20ダメージ;スペシャルパンチ=エネルギー3枚で40ダメージ;HP=70",
+   "label": "第1弾のエビワラー（英語版）",
+   "say": "第1弾のエビワラーは、とうエネルギー1枚で20ダメージ。3枚あれば40ダメージなのだ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ダメージを10増やすトレーナーカードと合わせて、\n相手が育つ前に倒しきるのよね。",
+   "img": "art:107"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "いまでもエビワラーに勝てるデッキは\nないと思ってるのだ。",
+   "img": "art:107"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "いまのエビワラーのカードは、\n大会ではほとんど見ないけどね。",
+   "img": "art:107",
+   "v": "tsun"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "わたしはむしろ、強いデッキに勝てる\nマイナーなカードを探すほうが好き。",
+   "img": "art:107"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それより、このころのアメリカでは、\nカードのパックそのものが問題になってたの。",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "パックが問題って、どういうことなのだ？",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+  },
+  {
+   "type": "title",
+   "sub": "本日の採掘",
+   "t": "ポケカは賭博だと訴えられた裁判"
+  },
+  {
+   "type": "title",
+   "sub": "第一層",
+   "t": "1999年、任天堂が訴えられた",
+   "sec": "第一層　1999年の訴え",
+   "x": {
+    "head": "1999年、ポケモンカードの\nパックは「賭博」だと\n任天堂が訴えられた",
+    "img": [
+     "wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego"
+    ],
+    "bubble": "パックが賭博なのだ？",
+    "who": "z",
+    "post": "1999年9月、アメリカで「ポケモンカードのパックは違法な賭博だ」という裁判が起こされました。訴えたのは6歳から8歳の子どもたちです。この裁判、どちらが勝ったと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1999年9月17日、サンディエゴの\n連邦の裁判所に、訴えが出されたの。",
+   "img": "wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego",
+   "label": "カリフォルニア州南部地区の連邦地裁"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "訴えたのは6歳から8歳の子どもたち。\n親が代わりに手続きをする形よ。",
+   "img": "wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "サンディエゴと、近くの町テメキュラに\n住んでいた子どもたちよ。",
+   "img": "wiki:en:Temecula,_California^wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego",
+   "label": "カリフォルニア州テメキュラ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "訴えられたのは、任天堂のアメリカの会社と、\nカードの製造や権利の窓口をしていた会社。",
+   "img": "wiki:en:Nintendo_of_America",
+   "ety": [
+    [
+     "Nintendo of America",
+     "任天堂のアメリカの会社"
+    ],
+    [
+     "Wizards of the Coast",
+     "英語版のカードを作って売っていた会社"
+    ],
+    [
+     "4Kids Entertainment",
+     "ポケモンの権利の窓口だった会社"
+    ]
+   ]
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "子どもが任天堂を訴えたのだ！？",
+   "img": "wiki:en:Nintendo_of_America"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "子どもの代わりに裁判を進めたのは、\n集団訴訟で知られる大きな法律事務所よ。",
+   "img": "wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "集団訴訟は、同じ被害を受けた人全員の\n代表として訴える仕組みね。",
+   "img": "table:集団訴訟=同じ被害の人全員の代表として訴える;原告=訴えた側（今回は子どもたち）;被告=訴えられた側（任天堂など）",
+   "label": "裁判のことば"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "弁護士は記者に、こう言ったの。\n「子ども向けのゲームに見せかけた宝くじだ」",
+   "img": "wiki:en:Lottery"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "宝くじ…。言いすぎなのだ。",
+   "img": "wiki:en:Lottery"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "弁護士の言い分は、賭博の3つの条件が\nポケモンカードにそろっている、というもの。",
+   "img": "table:①お金を払う=パックを買わないと遊べない;②偶然で決まる=レアカードは中身がランダム;③賞品がある=レアカードは高く売れる",
+   "label": "弁護士が挙げた賭博の3条件"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "子どもたちの側が求めたのは、カードのもうけを\n買った人に返すこと。または損害の賠償よ。",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
+   "label": "子どもたちの求め"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "アメリカ中のポケモンカードのもうけなのだ！？",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "ホロのリザードンが出る確率",
+   "sec": "第二層　レアカードの確率",
+   "x": {
+    "head": "英語版第1弾のホロレアは、\n約3パックに1枚と\n言われていた",
+    "img": [
+     "art:6",
+     "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+    ],
+    "bubble": "3パックに1枚なのだ…",
+    "who": "z",
+    "post": "1999年の英語版第1弾は1パック11枚。キラキラのホロレアは全16種類で、約3パックに1枚と言われていました。ホロのリザードン1枚を狙うと、何パック買うことになると思いますか？"
+   }
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "パックを開けるのは、まさに採掘なのだ。\nいちばんの当たりはホロのリザードンなのだ。",
+   "img": "art:6"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "英語版の第1弾は、1パック11枚。\nそのうちレアは1枚だけ。",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
+   "label": "1パック11枚・レアは1枚"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "102種類のカードのうち、\n絵がキラキラ光るホロのカードは16種類。",
+   "img": "table:カードの種類=102種類;ホロのカード=16種類;1パックの枚数=11枚（レア1枚）",
+   "label": "英語版第1弾（1999年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ホロが出るのは約3パックに1枚と\n言われていたわ。会社の公式の数字ではないけど。",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
+   "label": "ホロは約3パックに1枚（愛好家の集計）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ホロ16種類のうちリザードンは1種類だから…\n平均で48パックくらいなのだ。",
+   "img": "art:6",
+   "say": "ホロ16種類のうちリザードンは1種類だから、平均で48パックくらいなのだ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "当時の新聞の投書欄には、ホロのリザードンが\n野球の名選手のカードより高いのか、なんて話まで出てたの。",
+   "img": "wiki:en:Baseball_card"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "弁護士が使ったのはRICO法。もとはマフィアなどの\n組織犯罪を取り締まるための、アメリカの法律よ。",
+   "img": "table:RICO法=1970年にできたアメリカの法律;もとの目的=マフィアなどの組織犯罪の取り締まり;民事で訴えると=認められれば損害の3倍の賠償",
+   "label": "RICO法",
+   "say": "弁護士が使ったのはリコほう。もとはマフィアなどの組織犯罪を取り締まるための、アメリカの法律よ。"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "マフィアの法律で、任天堂を！？",
+   "img": "wiki:en:Nintendo_of_America"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "RICO法で訴えて認められると、\n損害の3倍の賠償を払わせられるの。",
+   "img": "table:RICO法=1970年にできたアメリカの法律;もとの目的=マフィアなどの組織犯罪の取り締まり;民事で訴えると=認められれば損害の3倍の賠償",
+   "label": "RICO法",
+   "say": "リコほうで訴えて認められると、損害の3倍の賠償を払わせられるの。"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "先に訴えられていた野球カード",
+   "sec": "第三層　野球カードの裁判",
+   "x": {
+    "head": "ポケモンカードより先に、\n野球カードのパックも\n賭博だと訴えられていた",
+    "img": [
+     "wiki:en:Baseball_card"
+    ],
+    "bubble": "先輩がいたのだ",
+    "who": "z",
+    "post": "ポケモンカードの裁判の前に、アメリカでは野球カードのパックも「賭博だ」と訴えられていました。当たりのカードが入っている、という仕組みは同じです。野球カードの裁判はどうなったと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "実はこの弁護士たち、ポケモンの前に\n野球カードの会社も「パックは賭博だ」と訴えていたの。",
+   "img": "wiki:en:Baseball_card"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "野球カードのパックにも、たまにしか入らない\nサイン入りの当たりカードがあるからね。",
+   "img": "wiki:en:Baseball_card",
+   "label": "野球カードのパック"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "1997年、同じサンディエゴの裁判所は、\n野球カードの裁判でこう認めていたの。",
+   "img": "wiki:en:Baseball_card",
+   "label": "1997年 野球カードの裁判"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "宝くじの条件のうち、\n「偶然で決まる」と「賞品がある」は満たしている。",
+   "img": "table:①お金を払う=争いあり;②偶然で決まる=満たす（争いなし）;③賞品がある=満たす（争いなし）",
+   "label": "1997年の野球カードの裁判"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "じゃあ、賭博だって認めたのだ！？",
+   "img": "wiki:en:Baseball_card"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ところが、その野球カードの訴えは退けられたの。\n理由は、賭博かどうかとは別のところにあったのよ。",
+   "img": "wiki:en:Baseball_card"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1998年には、テキサスなどを受け持つ\n別の控訴裁判所でも、野球カード側が勝っていたわ。",
+   "img": "wiki:en:United_States_Court_of_Appeals_for_the_Fifth_Circuit^wiki:en:Baseball_card"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのときの判決は、「期待していた当たりが\n出なかっただけでは、損害にならない」。",
+   "img": "table:1997年 サンディエゴ=野球カード側の勝ち;1998年 別の控訴裁判所=野球カード側の勝ち;理由=当たりが出ないだけでは損害ではない",
+   "label": "ポケモンより前の裁判"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "だから任天堂は記者に、こう答えたの。\n「この裁判だけ違う結果になると考える理由はない」",
+   "img": "wiki:en:Nintendo_of_America"
+  },
+  {
+   "type": "title",
+   "sub": "第四層",
+   "t": "裁判所が出した答え",
+   "sec": "第四層　判決",
+   "x": {
+    "head": "裁判所は、ポケモンカードが\n賭博かどうかを判断せずに\n訴えを退けた",
+    "img": [
+     "wiki:en:United_States_Court_of_Appeals_for_the_Ninth_Circuit^wiki:en:James_R._Browning_United_States_Court_of_Appeals_Building"
+    ],
+    "bubble": "どういうことなのだ？",
+    "who": "z",
+    "post": "ポケモンカードのパックは賭博だという裁判で、裁判所は「賭博かどうか」を判断しないまま訴えを退けました。では、子どもたちが負けた理由は何だったと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2000年4月、裁判所は弁護士に、\n「訴える資格がある理由を示しなさい」と命じていたの。",
+   "img": "wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego",
+   "label": "2000年4月の裁判所の命令"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして2000年、サンディエゴの裁判所は、\nポケモンカードの訴えを退けたの。",
+   "img": "wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "ポケモンカードは賭博じゃないって\n認められたのだ！",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "そこが違うの。裁判所が見たのは、\n子どもたちが損をしたかどうか。",
+   "img": "wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego",
+   "v": "tsun"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "パックを買った子は、11枚のカードと、\n当たりが出るチャンスをちゃんと受け取ってる。",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
+   "label": "払ったお金の分は受け取っている"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "だから財産の損害はない。損害がない人には、\nRICO法で訴える資格がない、という理由よ。",
+   "img": "table:子どもたちの主張=賭博をさせられたのが損害;裁判所の判断=カードとチャンスを受け取っている;結論=損害がないので訴える資格がない",
+   "label": "2000年の判決",
+   "say": "だから財産の損害はない。損害がない人には、リコほうで訴える資格がない、という理由よ。"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "当たりが出なかったのは、\n損じゃないのだ…？",
+   "img": "art:6"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "判決は、野球カードの別の裁判の言葉も引いているわ。\n「当たりのチャンスは本物で、それを買って受け取った」",
+   "img": "table:買ったもの=カード＋当たりのチャンス;受け取ったもの=カード＋当たりのチャンス;結論=損はしていない",
+   "label": "判決の考え方"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "お金で買ったのは、\nカードと「チャンス」ってことなのだ。",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "州の法律での訴えは、州の裁判所で\nやり直してよい、という形で退けられたわ。",
+   "img": "wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "子どもたちは控訴したけど、2002年8月20日、\n上の裁判所も同じ結論を出したの。",
+   "img": "wiki:en:United_States_Court_of_Appeals_for_the_Ninth_Circuit^wiki:en:James_R._Browning_United_States_Court_of_Appeals_Building",
+   "label": "第9巡回区控訴裁判所",
+   "ety": [
+    "控訴",
+    "判決に不服な側が、上の裁判所に訴え直すこと"
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "判決文には、こう書いてあるわ。\n「当たりが入っていなかったときのがっかりは、財産への損害ではない」",
+   "img": "paper:第9巡回区控訴裁判所の判決（2002年8月20日）|当たりが入っていなかったときのがっかりは、/財産への損害ではない。|Chaset v. Fleer/Skybox International（8件の控訴をまとめた判決）",
+   "ety": [
+    "第9巡回区控訴裁判所",
+    "カリフォルニアなどアメリカ西部の裁判を受け持つ控訴裁判所"
+   ]
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "でも、この判決の名前、\nポケモンが入ってないのだ。",
+   "img": "paper:第9巡回区控訴裁判所の判決（2002年8月20日）|当たりが入っていなかったときのがっかりは、/財産への損害ではない。|Chaset v. Fleer/Skybox International（8件の控訴をまとめた判決）",
+   "label": "判決の名前はChaset v. Fleer/Skybox"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この判決は、野球・バスケ・アメフト・アイスホッケー、\nディズニーのカードの裁判と合わせて、8件まとめて出されたの。",
+   "img": "wiki:en:Baseball_card",
+   "label": "8件の控訴をまとめた判決"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "判決の中でポケモンに触れているのは、\n小さな注釈の1か所だけ。",
+   "img": "paper:判決文の注釈1（2002年）|被告は、ポケモンカードはゲームに使うので、/ほかのカードとは違うと主張している。|No. 00-56266（ポケモンカードの訴え）",
+   "label": "判決文の注釈1"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "任天堂側は「ポケモンカードは遊ぶためにも買う」と\n主張してたけど、裁判所はそこに答えなかった。",
+   "img": "paper:判決文の注釈1（2002年）|被告は、ポケモンカードはゲームに使うので、/ほかのカードとは違うと主張している。|No. 00-56266（ポケモンカードの訴え）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "じゃあ、パックが賭博かどうかは…",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "最後まで、どこにも書かれなかったの。",
+   "img": "wiki:en:United_States_Court_of_Appeals_for_the_Ninth_Circuit^wiki:en:James_R._Browning_United_States_Court_of_Appeals_Building",
+   "big": "判断せず"
+  },
+  {
+   "type": "title",
+   "sub": "第五層",
+   "t": "日本のカード合わせ",
+   "sec": "第五層　日本のカード合わせ",
+   "x": {
+    "head": "そろえると景品がもらえる\n「カード合わせ」は、\n日本では1969年から禁止",
+    "img": [
+     "wiki:ja:消費者庁^wiki:en:Consumer_Affairs_Agency"
+    ],
+    "bubble": "日本は早かったのだ",
+    "who": "m",
+    "post": "日本では、決まった組み合わせのカードをそろえると景品がもらえる「カード合わせ」が、1969年から全面禁止です。では、ランダムに出るポケモンカードのパックは、なぜ禁止されていないと思いますか？"
+   }
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "日本だと、ポケモンカードのパックは\nどういう扱いなのだ？",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "日本には、ずっと前からある決まりがあるの。\n「カード合わせ」の禁止よ。",
+   "img": "wiki:ja:消費者庁^wiki:en:Consumer_Affairs_Agency"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "決まった組み合わせのカードをそろえると、\n景品がもらえる、っていう売り方のこと。",
+   "img": "table:カード合わせ=決まった組み合わせのカードをそろえると景品がもらえる;法律=景品表示法（景品のルール）;全面禁止=1969年から",
+   "label": "カード合わせ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1962年に景品のルールの法律ができたときは、\nカード合わせも、懸賞の1つとして認められていたの。",
+   "img": "wiki:ja:消費者庁^wiki:en:Consumer_Affairs_Agency"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "子ども向けの商品で多く使われて、\n苦情が多かったから、1969年に全面禁止されたの。",
+   "img": "wiki:ja:消費者庁^wiki:en:Consumer_Affairs_Agency",
+   "label": "消費者庁の説明"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "アメリカの裁判より、30年も前なのだ。",
+   "img": "wiki:ja:消費者庁^wiki:en:Consumer_Affairs_Agency"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2012年には、スマホゲームの「コンプガチャ」が、\nこのカード合わせに当たるとされたわ。",
+   "img": "wiki:ja:コンプリートガチャ^wiki:en:Gacha_game"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2012年5月に消費者庁がそう発表すると、\nゲーム会社は次々にコンプガチャをやめたの。",
+   "img": "wiki:ja:消費者庁^wiki:en:Consumer_Affairs_Agency",
+   "label": "2012年 コンプガチャの禁止"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でもポケモンカードのパックは、\n日本でも普通に売ってるのだ。",
+   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "カード合わせの禁止は、「そろえるともらえる景品」の決まり。\nパックの中のカードは景品ではなく、商品そのものだからね。",
+   "img": "table:カード合わせ=そろえるともらえる景品→禁止;パックの中のカード=景品ではなく商品そのもの",
+   "label": "何が禁止なのか"
+  },
+  {
+   "type": "title",
+   "sub": "最深層",
+   "t": "ポケモンが届かない国",
+   "sec": "最深層　ベルギー",
+   "x": {
+    "head": "ポケモンカードのアプリ\n「ポケポケ」は、ベルギーで\n配信されていない",
+    "img": [
+     "wiki:en:Pokémon_Trading_Card_Game_Pocket",
+     "wiki:en:Belgium"
+    ],
+    "bubble": "なんでなのだ？",
+    "who": "z",
+    "post": "2024年に始まったポケモンカードのアプリ「ポケポケ」は、ベルギーとオランダでは配信されていません。ヨーロッパのこの2か国で、何が問題になったと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "最後は、ヨーロッパのベルギーの話。\nポケモンの裁判と同じ1999年に、賭博の法律ができたの。",
+   "img": "wiki:en:Belgium",
+   "label": "ベルギー"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2018年、ベルギーの賭博を取り締まる役所が、\nゲームの「ルートボックス」を調べたの。",
+   "img": "wiki:en:Loot_box",
+   "ety": [
+    "ルートボックス",
+    "お金で買う、中身がランダムなアイテムの箱（ガチャ）"
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その結果、オーバーウォッチなど3つのゲームの\nルートボックスは、違法な賭博に当たると判断されたわ。",
+   "img": "wiki:en:Overwatch_(video_game)",
+   "label": "2018年 ベルギーの判断"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "スター・ウォーズのバトルフロントIIは、お金で箱を\n買えないように変えていたから、問題なしとされたわ。",
+   "img": "wiki:en:Star_Wars_Battlefront_II_(2017_video_game)",
+   "label": "2018年 ベルギーの判断",
+   "say": "スターウォーズのバトルフロントツーは、お金で箱を買えないように変えていたから、問題なしとされたわ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "罰は、最大で禁錮5年と罰金80万ユーロ。\n子どもが関わると2倍になるの。",
+   "img": "table:禁錮=最大5年;罰金=最大80万ユーロ;子どもが関わると=2倍",
+   "label": "ベルギーの賭博の法律"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "ベルギーの法務大臣は、こう話したの。\n「ゲームと賭博を混ぜるのは、とくに若いうちは心の健康に危ない」",
+   "img": "wiki:en:Koen_Geens^wiki:en:Belgium",
+   "label": "クーン・ヘーンス法務大臣（当時）"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "アメリカの裁判とぜんぜん違うのだ。",
+   "img": "wiki:en:Belgium"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "2019年のスマホゲーム「ポケモンマスターズ」は、\nベルギーとオランダでは配信されなかったの。",
+   "img": "wiki:en:Pokémon_Masters_EX",
+   "label": "ポケモンマスターズ（2019年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2024年に始まったポケモンカードのアプリ\n「ポケポケ」も、この2か国では配信されてない。",
+   "img": "wiki:en:Pokémon_Trading_Card_Game_Pocket",
+   "label": "ポケポケ（2024年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンユナイトも、この2か国では課金を止めて、\n2025年11月にサービスを終えたわ。",
+   "img": "wiki:en:Pokémon_Unite",
+   "label": "ポケモンユナイト"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "どれも、会社は理由を説明していないけどね。\nガチャの仕組みが理由だと報道されてるわ。",
+   "img": "wiki:en:Belgium"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "アメリカでは、賭博かどうかを決めないまま終わって、\nベルギーでは、ガチャが賭博だと決められた…",
+   "img": "wiki:en:United_States_Court_of_Appeals_for_the_Ninth_Circuit^wiki:en:James_R._Browning_United_States_Court_of_Appeals_Building"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1999年に子どもたちが投げかけた問いに、\nいまは国ごとに違う答えが出てるってことね。",
+   "img": "wiki:en:Gacha_game^csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "アメリカの裁判所が見たのは、誰が損をしたか。\n日本は景品の出し方、ベルギーは賭博そのもの。見るところが違うのね。",
+   "img": "table:アメリカの裁判所=買った人が損をしたか;日本の消費者庁=そろえるともらえる景品か;ベルギーの役所=お金を払って偶然で当たるか",
+   "label": "国ごとの見方"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "…まあボクも、エビワラーが出るまで\nパックを買ったけど、損はしてないのだ。",
+   "img": "art:107"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "第1弾のエビワラーはホロのレアだから、\nけっこう買ったでしょ。",
+   "img": "art:107",
+   "v": "tsun"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "判決のとおり、チャンスは\nちゃんと受け取ったのだ…。",
+   "img": "art:107",
+   "bgm": "ichimono"
+  },
+  {
+   "type": "title",
+   "sub": "おまけ",
+   "t": "今日のポケモンの英語名",
+   "sec": "今日のポケモンの英語名"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "今日のポケモンの英語名。\n1匹目はエビワラー。",
+   "img": "art:107",
+   "label": "Hitmonchan（ヒットモンチャン）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ヒットモンチャン。名前の「チャン」は、\nアクション俳優のジャッキー・チェンから来てると言われてるの。",
+   "img": "art:107",
+   "label": "Hitmonchan（ヒットモンチャン）"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "2匹目はエレブー。\nエレクタバズ。",
+   "img": "art:125",
+   "label": "Electabuzz（エレクタバズ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "電気の「エレクトリック」と、\nブンブン鳴る音の「バズ」ね。",
+   "img": "art:125",
+   "label": "Electabuzz（エレクタバズ）"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "3匹目はストライク。\nサイザー。",
+   "img": "art:123",
+   "label": "Scyther（サイザー）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "草を刈る大きな鎌、\n「サイズ」から来てるの。",
+   "img": "art:123",
+   "label": "Scyther（サイザー）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日出てきたポケモンの英語名は、\n英単語帳サイト「もんすぺ！」でも調べられるわ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "もんすぺ！には、ポケモンの面白い雑学のコラムもあるの。\n動画の続きみたいに読めるわよ。",
+   "img": "site:",
+   "label": "「もんすぺ！」雑学コラムもあります"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の採掘はここまでなのだ。\nチャンネル登録もよろしくなのだ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "type": "ed"
+  }
+ ],
+ "thumb": {
+  "pre": "子どもが任天堂を訴えた",
+  "big": [
+   "ポケカは",
+   "賭博？"
+  ],
+  "hl": 1,
+  "main": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
+  "back": "wiki:en:United_States_Court_of_Appeals_for_the_Ninth_Circuit^wiki:en:James_R._Browning_United_States_Court_of_Appeals_Building",
+  "row": [
+   "art:6",
+   "art:107"
+  ],
+  "chara": [
+   "z",
+   "shock"
+  ]
+ }
+}
