@@ -1,1 +1,79 @@
-{"no": 4, "title": "ポケモンカードのパックは「賭博」だと訴えられた。【ポケモン雑学採掘所】", "hook": ["本当にあった裁判", "ポケカのパックは", "賭博？"], "hl": "賭博？", "lead": "1999年、アメリカで「ポケモンカードのパックは違法な賭博だ」という集団訴訟が起きた。裁判所は賭博かどうかを判断しないまま訴えを退けた。", "article": "https://poketango.com/zatsugaku/pokemon-card-gambling-lawsuit.html", "video": "U9y9S9UH-ks", "pokemon": [["charizard", "リザードン", "Charizard"]], "lines": [{"w": "m", "t": "1999年、アメリカで\nポケモンカードのパックは\n賭博だ、と訴えられたの", "img": "booster_pack.jpg", "cap": "英語版第1弾のパック（1999年）"}, {"w": "z", "t": "誰が訴えたのだ？", "img": "booster_pack.jpg"}, {"w": "m", "t": "6歳から8歳の子どもたち。\n訴えられたのは\n任天堂のアメリカの会社など", "img": "booster_box.jpg"}, {"w": "m", "t": "お金を払う、偶然で決まる、\n当たりは高く売れる。\n賭博の条件がそろってるって", "img": "charizard_card.jpg", "cap": "当たりのホロのリザードン"}, {"w": "z", "t": "それで、\n賭博だと認められたのだ？", "img": "charizard_card.jpg", "face": "surprise"}, {"w": "m", "t": "いいえ。裁判所は\n賭博かどうかには\n答えなかったの", "img": "booster_pack.jpg"}, {"w": "m", "t": "パックを買った子は、カードと\n当たりのチャンスを受け取っている。\nだから損はしていない、って", "img": "booster_pack.jpg", "say": "パックを買った子は、カードと当たりのチャンスを受け取っている。だから損はしていない、って"}, {"w": "z", "t": "当たりが出なくても、\n損じゃないのだ……", "img": "charizard_card.jpg", "face": "sad"}, {"w": "m", "t": "同じ問いに、日本やベルギーが\nどう答えたのかは、\n本編で掘っているわ", "img": "honpen.jpg"}, {"w": "z", "t": "下の動画から、\n本編に行けるのだ！", "img": "honpen.jpg", "face": "happy"}]}
+{
+ "no": 4,
+ "title": "ポケモンカードのパックは「賭博」だと訴えられた。【ポケモン雑学採掘所】",
+ "hook": [
+  "本当にあった裁判",
+  "ポケカのパックは",
+  "賭博？"
+ ],
+ "hl": "賭博？",
+ "lead": "1999年、アメリカで「ポケモンカードのパックは違法な賭博だ」という集団訴訟が起きた。裁判所は賭博かどうかを判断しないまま訴えを退けた。",
+ "article": "https://poketango.com/zatsugaku/pokemon-card-gambling-lawsuit.html",
+ "video": "U9y9S9UH-ks",
+ "pokemon": [
+  [
+   "charizard",
+   "リザードン",
+   "Charizard"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "1999年、アメリカで\nポケモンカードのパックは\n賭博だ、と訴えられたの",
+   "img": "booster_pack.jpg",
+   "cap": "英語版第1弾のパック（1999年）"
+  },
+  {
+   "w": "z",
+   "t": "誰が訴えたのだ？",
+   "img": "booster_pack.jpg"
+  },
+  {
+   "w": "m",
+   "t": "6歳から8歳の子どもたち。\n訴えられたのは\n任天堂のアメリカの会社など",
+   "img": "booster_box.jpg"
+  },
+  {
+   "w": "m",
+   "t": "お金を払う、偶然で決まる、\n当たりは高く売れる。\n賭博の条件がそろってるって",
+   "img": "charizard_card.jpg",
+   "cap": "当たりのホロのリザードン"
+  },
+  {
+   "w": "z",
+   "t": "それで、\n賭博だと認められたのだ？",
+   "img": "charizard_card.jpg",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "いいえ。裁判所は\n賭博かどうかには\n答えなかったの",
+   "img": "booster_pack.jpg",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "t": "パックを買った子は、カードと\n当たりのチャンスを受け取っている。\nだから損はしていない、って",
+   "img": "booster_pack.jpg",
+   "say": "パックを買った子は、カードと当たりのチャンスを受け取っている。だから損はしていない、って"
+  },
+  {
+   "w": "z",
+   "t": "当たりが出なくても、\n損じゃないのだ……",
+   "img": "charizard_card.jpg",
+   "face": "sad"
+  },
+  {
+   "w": "m",
+   "t": "同じ問いに、日本やベルギーが\nどう答えたのかは、\n本編で掘っているわ",
+   "img": "honpen.jpg"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "honpen.jpg",
+   "face": "happy"
+  }
+ ]
+}
