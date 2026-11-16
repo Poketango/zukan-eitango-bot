@@ -8,6 +8,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 import post as P
+import yomi
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 VW, VH, FPS, SR = 1080, 1920, 24, 44100
@@ -42,9 +43,15 @@ def tts(line, speaker):
         return urllib.request.urlopen(urllib.request.Request(vv + path, data=data, headers=h, method="POST"), timeout=90).read()
     text = line.get("say") or line["t"]
     try:
+        yomi.prepare(vv, text)                     # ポケモン名をユーザー辞書に（崩れる名前だけ）
         q = json.loads(req("/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": speaker})))
-        if line.get("kana"):
-            q["accent_phrases"] = json.loads(req("/accent_phrases?" + urllib.parse.urlencode({"text": line["kana"], "speaker": speaker, "is_kana": "true"})))
+        kana = line.get("kana")
+        if not kana:
+            k2 = yomi.autofix(q.get("kana", ""))    # 「なのだ」の割れなど、確実に直せる崩れを直す
+            if k2 != q.get("kana", ""): kana = k2
+            for s in yomi.issues(vv, text, k2): print("【読みの要確認】", text.replace("\n", ""), "|", k2, "|", s)
+        if kana:
+            q["accent_phrases"] = json.loads(req("/accent_phrases?" + urllib.parse.urlencode({"text": kana, "speaker": speaker, "is_kana": "true"})))
         q.update(speedScale=SPEED, outputSamplingRate=SR, volumeScale=1.25, prePhonemeLength=0.05, postPhonemeLength=0.12)
         wav = req(f"/synthesis?speaker={speaker}", json.dumps(q).encode())
         with wave.open(io.BytesIO(wav)) as w:

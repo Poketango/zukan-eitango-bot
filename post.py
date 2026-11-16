@@ -192,6 +192,10 @@ def center(d, y, text, font, fill, stroke=0, sfill=None):
 def tts(text, speaker, speed=1.0, pitch=0.0, intonation=1.0):
     """読み上げ音声を numpy 配列（44.1kHz, -1〜1）で返す。エンジンが無ければ None"""
     try:
+        try:
+            import yomi; yomi.prepare(VV, text)    # ポケモン名をユーザー辞書に（崩れる名前だけ）
+        except Exception:
+            pass
         q = urllib.request.urlopen(urllib.request.Request(
             f"{VV}/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": speaker}), method="POST"), timeout=60).read()
         q = json.loads(q)

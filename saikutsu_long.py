@@ -22,6 +22,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 import post as P
+import yomi
 import saikutsu_shorts as SS
 import zatsugaku_long as ZL
 
@@ -445,11 +446,13 @@ def fixed_kana(ln, speaker):
     if ln.get("kana"): return ln["kana"]
     text = ln.get("say") or ln["t"]
     try:
+        yomi.prepare(P.VV, text)                   # ポケモン名をユーザー辞書に（崩れる名前だけ）
         q = json.loads(urllib.request.urlopen(urllib.request.Request(P.VV + "/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": speaker}), method="POST"), timeout=90).read())
     except Exception:
         return None
     k0 = q.get("kana", ""); k = k0
     for a, b in KFIX: k = k.replace(a, b)
+    k = yomi.autofix(k)                            # 「なのだ」の割れなど、確実に直せる崩れ
     return k if k != k0 else None
 
 
@@ -595,15 +598,27 @@ def accent_dump(L, out_dir):
         return urllib.request.urlopen(urllib.request.Request(vv + path, data=data, headers=h, method="POST"), timeout=90).read()
     sp = urllib.request.urlopen(vv + "/speakers", timeout=60).read()
     open(os.path.join(out_dir, "speakers.json"), "wb").write(sp)
-    out = []
+    out, todo = [], []
     for i, ln in enumerate(L):
         if ln.get("type") in ("title", "ed") or not ln.get("t"): continue
         text = ln.get("say") or ln["t"]
+        yomi.prepare(vv, text)
         q = json.loads(req("/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": 3})))
         k = ln.get("kana") or q.get("kana", "")
-        for a, b in KFIX: k = k.replace(a, b)
-        out.append(f"{i}\t{ln.get('w')}\t{text.replace(chr(10), '')}\t{k}")
-    open(os.path.join(out_dir, "accent.txt"), "w", encoding="utf-8").write("\n".join(out))
+        if not ln.get("kana"):
+            for a, b in KFIX: k = k.replace(a, b)
+            k = yomi.autofix(k)
+        row = f"{i}\t{ln.get('w')}\t{text.replace(chr(10), '')}\t{k}"
+        iss = [] if ln.get("kana") else yomi.issues(vv, text, k)
+        if iss:
+            row += "\t# 要確認：" + " ／ ".join(iss); todo.append(row)
+        out.append(row)
+    head = [f"# 要確認 {len(todo)} 行（# 要確認 の付いた行を OJAD で確かめる。台本に kana を書いた行は点検しない）"]
+    reg = yomi.registered()
+    if reg:
+        head.append("# ユーザー辞書に登録した言葉：" + "、".join(f"{s}（{p}・{a}型・{why}）" for s, p, a, why in reg))
+    open(os.path.join(out_dir, "accent.txt"), "w", encoding="utf-8").write("\n".join(head + [""] + out))
+    open(os.path.join(out_dir, "accent_todo.txt"), "w", encoding="utf-8").write("\n".join(todo))
 
 
 def build(d, out_dir):
@@ -673,6 +688,7 @@ def build(d, out_dir):
         tl.append({"i": i, "start": round(t, 2), "dur": round(dur, 2), "t": L[i].get("t", L[i].get("type", ""))}); t += round(dur * FPS) / FPS
     json.dump(tl, open(os.path.join(out_dir, "timeline.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     open(os.path.join(out_dir, "kana_fixed.txt"), "w", encoding="utf-8").write("\n".join(FIXLOG))
+    open(os.path.join(out_dir, "yomi_dict.txt"), "w", encoding="utf-8").write("\n".join(f"{s}\t{p}\t{a}\t{why}" for s, p, a, why in yomi.registered()))
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp4, "-vf", "fps=1/6,scale=384:216,tile=5x6", os.path.join(out_dir, "frames_%02d.jpg")], check=True)
     print("長さ", round(total, 1), "秒")
 
