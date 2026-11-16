@@ -37,7 +37,8 @@
   {
    "w": "m",
    "t": "その進化前のアノプスのモデルは、\nアノマロカリス。\n5億年くらい前の海の生き物よ",
-   "img": "row:art:347|アノプス;wiki:en:Anomalocaris|アノマロカリス"
+   "img": "row:art:347|アノプス;wiki:en:Anomalocaris|アノマロカリス",
+   "say": "その進化前のアノプスのモデルは、アノマロカリス。ごおくねんくらい前の海の生き物よ"
   },
   {
    "w": "m",
@@ -48,7 +49,8 @@
   {
    "w": "m",
    "t": "1892年、トゲトゲの腕は\nエビの体だと思われた",
-   "img": "row:csearch:Anomalocaris canadensis frontal appendage|腕の化石;wiki:en:Shrimp|エビ"
+   "img": "row:csearch:Anomalocaris canadensis frontal appendage|腕の化石;wiki:en:Shrimp|エビ",
+   "say": "せんはっぴゃくきゅうじゅうにねん、トゲトゲの腕はエビの体だと思われた"
   },
   {
    "w": "m",
@@ -67,7 +69,8 @@
    "t": "腕と口がつながった化石が調べられて、\n1985年の論文で、やっと1匹の\n大きな生き物だとわかったの",
    "img": "wiki:en:Anomalocaris",
    "cap": "アノマロカリスの化石",
-   "ans": true
+   "ans": true,
+   "say": "腕と口がつながった化石が調べられて、せんきゅうひゃくはちじゅうごねんの論文で、やっと1匹の大きな生き物だとわかったの"
   },
   {
    "w": "z",

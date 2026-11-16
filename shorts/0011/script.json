@@ -42,7 +42,8 @@
   {
    "w": "m",
    "t": "長いあいだ、ティラノサウルスの\n10代の子どもだと\n考えられてたの",
-   "img": "row:wiki:en:Nanotyrannus|子ども？>wiki:en:Sue_(dinosaur)|ティラノサウルス"
+   "img": "row:wiki:en:Nanotyrannus|子ども？>wiki:en:Sue_(dinosaur)|ティラノサウルス",
+   "say": "長いあいだ、ティラノサウルスのじゅうだいの子どもだと考えられてたの"
   },
   {
    "w": "m",
@@ -54,7 +55,8 @@
    "w": "m",
    "t": "骨の成長の線を数えると、\n死んだときは約20歳。\nもう大人だったの",
    "img": "wiki:en:Dueling_Dinosaurs^csearch:Dueling Dinosaurs fossil",
-   "ans": true
+   "ans": true,
+   "say": "骨の成長の線を数えると、死んだときはやく、はたち。もう大人だったの"
   },
   {
    "w": "z",
@@ -65,7 +67,8 @@
   {
    "w": "m",
    "t": "2025年10月に、科学雑誌の\nネイチャーに載った論文の結論よ",
-   "img": "paper:Nature（2025年10月30日）|Nanotyrannus and Tyrannosaurus/coexisted at the close of the Cretaceous|ナノティラヌスとティラノサウルスは白亜紀の終わりに共存していた"
+   "img": "paper:Nature（2025年10月30日）|Nanotyrannus and Tyrannosaurus/coexisted at the close of the Cretaceous|ナノティラヌスとティラノサウルスは白亜紀の終わりに共存していた",
+   "say": "にせんにじゅうごねん、じゅうがつに、科学雑誌のネイチャーに載った論文の結論よ"
   },
   {
    "w": "m",
