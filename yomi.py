@@ -144,11 +144,25 @@ def _merge(a, b):
     return ap + (bp[:i + 1] + "'" + bp[i + 1:] if i >= 0 else bp + "'") + q
 
 
-def autofix(kana):
-    """確実に直せる崩れだけを直した読みを返す（直すところが無ければ元のまま）"""
+PARTICLES = {"ト", "トワ", "トモ", "ノ", "ガ", "ワ", "オ", "モ", "ニ", "デ", "ヘ", "ヤ", "カ", "ッテ", "ノワ", "ニワ", "デワ", "トイウ"}
+QUOTE_P = re.compile(r"[」』][とのがはをもにでへやか]")
+
+
+def autofix(kana, text=None):
+    """確実に直せる崩れだけを直した読みを返す（直すところが無ければ元のまま）。
+    text を渡すと、「」の直後の助詞が間を置いた 1 句に浮いているのを前の句につなぐ"""
     try:
         parts = re.split(r"([/、])", kana)
         phrases, seps = parts[0::2], parts[1::2]
+        n = len(QUOTE_P.findall(text or ""))
+        i = 1
+        while i < len(phrases) and n > 0:
+            if seps[i - 1] == "、" and _core(phrases[i]) in PARTICLES and not phrases[i - 1].endswith("？"):
+                a, b = phrases[i - 1], phrases[i].replace("'", "")
+                phrases[i - 1] = (a.rstrip("'") + b + "'") if a.endswith("'") else (a + b if "'" in a else a + b)
+                del phrases[i]; del seps[i - 1]; n -= 1
+            else:
+                i += 1
         i = 1
         while i < len(phrases):
             if seps[i - 1] == "/" and _core(phrases[i]) in TAILS and not phrases[i - 1].endswith("？"):
@@ -164,16 +178,19 @@ def autofix(kana):
 
 
 # ---------- 要確認の洗い出し ----------
-NUM = re.compile(r"[0-9０-９]|[一二三四五六七八九十百千万億]{2,}|[一二三四五六七八九十][年月日回人匹個本枚番位倍体種度歳]")
-ONE = re.compile(r"(?<![一-龥々])[国方日年人何上下前後中間月](?![一-龥々])")
+NUMW = re.compile(r"^(?:イチ|イッ|ニ|サン|ヨン|ヨ|シ|ゴ|ロク|ロッ|ナナ|シチ|ハチ|ハッ|キュウ|キュ|ク|ジュウ|ジュッ|ヒャク|ビャク|ピャク|セン|ゼン|マン|オク|レイ|ゼロ)+$")
+NUMHEAD = re.compile(r"^(?:イチ|イッ|ニ|サン|ヨン|ロク|ロッ|ナナ|ハチ|ハッ|キュウ|ジュウ|ジュッ|ヒャク|セン|マン)")
+ONE = re.compile(r"(?<![一-龥々])[国方何](?![一-龥々])")   # 取り違えが実際に起きた字（国＝クニ/コク など）
 
 
 def issues(vv, text, kana):
     """人が確かめるべき点を短い言葉で返す（空なら問題なし）"""
     out = []
-    phrases = [p for p in re.split(r"[/、]", kana) if p]
-    if NUM.search(text) and len(phrases) >= 2:
-        out.append("数字あり：区切りと読みを確かめる（直すなら say にひらがな）")
+    parts = re.split(r"([/、])", kana)
+    phrases = [p for p in parts[0::2] if p]
+    for a, sep, b in zip(parts[0::2], parts[1::2], parts[2::2]):
+        if sep == "/" and NUMW.match(_core(a)) and NUMHEAD.match(_core(b)):
+            out.append(f"数字が句に割れている {a}/{b}：一続きに読むなら say にひらがなか kana で指定"); break
     frag = [p for p in phrases if len(moras(_core(p))) <= 1]
     if frag:
         out.append("1拍だけの句 " + " ".join(frag) + "：単語の途中で切れていないか")

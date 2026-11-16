@@ -47,7 +47,7 @@ def tts(line, speaker):
         q = json.loads(req("/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": speaker})))
         kana = line.get("kana")
         if not kana:
-            k2 = yomi.autofix(q.get("kana", ""))    # 「なのだ」の割れなど、確実に直せる崩れを直す
+            k2 = yomi.autofix(q.get("kana", ""), text)    # 「なのだ」の割れなど、確実に直せる崩れを直す
             if k2 != q.get("kana", ""): kana = k2
             for s in yomi.issues(vv, text, k2): print("【読みの要確認】", text.replace("\n", ""), "|", k2, "|", s)
         if kana:

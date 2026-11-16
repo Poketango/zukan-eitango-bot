@@ -452,7 +452,7 @@ def fixed_kana(ln, speaker):
         return None
     k0 = q.get("kana", ""); k = k0
     for a, b in KFIX: k = k.replace(a, b)
-    k = yomi.autofix(k)                            # 「なのだ」の割れなど、確実に直せる崩れ
+    k = yomi.autofix(k, text)                      # 「なのだ」の割れなど、確実に直せる崩れ
     return k if k != k0 else None
 
 
@@ -607,7 +607,7 @@ def accent_dump(L, out_dir):
         k = ln.get("kana") or q.get("kana", "")
         if not ln.get("kana"):
             for a, b in KFIX: k = k.replace(a, b)
-            k = yomi.autofix(k)
+            k = yomi.autofix(k, text)
         row = f"{i}\t{ln.get('w')}\t{text.replace(chr(10), '')}\t{k}"
         iss = [] if ln.get("kana") else yomi.issues(vv, text, k)
         if iss:
