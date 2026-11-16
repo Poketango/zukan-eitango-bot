@@ -1,4 +1,5 @@
-# ショートの最後に「もんすぺ！で検索」とサイトのホーム画面を見せる締めの場面を付ける（2026-11-15）
+# ショートの最後に、サイトのアドレス poketango.com とホーム画面を見せる締めの場面を付ける（2026-11-15）
+# 2026-11-16：「もんすぺで検索」では検索結果にサイトが出なかったため、アドレスを打ち込む見せ方に変えた
 #   import end_card; end_card.add("short.mp4")
 #   ホーム画面の画像は assets/img/site_home.png（スマホ幅で撮ったもの。サイトの見た目が変わったら撮り直す）
 import os, subprocess, wave
@@ -11,9 +12,9 @@ DUR = 3.4
 HOME = os.path.join(HERE, "assets", "img", "site_home.png")
 FB = os.path.join(HERE, "fonts", "DelaGothicOne-Regular.ttf")
 FM = os.path.join(HERE, "fonts", "MPLUSRounded1c-ExtraBold.ttf")
-LINE = "ポケモンの英語名と図鑑は、もんすぺで検索なのだ！"
-# 読みとアクセントを指定（エンジン任せだと「もんすぺ、で」で切れて「のだ」が浮いた）
-KANA = "ポケモンノ'/エエゴ'メエト/ズカンワ'、モンスペ'デ/ケンサクナ'ノダ"
+LINE = "ポケモンの英語名と図鑑は、ポケタンゴドットコムで見られるのだ！"
+# 読みとアクセントを指定（エンジン任せだと区切りがおかしくなるため）
+KANA = "ポケモンノ'/エエゴ'メエト/ズカンワ'、ポケタ'ンゴ/ド'ット/コ'ムデ/ミラレルノ'ダ"
 
 
 def _voice():
@@ -57,13 +58,8 @@ def _base():
     im = Image.composite(Image.new("RGB", (W, H), (255, 120, 40)), im, glow)
     d = ImageDraw.Draw(im)
     _ctext(d, 120, "ポケモンの英語名と図鑑は", _font(FM, 62), (255, 255, 255))
-    f = _font(FB, 124)
-    w1 = d.textbbox((0, 0), "もんすぺ！", font=f, stroke_width=9)[2]
-    w2 = d.textbbox((0, 0), "で検索", font=_font(FB, 80), stroke_width=7)[2]
-    x = (W - w1 - w2 - 10) / 2
-    d.text((x, 215), "もんすぺ！", font=f, fill=(255, 205, 0), stroke_width=9, stroke_fill=(20, 20, 20))
-    d.text((x + w1 + 10, 258), "で検索", font=_font(FB, 80), fill=(255, 255, 255), stroke_width=7, stroke_fill=(20, 20, 20))
-    _ctext(d, 580, "poketango.com", _font(FM, 44), (210, 210, 225))
+    _ctext(d, 215, "もんすぺ！", _font(FB, 124), (255, 205, 0), stroke=9, sfill=(20, 20, 20))
+    _ctext(d, 575, "ブラウザでこのアドレスを開くのだ", _font(FM, 40), (210, 210, 225))
     return im
 
 
@@ -84,7 +80,7 @@ def frames():
     sh = Image.new("RGBA", (phone.width + 80, phone.height + 80), (0, 0, 0, 0))
     ImageDraw.Draw(sh).rounded_rectangle([40, 50, phone.width + 40, phone.height + 50], 56, fill=(0, 0, 0, 150))
     sh = sh.filter(ImageFilter.GaussianBlur(22))
-    fq = _font(FM, 52); word = "もんすぺ"
+    fq = _font(FM, 64); word = "poketango.com"
     for i in range(int(DUR * FPS)):
         t = i / FPS
         im = base.copy(); d = ImageDraw.Draw(im)
@@ -93,8 +89,8 @@ def frames():
         d.rounded_rectangle([bx, by, bx + bw, by + bh], 60, fill=(255, 255, 255))
         d.ellipse([bx + 44, by + 34, bx + 92, by + 82], outline=(110, 110, 120), width=7)
         d.line([bx + 86, by + 76, bx + 106, by + 96], fill=(110, 110, 120), width=8)
-        n = min(len(word), int(max(0, t - 0.15) / 0.16) + (t > 0.15))
-        d.text((bx + 130, by + 26), word[:n], font=fq, fill=(30, 30, 30))
+        n = min(len(word), int(max(0, t - 0.15) / 0.06) + (t > 0.15))
+        d.text((bx + 130, by + 20), word[:n], font=fq, fill=(30, 30, 30))
         if n < len(word) or int(t * 3) % 2 == 0:
             cx = bx + 132 + (d.textbbox((0, 0), word[:n], font=fq)[2] if n else 0)
             d.rectangle([cx, by + 30, cx + 5, by + 92], fill=(30, 110, 230))

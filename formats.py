@@ -59,7 +59,7 @@ def header(d, text, color, sub=None, font=None):
     if sub: center(d, 290, sub, fit(d, sub, F_ROUND, 56, VW - 120), DARK)
 
 
-def footer(d, line1="答えと由来は全部サイトに", line2="「もんすぺ！」で検索", bg=DARK):
+def footer(d, line1="答えと由来は全部サイトに", line2="poketango.com", bg=DARK):
     footer_left(d, line1, line2, top=VH - 210, bg=bg, c2=(255, 224, 102))
 
 
@@ -250,7 +250,7 @@ def real3_frame(q, sp, st, D):
                 d.text((VW - 150, y + 85), "×", font=F(FONT_K, 90), fill=(227, 53, 13), anchor="mm")
                 d.text((VW // 2 + 50, y + 135), f"↑ これは{D['names'][k]}", font=F(F_ROUND, 36), fill=(120, 120, 120), anchor="mm")
     if st.get("count"): timer(d, VW - 160, 600, st["frac"], st["count"])
-    footer(d, "全ポケモンの英語名は", "「もんすぺ！」で検索")
+    footer(d, "全ポケモンの英語名は", "poketango.com")
     return im
 
 
@@ -296,7 +296,7 @@ def speed5_frame(q, sps, st, D):
         center(d, 1040, "ポケモンを当てろ", F(F_DELA, 92), (255, 224, 102))
         center(d, 1240, "何問わかった？", F(F_ROUND, 80), WHITE)
         center(d, 1340, "コメントで教えて！", F(F_ROUND, 80), WHITE)
-        footer(d, "全ポケモンの英語名と由来は", "「もんすぺ！」で検索", (20, 18, 40))
+        footer(d, "全ポケモンの英語名と由来は", "poketango.com", (20, 18, 40))
         return im
     for j in range(5):
         c = (255, 203, 5) if j < i else ((255, 255, 255) if j == i else (90, 80, 130))
@@ -317,7 +317,7 @@ def speed5_frame(q, sps, st, D):
         fr = st.get("frac", 1)
         d.rounded_rectangle([140, 1460, VW - 140, 1510], 25, fill=(60, 50, 100))
         d.rounded_rectangle([140, 1460, 140 + int((VW - 280) * fr), 1510], 25, fill=(227, 53, 13) if fr < 0.35 else (255, 203, 5))
-    footer(d, "全ポケモンの英語名と由来は", "「もんすぺ！」で検索", (20, 18, 40))
+    footer(d, "全ポケモンの英語名と由来は", "poketango.com", (20, 18, 40))
     return im
 
 
@@ -399,7 +399,7 @@ def which_frame(q, sps, st, D):
         d.text((x + 40, y + 40), "ABCD"[i], font=F(F_DELA, 54), fill=(30, 120, 70), anchor="mm")
         d.text((x + cw // 2, y + ch - 45), D["names"][k], font=fit(d, D["names"][k], F_MOCHI, 52, cw - 40), fill=DARK, anchor="mm")
     if st.get("count"): timer(d, VW // 2, y0 + 2 * ch + 20 + 105, st["frac"], st["count"])
-    footer(d, "英語版の図鑑と日本語訳は", "「もんすぺ！」で検索")
+    footer(d, "英語版の図鑑と日本語訳は", "poketango.com")
     return im
 
 

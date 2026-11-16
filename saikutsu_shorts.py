@@ -1,7 +1,7 @@
 # ポケモン雑学採掘所のショート（@poke_zatsugaku、2026-11-15〜）
 #   ・台本と素材は shorts/NNNN/script.json と同じフォルダの画像。Claudeが深く調べた話だけを並べる（自動でネタを作らない）
 #   ・めたん（解説）とずんだもん（聞き役）。画面の上に見出し、中央に大きな画像、下に字幕、両下の隅に小さな立ち絵
-#   ・最後に end_card で「もんすぺ！で検索」とサイトのホーム画面
+#   ・最後に end_card でサイトのアドレスとホーム画面
 #   ・投稿済みは posted_saikutsu.json に残し、まだ出していない一番若い番号を出す。台本が尽きたら何もしない
 import os, sys, json, glob, wave, subprocess, datetime, io, urllib.request, urllib.parse
 import numpy as np
@@ -298,7 +298,7 @@ def meta(s):
     desc = (f"{s['lead']}\n\n"
             f"▼この話の記事（出典つき）\n{s['article']}\n"
             + (f"▼くわしくは本編で\nhttps://youtu.be/{s['video']}\n" if s.get("video") else "")
-            + f"\n{pages}\n\nポケモンの英語名と図鑑は「もんすぺ！」で検索 → {site}\n\n"
+            + f"\n{pages}\n\nポケモンの英語名と図鑑は「もんすぺ！」→ {site}\n\n"
             "音声：VOICEVOX:四国めたん、VOICEVOX:ずんだもん\n立ち絵：坂本アヒル様\n効果音：OtoLogic（https://otologic.jp）\n"
             "※ファンが運営する非公式のチャンネルです。株式会社ポケモン、任天堂、クリーチャーズ、ゲームフリークとは関係ありません。\n\n"
             "#ポケモン #ポケモン雑学 #ポケモン雑学採掘所 #shorts")

@@ -286,7 +286,7 @@ def name_scene(q, sp, phase, count=None):
     for k in range(14):
         a0 = k * (360 / 14); d.pieslice([-900, -500, VW + 900, VH + 900], a0, a0 + 360 / 28, fill=(255, 200, 40))
     d.rectangle([0, 0, VW, 190], fill=RED); center(d, 95, "英語名クイズ", F(F_DELA, 84), WHITE)
-    footer_left(d, "全1000匹の英語名と由来は", "「もんすぺ！」で検索")
+    footer_left(d, "全1000匹の英語名と由来は", "poketango.com")
     E, J = ename(q["key"]), q["jn"]
     center(d, 300, "この英語名、だーれだ？" if phase != "reveal" else "正解は…", F(F_ROUND, 72), DARK)
     center(d, 470, E, fit(d, E, F_DELA, 150, VW - 120, 80), WHITE, stroke=14, sfill=DARK)
@@ -661,7 +661,7 @@ if __name__ == "__main__":
         bgm_label = music.label(formats.STYLE) if kind != "rank" else "horror/" + str(formats.STYLE["seed"])
         voice = "VOICEVOX:四国めたん" if kind == "rank" else "VOICEVOX:ずんだもん\n立ち絵：坂本アヒル様"
         desc += f"\n\nナレーション：{voice}"
-    import end_card; end_card.add("short.mp4")   # 最後に「もんすぺ！で検索」とサイトのホーム画面（2026-11-15）
+    import end_card; end_card.add("short.mp4")   # 最後にサイトのアドレスとホーム画面（2026-11-16 検索からアドレス表示へ）
     print(kind, n); print(title); print(desc)
     print("BGM:", bgm_label)
     if os.environ.get("DRY_RUN") == "1": sys.exit()

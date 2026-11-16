@@ -394,7 +394,7 @@ class Long:
             d.text((VW // 2, 810), "登録", font=font(F_SUB, 48), fill=(120, 90, 50), anchor="mm")
             d.rounded_rectangle([110, 730, 760, 900], 20, fill=(255, 255, 255), outline=(30, 30, 30), width=5)
             d.text((435, 790), "英語名も、雑学コラムも", font=font(F_SMALL, 40), fill=(30, 30, 30), anchor="mm")
-            d.text((435, 850), "「もんすぺ！」で検索", font=font(F_SUB, 52), fill=(214, 64, 140), anchor="mm")
+            d.text((435, 850), "poketango.com", font=font(F_SUB, 52), fill=(214, 64, 140), anchor="mm")
             for who, x in (("m", 1380), ("z", 1680)):
                 th = SS.tachie(who, False, 330, "happy"); im.paste(th, (x - th.width // 2, VH - th.height + 10), th)
         return im.convert("RGB")
