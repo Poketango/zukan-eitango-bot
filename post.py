@@ -472,6 +472,7 @@ def bgm(kind, dur, marks):
         # 2026-11-14 BGMと効果音を毎回ちがう自作のものにした（music.py）
         import music
         out += music.bgm(STYLE, dur)[:n]; fx = music.SFX_SETS[STYLE["sfx"]]
+        import sfx; put(0.02, sfx.load("impact", SR)[0] * 0.8)   # 冒頭の一発（2026-11-16 の分析）
         for s in range(3): put(marks["count"] + s, fx["tick"]())
         put(marks["reveal"], fx["ding"]())
     else:
@@ -547,6 +548,7 @@ def build(q, out):
 def meta(q, voiced):
     page = f"{SITE}/p/{q['key'].replace(' ', '_').replace('.', '')}.html"
     credit = ("\n\nナレーション：VOICEVOX:ずんだもん\n立ち絵：坂本アヒル様" if q["kind"] == "name" else "\n\nナレーション：VOICEVOX:四国めたん") if voiced else ""
+    credit += ("\n" if credit else "\n\n") + "効果音：OtoLogic（https://otologic.jp）"   # 冒頭の衝撃音（sfx.py）
     if q["kind"] == "name":
         title = f"この英語名、どのポケモン？「{ename(q['key'])}」【英語名クイズ】 #shorts"
         pron = f"（発音：{kana(q['key'])}）" if kana(q["key"]) else ""

@@ -258,6 +258,18 @@ def build(d, out):
     for t0, v in voices:
         if v is None: continue
         a = int(t0 * SR); b = min(len(mix), a + len(v)); mix[a:b] = mix[a:b] * 0.35 + v[:b - a]
+    # 効果音は「起きた瞬間」だけ（sfx.py の作法）。冒頭=衝撃音、画像が替わる=シュッ、赤丸=ポン、答え（"ans"）=衝撃音かキラーン
+    import sfx
+    L_ = s["lines"]; starts = [t for t, _ in voices]; ev = [(starts[0], "impact")]
+    for k in range(1, len(L_)):
+        if L_[k]["img"] != L_[k - 1]["img"]: ev.append((starts[k] - 0.05, "whoosh"))
+        if L_[k].get("mark") and L_[k].get("mark") != L_[k - 1].get("mark"): ev.append((starts[k] + 0.2, "pop"))
+    for k, ln in enumerate(L_):
+        if ln.get("ans"): ev.append((starts[k], ln["ans"] if ln["ans"] in sfx.KIND else "impact"))
+    first_cut = next((starts[k] for k in range(1, len(L_)) if L_[k]["img"] != L_[k - 1]["img"]), None)
+    if first_cut is not None and first_cut < 3.0: print(f"注意: 最初の画像の切り替えが {first_cut:.1f} 秒。最初の3秒は1枚の絵にする（2行目も同じ img にする）")
+    if not any(ln.get("ans") for ln in L_): print('注意: 答えの行に "ans": true が無いので、答えの効果音が鳴らない')
+    ev = sfx.thin(ev, total); sfx.add(mix, ev, SR); print("効果音", len(ev), "個", [(round(t, 1), k) for t, k in ev])
     mix = np.clip(mix, -1, 1)
     with wave.open("_s/a.wav", "w") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 30000).astype(np.int16).tobytes())
@@ -280,7 +292,7 @@ def meta(s):
             f"▼この話の記事（出典つき）\n{s['article']}\n"
             + (f"▼くわしくは本編で\nhttps://youtu.be/{s['video']}\n" if s.get("video") else "")
             + f"\n{pages}\n\nポケモンの英語名と図鑑は「もんすぺ！」で検索 → {site}\n\n"
-            "音声：VOICEVOX:四国めたん、VOICEVOX:ずんだもん\n立ち絵：坂本アヒル様\n"
+            "音声：VOICEVOX:四国めたん、VOICEVOX:ずんだもん\n立ち絵：坂本アヒル様\n効果音：OtoLogic（https://otologic.jp）\n"
             "※ファンが運営する非公式のチャンネルです。株式会社ポケモン、任天堂、クリーチャーズ、ゲームフリークとは関係ありません。\n\n"
             "#ポケモン #ポケモン雑学 #ポケモン雑学採掘所 #shorts")
     return (s["title"] + " #shorts")[:100], desc

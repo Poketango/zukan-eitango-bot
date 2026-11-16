@@ -645,12 +645,19 @@ def build(d, out_dir):
         if ln.get("type") == "ed": sections.append((t, "ed"))
         t += round(dur * FPS) / FPS
     mix = bgm_tracks(total, sections, [L[i].get("bgm") for (i, _, _) in segs], segs)
-    t = 0.2
+    # 効果音は「起きた瞬間」だけ（sfx.py の作法）。章のタイトル=シュッ、大きな一言=ドン、赤丸=ポン、答え（"ans"）=衝撃音かキラーン
+    import sfx
+    t = 0.2; ev = []; prev_mark = None
     for (i, dur, _) in segs:
         ln = L[i]
-        if ln.get("type") == "title": s = ZL.se("whoosh") * 0.6; a = int(t * SR); mix[a:a + len(s)] += s[:len(mix) - a]
-        if ln.get("big"): s = ZL.se("don"); a = int(t * SR); mix[a:a + len(s)] += s[:len(mix) - a]
+        if i == 0: ev.append((t, "impact"))
+        if ln.get("type") == "title": ev.append((t, "whoosh"))
+        if ln.get("big"): ev.append((t, "boom"))
+        if ln.get("mark") and ln.get("mark") != prev_mark: ev.append((t + 0.2, "pop"))
+        if ln.get("ans"): ev.append((t, ln["ans"] if ln["ans"] in sfx.KIND else "impact"))
+        prev_mark = ln.get("mark")
         t += round(dur * FPS) / FPS
+    ev = sfx.thin(ev, total, per30=6, gap=2.0); sfx.add(mix, ev, SR); print("効果音", len(ev), "個")
     for t0, v in voices:
         if v is None: continue
         a = int(t0 * SR); b = min(len(mix), a + len(v)); mix[a:b] = mix[a:b] * 0.4 + v[:b - a]

@@ -82,6 +82,8 @@ class Mix:
         s.n = int(total * SR) + SR; s.a = np.zeros(s.n, np.float32); s.total = total
         s.st = st or music.style(0); s.fx = music.SFX_SETS[s.st["sfx"]]
         s.talker = chara_overlay.Talker()
+        # 2026-11-16 同系統ショート300本の分析：上位の多くは最初の1秒に一番強い音がある。冒頭に衝撃音を1発入れる
+        import sfx; x, pk = sfx.load("impact", SR); s.put(0.02, x * 0.8)
 
     def put(s, t0, sig, vol=1.0):
         a = int(t0 * SR); b = min(s.n, a + len(sig))
@@ -508,6 +510,11 @@ def make(fmt, n, D, out="short.mp4", seed=None, q=None):
 
 
 def meta(fmt, q, D):
+    t, d = _meta(fmt, q, D)
+    return t, d + "\n\n効果音：OtoLogic（https://otologic.jp）"   # 冒頭の衝撃音（sfx.py）
+
+
+def _meta(fmt, q, D):
     S = P.SITE
     if fmt == "plus":
         return (f"{q['w1']}＋{q['w2']}＝？このポケモンだーれだ【英語名の足し算クイズ】 #shorts",
