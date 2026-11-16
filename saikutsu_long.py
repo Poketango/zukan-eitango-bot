@@ -544,11 +544,23 @@ def thumbnail(d, out_dir):
     a = np.clip(1.05 - xs * 1.25, 0.18, 0.96); g[..., 3] = (a[None, :] * 255).astype(np.uint8); g[..., :3] = (14, 10, 8)
     im.alpha_composite(Image.fromarray(g, "RGBA"))
     main = load(th["main"]) if th.get("main") else None
+    ch = th.get("chara")                           # ["z", "shock"]：表情を誇張した立ち絵を右下に大きく置く（2026-11-16）
     if main is not None:
-        s = 470 / max(main.width, main.height); m = main.resize((int(main.width * s), int(main.height * s)), Image.LANCZOS)
+        if ch:                                     # 立ち絵があるときは、文字と立ち絵の間（x 680〜880）に収める
+            s = min(200 / main.width, 540 / main.height); m = main.resize((int(main.width * s), int(main.height * s)), Image.LANCZOS)
+            mx, my = 680 + (200 - m.width) // 2, 90 + (540 - m.height) // 2
+        else:
+            s = 470 / max(main.width, main.height); m = main.resize((int(main.width * s), int(main.height * s)), Image.LANCZOS)
+            mx, my = W - m.width - 40, 20
         sh = Image.new("RGBA", m.size, (0, 0, 0, 0)); sh.putalpha(m.getchannel("A").point(lambda v: int(v * 0.6))); sh = sh.filter(ImageFilter.GaussianBlur(12))
-        im.alpha_composite(sh, (W - m.width - 40 + 10, 20 + 14)); im.alpha_composite(m, (W - m.width - 40, 20))
-    row = [load(r) for r in th.get("row", [])]
+        im.alpha_composite(sh, (mx + 10, my + 14)); im.alpha_composite(m, (mx, my))
+    if ch:
+        t_ = SS.tachie(ch[0], False, 500, ch[1] if len(ch) > 1 else "surprise")
+        if ch[0] == "m": t_ = t_.transpose(Image.FLIP_LEFT_RIGHT)
+        sh = Image.new("RGBA", t_.size, (0, 0, 0, 0)); sh.putalpha(t_.getchannel("A").point(lambda v: int(v * 0.7))); sh = sh.filter(ImageFilter.GaussianBlur(10))
+        x_ = W - t_.width - 10; y_ = H - t_.height
+        im.alpha_composite(sh, (x_ + 8, y_ + 6)); im.alpha_composite(t_, (x_, y_))
+    row = [load(r) for r in ([] if ch else th.get("row", []))]
     row = [r for r in row if r is not None]
     for k, r in enumerate(row):                    # 下に小さく並べる（ほかに出てくるポケモン）
         s = 150 / max(r.width, r.height); rr = r.resize((int(r.width * s), int(r.height * s)), Image.LANCZOS)
@@ -593,7 +605,7 @@ def build(d, out_dir):
     os.makedirs(out_dir, exist_ok=True)
     json.dump(CREDITS, open(os.path.join(out_dir, "credits.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if os.environ.get("MODE", "full") == "sheet":
-        sheet(S, out_dir); return
+        sheet(S, out_dir); thumbnail(d, out_dir); return
     thumbnail(d, out_dir)
     if os.environ.get("MODE") == "thumb": return
     if os.environ.get("MODE") == "accent":
