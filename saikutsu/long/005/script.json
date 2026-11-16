@@ -1,0 +1,876 @@
+{
+ "no": 5,
+ "title": "ポケモンGOのARスキャンが、軍用ドローンの話につながった。",
+ "neta": "プレイヤーの撮った300億枚の画像がAIに使われた",
+ "neta_also": [
+  "アメリカ国防総省が敷地内のポケモンGOを制限",
+  "ロシアの大臣がポケモンGOはスパイの道具かもと疑った"
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ずんだもん。ポケストップの周りを\nぐるっと歩いて撮る、スキャンってやったことある？",
+   "img": "web:https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0-e365^wiki:en:Pokémon_Go",
+   "sec": "ポケモン雑学採掘所"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "ポケストップのパワーアップのために、\n何十回もやったのだ。",
+   "img": "web:https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0-e365^wiki:en:Pokémon_Go"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "その景色で育ったAIが、いま、\nGPSが使えない戦場の話に出てくるの。",
+   "img": "commons:UA FPV strike drones 02.jpg^wiki:en:First-person_view_(radio_control)"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "えっ。",
+   "img": "commons:UA FPV strike drones 02.jpg^wiki:en:First-person_view_(radio_control)",
+   "big": "えっ。",
+   "ans": true
+  },
+  {
+   "type": "op",
+   "w": "m",
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘所。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学採掘所。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "坑道の奥は電波が届かないわね。\nスマホの地図の青い点が、ぜんぜん動かない。",
+   "img": "commons:App-augmented-reality-game-gps-163042.jpg^wiki:en:Pokémon_Go",
+   "sec": "導入　坑道のGPS"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "GPSが届かないところでは、\nポケモンGOもできないのだ。",
+   "img": "wiki:en:Global_Positioning_System",
+   "label": "GPSの衛星"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "2016年のころは、ジムをシャワーズと\nカイリューとカビゴンで固めてたのだ。",
+   "img": "row:art:134|シャワーズ;art:149|カイリュー;art:143|カビゴン",
+   "label": "2016年のジムの常連",
+   "bgm": "battle"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "ボクのシャワーズは、\nいまでも最強の門番なのだ。",
+   "img": "art:134",
+   "label": "シャワーズ"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "いまのジムで、シャワーズを\nあまり見かけないけどね。",
+   "img": "art:134",
+   "v": "tsun"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "わたしは対人戦のGOバトルリーグで、\n使う人の少ないポケモンで勝つほうが好き。",
+   "img": "wiki:en:Pokémon_Go"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "それより、さっきの続き。プレイヤーが\nスキャンした景色は、どこへ行ったのか。",
+   "img": "web:https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0-e365^wiki:en:Pokémon_Go"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ボクたちが撮った景色の、\n行き先の話なのだ？",
+   "img": "web:https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0-e365^wiki:en:Pokémon_Go"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その話をするには、\n2016年の夏までさかのぼる必要があるの。",
+   "img": "commons:Pokémon Go players gathering at Mr.Mime spawn point in Pokémon GO PARK (Yokohama, 2017).jpg^wiki:en:Pokémon_Go"
+  },
+  {
+   "type": "title",
+   "sub": "本日の採掘",
+   "t": "スキャンした景色は、どこへ行った？"
+  },
+  {
+   "type": "title",
+   "sub": "第一層",
+   "t": "2016年、ペンタゴンのポケモンGO",
+   "sec": "第一層　2016年のペンタゴン",
+   "x": {
+    "head": "2016年、アメリカの国防総省は\n支給したスマホで\nポケモンGOを使わせなかった",
+    "img": [
+     "commons:Aerial view of the Pentagon, Arlington, VA (38285035892).jpg^wiki:en:The_Pentagon"
+    ],
+    "bubble": "国防総省がなのだ？",
+    "who": "z",
+    "post": "2016年7月、アメリカの国防総省は、職員に配ったスマホでポケモンGOを使わないよう注意するメモを出しました。理由は位置情報とスパイ対策。でも、自分のスマホで遊ぶのは止めませんでした。どこまでなら安全だと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンGOが出たのは2016年7月。\n世界中で、人が公園や駅前に集まったわね。",
+   "img": "commons:Pokémon Go players gathering at Mr.Mime spawn point in Pokémon GO PARK (Yokohama, 2017).jpg^wiki:en:Pokémon_Go",
+   "label": "2017年 横浜のイベント"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "同じころ、アメリカの国防総省、ペンタゴンでも、\n職員がポケモンGOで遊ぶことが心配されたの。",
+   "img": "commons:Aerial view of the Pentagon, Arlington, VA (38285035892).jpg^wiki:en:The_Pentagon",
+   "label": "ペンタゴン（アメリカ国防総省）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "国防総省の中でポケモンを\n探してたのだ？",
+   "img": "commons:Aerial view of the Pentagon, Arlington, VA (38285035892).jpg^wiki:en:The_Pentagon"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そこで2016年7月19日付で、\n職員に注意のメモが出されたの。",
+   "img": "table:日付=2016年7月19日付のメモ;対象=政府が支給したスマホ;理由1=位置情報で施設の中の配置がわかる;理由2=職員の情報がスパイの勧誘に使われうる",
+   "label": "国防総省のメモ（報道による）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "政府が支給したスマホでは、\nポケモンGOを使わないように、という内容よ。",
+   "img": "table:日付=2016年7月19日付のメモ;対象=政府が支給したスマホ;理由1=位置情報で施設の中の配置がわかる;理由2=職員の情報がスパイの勧誘に使われうる",
+   "label": "国防総省のメモ（報道による）"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "理由は2つ。位置の記録から、\n施設の中のどこに何があるかわかってしまう。",
+   "img": "table:日付=2016年7月19日付のメモ;対象=政府が支給したスマホ;理由1=位置情報で施設の中の配置がわかる;理由2=職員の情報がスパイの勧誘に使われうる"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "もう1つは、職員の情報が、\nスパイの勧誘に使われるかもしれないこと。",
+   "img": "table:日付=2016年7月19日付のメモ;対象=政府が支給したスマホ;理由1=位置情報で施設の中の配置がわかる;理由2=職員の情報がスパイの勧誘に使われうる"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "じゃあ、ペンタゴンでは\nポケモンGOは全面禁止なのだ。",
+   "img": "commons:Aerial view of the Pentagon, Arlington, VA (38285035892).jpg^wiki:en:The_Pentagon"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それが違うの。広報の人は、\n自分のスマホで遊ぶのは止めていない、と話してる。",
+   "img": "commons:Aerial view of the Pentagon, Arlington, VA (38285035892).jpg^wiki:en:The_Pentagon"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "敷地の中にあったジムは、\nゲームから消されたと報じられたわ。",
+   "img": "commons:Aerial view of the Pentagon, Arlington, VA (38285035892).jpg^wiki:en:The_Pentagon"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "同じ7月、ロシアでは通信大臣の\nニキフォロフ氏が、こう話したの。",
+   "img": "wiki:en:Nikolai_Nikiforov^wiki:en:Moscow_Kremlin",
+   "label": "ニコライ・ニキフォロフ通信大臣（当時）"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "「このアプリは、ある情報機関の手を借りて\n作られたのではないかと疑っている」",
+   "img": "wiki:en:Nikolai_Nikiforov^wiki:en:Moscow_Kremlin",
+   "label": "ニキフォロフ氏の発言（2016年7月）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "スパイの道具って言われたのだ…。\nさすがに考えすぎなのだ。",
+   "img": "commons:Russian Federation (orthographic projection).svg^wiki:en:Moscow_Kremlin"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "証拠のない疑いだったわ。でもね、ポケモンGOを作った\n会社の生い立ちには、たしかに情報機関との縁があるの。",
+   "img": "wiki:en:John_Hanke"
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "ナイアンティックの生い立ち",
+   "sec": "第二層　Googleアースの前身",
+   "x": {
+    "head": "ポケモンGOの会社の創業者が\n昔率いた地図ソフトの会社に、\nCIAの投資組織が出資していた",
+    "img": [
+     "wiki:en:John_Hanke",
+     "wiki:en:Iraq_War"
+    ],
+    "bubble": "CIAなのだ！？",
+    "who": "z",
+    "post": "ポケモンGOを作ったナイアンティックの創業者は、Googleアースのもとになった地図ソフトの会社の社長でした。その会社には2003年、CIAが作った投資組織が出資しています。この地図ソフト、最初はどこで役に立ったと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンGOを作ったナイアンティックの創業者は、\nジョン・ハンケさん。",
+   "img": "wiki:en:John_Hanke",
+   "label": "ジョン・ハンケさん"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハンケさんは昔、キーホールという会社で\n社長をしていたの。",
+   "img": "wiki:en:John_Hanke"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "キーホールが作ったのは、地球を空から\n眺めるように見られる3Dの地図ソフトよ。",
+   "img": "wiki:en:Google_Earth",
+   "label": "のちのGoogleアース"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "それ、Googleアースみたいなのだ。",
+   "img": "wiki:en:Google_Earth",
+   "say": "それ、グーグルアースみたいなのだ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのとおり。キーホールは2004年に\nGoogleに買われて、Googleアースになったの。",
+   "img": "row:wiki:en:Google_Earth|キーホール>wiki:en:Google|Google（2004年）>wiki:en:Ingress_(video_game)|Niantic Labs（2010年）",
+   "label": "キーホールからポケモンGOまで",
+   "say": "そのとおり。キーホールは2004年にグーグルに買われて、グーグルアースになったの。"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "そのキーホールに、2003年、\nIn-Q-Telという組織が出資していたの。",
+   "img": "paper:In-Q-Tel の発表（2003年6月25日）|In-Q-Tel、Keyhole に戦略的投資/NIMA、イラクの戦争の支援にこの技術を使う|In-Q-Tel＝CIAが作ったベンチャー投資の組織",
+   "label": "In-Q-Telの発表（2003年）",
+   "say": "そのキーホールに、2003年、インキューテルという組織が出資していたの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "In-Q-Telは、アメリカの中央情報局、CIAが作った\nベンチャー投資の組織よ。",
+   "img": "paper:In-Q-Tel の発表（2003年6月25日）|In-Q-Tel、Keyhole に戦略的投資/NIMA、イラクの戦争の支援にこの技術を使う|In-Q-Tel＝CIAが作ったベンチャー投資の組織",
+   "ety": [
+    "In-Q-Tel（インキューテル）",
+    "情報機関のために新しい技術へ投資する、CIAが作った組織"
+   ],
+   "say": "インキューテルは、アメリカの中央情報局、シーアイエーが作ったベンチャー投資の組織よ。"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "CIAなのだ！？",
+   "img": "paper:In-Q-Tel の発表（2003年6月25日）|In-Q-Tel、Keyhole に戦略的投資/NIMA、イラクの戦争の支援にこの技術を使う|In-Q-Tel＝CIAが作ったベンチャー投資の組織",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "発表文の見出しは、こうよ。「NIMAが、\nイラクの戦争の支援にこの技術を使った」",
+   "img": "paper:In-Q-Tel の発表（2003年6月25日）|In-Q-Tel、Keyhole に戦略的投資/NIMA、イラクの戦争の支援にこの技術を使う|In-Q-Tel＝CIAが作ったベンチャー投資の組織",
+   "say": "発表文の見出しは、こうよ。ニーマが、イラクの戦争の支援にこの技術を使った。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "NIMAは、衛星写真や地図を扱う\nアメリカの情報機関。いまのNGAね。",
+   "img": "wiki:en:National_Geospatial-Intelligence_Agency",
+   "label": "のちの国家地球空間情報局（NGA）",
+   "ety": [
+    "NIMA（ニーマ）",
+    "国家画像地図局。2003年にNGAに改名"
+   ],
+   "say": "ニーマは、衛星写真や地図を扱うアメリカの情報機関。いまのエヌジーエーね。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2003年のイラク戦争で、キーホールの地図ソフトが使われたの。\nテレビ局も、イラクの町を上から映すのに使ったわ。",
+   "img": "wiki:en:Iraq_War",
+   "label": "2003年 イラク戦争"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ゲームの会社の話だと\n思ってたのだ…。",
+   "img": "wiki:en:John_Hanke"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハンケさんはGoogleに移って、2010年に、\n社内でナイアンティック・ラボを作ったの。",
+   "img": "row:wiki:en:Google_Earth|キーホール>wiki:en:Google|Google（2004年）>wiki:en:Ingress_(video_game)|Niantic Labs（2010年）",
+   "label": "キーホールからポケモンGOまで",
+   "say": "ハンケさんはグーグルに移って、2010年に、社内でナイアンティック・ラボを作ったの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "最初の大きなゲームが、2012年のイングレス。現実の建物や\n像を「ポータル」という陣地にして取り合うゲームよ。",
+   "img": "wiki:en:Ingress_(video_game)",
+   "label": "イングレス（2012年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポータルにしたい場所はプレイヤーが申請して、\n約1500万件のうち、約500万件が認められたの。",
+   "img": "table:ポータルの候補=約1500万件の申請;承認されたもの=約500万件;ポケモンGOでは=ポケストップとジムのもとに",
+   "label": "イングレスのポータル"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "それが、ポケストップの\nもとになったのだ？",
+   "img": "table:ポータルの候補=約1500万件の申請;承認されたもの=約500万件;ポケモンGOでは=ポケストップとジムのもとに",
+   "ans": "idea"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。ナイアンティックは2015年にGoogleから独立して、\n次の年にポケモンGOを出したの。",
+   "img": "wiki:en:Pokémon_Go",
+   "say": "そう。ナイアンティックは2015年にグーグルから独立して、次の年にポケモンゴーを出したの。"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "ポケストップを撮らせたわけ",
+   "sec": "第三層　ARスキャン",
+   "x": {
+    "head": "ポケストップのスキャンは\n2020年、レベル20以上の\nフィールドリサーチになった",
+    "img": [
+     "web:https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0-e365^wiki:en:Pokémon_Go"
+    ],
+    "bubble": "やったのだ",
+    "who": "z",
+    "post": "2020年10月、ポケモンGOに「ARマッピングタスク」が加わりました。ポケストップの周りを歩いて撮ると、その日のフィールドリサーチになります。この撮った景色、何に使われていたと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ナイアンティックの技術の責任者は、\nGPSの青い点は50mずれることもよくある、と言ってる。",
+   "img": "wiki:en:Global_Positioning_System",
+   "label": "GPSのずれ",
+   "say": "ナイアンティックの技術の責任者は、ジーピーエスの青い点は50メートルずれることもよくある、と言ってる。"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "わかるのだ。ポケストップの前にいるのに、\n道路の反対側にいることになるのだ。",
+   "img": "commons:App-augmented-reality-game-gps-163042.jpg^wiki:en:Pokémon_Go"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そこでナイアンティックが考えたのが、カメラの景色で\n位置を知る方法。VPSと呼んでるわ。",
+   "img": "web:https://lh3.googleusercontent.com/06jKW5x3FnIu1iepBOwkORzFMzOk_XQ2ceo7Qnp2hWZgf_m90tDAwR8ZXWvuD_6rGCyyRUqG3kLqqd6H5PuoaFC3C7brCDK2WjwvObCsKm8Bww=e365-pa-nu-w1360-rw^wiki:en:Augmented_reality",
+   "ety": [
+    "VPS（ブイピーエス）",
+    "Visual Positioning System。画像で位置と向きを出す仕組み"
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "カメラに映った景色を、前もって作った3Dの地図と\n照らし合わせて、立っている場所と向きを割り出すの。",
+   "img": "web:https://lh3.googleusercontent.com/06jKW5x3FnIu1iepBOwkORzFMzOk_XQ2ceo7Qnp2hWZgf_m90tDAwR8ZXWvuD_6rGCyyRUqG3kLqqd6H5PuoaFC3C7brCDK2WjwvObCsKm8Bww=e365-pa-nu-w1360-rw^wiki:en:Augmented_reality",
+   "label": "カメラの景色で位置を知る"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でも、3Dの地図は\nだれが作るのだ？",
+   "img": "web:https://lh3.googleusercontent.com/06jKW5x3FnIu1iepBOwkORzFMzOk_XQ2ceo7Qnp2hWZgf_m90tDAwR8ZXWvuD_6rGCyyRUqG3kLqqd6H5PuoaFC3C7brCDK2WjwvObCsKm8Bww=e365-pa-nu-w1360-rw^wiki:en:Augmented_reality"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "プレイヤーよ。2020年5月に、\nポケストップを撮る機能が発表されたの。",
+   "img": "web:https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0-e365^wiki:en:Pokémon_Go"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2020年10月には、ARマッピングタスクとして、\nレベル20以上のフィールドリサーチになった。",
+   "img": "web:https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0-e365^wiki:en:Pokémon_Go",
+   "label": "ARマッピングタスク（2020年10月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケストップを中心に、20秒から30秒、\nぐるっと歩いて撮るのがコツと案内されてたわ。",
+   "img": "web:https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0-e365^wiki:en:Pokémon_Go"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2021年12月には、パワーアップポケストップ。\n何人かでスキャンすると、ポケストップが強くなるの。",
+   "img": "web:https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0-e365^wiki:en:Pokémon_Go",
+   "label": "パワーアップポケストップ（2021年12月）"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "スキャン25回でレベル3なのだ。\nみんなで撮ったのだ。",
+   "img": "web:https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0-e365^wiki:en:Pokémon_Go",
+   "mark": [
+    0.78,
+    0.5,
+    0.16
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "顔や車のナンバーは自動でぼかして、\nアカウントとは結びつけない、と説明されてたわ。",
+   "img": "web:https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0-e365^wiki:en:Pokémon_Go"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "スキャンは、やりたい人だけがやる仕組み。\n歩いて遊ぶだけでは、AIの学習には使われない。",
+   "img": "web:https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0-e365^wiki:en:Pokémon_Go",
+   "label": "ナイアンティックの説明"
+  },
+  {
+   "type": "title",
+   "sub": "第四層",
+   "t": "300億枚の景色の行き先",
+   "sec": "第四層　大規模地理空間モデル",
+   "x": {
+    "head": "ナイアンティックは、\n300億枚を超える景色の画像で\n地図のAIを作っている",
+    "img": [
+     "web:https://lh3.googleusercontent.com/utNBW57Lr4TvRs98JCP8kOU3hEoKNYZUXoaV_0V6MVixUW7-NHgKSfO1RnLznOxBJPevbO16kJnJXaZRbrCVsiY3eaHHlDOFwshdxdrUqYk2wvs=e365-pa-nu-w1360-rw^wiki:en:Photogrammetry"
+    ],
+    "bubble": "300億枚なのだ…",
+    "who": "z",
+    "post": "ナイアンティックは2025年、300億枚を超える位置つきの画像で、地図のAIを作っていると書きました。ポケモンGOとほかのアプリのスキャンからです。この画像、ポケモンGOが売られたあとはどちらの会社に残ったと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2024年11月、ナイアンティックは\n大規模地理空間モデル、という計画を発表したの。",
+   "img": "web:https://lh3.googleusercontent.com/utNBW57Lr4TvRs98JCP8kOU3hEoKNYZUXoaV_0V6MVixUW7-NHgKSfO1RnLznOxBJPevbO16kJnJXaZRbrCVsiY3eaHHlDOFwshdxdrUqYk2wvs=e365-pa-nu-w1360-rw^wiki:en:Photogrammetry",
+   "ety": [
+    "大規模地理空間モデル",
+    "世界中の場所の景色を覚えさせた、地図のためのAI"
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "スキャンされた場所は約1000万か所。\n新しいスキャンは、週に約100万件。",
+   "img": "table:スキャンされた場所=約1000万か所;新しいスキャン=週に約100万件;1件のスキャン=数百枚の画像",
+   "label": "2024年11月の発表"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1件のスキャンには、数百枚の画像が入ってる。この数には、\nポケモンGO以外のアプリで撮ったスキャンも入ってるわ。",
+   "img": "table:スキャンされた場所=約1000万か所;新しいスキャン=週に約100万件;1件のスキャン=数百枚の画像",
+   "label": "2024年11月の発表"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "週に100万件なのだ！？",
+   "img": "table:スキャンされた場所=約1000万か所;新しいスキャン=週に約100万件;1件のスキャン=数百枚の画像"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして2025年3月。ナイアンティックは、\nポケモンGOなどのゲームを売ると発表したの。",
+   "img": "row:wiki:en:Scopely|Scopely（ゲーム）;wiki:en:Niantic_Spatial|Niantic Spatial（地図とAI）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "買ったのはScopelyというゲーム会社。\n35億ドル、5000億円あまりよ。",
+   "img": "wiki:en:Scopely",
+   "label": "Scopely（スコープリー）",
+   "say": "買ったのは、スコープリーというゲーム会社。35億ドル、5000億円あまりよ。"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "地図とAIの部門は、ナイアンティック・スペーシャル\nという別の会社になって、残ったの。",
+   "img": "table:Scopely に移ったもの=ポケモンGO、ピクミン ブルームなど;Niantic Spatial に残ったもの=スキャンのデータと位置のAI",
+   "label": "2025年 ゲームと地図が分かれた"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ゲームを売る発表の文には、こう書いてあるわ。\n「300億枚を超える、位置つきの画像のデータ」",
+   "img": "wiki:en:Niantic_Spatial",
+   "label": "Niantic Spatial",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ボクたちが撮った景色は、\nゲームじゃないほうの会社に残ったのだ…。",
+   "img": "table:Scopely に移ったもの=ポケモンGO、ピクミン ブルームなど;Niantic Spatial に残ったもの=スキャンのデータと位置のAI"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンGOでのスキャンは、ゲームが\nScopelyに移るのにあわせて終わったと説明されてるわ。",
+   "img": "wiki:en:Pokémon_Go",
+   "say": "ポケモンゴーでのスキャンは、ゲームがスコープリーに移るのにあわせて終わったと説明されてるわ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それまでに集まった景色と、それで鍛えたAIが、\nナイアンティック・スペーシャルの土台になったの。",
+   "img": "web:https://lh3.googleusercontent.com/utNBW57Lr4TvRs98JCP8kOU3hEoKNYZUXoaV_0V6MVixUW7-NHgKSfO1RnLznOxBJPevbO16kJnJXaZRbrCVsiY3eaHHlDOFwshdxdrUqYk2wvs=e365-pa-nu-w1360-rw^wiki:en:Photogrammetry"
+  },
+  {
+   "type": "title",
+   "sub": "第五層",
+   "t": "GPSが使えない戦場",
+   "sec": "第五層　GPSの妨害",
+   "x": {
+    "head": "電波の妨害で、\nウクライナの小型ドローンの\n命中は30〜50%に落ちた",
+    "img": [
+     "commons:UA military FPV drones 01.jpg^wiki:en:First-person_view_(radio_control)"
+    ],
+    "bubble": "GPSが効かないのだ",
+    "who": "m",
+    "post": "ウクライナでは電波の妨害で、操縦する小型ドローンの命中が30〜50%に下がったと報じられました。新人の操縦士だと約10%。GPSが使えない場所で位置を知るには、何を使えばいいと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ここで話は、ウクライナに移るわ。\nロシアとの戦争が続いている、ヨーロッパの東の国よ。",
+   "img": "commons:Ukraine (orthographic projection).svg^wiki:en:Ukraine",
+   "label": "ウクライナ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "戦場では、GPSや無線の電波を\nわざと邪魔する装置が使われているの。",
+   "img": "commons:Anklav portable jammer GPS GLONASS.jpg^wiki:en:Electronic_warfare",
+   "label": "GPSを妨害する装置"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "2024年の報道では、妨害のせいで、\n操縦する小型ドローンの命中が30〜50%に落ちたって。",
+   "img": "table:妨害がないとき=ほぼ狙いどおり;妨害されると=命中は30〜50%に;新人の操縦士だと=約10%",
+   "label": "ロイター通信（2024年7月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "新人の操縦士だと、10%くらいまで\n下がるそうよ。",
+   "img": "table:妨害がないとき=ほぼ狙いどおり;妨害されると=命中は30〜50%に;新人の操縦士だと=約10%"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "GPSで導く爆弾も、ふだんの誤差は約5m。\nGPSが使えないと、約30mまで広がるといわれてる。",
+   "img": "table:GPSが使えるとき=誤差 約5m;GPSが使えないとき=誤差 約30m",
+   "label": "イギリスの研究所 RUSI（2023年）",
+   "say": "ジーピーエスで導く爆弾も、ふだんの誤差は約5メートル。ジーピーエスが使えないと、約30メートルまで広がるといわれてる。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "坑道の中のボクのスマホと\n同じなのだ。",
+   "img": "commons:App-augmented-reality-game-gps-163042.jpg^wiki:en:Pokémon_Go"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "そう。だから各国の軍は、GPSに頼らずに、\nカメラに映る景色で位置を知る技術をほしがってる。",
+   "img": "commons:UA FPV strike drones 02.jpg^wiki:en:First-person_view_(radio_control)"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "それって、さっきの\nVPSのことなのだ！？",
+   "img": "web:https://lh3.googleusercontent.com/06jKW5x3FnIu1iepBOwkORzFMzOk_XQ2ceo7Qnp2hWZgf_m90tDAwR8ZXWvuD_6rGCyyRUqG3kLqqd6H5PuoaFC3C7brCDK2WjwvObCsKm8Bww=e365-pa-nu-w1360-rw^wiki:en:Augmented_reality",
+   "ans": true
+  },
+  {
+   "type": "title",
+   "sub": "最深層",
+   "t": "国防の会社との提携",
+   "sec": "最深層　Vantorとの提携",
+   "x": {
+    "head": "ポケモンGOのスキャンで\nAIを育てた会社が、国防の\n衛星の会社と提携した",
+    "img": [
+     "web:https://lh3.googleusercontent.com/FtKVMwYyYZHg7OccXshrzfaAWQy9qoSJfapLgWrBMI2hDr2ZmrxkOgIrS4d1yUUcypBby20saCkqdV_pLmhjAqgAwiWS9I_HBXyPXI-oUd2hyg=e365-pa-nu-w1440-rw^wiki:en:WorldView_Legion"
+    ],
+    "bubble": "つながったのだ",
+    "who": "z",
+    "post": "2025年12月、ナイアンティック・スペーシャルは、アメリカの国防や情報機関に衛星画像を売る会社Vantorと、GPSが使えない場所での位置推定で提携しました。この会社、ポケモンGOのデータを使っていると思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2025年12月16日。ナイアンティック・スペーシャルは、\nVantorという会社との提携を発表したの。",
+   "img": "web:https://lh3.googleusercontent.com/FtKVMwYyYZHg7OccXshrzfaAWQy9qoSJfapLgWrBMI2hDr2ZmrxkOgIrS4d1yUUcypBby20saCkqdV_pLmhjAqgAwiWS9I_HBXyPXI-oUd2hyg=e365-pa-nu-w1440-rw^wiki:en:WorldView_Legion",
+   "label": "提携の発表（2025年12月）",
+   "say": "2025年12月16日。ナイアンティック・スペーシャルは、ヴァンターという会社との提携を発表したの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "Vantorは、地球を撮る衛星を持っていて、\nアメリカの国防や情報機関に画像を売る会社よ。",
+   "img": "wiki:en:WorldView_Legion",
+   "label": "Vantorが運用する撮影衛星",
+   "say": "ヴァンターは、地球を撮る衛星を持っていて、アメリカの国防や情報機関に画像を売る会社よ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "提携の中身は、GPSが妨害されたときでも、\n空のドローンと地上の人が同じ位置を共有すること。",
+   "img": "row:wiki:en:WorldView_Legion|空から（Vantor）>web:https://lh3.googleusercontent.com/06jKW5x3FnIu1iepBOwkORzFMzOk_XQ2ceo7Qnp2hWZgf_m90tDAwR8ZXWvuD_6rGCyyRUqG3kLqqd6H5PuoaFC3C7brCDK2WjwvObCsKm8Bww=e365-pa-nu-w1360-rw|地上から（Niantic Spatial）",
+   "label": "空と地上で同じ位置を共有"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "空からの位置はVantorの衛星画像で、地上からの位置は\nナイアンティック・スペーシャルのVPSで割り出すの。",
+   "img": "row:wiki:en:WorldView_Legion|空から（Vantor）>web:https://lh3.googleusercontent.com/06jKW5x3FnIu1iepBOwkORzFMzOk_XQ2ceo7Qnp2hWZgf_m90tDAwR8ZXWvuD_6rGCyyRUqG3kLqqd6H5PuoaFC3C7brCDK2WjwvObCsKm8Bww=e365-pa-nu-w1360-rw|地上から（Niantic Spatial）",
+   "label": "空と地上で同じ位置を共有",
+   "say": "空からの位置はヴァンターの衛星画像で、地上からの位置はナイアンティック・スペーシャルのブイピーエスで割り出すの。"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "ボクのスキャンが、\nドローンを飛ばしてるのだ！？",
+   "img": "commons:UA FPV strike drones 02.jpg^wiki:en:First-person_view_(radio_control)",
+   "v": "namida"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "そこは落ち着いて。2026年6月、\nオランダの新聞がこの話を記事にしたの。",
+   "img": "commons:EU-Netherlands.svg^wiki:en:Netherlands",
+   "label": "オランダ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "新聞の名前はトラウ。ポケモンGOのスキャンが、\n国防の技術の開発に役立ったと報じたの。",
+   "img": "wiki:en:Trouw",
+   "label": "オランダの新聞トラウ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それをきっかけに、イギリスやアメリカの\nメディアにも広まったわ。",
+   "img": "wiki:en:Trouw"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "両方の会社の答えは、こうよ。",
+   "img": "table:Niantic Spatial=スキャンは初期のAIの学習に使った;Niantic Spatial=ゲームのデータを直接渡す契約ではない;Vantor=ポケモンGOのデータは使っていない",
+   "label": "会社の説明"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ナイアンティック・スペーシャルは、\nスキャンを初期のAIの学習に使ったことは認めた。",
+   "img": "table:Niantic Spatial=スキャンは初期のAIの学習に使った;Niantic Spatial=ゲームのデータを直接渡す契約ではない;Vantor=ポケモンGOのデータは使っていない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも、AIは学習の結果で、スキャンの写しではない。\nゲームのデータを渡す契約でもない、と。",
+   "img": "table:Niantic Spatial=スキャンは初期のAIの学習に使った;Niantic Spatial=ゲームのデータを直接渡す契約ではない;Vantor=ポケモンGOのデータは使っていない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "Vantorは、ポケモンGOのデータは使っていないし、\n持ってもいない、と答えたわ。",
+   "img": "table:Niantic Spatial=スキャンは初期のAIの学習に使った;Niantic Spatial=ゲームのデータを直接渡す契約ではない;Vantor=ポケモンGOのデータは使っていない",
+   "say": "ヴァンターは、ポケモンGOのデータは使っていないし、持ってもいない、と答えたわ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "じゃあ、ボクのスキャンで\nドローンが飛んでるわけじゃないのだ？",
+   "img": "commons:UA FPV strike drones 02.jpg^wiki:en:First-person_view_(radio_control)"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "実際に戦場で使われた証拠は、\n公開されてる情報にはないの。",
+   "img": "commons:UA FPV strike drones 02.jpg^wiki:en:First-person_view_(radio_control)",
+   "big": "証拠はない"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "ただ、2026年6月、ナイアンティック・スペーシャルのVPSは、\nアメリカ陸軍の研究所が導入を検討できる技術の一覧に載ったわ。",
+   "img": "web:https://lh3.googleusercontent.com/ckIUNeXIi6GeWUouvPhiJ2SuxF7us_3ab1QZ_JllTGt9YoyFYev3m_-5d3vBPwyfpTO5zp-MpYx_Smh9Flka38IsD9pnGg4B_XeichPa3jKrrg4=e365-pa-nu-w1440-rw^wiki:en:National_Geospatial-Intelligence_Agency",
+   "label": "Niantic Spatialの発表（2026年6月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "Vantorの衛星画像を買っている先には、\nあのNIMAが名前を変えたNGAも入ってるの。",
+   "img": "wiki:en:National_Geospatial-Intelligence_Agency",
+   "say": "ヴァンターの衛星画像を買っている先には、あのニーマが名前を変えた、エヌジーエーも入ってるの。"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "2003年にキーホールの地図を\n使った役所なのだ！",
+   "img": "row:wiki:en:Iraq_War|2003年 NIMAが使う>wiki:en:Pokémon_Go|2016年 ポケモンGO>wiki:en:WorldView_Legion|2025年 Vantorと提携",
+   "label": "2003年から2025年まで",
+   "ans": "idea"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "地図ソフトから始まった道が、ゲームを通って、\nまた同じ役所の近くに戻ってきたのね。",
+   "img": "row:wiki:en:Iraq_War|2003年 NIMAが使う>wiki:en:Pokémon_Go|2016年 ポケモンGO>wiki:en:WorldView_Legion|2025年 Vantorと提携",
+   "label": "2003年から2025年まで"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "ポケストップを撮ったのは、ポケモンが物かげに\n隠れるような、ゲームの演出のためだった。",
+   "img": "web:https://lh3.googleusercontent.com/iNoZjYGtiEOV3VVL2ogYNT5oGf23URF8H9EVERRIa1JvdesE8N3SOvOOlSnL8k-K63oxnZafZ-dTDLfNLZkmmPNLKlh2HwLGNOztlt2kOuJHCFQ=s0-e365^wiki:en:Pokémon_Go",
+   "sec": "まとめ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも、その景色で育ったAIは、いま、\nGPSの届かない場所の位置を探す技術になってる。",
+   "img": "web:https://lh3.googleusercontent.com/FtKVMwYyYZHg7OccXshrzfaAWQy9qoSJfapLgWrBMI2hDr2ZmrxkOgIrS4d1yUUcypBby20saCkqdV_pLmhjAqgAwiWS9I_HBXyPXI-oUd2hyg=e365-pa-nu-w1440-rw^wiki:en:WorldView_Legion"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "…ボクのシャワーズのジムも、\nどこかで地図になってるかもしれないのだ。",
+   "img": "art:134"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "シャワーズは、ジムより\n地図の中のほうが長生きしそうね。",
+   "img": "art:134",
+   "v": "tsun"
+  },
+  {
+   "type": "title",
+   "sub": "おまけ",
+   "t": "今日のポケモンの英語名",
+   "sec": "今日のポケモンの英語名"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "今日のポケモンの英語名。\n1匹目はシャワーズ。",
+   "img": "art:134",
+   "label": "Vaporeon（ヴェイポリオン）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ヴェイポリオン。湯気や水蒸気の\n「ヴェイパー」から来てるといわれてるの。",
+   "img": "art:134",
+   "label": "Vaporeon（ヴェイポリオン）"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "2匹目はカイリュー。\nドラゴナイト。",
+   "img": "art:149",
+   "label": "Dragonite（ドラゴナイト）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ドラゴンと、騎士の「ナイト」を\n合わせた名前だといわれてるの。",
+   "img": "art:149",
+   "label": "Dragonite（ドラゴナイト）"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "3匹目はカビゴン。\nスノーラックス。",
+   "img": "art:143",
+   "label": "Snorlax（スノーラックス）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "いびきの「スノア」と、くつろぐの\n「リラックス」を合わせた名前よ。",
+   "img": "art:143",
+   "label": "Snorlax（スノーラックス）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日出てきたポケモンの英語名は、\n英単語帳サイト「もんすぺ！」でも調べられるわ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "もんすぺ！には、ポケモンの面白い雑学のコラムもあるの。\n動画の続きみたいに読めるわよ。",
+   "img": "site:",
+   "label": "「もんすぺ！」雑学コラムもあります"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の採掘はここまでなのだ。\nチャンネル登録もよろしくなのだ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "type": "ed"
+  }
+ ],
+ "thumb": {
+  "pre": "ポケモンGOで撮った景色が",
+  "big": [
+   "ドローンの",
+   "目に？"
+  ],
+  "hl": 0,
+  "main": "commons:UA FPV strike drones 02.jpg^wiki:en:First-person_view_(radio_control)",
+  "back": "commons:Aerial view of the Pentagon, Arlington, VA (38285035892).jpg^wiki:en:The_Pentagon",
+  "chara": [
+   "z",
+   "shock"
+  ]
+ }
+}
