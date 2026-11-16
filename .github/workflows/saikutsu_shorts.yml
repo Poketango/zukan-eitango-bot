@@ -1,7 +1,8 @@
 name: saikutsu-shorts
-# ポケモン雑学採掘所のショート（@poke_zatsugaku）。台本は shorts/NNNN/ に Claude が足していく。毎日 20:35（日本時間）
+# ポケモン雑学採掘所のショート（@poke_zatsugaku）。台本は shorts/NNNN/ に Claude が足していく。毎日 12:35 と 20:35（日本時間）の2本
 on:
   schedule:
+    - cron: "35 3 * * *"
     - cron: "35 11 * * *"
   workflow_dispatch:
     inputs:
