@@ -1,9 +1,10 @@
 name: x-cards
-# X（@zukan_eitango）に投稿する雑学カード画像を作って x/ に置く。台本（scripts/long）が更新されたら自動で動く
+# X（@zukan_eitango）に投稿する雑学カード画像を作って x/ に置く。台本（scripts/long、採掘所は saikutsu/long）が更新されたら自動で動く
+#   採掘所の形式（2026-11-16〜）：saikutsu/long/NNN/script.json の層の区切りの "x" から x/sNNN_k.png と x/sNNN_posts.json
 on:
   push:
     branches: [main]
-    paths: ["scripts/long/**", "x_cards.py"]
+    paths: ["scripts/long/**", "saikutsu/long/**/script.json", "x_cards.py"]
   workflow_dispatch:
 permissions:
   contents: write
@@ -27,6 +28,14 @@ jobs:
             n=$(basename "$f" .json)
             if python -c "import json,sys; d=json.load(open('$f')); sys.exit(0 if any('x' in t for t in d['topics']) else 1)"; then
               python x_cards.py "$n" x
+            fi
+          done
+      - name: 採掘所のカードを作る（層の区切りに x を持つ台本すべて）
+        run: |
+          for f in saikutsu/long/*/script.json; do
+            n=$(basename $(dirname "$f"))
+            if python -c "import json,sys; d=json.load(open('$f')); sys.exit(0 if any(l.get('x') for l in d['lines']) else 1)"; then
+              python x_cards.py "s$n" x || echo "第$n回のカードを作れなかった"
             fi
           done
       - name: コミット
