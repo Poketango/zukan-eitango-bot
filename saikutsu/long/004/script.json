@@ -150,6 +150,13 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "判決文には、子どもたちの名前の横に、\n後見人として親の名前が並んでいるの。",
+   "img": "paper:第9巡回区控訴裁判所の判決（2002年）|原告：子どもたち（後見人：それぞれの親）/被告：Nintendo of America ほか|No. 00-56266",
+   "label": "判決文の当事者の欄"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "サンディエゴと、近くの町テメキュラに\n住んでいた子どもたちよ。",
    "img": "wiki:en:Temecula,_California^wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego",
    "label": "カリフォルニア州テメキュラ"
@@ -192,6 +199,12 @@
    "face": "think",
    "t": "宝くじ…。言いすぎなのだ。",
    "img": "wiki:en:Lottery"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンブームのまっただ中だったから、\nアメリカの新聞にも大きく取り上げられたわ。",
+   "img": "wiki:en:Pokémon_Trading_Card_Game"
   },
   {
    "w": "m",
@@ -270,6 +283,19 @@
    "img": "wiki:en:Baseball_card"
   },
   {
+   "w": "z",
+   "face": "proud",
+   "t": "リザードンは、そのころから\n特別だったのだ。",
+   "img": "charizard_card.jpg"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "パックの絵にもリザードンの版があったくらいだからね。\nフシギバナとカメックスの版もあったけど。",
+   "img": "booster_pack.jpg",
+   "label": "第1弾のパック（リザードンの絵）"
+  },
+  {
    "w": "m",
    "face": "think",
    "t": "弁護士が使ったのはRICO法。もとはマフィアなどの\n組織犯罪を取り締まるための、アメリカの法律よ。",
@@ -345,6 +371,19 @@
    "face": "normal",
    "t": "ところが、その野球カードの訴えは退けられたの。\n理由は、賭博かどうかとは別のところにあったのよ。",
    "img": "wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "理由の1つは、払ったお金が当たりのチャンスのため\nだった、と原告が主張していなかったこと。",
+   "img": "wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego",
+   "label": "1997年 野球カードの裁判"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "そこを言い直せば、\n勝てそうな気がするのだ。",
+   "img": "wiki:en:Baseball_card"
   },
   {
    "w": "m",
@@ -484,6 +523,13 @@
   },
   {
    "w": "m",
+   "face": "normal",
+   "t": "訴えられた側には、野球やバスケットボールの\nプロリーグの関連団体まで入っていたわ。",
+   "img": "row:wiki:en:Baseball_card|野球;wiki:en:Basketball|バスケットボール;wiki:en:American_football|アメフト;wiki:en:Ice_hockey|アイスホッケー",
+   "label": "8件の控訴をまとめた判決"
+  },
+  {
+   "w": "m",
    "face": "think",
    "t": "判決の中でポケモンに触れているのは、\n小さな注釈の1か所だけ。",
    "img": "paper:判決文の注釈1（2002年）|被告は、ポケモンカードはゲームに使うので、/ほかのカードとは違うと主張している。|No. 00-56266（ポケモンカードの訴え）",
@@ -554,6 +600,25 @@
    "t": "子ども向けの商品で多く使われて、\n苦情が多かったから、1969年に全面禁止されたの。",
    "img": "table:1962年=法律ができる（カード合わせは認められる）;1969年=カード合わせを全面禁止;2012年=コンプガチャも当たると発表",
    "label": "カード合わせの歴史"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "消費者庁は、カード合わせを「欺瞞性が強い」、\nつまり客をだましやすい売り方だと説明しているの。",
+   "img": "wiki:ja:消費者庁^wiki:en:Consumer_Affairs_Agency",
+   "label": "消費者庁の説明"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "最後の1枚だけ、\nなかなか出ないやつなのだ。",
+   "img": "booster_box.jpg"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "どのカードをどれだけ入れるかは、\n売る側が決められるからね。",
+   "img": "booster_box.jpg"
   },
   {
    "w": "z",
@@ -643,6 +708,18 @@
    "label": "ベルギーの賭博の法律"
   },
   {
+   "w": "z",
+   "face": "shock",
+   "t": "子どもが関わると2倍…。\nポケモンのゲームは子どもも遊ぶのだ。",
+   "img": "wiki:en:Belgium"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "だからポケモンのゲームにとっても、\nひとごとではなかったの。",
+   "img": "row:wiki:en:Pokémon_Masters_EX|マスターズ;wiki:en:Pokémon_Trading_Card_Game_Pocket|ポケポケ;wiki:en:Pokémon_Unite|ユナイト"
+  },
+  {
    "w": "m",
    "face": "think",
    "t": "ベルギーの法務大臣は、こう話したの。\n「ゲームと賭博を混ぜるのは、とくに若いうちは心の健康に危ない」",
@@ -683,6 +760,12 @@
    "img": "row:wiki:en:Pokémon_Masters_EX|マスターズ;wiki:en:Pokémon_Trading_Card_Game_Pocket|ポケポケ;wiki:en:Pokémon_Unite|ユナイト"
   },
   {
+   "w": "m",
+   "face": "normal",
+   "t": "ここで問題になったのは、紙のパックではなく、\nゲームの中でお金を払って引くガチャのほうよ。",
+   "img": "wiki:en:Gacha_game"
+  },
+  {
    "w": "z",
    "face": "think",
    "t": "アメリカでは、賭博かどうかを決めないまま終わって、\nベルギーでは、ガチャが賭博だと決められた…",
@@ -697,7 +780,14 @@
   {
    "w": "m",
    "face": "think",
-   "t": "アメリカの裁判所が見たのは、誰が損をしたか。\n日本は景品の出し方、ベルギーは賭博そのもの。見るところが違うのね。",
+   "t": "アメリカの裁判所が見たのは、\n買った人が損をしたかどうか。",
+   "img": "table:アメリカの裁判所=買った人が損をしたか;日本の消費者庁=そろえるともらえる景品か;ベルギーの役所=お金を払って偶然で当たるか",
+   "label": "国ごとの見方"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "日本は景品の出し方、ベルギーは賭博そのもの。\n国によって、見るところが違うのね。",
    "img": "table:アメリカの裁判所=買った人が損をしたか;日本の消費者庁=そろえるともらえる景品か;ベルギーの役所=お金を払って偶然で当たるか",
    "label": "国ごとの見方"
   },
