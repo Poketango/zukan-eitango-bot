@@ -10,7 +10,7 @@ on:
         description: "1にすると投稿せず動画だけ作る"
         default: "1"
       kind:
-        description: "name/plus/scary/real3/speed5/which/rank のどれかを指定すると、その型で作る（空欄なら順番どおり）"
+        description: "name/plus/scary/real3/speed5/which/rank/talk のどれかを指定すると、その型で作る（空欄なら順番どおり。夜の回は talk）"
         default: ""
 permissions:
   contents: write

@@ -405,13 +405,13 @@ def which_video(q, sps, D):
     v1 = tts("この英語版の図鑑、どのポケモンのこと？", ZUNDA, SPEED)
     v2 = tts(f"正解は、{D['names'][q['key']]}なのだ！" + pron_say(q["key"], D["names"][q["key"]]), ZUNDA, SPEED)
     segs = [(lambda t: which_frame(q, sps, {}, D), dur(v1, 2.6))]
-    for c in (5, 4, 3, 2, 1): segs.append((lambda t, c=c: which_frame(q, sps, {"count": c, "frac": (c - t) / 5}, D), 1.0))
+    for c in (3, 2, 1): segs.append((lambda t, c=c: which_frame(q, sps, {"count": c, "frac": (c - t) / 3}, D), 1.0))   # 2026-11-16 5秒→3秒
     segs.append((lambda t: which_frame(q, sps, {"reveal": t}, D), dur(v2, 4.5) + 0.5))
     st, total = seq(segs); m = Mix(total, STYLE)
     m.music(0, total)
-    for c in range(5): m.tick(st[1 + c])
-    m.ding(st[6]); m.voice(0.1, v1, "think"); m.voice(st[6] + 0.25, v2, "proud")
-    return segs, m, which_frame(q, sps, {"count": 5, "frac": 1}, D)
+    for c in range(3): m.tick(st[1 + c])
+    m.ding(st[4]); m.voice(0.1, v1, "think"); m.voice(st[4] + 0.25, v2, "proud")
+    return segs, m, which_frame(q, sps, {"count": 3, "frac": 1}, D)
 
 
 # =========================================================

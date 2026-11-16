@@ -68,7 +68,26 @@ def get_json(name):
     with urllib.request.urlopen(f"{SITE}/{name}") as r: return json.loads(r.read().decode("utf-8"))
 
 
+_HD, _JS = {}, {}
+
+
+def get_json_cached(name):
+    if name not in _JS: _JS[name] = get_json(name)
+    return _JS[name]
+
+
+
 def sprite(key):
+    """ポケモンの絵。2026-11-16 てこ入れ：本番では小さいドット絵ではなく大きな公式イラストを使う（取れなければドット絵）"""
+    if not LOCAL and os.environ.get("HD_ART", "1") == "1":
+        if key not in _HD:
+            _HD[key] = None
+            try:
+                pid = int(get_json_cached("pokedex_stats.json")[key]["id"])
+                with urllib.request.urlopen(f"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{pid}.png", timeout=20) as r:
+                    _HD[key] = Image.open(io.BytesIO(r.read())).convert("RGBA")
+            except Exception as e: print("公式イラストなし", key, repr(e)[:80])
+        if _HD[key] is not None: return _HD[key].copy()
     try:
         if LOCAL: return Image.open(os.path.join(LOCAL, "pokemon_sprites", key + ".png")).convert("RGBA")
         with urllib.request.urlopen(f"{SITE}/pokemon_sprites/{urllib.parse.quote(key)}.png") as r:
@@ -80,7 +99,7 @@ def sprite(key):
 def big(sp, size):
     bb = sp.getbbox() or (0, 0, sp.width, sp.height)
     sp = sp.crop(bb); s = size / max(sp.size)
-    return sp.resize((max(1, int(sp.width * s)), max(1, int(sp.height * s))), Image.NEAREST)
+    return sp.resize((max(1, int(sp.width * s)), max(1, int(sp.height * s))), Image.NEAREST if max(sp.size) < 200 else Image.LANCZOS)
 
 
 def silhouette(sp, color=(30, 30, 40)):
@@ -587,6 +606,13 @@ if __name__ == "__main__":
     now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=9)
     n = int(os.environ["N"]) if os.environ.get("N") else (now.date() - START).days * SLOTS_PER_DAY + slot_now(now)
     kind = os.environ.get("KIND") or KINDS[n % len(KINDS)]
+    # 2026-11-16 てこ入れ：夜19:05の回は、掛け合いの新しい型「英語名の意味」を出す（台本 talk/ が残っているかぎり）
+    import talk
+    try: done0 = {json.loads(l)["title"] for l in open(LOG, encoding="utf-8") if l.strip()}
+    except Exception: done0 = set()
+    tpath, TS = talk.next_script(done0)
+    if (os.environ.get("KIND") == "talk") or (not os.environ.get("KIND") and slot_now(now) == 2 and TS is not None):
+        kind = "talk"
     m = n // len(KINDS)
     import music
     STYLE = music.style(n * 101 + KINDS.index(kind), "quiz")
@@ -596,6 +622,18 @@ if __name__ == "__main__":
     except Exception: done = set()
     import formats
     D = dict(en=en, jp=jp, names=names, stats=stats, origins=origins)
+    if kind == "talk":
+        if TS is None: print("掛け合いの台本が残っていません"); sys.exit(1)
+        print("台本:", tpath)
+        talk.build(TS, "short.mp4", seed=n)
+        title, desc = talk.meta(TS)
+        import end_card; end_card.add("short.mp4")
+        print(kind, n); print(title); print(desc)
+        if os.environ.get("DRY_RUN") == "1": sys.exit()
+        vid = post_youtube(title, desc, "short.mp4")
+        line = json.dumps({"date": now.strftime("%Y-%m-%d %H:%M"), "n": n, "kind": kind, "id": vid, "title": title, "bgm": music.label(music.style(n, "quiz"))}, ensure_ascii=False) + "\n"
+        open("/tmp/new_log_line", "w", encoding="utf-8").write(line)
+        sys.exit()
     for skip in range(200):
         mm = m + skip
         if kind in ("name", "scary"):
