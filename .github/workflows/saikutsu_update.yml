@@ -1,0 +1,41 @@
+name: saikutsu-update
+# 採掘所の横動画（投稿済み・予約中）のタイトル・概要欄・サムネイルを直す：saikutsu/long/NNN/update.json を push すると動く
+on:
+  push:
+    branches: [main]
+    paths: ["saikutsu/long/*/update.json"]
+  workflow_dispatch:
+    inputs:
+      num: { description: "回番号", required: true }
+permissions:
+  contents: write
+concurrency:
+  group: saikutsu-upload
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - name: どの回か
+        run: |
+          if [ -n "${{ github.event.inputs.num }}" ]; then echo "NUM=${{ github.event.inputs.num }}" >> $GITHUB_ENV
+          else f=$(git diff --name-only HEAD~1 HEAD | grep 'saikutsu/long/.*/update.json' | head -1); echo "NUM=$(echo $f | sed -E 's#saikutsu/long/0*([0-9]+)/.*#\1#')" >> $GITHUB_ENV; fi
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra
+      - run: pip install -q pillow numpy google-api-python-client google-auth cryptography
+      - run: python saikutsu_update.py
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT2_REFRESH_TOKEN: ${{ secrets.YT2_REFRESH_TOKEN }}
+      - name: できたサムネと記録を残す
+        if: success()
+        run: |
+          mkdir -p saikutsu/long/$(printf %03d $NUM) && cp out/thumbnail.png saikutsu/long/$(printf %03d $NUM)/thumbnail_now.png 2>/dev/null || true
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add posted_saikutsu_long.json saikutsu/long/*/thumbnail_now.png && git commit -qm "採掘所 第${NUM}回のタイトル・サムネを直した" || true
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
