@@ -922,12 +922,12 @@
  "thumb": {
   "pre": "ポケモンGOで撮った景色が",
   "big": [
-   "ドローンの",
-   "目に？"
+   "ドローン",
+   "の目に？"
   ],
   "hl": 0,
-  "main": "commons:UA FPV strike drones 02.jpg^wiki:en:First-person_view_(radio_control)",
-  "back": "commons:Aerial view of the Pentagon, Arlington, VA (38285035892).jpg^wiki:en:The_Pentagon",
+  "main": "wiki:en:Pokémon_Go",
+  "back": "commons:UA FPV strike drones 02.jpg^wiki:en:First-person_view_(radio_control)",
   "chara": [
    "z",
    "shock"
