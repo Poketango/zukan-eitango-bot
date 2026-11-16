@@ -1,0 +1,43 @@
+name: saikutsu-upload
+# 採掘所の横動画をアップロードする：saikutsu/long/NNN/upload.json を push すると動く（確認が済んでから置く）
+on:
+  push:
+    branches: [main]
+    paths: ["saikutsu/long/*/upload.json"]
+  workflow_dispatch:
+    inputs:
+      num: { description: "回番号", required: true }
+permissions:
+  contents: write
+concurrency:
+  group: saikutsu-upload
+  cancel-in-progress: false
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - name: どの回か
+        run: |
+          if [ -n "${{ github.event.inputs.num }}" ]; then echo "NUM=${{ github.event.inputs.num }}" >> $GITHUB_ENV
+          else f=$(git diff --name-only HEAD~1 HEAD | grep 'saikutsu/long/.*/upload.json' | head -1); echo "NUM=$(echo $f | sed -E 's#saikutsu/long/0*([0-9]+)/.*#\1#')" >> $GITHUB_ENV; fi
+      - name: 動画を取り出す
+        run: |
+          B=render-saikutsu-$(printf %03d $NUM)
+          git fetch -q --depth=1 origin $B && mkdir -p r && git --work-tree=r checkout FETCH_HEAD -- . && git reset -q && ls -la r
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q google-api-python-client google-auth cryptography
+      - run: python saikutsu_upload.py r
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT2_REFRESH_TOKEN: ${{ secrets.YT2_REFRESH_TOKEN }}
+      - name: 記録を保存する
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add posted_saikutsu_long.json && git commit -qm "採掘所 第${NUM}回を投稿" || true
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
