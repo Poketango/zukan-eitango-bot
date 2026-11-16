@@ -615,7 +615,7 @@ if __name__ == "__main__":
         kind = "talk"
     m = n // len(KINDS)
     import music
-    STYLE = music.style(n * 101 + KINDS.index(kind), "quiz")
+    STYLE = music.style(n * 101 + (KINDS.index(kind) if kind in KINDS else 7), "quiz")
     bgm_label = music.label(STYLE) if kind != "scary" else "horror/" + str(STYLE["seed"])
     # 指示書：同じ内容のショートは二度と上げない。これまでに出した題名と同じになる出題は飛ばす
     try: done = {json.loads(l)["title"] for l in open(LOG, encoding="utf-8") if l.strip()}
