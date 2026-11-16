@@ -189,6 +189,9 @@ def load(ref):
             if kind == "art": im = art(arg)
             elif kind == "wiki": im = wiki(arg)
             elif kind == "commons": im = ZL.commons_img(arg)
+            elif kind == "web":                              # web:URL（公式サイトの画像など。2026-11-17）
+                im = ZL.web_img(arg)
+                if im is not None: CREDITS[alt] = arg.split("?")[0]
             elif kind == "csearch": im = csearch(arg)
             elif kind == "row": im = fig_row(arg)
             elif kind == "table": im = fig_table(arg)
