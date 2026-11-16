@@ -559,6 +559,7 @@ def thumbnail(d, out_dir):
     import glob
     th = json.load(open(os.path.join(d, "script.json"), encoding="utf-8")).get("thumb")
     if not th: return
+    if th.get("layout") == "v2": return thumbnail_v2(th, out_dir)
     W, H = 1280, 720
     cand = sorted(glob.glob("/usr/share/fonts/**/NotoSerifCJK-Black.ttc", recursive=True) + glob.glob("/usr/share/fonts/**/NotoSerifCJK-Bold.ttc", recursive=True))
     FM = cand[0] if cand else F_HOOK
@@ -606,6 +607,48 @@ def thumbnail(d, out_dir):
         y += f.size + 30
     im.convert("RGB").save(os.path.join(out_dir, "thumbnail.png"))
 
+
+def thumbnail_v2(th, out_dir):
+    """サムネイルの型2（2026-11-17）：背景の写真を画面いっぱいに敷き、左を暗く。
+    左に小さい前置き＋特大の2行（強調の行は赤字に白縁、ほかは白字に黒縁、どちらも外側に黒の太縁を二重に）、
+    右上に話題の目印（badge：ロゴなど）、右下に表情を誇張した立ち絵。
+    台本の thumb：{"layout": "v2", "pre": 前置き, "big": [2行], "hl": 強調する行, "back": 背景, "badge": 右上の画像, "chara": ["z", "shock"]}"""
+    import glob
+    W, H = 1280, 720
+    cand = sorted(glob.glob("/usr/share/fonts/**/NotoSansCJK-Black.ttc", recursive=True) + glob.glob("/usr/share/fonts/**/NotoSerifCJK-Black.ttc", recursive=True))
+    FM = cand[0] if cand else F_HOOK
+    im = Image.new("RGBA", (W, H), (10, 10, 12, 255))
+    back = load(th["back"]) if th.get("back") else None
+    if back is not None:
+        b = back.convert("RGB"); s = max(W / b.width, H / b.height); b = b.resize((int(b.width * s), int(b.height * s)), Image.LANCZOS)
+        x0, y0 = (b.width - W) // 2, (b.height - H) // 2; im.paste(b.crop((x0, y0, x0 + W, y0 + H)), (0, 0))
+    g = np.zeros((H, W, 4), dtype=np.uint8); xs = np.linspace(0, 1, W)
+    a = np.clip(0.92 - xs * 0.75, 0.25, 0.92); g[..., 3] = (a[None, :] * 255).astype(np.uint8); g[..., :3] = (8, 6, 10)
+    im.alpha_composite(Image.fromarray(g, "RGBA"))
+    badge = load(th["badge"]) if th.get("badge") else None
+    if badge is not None:
+        s = min(360 / badge.width, 230 / badge.height); m = badge.resize((int(badge.width * s), int(badge.height * s)), Image.LANCZOS)
+        im.alpha_composite(m, (W - m.width - 30, 24))
+    ch = th.get("chara") or ["z", "shock"]
+    t_ = SS.tachie(ch[0], False, 520, ch[1] if len(ch) > 1 else "surprise")
+    if ch[0] == "m": t_ = t_.transpose(Image.FLIP_LEFT_RIGHT)
+    sh = Image.new("RGBA", t_.size, (0, 0, 0, 0)); sh.putalpha(t_.getchannel("A").point(lambda v: int(v * 0.7))); sh = sh.filter(ImageFilter.GaussianBlur(10))
+    x_ = W - t_.width + 10; y_ = H - t_.height
+    im.alpha_composite(sh, (x_ + 8, y_ + 6)); im.alpha_composite(t_, (x_, y_))
+    d_ = ImageDraw.Draw(im)
+    d_.text((48, 92), th["pre"], font=ImageFont.truetype(FM, 52), fill=(255, 255, 255), stroke_width=8, stroke_fill=(0, 0, 0), anchor="lm")
+    y = 150
+    for k, t in enumerate(th["big"]):
+        f = ImageFont.truetype(FM, 190)
+        while d_.textlength(t, font=f) > 760: f = ImageFont.truetype(FM, f.size - 6)
+        on = k == th.get("hl", -1)
+        col = (255, 40, 40) if on and th.get("hl_color", "red") == "red" else (255, 214, 40) if on else (255, 255, 255)
+        cy = y + f.size // 2
+        d_.text((52, cy), t, font=f, fill=(0, 0, 0), stroke_width=30, stroke_fill=(0, 0, 0), anchor="lm")
+        d_.text((52, cy), t, font=f, fill=col, stroke_width=14, stroke_fill=(255, 255, 255) if on else (0, 0, 0), anchor="lm")
+        d_.text((52, cy), t, font=f, fill=col, anchor="lm")
+        y += f.size + 18
+    im.convert("RGB").save(os.path.join(out_dir, "thumbnail.png"))
 
 def accent_dump(L, out_dir):
     """全行の読みとアクセント（VOICEVOX の AquesTalk 風表記）を書き出す。' がアクセントの山、/ と 、が句の区切り"""
