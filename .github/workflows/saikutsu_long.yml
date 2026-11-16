@@ -1,7 +1,7 @@
 name: saikutsu-long
 # ポケモン雑学採掘所の横動画（1920×1080）を作る。saikutsu/long/NNN/render.json を書き換えて push すると動く。
 #   render.json の例 {"num": 3, "mode": "sheet"}（音声なしで1行1コマの一覧だけ）／{"num": 3, "mode": "full"}（動画まで）
-#   できたものは render-saikutsu-NNN ブランチに置く（動画は 45MB ごとに分けて saikutsu_long.mp4.part-aa ... ）。
+#   できたものは render-saikutsu-NNN ブランチに置く（mode が accent のときは accent-saikutsu-NNN ブランチ。動画は 45MB ごとに分けて saikutsu_long.mp4.part-aa ... ）。
 #   アップロードはしない（公開は Claude が確認してから別の手順で行う）。
 on:
   push:
@@ -53,6 +53,7 @@ jobs:
         if: always()
         run: |
           B=render-saikutsu-$(printf %03d $NUM)
+          if [ "$MODE" = "accent" ]; then B=accent-saikutsu-$(printf %03d $NUM); fi   # 読みの確認だけのときは完成動画のブランチを上書きしない
           mkdir -p /tmp/o && cp -r out/* /tmp/o/ 2>/dev/null || true
           cd /tmp/o
           if [ -f saikutsu_long.mp4 ]; then split -b 45m saikutsu_long.mp4 saikutsu_long.mp4.part- && rm saikutsu_long.mp4; fi
