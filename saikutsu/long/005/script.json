@@ -1,6 +1,6 @@
 {
  "no": 5,
- "title": "ポケモンGOのARスキャンが、軍用ドローンの話につながった。",
+ "title": "ポケモンGOのスキャンで育ったAIが、米軍に売り込まれている。",
  "neta": "プレイヤーの撮った300億枚の画像がAIに使われた",
  "neta_also": [
   "アメリカ国防総省が敷地内のポケモンGOを制限",
@@ -920,14 +920,16 @@
   }
  ],
  "thumb": {
-  "pre": "ポケモンGOで撮った景色が",
+  "layout": "v2",
+  "pre": "ポケモンGOのスキャンで育ったAIが",
   "big": [
-   "ドローン",
-   "の目に？"
+   "米軍へ",
+   "売り込み"
   ],
   "hl": 0,
-  "main": "wiki:en:Pokémon_Go",
-  "back": "commons:UA FPV strike drones 02.jpg^wiki:en:First-person_view_(radio_control)",
+  "hl_color": "red",
+  "back": "commons:Aerial view of the Pentagon, Arlington, VA (38285035892).jpg^wiki:en:The_Pentagon",
+  "badge": "wiki:en:Pokémon_Go",
   "chara": [
    "z",
    "shock"
