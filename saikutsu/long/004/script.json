@@ -70,9 +70,9 @@
    "label": "第1弾のエビワラー（英語版）",
    "say": "第1弾のエビワラーは、とうエネルギー1枚で20ダメージ。3枚あれば40ダメージなのだ。",
    "mark": [
-    0.5,
+    0.55,
     0.66,
-    0.16
+    0.15
    ]
   },
   {
@@ -126,6 +126,7 @@
    "x": {
     "head": "1999年、ポケモンカードの\nパックは「賭博」だと\n任天堂が訴えられた",
     "img": [
+     "booster_pack.jpg",
      "wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego"
     ],
     "bubble": "パックが賭博なのだ？",
@@ -157,27 +158,15 @@
    "w": "m",
    "face": "normal",
    "t": "訴えられたのは、任天堂のアメリカの会社と、\nカードの製造や権利の窓口をしていた会社。",
-   "img": "wiki:en:Nintendo",
-   "ety": [
-    [
-     "Nintendo of America",
-     "任天堂のアメリカの会社"
-    ],
-    [
-     "Wizards of the Coast",
-     "英語版のカードを作って売っていた会社"
-    ],
-    [
-     "4Kids Entertainment",
-     "ポケモンの権利の窓口だった会社"
-    ]
-   ]
+   "img": "table:Nintendo of America=任天堂のアメリカの会社;Wizards of the Coast=英語版のカードを作って売っていた会社;4Kids Entertainment=ポケモンの権利の窓口だった会社",
+   "label": "訴えられた3つの会社"
   },
   {
    "w": "z",
    "face": "shock",
    "t": "子どもが任天堂を訴えたのだ！？",
-   "img": "wiki:en:Nintendo"
+   "img": "table:Nintendo of America=任天堂のアメリカの会社;Wizards of the Coast=英語版のカードを作って売っていた会社;4Kids Entertainment=ポケモンの権利の窓口だった会社",
+   "label": "訴えられた3つの会社"
   },
   {
    "w": "m",
@@ -251,12 +240,7 @@
    "face": "normal",
    "t": "英語版の第1弾は、1パック11枚。\nそのうちレアは1枚だけ。",
    "img": "booster_pack.jpg",
-   "label": "1パック11枚・レアは1枚",
-   "mark": [
-    0.5,
-    0.93,
-    0.2
-   ]
+   "label": "1パック11枚・レアは1枚"
   },
   {
    "w": "m",
@@ -297,7 +281,8 @@
    "w": "z",
    "face": "shock",
    "t": "マフィアの法律で、任天堂を！？",
-   "img": "wiki:en:Nintendo"
+   "img": "table:RICO法=1970年にできたアメリカの法律;もとの目的=マフィアなどの組織犯罪の取り締まり;民事で訴えると=認められれば損害の3倍の賠償",
+   "label": "RICO法"
   },
   {
    "w": "m",
@@ -378,7 +363,8 @@
    "w": "m",
    "face": "normal",
    "t": "だから任天堂は記者に、こう答えたの。\n「この裁判だけ違う結果になると考える理由はない」",
-   "img": "wiki:en:Nintendo"
+   "img": "booster_pack.jpg",
+   "label": "任天堂のアメリカの会社の広報の話"
   },
   {
    "type": "title",
@@ -816,7 +802,7 @@
   ],
   "hl": 1,
   "main": "charizard_card.jpg",
-  "back": "wiki:en:Courtroom^wiki:en:United_States_Court_of_Appeals_for_the_Ninth_Circuit^wiki:en:James_R._Browning_United_States_Court_of_Appeals_Building",
+  "back": "wiki:en:James_R._Browning_United_States_Court_of_Appeals_Building^wiki:en:United_States_Court_of_Appeals_for_the_Ninth_Circuit^wiki:en:James_R._Browning_United_States_Court_of_Appeals_Building",
   "chara": [
    "z",
    "shock"
