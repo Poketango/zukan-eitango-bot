@@ -211,9 +211,9 @@ S("m", "happy", "もんすぺ！には、ポケモンの面白い雑学のコラ
 S("z", "happy", "今日の採掘はここまでなのだ。\nチャンネル登録もよろしくなのだ。", "site:", label="「もんすぺ！」で検索")
 L.append({"type": "ed"})
 
-thumb = {"pre": "ポケモンGOで撮った景色が", "big": ["ドローン", "の目に？"], "hl": 0,
-         "main": GO, "back": FPV2, "chara": ["z", "shock"]}
-out = {"no": 5, "title": "ポケモンGOのARスキャンが、軍用ドローンの話につながった。",
+thumb = {"layout": "v2", "pre": "ポケモンGOのスキャンで育ったAIが", "big": ["米軍へ", "売り込み"], "hl": 0, "hl_color": "red",
+         "back": PENTA, "badge": GO, "chara": ["z", "shock"]}
+out = {"no": 5, "title": "ポケモンGOのスキャンで育ったAIが、米軍に売り込まれている。",
        "neta": "プレイヤーの撮った300億枚の画像がAIに使われた",
        "neta_also": ["アメリカ国防総省が敷地内のポケモンGOを制限", "ロシアの大臣がポケモンGOはスパイの道具かもと疑った"],
        "lines": L, "thumb": thumb}
