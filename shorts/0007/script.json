@@ -1,0 +1,86 @@
+{
+ "no": 7,
+ "title": "プテラの名前の翼竜は、子どもだった。【ポケモン雑学採掘所】",
+ "hook": [
+  "論文で判明",
+  "プテラの名前の翼竜は",
+  "子どもだった"
+ ],
+ "hl": "子ども",
+ "lead": "2014年、プテラの英語名エアロダクティルから名前を取った翼竜「アエロダクティルス」が発表された。ところが2024年の研究で、世界で最初に見つかった翼竜プテロダクティルスの子どもだとされた。",
+ "article": "https://poketango.com/zatsugaku/fossil-pokemon-models.html",
+ "video": "4tO0y8AEdlQ",
+ "pokemon": [
+  [
+   "aerodactyl",
+   "プテラ",
+   "Aerodactyl"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "z",
+   "t": "プテラは、DPのころ\n先発で大暴れしてたのだ",
+   "img": "art:142^sp:aerodactyl",
+   "face": "proud"
+  },
+  {
+   "w": "m",
+   "t": "そのプテラの名前をもらった、\n本物の翼竜がいるの",
+   "img": "art:142^sp:aerodactyl"
+  },
+  {
+   "w": "m",
+   "t": "2014年、ドイツの石灰岩から出た\n小さな翼竜の化石に、\n新しい名前が付いたの",
+   "img": "wiki:en:Solnhofen_Limestone^wiki:en:Aerodactylus",
+   "cap": "ドイツのゾルンホーフェンの石灰岩"
+  },
+  {
+   "w": "m",
+   "t": "アエロダクティルス。論文に、\nポケモンのエアロダクティルから\n取ったと書いてあるわ",
+   "img": "row:art:142|Aerodactyl;wiki:en:Aerodactylus|Aerodactylus",
+   "ans": true,
+   "say": "アエロダクティルス。論文に、ポケモンのエアロダクティルから取ったと書いてあるわ"
+  },
+  {
+   "w": "z",
+   "t": "プテラが科学に名前を残したのだ！\nやっぱりプテラは最強なのだ！",
+   "img": "art:142^sp:aerodactyl",
+   "face": "happy"
+  },
+  {
+   "w": "m",
+   "t": "ところがその化石は、\n6つとも子どもだったの",
+   "img": "wiki:en:Aerodactylus",
+   "cap": "アエロダクティルスとされた化石"
+  },
+  {
+   "w": "m",
+   "t": "2024年の研究で、世界で最初に\n見つかった翼竜プテロダクティルスの\n子どもだとされたのよ",
+   "img": "row:wiki:en:Aerodactylus|子ども>wiki:en:Pterodactylus|大人",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "t": "プテラの翼竜が……\nしんか前だったのだ……",
+   "img": "row:wiki:en:Aerodactylus|子ども>wiki:en:Pterodactylus|大人",
+   "face": "shock"
+  },
+  {
+   "w": "m",
+   "t": "子どもを別の種類と勘違いした化石は、\nほかの化石ポケモンのモデルにも\nあるの",
+   "img": "row:art:408|ズガイドス;art:347|アノプス;art:697|ガチゴラス"
+  },
+  {
+   "w": "m",
+   "t": "化石ポケモンのモデルの話は、\n本編でまとめて掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/4tO0y8AEdlQ/maxresdefault.jpg^web:https://i.ytimg.com/vi/4tO0y8AEdlQ/hqdefault.jpg^art:142"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/4tO0y8AEdlQ/maxresdefault.jpg^web:https://i.ytimg.com/vi/4tO0y8AEdlQ/hqdefault.jpg^art:142",
+   "face": "happy"
+  }
+ ]
+}

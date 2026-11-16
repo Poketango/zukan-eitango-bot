@@ -1,0 +1,84 @@
+{
+ "no": 9,
+ "title": "リリーラのモデルは、花じゃなくて動物。【ポケモン雑学採掘所】",
+ "hook": [
+  "見た目は花",
+  "リリーラのモデルは",
+  "動物だった"
+ ],
+ "hl": "動物",
+ "lead": "リリーラとユレイドルのモデルのウミユリは、植物ではなくウニやヒトデと同じ棘皮動物。花びらに見えるのは腕で、プランクトンを捕まえて食べる。",
+ "article": "https://poketango.com/zatsugaku/fossil-pokemon-models.html",
+ "video": "4tO0y8AEdlQ",
+ "pokemon": [
+  [
+   "lileep",
+   "リリーラ",
+   "Lileep"
+  ],
+  [
+   "cradily",
+   "ユレイドル",
+   "Cradily"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "z",
+   "t": "リリーラは、いわとくさタイプの\n花みたいなポケモンなのだ",
+   "img": "art:345^sp:lileep"
+  },
+  {
+   "w": "m",
+   "t": "見た目は花だけど、モデルの\nウミユリは植物じゃないの",
+   "img": "art:345^sp:lileep"
+  },
+  {
+   "w": "m",
+   "t": "ウニやヒトデと同じ、\n棘皮動物の仲間よ",
+   "img": "row:wiki:en:Crinoid|ウミユリ;wiki:en:Sea_urchin|ウニ;wiki:en:Starfish|ヒトデ",
+   "ans": true,
+   "say": "ウニやヒトデと同じ、きょくひどうぶつの仲間よ"
+  },
+  {
+   "w": "z",
+   "t": "花なのに、動物なのだ！？",
+   "img": "row:wiki:en:Crinoid|ウミユリ;wiki:en:Sea_urchin|ウニ;wiki:en:Starfish|ヒトデ",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "花びらに見えるのは腕。\n流れてくるプランクトンを\n捕まえて食べるの",
+   "img": "wiki:en:Crinoid",
+   "cap": "ウミユリ"
+  },
+  {
+   "w": "m",
+   "t": "子どものころは海を泳いで、\n大人になると海の底に\nくっついて暮らすものが多いの",
+   "img": "wiki:en:Crinoid",
+   "cap": "ウミユリ"
+  },
+  {
+   "w": "z",
+   "t": "化石だけ見たら、\n子どもと大人が別の生き物に\n見えそうなのだ",
+   "img": "row:art:345|リリーラ>art:346|ユレイドル"
+  },
+  {
+   "w": "m",
+   "t": "大昔の海にはウミユリが群れで生えて、\nほとんどウミユリの化石でできた\n岩まであるの",
+   "img": "wiki:en:Crinoidal_limestone^csearch:crinoidal limestone",
+   "cap": "ウミユリの化石でできた石灰岩"
+  },
+  {
+   "w": "m",
+   "t": "化石ポケモンのモデルの話は、\n本編でまとめて掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/4tO0y8AEdlQ/maxresdefault.jpg^web:https://i.ytimg.com/vi/4tO0y8AEdlQ/hqdefault.jpg^art:142"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/4tO0y8AEdlQ/maxresdefault.jpg^web:https://i.ytimg.com/vi/4tO0y8AEdlQ/hqdefault.jpg^art:142",
+   "face": "happy"
+  }
+ ]
+}

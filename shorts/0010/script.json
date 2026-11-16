@@ -1,0 +1,89 @@
+{
+ "no": 10,
+ "title": "ズガイドスのモデルの恐竜は、3種類だと思われていた。【ポケモン雑学採掘所】",
+ "hook": [
+  "成長で別人",
+  "ズガイドスのモデルは",
+  "3種類にされた"
+ ],
+ "hl": "3種類",
+ "lead": "ズガイドスのモデルのパキケファロサウルス。頭が平らでトゲのあるドラコレックス・ホグワーツィアは、2009年の研究でパキケファロサウルスの子どもだとされた。",
+ "article": "https://poketango.com/zatsugaku/fossil-pokemon-models.html",
+ "video": "4tO0y8AEdlQ",
+ "pokemon": [
+  [
+   "cranidos",
+   "ズガイドス",
+   "Cranidos"
+  ],
+  [
+   "rampardos",
+   "ラムパルド",
+   "Rampardos"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "z",
+   "t": "ズガイドスの頭、\nかたそうなのだ",
+   "img": "art:408^sp:cranidos"
+  },
+  {
+   "w": "m",
+   "t": "モデルの恐竜も、\n頭のてっぺんの骨が\nドームみたいに分厚いの",
+   "img": "art:408^sp:cranidos"
+  },
+  {
+   "w": "m",
+   "t": "パキケファロサウルス。\nずつきが得意だったとも\n言われる恐竜よ",
+   "img": "row:art:408|ズガイドス;wiki:en:Pachycephalosaurus|パキケファロサウルス"
+  },
+  {
+   "w": "m",
+   "t": "同じ時代の同じ場所から、\n頭が平らでトゲトゲの恐竜も\n見つかってたの",
+   "img": "csearch:Dracorex hogwartsia Childrens Museum Indianapolis^wiki:en:Dracorex",
+   "cap": "ドラコレックスの頭の骨"
+  },
+  {
+   "w": "m",
+   "t": "名前はドラコレックス・ホグワーツィア。\nハリー・ポッターの魔法学校、\nホグワーツから取ったのよ",
+   "img": "csearch:Dracorex hogwartsia Childrens Museum Indianapolis^wiki:en:Dracorex",
+   "label": "Dracorex hogwartsia",
+   "say": "名前は、ドラコレックス、ホグワーツィア。ハリー・ポッターの魔法学校、ホグワーツから取ったのよ"
+  },
+  {
+   "w": "z",
+   "t": "かっこいい名前なのだ！",
+   "img": "csearch:Dracorex hogwartsia Childrens Museum Indianapolis^wiki:en:Dracorex",
+   "face": "happy"
+  },
+  {
+   "w": "m",
+   "t": "ところが2009年、これは\nパキケファロサウルスの子どもだと\n発表されたの",
+   "img": "row:csearch:Dracorex hogwartsia Childrens Museum Indianapolis^wiki:en:Dracorex|子ども>wiki:en:Pachycephalosaurus|大人",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "t": "若いうちは頭が平らでトゲがあって、\n大人になるとトゲが縮んで\nドームが盛り上がる、という説よ",
+   "img": "commons:Pachycephalosaurus_ontogeny_skulls_-_Museum_of_the_Rockies_-_2013-07-08.jpg^wiki:en:Pachycephalosaurus",
+   "cap": "成長の順に並べた頭の骨"
+  },
+  {
+   "w": "z",
+   "t": "まさに、ズガイドスから\nラムパルドへのしんかなのだ",
+   "img": "row:art:408|ズガイドス>art:409|ラムパルド"
+  },
+  {
+   "w": "m",
+   "t": "化石ポケモンのモデルの話は、\n本編でまとめて掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/4tO0y8AEdlQ/maxresdefault.jpg^web:https://i.ytimg.com/vi/4tO0y8AEdlQ/hqdefault.jpg^art:142"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/4tO0y8AEdlQ/maxresdefault.jpg^web:https://i.ytimg.com/vi/4tO0y8AEdlQ/hqdefault.jpg^art:142",
+   "face": "happy"
+  }
+ ]
+}

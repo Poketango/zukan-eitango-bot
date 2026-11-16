@@ -3,7 +3,7 @@
 #   ・めたん（解説）とずんだもん（聞き役）。画面の上に見出し、中央に大きな画像、下に字幕、両下の隅に小さな立ち絵
 #   ・最後に end_card でサイトのアドレスとホーム画面
 #   ・投稿済みは posted_saikutsu.json に残し、まだ出していない一番若い番号を出す。台本が尽きたら何もしない
-import os, sys, json, glob, wave, subprocess, datetime, io, urllib.request, urllib.parse
+import os, re, sys, json, glob, wave, subprocess, datetime, io, urllib.request, urllib.parse
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
@@ -96,7 +96,28 @@ def tachie(who, open_, h, face="normal"):
 
 
 def load_img(d, spec):
-    """spec: ファイル名、sp:英語名（スプライト1体）、sp2:a,b／sp3:a,b,c（並べる）"""
+    """spec: ファイル名、sp:英語名（スプライト1体）、sp2:a,b／sp3:a,b,c（並べる）
+    2026-11-16：横動画（saikutsu_long.load）と同じ書き方も使える。art:番号、wiki:en:記事名、commons:ファイル名、
+    csearch:検索語、row:A|札;B|札（> で矢印）、sil:A、paper:… 。「A^B」は A が取れないとき B を使う（B に sp: も可）"""
+    if not spec.startswith("row:") and "^" in spec:
+        alts = spec.split("^")
+        for alt in alts[:-1]:
+            try:
+                r = load_img(d, alt)
+                if r[0] is not None: return r
+            except Exception as e:
+                print("画像を取れない:", alt, repr(e)[:120])
+        return load_img(d, alts[-1])
+    if spec.startswith("web:"):                       # 本編のサムネ（https://i.ytimg.com/vi/ID/maxresdefault.jpg）など
+        import saikutsu_long as SL
+        url = spec[4:]
+        return SL._get(url, "web_" + re.sub(r"[^A-Za-z0-9._-]", "_", url)[-120:]), False
+    if re.match(r"(art|wiki|commons|csearch|row|table|sil|paper|site):", spec):
+        import saikutsu_long as SL                    # 循環を避けてここで読む
+        SL.DIR = d
+        im = SL.load(spec)
+        if im is None: raise RuntimeError("画像を取れない: " + spec)
+        return im.convert("RGBA"), False
     if spec.startswith("sp"):
         keys = spec.split(":", 1)[1].split(",")
         sps = [P.sprite(k) for k in keys]
@@ -292,6 +313,16 @@ def build(d, out):
     return voiced
 
 
+def credits_text():
+    """ネットから取った画像の出典（ウィキペディア・コモンズなど）。なければ空"""
+    c = {}
+    for mod in ("saikutsu_long", "zatsugaku_long"):
+        m = sys.modules.get(mod)
+        if m is not None: c.update(getattr(m, "CREDITS", {}))
+    if not c: return ""
+    return "画像：" + "／".join(dict.fromkeys(c.values())) + "\n"
+
+
 def meta(s):
     site = P.SITE
     pages = "\n".join(f"{ja}（{en}）の英語版図鑑 → {site}/p/{slug}.html" for slug, ja, en in s["pokemon"])
@@ -299,6 +330,7 @@ def meta(s):
             f"▼この話の記事（出典つき）\n{s['article']}\n"
             + (f"▼くわしくは本編で\nhttps://youtu.be/{s['video']}\n" if s.get("video") else "")
             + f"\n{pages}\n\nポケモンの英語名と図鑑は「もんすぺ！」→ {site}\n\n"
+            + credits_text() +
             "音声：VOICEVOX:四国めたん、VOICEVOX:ずんだもん\n立ち絵：坂本アヒル様\n効果音：OtoLogic（https://otologic.jp）\n"
             "※ファンが運営する非公式のチャンネルです。株式会社ポケモン、任天堂、クリーチャーズ、ゲームフリークとは関係ありません。\n\n"
             "#ポケモン #ポケモン雑学 #ポケモン雑学採掘所 #shorts")

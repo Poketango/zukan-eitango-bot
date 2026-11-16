@@ -1,0 +1,89 @@
+{
+ "no": 8,
+ "title": "アノプスのモデルは、エビとクラゲとナマコにされた。【ポケモン雑学採掘所】",
+ "hook": [
+  "化石の大誤解",
+  "アノプスのモデルは",
+  "3つに分けられた"
+ ],
+ "hl": "3つ",
+ "lead": "アノプスとアーマルドのモデルのアノマロカリスの仲間は、腕がエビ、口がクラゲ、胴体がナマコと、別々の生き物の化石だと思われていた。1匹の大きな生き物だとわかったのは1985年の論文。",
+ "article": "https://poketango.com/zatsugaku/fossil-pokemon-models.html",
+ "video": "4tO0y8AEdlQ",
+ "pokemon": [
+  [
+   "anorith",
+   "アノプス",
+   "Anorith"
+  ],
+  [
+   "armaldo",
+   "アーマルド",
+   "Armaldo"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "アーマルドって、こうそくスピンで\n相手のまいた岩を片づける役が\nできるのよ",
+   "img": "art:348^sp:armaldo",
+   "face": "happy"
+  },
+  {
+   "w": "z",
+   "t": "めたんは、ほんとに\n渋い戦い方が好きなのだ",
+   "img": "art:348^sp:armaldo"
+  },
+  {
+   "w": "m",
+   "t": "その進化前のアノプスのモデルは、\nアノマロカリス。\n5億年くらい前の海の生き物よ",
+   "img": "row:art:347|アノプス;wiki:en:Anomalocaris|アノマロカリス"
+  },
+  {
+   "w": "m",
+   "t": "でもこの仲間の化石は、\n体がバラバラに見つかって、\n別々の生き物だと思われてたの",
+   "img": "wiki:en:Anomalocaris",
+   "cap": "アノマロカリスの化石"
+  },
+  {
+   "w": "m",
+   "t": "1892年、トゲトゲの腕は\nエビの体だと思われた",
+   "img": "row:csearch:Anomalocaris canadensis frontal appendage|腕の化石;wiki:en:Shrimp|エビ"
+  },
+  {
+   "w": "m",
+   "t": "丸い口はクラゲ、\n胴体はナマコだと思われたわ",
+   "img": "row:wiki:en:Shrimp|腕→エビ;wiki:en:Jellyfish|口→クラゲ;wiki:en:Sea_cucumber|胴体→ナマコ",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "t": "1匹の生き物が、エビとクラゲと\nナマコに分かれてたのだ！？",
+   "img": "row:wiki:en:Shrimp|腕→エビ;wiki:en:Jellyfish|口→クラゲ;wiki:en:Sea_cucumber|胴体→ナマコ",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "腕と口がつながった化石が調べられて、\n1985年の論文で、やっと1匹の\n大きな生き物だとわかったの",
+   "img": "wiki:en:Anomalocaris",
+   "cap": "アノマロカリスの化石",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "t": "アノプスのカセキが、\n3つに割れてたようなものなのだ",
+   "img": "art:347^sp:anorith"
+  },
+  {
+   "w": "m",
+   "t": "化石ポケモンのモデルの話は、\n本編でまとめて掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/4tO0y8AEdlQ/maxresdefault.jpg^web:https://i.ytimg.com/vi/4tO0y8AEdlQ/hqdefault.jpg^art:142"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/4tO0y8AEdlQ/maxresdefault.jpg^web:https://i.ytimg.com/vi/4tO0y8AEdlQ/hqdefault.jpg^art:142",
+   "face": "happy"
+  }
+ ]
+}

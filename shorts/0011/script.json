@@ -1,0 +1,82 @@
+{
+ "no": 11,
+ "title": "ガチゴラスのモデルの「子ども」は、別の恐竜だった。【ポケモン雑学採掘所】",
+ "hook": [
+  "2025年の論文",
+  "ティラノの子どもは",
+  "別の恐竜"
+ ],
+ "hl": "別の恐竜",
+ "lead": "ティラノサウルスの子どもだと考えられてきたナノティラヌス。2025年10月のネイチャーの論文で、「決闘する恐竜」の化石が約20歳の大人だとわかり、別の種類の恐竜だとされた。",
+ "article": "https://poketango.com/zatsugaku/fossil-pokemon-models.html",
+ "video": "4tO0y8AEdlQ",
+ "pokemon": [
+  [
+   "tyrunt",
+   "チゴラス",
+   "Tyrunt"
+  ],
+  [
+   "tyrantrum",
+   "ガチゴラス",
+   "Tyrantrum"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "z",
+   "t": "チゴラスは、しんかすると\nガチゴラスになるのだ",
+   "img": "row:art:696|チゴラス>art:697|ガチゴラス"
+  },
+  {
+   "w": "m",
+   "t": "モデルのティラノサウルスにも、\n子どもだと思われてた恐竜がいるの",
+   "img": "row:art:696|チゴラス>art:697|ガチゴラス"
+  },
+  {
+   "w": "m",
+   "t": "ナノティラヌス。体が細くて、\n足が長い、小さめの恐竜よ",
+   "img": "wiki:en:Nanotyrannus",
+   "cap": "ナノティラヌス"
+  },
+  {
+   "w": "m",
+   "t": "長いあいだ、ティラノサウルスの\n10代の子どもだと\n考えられてたの",
+   "img": "row:wiki:en:Nanotyrannus|子ども？>wiki:en:Sue_(dinosaur)|ティラノサウルス"
+  },
+  {
+   "w": "m",
+   "t": "決め手は、トリケラトプスと\n一緒に埋まってた\n「決闘する恐竜」の化石",
+   "img": "wiki:en:Dueling_Dinosaurs^csearch:Dueling Dinosaurs fossil",
+   "cap": "アメリカのモンタナ州で見つかった化石"
+  },
+  {
+   "w": "m",
+   "t": "骨の成長の線を数えると、\n死んだときは約20歳。\nもう大人だったの",
+   "img": "wiki:en:Dueling_Dinosaurs^csearch:Dueling Dinosaurs fossil",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "t": "大人なのに小さい……\nチゴラスだと思ったら、\nしんかしないポケモンだったのだ",
+   "img": "row:art:696|チゴラス>sil:art:697|しんかしない",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "2025年10月に、科学雑誌の\nネイチャーに載った論文の結論よ",
+   "img": "paper:Nature（2025年10月30日）|Nanotyrannus and Tyrannosaurus/coexisted at the close of the Cretaceous|ナノティラヌスとティラノサウルスは白亜紀の終わりに共存していた"
+  },
+  {
+   "w": "m",
+   "t": "化石ポケモンのモデルの話は、\n本編でまとめて掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/4tO0y8AEdlQ/maxresdefault.jpg^web:https://i.ytimg.com/vi/4tO0y8AEdlQ/hqdefault.jpg^art:142"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/4tO0y8AEdlQ/maxresdefault.jpg^web:https://i.ytimg.com/vi/4tO0y8AEdlQ/hqdefault.jpg^art:142",
+   "face": "happy"
+  }
+ ]
+}
