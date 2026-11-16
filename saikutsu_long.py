@@ -402,7 +402,7 @@ class Long:
 # VOICEVOX の声色（スタイル）。ID は /speakers で確かめたもの
 STYLES = {"m": {"normal": 2, "amaama": 0, "tsun": 6, "sexy": 4, "sasayaki": 36, "hiso": 37},
           "z": {"normal": 3, "amaama": 1, "tsun": 7, "sexy": 5, "sasayaki": 22, "hiso": 38, "hero": 75, "namida": 76}}
-AUTO = {"z": {"sad": "namida", "happy": "amaama"}, "m": {}}
+AUTO = {"z": {"happy": "amaama"}, "m": {}}   # 悲しみの声（namida）は頻繁だと違和感があるので自動では使わない。ここぞという行だけ "v": "namida"（2026-11-16）
 
 
 def style_id(ln):
