@@ -7,7 +7,7 @@
    "w": "z",
    "face": "happy",
    "t": "ねえめたん！\nポケモンカードのパックは賭博だって、\n裁判になったことがあるのだ？",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
+   "img": "booster_pack.jpg",
    "sec": "ポケモン雑学採掘所"
   },
   {
@@ -32,14 +32,14 @@
    "w": "z",
    "face": "proud",
    "t": "見てほしいのだ。坑道の奥から、\n昔のポケモンカードの箱が出てきたのだ。",
-   "img": "wiki:en:Pokémon_Trading_Card_Game",
+   "img": "booster_box.jpg",
    "sec": "導入　1999年のポケモンカード"
   },
   {
    "w": "m",
    "face": "surprise",
    "t": "英語版の第1弾ね。\n1999年にアメリカで発売されたシリーズよ。",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
+   "img": "booster_pack.jpg",
    "label": "英語版の第1弾（1999年）"
   },
   {
@@ -66,21 +66,27 @@
    "w": "z",
    "face": "proud",
    "t": "第1弾のエビワラーは、闘エネルギー1枚で\n20ダメージ。3枚あれば40ダメージなのだ。",
-   "img": "table:ジャブ=闘エネルギー1枚で20ダメージ;スペシャルパンチ=エネルギー3枚で40ダメージ;HP=70",
+   "img": "hitmonchan_card.jpg",
    "label": "第1弾のエビワラー（英語版）",
-   "say": "第1弾のエビワラーは、とうエネルギー1枚で20ダメージ。3枚あれば40ダメージなのだ。"
+   "say": "第1弾のエビワラーは、とうエネルギー1枚で20ダメージ。3枚あれば40ダメージなのだ。",
+   "mark": [
+    0.5,
+    0.66,
+    0.16
+   ]
   },
   {
    "w": "m",
    "face": "normal",
    "t": "ダメージを10増やすトレーナーカードと合わせて、\n相手が育つ前に倒しきるのよね。",
-   "img": "art:107"
+   "img": "pluspower_card.jpg",
+   "label": "プラスパワー（第1弾のトレーナーカード）"
   },
   {
    "w": "z",
    "face": "proud",
    "t": "いまでもエビワラーに勝てるデッキは\nないと思ってるのだ。",
-   "img": "art:107"
+   "img": "row:art:107|エビワラー;art:125|エレブー;art:123|ストライク"
   },
   {
    "w": "m",
@@ -93,19 +99,19 @@
    "w": "m",
    "face": "happy",
    "t": "わたしはむしろ、強いデッキに勝てる\nマイナーなカードを探すほうが好き。",
-   "img": "art:107"
+   "img": "wiki:en:Pokémon_Trading_Card_Game"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "それより、このころのアメリカでは、\nカードのパックそのものが問題になってたの。",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+   "img": "booster_pack.jpg"
   },
   {
    "w": "z",
    "face": "surprise",
    "t": "パックが問題って、どういうことなのだ？",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+   "img": "booster_pack.jpg"
   },
   {
    "type": "title",
@@ -151,7 +157,7 @@
    "w": "m",
    "face": "normal",
    "t": "訴えられたのは、任天堂のアメリカの会社と、\nカードの製造や権利の窓口をしていた会社。",
-   "img": "wiki:en:Nintendo_of_America",
+   "img": "wiki:en:Nintendo",
    "ety": [
     [
      "Nintendo of America",
@@ -171,7 +177,7 @@
    "w": "z",
    "face": "shock",
    "t": "子どもが任天堂を訴えたのだ！？",
-   "img": "wiki:en:Nintendo_of_America"
+   "img": "wiki:en:Nintendo"
   },
   {
    "w": "m",
@@ -209,14 +215,14 @@
    "w": "m",
    "face": "normal",
    "t": "子どもたちの側が求めたのは、カードのもうけを\n買った人に返すこと。または損害の賠償よ。",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
+   "img": "booster_box.jpg",
    "label": "子どもたちの求め"
   },
   {
    "w": "z",
    "face": "shock",
-   "t": "アメリカ中のポケモンカードのもうけなのだ！？",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+   "t": "アメリカ中の\nポケモンカードのもうけなのだ！？",
+   "img": "booster_box.jpg"
   },
   {
    "type": "title",
@@ -227,7 +233,7 @@
     "head": "英語版第1弾のホロレアは、\n約3パックに1枚と\n言われていた",
     "img": [
      "art:6",
-     "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+     "booster_pack.jpg"
     ],
     "bubble": "3パックに1枚なのだ…",
     "who": "z",
@@ -238,14 +244,19 @@
    "w": "z",
    "face": "proud",
    "t": "パックを開けるのは、まさに採掘なのだ。\nいちばんの当たりはホロのリザードンなのだ。",
-   "img": "art:6"
+   "img": "charizard_card.jpg"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "英語版の第1弾は、1パック11枚。\nそのうちレアは1枚だけ。",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
-   "label": "1パック11枚・レアは1枚"
+   "img": "booster_pack.jpg",
+   "label": "1パック11枚・レアは1枚",
+   "mark": [
+    0.5,
+    0.93,
+    0.2
+   ]
   },
   {
    "w": "m",
@@ -258,14 +269,14 @@
    "w": "m",
    "face": "normal",
    "t": "ホロが出るのは約3パックに1枚と\n言われていたわ。会社の公式の数字ではないけど。",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
+   "img": "booster_box.jpg",
    "label": "ホロは約3パックに1枚（愛好家の集計）"
   },
   {
    "w": "z",
    "face": "think",
    "t": "ホロ16種類のうちリザードンは1種類だから…\n平均で48パックくらいなのだ。",
-   "img": "art:6",
+   "img": "charizard_card.jpg",
    "say": "ホロ16種類のうちリザードンは1種類だから、平均で48パックくらいなのだ。"
   },
   {
@@ -286,7 +297,7 @@
    "w": "z",
    "face": "shock",
    "t": "マフィアの法律で、任天堂を！？",
-   "img": "wiki:en:Nintendo_of_America"
+   "img": "wiki:en:Nintendo"
   },
   {
    "w": "m",
@@ -315,7 +326,7 @@
    "w": "m",
    "face": "normal",
    "t": "実はこの弁護士たち、ポケモンの前に\n野球カードの会社も「パックは賭博だ」と訴えていたの。",
-   "img": "wiki:en:Baseball_card"
+   "img": "wiki:en:Upper_Deck_Company^wiki:en:Baseball_card"
   },
   {
    "w": "m",
@@ -328,7 +339,7 @@
    "w": "m",
    "face": "think",
    "t": "1997年、同じサンディエゴの裁判所は、\n野球カードの裁判でこう認めていたの。",
-   "img": "wiki:en:Baseball_card",
+   "img": "wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego",
    "label": "1997年 野球カードの裁判"
   },
   {
@@ -348,7 +359,7 @@
    "w": "m",
    "face": "normal",
    "t": "ところが、その野球カードの訴えは退けられたの。\n理由は、賭博かどうかとは別のところにあったのよ。",
-   "img": "wiki:en:Baseball_card"
+   "img": "wiki:en:United_States_District_Court_for_the_Southern_District_of_California^wiki:en:San_Diego"
   },
   {
    "w": "m",
@@ -367,7 +378,7 @@
    "w": "m",
    "face": "normal",
    "t": "だから任天堂は記者に、こう答えたの。\n「この裁判だけ違う結果になると考える理由はない」",
-   "img": "wiki:en:Nintendo_of_America"
+   "img": "wiki:en:Nintendo"
   },
   {
    "type": "title",
@@ -401,7 +412,7 @@
    "w": "z",
    "face": "proud",
    "t": "ポケモンカードは賭博じゃないって\n認められたのだ！",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+   "img": "booster_pack.jpg"
   },
   {
    "w": "m",
@@ -414,7 +425,7 @@
    "w": "m",
    "face": "normal",
    "t": "パックを買った子は、11枚のカードと、\n当たりが出るチャンスをちゃんと受け取ってる。",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
+   "img": "booster_pack.jpg",
    "label": "払ったお金の分は受け取っている"
   },
   {
@@ -429,7 +440,7 @@
    "w": "z",
    "face": "sad",
    "t": "当たりが出なかったのは、\n損じゃないのだ…？",
-   "img": "art:6"
+   "img": "charizard_card.jpg"
   },
   {
    "w": "m",
@@ -442,7 +453,7 @@
    "w": "z",
    "face": "think",
    "t": "お金で買ったのは、\nカードと「チャンス」ってことなのだ。",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+   "img": "booster_box.jpg"
   },
   {
    "w": "m",
@@ -482,7 +493,7 @@
    "w": "m",
    "face": "normal",
    "t": "この判決は、野球・バスケ・アメフト・アイスホッケー、\nディズニーのカードの裁判と合わせて、8件まとめて出されたの。",
-   "img": "wiki:en:Baseball_card",
+   "img": "row:wiki:en:Baseball_card|野球;wiki:en:Basketball|バスケットボール;wiki:en:American_football|アメフト;wiki:en:Ice_hockey|アイスホッケー",
    "label": "8件の控訴をまとめた判決"
   },
   {
@@ -502,7 +513,7 @@
    "w": "z",
    "face": "think",
    "t": "じゃあ、パックが賭博かどうかは…",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+   "img": "booster_pack.jpg"
   },
   {
    "w": "m",
@@ -530,7 +541,7 @@
    "w": "z",
    "face": "think",
    "t": "日本だと、ポケモンカードのパックは\nどういう扱いなのだ？",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+   "img": "booster_pack.jpg"
   },
   {
    "w": "m",
@@ -555,8 +566,8 @@
    "w": "m",
    "face": "normal",
    "t": "子ども向けの商品で多く使われて、\n苦情が多かったから、1969年に全面禁止されたの。",
-   "img": "wiki:ja:消費者庁^wiki:en:Consumer_Affairs_Agency",
-   "label": "消費者庁の説明"
+   "img": "table:1962年=法律ができる（カード合わせは認められる）;1969年=カード合わせを全面禁止;2012年=コンプガチャも当たると発表",
+   "label": "カード合わせの歴史"
   },
   {
    "w": "z",
@@ -581,7 +592,7 @@
    "w": "z",
    "face": "think",
    "t": "でもポケモンカードのパックは、\n日本でも普通に売ってるのだ。",
-   "img": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+   "img": "booster_box.jpg"
   },
   {
    "w": "m",
@@ -656,7 +667,7 @@
    "w": "z",
    "face": "shock",
    "t": "アメリカの裁判とぜんぜん違うのだ。",
-   "img": "wiki:en:Belgium"
+   "img": "wiki:en:United_States_Court_of_Appeals_for_the_Ninth_Circuit^wiki:en:James_R._Browning_United_States_Court_of_Appeals_Building"
   },
   {
    "w": "m",
@@ -683,7 +694,7 @@
    "w": "m",
    "face": "think",
    "t": "どれも、会社は理由を説明していないけどね。\nガチャの仕組みが理由だと報道されてるわ。",
-   "img": "wiki:en:Belgium"
+   "img": "row:wiki:en:Pokémon_Masters_EX|マスターズ;wiki:en:Pokémon_Trading_Card_Game_Pocket|ポケポケ;wiki:en:Pokémon_Unite|ユナイト"
   },
   {
    "w": "z",
@@ -695,7 +706,7 @@
    "w": "m",
    "face": "normal",
    "t": "1999年に子どもたちが投げかけた問いに、\nいまは国ごとに違う答えが出てるってことね。",
-   "img": "wiki:en:Gacha_game^csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game"
+   "img": "wiki:en:Gacha_game^booster_pack.jpg"
   },
   {
    "w": "m",
@@ -708,13 +719,13 @@
    "w": "z",
    "face": "proud",
    "t": "…まあボクも、エビワラーが出るまで\nパックを買ったけど、損はしてないのだ。",
-   "img": "art:107"
+   "img": "hitmonchan_card.jpg"
   },
   {
    "w": "m",
    "face": "happy",
    "t": "第1弾のエビワラーはホロのレアだから、\nけっこう買ったでしょ。",
-   "img": "art:107",
+   "img": "hitmonchan_card.jpg",
    "v": "tsun"
   },
   {
@@ -804,12 +815,8 @@
    "賭博？"
   ],
   "hl": 1,
-  "main": "csearch:Pokémon Trading Card Game booster pack^wiki:en:Pokémon_Trading_Card_Game",
-  "back": "wiki:en:United_States_Court_of_Appeals_for_the_Ninth_Circuit^wiki:en:James_R._Browning_United_States_Court_of_Appeals_Building",
-  "row": [
-   "art:6",
-   "art:107"
-  ],
+  "main": "charizard_card.jpg",
+  "back": "wiki:en:Courtroom^wiki:en:United_States_Court_of_Appeals_for_the_Ninth_Circuit^wiki:en:James_R._Browning_United_States_Court_of_Appeals_Building",
   "chara": [
    "z",
    "shock"
