@@ -503,11 +503,14 @@ def sheet(L_obj, out):
 
 
 BGM_DIR = os.path.join(HERE, "assets", "bgm")
-BGM_ROTATION = ["ichimono", "nichiyou", "manabiya", "taai", "haru"]
+# 2026-11-17 ユーザーの依頼：本編の基本BGMは自作の採掘所BGM（mine）。区切りが変わっても同じ曲を流し続ける。
+# 対戦の話の battle などは、台本の行に "bgm" を書いたときだけ切り替わる。エンディングは ed のまま。
+BGM_ROTATION = ["mine"]
 
 
 def load_mp3(name):
-    p = os.path.join(BGM_DIR, name + ".mp3")
+    p = os.path.join(BGM_DIR, name + ".flac")          # 自作曲はつなぎ目に無音が入らないFLAC
+    if not os.path.exists(p): p = os.path.join(BGM_DIR, name + ".mp3")
     raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", p, "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True, check=True).stdout
     return np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768
 
