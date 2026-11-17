@@ -1,0 +1,905 @@
+{
+ "no": 6,
+ "title": "ピカチュウの着ぐるみで踊ったおばさん、国の憲法を書く。",
+ "neta": "ピカチュウの着ぐるみでデモに参加した女性が憲法制定の議員に",
+ "thumb": {
+  "layout": "v2",
+  "pre": "ピカチュウの着ぐるみのおばさんが",
+  "big": [
+   "憲法を",
+   "書く"
+  ],
+  "hl": 0,
+  "hl_color": "red",
+  "back": "commons:Liga de La Justicia Chilena.jpg^commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+  "badge": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+  "chara": [
+   "z",
+   "shock"
+  ]
+ },
+ "lines": [
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ずんだもん。ピカチュウの着ぐるみで\nデモに出て踊っていた女の人がいるの。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "sec": "ポケモン雑学採掘所"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "その人がね、のちに、国の憲法を書く\n会議の議員に選ばれたのよ。",
+   "img": "commons:Convención Constituyente Chile 4-julio-2021.jpg^wiki:en:Constitutional_Convention_(Chile)"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "えっ。着ぐるみの人が、\n憲法を書くのだ！？",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "big": "憲法を書く！？",
+   "ans": true
+  },
+  {
+   "type": "op",
+   "w": "m",
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘所。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学採掘所。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日の坑道、ひえるわね。\n着ぐるみでも着てくればよかった。",
+   "sec": "導入　坑道の着ぐるみ"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "ボクが着ぐるみを着るなら、\n初代で最強のケンタロスなのだ。",
+   "img": "art:128",
+   "label": "ケンタロス",
+   "bgm": "battle"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "ケンタロスとフーディンがいれば、\n負けなかったのだ。",
+   "img": "row:art:128|ケンタロス;art:65|フーディン",
+   "label": "初代の対戦の主役"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "それ、30年前の話でしょ。\nいまの対戦では、あまり見かけないわ。",
+   "img": "row:art:128|ケンタロス;art:65|フーディン",
+   "v": "tsun"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "わたしは、でんきだまを持たせた\nピカチュウで勝つほうが好き。",
+   "img": "art:25",
+   "label": "ピカチュウ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でんきだまは、ピカチュウの攻撃と特攻を\n2倍にする、ピカチュウ専用の道具なの。",
+   "img": "table:でんきだま=ピカチュウに持たせる道具;こうか=攻撃と特攻が2倍;弱点=ピカチュウはもともと打たれ弱い",
+   "label": "ピカチュウ専用の道具"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でもピカチュウは打たれ弱いのだ。\nかわいいだけなのだ。",
+   "img": "art:25"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "そのかわいいピカチュウの姿が、\n南米の国の歴史に残ったのよ。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "さっきの、着ぐるみの\nおばさんの話なのだ？",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。国はチリ。南米の西の端に\n細長くのびている国よ。",
+   "img": "commons:Chile (orthographic projection).svg^wiki:en:Chile",
+   "label": "チリ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "なぜ着ぐるみの人が、憲法を書く会議に\n入れたのか。順番に掘っていくわね。",
+   "img": "commons:Liga de La Justicia Chilena.jpg^commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "type": "title",
+   "sub": "本日の採掘",
+   "t": "着ぐるみのピカチュウは、なぜ憲法を書く会議に入れた？"
+  },
+  {
+   "type": "title",
+   "sub": "第一層",
+   "t": "30ペソの値上げ",
+   "sec": "第一層　30ペソの値上げ",
+   "x": {
+    "head": "2019年、チリでは\n地下鉄の運賃30ペソの値上げから\n120万人のデモが起きた",
+    "img": [
+     "commons:Marcha Mas Grande De Chile 2019 Plaza Baquedano Drone.jpg^wiki:en:2019–2022_Chilean_protests"
+    ],
+    "bubble": "30ペソで！？",
+    "who": "z",
+    "post": "2019年10月、チリの首都サンティアゴで、地下鉄の運賃が800ペソから830ペソに上がりました。高校生の無賃乗車から始まった抗議は、2週間ほどで約120万人の行進になります。合言葉は「30ペソではなく30年」。この30年は、何のことだと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2019年10月、チリの首都サンティアゴで、\n地下鉄の運賃が上がったの。",
+   "img": "commons:Metro Santiago - Estaciòn Univ. de Chile.jpg^wiki:en:Santiago_Metro",
+   "label": "サンティアゴの地下鉄"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "混む時間の運賃が、800ペソから830ペソへ。\n30ペソの値上げよ。",
+   "img": "table:値上げ前=800ペソ;値上げ後=830ペソ（30ペソ高く）;始まった日=2019年10月6日;対象=地下鉄の混む時間の運賃",
+   "label": "2019年の値上げ",
+   "say": "混む時間の運賃が、はっぴゃくペソから、はっぴゃくさんじゅうペソへ。さんじゅうペソの値上げよ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "30ペソって、\n日本のお金だといくらなのだ？",
+   "img": "table:値上げ前=800ペソ;値上げ後=830ペソ（30ペソ高く）;始まった日=2019年10月6日;対象=地下鉄の混む時間の運賃",
+   "say": "さんじゅうペソって、日本のお金だといくらなのだ？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "当時の日本のお金で、5円くらい。\n運賃の4%くらいの値上げね。",
+   "img": "table:値上げ前=800ペソ;値上げ後=830ペソ（30ペソ高く）;始まった日=2019年10月6日;対象=地下鉄の混む時間の運賃",
+   "say": "当時の日本のお金で、5円くらい。運賃の4パーセントくらいの値上げね。"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "それくらいなら、\nがまんできそうなのだ。",
+   "img": "commons:Metro Santiago - Estaciòn Univ. de Chile.jpg^wiki:en:Santiago_Metro"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも高校生たちは、改札を跳び越えて、\nみんなで料金を払わずに乗る抗議を始めたの。",
+   "img": "commons:Metro Santiago - Estaciòn Univ. de Chile.jpg^wiki:en:Santiago_Metro"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "抗議はすぐに街じゅうに広がって、10月18日の夜、\n政府は非常事態を宣言したわ。",
+   "img": "commons:Plaza Italia 20191020.jpg^wiki:en:2019–2022_Chilean_protests",
+   "label": "2019年10月 サンティアゴ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "次の日には夜の外出が禁止されて、\n値上げも取り消されたの。",
+   "img": "commons:Plaza Italia 20191020.jpg^wiki:en:2019–2022_Chilean_protests"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "値上げがなくなったなら、\nもう終わりなのだ。",
+   "img": "commons:Plaza Italia 20191020.jpg^wiki:en:2019–2022_Chilean_protests"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "それが終わらなかったの。デモの合言葉は、\n「30ペソではなく、30年」。",
+   "img": "commons:Plaza Italia 20191020.jpg^wiki:en:2019–2022_Chilean_protests",
+   "big": "30ペソではなく、30年",
+   "say": "それが終わらなかったの。デモの合言葉は、さんじゅうペソではなく、さんじゅうねん。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "30年は、軍の政治が終わってからの年月。\n年金や教育など、その間にたまった不満だったのね。",
+   "img": "commons:Plaza Italia 20191020.jpg^wiki:en:2019–2022_Chilean_protests"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "10月25日には、サンティアゴで約120万人が歩いたわ。\nチリでいちばん大きなデモと報じられたの。",
+   "img": "commons:Marcha Mas Grande De Chile 2019 Plaza Baquedano Drone.jpg^wiki:en:2019–2022_Chilean_protests",
+   "label": "2019年10月25日 約120万人"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "人で道路が\n見えないのだ！？",
+   "img": "commons:Marcha Mas Grande De Chile 2019 Plaza Baquedano Drone.jpg^wiki:en:2019–2022_Chilean_protests",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そしてこの10月25日の行進に、\n1匹のピカチュウがまぎれていたのよ。",
+   "img": "commons:Marcha Mas Grande De Chile 2019 Plaza Baquedano Drone.jpg^wiki:en:2019–2022_Chilean_protests"
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "息子が注文した着ぐるみ",
+   "sec": "第二層　ピカチュウの着ぐるみ",
+   "x": {
+    "head": "チリのデモで踊ったピカチュウの\n着ぐるみは、7歳の息子が\n通販で勝手に注文した品だった",
+    "img": [
+     "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+    ],
+    "bubble": "勝手になのだ！？",
+    "who": "z",
+    "post": "2019年のチリのデモで有名になったピカチュウの着ぐるみ。中にいたのはスクールバスの運転手の女性で、着ぐるみは7歳の息子が父親のスマホで中国の通販サイトから注文した品の1つでした。ほかの品は売ったのに、なぜ着ぐるみだけ残したと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "着ぐるみの中にいたのは、\nジョバンナ・グランドンさん。当時44歳。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu",
+   "label": "ジョバンナ・グランドンさん"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "4人の子どもを育てながら、スクールバスで\n子どもを学校に送り迎えする運転手をしていたの。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その前は、幼稚園で15年、\n保育の手伝いをしていたそうよ。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "どうして運転手さんが、\nピカチュウの着ぐるみを持ってたのだ？",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "それがね、自分で買ったんじゃないの。\n7歳の息子さんが、注文してしまったのよ。",
+   "img": "wiki:en:AliExpress",
+   "label": "中国の通販サイト AliExpress",
+   "say": "それがね、自分で買ったんじゃないの。ななさいの息子さんが、注文してしまったのよ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "お父さんの携帯で、中国の通販サイトから、\n勝手にいろいろな物を買っちゃったの。",
+   "img": "wiki:en:AliExpress"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "合計で約60万ペソ。当時の日本のお金で、\n約9万円にもなったの。",
+   "img": "wiki:en:AliExpress",
+   "say": "合計で約ろくじゅうまんペソ。当時の日本のお金で、約きゅうまんえんにもなったの。"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "ボクのおこづかい\n何年分なのだ！？",
+   "img": "wiki:en:AliExpress",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ほかの物は売ったけど、\nピカチュウの着ぐるみだけは残したの。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハロウィンに着ようと思ったんですって。\n中に小さな扇風機が入った、ふくらむ着ぐるみよ。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "label": "ふくらむピカチュウの着ぐるみ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "グランドンさんは、デモの行進に、\nその着ぐるみで出ることにしたの。",
+   "img": "commons:Marcha Mas Grande De Chile 2019 Plaza Baquedano Drone.jpg^wiki:en:2019–2022_Chilean_protests"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "でも、ふくらんだ着ぐるみは足元が見えない。\n行進の途中で、転んでしまったの。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "ピカチュウが\n転んだのだ…。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "そこで起き上がって、また踊り出したの。\nまわりの人たちは、こう叫んだわ。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "「バイラ・ピカチュウ！」\nスペイン語で「踊れ、ピカチュウ」。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "big": "踊れ、ピカチュウ！",
+   "ety": [
+    "Baila Pikachu（バイラ・ピカチュウ）",
+    "スペイン語　baila（踊れ）＋ピカチュウ"
+   ],
+   "say": "バイラ・ピカチュウ！スペイン語で、踊れ、ピカチュウ。",
+   "kana": "バ'イラ、ピカ'チュウ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "転んで起き上がる動画は、ツイッターで\n120万回以上見られたの。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "label": "2019年10月25日 アラメダ通り"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "転んでも踊るピカチュウは、\nたしかに見たくなるのだ。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "「ティア」と呼ばれたわけ",
+   "sec": "第三層　ティア・ピカチュウ",
+   "x": {
+    "head": "チリの「ピカチュウおばさん」の\n「おばさん」は、子どもが\n運転手を呼ぶときの言葉だった",
+    "img": [
+     "commons:Liga de La Justicia Chilena.jpg^commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+    ],
+    "bubble": "ただのおばさんじゃないのだ",
+    "who": "z",
+    "post": "チリのデモで踊ったピカチュウの着ぐるみの女性は「ティア・ピカチュウ」と呼ばれました。ティアはスペイン語でおばさん。でもチリでは、子どもが送り迎えの運転手や保育の先生を呼ぶ言葉でもあります。彼女の仕事は何だったと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ピカチュウの人は、デモのたびに現れて、\nだんだん名物になっていったの。",
+   "img": "commons:Liga de La Justicia Chilena.jpg^commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "label": "2020年1月 サンティアゴの広場",
+   "mark": [
+    0.44,
+    0.2,
+    0.12
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この写真は2020年1月、着ぐるみの\n仲間たちと広場に着いたところよ。",
+   "img": "commons:Liga de La Justicia Chilena.jpg^commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "label": "2020年1月 着ぐるみの仲間と"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "着ぐるみでデモに来る人たちは、\n「チリのアベンジャーズ」なんて呼ばれたの。",
+   "img": "commons:Liga de La Justicia Chilena.jpg^commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "label": "「チリのアベンジャーズ」"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ヒーローの集まりみたいに\n呼ばれてたのだ。",
+   "img": "commons:Liga de La Justicia Chilena.jpg^commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そしてグランドンさんには、\n「ティア・ピカチュウ」というあだ名がついたの。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "label": "Tía Pikachu（ティア・ピカチュウ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ティアは、スペイン語でおばさん。\nだからピカチュウおばさんね。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "ety": [
+    "Tía（ティア）",
+    "スペイン語　おばさん"
+   ]
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ピカチュウおばさん。\nそのままの名前なのだ。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "でもね、チリでは子どもが、幼稚園の先生や\n送り迎えの運転手さんを「ティア」と呼ぶの。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "「ティア・デル・フルゴン」、送り迎えの車のおばさん。\nグランドンさんの、ふだんの呼ばれ方そのものよ。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu",
+   "ety": [
+    "Tía del furgón（ティア・デル・フルゴン）",
+    "スペイン語　送り迎えの車（furgón）のおばさん"
+   ],
+   "say": "ティア・デル・フルゴン。送り迎えの車のおばさん。グランドンさんの、ふだんの呼ばれ方そのものよ。"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "子どもたちのおばさんが、\nみんなのおばさんになったのだ。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "ans": "idea"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "インタビューでは、自分の子どもたちには\nもっといい暮らしをさせたい、と話していたわ。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "type": "title",
+   "sub": "第四層",
+   "t": "憲法を書く議員を選ぶ選挙",
+   "sec": "第四層　制憲議会の選挙",
+   "x": {
+    "head": "チリでは2020年、\n約78%が「新しい憲法を作る」に\n賛成した",
+    "img": [
+     "commons:Votación en el Estadio Nacional, Plebiscito Nacional de Chile 2022.jpg^wiki:en:2022_Chilean_constitutional_referendum"
+    ],
+    "bubble": "国の決まりを作り直すのだ",
+    "who": "z",
+    "post": "チリでは2019年の大きなデモのあと、2020年10月の国民投票で約78%が「新しい憲法を作る」に賛成しました。憲法の案を書くのは、選挙で選ぶ155人の議員。この中に、ピカチュウの着ぐるみで有名になった女性がいました。何票で当選したと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "デモが続く中、政治家たちは、\n新しい憲法を作るかどうか国民に聞くことにしたの。",
+   "img": "row:commons:Plaza Italia 20191020.jpg|2019年 デモ>commons:Votación en el Estadio Nacional, Plebiscito Nacional de Chile 2022.jpg|2020年 国民投票>commons:Convención Constituyente Chile 4-julio-2021.jpg|2021年 制憲議会",
+   "label": "憲法づくりの流れ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "いまの憲法は、1980年、軍が国を治めていた\n時代にできたもの。そこから変えるかを決めるのね。",
+   "img": "row:commons:Plaza Italia 20191020.jpg|2019年 デモ>commons:Votación en el Estadio Nacional, Plebiscito Nacional de Chile 2022.jpg|2020年 国民投票>commons:Convención Constituyente Chile 4-julio-2021.jpg|2021年 制憲議会",
+   "label": "憲法づくりの流れ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2020年10月25日の国民投票では、\n約78%が「作る」に賛成したわ。",
+   "img": "table:新しい憲法を作る？=賛成 約78%;作る会議の形=全員を選挙で選ぶ 約79%;投票した人=約51%",
+   "label": "2020年10月25日の国民投票",
+   "say": "2020年10月25日の国民投票では、約78パーセントが、作るに賛成したわ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "案を書く人は、国会議員とは別に、全員を選挙で選ぶ。\nこれも約79%が選んだの。",
+   "img": "table:新しい憲法を作る？=賛成 約78%;作る会議の形=全員を選挙で選ぶ 約79%;投票した人=約51%",
+   "label": "2020年10月25日の国民投票",
+   "say": "案を書く人は、国会議員とは別に、全員を選挙で選ぶ。これも約79パーセントが選んだの。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "憲法を書くためだけの\n議員を選ぶのだ？",
+   "img": "table:議員の数=155人;男女=ほぼ同じ数になるように選ぶ;先住民の席=17;仕事=新しい憲法の案を1年で書く"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。制憲議会といって、155人。\n男女がほぼ同じ数になるように選ぶ決まりよ。",
+   "img": "table:議員の数=155人;男女=ほぼ同じ数になるように選ぶ;先住民の席=17;仕事=新しい憲法の案を1年で書く",
+   "label": "制憲議会",
+   "ety": [
+    "制憲議会（せいけんぎかい）",
+    "憲法を作るためだけに選ばれる会議"
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "先住民のための席も17用意されたの。\n選挙は2021年5月に行われたわ。",
+   "img": "table:議員の数=155人;男女=ほぼ同じ数になるように選ぶ;先住民の席=17;仕事=新しい憲法の案を1年で書く",
+   "label": "制憲議会"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "グランドンさんも、そこに立候補したの。\n政党には入らず、無所属でね。",
+   "img": "table:選挙区=第12区（ラ・フロリダ、プエンテ・アルトなど）;立候補の形=無所属（人民のリストに参加）;得票=約2万1000票（5.64%）;結果=当選",
+   "label": "2021年5月の選挙"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "選挙区は、サンティアゴの南の\nプエンテ・アルトなどの町がある第12区。",
+   "img": "table:選挙区=第12区（ラ・フロリダ、プエンテ・アルトなど）;立候補の形=無所属（人民のリストに参加）;得票=約2万1000票（5.64%）;結果=当選",
+   "label": "2021年5月の選挙",
+   "say": "選挙区は、サンティアゴの南の、プエンテ・アルトなどの町がある、第じゅうに区。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "無所属の人たちの集まり、\n「人民のリスト」に加わって戦ったの。",
+   "img": "table:選挙区=第12区（ラ・フロリダ、プエンテ・アルトなど）;立候補の形=無所属（人民のリストに参加）;得票=約2万1000票（5.64%）;結果=当選",
+   "label": "2021年5月の選挙",
+   "ety": [
+    "Lista del Pueblo（リスタ・デル・プエブロ）",
+    "スペイン語　人民のリスト。無所属の候補者の集まり"
+   ]
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でも、ふつうの運転手さんが\n選挙で勝てるのだ？",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "名前は知られていなくても、\n「ピカチュウの人」と言えば、だれもがわかったの。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "結果は、約2万1000票。\n5.64%で、当選したの。",
+   "img": "table:選挙区=第12区（ラ・フロリダ、プエンテ・アルトなど）;立候補の形=無所属（人民のリストに参加）;得票=約2万1000票（5.64%）;結果=当選",
+   "label": "結果　当選",
+   "big": "当選",
+   "say": "結果は、約にまんせんぴょう。ごてんろくよんパーセントで、当選したの。",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "ほんとうに、\n議員になったのだ！？",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "人民のリストからは、ほかにも\nたくさんの無所属の人が当選したの。",
+   "img": "commons:Convención Constitucional 2021.svg^wiki:en:Constitutional_Convention_(Chile)",
+   "label": "制憲議会の155席"
+  },
+  {
+   "type": "title",
+   "sub": "第五層",
+   "t": "着ぐるみで議場へ",
+   "sec": "第五層　旧国会の議場",
+   "x": {
+    "head": "憲法を書く会議の議員になった\nピカチュウおばさんは、\n着ぐるみで議場に入った",
+    "img": [
+     "commons:Palacio del ex Congreso Nacional de Chile - 2020 - 03.jpg^wiki:en:Former_National_Congress_Building"
+    ],
+    "bubble": "議場にピカチュウなのだ",
+    "who": "z",
+    "post": "2021年7月、チリで憲法を書く会議が始まりました。会場は昔の国会の建物。ピカチュウの着ぐるみで有名になった議員は、ある日の昼休み、着ぐるみで建物に入ります。この日のこと、のちに本人はどう振り返ったと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2021年7月4日、制憲議会が始まったの。\n期限は1年。それまでに憲法の案を書くの。",
+   "img": "commons:Convención Constituyente Chile 4-julio-2021.jpg^wiki:en:Constitutional_Convention_(Chile)",
+   "label": "2021年7月4日 制憲議会の始まり"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "会場は、サンティアゴの\n昔の国会の建物よ。",
+   "img": "commons:Palacio del ex Congreso Nacional de Chile - 2020 - 03.jpg^wiki:en:Former_National_Congress_Building",
+   "label": "昔の国会の建物"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "そして7月29日の昼休み。グランドンさんは、\nピカチュウの着ぐるみで建物に入ったの。",
+   "img": "commons:Palacio del ex Congreso Nacional de Chile - 2020 - 03.jpg^wiki:en:Former_National_Congress_Building"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "議場に、ピカチュウが\n来ちゃったのだ！？",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "big": "議場にピカチュウ",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "同じ人民のリストのアンドラデさんも、\n恐竜の着ぐるみで来ていたそうよ。",
+   "img": "commons:Cristóbal Andrade.jpg",
+   "label": "クリストバル・アンドラデさん"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ピカチュウと恐竜が\n憲法を書いてるのだ。",
+   "img": "commons:Liga de La Justicia Chilena.jpg^commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "いいえ、着ぐるみで書いたわけじゃないわ。\nふだんはふつうの服で会議に出ていたの。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "8月13日、グランドンさんは、人民のリストでの\n活動をいったん止めると発表したわ。",
+   "img": "commons:Convención Constitucional 2021.svg^wiki:en:Constitutional_Convention_(Chile)"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それでも2022年3月、議長を助ける\n副議長の1人に選ばれたの。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu",
+   "label": "2022年3月 副議長の1人に"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ピカチュウおばさんが、\n会議を回す側になったのだ。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "副議長は2か月ごとの交代。\n基本的な権利などを話し合う委員会にもいたの。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして2022年7月4日、\n憲法の案ができあがったわ。",
+   "img": "commons:Convención Constituyente Chile 4-julio-2021.jpg^wiki:en:Constitutional_Convention_(Chile)",
+   "label": "2022年7月4日 案ができた"
+  },
+  {
+   "type": "title",
+   "sub": "最深層",
+   "t": "国民が出した答え",
+   "sec": "最深層　2022年の国民投票",
+   "x": {
+    "head": "ピカチュウおばさんたちの\n書いた憲法の案は、\n国民投票で否決された",
+    "img": [
+     "commons:Votación en el Estadio Nacional, Plebiscito Nacional de Chile 2022.jpg^wiki:en:2022_Chilean_constitutional_referendum"
+    ],
+    "bubble": "そんなのだ…",
+    "who": "z",
+    "post": "チリの制憲議会が書いた憲法の案は、2022年9月の国民投票で、約62%が拒否しました。議員だった「ピカチュウおばさん」は、のちに着ぐるみで議場に入った日のことを悔やんでいます。何が問題だったと話したと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2022年9月4日、憲法の案を受け入れるかを\n決める国民投票が行われたの。",
+   "img": "commons:Votación en el Estadio Nacional, Plebiscito Nacional de Chile 2022.jpg^wiki:en:2022_Chilean_constitutional_referendum",
+   "label": "2022年9月4日 国民投票"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "このときは、投票が義務。\n投票した人は、約86%にのぼったわ。",
+   "img": "commons:Votación en el Estadio Nacional, Plebiscito Nacional de Chile 2022.jpg^wiki:en:2022_Chilean_constitutional_referendum",
+   "say": "このときは、投票が義務。投票した人は、約86パーセントにのぼったわ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "2年前に78%が賛成したから、\nきっと通るのだ。",
+   "img": "table:新しい憲法を作る？=賛成 約78%;作る会議の形=全員を選挙で選ぶ 約79%;投票した人=約51%",
+   "say": "2年前に78パーセントが賛成したから、きっと通るのだ。"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "結果は、拒否が61.87%。\n承認は38.13%だったの。",
+   "img": "bars:承認=38.1;拒否=61.9;unit=%",
+   "label": "2022年の国民投票の結果",
+   "say": "結果は、拒否が、ろくじゅういってんはちななパーセント。承認は、さんじゅうはってんいちさんパーセントだったの。"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "反対のほうが\nずっと多いのだ！？",
+   "img": "bars:承認=38.1;拒否=61.9;unit=%",
+   "big": "否決",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1年かけて書いた案は、\n国民に受け入れられなかったのね。",
+   "img": "table:拒否=61.87%;承認=38.13%;投票した人=85.84%（初めての義務投票）",
+   "label": "2022年の国民投票"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "否決のあと、グランドンさんは、\n新聞のインタビューでこう振り返ったの。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "「昼休みに着ぐるみを\n着るべきではなかった」",
+   "img": "commons:Palacio del ex Congreso Nacional de Chile - 2020 - 03.jpg^wiki:en:Former_National_Congress_Building",
+   "big": "着るべきではなかった",
+   "label": "グランドンさんの言葉（2022年9月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "毎日、着ぐるみで仕事をしていると\n思われてしまった、と。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "ピカチュウで有名になったのに、\nピカチュウで誤解されたのだ…。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "v": "namida"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その後、2023年にもう一度、\n別の人たちが憲法の案を書いたわ。",
+   "img": "table:2022年9月4日=1回目の案　拒否 61.87%;2023年12月17日=2回目の案　反対 55.76%;いまの憲法=1980年にできた憲法（改正を重ねたもの）",
+   "label": "2回の憲法づくり"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも2023年12月の国民投票でも、\n反対が55.76%で、また否決。",
+   "img": "table:2022年9月4日=1回目の案　拒否 61.87%;2023年12月17日=2回目の案　反対 55.76%;いまの憲法=1980年にできた憲法（改正を重ねたもの）",
+   "label": "2回の憲法づくり",
+   "say": "でも2023年12月の国民投票でも、反対が、ごじゅうごてんななろくパーセントで、また否決。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "チリの憲法は、いまも1980年にできた憲法を、\n直しながら使っているの。",
+   "img": "table:2022年9月4日=1回目の案　拒否 61.87%;2023年12月17日=2回目の案　反対 55.76%;いまの憲法=1980年にできた憲法（改正を重ねたもの）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "グランドンさんは、議員の仕事が終わったあと、\nスクールバスの運転に戻ったそうよ。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2023年の報道では、運転をしながら、\n社会福祉の勉強をしているとも伝えられたわ。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "また子どもたちの\nティアに戻ったのだ。",
+   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "今日の答え。着ぐるみのピカチュウが会議まで行けたのは、\nデモで、だれもがその顔を覚えていたことが大きかったの。",
+   "img": "commons:Liga de La Justicia Chilena.jpg^commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "sec": "まとめ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも、その着ぐるみは、息子さんが\nまちがえて注文した物だったのよね。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "ボクもケンタロスの着ぐるみで出たら、\n当選できるのだ。",
+   "img": "art:128"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "その前に、ケンタロスが\nいまの対戦で勝てるかが先ね。",
+   "img": "art:128",
+   "v": "tsun"
+  },
+  {
+   "type": "title",
+   "sub": "おまけ",
+   "t": "今日のポケモンの英語名",
+   "sec": "今日のポケモンの英語名"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "今日のポケモンの英語名。\n1匹目はケンタロス。",
+   "img": "art:128",
+   "label": "Tauros（トーロス）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "トーロス。ラテン語で牡牛を意味する\n「タウルス」から来た名前といわれてるの。",
+   "img": "art:128",
+   "label": "Tauros（トーロス）",
+   "ety": [
+    "Tauros（トーロス）",
+    "ラテン語　taurus（牡牛）"
+   ]
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "2匹目はフーディン。\nアラカザム。",
+   "img": "art:65",
+   "label": "Alakazam（アラカザム）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "手品で唱える「アラカザム」、日本でいう\n「ちちんぷいぷい」のような言葉から来てるの。",
+   "img": "art:65",
+   "label": "Alakazam（アラカザム）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日出てきたポケモンの英語名は、\n英単語帳サイト「もんすぺ！」でも調べられるわ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "もんすぺ！には、ポケモンの面白い雑学のコラムもあるの。\n動画の続きみたいに読めるわよ。",
+   "img": "site:",
+   "label": "「もんすぺ！」雑学コラムもあります"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の採掘はここまでなのだ。\nチャンネル登録もよろしくなのだ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "type": "ed"
+  }
+ ]
+}
