@@ -52,7 +52,7 @@
    "w": "m",
    "face": "think",
    "t": "それがね、行きも帰りも、\n人の乗らない荷物の船だったの。",
-   "img": "row:commons:CYGNUS NG-24 Launches from Cape Canaveral Space Force Station (9617831).jpg|行き　補給船シグナス>web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp|ISSで約2か月>commons:CRS-4 Dragon ocean landing (16601701050).jpg^commons:CRS-5 Dragon ocean landing (16848173281).jpg|帰り　補給船ドラゴン",
+   "img": "web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp^commons:Cupola ISS open shutters.jpg",
    "big": "行きも帰りも貨物",
    "bf": "rampart"
   },
@@ -171,6 +171,21 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "速さは、秒速約7.7キロ。\n東京から大阪まで、1分かからない速さよ。",
+   "img": "commons:STS-134 International Space Station after undocking.jpg^wiki:en:International_Space_Station",
+   "label": "国際宇宙ステーション（ISS）",
+   "kana": "ハヤ'サワ、ビョオソク/ヤク/ナナテンナナ'キロ、トオキョオカラ'/オオサカマ'デ、イップ'ン/カカラナイ'/ハヤ'サヨ"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ピカチュウ、\nでんこうせっかより速いのだ。",
+   "img": "commons:STS-134 International Space Station after undocking.jpg^wiki:en:International_Space_Station",
+   "label": "国際宇宙ステーション（ISS）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "日の出も、1日に約16回あるわ。",
    "img": "commons:Sunrise from ISS 4.jpg^commons:Sunrise from ISS 5.jpg",
    "label": "ISSから見た日の出",
@@ -233,15 +248,15 @@
    "w": "m",
    "face": "normal",
    "t": "8月にコラボだけは発表されていたけど、\nピカチュウの宇宙旅行には触れていなかったの。",
-   "img": "table:2月13日=アドノさん、クルー12で宇宙へ;4月11日=ピカチュウ、補給船で宇宙へ;6月17日=ピカチュウ、地球に帰る;9月18日=ESAが初めて発表;10月8日=アドノさん、地球に帰る",
-   "label": "2026年の日付"
+   "img": "web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pokemon_x_esa_collaboration_key_art/27530128-1-eng-GB/399685/image-thumb__399685__fit_medium/Pokemon_x_ESA_collaboration_key_art.4c898802.webp^art:25",
+   "label": "ESAとポケモンのコラボ"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "宇宙の記念品を追うアメリカのサイトは、\nこれを「秘密の旅」と書いているわ。",
-   "img": "table:2月13日=アドノさん、クルー12で宇宙へ;4月11日=ピカチュウ、補給船で宇宙へ;6月17日=ピカチュウ、地球に帰る;9月18日=ESAが初めて発表;10月8日=アドノさん、地球に帰る",
-   "label": "2026年の日付",
+   "img": "web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp^commons:Cupola ISS open shutters.jpg",
+   "label": "キューポラのピカチュウ",
    "big": "秘密の旅",
    "bf": "mincho"
   },
@@ -279,6 +294,22 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "2022年に、ESAの宇宙飛行士の募集に応募した\n2万2000人あまりの中から選ばれたの。",
+   "img": "table:生まれ=1982年、フランス;もとの仕事=空軍のヘリコプターのテストパイロット;宇宙飛行士に=2022年に選ばれる;宇宙にいた日数=237日",
+   "label": "ソフィー・アドノさん",
+   "kana": "ニセンニジュウニ'ネンニ、イイエスエ'エノ/ウチュウ_ヒコオ'_シノ/ボシュウニ'/オオボ'/_シタ、ニマンニセ'ンニンアマリノ/ナ'カカラ/エラバレ'タノ"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "2万人の中から、\nなのだ…。",
+   "img": "table:生まれ=1982年、フランス;もとの仕事=空軍のヘリコプターのテストパイロット;宇宙飛行士に=2022年に選ばれる;宇宙にいた日数=237日",
+   "label": "ソフィー・アドノさん",
+   "kana": "ニマ'ンニンノ/ナ'カカラ、ナノ'ダ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "宇宙へ行ったフランスの女性は、\n1996年のクローディ・エニュレさん以来、2人目。",
    "img": "commons:Claudie Haigneré 2017.jpg^commons:HaignereClaudie.jpg",
    "label": "クローディ・エニュレさん",
@@ -311,8 +342,8 @@
    "w": "z",
    "face": "think",
    "t": "あれ？ピカチュウが宇宙に行ったのは、\n4月11日なのだ。",
-   "img": "table:2月13日=アドノさん、クルー12で宇宙へ;4月11日=ピカチュウ、補給船で宇宙へ;6月17日=ピカチュウ、地球に帰る;9月18日=ESAが初めて発表;10月8日=アドノさん、地球に帰る",
-   "label": "2026年の日付",
+   "img": "commons:CYGNUS NG-24 Launches from Cape Canaveral Space Force Station (9617831).jpg^commons:CYGNUS NG-24 Launches from Cape Canaveral Space Force Station (9617832).jpg",
+   "label": "シグナスの打ち上げ（4月11日）",
    "kana": "アレ'？、_ピカ'チュウガ/ウ'チュウニ/イッタ'/ノワ'、シ'ガツ/ジュウイチ'ニチナノダ"
   },
   {
@@ -342,8 +373,8 @@
    "w": "m",
    "face": "normal",
    "t": "ピカチュウが帰ってきたことが発表されたとき、\nアドノさんはまだ宇宙にいたのよ。",
-   "img": "table:2月13日=アドノさん、クルー12で宇宙へ;4月11日=ピカチュウ、補給船で宇宙へ;6月17日=ピカチュウ、地球に帰る;9月18日=ESAが初めて発表;10月8日=アドノさん、地球に帰る",
-   "label": "2026年の日付"
+   "img": "commons:ESA astronaut Sophie Adenot is tethered to the ISS during a spacewalk (iss075e0085867).jpg^commons:Astronauts Anil Menon and Sophie Adenot on Spacewalk.jpg",
+   "label": "宇宙で船外活動をするアドノさん"
   },
   {
    "w": "z",
@@ -440,8 +471,8 @@
    "w": "m",
    "face": "normal",
    "t": "最後は、ISSのごみを積んで離れて、\n大気圏に入って燃えつきるのよ。",
-   "img": "table:作った会社=アメリカのノースロップ・グラマン;乗る人=いない。荷物だけの船;つかまえ方=ISSのロボットアームでつかむ;最後=ごみを積んで大気圏で燃えつきる",
-   "label": "補給船シグナス",
+   "img": "commons:Northrop Grumman's Cygnus XL cargo spacecraft berthed to the Unity module (iss074e0609033).jpg^commons:The Cygnus XL cargo spacecraft is in the grasp of the Canadarm2 robotic arm (iss074e0378294).jpg^commons:The Cygnus XL cargo craft is pictured in the grips of the Canadarm2 robotic arm (iss073e1196807).jpg",
+   "label": "ISSにとりつけたシグナス",
    "big": "燃えつきる船",
    "bf": "potta",
    "ans": true
@@ -685,8 +716,8 @@
    "w": "m",
    "face": "normal",
    "t": "「無重力の目印」。打ち上げのあと、\nぬいぐるみがふわっと浮いたら、無重力に入ったしるし。",
-   "img": "table:無重力の目印=飛行士が持ちこむ小さなぬいぐるみ;役目=ふわっと浮いたら、無重力に入ったしるし;2020年の例=恐竜のぬいぐるみ「トレマー」",
-   "label": "無重力の目印",
+   "img": "commons:The four crew members representing NASA's SpaceX Crew-12 mission (jsc2026e004679).jpg^commons:NASA’s SpaceX Crew-12 Launch (NHQ202602130014).jpg^commons:NASA’s SpaceX Crew-12 Launch (NHQ20260213 admin 0004).jpg",
+   "label": "クルー12の4人",
    "big": "無重力の目印",
    "bf": "maru"
   },
@@ -715,9 +746,23 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "その前の、人の乗らない試験飛行では地球のぬいぐるみ。\n同じ年の秋には、映画の宇宙人の赤ちゃんのぬいぐるみも乗ったわ。",
+   "img": "table:2019年（試験飛行）=地球のぬいぐるみ;2020年5月=恐竜のぬいぐるみ「トレマー」;2020年11月=映画の宇宙人の赤ちゃん「ベビーヨーダ」",
+   "label": "これまでの無重力の目印"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ピカチュウも、\n目印になれそうなのだ。",
+   "img": "table:2019年（試験飛行）=地球のぬいぐるみ;2020年5月=恐竜のぬいぐるみ「トレマー」;2020年11月=映画の宇宙人の赤ちゃん「ベビーヨーダ」",
+   "label": "これまでの無重力の目印"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "目印は、飛行士たちといっしょに乗って、\n打ち上げの中継にも映るものなの。",
-   "img": "commons:NASA’s SpaceX Crew-12 Launch (NHQ202602130014).jpg^commons:NASA’s SpaceX Crew-12 Launch (NHQ20260213 admin 0004).jpg",
-   "label": "クルー12の打ち上げ（2月13日）"
+   "img": "commons:The four crew members representing NASA's SpaceX Crew-12 mission (jsc2026e004679).jpg^commons:NASA’s SpaceX Crew-12 Launch (NHQ202602130014).jpg^commons:NASA’s SpaceX Crew-12 Launch (NHQ20260213 admin 0004).jpg",
+   "label": "クルー12の4人"
   },
   {
    "w": "m",
@@ -802,6 +847,14 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "9月19日のパリの本部から、ローマ、オランダ、\nドイツ、スペイン、イギリスのESAの施設を回ったの。",
+   "img": "commons:ESA Headquarters in Paris.jpg",
+   "label": "ESAの本部（パリ）",
+   "kana": "ク'ガツ/ジュウク'ニチノ/パ'リノ/ホンブカラ'、ロ'オマ、オ'ランダ、ド'イツ、スペ'イン、イギリスノ'/イイエスエ'エノ/_シ'セツオ/マワッタ'ノ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "ポケモンGOでも、ヨーロッパの6つの博物館で、\n宇宙飛行士ピカチュウのレイドが2027年4月まで続くの。",
    "img": "web:https://lh3.googleusercontent.com/7CITEYsKb4CAwdYOln7q7h5K6U1cIVu2cnWRbDZtixs10PkfYfHzPn5Iz9wwbMFE3bosgBEiKnZlEZJZmGiyl-YqYRKHlIL8d7VAzR4DjA=e365-pa-nu-w1920^web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pokemon_x_esa_collaboration_key_art/27530128-1-eng-GB/399685/image-thumb__399685__fit_medium/Pokemon_x_ESA_collaboration_key_art.4c898802.webp^art:25",
    "label": "宇宙飛行士ピカチュウ（ポケモンGO）",
@@ -858,6 +911,21 @@
    "t": "レックウザ！\n宇宙の空に住むポケモンなのだ。",
    "img": "art:384",
    "label": "レックウザ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "このとき、ソード・シールドでは「KIBOのピカチュウ」が\n1月15日まで配られていたの。",
+   "img": "row:commons:ISS-64 Michael Hopkins and Soichi Noguchi inside the Kibo lab.jpg|野口聡一さん（きぼう）;art:25|ARのピカチュウ;art:384|ARのレックウザ",
+   "label": "2021年の年越しの中継",
+   "kana": "コノ'/ト'キ、ソ'オド/シ'イルドデワ、キ'ボオノ/_ピカ'チュウガ、イチ'ガツ/ジュウゴ'ニチマデ/クバラレテ'/イタ'ノ"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "宇宙の記念のピカチュウが、\nゲームの中にも来ていたのだ。",
+   "img": "row:commons:ISS-64 Michael Hopkins and Soichi Noguchi inside the Kibo lab.jpg|野口聡一さん（きぼう）;art:25|ARのピカチュウ;art:384|ARのレックウザ",
+   "label": "2021年の年越しの中継"
   },
   {
    "w": "m",
