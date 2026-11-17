@@ -33,12 +33,49 @@ F_HOOK = os.path.join(FD, "DelaGothicOne-Regular.ttf")
 F_SUB = os.path.join(FD, "MPLUSRounded1c-Black.ttf")
 F_SMALL = os.path.join(FD, "MPLUSRounded1c-ExtraBold.ttf")
 F_POP = os.path.join(FD, "RocknRollOne-Regular.ttf")
+F_MOCHIY = os.path.join(FD, "MochiyPopOne-Regular.ttf")
+# 2026-11-17 プロデューサーの依頼「フォントをもっと使い分けて。10個ほど追加ダウンロードして」。
+# Google Fonts（OFL）の11書体を描画のときに取ってきて fonts/ に置く。台本の行の "bf"（大きい一言）、
+# 見出しの "font"、画像の札の "lf"、サムネの "fonts"（行ごと）と "pre_font" に名前を書くと、その書体になる。
+GF = "https://raw.githubusercontent.com/google/fonts/main/ofl/"
+FONT_FILES = {
+    "dot": "dotgothic16/DotGothic16-Regular.ttf",          # ゲーム画面風のドット
+    "maru": "zenmarugothic/ZenMaruGothic-Black.ttf",       # 太い丸ゴシック
+    "deco": "kaiseidecol/KaiseiDecol-Bold.ttf",            # 飾りのある明朝（昔の話）
+    "mincho": "shipporiminchob1/ShipporiMinchoB1-ExtraBold.ttf",  # 新聞・公式の言葉
+    "reggae": "reggaeone/ReggaeOne-Regular.ttf",           # 勢いのある見出し
+    "potta": "pottaone/PottaOne-Regular.ttf",              # 太い筆のポップ体
+    "magic": "yuseimagic/YuseiMagic-Regular.ttf",          # マーカーの手書き（ツッコミ）
+    "train": "trainone/TrainOne-Regular.ttf",              # 中抜きの見出し
+    "hachi": "hachimarupop/HachiMaruPop-Regular.ttf",      # かわいい手書き
+    "fude": "yujisyuku/YujiSyuku-Regular.ttf",             # 毛筆（宣言・降伏）
+    "rampart": "rampartone/RampartOne-Regular.ttf",        # 立体の見出し
+}
+FONT_LOCAL = {"hook": F_HOOK, "sub": F_SUB, "small": F_SMALL, "pop": F_POP, "mochiy": F_MOCHIY}
+
+
+def FF(name, default=None):
+    """書体の名前からファイルの場所を返す。無い書体は Google Fonts から取ってくる。取れなければ default"""
+    default = default or F_HOOK
+    if not name: return default
+    if name in FONT_LOCAL: return FONT_LOCAL[name]
+    rel = FONT_FILES.get(name)
+    if not rel: return default
+    p = os.path.join(FD, os.path.basename(rel))
+    if not os.path.exists(p):
+        try:
+            data = urllib.request.urlopen(urllib.request.Request(GF + rel, headers={"User-Agent": "Mozilla/5.0"}), timeout=90).read()
+            open(p, "wb").write(data)
+        except Exception as e:
+            print("書体を取れなかった", name, e); return default
+    return p
 CH = SS.CH
 UA = ZL.UA
 CREDITS = {}
 font = SS.font
 stroked = SS.stroked
 BOX = (330, 92, 1590, 830)          # 画像を置く場所（立ち絵と字幕を避ける）
+LABEL_FONT = [None]                 # いま描いている行の札の書体（行の "lf"）
 
 
 # ---------- 画像 ----------
@@ -264,8 +301,9 @@ def place_image(base, src, label=None, cap=None, mark=None, zoom=1.0, alpha=1.0,
         f = font(F_SMALL, 34); tw = d.textlength(cap, font=f)
         d.rectangle([x, y + h - 56, x + tw + 36, y + h], fill=(0, 0, 0, 230)); d.text((x + 18, y + h - 28), cap, font=f, fill=(255, 255, 255), anchor="lm")
     if label:
-        f = font(F_SUB, 60)
-        while d.textlength(label, font=f) > bw - 40 and f.size > 30: f = font(F_SUB, f.size - 2)
+        lf = FF(LABEL_FONT[0], F_SUB)
+        f = font(lf, 60)
+        while d.textlength(label, font=f) > bw - 40 and f.size > 30: f = font(lf, f.size - 2)
         stroked(d, ((bx0 + bx1) // 2, by0 + 36), label, f, (255, 230, 80), 10, (0, 0, 0))
 
 
@@ -328,6 +366,7 @@ class Long:
         ln = self.L[i]
         im = self.bg.copy()
         src = _IMG.get(ln.get("_img"))
+        LABEL_FONT[0] = ln.get("lf")
         if src is not None:
             ety = ln.get("ety"); nrow = (len(ety) if isinstance(ety[0], (list, tuple)) else 1) if ety else 0
             place_image(im, src, ln.get("label"), ln.get("cap"), ln.get("mark"), zoom, alpha, reserve=104 * nrow + 16 if nrow else 0)
@@ -356,8 +395,9 @@ class Long:
             k = SS.ease(t / 0.18)
             ov = Image.new("RGBA", (VW, VH), (0, 0, 0, int(110 * k))); im.alpha_composite(ov)
             d = ImageDraw.Draw(im)
-            f = font(F_HOOK, int(170 * (0.7 + 0.3 * k)))
-            while d.textlength(ln["big"], font=f) > VW - 200 and f.size > 60: f = font(F_HOOK, f.size - 6)
+            bf = FF(ln.get("bf"))
+            f = font(bf, int(170 * (0.7 + 0.3 * k)))
+            while d.textlength(ln["big"], font=f) > VW - 200 and f.size > 60: f = font(bf, f.size - 6)
             stroked(d, (VW // 2, 440), ln["big"], f, (255, 70, 50) if ln.get("bigcol") == "red" else (255, 230, 80), 16, (0, 0, 0))
         d = ImageDraw.Draw(im)
         subtitle(d, ln)
@@ -384,8 +424,9 @@ class Long:
             if t > 0.3:
                 d.rectangle([0, 360, VW, 720], fill=(20, 16, 12, 235))
                 stroked(d, (VW // 2, 440), ln.get("sub", ""), font(F_SUB, 56), (255, 214, 90), 8, (0, 0, 0))
-                f = font(F_HOOK, 110)
-                while d.textlength(ln["t"], font=f) > VW - 160: f = font(F_HOOK, f.size - 4)
+                tf = FF(ln.get("font"))
+                f = font(tf, 110)
+                while d.textlength(ln["t"], font=f) > VW - 160: f = font(tf, f.size - 4)
                 stroked(d, (VW // 2, 590), ln["t"], f, (255, 255, 255), 14, (0, 0, 0))
         elif typ == "ed":
             im = Image.new("RGBA", (VW, VH), (243, 236, 220, 255)); d = ImageDraw.Draw(im)
@@ -663,11 +704,14 @@ def thumbnail_v2(th, out_dir):
         x_ = W - t_.width + 10; y_ = H - t_.height
         im.alpha_composite(sh, (x_ + 8, y_ + 6)); im.alpha_composite(t_, (x_, y_))
     d_ = ImageDraw.Draw(im)
-    d_.text((48, 92), th["pre"], font=ImageFont.truetype(FM, 52), fill=(255, 255, 255), stroke_width=8, stroke_fill=(0, 0, 0), anchor="lm")
+    PF = FF(th["pre_font"], FM) if th.get("pre_font") else FM
+    d_.text((48, 92), th["pre"], font=ImageFont.truetype(PF, 52), fill=(255, 255, 255), stroke_width=8, stroke_fill=(0, 0, 0), anchor="lm")
     y = 150
+    fonts = th.get("fonts") or []                  # 行ごとの書体（2026-11-17）
     for k, t in enumerate(th["big"]):
-        f = ImageFont.truetype(FM, 190)
-        while d_.textlength(t, font=f) > 760: f = ImageFont.truetype(FM, f.size - 6)
+        BF = FF(fonts[k], FM) if k < len(fonts) and fonts[k] else FM
+        f = ImageFont.truetype(BF, 190)
+        while d_.textlength(t, font=f) > th.get("big_w", 760): f = ImageFont.truetype(BF, f.size - 6)
         on = k == th.get("hl", -1)
         col = (255, 40, 40) if on and th.get("hl_color", "red") == "red" else (255, 214, 40) if on else (255, 255, 255)
         cy = y + f.size // 2
