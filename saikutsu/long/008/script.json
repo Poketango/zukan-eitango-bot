@@ -223,6 +223,22 @@
   },
   {
    "w": "m",
+   "face": "normal",
+   "t": "このキューポラは、ヨーロッパのESAが用意した部屋で、\n2010年にISSにとりつけられたの。",
+   "img": "commons:Cupola ISS open shutters.jpg^commons:STS-134 International Space Station after undocking.jpg^wiki:en:International_Space_Station",
+   "label": "キューポラ（ISSの窓）",
+   "kana": "コノ'/キュウポラワ'、ヨオロ'ッパノ/イイエスエ'エガ/ヨオイ'/_シタ/ヘヤ'デ、ニセンジュ'ウネンニ/アイエス'エスニ/トリ_ツケラレ'タノ"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ESAとのコラボの写真を、\nESAの窓で撮ったのだ。",
+   "img": "web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp^commons:Cupola ISS open shutters.jpg",
+   "label": "キューポラのピカチュウ",
+   "kana": "イイエスエ'エトノ/コ'ラボノ/シャシンオ'、イイエスエ'エノ/マ'ドデ/ト'ッタノダ"
+  },
+  {
+   "w": "m",
    "face": "think",
    "t": "ここで、日付をよく見てほしいの。\n宇宙にいたのは4月11日から6月17日。",
    "img": "table:2月13日=アドノさん、クルー12で宇宙へ;4月11日=ピカチュウ、補給船で宇宙へ;6月17日=ピカチュウ、地球に帰る;9月18日=ESAが初めて発表;10月8日=アドノさん、地球に帰る",
@@ -555,6 +571,21 @@
    "label": "実験の冷凍庫",
    "say": "次は、実験の試料をしまう冷凍庫。マイナスきゅうじゅうはちどまで冷やせるの。",
    "kana": "ツギ'ワ、ジッケンノ'/シ'リョオオ/シマウ'/レエト'オコ、マイナ'ス/キュウジュウハ'チドマデ/ヒヤセ'ルノ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "マイナス98度は、南極で記録された\nいちばん低い気温、マイナス89度より冷たいのよ。",
+   "img": "commons:ISS-20 Robert Thirsk at the Minus Eighty Degree Laboratory Freezer.jpg",
+   "label": "実験の冷凍庫",
+   "kana": "マイナ'ス/キュウジュウハ'チドワ、ナ'ンキョクデ/キロク/サレ'タ、イチバン'/_ヒク'イ/キ'オン、マイナ'ス/ハチジュウキュ'ウドヨリ/_ツメタ'イノヨ"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "南極より寒い冷凍庫が、\n宇宙にあるのだ。",
+   "img": "commons:ISS-20 Robert Thirsk at the Minus Eighty Degree Laboratory Freezer.jpg",
+   "label": "実験の冷凍庫"
   },
   {
    "w": "m",
