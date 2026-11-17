@@ -16,6 +16,17 @@
    "mincho"
   ],
   "pre_font": "maru",
+  "pre_size": 66,
+  "big_w": [
+   1180,
+   820
+  ],
+  "big_size": [
+   230,
+   400
+  ],
+  "big_y": 110,
+  "big_gap": -10,
   "back": "commons:Kansas State Capitol.jpg^wiki:en:Kansas_State_Capitol",
   "badge": "art:25",
   "chara": [

@@ -241,7 +241,8 @@ script = {
     "title": "アメリカの州都が、ピカチュウに降伏した日。",
     "neta": "アメリカの市が1日だけトピカチュウに改名",
     "thumb": {"layout": "v2", "pre": "1998年、アメリカの州都が", "big": ["ピカチュウに", "降伏"], "hl": 1, "hl_color": "red",
-              "fonts": ["potta", "mincho"], "pre_font": "maru",
+              "fonts": ["potta", "mincho"], "pre_font": "maru", "pre_size": 66,
+              "big_w": [1180, 820], "big_size": [230, 400], "big_y": 110, "big_gap": -10,
               "back": CAPITOL, "badge": "art:25", "chara": ["z", "shock"]},
     "lines": L,
 }
