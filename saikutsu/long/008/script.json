@@ -163,8 +163,8 @@
    "w": "m",
    "face": "normal",
    "t": "ISSは、約1時間半で地球を1周するの。\nだから67日で、約1040周。",
-   "img": "commons:Sunrise from ISS 4.jpg^commons:Sunrise from ISS 5.jpg",
-   "label": "ISSの67日",
+   "img": "commons:STS-134 International Space Station after undocking.jpg^wiki:en:International_Space_Station",
+   "label": "国際宇宙ステーション（ISS）",
    "say": "アイエスエスは、やくいちじかんはんで地球をいっしゅうするの。だから、ろくじゅうななにちで、やくせんよんじゅっしゅう。",
    "kana": "アイエス'エスワ、ヤク/イチジ'カンハンデ/_チキュウオ'/イッシュウ'/スル'ノ、ダ'カラ、ロクジュウナナ'ニチデ、ヤク/センヨンジュ'ッシュウ"
   },
@@ -187,8 +187,8 @@
    "w": "m",
    "face": "normal",
    "t": "日の出も、1日に約16回あるわ。",
-   "img": "commons:Sunrise from ISS 4.jpg^commons:Sunrise from ISS 5.jpg",
-   "label": "ISSから見た日の出",
+   "img": "commons:STS-134 International Space Station after undocking.jpg^wiki:en:International_Space_Station",
+   "label": "国際宇宙ステーション（ISS）",
    "say": "日の出も、いちにちに、やくじゅうろっかいあるわ。",
    "kana": "ヒノデモ'、イチ'ニチニ/ヤク/ジュウロ'ッカイ/ア'ルワ"
   },
@@ -196,8 +196,8 @@
    "w": "z",
    "face": "surprise",
    "t": "1日に16回も、\n朝が来るのだ…。",
-   "img": "commons:Sunrise from ISS 4.jpg^commons:Sunrise from ISS 5.jpg",
-   "label": "ISSから見た日の出",
+   "img": "commons:STS-134 International Space Station after undocking.jpg^wiki:en:International_Space_Station",
+   "label": "国際宇宙ステーション（ISS）",
    "say": "いちにちに、じゅうろっかいも、朝が来るのだ…。"
   },
   {
@@ -241,24 +241,24 @@
    "w": "m",
    "face": "think",
    "t": "ここで、日付をよく見てほしいの。\n宇宙にいたのは4月11日から6月17日。",
-   "img": "row:commons:CYGNUS NG-24 Launches from Cape Canaveral Space Force Station (9617831).jpg|行き　補給船シグナス>web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp|ISSで約2か月>commons:CRS-4 Dragon ocean landing (16601701050).jpg^commons:CRS-5 Dragon ocean landing (16848173281).jpg|帰り　補給船ドラゴン",
-   "label": "ピカチュウの行きと帰り",
+   "img": "web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp^commons:Cupola ISS open shutters.jpg",
+   "label": "キューポラのピカチュウ",
    "kana": "ココデ'、ヒズケオ'/ヨ'ク/ミ'テホシイノ、ウ'チュウニ/イタ'/ノワ'、シ'ガツ/ジュウイチ'ニチカラ、ロ'クガツ/ジュウシチ'ニチ"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "でも発表は9月18日。帰ってきてから、\n3か月たってからなのよ。",
-   "img": "row:commons:CYGNUS NG-24 Launches from Cape Canaveral Space Force Station (9617831).jpg|行き　補給船シグナス>web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp|ISSで約2か月>commons:CRS-4 Dragon ocean landing (16601701050).jpg^commons:CRS-5 Dragon ocean landing (16848173281).jpg|帰り　補給船ドラゴン",
-   "label": "ピカチュウの行きと帰り",
+   "img": "web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp^commons:Cupola ISS open shutters.jpg",
+   "label": "キューポラのピカチュウ",
    "ans": true
   },
   {
    "w": "z",
    "face": "surprise",
    "t": "そのあいだ、\nだれも知らなかったのだ？",
-   "img": "row:commons:CYGNUS NG-24 Launches from Cape Canaveral Space Force Station (9617831).jpg|行き　補給船シグナス>web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp|ISSで約2か月>commons:CRS-4 Dragon ocean landing (16601701050).jpg^commons:CRS-5 Dragon ocean landing (16848173281).jpg|帰り　補給船ドラゴン",
-   "label": "ピカチュウの行きと帰り"
+   "img": "web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp^commons:Cupola ISS open shutters.jpg",
+   "label": "キューポラのピカチュウ"
   },
   {
    "w": "m",
@@ -380,8 +380,8 @@
    "w": "m",
    "face": "normal",
    "t": "しかも、アドノさんが地球に帰ってきたのは\n10月8日。宇宙に237日いたの。",
-   "img": "row:commons:CYGNUS NG-24 Launches from Cape Canaveral Space Force Station (9617831).jpg|行き　補給船シグナス>web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp|ISSで約2か月>commons:CRS-4 Dragon ocean landing (16601701050).jpg^commons:CRS-5 Dragon ocean landing (16848173281).jpg|帰り　補給船ドラゴン",
-   "label": "ピカチュウの行きと帰り",
+   "img": "commons:Official portrait of ESA astronaut Sophie Adenot wearing a spacesuit (jsc2025e073892 alt).jpg^commons:ESA astronaut announcement Class of 2022 (52519418671).jpg",
+   "label": "ソフィー・アドノさん",
    "say": "しかも、アドノさんが地球に帰ってきたのは、じゅうがつようか。宇宙に、にひゃくさんじゅうななにちいたの。",
    "kana": "_シカ'モ、ア'ドノサンガ/_チキュウニ'/カ'エッテ/キ'タ/ノワ'、ジュ'ウガツ/ヨ'オカ、ウ'チュウニ/ニヒャクサンジュウナナ'ニチ/イタ'ノ"
   },
@@ -396,8 +396,8 @@
    "w": "z",
    "face": "think",
    "t": "ピカチュウ、\n先に帰っちゃったのだ。",
-   "img": "row:commons:CYGNUS NG-24 Launches from Cape Canaveral Space Force Station (9617831).jpg|行き　補給船シグナス>web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp|ISSで約2か月>commons:CRS-4 Dragon ocean landing (16601701050).jpg^commons:CRS-5 Dragon ocean landing (16848173281).jpg|帰り　補給船ドラゴン",
-   "label": "ピカチュウの行きと帰り"
+   "img": "commons:CRS-4 Dragon ocean landing (16601701050).jpg^commons:CRS-5 Dragon ocean landing (16848173281).jpg",
+   "label": "ドラゴンの着水"
   },
   {
    "type": "title",
@@ -811,8 +811,8 @@
    "w": "m",
    "face": "normal",
    "t": "そのおかげで、9月の発表まで\nだれにも知られずにすんだのね。",
-   "img": "row:commons:CYGNUS NG-24 Launches from Cape Canaveral Space Force Station (9617831).jpg|行き　補給船シグナス>web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp|ISSで約2か月>commons:CRS-4 Dragon ocean landing (16601701050).jpg^commons:CRS-5 Dragon ocean landing (16848173281).jpg|帰り　補給船ドラゴン",
-   "label": "ピカチュウの行きと帰り"
+   "img": "web:https://media.esa.int/legacy/web/images/esa_multimedia/images/2026/09/pikachu_in_the_cupola/27530034-1-eng-GB/400273/image-thumb__400273__fill_hero/Pikachu_in_the_Cupola.37aff486.webp^commons:Cupola ISS open shutters.jpg",
+   "label": "キューポラのピカチュウ"
   },
   {
    "type": "title",
