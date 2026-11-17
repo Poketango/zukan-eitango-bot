@@ -181,6 +181,23 @@
    "img": "commons:Metro Santiago - Estaciòn Univ. de Chile.jpg^wiki:en:Santiago_Metro"
   },
   {
+   "w": "z",
+   "face": "shock",
+   "t": "改札を跳び越えるのだ！？",
+   "img": "commons:Metro Santiago - Estaciòn Univ. de Chile.jpg^wiki:en:Santiago_Metro"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "合言葉は「エバデ」。スペイン語で\n「すり抜けろ」という意味よ。",
+   "img": "commons:Metro Santiago - Estaciòn Univ. de Chile.jpg^wiki:en:Santiago_Metro",
+   "ety": [
+    "Evade（エバデ）",
+    "スペイン語　evadir（すり抜ける・逃れる）の命令形"
+   ],
+   "say": "合言葉は、エバデ。スペイン語で、すり抜けろ、という意味よ。"
+  },
+  {
    "w": "m",
    "face": "normal",
    "t": "抗議はすぐに街じゅうに広がって、10月18日の夜、\n政府は非常事態を宣言したわ。",
@@ -259,13 +276,15 @@
    "w": "m",
    "face": "normal",
    "t": "4人の子どもを育てながら、スクールバスで\n子どもを学校に送り迎えする運転手をしていたの。",
-   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+   "img": "table:当時の年齢=44歳;仕事=スクールバスの運転手;その前=幼稚園で保育の手伝い 15年;家族=4人の子ども",
+   "label": "グランドンさん（2019年）"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "その前は、幼稚園で15年、\n保育の手伝いをしていたそうよ。",
-   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+   "img": "table:当時の年齢=44歳;仕事=スクールバスの運転手;その前=幼稚園で保育の手伝い 15年;家族=4人の子ども",
+   "label": "グランドンさん（2019年）"
   },
   {
    "w": "z",
@@ -285,26 +304,33 @@
    "w": "m",
    "face": "normal",
    "t": "お父さんの携帯で、中国の通販サイトから、\n勝手にいろいろな物を買っちゃったの。",
-   "img": "wiki:en:AliExpress"
+   "img": "table:注文した人=7歳の息子さん;使ったもの=お父さんの携帯;注文した先=中国の通販サイト;合計=約60万ペソ（約9万円）",
+   "label": "息子さんの注文"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "合計で約60万ペソ。当時の日本のお金で、\n約9万円にもなったの。",
-   "img": "wiki:en:AliExpress",
+   "img": "table:注文した人=7歳の息子さん;使ったもの=お父さんの携帯;注文した先=中国の通販サイト;合計=約60万ペソ（約9万円）",
    "say": "合計で約ろくじゅうまんペソ。当時の日本のお金で、約きゅうまんえんにもなったの。"
   },
   {
    "w": "z",
    "face": "shock",
    "t": "ボクのおこづかい\n何年分なのだ！？",
-   "img": "wiki:en:AliExpress",
+   "img": "table:注文した人=7歳の息子さん;使ったもの=お父さんの携帯;注文した先=中国の通販サイト;合計=約60万ペソ（約9万円）",
    "ans": true
   },
   {
    "w": "m",
    "face": "normal",
    "t": "ほかの物は売ったけど、\nピカチュウの着ぐるみだけは残したの。",
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "息子さんの注文がなかったら、\nピカチュウおばさんはいなかったのだ。",
    "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
   },
   {
@@ -414,6 +440,14 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "この写真の題も「チリのジャスティス・リーグ」。\nアメリカのヒーローのチームの名前ね。",
+   "img": "commons:Liga de La Justicia Chilena.jpg^commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+   "label": "写真の題「チリのジャスティス・リーグ」",
+   "say": "この写真の題も、チリのジャスティス・リーグ。アメリカのヒーローのチームの名前ね。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "そしてグランドンさんには、\n「ティア・ピカチュウ」というあだ名がついたの。",
    "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
    "label": "Tía Pikachu（ティア・ピカチュウ）"
@@ -462,7 +496,7 @@
    "w": "m",
    "face": "normal",
    "t": "インタビューでは、自分の子どもたちには\nもっといい暮らしをさせたい、と話していたわ。",
-   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
   },
   {
    "type": "title",
@@ -472,7 +506,7 @@
    "x": {
     "head": "チリでは2020年、\n約78%が「新しい憲法を作る」に\n賛成した",
     "img": [
-     "commons:Votación en el Estadio Nacional, Plebiscito Nacional de Chile 2022.jpg^wiki:en:2022_Chilean_constitutional_referendum"
+     "commons:Convención Constitucional 2021.svg^wiki:en:Constitutional_Convention_(Chile)"
     ],
     "bubble": "国の決まりを作り直すのだ",
     "who": "z",
@@ -500,6 +534,18 @@
    "img": "table:新しい憲法を作る？=賛成 約78%;作る会議の形=全員を選挙で選ぶ 約79%;投票した人=約51%",
    "label": "2020年10月25日の国民投票",
    "say": "2020年10月25日の国民投票では、約78パーセントが、作るに賛成したわ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でも、投票した人は\n半分くらいなのだ。",
+   "img": "table:新しい憲法を作る？=賛成 約78%;作る会議の形=全員を選挙で選ぶ 約79%;投票した人=約51%"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "当時のチリは、投票に行くかどうかが自由だったの。\n2012年に、義務から自由に変わったのよ。",
+   "img": "table:新しい憲法を作る？=賛成 約78%;作る会議の形=全員を選挙で選ぶ 約79%;投票した人=約51%"
   },
   {
    "w": "m",
@@ -625,6 +671,23 @@
   },
   {
    "w": "m",
+   "face": "normal",
+   "t": "最初の議長には、先住民マプチェの\n言語学者、エリサ・ロンコンさんが選ばれたわ。",
+   "img": "wiki:en:Elisa_Loncón^commons:Convención Constituyente Chile 4-julio-2021.jpg^wiki:en:Constitutional_Convention_(Chile)",
+   "label": "エリサ・ロンコンさん",
+   "ety": [
+    "マプチェ",
+    "チリの南部に昔から住む先住民"
+   ]
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "いろんな人が集まった\n会議なのだ。",
+   "img": "commons:Convención Constitucional 2021.svg^wiki:en:Constitutional_Convention_(Chile)"
+  },
+  {
+   "w": "m",
    "face": "think",
    "t": "そして7月29日の昼休み。グランドンさんは、\nピカチュウの着ぐるみで建物に入ったの。",
    "img": "commons:Palacio del ex Congreso Nacional de Chile - 2020 - 03.jpg^wiki:en:Former_National_Congress_Building"
@@ -698,7 +761,7 @@
     "img": [
      "commons:Votación en el Estadio Nacional, Plebiscito Nacional de Chile 2022.jpg^wiki:en:2022_Chilean_constitutional_referendum"
     ],
-    "bubble": "そんなのだ…",
+    "bubble": "否決なのだ…",
     "who": "z",
     "post": "チリの制憲議会が書いた憲法の案は、2022年9月の国民投票で、約62%が拒否しました。議員だった「ピカチュウおばさん」は、のちに着ぐるみで議場に入った日のことを悔やんでいます。何が問題だったと話したと思いますか？"
    }
@@ -713,9 +776,9 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "このときは、投票が義務。\n投票した人は、約86%にのぼったわ。",
+   "t": "このときは、2012年からの自由な投票と違って、義務。\n投票した人は、約86%にのぼったわ。",
    "img": "commons:Votación en el Estadio Nacional, Plebiscito Nacional de Chile 2022.jpg^wiki:en:2022_Chilean_constitutional_referendum",
-   "say": "このときは、投票が義務。投票した人は、約86パーセントにのぼったわ。"
+   "say": "このときは、2012年からの自由な投票と違って、義務。投票した人は、約86パーセントにのぼったわ。"
   },
   {
    "w": "z",
@@ -728,7 +791,7 @@
    "w": "m",
    "face": "think",
    "t": "結果は、拒否が61.87%。\n承認は38.13%だったの。",
-   "img": "bars:承認=38.1;拒否=61.9;unit=%",
+   "img": "table:拒否=61.87%;承認=38.13%;投票した人=85.84%（初めての義務投票）",
    "label": "2022年の国民投票の結果",
    "kana": "ケッカワ'、キョ'ヒガ、ロクジュウイ'ッテン/ハ'チナナ/パ'アセント、ショオニンワ'、サンジュウハ'ッテン/イ'チサン/パ'アセントダッタノ"
   },
@@ -736,7 +799,7 @@
    "w": "z",
    "face": "shock",
    "t": "反対のほうが\nずっと多いのだ！？",
-   "img": "bars:承認=38.1;拒否=61.9;unit=%",
+   "img": "commons:Votación en el Estadio Nacional, Plebiscito Nacional de Chile 2022.jpg^wiki:en:2022_Chilean_constitutional_referendum",
    "big": "否決",
    "ans": true
   },
@@ -777,6 +840,12 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "それでも、2021年の選挙で、約2万1000人が\nピカチュウの人に票を入れたのは事実よ。",
+   "img": "table:選挙区=第12区（ラ・フロリダ、プエンテ・アルトなど）;立候補の形=無所属（人民のリストに参加）;得票=約2万1000票（5.64%）;結果=当選"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "その後、2023年にもう一度、\n別の人たちが憲法の案を書いたわ。",
    "img": "table:2022年9月4日=1回目の案　拒否 61.87%;2023年12月17日=2回目の案　反対 55.76%;いまの憲法=1980年にできた憲法（改正を重ねたもの）",
    "label": "2回の憲法づくり"
@@ -805,20 +874,33 @@
    "w": "m",
    "face": "normal",
    "t": "2023年の報道では、運転をしながら、\n社会福祉の勉強をしているとも伝えられたわ。",
-   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+   "img": "table:議員のあと=スクールバスの運転に戻った;勉強=社会福祉を学んでいる（2023年の報道）",
+   "label": "議員のあと"
   },
   {
    "w": "z",
    "face": "think",
    "t": "また子どもたちの\nティアに戻ったのだ。",
-   "img": "commons:Giovanna Grandon Caro.jpg^wiki:en:Tía_Pikachu"
+   "img": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ちなみに、株式会社ポケモンがこの件について\n何か話した記録は、見つからなかったわ。",
+   "img": "art:25",
+   "sec": "まとめ"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "本物のピカチュウは、\nたぶん知らないのだ。",
+   "img": "art:25"
   },
   {
    "w": "m",
    "face": "think",
    "t": "今日の答え。着ぐるみのピカチュウが会議まで行けたのは、\nデモで、だれもがその顔を覚えていたことが大きかったの。",
-   "img": "commons:Liga de La Justicia Chilena.jpg^commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
-   "sec": "まとめ"
+   "img": "commons:Liga de La Justicia Chilena.jpg^commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu"
   },
   {
    "w": "m",
