@@ -1,4 +1,4 @@
-# ポケモン雑学採掘所の横動画（1920×1080、@poke_zatsugaku、2026-11-16〜）
+# ポケモン雑学採掘場の横動画（1920×1080、@poke_zatsugaku、2026-11-16〜）
 #   台本と素材は saikutsu/long/NNN/script.json と同じフォルダの画像。
 #   画面：背景は採掘場。左上にチャンネル名、右上に「いま何の話か」の帯、中央に大きな画像、
 #         左下にめたん、右下にずんだもん、下の中央に字幕（話者ごとに縁取りの色を変える）。
@@ -269,7 +269,7 @@ def background():
 
 def header(sec):
     im = Image.new("RGBA", (VW, 90), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-    d.rounded_rectangle([24, 18, 360, 74], 28, fill=(20, 16, 12, 235)); d.text((192, 46), "ポケモン雑学採掘所", font=font(F_SMALL, 32), fill=(255, 214, 90), anchor="mm")
+    d.rounded_rectangle([24, 18, 360, 74], 28, fill=(20, 16, 12, 235)); d.text((192, 46), "ポケモン雑学採掘場", font=font(F_SMALL, 32), fill=(255, 214, 90), anchor="mm")
     if sec:
         f = font(F_SMALL, 34); w = d.textlength(sec, font=f) + 60
         d.rectangle([VW - 24 - w, 18, VW - 24, 74], fill=(28, 44, 80, 235)); d.rectangle([VW - 24 - w, 18, VW - 16 - w, 74], fill=(255, 214, 90, 255))
@@ -322,6 +322,23 @@ def ety_panel(base, ety):
         d.text((x0 + 30, yy + 76), b, font=fe, fill=(255, 255, 255), anchor="lm")
 
 
+def stroked_solid(d, xy, text, f, fill, sw, sfill, anchor="mm"):
+    """縁取り文字。「9」「ピ」の丸や「。」の中の穴に背景が透けて黒く見えないよう、穴を縁の色で埋める（2026-11-18 ユーザーの指摘）"""
+    from PIL import ImageChops
+    img = d._image
+    bb = d.textbbox(xy, text, font=f, anchor=anchor, stroke_width=sw)
+    pad = 4; W, H = bb[2] - bb[0] + pad * 2, bb[3] - bb[1] + pad * 2
+    m = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(m).text((xy[0] - bb[0] + pad, xy[1] - bb[1] + pad), text, font=f, fill=255, stroke_width=sw, stroke_fill=255, anchor=anchor)
+    b = m.point(lambda v: 255 if v > 60 else 0)
+    ImageDraw.floodfill(b, (0, 0), 128)
+    inside = b.point(lambda v: 0 if v == 128 else 255)      # 外から届かない所（文字と穴）は全部ぬる
+    mask = ImageChops.lighter(m, inside)
+    layer = Image.new(img.mode, (W, H), tuple(sfill) + ((255,) if img.mode == "RGBA" else ()))
+    img.paste(layer, (bb[0] - pad, bb[1] - pad), mask)
+    d.text(xy, text, font=f, fill=fill, anchor=anchor)
+
+
 def subtitle(d, ln):
     c = CH[ln["w"]]; text = ln["t"]
     lines = text.split("\n")
@@ -332,7 +349,7 @@ def subtitle(d, ln):
     lh = f.size + 16; n = len(lines); cy = 960 - (n - 1) * lh / 2 + (12 if n == 1 else 0)
     if n >= 3: cy = 1060 - n * lh + lh / 2
     for j, s_ in enumerate(lines):
-        stroked(d, (VW // 2, int(cy + j * lh)), s_, f, (255, 255, 255), 12, c["col"])
+        stroked_solid(d, (VW // 2, int(cy + j * lh)), s_, f, (255, 255, 255), 12, c["col"])
 
 
 # ---------- 動画 ----------
@@ -411,7 +428,7 @@ class Long:
             k = SS.ease(t / 0.5)
             stroked(d, (VW // 2, 300), "ポケモンの「深い雑学」を掘り出す", font(F_SUB, 64), (255, 255, 255), 10, (0, 0, 0))
             f = font(F_HOOK, int(150 * (0.8 + 0.2 * k)))
-            stroked(d, (VW // 2, 470), "ポケモン雑学採掘所", f, (255, 214, 90), 18, (0, 0, 0))
+            stroked(d, (VW // 2, 470), "ポケモン雑学採掘場", f, (255, 214, 90), 18, (0, 0, 0))
             for who, x in (("m", 200), ("z", 1720)):
                 th = SS.tachie(who, ln.get("w") == who and talking and int(t * 9) % 2 == 0, 400, "happy")
                 im.paste(th, (x - th.width // 2, VH - th.height + 20), th)
@@ -526,7 +543,7 @@ def durations(L, voiced_lines):
     segs, voices, t0 = [], [], 0.2
     for i, ln in enumerate(L):
         v = voiced_lines[i]
-        if ln.get("type") == "ed": dur, talk = 20.0, 0
+        if ln.get("type") == "ed": dur, talk = 24.0, 0          # 2026-11-18 ブツッと切れないよう長めにし、最後の5秒で音を消していく
         elif ln.get("type") == "title": dur, talk = 2.6, 0
         else:
             talk = (len(v) / SR) if v is not None else max(1.4, len(ln.get("t", "")) * 0.11)
@@ -554,7 +571,7 @@ def sheet(L_obj, out):
 
 
 BGM_DIR = os.path.join(HERE, "assets", "bgm")
-# 2026-11-17 ユーザーの依頼：本編の基本BGMは自作の採掘所BGM（mine）。区切りが変わっても同じ曲を流し続ける。
+# 2026-11-17 ユーザーの依頼：本編の基本BGMは自作の採掘場BGM（mine）。区切りが変わっても同じ曲を流し続ける。
 # 対戦の話の battle などは、台本の行に "bgm" を書いたときだけ切り替わる。エンディングは ed のまま。
 BGM_ROTATION = ["mine"]
 
@@ -800,17 +817,17 @@ def build(d, out_dir):
     t = 0.2; ev = []; prev_mark = None
     for (i, dur, _) in segs:
         ln = L[i]
-        if i == 0: ev.append((t, "impact"))
+        # 2026-11-18 ユーザーの指示：大げさな効果音（impact の衝撃音、boom のドン）はやめる。章の切り替えのシュッと赤丸のポンだけ
         if ln.get("type") == "title": ev.append((t, "whoosh"))
-        if ln.get("big"): ev.append((t, "boom"))
         if ln.get("mark") and ln.get("mark") != prev_mark: ev.append((t + 0.2, "pop"))
-        if ln.get("ans"): ev.append((t, ln["ans"] if ln["ans"] in sfx.KIND else "impact"))
         prev_mark = ln.get("mark")
         t += round(dur * FPS) / FPS
     ev = sfx.thin(ev, total, per30=6, gap=2.0); sfx.add(mix, ev, SR); print("効果音", len(ev), "個")
     for t0, v in voices:
         if v is None: continue
         a = int(t0 * SR); b = min(len(mix), a + len(v)); mix[a:b] = mix[a:b] * 0.4 + v[:b - a]
+    fo = int(5 * SR)                                         # 最後の5秒で音を消していく（2026-11-18「最後ブツッて切れてる」）
+    if len(mix) > fo: mix[-fo:] = mix[-fo:] * np.linspace(1, 0, fo) ** 1.5
     mix = np.clip(mix, -1, 1)
     with wave.open("_l/a.wav", "w") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 30000).astype(np.int16).tobytes())
