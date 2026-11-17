@@ -466,16 +466,16 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "子どもたちは、発売の1か月前に、\nゲームボーイで赤と青を遊べたのよ。",
-   "img": "commons:Game-Boy-FL.jpg^wiki:en:Game_Boy",
-   "label": "ゲームボーイ"
+   "t": "子どもたちは、発売の1か月前に、\nそのトランクで赤と青を遊べたのよ。",
+   "img": "table:車=ピカチュウの絵のフォルクスワーゲン・ビートル;トランク=中にブラウン管のテレビ。赤と青が動いていた;その後=何年も全米のイベントを回った",
+   "label": "ピカチュウの車"
   },
   {
    "w": "z",
    "face": "think",
    "t": "1か月早いのは、ずるいのだ。\nアメリカでいちばんの古参なのだ。",
-   "img": "commons:Game-Boy-FL.jpg^wiki:en:Game_Boy",
-   "label": "ゲームボーイ"
+   "img": "wiki:en:Pokémon_Red_and_Blue^commons:PokemonRedBlueYellowBack.jpg",
+   "label": "アメリカ版の赤と青"
   },
   {
    "type": "title",
@@ -750,7 +750,7 @@
   {
    "w": "m",
    "face": "happy",
-   "t": "今日のポケモンの英語名。1匹目は、\n会場に着ぐるみで来ていたというゼニガメ。",
+   "t": "今日のポケモンの英語名。1匹目は、\n会場にかざりがあったというゼニガメ。",
    "img": "art:7",
    "label": "Squirtle（スクワートル）",
    "lf": "hachi"
