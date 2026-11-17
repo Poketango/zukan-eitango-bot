@@ -76,7 +76,7 @@ def main(num, out):
     print(len(posts), "枚 →", out)
 
 
-# ---------- 採掘所の形式（2026-11-16〜）----------
+# ---------- 採掘場の形式（2026-11-16〜）----------
 # 横動画の台本 saikutsu/long/NNN/script.json の区切りの行（type: title）に "x" があれば、層ごとに1枚つくる。
 #   "x": {"head": 言い切りの一文, "img": [画像の書き方（saikutsu_long.py と同じ）], "bubble": ひとこと, "who": "z" か "m", "post": Xの本文}
 #   使い方: python x_cards.py s004 [出力フォルダ]  → sNNN_k.png（k は層の番号）と sNNN_posts.json
@@ -92,7 +92,7 @@ def saikutsu_card(x, sub, title, num):
     d = ImageDraw.Draw(im)
     # 左上：チャンネル名と層の札
     d.rounded_rectangle([30, 26, 470, 96], 14, fill=(20, 16, 12, 230), outline=(255, 214, 90), width=4)
-    d.text((250, 61), "ポケモン雑学採掘所", font=SS.font(SS.F_SUB, 40), fill=(255, 214, 90), anchor="mm")
+    d.text((250, 61), "ポケモン雑学採掘場", font=SS.font(SS.F_SUB, 40), fill=(255, 214, 90), anchor="mm")
     lw = d.textlength(sub, font=SS.font(SS.F_HOOK, 44)) + 60
     d.rounded_rectangle([490, 26, 490 + lw, 96], 14, fill=(200, 40, 40, 240))
     d.text((490 + lw / 2, 61), sub, font=SS.font(SS.F_HOOK, 44), fill=(255, 255, 255), anchor="mm")
@@ -147,7 +147,7 @@ def saikutsu_card(x, sub, title, num):
         d.rounded_rectangle([bx0, by0, bx1, by1], 44, fill=(255, 255, 255), outline=(20, 14, 12), width=6)
         col = SS.CH[who]["col"]
         d.text(((bx0 + bx1) // 2, (by0 + by1) // 2), bub, font=f, fill=col, anchor="mm")
-    d.text((50 if who == "z" else CW - 50, CH - 50), "YouTube「ポケモン雑学採掘所」", font=SS.font(SS.F_SMALL, 30),
+    d.text((50 if who == "z" else CW - 50, CH - 50), "YouTube「ポケモン雑学採掘場」", font=SS.font(SS.F_SMALL, 30),
            fill=(230, 220, 200), anchor="lm" if who == "z" else "rm")
     return im.convert("RGB")
 

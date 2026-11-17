@@ -1,4 +1,4 @@
-# ポケモン雑学採掘所のショート（@poke_zatsugaku、2026-11-15〜）
+# ポケモン雑学採掘場のショート（@poke_zatsugaku、2026-11-15〜）
 #   ・台本と素材は shorts/NNNN/script.json と同じフォルダの画像。Claudeが深く調べた話だけを並べる（自動でネタを作らない）
 #   ・めたん（解説）とずんだもん（聞き役）。画面の上に見出し、中央に大きな画像、下に字幕、両下の隅に小さな立ち絵
 #   ・最後に end_card でサイトのアドレスとホーム画面
@@ -185,7 +185,7 @@ class Short:
     def _head(self):
         im = Image.new("RGBA", (VW, 430), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
         d.rounded_rectangle([40, 34, 400, 92], 29, fill=(20, 16, 12, 230))
-        d.text((220, 63), "ポケモン雑学採掘所", font=font(F_SMALL, 34), fill=(255, 214, 90), anchor="mm")
+        d.text((220, 63), "ポケモン雑学採掘場", font=font(F_SMALL, 34), fill=(255, 214, 90), anchor="mm")
         pre, l1, l2 = self.s["hook"]; hl = self.s.get("hl", "")
         stroked(d, (VW // 2, 150), pre, font(F_SMALL, 52), (255, 214, 90), 8, (0, 0, 0))
         for i, (txt, y) in enumerate(((l1, 250), (l2, 360))):
@@ -333,7 +333,7 @@ def meta(s):
             + credits_text() +
             "音声：VOICEVOX:四国めたん、VOICEVOX:ずんだもん\n立ち絵：坂本アヒル様\n効果音：OtoLogic（https://otologic.jp）\n"
             "※ファンが運営する非公式のチャンネルです。株式会社ポケモン、任天堂、クリーチャーズ、ゲームフリークとは関係ありません。\n\n"
-            "#ポケモン #ポケモン雑学 #ポケモン雑学採掘所 #shorts")
+            "#ポケモン #ポケモン雑学 #ポケモン雑学採掘場 #shorts")
     return (s["title"] + " #shorts")[:100], desc
 
 

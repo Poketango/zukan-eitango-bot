@@ -1,4 +1,4 @@
-# 採掘所の横動画をアップロードする（ユーザーが確認してから手動で動かす）
+# 採掘場の横動画をアップロードする（ユーザーが確認してから手動で動かす）
 #   render-saikutsu-NNN ブランチの動画（分割）とサムネイル、saikutsu/long/NNN/upload.json（title, description, tags, publishAt 任意）を使う
 #   記録は posted_saikutsu_long.json。記録済みの回は二度上げない
 import os, sys, json, glob, datetime, subprocess
@@ -26,7 +26,7 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 rt = "".join((os.environ.get("YT2_REFRESH_TOKEN") or "").split()) or link_channel.load_token()
-if not rt: sys.exit("採掘所のチャンネルの鍵がありません")
+if not rt: sys.exit("採掘場のチャンネルの鍵がありません")
 cred = Credentials(None, refresh_token=rt, token_uri="https://oauth2.googleapis.com/token",
                    client_id="".join(os.environ["YT_CLIENT_ID"].split()), client_secret="".join(os.environ["YT_CLIENT_SECRET"].split()))
 yt = build("youtube", "v3", credentials=cred)
