@@ -1,18 +1,23 @@
 {
  "no": 7,
- "title": "ピカチュウに名前を明け渡した市。次の相手はGoogleだった。",
+ "title": "アメリカの州都が、ピカチュウに降伏した日。",
  "neta": "アメリカの市が1日だけトピカチュウに改名",
  "thumb": {
   "layout": "v2",
-  "pre": "ピカチュウの次は",
+  "pre": "1998年、アメリカの州都が",
   "big": [
-   "グーグルに",
-   "改名"
+   "ピカチュウに",
+   "降伏"
   ],
   "hl": 1,
   "hl_color": "red",
+  "fonts": [
+   "potta",
+   "fude"
+  ],
+  "pre_font": "maru",
   "back": "commons:Kansas State Capitol.jpg^wiki:en:Kansas_State_Capitol",
-  "badge": "web:https://www.google.com/logos/2010/topeka-hp.gif",
+  "badge": "art:25",
   "chara": [
    "z",
    "shock"
@@ -22,31 +27,31 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "ずんだもん。アメリカには、ピカチュウに\n自分の名前を明け渡した市があるの。",
-   "img": "commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas",
-   "sec": "ポケモン雑学採掘所"
+   "t": "1998年、アメリカの州都がひとつ、\nピカチュウに降伏したの。",
+   "img": "commons:Kansas State Capitol.jpg^wiki:en:Kansas_State_Capitol",
+   "sec": "ポケモン雑学採掘所",
+   "label": "カンザス州の議事堂（トピーカ）",
+   "lf": "mincho"
   },
   {
    "w": "z",
    "face": "surprise",
-   "t": "明け渡したのだ？\n市の名前を？",
-   "img": "commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas"
+   "t": "降伏！？\nピカチュウは、何を要求したのだ？",
+   "img": "art:25"
   },
   {
    "w": "m",
-   "face": "think",
-   "t": "しかも12年後、こんどは\nGoogleにも名前を差し出したのよ。",
-   "img": "commons:Google logo (2010-2013).svg^wiki:en:Google",
-   "say": "しかもじゅうにねんご、こんどは、グーグルにも名前を差し出したのよ。",
-   "kana": "_シカ'モ/ジュウニネ'ンゴ、コ'ンドワ、グウグルニモ'/ナマエオ'/サシダ'_シタノヨ"
+   "face": "normal",
+   "t": "市の名前を1日だけ、\n「トピカチュウ」にすること。",
+   "img": "row:commons:Topeka skyline and Kansas River.jpg|トピーカ;art:25|ピカチュウ",
+   "big": "トピカチュウ",
+   "bf": "potta"
   },
   {
    "w": "z",
-   "face": "shock",
-   "t": "名前が軽すぎるのだ！",
-   "img": "commons:Google logo (2010-2013).svg^wiki:en:Google",
-   "big": "名前が軽すぎる！",
-   "ans": true
+   "face": "think",
+   "t": "要求が、\nかわいすぎるのだ。",
+   "img": "row:commons:Topeka skyline and Kansas River.jpg|トピーカ;art:25|ピカチュウ"
   },
   {
    "type": "op",
@@ -56,170 +61,136 @@
   },
   {
    "w": "z",
-   "face": "happy",
-   "t": "めたん、見るのだ！\n坑道の奥から、お宝を掘り当てたのだ。",
-   "img": "wiki:en:Potato^commons:Potato harvest - geograph.org.uk - 248459.jpg",
-   "sec": "導入　坑道のジャガイモ",
-   "label": "掘り当てたお宝"
-  },
-  {
-   "w": "m",
    "face": "think",
-   "t": "それ、ジャガイモよね。\n誰かのお弁当じゃない？",
-   "img": "wiki:en:Potato^commons:Potato harvest - geograph.org.uk - 248459.jpg",
-   "label": "ジャガイモ"
-  },
-  {
-   "w": "z",
-   "face": "think",
-   "t": "ディグダの頭かと思って、\n3回くらい叩いちゃったのだ。",
-   "img": "art:50",
-   "label": "ディグダ",
-   "say": "ディグダの頭かと思って、さんかいくらい叩いちゃったのだ。"
-  },
-  {
-   "w": "m",
-   "face": "happy",
-   "t": "ディグダは、もっと\nつるっとしてるわよ。",
-   "img": "art:50",
-   "label": "ディグダ",
-   "v": "tsun"
+   "t": "めたん、さっきから\n何を読んでるのだ？",
+   "img": "table:新聞=カンザス大学の学生新聞;日付=1998年8月28日;見出し=任天堂の侵略の標的になったトピーカ",
+   "sec": "導入　任天堂の侵略",
+   "label": "1998年の学生新聞",
+   "lf": "mincho"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "それより今日は、1998年の\nアメリカの話をしようと思ってたの。",
+   "t": "1998年のアメリカの大学新聞。見出しが\n「任天堂の侵略の標的になったトピーカ」。",
+   "img": "table:新聞=カンザス大学の学生新聞;日付=1998年8月28日;見出し=任天堂の侵略の標的になったトピーカ",
+   "label": "1998年の学生新聞",
+   "lf": "mincho",
+   "big": "任天堂の侵略",
+   "bf": "mincho"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "任天堂が、\nアメリカに攻め込んだのだ？",
+   "img": "table:新聞=カンザス大学の学生新聞;日付=1998年8月28日;見出し=任天堂の侵略の標的になったトピーカ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンがアメリカに上陸した、\n最初の日の記事よ。",
    "img": "wiki:en:Pokémon_Red_and_Blue^commons:PokemonRedBlueYellowBack.jpg",
-   "label": "アメリカ版の赤と青",
-   "kana": "ソレヨ'リ/キョ'オワ、セ'ンキュウヒャク/キュウジュウハチ'ネンノ/アメリカノ'/ハナシ'オ/シヨオト'/オモ'ッテタノ"
+   "label": "アメリカ版の赤と青"
   },
   {
    "w": "z",
    "face": "proud",
-   "t": "1998年なら、ボクのルージュラが\nいちばん強かった時代なのだ。",
-   "img": "art:124",
-   "label": "ルージュラ",
-   "bgm": "battle",
-   "kana": "セ'ンキュウヒャク/キュウジュウハチ'ネンナラ、ボ'クノ/ルウジュラガ'/イチ'バン/ツヨ'カッタ/ジダイナノ'ダ"
-  },
-  {
-   "w": "z",
-   "face": "proud",
-   "t": "あくまのキッスで眠らせて、\nふぶきで凍らせるのだ。",
-   "img": "table:あくまのキッス=相手を眠らせる技;ふぶき=相手を凍らせることもある大技;初代のこおり状態=ほうっておいても治らない",
-   "label": "初代のルージュラの戦い方"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "初代のこおりは、ほうっておいても\n治らなかったものね。",
-   "img": "table:あくまのキッス=相手を眠らせる技;ふぶき=相手を凍らせることもある大技;初代のこおり状態=ほうっておいても治らない",
-   "label": "初代のルージュラの戦い方"
+   "t": "1998年なら、ボクの時代なのだ。\n初代こそ至高なのだ。",
+   "img": "wiki:en:Pokémon_Red_and_Blue^commons:PokemonRedBlueYellowBack.jpg",
+   "label": "アメリカ版の赤と青"
   },
   {
    "w": "m",
    "face": "happy",
-   "t": "いまの対戦では、\nほとんど見かけないけど。",
-   "img": "art:124",
-   "label": "ルージュラ",
+   "t": "あなたが知ってるのは、\n日本の初代でしょ。",
+   "img": "table:日本=1996年発売。ゲーム約800万本、カード4億枚以上;アメリカ=赤と青の発売は1998年9月28日。まだ誰も遊んでいない",
+   "label": "1998年の日本とアメリカ",
    "v": "tsun"
   },
   {
    "w": "z",
-   "face": "sad",
-   "t": "ルージュラの話はいいのだ。\nアメリカの話をするのだ。",
-   "img": "art:124"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "ポケモンがアメリカに上陸したとき、\nある市が、名前をピカチュウにゆずったの。",
-   "img": "commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas",
-   "label": "トピーカ市"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "市の名前はトピーカ。アメリカのまんなか、\nカンザス州の州都よ。",
-   "img": "commons:Kansas in United States.svg^wiki:en:Kansas",
-   "label": "カンザス州",
-   "ety": [
-    "州都（しゅうと）",
-    "州の政治の中心になる市。日本の県庁所在地のようなもの"
-   ]
-  },
-  {
-   "w": "z",
    "face": "think",
-   "t": "トピーカ。\nピカは入ってるのだ。",
-   "img": "commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas",
-   "label": "トピーカ市"
+   "t": "…アメリカの初代は、\n知らないのだ。",
+   "img": "table:日本=1996年発売。ゲーム約800万本、カード4億枚以上;アメリカ=赤と青の発売は1998年9月28日。まだ誰も遊んでいない",
+   "label": "1998年の日本とアメリカ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "日本ではもうゲームが800万本売れてたけど、\nアメリカでは、まだ誰も遊んでいなかったの。",
+   "img": "table:日本=1996年発売。ゲーム約800万本、カード4億枚以上;アメリカ=赤と青の発売は1998年9月28日。まだ誰も遊んでいない",
+   "label": "1998年の日本とアメリカ",
+   "say": "日本ではもう、ゲームがはっぴゃくまんぼん売れてたけど、アメリカでは、まだ誰も遊んでいなかったの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そこに任天堂が、\nどうやって攻め込んだか。",
+   "img": "table:新聞=カンザス大学の学生新聞;日付=1998年8月28日;見出し=任天堂の侵略の標的になったトピーカ",
+   "label": "1998年の学生新聞",
+   "lf": "mincho"
   },
   {
    "type": "title",
    "sub": "本日の採掘",
-   "t": "ピカチュウに名前をゆずった市は、何を手に入れた？"
+   "t": "アメリカで最初のポケモンの会で、何が起きた？",
+   "font": "mincho"
   },
   {
    "type": "title",
    "sub": "第一層",
-   "t": "トピカチュウの日",
-   "sec": "第一層　1998年のトピカチュウ",
+   "t": "州都、ピカチュウに降伏す",
+   "sec": "第一層　州都の降伏",
+   "font": "fude",
    "x": {
-    "head": "1998年、アメリカのトピーカ市は\n1日だけ名前を\n「トピカチュウ」に変えた",
+    "head": "1998年、アメリカの州都が\nピカチュウに降伏した\n（記事の言葉どおり）",
     "img": [
      "commons:Kansas State Capitol.jpg^wiki:en:Kansas_State_Capitol"
     ],
-    "bubble": "ダジャレなのだ",
+    "bubble": "要求がかわいいのだ",
     "who": "z",
-    "post": "1998年8月27日、アメリカのカンザス州トピーカ市は、1日だけ名前を「トピカチュウ」に変えました。アメリカで初めてのポケモンのお披露目会のためです。その日、空からは約750個のピカチュウのぬいぐるみが降りました。どうやって降らせたと思いますか？"
+    "post": "1998年8月27日、アメリカのカンザス州の州都トピーカで、アメリカで初めてのポケモンの会が開かれました。市長は1日だけ市の名前を「トピカチュウ」にすると宣言し、学生新聞は「市長が街をポケモンに明け渡すと、空からの攻撃が始まった」と書きました。何が降ってきたと思いますか？"
    }
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "1998年8月27日。トピーカの市長が、\nこの日だけ市の名前を変えると宣言したの。",
-   "img": "commons:Kansas State Capitol.jpg^wiki:en:Kansas_State_Capitol",
-   "label": "トピーカのカンザス州議事堂",
-   "kana": "セ'ンキュウヒャク/キュウジュウハチ'ネン/ハチガツ'/ニジュウ_シチ'ニチ、ト'ピイカノ/シ'チョオガ、コノ'/ヒダケ'/シ'ノ/ナマエオ'/カエルト'/センゲ'ン/_シタ'ノ"
+   "t": "1998年8月27日。カンザス州の州都トピーカで、\nアメリカ初のポケモンの会が開かれたの。",
+   "img": "commons:Kansas in United States.svg^wiki:en:Kansas",
+   "label": "カンザス州"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "新しい名前は「トピカチュウ」。\nトピーカと、ピカチュウを混ぜたのね。",
-   "img": "row:commons:Topeka skyline and Kansas River.jpg|トピーカ;art:25|ピカチュウ",
-   "big": "トピカチュウ",
-   "ety": [
-    "ToPikachu（トピカチュウ）",
-    "Topeka（トピーカ）＋Pikachu（ピカチュウ）"
-   ],
-   "ans": true
-  },
-  {
-   "w": "z",
-   "face": "surprise",
-   "t": "ダジャレで、市の名前を\n変えちゃったのだ！？",
+   "t": "市長は、この日だけ\n市の名前をトピカチュウにすると宣言したわ。",
    "img": "row:commons:Topeka skyline and Kansas River.jpg|トピーカ;art:25|ピカチュウ"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "アメリカで赤と青が出たのは、\n1か月後の9月28日。",
-   "img": "wiki:en:Pokémon_Red_and_Blue^commons:PokemonRedBlueYellowBack.jpg",
-   "label": "アメリカ版の赤と青",
-   "kana": "アメリカデ'/ア'カト/ア'オガ/デタ'/ノワ'、イッカゲツ'ゴノ/ク'ガツ/ニジュウハチ'ニチ"
+   "t": "記者には「今日だけよ。\n市長ができる楽しい仕事のひとつね」って。",
+   "img": "commons:Kansas State Capitol.jpg^wiki:en:Kansas_State_Capitol",
+   "label": "ジョーン・ワグノン市長の言葉",
+   "lf": "mincho"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "降伏した人の、\n顔じゃないのだ。",
+   "img": "commons:Kansas State Capitol.jpg^wiki:en:Kansas_State_Capitol",
+   "big": "降伏した人の顔じゃない",
+   "bf": "magic"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "その前に、アメリカで初めての\nポケモンのお披露目会が、トピーカで開かれたの。",
-   "img": "table:日にち=1998年8月27日（木）;場所=トピーカの昔の空軍基地の飛行場;空から=スカイダイバー10人とぬいぐるみ;ぬいぐるみ=パラシュートつき 約750個",
-   "label": "トピカチュウの日"
+   "t": "会場は、昔の空軍基地の飛行場。\nまわりで広い原っぱがあるのは、そこだけだったそうよ。",
+   "img": "table:日にち=1998年8月27日（木）;場所=昔の空軍基地の飛行場;時間=昼11時から2時まで。雨でも決行;入場=無料",
+   "label": "アメリカ初のポケモンの会"
   },
   {
    "w": "m",
    "face": "think",
-   "t": "カンザス大学の学生新聞は、\nその日のことをこう書いているわ。",
+   "t": "新聞は、その日のことをこう書いているの。",
    "img": "commons:Forbesafb-02242002.jpg^wiki:en:Topeka_Regional_Airport",
    "label": "会場になった昔の空軍基地"
   },
@@ -229,81 +200,297 @@
    "t": "「市長が街をポケモンに明け渡すと、\n空からの攻撃が始まった」",
    "img": "commons:Forbesafb-02242002.jpg^wiki:en:Topeka_Regional_Airport",
    "big": "空からの攻撃",
-   "label": "カンザス大学の学生新聞"
+   "bf": "mincho",
+   "label": "カンザス大学の学生新聞",
+   "lf": "mincho"
   },
   {
    "w": "z",
    "face": "shock",
-   "t": "攻撃なのだ！？\nポケモンが攻めてきたのだ？",
+   "t": "容赦ないのだ！\n何が落ちてきたのだ？",
    "img": "commons:Forbesafb-02242002.jpg^wiki:en:Topeka_Regional_Airport"
   },
   {
    "w": "m",
-   "face": "happy",
-   "t": "飛行機から、スカイダイバー10人と\nピカチュウのぬいぐるみが降ってきたの。",
-   "img": "wiki:en:Parachuting^wiki:en:Skydiving",
-   "label": "スカイダイバー",
-   "cap": "写真は別の日のスカイダイビング",
-   "say": "飛行機から、スカイダイバーじゅうにんと、ピカチュウのぬいぐるみが降ってきたの。"
+   "face": "normal",
+   "t": "ピカチュウのぬいぐるみ、約750個。\nひとつずつ、小さなパラシュートつき。",
+   "img": "table:落ちてきたもの=ピカチュウのぬいぐるみ 約750個;つき方=1個ずつ小さなパラシュート;いっしょに=黄色い服のスカイダイバー 10人ほど",
+   "label": "空から降ってきたもの",
+   "say": "ピカチュウのぬいぐるみ、やくななひゃくごじゅっこ。ひとつずつ、小さなパラシュートつき。"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "ぬいぐるみには小さなパラシュートつき。\n参加した人の記録では、約750個よ。",
-   "img": "table:日にち=1998年8月27日（木）;場所=トピーカの昔の空軍基地の飛行場;空から=スカイダイバー10人とぬいぐるみ;ぬいぐるみ=パラシュートつき 約750個",
-   "label": "トピカチュウの日",
-   "say": "ぬいぐるみには小さなパラシュートつき。参加した人の記録では、やくななひゃくごじゅっこよ。",
-   "kana": "ヌイグルミニワ'/チ'イサナ/パラシュウト_ツキ'、サンカ'/_シタ'/_ヒトノ'/キロクデワ'、ヤ'ク/ナナヒャクゴジュ'ッコヨ"
+   "t": "黄色い服のスカイダイバーも、\n10人ほど飛び降りてきたわ。",
+   "img": "wiki:en:Parachuting^wiki:en:Skydiving",
+   "label": "スカイダイバー",
+   "cap": "写真は別の日のスカイダイビング",
+   "say": "黄色い服のスカイダイバーも、じゅうにんほど飛び降りてきたわ。"
   },
   {
    "w": "z",
+   "face": "think",
+   "t": "それは攻撃じゃなくて、\n物資の投下なのだ。",
+   "img": "table:落ちてきたもの=ピカチュウのぬいぐるみ 約750個;つき方=1個ずつ小さなパラシュート;いっしょに=黄色い服のスカイダイバー 10人ほど",
+   "big": "ただの物資投下",
+   "bf": "magic"
+  },
+  {
+   "w": "m",
    "face": "happy",
-   "t": "ピカチュウの雨なのだ。\n夢みたいなのだ。",
+   "t": "受け取る側は、\n戦場だったけどね。",
    "img": "art:25"
   },
   {
    "w": "m",
-   "face": "think",
-   "t": "子どもたちは、落ちてくるぬいぐるみを追いかけて、\n飛行場の原っぱを走り回ったそうよ。",
-   "img": "commons:Forbesafb-02242002.jpg^wiki:en:Topeka_Regional_Airport",
-   "label": "会場になった昔の空軍基地"
+   "face": "normal",
+   "t": "参加した人は、大人が子どもを踏みつけて、\nぬいぐるみを全部ひったくっていたって書いてるわ。",
+   "img": "art:25",
+   "label": "参加した人の思い出"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "いちばんポケモンに降伏してるのは、\n大人なのだ。",
+   "img": "art:25",
+   "big": "大人が降伏",
+   "bf": "fude",
+   "ans": true
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "マスタートレーナー養成会場",
+   "sec": "第二層　会場の中身",
+   "font": "dot",
+   "x": {
+    "head": "アメリカ初のポケモンの会で\nアニメは日本語のまま流れた\n回はカスミとヒトデマン",
+    "img": [
+     "art:120"
+    ],
+    "bubble": "吹き替えは邪道なのだ",
+    "who": "z",
+    "post": "1998年、アメリカで最初のポケモンの会では、英語版の放送が始まる前のアニメが日本語のまま流れました。参加した人が覚えているのは、カスミとヒトデマンが出る回。ほかにも、マスタートレーナーの講習や、トランクでゲームが動く車がありました。"
+   }
   },
   {
    "w": "m",
-   "face": "think",
-   "t": "でも参加した人の思い出話では、数が足りなくて、\n大人が子どもから取っていたって。",
-   "img": "art:25"
+   "face": "normal",
+   "t": "会場の中は、\nもっとちぐはぐだったの。",
+   "img": "table:日にち=1998年8月27日（木）;場所=昔の空軍基地の飛行場;時間=昼11時から2時まで。雨でも決行;入場=無料",
+   "label": "アメリカ初のポケモンの会"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "まずアニメ。英語版の放送が始まる前だったから、\n日本語のまま流れていたそうよ。",
+   "img": "table:流れたアニメ=日本語のまま。英語版の放送が始まる前;覚えている人の話=カスミとヒトデマンが出る回",
+   "label": "会場で流れたアニメ"
   },
   {
    "w": "z",
    "face": "proud",
-   "t": "大人げないのだ。ボクなら子どもにゆずるのだ。\nボクは大人だから。",
-   "img": "art:25"
+   "t": "正しいのだ。\n吹き替えは邪道なのだ。",
+   "img": "table:流れたアニメ=日本語のまま。英語版の放送が始まる前;覚えている人の話=カスミとヒトデマンが出る回",
+   "big": "吹き替えは邪道",
+   "bf": "magic"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "アメリカの子は、\n一言もわからないけどね。",
+   "img": "table:流れたアニメ=日本語のまま。英語版の放送が始まる前;覚えている人の話=カスミとヒトデマンが出る回",
+   "v": "tsun"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "会場には、ポケモンの絵の入った\nフォルクスワーゲンのビートルが10台。",
+   "t": "参加した人が覚えているのは、\nカスミとヒトデマンが出る回。",
+   "img": "art:120",
+   "label": "ヒトデマン"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ヒトデマン？ピカチュウの会なのに、\n地味なのだ。",
+   "img": "art:120",
+   "label": "ヒトデマン"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "地味じゃないわよ。進化したスターミーは、\n初代の対戦で最強クラスなんだから。",
+   "img": "art:121",
+   "label": "スターミー"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "…ヒトデマンは、\n最初から最強なのだ。",
+   "img": "art:121",
+   "label": "スターミー"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "手のひらを返すのが、\n速すぎるわね。",
+   "img": "art:121",
+   "v": "tsun"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それから、踊り。\n名前は「ホーク・ポケモン」。",
+   "img": "table:名前=Hoke Pokémon（ホーク・ポケモン）;中身=踊り。振り付けの記録は残っていない;そっくりな名前=英語圏の子どもの踊り歌 Hokey Pokey",
+   "label": "会場の踊り",
+   "lf": "dot"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "英語圏の子どもの定番の踊り歌、\n「ホーキー・ポーキー」にそっくりな名前ね。",
+   "img": "table:名前=Hoke Pokémon（ホーク・ポケモン）;中身=踊り。振り付けの記録は残っていない;そっくりな名前=英語圏の子どもの踊り歌 Hokey Pokey",
+   "label": "会場の踊り",
+   "ety": [
+    "Hokey Pokey（ホーキー・ポーキー）",
+    "手や足を輪の中に入れたり出したりして回る、英語圏の子どもの踊り歌"
+   ]
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "どんな踊りだったのだ？",
+   "img": "table:名前=Hoke Pokémon（ホーク・ポケモン）;中身=踊り。振り付けの記録は残っていない;そっくりな名前=英語圏の子どもの踊り歌 Hokey Pokey"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "振り付けは、\n記録に残ってないの。",
+   "img": "table:名前=Hoke Pokémon（ホーク・ポケモン）;中身=踊り。振り付けの記録は残っていない;そっくりな名前=英語圏の子どもの踊り歌 Hokey Pokey",
+   "label": "会場の踊り"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "じゃあボクが復元するのだ。右手を入れて、\n右手を出して、10まんボルト！",
+   "img": "art:25",
+   "big": "10まんボルト！",
+   "bf": "potta",
+   "say": "じゃあボクが復元するのだ。右手を入れて、右手を出して、じゅうまんボルト！"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "それ、自分が\n感電してるじゃない。",
+   "img": "art:25",
+   "v": "tsun"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "「マスタートレーナー」の講習もあったの。\n名札と、穴あけカードがもらえたそうよ。",
+   "img": "table:講習の名前=Meet the Monsters;もらえたもの=マスタートレーナーの名札;穴あけカード=ブースを回るたびに穴を開けてもらう",
+   "label": "マスタートレーナーの講習",
+   "lf": "dot",
+   "big": "マスタートレーナー",
+   "bf": "dot"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ブースを回って、\n穴を開けてもらうだけなのだ？",
+   "img": "table:講習の名前=Meet the Monsters;もらえたもの=マスタートレーナーの名札;穴あけカード=ブースを回るたびに穴を開けてもらう",
+   "label": "マスタートレーナーの講習",
+   "lf": "dot"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "ジムバッジ8つより、\nずっと早いわね。",
+   "img": "table:講習の名前=Meet the Monsters;もらえたもの=マスタートレーナーの名札;穴あけカード=ブースを回るたびに穴を開けてもらう",
+   "label": "マスタートレーナーの講習",
+   "lf": "dot",
+   "say": "ジムバッジやっつより、ずっと早いわね。"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "ボクがセキエイ高原まで\n歩いた日々は、何だったのだ…。",
+   "img": "wiki:en:Pokémon_Red_and_Blue^commons:PokemonRedBlueYellowBack.jpg",
+   "v": "hero"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "おみやげは、中に小さなピカチュウが入った、\nはずむボール。",
+   "img": "table:おみやげ=中に小さなポケモンが入った、はずむボール;ほかに=ピカチュウの人形、鉛筆のキャップ、アニメのビデオ;ある子は=ボールを割って中のピカチュウを出そうとして手を切った",
+   "label": "会場のおみやげ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "中のピカチュウを出そうとして、\nボールを割って手を切った子もいたそうよ。",
+   "img": "table:おみやげ=中に小さなポケモンが入った、はずむボール;ほかに=ピカチュウの人形、鉛筆のキャップ、アニメのビデオ;ある子は=ボールを割って中のピカチュウを出そうとして手を切った",
+   "label": "会場のおみやげ"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "その子の気持ちは、\n痛いほどわかるのだ。",
+   "img": "table:おみやげ=中に小さなポケモンが入った、はずむボール;ほかに=ピカチュウの人形、鉛筆のキャップ、アニメのビデオ;ある子は=ボールを割って中のピカチュウを出そうとして手を切った"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "車も来ていたわ。\nピカチュウの絵のフォルクスワーゲン・ビートル。",
    "img": "commons:Voiture Pikachu avec Peluches.jpg",
    "label": "ポケモン仕様の黄色いビートル",
-   "cap": "写真は別の催しの同じ型の車",
-   "say": "会場には、ポケモンの絵の入った、フォルクスワーゲンのビートルがじゅうだい。"
+   "cap": "写真は別の催しの同じ型の車"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "車にはテレビとゲーム機が積んであって、\nこのあと全米の10の都市を回ったの。",
+   "t": "トランクの中にブラウン管のテレビがあって、\n発売前の赤と青が動いていたの。",
+   "img": "table:車=ピカチュウの絵のフォルクスワーゲン・ビートル;トランク=中にブラウン管のテレビ。赤と青が動いていた;その後=何年も全米のイベントを回った",
+   "label": "ピカチュウの車"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "トランクでポケモンができる車、\nほしいのだ。",
    "img": "commons:Voiture Pikachu avec Peluches.jpg",
    "label": "ポケモン仕様の黄色いビートル",
-   "cap": "写真は別の催しの同じ型の車",
-   "say": "車にはテレビとゲーム機が積んであって、このあと、全米のじゅうの都市を回ったの。"
+   "cap": "写真は別の催しの同じ型の車"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "子どもたちは、発売前の赤と青を、\n会場で先に遊べたのよ。",
+   "t": "子どもたちは、発売の1か月前に、\nゲームボーイで赤と青を遊べたのよ。",
    "img": "commons:Game-Boy-FL.jpg^wiki:en:Game_Boy",
    "label": "ゲームボーイ"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "1か月早いのは、ずるいのだ。\nアメリカでいちばんの古参なのだ。",
+   "img": "commons:Game-Boy-FL.jpg^wiki:en:Game_Boy",
+   "label": "ゲームボーイ"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "トピーカという名前",
+   "sec": "第三層　トピーカの名前",
+   "font": "deco",
+   "x": {
+    "head": "アメリカで最初のポケモンの会の街\nトピーカの名前は\n先住民の言葉で「イモを掘るのにいい場所」",
+    "img": [
+     "commons:Charles Bird King - Monchousia (White Plume), Kansa - Google Art Project.jpg^commons:Monchousia (White Plume) (7844233464) (2).jpg"
+    ],
+    "bubble": "掘る場所なのだ",
+    "who": "z",
+    "post": "1998年、アメリカで最初のポケモンの会が開かれたトピーカ。選ばれた理由は、アメリカのまんなかにあることと、市長が1日だけ名前を変えてくれることでした。トピーカは、先住民カンザ族の言葉で「イモを掘るのにいい場所」という意味です。"
+   }
   },
   {
    "w": "z",
@@ -315,76 +502,45 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "理由のひとつは、アメリカのまんなかにあること。\nもうひとつは、市長が名前を変えてくれたことなの。",
-   "img": "commons:Kansas in United States.svg^wiki:en:Kansas",
-   "label": "カンザス州"
+   "t": "新聞によると、理由は2つ。\nアメリカのまんなかにあることと…",
+   "img": "table:理由1=アメリカのまんなかにある;理由2=市長が1日だけ名前を変えてくれる",
+   "label": "トピーカが選ばれた理由"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "市長は記者に、こう話しているわ。\n「今日だけよ。市長ができる楽しい仕事のひとつね」",
-   "img": "commons:Kansas State Capitol.jpg^wiki:en:Kansas_State_Capitol",
-   "label": "ジョーン・ワグノン市長の言葉"
+   "t": "市長が、1日だけ\n名前を変えてくれたこと。",
+   "img": "table:理由1=アメリカのまんなかにある;理由2=市長が1日だけ名前を変えてくれる",
+   "label": "トピーカが選ばれた理由"
   },
   {
    "w": "z",
    "face": "think",
-   "t": "名前を貸すのが、\n楽しい仕事なのだ…？",
-   "img": "commons:Kansas State Capitol.jpg^wiki:en:Kansas_State_Capitol"
-  },
-  {
-   "w": "z",
-   "face": "happy",
-   "t": "じゃあ、ここも「ピカチュウ採掘所」にすれば、\n空からぬいぐるみが降ってくるのだ。",
-   "img": "art:25"
-  },
-  {
-   "w": "m",
-   "face": "happy",
-   "t": "ここは地下よ。\n降ってくるのは、天井の石だけ。",
-   "v": "tsun"
-  },
-  {
-   "type": "title",
-   "sub": "第二層",
-   "t": "トピーカという名前の意味",
-   "sec": "第二層　トピーカの名前",
-   "x": {
-    "head": "アメリカの州都トピーカの名前は\n先住民の言葉で\n「イモを掘るのにいい場所」",
-    "img": [
-     "commons:Charles Bird King - Monchousia (White Plume), Kansa - Google Art Project.jpg^commons:Monchousia (White Plume) (7844233464) (2).jpg"
-    ],
-    "bubble": "掘る場所なのだ",
-    "who": "z",
-    "post": "ピカチュウにちなんで1日だけ「トピカチュウ」になったアメリカのトピーカ市。トピーカは、もともと先住民カンザ族の言葉で「イモを掘るのにいい場所」という意味です。1855年に町の名前に選ばれた理由は何だったと思いますか？"
-   }
-  },
-  {
-   "w": "m",
-   "face": "think",
-   "t": "実はね、ピカが入っていたのは偶然。\nトピーカは、もともと先住民の言葉なの。",
-   "img": "commons:Charles Bird King - Monchousia (White Plume), Kansa - Google Art Project.jpg^commons:Monchousia (White Plume) (7844233464) (2).jpg",
-   "label": "カンザ族の首長"
+   "t": "ダジャレに乗ってくれる市長が、\n決め手なのだ。",
+   "img": "table:理由1=アメリカのまんなかにある;理由2=市長が1日だけ名前を変えてくれる",
+   "label": "トピーカが選ばれた理由"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "この土地に昔から住んでいたカンザ族。\nカンザス州の名前も、この人たちから来ているわ。",
+   "t": "トピーカは、もともと\n先住民カンザ族の言葉なの。",
    "img": "commons:Charles Bird King - Monchousia (White Plume), Kansa - Google Art Project.jpg^commons:Monchousia (White Plume) (7844233464) (2).jpg",
-   "label": "1822年に描かれた肖像"
+   "label": "カンザ族の首長",
+   "lf": "deco"
   },
   {
    "w": "z",
    "face": "think",
-   "t": "それで、トピーカは\nどういう意味なのだ？",
+   "t": "どういう意味なのだ？",
    "img": "commons:Charles Bird King - Monchousia (White Plume), Kansa - Google Art Project.jpg^commons:Monchousia (White Plume) (7844233464) (2).jpg"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "イモを掘るのに、いい場所。",
+   "t": "イモを掘るのに、\nいい場所。",
    "img": "commons:Potato harvest - geograph.org.uk - 248459.jpg^wiki:en:Potato",
    "big": "イモを掘るのにいい場所",
+   "bf": "deco",
    "ety": [
     "Topeka（トピーカ）",
     "カンザ族の言葉　イモを掘るのにいい場所"
@@ -393,675 +549,236 @@
   },
   {
    "w": "z",
-   "face": "shock",
-   "t": "イモ！？\nボクのジャガイモと同じなのだ！",
-   "img": "wiki:en:Potato^commons:Potato harvest - geograph.org.uk - 248459.jpg",
-   "label": "坑道で掘ったジャガイモ"
-  },
-  {
-   "w": "m",
    "face": "happy",
-   "t": "そうね。あなたが坑道でジャガイモを掘ったのも、\nトピーカの名前どおりってこと。",
-   "img": "wiki:en:Potato^commons:Potato harvest - geograph.org.uk - 248459.jpg",
-   "label": "坑道で掘ったジャガイモ"
-  },
-  {
-   "w": "z",
-   "face": "proud",
-   "t": "じゃあ、この坑道も\nトピーカなのだ。",
-   "img": "wiki:en:Potato^commons:Potato harvest - geograph.org.uk - 248459.jpg"
-  },
-  {
-   "w": "m",
-   "face": "happy",
-   "t": "掘ってたのは、\n金のはずだけどね。",
-   "v": "tsun"
+   "t": "掘る場所なのだ！\n採掘所の仲間なのだ。",
+   "img": "commons:Potato harvest - geograph.org.uk - 248459.jpg^wiki:en:Potato"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "この言葉は1826年の記録では、町のそばを\n流れるカンザス川の名前だったの。",
-   "img": "commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas",
-   "label": "カンザス川とトピーカの町",
-   "kana": "コノ'/コトバ'ワ/セ'ンハッピャク/ニジュウロ'クネンノ/キロクデワ'、マチ'ノ/ソ'バオ/ナガレ'ル/カンザス'ガワノ/ナマエダッタ'ノ"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "1855年、町をつくった人たちが\nそれを町の名前にした。選んだ理由が面白いの。",
-   "img": "row:commons:Charles Bird King - Monchousia (White Plume), Kansa - Google Art Project.jpg|カンザ族の言葉>commons:Topeka skyline and Kansas River.jpg|1855年 町の名前に>art:25|1998年 トピカチュウ",
-   "label": "トピーカという名前の歩み",
-   "kana": "セ'ンハッピャク/ゴジュウゴ'ネン、マチ'オ/_ツク'ッタ/_ヒト'タチガ/ソレオ'/マチ'ノ/ナマエニ'/_シタ'、エラ'ンダ/リユウガ'/オモシロ'イノ"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "「新しくて、先住民の言葉から来ていて、\n響きがいいから」。",
+   "t": "1855年に町をつくった人たちは、\n響きがいいからこの名前を選んだそうよ。",
    "img": "commons:Topeka, Kansas.JPG^commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas",
-   "label": "町をつくった人たちの言葉"
+   "label": "トピーカの町",
+   "lf": "deco"
   },
   {
    "w": "z",
    "face": "think",
-   "t": "響きで、\n選んだのだ。",
-   "img": "commons:Topeka, Kansas.JPG^commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas"
-  },
-  {
-   "w": "m",
-   "face": "think",
-   "t": "響きで選ばれた名前が、140年あとに、\n響きでピカチュウに選ばれたのね。",
-   "img": "row:commons:Charles Bird King - Monchousia (White Plume), Kansa - Google Art Project.jpg|カンザ族の言葉>commons:Topeka skyline and Kansas River.jpg|1855年 町の名前に>art:25|1998年 トピカチュウ",
-   "label": "トピーカという名前の歩み",
-   "ans": "idea",
-   "kana": "ヒビキ'デ/エラ'バレタ/ナマエガ'、ヒャクヨンジュ'ウネン/ア'トニ、ヒビキ'デ/_ピカ'チュウニ/エラ'バレタノネ"
-  },
-  {
-   "w": "z",
-   "face": "surprise",
-   "t": "名前の響きに、\n2回選ばれた市なのだ。",
-   "img": "row:commons:Charles Bird King - Monchousia (White Plume), Kansa - Google Art Project.jpg|カンザ族の言葉>commons:Topeka skyline and Kansas River.jpg|1855年 町の名前に>art:25|1998年 トピカチュウ"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "でもね、トピーカが名前を変えたのは、\nピカチュウのときだけじゃないの。",
-   "img": "commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas"
-  },
-  {
-   "type": "title",
-   "sub": "第三層",
-   "t": "Google、カンザス州",
-   "sec": "第三層　2010年のGoogle市",
-   "x": {
-    "head": "2010年、トピーカ市は\n1か月だけ名前を\n「Google」に変えた",
-    "img": [
-     "web:https://www.google.com/logos/2010/topeka-hp.gif"
-    ],
-    "bubble": "次はGoogleなのだ",
-    "who": "z",
-    "post": "1998年にピカチュウにちなんで「トピカチュウ」になったトピーカ市は、2010年3月、こんどは「Google」を名乗りました。速いネットを引いてもらうためです。翌月、Googleはお返しにロゴを「Topeka」に変えました。最後に選ばれたのはどの街だと思いますか？"
-   }
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "2010年2月、Googleが、\nある計画を発表したの。",
-   "img": "commons:Google logo (2010-2013).svg^wiki:en:Google",
-   "say": "にせんじゅうねん、にがつ、グーグルが、ある計画を発表したの。",
-   "kana": "ニセンジュ'ウネン、ニガツ'、グウグルガ'、ア'ル/ケエカクオ'/ハッピョオ'/_シタ'ノ"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "それまでの100倍くらい速いインターネットを、\n試しに、いくつかの街に引くという計画。",
-   "img": "commons:Optical fiber cable-01ASD.jpg^wiki:en:Optical_fiber",
-   "label": "光ファイバーのケーブル"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "どの街に引くかは、手をあげた市から選ぶ。\n応募した市は、全米で1100をこえたの。",
-   "img": "table:発表=2010年2月;中身=それまでの約100倍速いネットを引く;引く場所=手をあげた市から選ぶ;応募した市=1100以上",
-   "label": "Googleの計画",
-   "say": "どの街に引くかは、手をあげた市から選ぶ。応募した市は、全米でせんひゃくをこえたの。"
-  },
-  {
-   "w": "z",
-   "face": "think",
-   "t": "1100の中から選ばれるのは、\nたいへんなのだ。",
-   "img": "table:発表=2010年2月;中身=それまでの約100倍速いネットを引く;引く場所=手をあげた市から選ぶ;応募した市=1100以上",
-   "say": "せんひゃくの中から選ばれるのは、たいへんなのだ。"
-  },
-  {
-   "w": "m",
-   "face": "think",
-   "t": "そこでトピーカの市長は、3月のあいだ、\n市の名前を「Google」に変えたの。",
-   "img": "commons:Topeka mayor bill bunten.jpg",
-   "label": "ビル・バンテン市長",
-   "say": "そこでトピーカの市長は、さんがつのあいだ、市の名前を、グーグルに変えたの。"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "名乗った名前は「Google、カンザス州。\n光ファイバーの首都」。",
-   "img": "commons:Topeka mayor bill bunten.jpg",
-   "label": "ビル・バンテン市長",
-   "say": "名乗った名前は、グーグル、カンザス州。光ファイバーの首都。"
-  },
-  {
-   "w": "z",
-   "face": "shock",
-   "t": "トピカチュウの次は、\nGoogleなのだ！？",
-   "img": "commons:Topeka mayor bill bunten.jpg",
-   "big": "トピカチュウの次はGoogle",
-   "say": "トピカチュウの次は、グーグルなのだ！？",
-   "ans": true
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "しかも市議会は、\n9対0の全員賛成。",
-   "img": "table:決めたこと=3月のあいだ、市の名前をGoogleにする;賛成=9人;反対=0人",
-   "label": "トピーカ市議会の採決",
-   "say": "しかも市議会は、きゅうたいゼロの全員賛成。"
-  },
-  {
-   "w": "z",
-   "face": "think",
-   "t": "誰も、\n止めなかったのだ…。",
-   "img": "table:決めたこと=3月のあいだ、市の名前をGoogleにする;賛成=9人;反対=0人"
-  },
-  {
-   "w": "z",
-   "face": "happy",
-   "t": "じゃあボクも今日から「Googleもん」なのだ。\nネットが速くなるのだ。",
-   "say": "じゃあボクも今日から、グーグルもん、なのだ。ネットが速くなるのだ。"
-  },
-  {
-   "w": "m",
-   "face": "happy",
-   "t": "この坑道、電波が\n1本も入らないわよ。",
-   "v": "tsun",
-   "say": "この坑道、電波がいっぽんも入らないわよ。"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "必死だったのは、トピーカだけじゃないの。\nほかの市長たちも、すごかったのよ。",
-   "img": "table:トピーカ=市の名前を「Google」に（3月の1か月）;ダルース=市長が真冬の湖に飛び込む;サラソタ=市長がサメの水槽に入る;ダルースの冗談の動画=最初の子どもを「Googleファイバー」と名づける",
-   "label": "Googleを呼びたい市の争い"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "ミネソタ州ダルースの市長は、真冬のスペリオル湖に、\nTシャツと短パンで飛び込んだの。",
-   "img": "commons:LakeSuperior from Duluth in Winter.jpg^wiki:en:Lake_Superior",
-   "label": "冬のスペリオル湖（ダルース）",
-   "ety": [
-    "スペリオル湖",
-    "北アメリカの五大湖で、いちばん大きい湖"
-   ],
-   "say": "ミネソタ州ダルースの市長は、真冬のスペリオル湖に、ティーシャツと短パンで飛び込んだの。",
-   "kana": "ミネソタ'シュウ/ダ'ルウスノ/シ'チョオワ、マフユノ'/スペリオ'ルコニ、ティイ'シャ_ツト/タンパンデ'/トビコ'ンダノ"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "湖から上がると、こう叫んだそうよ。\n「ほかの市長たちよ、欲しいなら湖に飛び込め！」",
-   "img": "commons:LakeSuperior from Duluth in Winter.jpg^wiki:en:Lake_Superior",
-   "big": "湖に飛び込め！",
-   "label": "ダルース市長の言葉"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "フロリダ州サラソタの市長は、それに応えて、\nサメの泳ぐ水槽に入ったの。",
-   "img": "commons:Wonders of Wildlife Museum (shark tank).jpg",
-   "label": "サメの泳ぐ水槽",
-   "cap": "写真は別の水族館の水槽"
-  },
-  {
-   "w": "z",
-   "face": "shock",
-   "t": "市長が、\n命がけなのだ！",
-   "img": "commons:Wonders of Wildlife Museum (shark tank).jpg"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "サラソタは、町にある島の名前まで\n「Google島」に変えていたわ。",
-   "img": "commons:Sarasota Skyline.jpeg^wiki:en:Sarasota,_Florida",
-   "label": "フロリダ州サラソタ",
-   "say": "サラソタは、町にある島の名前まで、グーグルじまに変えていたわ。"
-  },
-  {
-   "w": "z",
-   "face": "surprise",
-   "t": "島まで、\n巻き込まれてるのだ。",
-   "img": "commons:Sarasota Skyline.jpeg^wiki:en:Sarasota,_Florida"
-  },
-  {
-   "w": "m",
-   "face": "think",
-   "t": "ダルースは、冗談の動画で、\nこんなことまで言っていたの。",
-   "img": "table:トピーカ=市の名前を「Google」に（3月の1か月）;ダルース=市長が真冬の湖に飛び込む;サラソタ=市長がサメの水槽に入る;ダルースの冗談の動画=最初の子どもを「Googleファイバー」と名づける",
-   "label": "Googleを呼びたい市の争い"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "「最初の男の子は『Googleファイバー』、\n女の子は『Googleットファイバー』と名づける」",
-   "img": "table:トピーカ=市の名前を「Google」に（3月の1か月）;ダルース=市長が真冬の湖に飛び込む;サラソタ=市長がサメの水槽に入る;ダルースの冗談の動画=最初の子どもを「Googleファイバー」と名づける",
-   "label": "ダルースの冗談の動画",
-   "say": "最初の男の子は、グーグルファイバー、女の子は、グーグレットファイバーと名づける。"
-  },
-  {
-   "w": "z",
-   "face": "sad",
-   "t": "Googleもんは、\nもう古いのだ…。",
-   "v": "hero",
-   "say": "グーグルもんは、もう古いのだ。"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "そして2010年4月1日。\nGoogleが、思わぬ返事をしたの。",
-   "img": "commons:Google logo (2010-2013).svg^wiki:en:Google",
-   "say": "そして、にせんじゅうねん、しがつついたち。グーグルが、思わぬ返事をしたの。",
-   "kana": "ソ_シテ'、ニセンジュ'ウネン、シガ'/_ツツイ'タチ、グウグルガ'、オモワヌ'/ヘンジ'オ/_シタ'ノ"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "Googleのトップページのロゴが、\nこうなったのよ。",
-   "img": "web:https://www.google.com/logos/2010/topeka-hp.gif",
-   "label": "2010年4月1日のロゴ",
-   "say": "グーグルのトップページのロゴが、こうなったのよ。",
-   "ans": true
-  },
-  {
-   "w": "z",
-   "face": "shock",
-   "t": "Googleが、トピーカに\nなったのだ！？",
-   "img": "web:https://www.google.com/logos/2010/topeka-hp.gif",
-   "label": "2010年4月1日のロゴ",
-   "say": "グーグルが、トピーカになったのだ！？"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "エイプリルフールの冗談よ。\nトピーカがGoogleを名乗ったお返しね。",
-   "img": "web:https://www.google.com/logos/2010/topeka-hp.gif",
-   "label": "2010年4月1日のロゴ",
-   "say": "エイプリルフールの冗談よ。トピーカがグーグルを名乗ったお返しね。"
-  },
-  {
-   "w": "m",
-   "face": "think",
-   "t": "シュミットさんのブログには、\nトピーカの名前の意味まで書いてあったの。",
-   "img": "wiki:en:Eric_Schmidt",
-   "label": "エリック・シュミット"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "「Googleも、ネットで情報を掘るのに\nいちばんいい場所のひとつだと思いたい」",
-   "img": "wiki:en:Eric_Schmidt",
-   "label": "シュミットさんのブログ",
-   "big": "情報を掘るのにいい場所",
-   "say": "グーグルも、ネットで情報を掘るのに、いちばんいい場所のひとつだと思いたい。"
-  },
-  {
-   "w": "z",
-   "face": "surprise",
-   "t": "Googleまで、\n掘る話をしてるのだ！",
-   "img": "web:https://www.google.com/logos/2010/topeka-hp.gif",
-   "say": "グーグルまで、掘る話をしてるのだ！"
-  },
-  {
-   "w": "m",
-   "face": "happy",
-   "t": "この採掘所の、\n商売がたきね。",
-   "v": "tsun"
-  },
-  {
-   "w": "z",
-   "face": "proud",
-   "t": "ボクたちのほうが、\n深く掘ってるのだ。"
-  },
-  {
-   "w": "z",
-   "face": "happy",
-   "t": "名前の交換なのだ。\n両思いなのだ！",
-   "img": "web:https://www.google.com/logos/2010/topeka-hp.gif",
-   "v": "amaama"
-  },
-  {
-   "w": "m",
-   "face": "think",
-   "t": "でも当時の社長のエリック・シュミットさんは、\nその日のブログにこう書いていたの。",
-   "img": "wiki:en:Eric_Schmidt",
-   "label": "エリック・シュミット"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "「この改名は、どの市を選ぶかには\nいっさい関係ありません」",
-   "img": "wiki:en:Eric_Schmidt",
-   "label": "エリック・シュミットの言葉"
-  },
-  {
-   "w": "z",
-   "face": "think",
-   "t": "…それ、わざわざ\n書く必要あるのだ？",
-   "img": "wiki:en:Eric_Schmidt"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "2011年3月、Googleが選んだのは、\nカンザス州のカンザスシティ。",
-   "img": "commons:GoogleFiberKansasCity.JPG^wiki:en:Google_Fiber",
-   "label": "選ばれたカンザスシティ",
-   "say": "にせんじゅういちねん、さんがつ、グーグルが選んだのは、カンザス州のカンザスシティ。",
-   "ans": true,
-   "kana": "ニセンジュウイ'チネン、サンガツ'、グウグルガ'/エラ'ンダ/ノワ'、カンザス'シュウノ/カンザスシ'ティ"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "トピーカから東へ、\n100kmほどの街よ。",
-   "img": "table:選ばれた街=カンザス州カンザスシティ;発表=2011年3月30日;トピーカから=東へ約100km",
-   "label": "Googleが選んだ街",
-   "say": "トピーカから東へ、ひゃっキロほどの街よ。"
-  },
-  {
-   "w": "z",
-   "face": "sad",
-   "t": "名前を差し出したのに、\nふられたのだ…。",
-   "img": "table:選ばれた街=カンザス州カンザスシティ;発表=2011年3月30日;トピーカから=東へ約100km",
-   "v": "namida"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "湖に飛び込んだダルースも、\nサメと泳いだサラソタも、選ばれなかったわ。",
-   "img": "commons:LakeSuperior from Duluth in Winter.jpg^wiki:en:Lake_Superior"
+   "t": "響きで選んだ名前が、\n響きでピカチュウとくっついたのだ。",
+   "img": "row:commons:Topeka skyline and Kansas River.jpg|トピーカ;art:25|ピカチュウ"
   },
   {
    "type": "title",
    "sub": "第四層",
-   "t": "名前の値段",
-   "sec": "第四層　名前を売った町",
+   "t": "降伏ぐせ",
+   "sec": "第四層　2度目の降伏",
+   "font": "reggae",
    "x": {
-    "head": "2000年、オレゴン州の町は\nお金とパソコンをもらって\n名前を「Half.com」に変えた",
+    "head": "ピカチュウに降伏したトピーカ市は\n2010年\nGoogleにも降伏した",
     "img": [
-     "commons:Halfway-Oregon.jpg^commons:HalfwayOregonskyline.jpg"
+     "web:https://www.google.com/logos/2010/topeka-hp.gif"
     ],
-    "bubble": "売れてるのだ",
+    "bubble": "降伏ぐせなのだ",
     "who": "z",
-    "post": "2000年、人口350人ほどのオレゴン州ハーフウェイは、1年だけ名前を「Half.com」に変えました。中古品を売るサイトから、お金と学校のパソコン20台あまりをもらっています。ピカチュウやGoogleに名前を貸したトピーカは、いくらもらったと思いますか？"
+    "post": "1998年にピカチュウにちなんで「トピカチュウ」になったトピーカ市は、2010年3月、Googleの速いネットを呼ぶために「Google」を名乗りました。4月1日、Googleはお返しにロゴを「Topeka」に変えました。それでも選ばれたのは、となりのカンザスシティでした。"
    }
   },
   {
    "w": "m",
-   "face": "think",
-   "t": "名前を変えて、ちゃんと\nお金をもらった町もあるの。",
-   "img": "commons:Halfway-Oregon.jpg^commons:HalfwayOregonskyline.jpg",
-   "label": "オレゴン州ハーフウェイ"
+   "face": "normal",
+   "t": "でも、トピーカの降伏は\nこれで終わらないの。",
+   "img": "commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "オレゴン州の、人口350人ほどの町ハーフウェイ。\n名前は「道のりの半分」という意味ね。",
-   "img": "commons:Halfway-Oregon.jpg^commons:HalfwayOregonskyline.jpg",
-   "label": "オレゴン州ハーフウェイ",
-   "ety": [
-    "Halfway（ハーフウェイ）",
-    "英語　道のりの半分"
-   ],
-   "say": "オレゴン州の、人口さんびゃくごじゅうにんほどの町、ハーフウェイ。名前は、道のりの半分という意味ね。",
-   "kana": "オレゴン'シュウノ、ジンコオ/サンビャクゴジュウニ'ンホドノ/マチ'、ハアフウェ'イ、ナマエワ'、ミチノリノ'/ハンブ'ント/イウ'/イ'ミネ"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "2000年、中古の本やゲームを売るサイトが、\n町に名前を貸してほしいと頼んだの。",
-   "img": "table:新しい名前=Half.com（ハーフ・ドットコム）;期間=2000年の1年間;町がもらったもの=お金（報道で7万5000〜10万ドル）;小学校には=パソコン20台あまり",
-   "label": "ハーフ・ドットコムとの約束"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "1年だけ、町の名前を「ハーフ・ドットコム」に。\nかわりに、お金と、学校のパソコン20台あまり。",
-   "img": "table:新しい名前=Half.com（ハーフ・ドットコム）;期間=2000年の1年間;町がもらったもの=お金（報道で7万5000〜10万ドル）;小学校には=パソコン20台あまり",
-   "label": "ハーフ・ドットコムとの約束",
-   "say": "いちねんだけ、町の名前を、ハーフドットコムに。かわりに、お金と、学校のパソコンにじゅうだいあまり。"
+   "t": "2010年、Googleが、速いネットを引く街を募集したとき、\nトピーカは1か月だけ市の名前を「Google」に変えたの。",
+   "img": "commons:Topeka mayor bill bunten.jpg",
+   "label": "ビル・バンテン市長",
+   "say": "にせんじゅうねん、グーグルが、速いネットを引く街を募集したとき、トピーカは、いっかげつだけ、市の名前を、グーグルに変えたの。"
   },
   {
    "w": "z",
-   "face": "surprise",
-   "t": "ちゃんと、\n名前が売れてるのだ！",
-   "img": "table:新しい名前=Half.com（ハーフ・ドットコム）;期間=2000年の1年間;町がもらったもの=お金（報道で7万5000〜10万ドル）;小学校には=パソコン20台あまり",
+   "face": "shock",
+   "t": "2度目の、\n降伏なのだ！",
+   "img": "commons:Topeka mayor bill bunten.jpg",
+   "big": "2度目の降伏",
+   "bf": "fude",
    "ans": true
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "トピーカのほうは、名前を貸して\nお金をもらった記録は、見つからなかったの。",
-   "img": "table:1998年=アメリカで最初のポケモンの会;2010年=Googleのロゴ1日分;2018年=ピカブイの試遊会;お金=もらった記録なし",
-   "label": "トピーカが名前を変えて得たもの"
+   "t": "するとGoogleは、4月1日に\nロゴを「Topeka」に変えて返したの。",
+   "img": "web:https://www.google.com/logos/2010/topeka-hp.gif",
+   "label": "2010年4月1日のロゴ",
+   "say": "するとグーグルは、しがつついたちに、ロゴを、トピーカに変えて返したの。"
   },
   {
    "w": "z",
-   "face": "think",
-   "t": "トピーカは、タダで\n名前を貸してたのだ。",
-   "img": "table:1998年=アメリカで最初のポケモンの会;2010年=Googleのロゴ1日分;2018年=ピカブイの試遊会;お金=もらった記録なし"
+   "face": "surprise",
+   "t": "Googleまで、\n降伏したのだ！",
+   "img": "web:https://www.google.com/logos/2010/topeka-hp.gif",
+   "label": "2010年4月1日のロゴ",
+   "say": "グーグルまで、降伏したのだ！"
   },
   {
    "w": "m",
    "face": "happy",
-   "t": "タダどころか、Googleのときは\nこっちからお願いしてたのよ。",
-   "img": "commons:Topeka mayor bill bunten.jpg",
-   "label": "ビル・バンテン市長",
-   "say": "タダどころか、グーグルのときは、こっちからお願いしてたのよ。"
+   "t": "エイプリルフールの冗談よ。\nしかも選ばれたのは、となりのカンザスシティ。",
+   "img": "table:2010年3月=トピーカが1か月だけ市の名前を「Google」に;ねらい=Googleの速いネットを引いてもらう;4月1日=Googleのロゴが「Topeka」に;結果=選ばれたのはカンザスシティ",
+   "label": "2010年のGoogleの件",
+   "say": "エイプリルフールの冗談よ。しかも選ばれたのは、となりのカンザスシティ。"
   },
   {
    "w": "z",
    "face": "sad",
-   "t": "名前を売るのが、\nヘタな市なのだ…。",
-   "img": "commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas"
+   "t": "降伏し損なのだ…。",
+   "img": "table:2010年3月=トピーカが1か月だけ市の名前を「Google」に;ねらい=Googleの速いネットを引いてもらう;4月1日=Googleのロゴが「Topeka」に;結果=選ばれたのはカンザスシティ",
+   "v": "namida"
   },
   {
    "type": "title",
    "sub": "最深層",
-   "t": "2度目のトピカチュウ",
+   "t": "3度目のトピカチュウ",
    "sec": "最深層　2018年のトピカチュウ",
+   "font": "rampart",
    "x": {
     "head": "トピーカ市は2018年に\nもう一度「トピカチュウ」になった\n1回目から20年後",
     "img": [
      "wiki:en:Pokémon:_Let's_Go,_Pikachu!_and_Let's_Go,_Eevee!^commons:Nintendo-Pokemon-Lets-Go-Poke-Ball-Plus-Controller.jpg"
     ],
-    "bubble": "また、やったのだ",
+    "bubble": "また降伏したのだ",
     "who": "z",
-    "post": "1998年に1日だけ「トピカチュウ」になったアメリカのトピーカ市は、20年後の2018年10月27日、もう一度トピカチュウを名乗りました。きっかけはスイッチの「ピカブイ」の試遊会。1998年にぬいぐるみを追いかけた子どもたちは、このとき何歳くらいだったと思いますか？"
+    "post": "1998年に1日だけ「トピカチュウ」になったアメリカのトピーカ市は、20年後の2018年10月27日、もう一度トピカチュウを名乗りました。スイッチの「ピカブイ」の発売前に任天堂が全米8か所で開いた試遊会のひとつでした。"
    }
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "そして2018年10月。トピーカの市長が、\n市の議会で、また宣言したの。",
-   "img": "row:commons:Michelle De La Isla.jpg|デ・ラ・イスラ市長;commons:Gage Park Zoo Topeka-KS(2463602266).jpg|ゲージ公園の動物園",
-   "label": "2018年のトピーカ",
-   "kana": "ソ_シテ'/ニセンジュウハ'チネン/ジュウガツ'、ト'ピイカノ/シ'チョオガ、シ'ノ/ギ'カイデ、マタ'/センゲ'ン/_シタ'ノ"
+   "t": "そして2018年。スイッチの「ピカブイ」の発売前に、\n任天堂が全米8か所で試遊会を開いたの。",
+   "img": "wiki:en:Pokémon:_Let's_Go,_Pikachu!_and_Let's_Go,_Eevee!^commons:Nintendo-Pokemon-Lets-Go-Poke-Ball-Plus-Controller.jpg",
+   "label": "ピカブイ（2018年）",
+   "say": "そして、にせんじゅうはちねん。スイッチの、ピカブイの発売前に、任天堂が、全米はっかしょで試遊会を開いたの。"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "「10月27日だけ、市の名前を\nトピカチュウにします」",
+   "t": "トピーカの市長は、20年ぶりに宣言したわ。\n「10月27日だけ、トピカチュウにします」",
    "img": "row:commons:Michelle De La Isla.jpg|デ・ラ・イスラ市長;commons:Gage Park Zoo Topeka-KS(2463602266).jpg|ゲージ公園の動物園",
-   "big": "また、トピカチュウ",
-   "label": "デ・ラ・イスラ市長の宣言",
-   "kana": "ジュウガツ'/ニジュウ_シチニチダケ'、シ'ノ/ナマエオ'/ト_ピカ'チュウニ/シマ'_ス"
+   "label": "2018年のトピーカ"
   },
   {
    "w": "z",
    "face": "shock",
-   "t": "また、\nやったのだ！？",
-   "img": "row:commons:Topeka skyline and Kansas River.jpg|トピーカ;art:25|ピカチュウ",
+   "t": "3度目の、\n降伏なのだ！",
+   "img": "row:commons:Michelle De La Isla.jpg|デ・ラ・イスラ市長;commons:Gage Park Zoo Topeka-KS(2463602266).jpg|ゲージ公園の動物園",
+   "big": "3度目の降伏",
+   "bf": "fude",
    "ans": true
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "スイッチの「ピカブイ」が出る前に、任天堂が\n全米8か所で、試しに遊べる会を開いたの。",
-   "img": "wiki:en:Pokémon:_Let's_Go,_Pikachu!_and_Let's_Go,_Eevee!^commons:Nintendo-Pokemon-Lets-Go-Poke-Ball-Plus-Controller.jpg",
-   "label": "ピカブイ（2018年）"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "トピーカの会場は、動物園の駐車場。\n20年前と同じ名前で迎えたのね。",
-   "img": "commons:Gage Park Zoo Topeka-KS(2463602266).jpg",
-   "label": "ゲージ公園の動物園",
-   "cap": "写真は昔の動物園の入口"
-  },
-  {
-   "w": "z",
-   "face": "happy",
-   "t": "ピカブイは、初代の151匹が\n出てくるゲームなのだ。",
-   "img": "wiki:en:Pokémon:_Let's_Go,_Pikachu!_and_Let's_Go,_Eevee!^commons:Nintendo-Pokemon-Lets-Go-Poke-Ball-Plus-Controller.jpg",
-   "label": "ピカブイ（2018年）",
-   "say": "ピカブイは、初代の、ひゃくごじゅういっぴきが、出てくるゲームなのだ。"
+   "t": "1998年にぬいぐるみを追いかけた子どもは、\nこのとき30歳くらい。",
+   "img": "art:25"
   },
   {
    "w": "z",
    "face": "proud",
-   "t": "ボクのルージュラの時代が、\n帰ってきたのだ。",
-   "img": "art:124",
-   "label": "ルージュラ"
+   "t": "ぬいぐるみを取られた子どもが、\n大人になって取り返しに来たのだ。",
+   "img": "art:25"
   },
   {
    "w": "m",
    "face": "happy",
-   "t": "出てはくるわね。\n強いかどうかは、別の話だけど。",
-   "img": "art:124",
+   "t": "今度は、子どもを\n踏まないでほしいわね。",
+   "img": "art:25",
    "v": "tsun"
   },
   {
    "w": "m",
    "face": "think",
-   "t": "1998年にぬいぐるみを追いかけた子どもは、\nこのとき30歳くらいね。",
-   "img": "art:25",
-   "say": "1998年にぬいぐるみを追いかけた子どもは、このとき、さんじゅっさいくらいね。",
-   "kana": "セ'ンキュウヒャク/キュウジュウハチ'ネンニ/ヌイグルミオ'/オイカケ'タ/コドモワ'、コノ'/ト'キ、サンジュッサ'イ/クライネ"
-  },
-  {
-   "w": "z",
-   "face": "think",
-   "t": "じゃあ、子どもから取った大人たちは、\nもう、おじいちゃんかもしれないのだ。",
-   "img": "art:25"
-  },
-  {
-   "w": "m",
-   "face": "happy",
-   "t": "孫のぶんのぬいぐるみは、\n取らないであげてほしいわね。",
-   "img": "art:25"
-  },
-  {
-   "w": "m",
-   "face": "think",
-   "t": "今日の答え。トピーカが名前を変えて\n手に入れたのは、お金じゃなかったの。",
-   "img": "table:1998年=アメリカで最初のポケモンの会;2010年=Googleのロゴ1日分;2018年=ピカブイの試遊会;お金=もらった記録なし",
+   "t": "今日の答え。トピーカは、アメリカで最初に\nポケモンに降伏した街。",
+   "img": "table:1998年=アメリカで最初のポケモンの会;2010年=Googleにも名前を差し出す;2018年=20年ぶりに、またトピカチュウ",
    "sec": "まとめ",
-   "label": "トピーカが名前を変えて得たもの"
+   "label": "トピーカの降伏の記録",
+   "lf": "mincho"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "最初のポケモンの会と、Googleのロゴ1日分。\nそれと、28年たっても語られる名前ね。",
-   "img": "table:1998年=アメリカで最初のポケモンの会;2010年=Googleのロゴ1日分;2018年=ピカブイの試遊会;お金=もらった記録なし",
-   "label": "トピーカが名前を変えて得たもの",
-   "say": "最初のポケモンの会と、グーグルのロゴ、いちにちぶん。それと、にじゅうはちねんたっても語られる名前ね。",
-   "kana": "サイショノ'/ポケモンノ'/カ'イト、グウグルノ'/ロ'ゴ、イチニチ'ブン、ソレト'、ニジュウハ'チネン/タ'ッテモ/カタラレル'/ナマエネ'"
-  },
-  {
-   "w": "z",
-   "face": "think",
-   "t": "でも、本当の名前は、\nずっと変わってないのだ。",
-   "img": "commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "そう。どれも市長の宣言だけの、\n1日や1か月だけの名前だったから。",
-   "img": "commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas",
-   "say": "そう。どれも市長の宣言だけの、いちにちや、いっかげつだけの名前だったから。",
-   "kana": "ソオ'、ド'レモ/シ'チョオノ/センゲンダケノ'、イチ'ニチヤ、イッカゲツダケノ'/ナマエダッタ'カラ"
-  },
-  {
-   "w": "m",
-   "face": "happy",
-   "t": "ところで、もしいま空から、\nピカチュウのぬいぐるみが降ってきたら？",
-   "img": "art:25"
-  },
-  {
-   "w": "z",
-   "face": "proud",
-   "t": "ここには子どもがいないから、\n全部ボクのなのだ。",
-   "img": "art:25"
-  },
-  {
-   "w": "m",
-   "face": "happy",
-   "t": "大人げないわね。",
-   "img": "art:25",
-   "v": "tsun"
-  },
-  {
-   "w": "z",
-   "face": "proud",
-   "t": "決めたのだ。このジャガイモの名前は、\n今日から「トピーカ」なのだ。",
-   "img": "wiki:en:Potato^commons:Potato harvest - geograph.org.uk - 248459.jpg",
-   "label": "坑道で掘ったジャガイモ"
-  },
-  {
-   "w": "m",
-   "face": "happy",
-   "t": "イモを掘る場所の名前を、\nイモにつけてどうするのよ。",
-   "img": "wiki:en:Potato^commons:Potato harvest - geograph.org.uk - 248459.jpg",
-   "v": "tsun",
+   "t": "イモを掘るのにいい場所は、アメリカで最初に\nポケモンを掘り当てた場所になったの。",
+   "img": "commons:Potato harvest - geograph.org.uk - 248459.jpg^wiki:en:Potato",
    "ans": "idea"
   },
   {
+   "w": "z",
+   "face": "think",
+   "t": "それで20年たっても、\n同じ思い出話を繰り返してるのだ。",
+   "img": "table:1998年=アメリカで最初のポケモンの会;2010年=Googleにも名前を差し出す;2018年=20年ぶりに、またトピカチュウ",
+   "label": "トピーカの降伏の記録",
+   "lf": "mincho"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "あなたが初代の話を繰り返すのと、\n同じね。",
+   "img": "wiki:en:Pokémon_Red_and_Blue^commons:PokemonRedBlueYellowBack.jpg",
+   "v": "tsun"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "…トピーカとは、\n仲良くなれそうなのだ。",
+   "img": "row:commons:Topeka skyline and Kansas River.jpg|トピーカ;art:25|ピカチュウ"
+  },
+  {
    "w": "m",
    "face": "normal",
-   "t": "あなたの住む街なら、どのポケモンと名前を混ぜる？\nコメントで教えてね。",
+   "t": "あなたの街なら、どのポケモンに降伏する？\nコメントで教えてね。",
    "img": "row:commons:Topeka skyline and Kansas River.jpg|トピーカ;art:25|ピカチュウ"
   },
   {
    "type": "title",
    "sub": "おまけ",
    "t": "今日のポケモンの英語名",
-   "sec": "今日のポケモンの英語名"
+   "sec": "今日のポケモンの英語名",
+   "font": "hachi"
   },
   {
    "w": "m",
    "face": "happy",
-   "t": "今日のポケモンの英語名。\n1匹目はルージュラ。",
-   "img": "art:124",
-   "label": "Jynx（ジンクス）"
+   "t": "今日のポケモンの英語名。1匹目は、\n会場に着ぐるみで来ていたというゼニガメ。",
+   "img": "art:7",
+   "label": "Squirtle（スクワートル）",
+   "lf": "hachi"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "ジンクス。英語で、縁起の悪いものや、\nまじないを意味する言葉から来た名前よ。",
-   "img": "art:124",
-   "label": "Jynx（ジンクス）",
+   "t": "スクワートル。「水をぴゅっと出す」スクワートと、\n「カメ」のタートルを合わせた名前よ。",
+   "img": "art:7",
+   "label": "Squirtle（スクワートル）",
+   "lf": "hachi",
    "ety": [
-    "Jynx（ジンクス）",
-    "英語　jinx（縁起の悪いもの・まじない）"
+    "Squirtle（スクワートル）",
+    "英語　squirt（水をぴゅっと出す）＋turtle（カメ）"
    ]
   },
   {
    "w": "z",
-   "face": "sad",
-   "t": "ボクの推しに、\n縁起が悪いはひどいのだ。",
-   "img": "art:124"
+   "face": "happy",
+   "t": "名前に、\n水鉄砲が入ってるのだ。",
+   "img": "art:7"
   },
   {
    "w": "m",
    "face": "happy",
-   "t": "2匹目はディグダ。\nディグレット。",
+   "t": "2匹目はディグダ。ディグレット。\n「掘る」ディグに、小さいものを表すレット。",
    "img": "art:50",
    "label": "Diglett（ディグレット）",
-   "kana": "ニ_ヒキ'メワ/ディグ'ダ、ディグレ'ット"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "英語の「掘る」ディグに、小さいものを表す\n「レット」をつけた名前よ。",
-   "img": "art:50",
-   "label": "Diglett（ディグレット）",
+   "lf": "hachi",
    "ety": [
     "Diglett（ディグレット）",
     "英語　dig（掘る）＋-let（小さいもの）"
@@ -1069,8 +786,8 @@
   },
   {
    "w": "z",
-   "face": "happy",
-   "t": "トピーカにぴったりの\nポケモンなのだ。",
+   "face": "proud",
+   "t": "トピーカの公式ポケモンに\nするべきなのだ。",
    "img": "art:50"
   },
   {
@@ -1083,7 +800,7 @@
   {
    "w": "m",
    "face": "happy",
-   "t": "もんすぺ！には、ポケモンの面白い雑学のコラムもあるの。\n動画の続きみたいに読めるわよ。",
+   "t": "もんすぺ！には、ポケモンの雑学のコラムもあるの。\n動画の続きみたいに読めるわよ。",
    "img": "site:",
    "label": "「もんすぺ！」雑学コラムもあります"
   },
