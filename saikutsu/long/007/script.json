@@ -115,20 +115,20 @@
    "w": "m",
    "face": "normal",
    "t": "アメリカで発売されたのは「赤」と「青」。\n日本で最初に出たのは「赤」と「緑」だったわね。",
-   "img": "row:web:https://archives.bulbagarden.net/media/upload/thumb/a/a8/Red_JP_boxart.png/500px-Red_JP_boxart.png|日本の赤（1996年2月）;web:https://archives.bulbagarden.net/media/upload/2/21/Green_JP_boxart.png|日本の緑（1996年2月）",
+   "img": "row:red_jp.jpg|日本の赤（1996年2月）;green_jp.jpg|日本の緑（1996年2月）",
    "say": "アメリカで発売されたのは「赤」と「青」。にほんで最初に出たのは「赤」と「緑」だったわね。"
   },
   {
    "w": "z",
    "face": "think",
    "t": "緑は、\nどこに行ったのだ？",
-   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）"
+   "img": "row:red_en.jpg|アメリカの赤（1998年9月）;blue_en.jpg|アメリカの青（1998年9月）"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "日本では赤と緑のあとに、コロコロコミックの通信販売で\n「青」が出たの。絵やせりふを新しくした版よ。",
-   "img": "web:https://archives.bulbagarden.net/media/upload/thumb/b/b5/Blue_JP_boxart.png/500px-Blue_JP_boxart.png^web:https://archives.bulbagarden.net/media/upload/b/b5/Blue_JP_boxart.png",
+   "img": "blue_jp.jpg",
    "label": "日本の青（1996年10月）",
    "say": "にほんでは赤と緑のあとに、コロコロコミックの通信販売で「青」が出たの。絵やせりふを新しくした版よ。"
   },
@@ -136,7 +136,7 @@
    "w": "m",
    "face": "normal",
    "t": "アメリカ版は、この日本の「青」のプログラムと絵を\n土台にして作られたの。",
-   "img": "web:https://archives.bulbagarden.net/media/upload/thumb/b/b5/Blue_JP_boxart.png/500px-Blue_JP_boxart.png^web:https://archives.bulbagarden.net/media/upload/b/b5/Blue_JP_boxart.png",
+   "img": "blue_jp.jpg",
    "label": "日本の青（1996年10月）",
    "say": "アメリカ版は、このにほんの「青」のプログラムと絵を土台にして作られたの。"
   },
@@ -144,26 +144,26 @@
    "w": "m",
    "face": "normal",
    "t": "出てくるポケモンの分け方だけは「赤」と「緑」のものを使って、",
-   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）"
+   "img": "row:red_en.jpg|アメリカの赤（1998年9月）;blue_en.jpg|アメリカの青（1998年9月）"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "名前を「赤」と「青」にしたのね。",
-   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）"
+   "img": "row:red_en.jpg|アメリカの赤（1998年9月）;blue_en.jpg|アメリカの青（1998年9月）"
   },
   {
    "w": "z",
    "face": "surprise",
    "t": "じゃあ、アメリカの「赤」は、\n日本の「赤」とも違うのだ？",
-   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）",
+   "img": "row:red_en.jpg|アメリカの赤（1998年9月）;blue_en.jpg|アメリカの青（1998年9月）",
    "say": "じゃあ、アメリカの「赤」は、にほんの「赤」とも違うのだ？"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "そう。見た目は、\n日本の「青」に近いの。",
-   "img": "web:https://archives.bulbagarden.net/media/upload/thumb/b/b5/Blue_JP_boxart.png/500px-Blue_JP_boxart.png^web:https://archives.bulbagarden.net/media/upload/b/b5/Blue_JP_boxart.png",
+   "img": "blue_jp.jpg",
    "label": "日本の青（1996年10月）",
    "say": "そう。見た目は、にほんの「青」に近いの。"
   },
@@ -171,27 +171,27 @@
    "w": "m",
    "face": "normal",
    "t": "しかも、日本語を英語に差し替えるだけではすまなくて、\nプログラムを一から作り直したそうよ。",
-   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）"
+   "img": "row:red_en.jpg|アメリカの赤（1998年9月）;blue_en.jpg|アメリカの青（1998年9月）"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "それで、日本で赤と緑が出てから\n2年半も遅れたの。",
-   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）",
+   "img": "row:red_en.jpg|アメリカの赤（1998年9月）;blue_en.jpg|アメリカの青（1998年9月）",
    "say": "それで、にほんで赤と緑が出てから2年半も遅れたの。"
   },
   {
    "w": "z",
    "face": "think",
    "t": "緑は、海外では\n一度も出てないのだ？",
-   "img": "web:https://archives.bulbagarden.net/media/upload/2/21/Green_JP_boxart.png^web:https://archives.bulbagarden.net/media/upload/thumb/2/21/Green_JP_boxart.png/500px-Green_JP_boxart.png",
+   "img": "green_jp.jpg",
    "label": "日本の緑（1996年2月）"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "出てないわ。2016年に3DSで配信されたときも、\n緑は日本だけだったの。",
-   "img": "web:https://archives.bulbagarden.net/media/upload/2/21/Green_JP_boxart.png^web:https://archives.bulbagarden.net/media/upload/thumb/2/21/Green_JP_boxart.png/500px-Green_JP_boxart.png",
+   "img": "green_jp.jpg",
    "label": "日本の緑（1996年2月）",
    "say": "出てないわ。2016年に3DSで配信されたときも、緑はにほんだけだったの。"
   },
@@ -561,7 +561,7 @@
    "w": "z",
    "face": "think",
    "t": "アメリカで最初に赤と青を遊んだのは、\n車のトランクの前の子たちなのだ。",
-   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）"
+   "img": "row:red_en.jpg|アメリカの赤（1998年9月）;blue_en.jpg|アメリカの青（1998年9月）"
   },
   {
    "type": "title",
@@ -1051,7 +1051,7 @@
    "w": "m",
    "face": "happy",
    "t": "2匹目はディグダ。ディグレット。\n「掘る」ディグに、小さいものを表すレット。",
-   "img": "art:50",
+   "img": "art:50^wiki:en:Diglett",
    "label": "Diglett（ディグレット）",
    "lf": "hachi",
    "ety": [

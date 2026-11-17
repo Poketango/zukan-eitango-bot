@@ -35,7 +35,7 @@ PIKA = "art:25"
 STARYU = "art:120"
 STARMIE = "art:121"
 SQUIRTLE = "art:7"
-DIGLETT = "art:50"
+DIGLETT = "art:50^wiki:en:Diglett"
 # 実物の写真（2026-11-18 ユーザーの指示で、自作の表をやめて全部実物の画像にした）
 def J(name):   # The Johto Times「Topikachu: When Pokémon came to America」（2023年）の写真
     return ("web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F" + name
@@ -53,12 +53,12 @@ BALLS = J("5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg")   # はずむボ
 TRUNK = J("d2a4969d-7c48-4a0c-a453-b47cea11098c_1781x1167.jpeg") + "^" + J("a7a62dc6-f960-4f51-ad45-59f41ea10b22_1024x768.jpeg")  # トランクのテレビ
 LETTER = J("1de267a6-3ccf-4415-afc5-2c42e610a68b_1076x1320.jpeg") # 招待状
 SQUIRTD = J("fc6c73cb-6e00-4327-86cb-dcfc379b34ff_1797x1166.jpeg")# ゼニガメのかざり
-BA = "https://archives.bulbagarden.net/media/upload/"
-RED_JP = "web:" + BA + "thumb/a/a8/Red_JP_boxart.png/500px-Red_JP_boxart.png^web:" + BA + "a/a8/Red_JP_boxart.png"
-GREEN_JP = "web:" + BA + "2/21/Green_JP_boxart.png^web:" + BA + "thumb/2/21/Green_JP_boxart.png/500px-Green_JP_boxart.png"
-BLUE_JP = "web:" + BA + "thumb/b/b5/Blue_JP_boxart.png/500px-Blue_JP_boxart.png^web:" + BA + "b/b5/Blue_JP_boxart.png"
-RED_EN = "web:" + BA + "8/80/Red_EN_boxart.png^web:" + BA + "thumb/8/80/Red_EN_boxart.png/500px-Red_EN_boxart.png"
-BLUE_EN = "web:" + BA + "thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png^web:" + BA + "5/5a/Blue_EN_boxart.png"
+# 日米の箱絵（Bulbagarden Archives より。描画のサーバーから取れないので、この回のフォルダに置いた）
+RED_JP = "red_jp.jpg"
+GREEN_JP = "green_jp.jpg"
+BLUE_JP = "blue_jp.jpg"
+RED_EN = "red_en.jpg"
+BLUE_EN = "blue_en.jpg"
 RG_JP = "row:" + RED_JP.split("^")[0] + "|日本の赤（1996年2月）;" + GREEN_JP.split("^")[0] + "|日本の緑（1996年2月）"
 RB_EN = "row:" + RED_EN.split("^")[0] + "|アメリカの赤（1998年9月）;" + BLUE_EN.split("^")[0] + "|アメリカの青（1998年9月）"
 MEW = "art:151"
