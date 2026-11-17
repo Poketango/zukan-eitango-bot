@@ -40,7 +40,7 @@
    "face": "normal",
    "t": "1998年、アメリカの州都がひとつ、\nピカチュウに降伏したの。",
    "img": "commons:Kansas State Capitol.jpg^wiki:en:Kansas_State_Capitol",
-   "sec": "ポケモン雑学採掘所",
+   "sec": "ポケモン雑学採掘場",
    "label": "カンザス州の議事堂（トピーカ）",
    "lf": "mincho"
   },
@@ -68,67 +68,140 @@
    "w": "m",
    "face": "happy",
    "t": "当時の新聞が、\nそう書いたの。",
-   "img": "row:commons:Topeka skyline and Kansas River.jpg|トピーカ;art:25|ピカチュウ"
+   "img": "web:https://digital.lib.ku.edu/islandora/object/ku-udk%3A48032/datastream/JPG/download",
+   "label": "カンザス大学の学生新聞（1998年8月28日）",
+   "lf": "mincho"
   },
   {
    "type": "op",
    "w": "m",
-   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘所。",
-   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学採掘所。"
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘場。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学さいくつじょう。"
   },
   {
    "w": "z",
    "face": "think",
    "t": "めたん、さっきから\n何を読んでるのだ？",
-   "img": "table:新聞=カンザス大学の学生新聞;日付=1998年8月28日;見出し=任天堂の侵略の標的になったトピーカ",
+   "img": "web:https://digital.lib.ku.edu/islandora/object/ku-udk%3A48032/datastream/JPG/download",
    "sec": "導入　任天堂の侵略",
-   "label": "1998年の学生新聞",
+   "label": "カンザス大学の学生新聞（1998年8月28日）",
    "lf": "mincho"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "1998年のアメリカの大学新聞。見出しが\n「任天堂の侵略の標的になったトピーカ」。",
-   "img": "table:新聞=カンザス大学の学生新聞;日付=1998年8月28日;見出し=任天堂の侵略の標的になったトピーカ",
-   "label": "1998年の学生新聞",
+   "t": "1998年の、カンザス大学の学生新聞。見出しは\n「任天堂の侵略の標的になったトピーカ」。",
+   "img": "web:https://digital.lib.ku.edu/islandora/object/ku-udk%3A48032/datastream/JPG/download",
+   "label": "見出し「Topeka target of Nintendo Invasion」",
    "lf": "mincho"
   },
   {
    "w": "z",
    "face": "surprise",
    "t": "さっきの降伏の話は、\nこれなのだ？",
-   "img": "table:新聞=カンザス大学の学生新聞;日付=1998年8月28日;見出し=任天堂の侵略の標的になったトピーカ",
-   "label": "1998年の学生新聞",
+   "img": "web:https://digital.lib.ku.edu/islandora/object/ku-udk%3A48032/datastream/JPG/download",
+   "label": "カンザス大学の学生新聞（1998年8月28日）",
    "lf": "mincho"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "そう。ポケモンがアメリカに上陸した、\n最初の日の記事よ。",
-   "img": "wiki:en:Pokémon_Red_and_Blue^commons:PokemonRedBlueYellowBack.jpg",
-   "label": "アメリカ版の赤と青"
-  },
-  {
-   "w": "z",
-   "face": "think",
-   "t": "1998年は、ボクはまだポケモンを\n始めてないのだ。ボクはルビサファからなのだ。",
-   "img": "wiki:en:Pokémon_Red_and_Blue^commons:PokemonRedBlueYellowBack.jpg",
-   "label": "アメリカ版の赤と青"
+   "t": "そう。アメリカで初めての、ポケモンの会の記事よ。\nゲームの発売の1か月前に開かれたの。",
+   "img": "web:https://digital.lib.ku.edu/islandora/object/ku-udk%3A48032/datastream/JPG/download",
+   "label": "カンザス大学の学生新聞（1998年8月28日）",
+   "lf": "mincho"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "日本ではもうゲームが800万本売れてたけど、\nアメリカでは発売前。まだ誰も遊んでいなかったの。",
-   "img": "table:日本=1996年発売。ゲーム約800万本、カード4億枚以上;アメリカ=赤と青の発売は1998年9月28日。まだ誰も遊んでいない",
-   "label": "1998年の日本とアメリカ",
-   "say": "にほんではもう、ゲームがはっぴゃくまんぼん売れてたけど、アメリカでは発売前。まだ誰も遊んでいなかったの。"
+   "t": "アメリカで発売されたのは「赤」と「青」。\n日本で最初に出たのは「赤」と「緑」だったわね。",
+   "img": "row:web:https://archives.bulbagarden.net/media/upload/thumb/a/a8/Red_JP_boxart.png/500px-Red_JP_boxart.png|日本の赤（1996年2月）;web:https://archives.bulbagarden.net/media/upload/2/21/Green_JP_boxart.png|日本の緑（1996年2月）",
+   "say": "アメリカで発売されたのは「赤」と「青」。にほんで最初に出たのは「赤」と「緑」だったわね。"
   },
   {
    "w": "z",
    "face": "think",
-   "t": "誰も知らない国で、\nいきなり何をしたのだ？",
-   "img": "table:日本=1996年発売。ゲーム約800万本、カード4億枚以上;アメリカ=赤と青の発売は1998年9月28日。まだ誰も遊んでいない",
-   "label": "1998年の日本とアメリカ"
+   "t": "緑は、\nどこに行ったのだ？",
+   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "日本では赤と緑のあとに、コロコロコミックの通信販売で\n「青」が出たの。絵やせりふを新しくした版よ。",
+   "img": "web:https://archives.bulbagarden.net/media/upload/thumb/b/b5/Blue_JP_boxart.png/500px-Blue_JP_boxart.png^web:https://archives.bulbagarden.net/media/upload/b/b5/Blue_JP_boxart.png",
+   "label": "日本の青（1996年10月）",
+   "say": "にほんでは赤と緑のあとに、コロコロコミックの通信販売で「青」が出たの。絵やせりふを新しくした版よ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アメリカ版は、この日本の「青」のプログラムと絵を\n土台にして作られたの。",
+   "img": "web:https://archives.bulbagarden.net/media/upload/thumb/b/b5/Blue_JP_boxart.png/500px-Blue_JP_boxart.png^web:https://archives.bulbagarden.net/media/upload/b/b5/Blue_JP_boxart.png",
+   "label": "日本の青（1996年10月）",
+   "say": "アメリカ版は、このにほんの「青」のプログラムと絵を土台にして作られたの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "出てくるポケモンの分け方だけは「赤」と「緑」のものを使って、",
+   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "名前を「赤」と「青」にしたのね。",
+   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "じゃあ、アメリカの「赤」は、\n日本の「赤」とも違うのだ？",
+   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）",
+   "say": "じゃあ、アメリカの「赤」は、にほんの「赤」とも違うのだ？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。見た目は、\n日本の「青」に近いの。",
+   "img": "web:https://archives.bulbagarden.net/media/upload/thumb/b/b5/Blue_JP_boxart.png/500px-Blue_JP_boxart.png^web:https://archives.bulbagarden.net/media/upload/b/b5/Blue_JP_boxart.png",
+   "label": "日本の青（1996年10月）",
+   "say": "そう。見た目は、にほんの「青」に近いの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "しかも、日本語を英語に差し替えるだけではすまなくて、\nプログラムを一から作り直したそうよ。",
+   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それで、日本で赤と緑が出てから\n2年半も遅れたの。",
+   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）",
+   "say": "それで、にほんで赤と緑が出てから2年半も遅れたの。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "緑は、海外では\n一度も出てないのだ？",
+   "img": "web:https://archives.bulbagarden.net/media/upload/2/21/Green_JP_boxart.png^web:https://archives.bulbagarden.net/media/upload/thumb/2/21/Green_JP_boxart.png/500px-Green_JP_boxart.png",
+   "label": "日本の緑（1996年2月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "出てないわ。2016年に3DSで配信されたときも、\n緑は日本だけだったの。",
+   "img": "web:https://archives.bulbagarden.net/media/upload/2/21/Green_JP_boxart.png^web:https://archives.bulbagarden.net/media/upload/thumb/2/21/Green_JP_boxart.png/500px-Green_JP_boxart.png",
+   "label": "日本の緑（1996年2月）",
+   "say": "出てないわ。2016年に3DSで配信されたときも、緑はにほんだけだったの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのアメリカで、ゲームが出る前に、\n任天堂が何をしたか。",
+   "img": "web:https://digital.lib.ku.edu/islandora/object/ku-udk%3A48032/datastream/JPG/download",
+   "label": "カンザス大学の学生新聞（1998年8月28日）",
+   "lf": "mincho"
   },
   {
    "type": "title",
@@ -155,7 +228,7 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "1998年8月27日。カンザス州の州都トピーカで、\nアメリカ初のポケモンの会が開かれたの。",
+   "t": "1998年8月27日。カンザス州の州都トピーカで、\nアメリカで初めてのポケモンの会が開かれたの。",
    "img": "commons:Kansas in United States.svg^wiki:en:Kansas",
    "label": "カンザス州"
   },
@@ -184,22 +257,23 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "会場は、昔の空軍基地の飛行場。\n今はトピーカの空港になっているところよ。",
-   "img": "table:日にち=1998年8月27日（木）;場所=昔の空軍基地の飛行場;時間=昼11時から2時まで。雨でも決行;入場=無料",
-   "label": "アメリカ初のポケモンの会"
+   "t": "会場は、昔の空軍基地の飛行場。\n広い原っぱに、ゲームやグッズのテントが並んだの。",
+   "img": "commons:Forbesafb-02242002.jpg^wiki:en:Topeka_Regional_Airport",
+   "label": "会場になった昔の空軍基地（今のトピーカの空港）"
   },
   {
    "w": "m",
    "face": "think",
-   "t": "新聞は、その日のことをこう書いているの。",
-   "img": "commons:Forbesafb-02242002.jpg^wiki:en:Topeka_Regional_Airport",
-   "label": "会場になった昔の空軍基地"
+   "t": "学生新聞は、\nその日のことをこう書いているわ。",
+   "img": "web:https://digital.lib.ku.edu/islandora/object/ku-udk%3A48032/datastream/JPG/download",
+   "label": "カンザス大学の学生新聞（1998年8月28日）",
+   "lf": "mincho"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "「市長が街をポケモンに明け渡すと、\n空からの攻撃が始まった」",
-   "img": "commons:Forbesafb-02242002.jpg^wiki:en:Topeka_Regional_Airport",
+   "img": "web:https://digital.lib.ku.edu/islandora/object/ku-udk%3A48032/datastream/JPG/download",
    "big": "空からの攻撃",
    "bf": "mincho",
    "label": "カンザス大学の学生新聞",
@@ -209,101 +283,124 @@
    "w": "z",
    "face": "shock",
    "t": "攻撃！？\n何が落ちてきたのだ？",
-   "img": "commons:Forbesafb-02242002.jpg^wiki:en:Topeka_Regional_Airport"
+   "img": "commons:Forbesafb-02242002.jpg^wiki:en:Topeka_Regional_Airport",
+   "label": "会場になった昔の空軍基地（今のトピーカの空港）"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "ピカチュウのぬいぐるみ、約750個。\nひとつずつ、小さなパラシュートつき。",
-   "img": "table:落ちてきたもの=ピカチュウのぬいぐるみ 約750個;つき方=1個ずつ小さなパラシュート;いっしょに=黄色い服のスカイダイバー 10人ほど",
-   "label": "空から降ってきたもの",
-   "say": "ピカチュウのぬいぐるみ、やくななひゃくごじゅっこ。ひとつずつ、小さなパラシュートつき。"
+   "t": "ピカチュウのぬいぐるみ、約750個。\nひとつずつ、小さなパラシュートがついていたの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1a7d927-e216-461f-b563-6279235628db_480x640.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d1a7d927-e216-461f-b563-6279235628db_480x640.jpeg",
+   "label": "このとき落ちてきたピカチュウ",
+   "say": "ピカチュウのぬいぐるみ、やくななひゃくごじゅっこ。ひとつずつ、小さなパラシュートがついていたの。"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "黄色い服のスカイダイバーも、\n10人ほど飛び降りてきたわ。",
-   "img": "wiki:en:Parachuting^wiki:en:Skydiving",
-   "label": "スカイダイバー",
-   "cap": "写真は別の日のスカイダイビング",
-   "say": "黄色い服のスカイダイバーも、じゅうにんほど飛び降りてきたわ。"
+   "t": "黄色い服を着たスカイダイバーも、\n10人ほど降りてきたわ。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4a8f7390-3c97-4aa2-be13-10e572bea9bb_1807x1202.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/4a8f7390-3c97-4aa2-be13-10e572bea9bb_1807x1202.jpeg",
+   "label": "この日のスカイダイバー",
+   "say": "黄色い服を着たスカイダイバーも、じゅうにんほど降りてきたわ。"
   },
   {
    "w": "z",
    "face": "happy",
    "t": "ピカチュウが750匹、空から降ってきたのだ…。\nそれは見てみたかったのだ。",
-   "img": "table:落ちてきたもの=ピカチュウのぬいぐるみ 約750個;つき方=1個ずつ小さなパラシュート;いっしょに=黄色い服のスカイダイバー 10人ほど",
-   "label": "空から降ってきたもの",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1a7d927-e216-461f-b563-6279235628db_480x640.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d1a7d927-e216-461f-b563-6279235628db_480x640.jpeg",
+   "label": "このとき落ちてきたピカチュウ",
    "say": "ピカチュウがななひゃくごじゅっぴき、空から降ってきたのだ…。それは見てみたかったのだ。"
   },
   {
    "w": "m",
-   "face": "think",
-   "t": "でも、地上は大変だったみたい。",
-   "img": "art:25"
+   "face": "normal",
+   "t": "この日のことは、2023年に、海外のポケモンの記事\n「ジョウト・タイムズ」がまとめているの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/fe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg",
+   "label": "ぬいぐるみに走る子どもたち（The Johto Times より）"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "参加した人は、大人が子どもを踏みつけて、\nぬいぐるみをひったくっていたって書いてるわ。",
-   "img": "art:25",
-   "label": "参加した人の思い出"
+   "t": "当時会場にいた人たちに、\nそれぞれの思い出を聞いているのよ。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/fe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg",
+   "label": "ぬいぐるみに走る子どもたち（The Johto Times より）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それによると、落ちてきたぬいぐるみに\n子どもたちがいっせいに走ったそうよ。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/fe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg",
+   "label": "ぬいぐるみに走る子どもたち（The Johto Times より）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "子どもが取るためのものだったのに、大人も入ってきて、\n子どもを踏みつけてひったくっていたって。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/fe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg",
+   "label": "ぬいぐるみに走る子どもたち（The Johto Times より）"
   },
   {
    "w": "z",
    "face": "shock",
    "t": "大人が、\nなのだ！？",
-   "img": "art:25",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/fe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg",
    "big": "大人が奪い合い",
-   "bf": "rampart",
-   "ans": true
+   "bf": "rampart"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "3歳だったシェインくんも、おじいさんに\n「取っておいで」と言われて走ったけど…",
-   "img": "table:シェインくん=当時3歳。おじいさんと来ていた;落ちてきたピカチュウ=大きい子に取られた;泣いていたら=おじいさんが見つけてきた;大人になって=その日のTシャツをネットで探した",
-   "label": "シェインくんの思い出"
+   "t": "当時3歳だったシェインさんも、おじいさんに\n「取っておいで」と言われて、丘を駆け下りたの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/fe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg",
+   "label": "ぬいぐるみに走る子どもたち（The Johto Times より）"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "落ちてきたピカチュウは、\n大きい子に取られてしまったの。",
-   "img": "table:シェインくん=当時3歳。おじいさんと来ていた;落ちてきたピカチュウ=大きい子に取られた;泣いていたら=おじいさんが見つけてきた;大人になって=その日のTシャツをネットで探した",
-   "label": "シェインくんの思い出"
+   "t": "1個がゆっくり腕の中に落ちてきたけど、\n大きな子に取られてしまったそうよ。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1a7d927-e216-461f-b563-6279235628db_480x640.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d1a7d927-e216-461f-b563-6279235628db_480x640.jpeg",
+   "label": "このとき落ちてきたピカチュウ"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "泣いていたら、おじいさんが\nどこからかぬいぐるみを見つけてきてくれたそうよ。",
-   "img": "art:25",
-   "label": "シェインくんの思い出"
+   "t": "泣いていたら、おじいさんが\nぬいぐるみを持ってきてくれたんですって。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1a7d927-e216-461f-b563-6279235628db_480x640.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d1a7d927-e216-461f-b563-6279235628db_480x640.jpeg",
+   "label": "このとき落ちてきたピカチュウ"
   },
   {
    "w": "z",
    "face": "think",
    "t": "おじいさん、\nどこで見つけてきたのだ…。",
-   "img": "art:25"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1a7d927-e216-461f-b563-6279235628db_480x640.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d1a7d927-e216-461f-b563-6279235628db_480x640.jpeg",
+   "label": "このとき落ちてきたピカチュウ"
   },
   {
    "w": "m",
    "face": "happy",
    "t": "それは、\n書いてないわ。",
-   "img": "art:25"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1a7d927-e216-461f-b563-6279235628db_480x640.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d1a7d927-e216-461f-b563-6279235628db_480x640.jpeg",
+   "label": "このとき落ちてきたピカチュウ"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "シェインくんは大人になってから、おじいさんがよく着ていた\nその日のTシャツを、ネットで探して手に入れたそうよ。",
-   "img": "table:シェインくん=当時3歳。おじいさんと来ていた;落ちてきたピカチュウ=大きい子に取られた;泣いていたら=おじいさんが見つけてきた;大人になって=その日のTシャツをネットで探した",
-   "label": "シェインくんの思い出"
+   "t": "シェインさんは大人になってから、\nこの日に配られたTシャツを探したの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F092730c8-79fb-48cf-b13b-7e8f5ef21fce_960x1280.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/092730c8-79fb-48cf-b13b-7e8f5ef21fce_960x1280.jpeg",
+   "label": "シェインさんが探し出したこの日のTシャツ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "おじいさんがよく着ていたもので、\nネットで呼びかけて見つけたそうよ。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F092730c8-79fb-48cf-b13b-7e8f5ef21fce_960x1280.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/092730c8-79fb-48cf-b13b-7e8f5ef21fce_960x1280.jpeg",
+   "label": "シェインさんが探し出したこの日のTシャツ"
   },
   {
    "w": "z",
    "face": "think",
    "t": "…いい話なのだ。",
-   "img": "table:シェインくん=当時3歳。おじいさんと来ていた;落ちてきたピカチュウ=大きい子に取られた;泣いていたら=おじいさんが見つけてきた;大人になって=その日のTシャツをネットで探した",
-   "label": "シェインくんの思い出"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F092730c8-79fb-48cf-b13b-7e8f5ef21fce_960x1280.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/092730c8-79fb-48cf-b13b-7e8f5ef21fce_960x1280.jpeg",
+   "label": "シェインさんが探し出したこの日のTシャツ"
   },
   {
    "type": "title",
@@ -318,174 +415,153 @@
     ],
     "bubble": "アメリカの子はわからないのだ",
     "who": "z",
-    "post": "1998年、アメリカで最初のポケモンの会では、英語版の放送が始まる前のアニメが日本語のまま流れました。参加した人が覚えているのは、カスミとヒトデマンが出る回。ほかにも、マスタートレーナーの講習や、トランクでゲームが動く車がありました。"
+    "post": "1998年、アメリカで最初のポケモンの会では、英語版の放送が始まる前のアニメが日本語のまま流れました。参加した人が覚えているのは、カスミとヒトデマンが出る回。ほかにも、マスタートレーナー見習いの名札がもらえる講習や、トランクでゲームが動く車がありました。"
    }
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "会場の中も、\n見てみましょう。",
-   "img": "table:日にち=1998年8月27日（木）;場所=昔の空軍基地の飛行場;時間=昼11時から2時まで。雨でも決行;入場=無料",
-   "label": "アメリカ初のポケモンの会"
+   "t": "会場では、この予定表の\n出し物が順番に行われたの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc28549e3-bfb7-4406-b46e-beeb0953c420_1280x960.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/c28549e3-bfb7-4406-b46e-beeb0953c420_1280x960.jpeg",
+   "label": "この日の予定表"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "まずアニメ。英語版の放送が始まる前だったから、\n日本語のまま流れていたそうよ。",
-   "img": "table:流れたアニメ=日本語のまま。英語版の放送が始まる前;覚えている人の話=カスミとヒトデマンが出る回",
-   "label": "会場で流れたアニメ"
+   "t": "そのひとつが、アニメの上映。英語版の放送が始まる前で、\n参加した人の話では、日本語のまま流れたそうよ。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc28549e3-bfb7-4406-b46e-beeb0953c420_1280x960.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/c28549e3-bfb7-4406-b46e-beeb0953c420_1280x960.jpeg",
+   "label": "この日の予定表"
   },
   {
    "w": "z",
    "face": "surprise",
    "t": "アメリカの子は、何を言ってるか\nわからないのだ。",
-   "img": "table:流れたアニメ=日本語のまま。英語版の放送が始まる前;覚えている人の話=カスミとヒトデマンが出る回",
-   "label": "会場で流れたアニメ"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc28549e3-bfb7-4406-b46e-beeb0953c420_1280x960.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/c28549e3-bfb7-4406-b46e-beeb0953c420_1280x960.jpeg",
+   "label": "この日の予定表"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "参加した人が覚えているのは、\nカスミとヒトデマンが出る回。",
-   "img": "art:120",
-   "label": "ヒトデマン"
-  },
-  {
-   "w": "z",
-   "face": "think",
-   "t": "ピカチュウの会なのに、\nヒトデマンなのだ。",
+   "t": "覚えているのは、カスミと\nヒトデマンが出てくる回だって。",
    "img": "art:120",
    "label": "ヒトデマン"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "それから、踊りの時間もあったの。\n名前は「ホーク・ポケモン」。",
-   "img": "table:名前=Hoke Pokémon（ホーク・ポケモン）;中身=踊り。振り付けの記録は残っていない;そっくりな名前=英語圏の子どもの踊り歌 Hokey Pokey",
-   "label": "会場の踊り",
-   "lf": "dot"
+   "t": "子ども向けの踊りの時間もあったわ。\n予定表での名前は「ホーク・ポケモン」。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc28549e3-bfb7-4406-b46e-beeb0953c420_1280x960.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/c28549e3-bfb7-4406-b46e-beeb0953c420_1280x960.jpeg",
+   "label": "この日の予定表"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "英語圏の子どもの定番の踊り歌、\n「ホーキー・ポーキー」にそっくりな名前ね。",
-   "img": "table:名前=Hoke Pokémon（ホーク・ポケモン）;中身=踊り。振り付けの記録は残っていない;そっくりな名前=英語圏の子どもの踊り歌 Hokey Pokey",
-   "label": "会場の踊り",
+   "t": "英語圏の子どもが輪になって踊る「ホーキー・ポーキー」に\nそっくりな名前ね。ポケモンの踊りを教わる時間だったそうよ。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc28549e3-bfb7-4406-b46e-beeb0953c420_1280x960.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/c28549e3-bfb7-4406-b46e-beeb0953c420_1280x960.jpeg",
+   "label": "この日の予定表",
    "ety": [
     "Hokey Pokey（ホーキー・ポーキー）",
     "手や足を輪の中に入れたり出したりして回る、英語圏の子どもの踊り歌"
    ]
   },
   {
-   "w": "z",
-   "face": "think",
-   "t": "どんな踊りだったのだ？",
-   "img": "table:名前=Hoke Pokémon（ホーク・ポケモン）;中身=踊り。振り付けの記録は残っていない;そっくりな名前=英語圏の子どもの踊り歌 Hokey Pokey",
-   "label": "会場の踊り"
+   "w": "m",
+   "face": "normal",
+   "t": "「モンスターに会おう」という講習もあって、\n出た人には、この名札が配られたの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4c2a61fa-332d-4cfe-a8df-84d4a3acaa0e_820x1094.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/4c2a61fa-332d-4cfe-a8df-84d4a3acaa0e_820x1094.jpeg",
+   "label": "名札「マスタートレーナー見習い」"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "振り付けは記録に残っていなくて、\n名前だけが残っているの。",
-   "img": "table:名前=Hoke Pokémon（ホーク・ポケモン）;中身=踊り。振り付けの記録は残っていない;そっくりな名前=英語圏の子どもの踊り歌 Hokey Pokey",
-   "label": "会場の踊り"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "「マスタートレーナー」の講習もあったわ。\n名札と、穴あけカードがもらえたそうよ。",
-   "img": "table:講習の名前=Meet the Monsters;もらえたもの=マスタートレーナーの名札;穴あけカード=ブースを回るたびに穴を開けてもらう",
-   "label": "マスタートレーナーの講習",
-   "lf": "dot"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "参加したアリッサさんは、\nその名札を今も持っているんですって。",
-   "img": "table:講習の名前=Meet the Monsters;もらえたもの=マスタートレーナーの名札;穴あけカード=ブースを回るたびに穴を開けてもらう",
-   "label": "マスタートレーナーの講習",
-   "lf": "dot"
+   "t": "書いてあるのは「マスタートレーナー見習い」。\nもらったアリッサさんは、今も持っているんですって。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4c2a61fa-332d-4cfe-a8df-84d4a3acaa0e_820x1094.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/4c2a61fa-332d-4cfe-a8df-84d4a3acaa0e_820x1094.jpeg",
+   "label": "名札「マスタートレーナー見習い」"
   },
   {
    "w": "z",
    "face": "surprise",
    "t": "25年も、\n取ってあるのだ。",
-   "img": "table:講習の名前=Meet the Monsters;もらえたもの=マスタートレーナーの名札;穴あけカード=ブースを回るたびに穴を開けてもらう",
-   "label": "マスタートレーナーの講習",
-   "lf": "dot",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4c2a61fa-332d-4cfe-a8df-84d4a3acaa0e_820x1094.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/4c2a61fa-332d-4cfe-a8df-84d4a3acaa0e_820x1094.jpeg",
+   "label": "名札「マスタートレーナー見習い」",
    "say": "にじゅうごねんも、取ってあるのだ。"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "おみやげは、中に小さなピカチュウが入った、\nはずむボール。",
-   "img": "table:おみやげ=ポケモン入りのはずむボール;ほかに=赤のソフト、Tシャツなど;ある子は=ボールを割って手を切った",
-   "label": "会場のおみやげ"
+   "t": "グッズもたくさん配られたわ。これは、\n中にポケモンの人形が入った、はずむボール。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg",
+   "label": "会場で配られたはずむボール"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "6、7歳だった子が、中のピカチュウを出そうとして、\nドライバーでボールを割ったの。",
-   "img": "table:おみやげ=ポケモン入りのはずむボール;ほかに=赤のソフト、Tシャツなど;ある子は=ボールを割って手を切った",
-   "label": "会場のおみやげ",
-   "say": "ろく、ななさいだった子が、中のピカチュウを出そうとして、ドライバーでボールを割ったの。"
+   "t": "当時6、7歳だったエミリオさんは、\n中のピカチュウを出したくて…",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg",
+   "label": "会場で配られたはずむボール",
+   "say": "当時、ろく、ななさいだったエミリオさんは、中のピカチュウを出したくて…"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "家でドライバーを使って、\nボールを割ったの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg",
+   "label": "会場で配られたはずむボール"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "手を切って、\n病院に行ったそうよ。",
-   "img": "table:おみやげ=ポケモン入りのはずむボール;ほかに=赤のソフト、Tシャツなど;ある子は=ボールを割って手を切った",
-   "label": "会場のおみやげ"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg",
+   "label": "会場で配られたはずむボール"
   },
   {
    "w": "z",
    "face": "shock",
    "t": "そこまでして、\n出したかったのだ…。",
-   "img": "table:おみやげ=ポケモン入りのはずむボール;ほかに=赤のソフト、Tシャツなど;ある子は=ボールを割って手を切った",
-   "label": "会場のおみやげ"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg",
+   "label": "会場で配られたはずむボール"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "車も来ていたわ。\nピカチュウの絵のフォルクスワーゲン・ビートル。",
-   "img": "commons:Voiture Pikachu avec Peluches.jpg",
-   "label": "ポケモン仕様の黄色いビートル",
-   "cap": "写真は別の催しの同じ型の車"
+   "t": "会場の裏には、ピカチュウを描いた\nフォルクスワーゲン・ビートルが10台並んでいたわ。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd9249a71-5d6c-42cb-b847-ea81eb83393f_1725x1140.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d9249a71-5d6c-42cb-b847-ea81eb83393f_1725x1140.jpeg",
+   "label": "10台のピカチュウのビートル"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "当時のビートルは出たばかりの新型で、今のテスラくらい\n話題の車だったと、参加した人は話しているわ。",
-   "img": "commons:Voiture Pikachu avec Peluches.jpg",
-   "label": "ポケモン仕様の黄色いビートル",
-   "cap": "写真は別の催しの同じ型の車"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd9249a71-5d6c-42cb-b847-ea81eb83393f_1725x1140.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d9249a71-5d6c-42cb-b847-ea81eb83393f_1725x1140.jpeg",
+   "label": "10台のピカチュウのビートル"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "トランクの中にブラウン管のテレビがあって、\n発売前の赤と青が動いていたの。",
-   "img": "table:車=ピカチュウの絵のフォルクスワーゲン・ビートル;トランク=中にブラウン管のテレビ。赤と青が動いていた;その後=何年も全米のイベントを回った",
-   "label": "ピカチュウの車"
+   "t": "トランクの中にはブラウン管のテレビがあって、\n発売前の赤と青が動いていたの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd2a4969d-7c48-4a0c-a453-b47cea11098c_1781x1167.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d2a4969d-7c48-4a0c-a453-b47cea11098c_1781x1167.jpeg^web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa7a62dc6-f960-4f51-ad45-59f41ea10b22_1024x768.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/a7a62dc6-f960-4f51-ad45-59f41ea10b22_1024x768.jpeg",
+   "label": "トランクのテレビ"
   },
   {
    "w": "z",
    "face": "surprise",
    "t": "車のトランクで、\nゲームが動いてたのだ？",
-   "img": "table:車=ピカチュウの絵のフォルクスワーゲン・ビートル;トランク=中にブラウン管のテレビ。赤と青が動いていた;その後=何年も全米のイベントを回った",
-   "label": "ピカチュウの車"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd2a4969d-7c48-4a0c-a453-b47cea11098c_1781x1167.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d2a4969d-7c48-4a0c-a453-b47cea11098c_1781x1167.jpeg^web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa7a62dc6-f960-4f51-ad45-59f41ea10b22_1024x768.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/a7a62dc6-f960-4f51-ad45-59f41ea10b22_1024x768.jpeg",
+   "label": "トランクのテレビ"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "そう。子どもたちは発売の1か月前に、\nそこで赤と青を遊べたのよ。",
-   "img": "table:車=ピカチュウの絵のフォルクスワーゲン・ビートル;トランク=中にブラウン管のテレビ。赤と青が動いていた;その後=何年も全米のイベントを回った",
-   "label": "ピカチュウの車"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd2a4969d-7c48-4a0c-a453-b47cea11098c_1781x1167.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d2a4969d-7c48-4a0c-a453-b47cea11098c_1781x1167.jpeg^web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa7a62dc6-f960-4f51-ad45-59f41ea10b22_1024x768.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/a7a62dc6-f960-4f51-ad45-59f41ea10b22_1024x768.jpeg",
+   "label": "トランクのテレビ"
   },
   {
    "w": "z",
    "face": "think",
    "t": "アメリカで最初に赤と青を遊んだのは、\n車のトランクの前の子たちなのだ。",
-   "img": "wiki:en:Pokémon_Red_and_Blue^commons:PokemonRedBlueYellowBack.jpg",
-   "label": "アメリカ版の赤と青"
+   "img": "row:web:https://archives.bulbagarden.net/media/upload/8/80/Red_EN_boxart.png|アメリカの赤（1998年9月）;web:https://archives.bulbagarden.net/media/upload/thumb/5/5a/Blue_EN_boxart.png/500px-Blue_EN_boxart.png|アメリカの青（1998年9月）"
   },
   {
    "type": "title",
@@ -494,21 +570,21 @@
    "sec": "第三層　最初の交換",
    "font": "maru",
    "x": {
-    "head": "1998年、アメリカ最初のポケモンの会で\nおまけの山と\nピカチュウのぬいぐるみが交換された",
+    "head": "1998年、アメリカ最初のポケモンの会で\n配られたグッズの山と\nピカチュウのぬいぐるみが交換された",
     "img": [
      "art:25"
     ],
     "bubble": "それは損してないのだ？",
     "who": "z",
-    "post": "1998年、アメリカで最初のポケモンの会で、テントを回って集めたおまけの山と、年下の子のピカチュウのぬいぐるみが交換されました。交換した2人は、あとで謝ったそうです。"
+    "post": "1998年、アメリカで最初のポケモンの会で、テントを回って集めたグッズ（はずむボール、カード、小さな人形）の山と、年下の子のピカチュウのぬいぐるみが交換されました。交換した人は、あとで謝ったそうです。"
    }
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "会場では、\nポケモンの交換もあったの。",
-   "img": "table:出したもの=テントを回って集めたおまけの山;もらったもの=年下の子のピカチュウのぬいぐるみ;交換した人=カールさんと友だちのアレックスさん;その後=あとで謝った",
-   "label": "会場での交換"
+   "t": "会場では、ポケモンの交換もあったの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg",
+   "label": "会場で配られたはずむボール"
   },
   {
    "w": "z",
@@ -521,41 +597,62 @@
    "w": "m",
    "face": "happy",
    "t": "いいえ、手渡しよ。",
-   "img": "table:出したもの=テントを回って集めたおまけの山;もらったもの=年下の子のピカチュウのぬいぐるみ;交換した人=カールさんと友だちのアレックスさん;その後=あとで謝った",
-   "label": "会場での交換"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1a7d927-e216-461f-b563-6279235628db_480x640.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d1a7d927-e216-461f-b563-6279235628db_480x640.jpeg",
+   "label": "このとき落ちてきたピカチュウ"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "カールさんと友だちは、テントを回って集めたおまけの山を、\n年下の子のピカチュウのぬいぐるみと交換したの。",
-   "img": "table:出したもの=テントを回って集めたおまけの山;もらったもの=年下の子のピカチュウのぬいぐるみ;交換した人=カールさんと友だちのアレックスさん;その後=あとで謝った",
-   "label": "会場での交換"
+   "t": "参加したカールさんは、友だちとテントを回って、\nただで配られていたグッズを集めていたの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/5788eade-8a11-48fe-ad50-156f2e0f38c4_1128x845.jpeg",
+   "label": "会場で配られたはずむボール"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "はずむボールに、カードに、小さな人形。それを全部まとめて、",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1a7d927-e216-461f-b563-6279235628db_480x640.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d1a7d927-e216-461f-b563-6279235628db_480x640.jpeg",
+   "label": "このとき落ちてきたピカチュウ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "年下の子のピカチュウのぬいぐるみと交換してもらったの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1a7d927-e216-461f-b563-6279235628db_480x640.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d1a7d927-e216-461f-b563-6279235628db_480x640.jpeg",
+   "label": "このとき落ちてきたピカチュウ"
   },
   {
    "w": "z",
    "face": "think",
    "t": "…それ、年下の子は\n損してないのだ？",
-   "img": "table:出したもの=テントを回って集めたおまけの山;もらったもの=年下の子のピカチュウのぬいぐるみ;交換した人=カールさんと友だちのアレックスさん;その後=あとで謝った",
-   "label": "会場での交換"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1a7d927-e216-461f-b563-6279235628db_480x640.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d1a7d927-e216-461f-b563-6279235628db_480x640.jpeg",
+   "label": "このとき落ちてきたピカチュウ"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "本人たちもそう思ったみたいで、\nあとでその子に謝ったそうよ。",
-   "img": "table:出したもの=テントを回って集めたおまけの山;もらったもの=年下の子のピカチュウのぬいぐるみ;交換した人=カールさんと友だちのアレックスさん;その後=あとで謝った",
-   "label": "会場での交換"
+   "t": "本人もそう思ったみたいで、\nあとでその子に謝ったそうよ。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1a7d927-e216-461f-b563-6279235628db_480x640.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d1a7d927-e216-461f-b563-6279235628db_480x640.jpeg",
+   "label": "このとき落ちてきたピカチュウ"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "通信交換のほうの話もあるわ。アリッサさんは次の年、\nショッピングモールを回るポケモンの催しで…",
-   "img": "table:1999年=モールを回るポケモンのツアー;交換=任天堂の人が通信でミュウを渡した;ミュウのおや=Mario",
-   "label": "1999年の夏"
+   "t": "通信ケーブルの交換の話もあるわ。\n名札のアリッサさんは、次の1999年…",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4c2a61fa-332d-4cfe-a8df-84d4a3acaa0e_820x1094.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/4c2a61fa-332d-4cfe-a8df-84d4a3acaa0e_820x1094.jpeg",
+   "label": "名札「マスタートレーナー見習い」"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "任天堂の人から、\n通信ケーブルでミュウをもらったの。",
+   "t": "任天堂がショッピングモールを回って開いた\nポケモンの催しに出かけたの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4c2a61fa-332d-4cfe-a8df-84d4a3acaa0e_820x1094.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/4c2a61fa-332d-4cfe-a8df-84d4a3acaa0e_820x1094.jpeg",
+   "label": "名札「マスタートレーナー見習い」"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そこで任天堂の人と通信して、\nミュウを1匹もらったの。",
    "img": "art:151",
    "label": "ミュウ"
   },
@@ -587,78 +684,85 @@
    "w": "m",
    "face": "normal",
    "t": "アリッサさんが、そもそもこの会に\n招待された理由も変わっていてね。",
-   "img": "table:招待の理由=母がカセットの袋を注文していた;届いたビデオ=サトシのママの実写の寸劇",
-   "label": "アリッサさんの招待状"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1de267a6-3ccf-4415-afc5-2c42e610a68b_1076x1320.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/1de267a6-3ccf-4415-afc5-2c42e610a68b_1076x1320.jpeg",
+   "label": "アリッサさんに届いた招待状"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "お母さんが昔、任天堂から\nファミコンのカセットを入れる袋を取り寄せていたの。",
-   "img": "table:招待の理由=母がカセットの袋を注文していた;届いたビデオ=サトシのママの実写の寸劇",
-   "label": "アリッサさんの招待状"
+   "t": "お母さんが昔、アメリカのファミコンのカセットを入れる袋を、",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1de267a6-3ccf-4415-afc5-2c42e610a68b_1076x1320.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/1de267a6-3ccf-4415-afc5-2c42e610a68b_1076x1320.jpeg",
+   "label": "アリッサさんに届いた招待状"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "それで、任天堂の名簿に\n名前がのっていたのね。",
-   "img": "table:招待の理由=母がカセットの袋を注文していた;届いたビデオ=サトシのママの実写の寸劇",
-   "label": "アリッサさんの招待状"
+   "t": "任天堂から直接取り寄せていたの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1de267a6-3ccf-4415-afc5-2c42e610a68b_1076x1320.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/1de267a6-3ccf-4415-afc5-2c42e610a68b_1076x1320.jpeg",
+   "label": "アリッサさんに届いた招待状"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのとき任天堂に名前と住所が残って、\n招待状が届いたんだろうって…",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1de267a6-3ccf-4415-afc5-2c42e610a68b_1076x1320.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/1de267a6-3ccf-4415-afc5-2c42e610a68b_1076x1320.jpeg",
+   "label": "アリッサさんに届いた招待状"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アリッサさんは話しているわ。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1de267a6-3ccf-4415-afc5-2c42e610a68b_1076x1320.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/1de267a6-3ccf-4415-afc5-2c42e610a68b_1076x1320.jpeg",
+   "label": "アリッサさんに届いた招待状"
   },
   {
    "w": "z",
    "face": "surprise",
    "t": "袋を注文しただけで、\n招待されたのだ。",
-   "img": "table:招待の理由=母がカセットの袋を注文していた;届いたビデオ=サトシのママの実写の寸劇",
-   "label": "アリッサさんの招待状"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1de267a6-3ccf-4415-afc5-2c42e610a68b_1076x1320.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/1de267a6-3ccf-4415-afc5-2c42e610a68b_1076x1320.jpeg",
+   "label": "アリッサさんに届いた招待状"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "その前には、予告編のビデオも届いていたそうよ。\nサトシのママを女優さんが演じる、実写の寸劇入り。",
-   "img": "table:招待の理由=母がカセットの袋を注文していた;届いたビデオ=サトシのママの実写の寸劇",
-   "label": "アリッサさんの招待状"
+   "t": "会の前には、任天堂から\nビデオも届いていたそうよ。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9d9f8ba-6935-4c8d-8e44-61bc5146d531_1280x960.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/a9d9f8ba-6935-4c8d-8e44-61bc5146d531_1280x960.jpeg",
+   "label": "アリッサさんに届いたビデオ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "中には、サトシのママを本物の女優さんが演じる、\n実写の寸劇が入っていたの。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9d9f8ba-6935-4c8d-8e44-61bc5146d531_1280x960.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/a9d9f8ba-6935-4c8d-8e44-61bc5146d531_1280x960.jpeg",
+   "label": "アリッサさんに届いたビデオ"
   },
   {
    "w": "z",
    "face": "think",
    "t": "実写のサトシのママ、\n気になるのだ。",
-   "img": "table:招待の理由=母がカセットの袋を注文していた;届いたビデオ=サトシのママの実写の寸劇",
-   "label": "アリッサさんの招待状"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9d9f8ba-6935-4c8d-8e44-61bc5146d531_1280x960.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/a9d9f8ba-6935-4c8d-8e44-61bc5146d531_1280x960.jpeg",
+   "label": "アリッサさんに届いたビデオ"
   },
   {
    "w": "m",
    "face": "think",
-   "t": "最後に、ちょっと怖い話。",
+   "t": "最後に、ちょっと怖い話。会の約24時間後、\n同じ飛行場にヘリコプターが墜落しているの。",
    "img": "commons:Forbesafb-02242002.jpg^wiki:en:Topeka_Regional_Airport",
-   "label": "会場になった昔の空軍基地"
+   "label": "会場になった昔の空軍基地（今のトピーカの空港）"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "会の約24時間後、同じ飛行場で\nヘリコプターが墜落しているの。",
-   "img": "table:いつ=会の約24時間後;どこ=同じ飛行場。テントから約180メートル;けが=操縦士と整備士の3人が軽いけが",
-   "label": "翌日の飛行場"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "テントから180メートルほどの場所。\n乗っていた3人は、軽いけがですんだわ。",
-   "img": "table:いつ=会の約24時間後;どこ=同じ飛行場。テントから約180メートル;けが=操縦士と整備士の3人が軽いけが",
-   "label": "翌日の飛行場"
+   "t": "テントが立っていた場所から、180メートルほど。\n乗っていた操縦士と整備士の3人は、軽いけがですんだわ。",
+   "img": "commons:Forbesafb-02242002.jpg^wiki:en:Topeka_Regional_Airport",
+   "label": "会場になった昔の空軍基地（今のトピーカの空港）"
   },
   {
    "w": "z",
    "face": "shock",
    "t": "1日ずれていたら、\n大変だったのだ…。",
-   "img": "table:いつ=会の約24時間後;どこ=同じ飛行場。テントから約180メートル;けが=操縦士と整備士の3人が軽いけが",
-   "label": "翌日の飛行場"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "この話を集めた記事の人も、\n同じことを書いているわ。",
-   "img": "table:いつ=会の約24時間後;どこ=同じ飛行場。テントから約180メートル;けが=操縦士と整備士の3人が軽いけが",
-   "label": "翌日の飛行場"
+   "img": "commons:Forbesafb-02242002.jpg^wiki:en:Topeka_Regional_Airport",
+   "label": "会場になった昔の空軍基地（今のトピーカの空港）"
   },
   {
    "type": "title",
@@ -686,24 +790,15 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "新聞によると、理由は2つ。\nアメリカのまんなかにあることと…",
-   "img": "table:理由1=アメリカのまんなかにある;理由2=市長が1日だけ名前を変えてくれる;ねらい=日本のように売れるか、最初に試す",
-   "label": "トピーカが選ばれた理由"
+   "t": "学生新聞によると、理由は2つ。\nアメリカのまんなかにあることと…",
+   "img": "commons:Kansas in United States.svg^wiki:en:Kansas",
+   "label": "カンザス州"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "市長が、1日だけ\n名前を変えてくれること。",
-   "img": "table:理由1=アメリカのまんなかにある;理由2=市長が1日だけ名前を変えてくれる;ねらい=日本のように売れるか、最初に試す",
-   "label": "トピーカが選ばれた理由"
-  },
-  {
-   "w": "m",
-   "face": "normal",
-   "t": "この会は、全米を回る宣伝の最初の場所。日本と同じように\n売れるかを試す、実験でもあったの。",
-   "img": "table:理由1=アメリカのまんなかにある;理由2=市長が1日だけ名前を変えてくれる;ねらい=日本のように売れるか、最初に試す",
-   "label": "トピーカが選ばれた理由",
-   "say": "この会は、全米を回る宣伝の最初の場所。にほんと同じように売れるかを試す、実験でもあったの。"
+   "img": "row:commons:Topeka skyline and Kansas River.jpg|トピーカ;art:25|ピカチュウ"
   },
   {
    "w": "z",
@@ -714,7 +809,7 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "トピーカは、もともと\n先住民カンザ族の言葉なの。",
+   "t": "トピーカは、もともと、この土地に住んでいた\n先住民、カンザ族の言葉なの。",
    "img": "commons:Charles Bird King - Monchousia (White Plume), Kansa - Google Art Project.jpg^commons:Monchousia (White Plume) (7844233464) (2).jpg",
    "label": "カンザ族の首長",
    "lf": "deco"
@@ -737,8 +832,7 @@
    "ety": [
     "Topeka（トピーカ）",
     "カンザ族の言葉　イモを掘るのにいい場所"
-   ],
-   "ans": true
+   ]
   },
   {
    "w": "z",
@@ -749,7 +843,7 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "1855年に町をつくった人たちは、\n響きがいいからこの名前を選んだそうよ。",
+   "t": "1855年に町をつくった人たちが、\n響きがいいからこの名前を選んだそうよ。",
    "img": "commons:Topeka, Kansas.JPG^commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas",
    "label": "トピーカの町",
    "lf": "deco"
@@ -780,45 +874,60 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "トピーカの改名は、\nこれで終わらないの。",
+   "t": "トピーカが名前を変えたのは、\nこれだけじゃないの。",
    "img": "commons:Topeka skyline and Kansas River.jpg^wiki:en:Topeka,_Kansas"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "2010年、Googleが、速いネットを引く街を募集したとき、\nトピーカは1か月だけ市の名前を「Google」に変えたの。",
+   "t": "2010年、Googleが、とても速い\nインターネットの回線を…",
+   "img": "commons:GoogleFiberKansasCity.JPG^wiki:en:Google_Fiber",
+   "label": "Googleの回線の宣伝（カンザスシティ）",
+   "say": "にせんじゅうねん、グーグルが、とても速いインターネットの回線を…"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "試しに引く街を、\n全米から募集したの。",
+   "img": "commons:GoogleFiberKansasCity.JPG^wiki:en:Google_Fiber",
+   "label": "Googleの回線の宣伝（カンザスシティ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "トピーカは選ばれたくて、3月の1か月だけ、\n市の名前を「Google」に変えたのよ。",
    "img": "commons:Topeka mayor bill bunten.jpg",
-   "label": "ビル・バンテン市長",
-   "say": "にせんじゅうねん、グーグルが、速いネットを引く街を募集したとき、トピーカは、いっかげつだけ、市の名前を、グーグルに変えたの。"
+   "label": "当時のビル・バンテン市長",
+   "say": "トピーカは選ばれたくて、さんがつの、いっかげつだけ、市の名前を、グーグルに変えたのよ。"
   },
   {
    "w": "z",
    "face": "surprise",
    "t": "今度は、\nポケモンじゃないのだ。",
    "img": "commons:Topeka mayor bill bunten.jpg",
-   "label": "ビル・バンテン市長"
+   "label": "当時のビル・バンテン市長"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "するとGoogleは、4月1日に\nロゴを「Topeka」に変えて返したの。",
+   "t": "するとGoogleは、4月1日のエイプリルフールに、\n自分のロゴを「Topeka」に変えて応えたの。",
    "img": "web:https://www.google.com/logos/2010/topeka-hp.gif",
-   "label": "2010年4月1日のロゴ",
-   "say": "するとグーグルは、しがつついたちに、ロゴを、トピーカに変えて返したの。"
+   "label": "2010年4月1日のGoogleのロゴ",
+   "say": "するとグーグルは、しがつついたちのエイプリルフールに、自分のロゴを、トピーカに変えて応えたの。"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "でも、それはエイプリルフールの冗談。\n選ばれたのは、となりのカンザスシティだったわ。",
-   "img": "table:2010年3月=トピーカが1か月だけ市の名前を「Google」に;ねらい=Googleの速いネットを引いてもらう;4月1日=Googleのロゴが「Topeka」に;結果=選ばれたのはカンザスシティ",
-   "label": "2010年のGoogleの件"
+   "t": "でも、回線が引かれたのは、\nとなりのカンザスシティだったわ。",
+   "img": "commons:GoogleFiberKansasCity.JPG^wiki:en:Google_Fiber",
+   "label": "Googleの回線の宣伝（カンザスシティ）"
   },
   {
    "w": "z",
    "face": "sad",
    "t": "名前まで変えたのに、\n選ばれなかったのだ…。",
-   "img": "table:2010年3月=トピーカが1か月だけ市の名前を「Google」に;ねらい=Googleの速いネットを引いてもらう;4月1日=Googleのロゴが「Topeka」に;結果=選ばれたのはカンザスシティ",
-   "label": "2010年のGoogleの件"
+   "img": "commons:GoogleFiberKansasCity.JPG^wiki:en:Google_Fiber",
+   "label": "Googleの回線の宣伝（カンザスシティ）"
   },
   {
    "type": "title",
@@ -839,15 +948,22 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "そして2018年。スイッチの「ピカブイ」の発売前に、\n任天堂が全米8か所で試遊会を開いたの。",
+   "t": "そして2018年。スイッチの「ピカブイ」が出る前に、\n任天堂は全米8か所で、発売前に遊べる会を開いたの。",
    "img": "wiki:en:Pokémon:_Let's_Go,_Pikachu!_and_Let's_Go,_Eevee!^commons:Nintendo-Pokemon-Lets-Go-Poke-Ball-Plus-Controller.jpg",
    "label": "ピカブイ（2018年）",
-   "say": "そして、2018年。スイッチの、ピカブイの発売前に、任天堂が、全米はっかしょで試遊会を開いたの。"
+   "say": "そして、2018年。スイッチの、ピカブイが出る前に、任天堂は、全米はっかしょで、発売前に遊べる会を開いたの。"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "トピーカの市長は、20年ぶりに宣言したわ。\n「10月27日だけ、トピカチュウにします」",
+   "t": "トピーカもそのひとつ。当時の市長は、\n会の日の10月27日だけ…",
+   "img": "row:commons:Michelle De La Isla.jpg|デ・ラ・イスラ市長;commons:Gage Park Zoo Topeka-KS(2463602266).jpg|ゲージ公園の動物園",
+   "label": "2018年のトピーカ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "市の名前をトピカチュウにすると宣言したわ。",
    "img": "row:commons:Michelle De La Isla.jpg|デ・ラ・イスラ市長;commons:Gage Park Zoo Topeka-KS(2463602266).jpg|ゲージ公園の動物園",
    "label": "2018年のトピーカ"
   },
@@ -858,36 +974,37 @@
    "img": "row:commons:Michelle De La Isla.jpg|デ・ラ・イスラ市長;commons:Gage Park Zoo Topeka-KS(2463602266).jpg|ゲージ公園の動物園",
    "label": "2018年のトピーカ",
    "big": "3度目のトピカチュウ",
-   "bf": "rampart",
-   "ans": true
+   "bf": "rampart"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "1998年にぬいぐるみを追いかけた子どもは、\nこのとき30歳くらい。",
-   "img": "art:25"
+   "t": "1998年にぬいぐるみを追いかけた子どもたちは、\nこのとき30歳くらい。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/fe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg",
+   "label": "1998年、ぬいぐるみに走る子どもたち"
   },
   {
    "w": "z",
    "face": "think",
    "t": "今度は自分の子どもを連れて、\n来た人もいたかもしれないのだ。",
-   "img": "art:25"
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/fe28c6fb-99bd-42dd-829c-a23399c73228_650x382.jpeg",
+   "label": "1998年、ぬいぐるみに走る子どもたち"
   },
   {
    "w": "m",
    "face": "think",
-   "t": "今日の答え。アメリカで最初のポケモンの会は、\nカンザス州のトピーカで開かれたの。",
-   "img": "table:1998年=アメリカで最初のポケモンの会;2010年=Googleにも名前を差し出す;2018年=20年ぶりに、またトピカチュウ",
+   "t": "今日の答え。アメリカで最初のポケモンの会は、\nゲームが出る1か月前のトピーカで開かれたの。",
+   "img": "web:https://digital.lib.ku.edu/islandora/object/ku-udk%3A48032/datastream/JPG/download",
    "sec": "まとめ",
-   "label": "トピーカの記録",
+   "label": "カンザス大学の学生新聞（1998年8月28日）",
    "lf": "mincho"
   },
   {
    "w": "m",
    "face": "normal",
-   "t": "空からピカチュウが降って、\n発売前の赤と青が、車のトランクで動いていた。",
-   "img": "table:落ちてきたもの=ピカチュウのぬいぐるみ 約750個;つき方=1個ずつ小さなパラシュート;いっしょに=黄色い服のスカイダイバー 10人ほど",
-   "label": "空から降ってきたもの"
+   "t": "空からピカチュウが降って、車のトランクでは、\n発売前の赤と青が動いていた。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd2a4969d-7c48-4a0c-a453-b47cea11098c_1781x1167.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/d2a4969d-7c48-4a0c-a453-b47cea11098c_1781x1167.jpeg^web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa7a62dc6-f960-4f51-ad45-59f41ea10b22_1024x768.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/a7a62dc6-f960-4f51-ad45-59f41ea10b22_1024x768.jpeg",
+   "label": "トランクのテレビ"
   },
   {
    "w": "z",
@@ -913,9 +1030,9 @@
   {
    "w": "m",
    "face": "happy",
-   "t": "今日のポケモンの英語名。1匹目は、\n会場にかざりがあったというゼニガメ。",
-   "img": "art:7",
-   "label": "Squirtle（スクワートル）",
+   "t": "今日のポケモンの英語名。1匹目は、\n会場に大きなかざりがあったゼニガメ。",
+   "img": "web:https://substackcdn.com/image/fetch/w_1456,c_limit,f_jpg,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc6c73cb-6e00-4327-86cb-dcfc379b34ff_1797x1166.jpeg^web:https://substack-post-media.s3.amazonaws.com/public/images/fc6c73cb-6e00-4327-86cb-dcfc379b34ff_1797x1166.jpeg",
+   "label": "会場のゼニガメのかざり",
    "lf": "hachi"
   },
   {
