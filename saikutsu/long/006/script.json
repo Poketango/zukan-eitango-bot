@@ -11,12 +11,10 @@
   ],
   "hl": 0,
   "hl_color": "red",
-  "back": "commons:Liga de La Justicia Chilena.jpg^commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
-  "badge": "art:25",
-  "chara": [
-   "z",
-   "shock"
-  ]
+  "back": "commons:Convención Constituyente Chile 4-julio-2021.jpg^wiki:en:Constitutional_Convention_(Chile)",
+  "photo": "commons:Tía Pikachu.jpg^wiki:en:Tía_Pikachu",
+  "photo_label": "チリのデモにて",
+  "chara": null
  },
  "lines": [
   {

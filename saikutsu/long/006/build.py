@@ -228,7 +228,7 @@ script = {
     "title": "ピカチュウの着ぐるみで踊ったおばさん、国の憲法を書く。",
     "neta": "ピカチュウの着ぐるみでデモに参加した女性が憲法制定の議員に",
     "thumb": {"layout": "v2", "pre": "ピカチュウの着ぐるみのおばさんが", "big": ["憲法を", "書く"], "hl": 0, "hl_color": "red",
-              "back": LIGA, "badge": PIKA, "chara": ["z", "shock"]},
+              "back": CONV, "photo": TIA, "photo_label": "チリのデモにて", "chara": None},
     "lines": L,
 }
 here = os.path.dirname(os.path.abspath(__file__))
