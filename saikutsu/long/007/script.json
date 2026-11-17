@@ -541,7 +541,7 @@
    "w": "m",
    "face": "normal",
    "t": "しかも市議会は、\n9対0の全員賛成。",
-   "img": "commons:Topeka mayor bill bunten.jpg",
+   "img": "table:決めたこと=3月のあいだ、市の名前をGoogleにする;賛成=9人;反対=0人",
    "label": "トピーカ市議会の採決",
    "say": "しかも市議会は、きゅうたいゼロの全員賛成。"
   },
@@ -549,7 +549,7 @@
    "w": "z",
    "face": "think",
    "t": "誰も、\n止めなかったのだ…。",
-   "img": "commons:Topeka mayor bill bunten.jpg"
+   "img": "table:決めたこと=3月のあいだ、市の名前をGoogleにする;賛成=9人;反対=0人"
   },
   {
    "w": "z",
@@ -612,7 +612,7 @@
    "t": "サラソタは、町にある島の名前まで\n「Google島」に変えていたわ。",
    "img": "commons:Sarasota Skyline.jpeg^wiki:en:Sarasota,_Florida",
    "label": "フロリダ州サラソタ",
-   "say": "サラソタは、町にある島の名前まで、グーグル島に変えていたわ。"
+   "say": "サラソタは、町にある島の名前まで、グーグルじまに変えていたわ。"
   },
   {
    "w": "z",
