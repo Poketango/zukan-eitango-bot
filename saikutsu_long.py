@@ -705,20 +705,23 @@ def thumbnail_v2(th, out_dir):
         im.alpha_composite(sh, (x_ + 8, y_ + 6)); im.alpha_composite(t_, (x_, y_))
     d_ = ImageDraw.Draw(im)
     PF = FF(th["pre_font"], FM) if th.get("pre_font") else FM
-    d_.text((48, 92), th["pre"], font=ImageFont.truetype(PF, 52), fill=(255, 255, 255), stroke_width=8, stroke_fill=(0, 0, 0), anchor="lm")
-    y = 150
+    ps = th.get("pre_size", 52)                    # 文字の大きさは行ごとに変えられる（2026-11-17 「もっとでかでかと」の指示）
+    d_.text((48, 30 + ps // 2 + 10), th["pre"], font=ImageFont.truetype(PF, ps), fill=(255, 255, 255), stroke_width=max(8, ps // 7), stroke_fill=(0, 0, 0), anchor="lm")
+    y = th.get("big_y", 150)
     fonts = th.get("fonts") or []                  # 行ごとの書体（2026-11-17）
+    bw = th.get("big_w", 760); bs = th.get("big_size", 190)
     for k, t in enumerate(th["big"]):
         BF = FF(fonts[k], FM) if k < len(fonts) and fonts[k] else FM
-        f = ImageFont.truetype(BF, 190)
-        while d_.textlength(t, font=f) > th.get("big_w", 760): f = ImageFont.truetype(BF, f.size - 6)
+        wk = bw[k] if isinstance(bw, list) else bw; sk = bs[k] if isinstance(bs, list) else bs
+        f = ImageFont.truetype(BF, sk)
+        while d_.textlength(t, font=f) > wk: f = ImageFont.truetype(BF, f.size - 6)
         on = k == th.get("hl", -1)
         col = (255, 40, 40) if on and th.get("hl_color", "red") == "red" else (255, 214, 40) if on else (255, 255, 255)
         cy = y + f.size // 2
         d_.text((52, cy), t, font=f, fill=(0, 0, 0), stroke_width=30, stroke_fill=(0, 0, 0), anchor="lm")
         d_.text((52, cy), t, font=f, fill=col, stroke_width=14, stroke_fill=(255, 255, 255) if on else (0, 0, 0), anchor="lm")
         d_.text((52, cy), t, font=f, fill=col, anchor="lm")
-        y += f.size + 18
+        y += f.size + th.get("big_gap", 18)
     im.convert("RGB").save(os.path.join(out_dir, "thumbnail.png"))
 
 def accent_dump(L, out_dir):
