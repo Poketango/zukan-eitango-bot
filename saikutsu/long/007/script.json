@@ -538,6 +538,20 @@
    "ans": true
   },
   {
+   "w": "m",
+   "face": "normal",
+   "t": "しかも市議会は、\n9対0の全員賛成。",
+   "img": "commons:Topeka mayor bill bunten.jpg",
+   "label": "トピーカ市議会の採決",
+   "say": "しかも市議会は、きゅうたいゼロの全員賛成。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "誰も、\n止めなかったのだ…。",
+   "img": "commons:Topeka mayor bill bunten.jpg"
+  },
+  {
    "w": "z",
    "face": "happy",
    "t": "じゃあボクも今日から「Googleもん」なのだ。\nネットが速くなるのだ。",
@@ -594,6 +608,20 @@
   },
   {
    "w": "m",
+   "face": "normal",
+   "t": "サラソタは、町にある島の名前まで\n「Google島」に変えていたわ。",
+   "img": "commons:Sarasota Skyline.jpeg^wiki:en:Sarasota,_Florida",
+   "label": "フロリダ州サラソタ",
+   "say": "サラソタは、町にある島の名前まで、グーグル島に変えていたわ。"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "島まで、\n巻き込まれてるのだ。",
+   "img": "commons:Sarasota Skyline.jpeg^wiki:en:Sarasota,_Florida"
+  },
+  {
+   "w": "m",
    "face": "think",
    "t": "ダルースは、冗談の動画で、\nこんなことまで言っていたの。",
    "img": "table:トピーカ=市の名前を「Google」に（3月の1か月）;ダルース=市長が真冬の湖に飛び込む;サラソタ=市長がサメの水槽に入る;ダルースの冗談の動画=最初の子どもを「Googleファイバー」と名づける",
@@ -636,7 +664,6 @@
    "face": "shock",
    "t": "Googleが、トピーカに\nなったのだ！？",
    "img": "web:https://www.google.com/logos/2010/topeka-hp.gif",
-   "big": "Googleがトピーカに",
    "label": "2010年4月1日のロゴ",
    "say": "グーグルが、トピーカになったのだ！？"
   },
@@ -647,6 +674,40 @@
    "img": "web:https://www.google.com/logos/2010/topeka-hp.gif",
    "label": "2010年4月1日のロゴ",
    "say": "エイプリルフールの冗談よ。トピーカがグーグルを名乗ったお返しね。"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "シュミットさんのブログには、\nトピーカの名前の意味まで書いてあったの。",
+   "img": "wiki:en:Eric_Schmidt",
+   "label": "エリック・シュミット"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "「Googleも、ネットで情報を掘るのに\nいちばんいい場所のひとつだと思いたい」",
+   "img": "wiki:en:Eric_Schmidt",
+   "label": "シュミットさんのブログ",
+   "big": "情報を掘るのにいい場所",
+   "say": "グーグルも、ネットで情報を掘るのに、いちばんいい場所のひとつだと思いたい。"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "Googleまで、\n掘る話をしてるのだ！",
+   "img": "web:https://www.google.com/logos/2010/topeka-hp.gif",
+   "say": "グーグルまで、掘る話をしてるのだ！"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "この採掘所の、\n商売がたきね。",
+   "v": "tsun"
+  },
+  {
+   "w": "z",
+   "face": "proud",
+   "t": "ボクたちのほうが、\n深く掘ってるのだ。"
   },
   {
    "w": "z",
