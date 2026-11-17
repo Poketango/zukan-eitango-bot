@@ -622,7 +622,9 @@ def thumbnail_v2(th, out_dir):
     """サムネイルの型2（2026-11-17）：背景の写真を画面いっぱいに敷き、左を暗く。
     左に小さい前置き＋特大の2行（強調の行は赤字に白縁、ほかは白字に黒縁、どちらも外側に黒の太縁を二重に）、
     右上に話題の目印（badge：ロゴなど）、右下に表情を誇張した立ち絵。
-    台本の thumb：{"layout": "v2", "pre": 前置き, "big": [2行], "hl": 強調する行, "back": 背景, "badge": 右上の画像, "chara": ["z", "shock"]}"""
+    台本の thumb：{"layout": "v2", "pre": 前置き, "big": [2行], "hl": 強調する行, "back": 背景, "badge": 右上の画像, "chara": ["z", "shock"] か null,
+      "photo": 右に大きく置く実物の写真, "photo_label": 写真の下の赤い札, "photo_tilt": 傾き}
+    立ち絵は必須ではない。視聴者を誘導できる実物の写真があれば photo に置き、chara は null にしてよい（2026-11-17 プロデューサーの指示）"""
     import glob
     W, H = 1280, 720
     cand = sorted(glob.glob("/usr/share/fonts/**/NotoSansCJK-Black.ttc", recursive=True) + glob.glob("/usr/share/fonts/**/NotoSerifCJK-Black.ttc", recursive=True))
@@ -639,12 +641,27 @@ def thumbnail_v2(th, out_dir):
     if badge is not None:
         s = min(360 / badge.width, 230 / badge.height); m = badge.resize((int(badge.width * s), int(badge.height * s)), Image.LANCZOS)
         im.alpha_composite(m, (W - m.width - 30, 24))
-    ch = th.get("chara") or ["z", "shock"]
-    t_ = SS.tachie(ch[0], False, 520, ch[1] if len(ch) > 1 else "surprise")
-    if ch[0] == "m": t_ = t_.transpose(Image.FLIP_LEFT_RIGHT)
-    sh = Image.new("RGBA", t_.size, (0, 0, 0, 0)); sh.putalpha(t_.getchannel("A").point(lambda v: int(v * 0.7))); sh = sh.filter(ImageFilter.GaussianBlur(10))
-    x_ = W - t_.width + 10; y_ = H - t_.height
-    im.alpha_composite(sh, (x_ + 8, y_ + 6)); im.alpha_composite(t_, (x_, y_))
+    photo = load(th["photo"]) if th.get("photo") else None
+    if photo is not None:                          # 右に話題の実物の写真を大きく（白い枠と影、少し傾ける。2026-11-17）
+        ph = photo.convert("RGB"); s = min(500 / ph.width, 600 / ph.height, 1.0)   # 小さい写真は引き伸ばさない
+        ph = ph.resize((int(ph.width * s), int(ph.height * s)), Image.LANCZOS)
+        fr = Image.new("RGBA", (ph.width + 28, ph.height + 28), (255, 255, 255, 255)); fr.paste(ph, (14, 14))
+        if th.get("photo_label"):
+            lf = ImageFont.truetype(FM, 40); dd = ImageDraw.Draw(fr)
+            tw = dd.textlength(th["photo_label"], font=lf)
+            dd.rectangle([0, fr.height - 70, min(fr.width, tw + 40), fr.height], fill=(220, 30, 30, 255))
+            dd.text((20, fr.height - 35), th["photo_label"], font=lf, fill=(255, 255, 255), anchor="lm")
+        fr = fr.rotate(th.get("photo_tilt", -4), resample=Image.BICUBIC, expand=True)
+        sh = Image.new("RGBA", fr.size, (0, 0, 0, 0)); sh.putalpha(fr.getchannel("A").point(lambda v: int(v * 0.6))); sh = sh.filter(ImageFilter.GaussianBlur(14))
+        x_ = W - fr.width - 36; y_ = max(10, (H - fr.height) // 2 + 20)
+        im.alpha_composite(sh, (x_ + 12, y_ + 14)); im.alpha_composite(fr, (x_, y_))
+    ch = th.get("chara", ["z", "shock"])           # 立ち絵は必須ではない（2026-11-17）。"chara": null で出さない
+    if ch:
+        t_ = SS.tachie(ch[0], False, 520 if photo is None else 330, ch[1] if len(ch) > 1 else "surprise")
+        if ch[0] == "m": t_ = t_.transpose(Image.FLIP_LEFT_RIGHT)
+        sh = Image.new("RGBA", t_.size, (0, 0, 0, 0)); sh.putalpha(t_.getchannel("A").point(lambda v: int(v * 0.7))); sh = sh.filter(ImageFilter.GaussianBlur(10))
+        x_ = W - t_.width + 10; y_ = H - t_.height
+        im.alpha_composite(sh, (x_ + 8, y_ + 6)); im.alpha_composite(t_, (x_, y_))
     d_ = ImageDraw.Draw(im)
     d_.text((48, 92), th["pre"], font=ImageFont.truetype(FM, 52), fill=(255, 255, 255), stroke_width=8, stroke_fill=(0, 0, 0), anchor="lm")
     y = 150
