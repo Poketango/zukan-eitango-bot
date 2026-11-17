@@ -1,1 +1,78 @@
-{"no": 6, "title": "ホロのリザードンが出るまで、平均48パック。【ポケモン雑学採掘所】", "hook": ["英語版の第1弾", "ホロのリザードンは", "48パック"], "hl": "48パック", "lead": "1999年の英語版ポケモンカード第1弾は1パック11枚。ホロのカードは16種類で、約3パックに1枚と言われていた。リザードンを狙うと平均48パックほどになる。", "article": "https://poketango.com/zatsugaku/pokemon-card-gambling-lawsuit.html", "video": "U9y9S9UH-ks", "pokemon": [["charizard", "リザードン", "Charizard"]], "lines": [{"w": "z", "t": "ホロのリザードンを当てるには、\nパックを何個買えばいいのだ？", "img": "charizard_card.jpg"}, {"w": "m", "t": "1999年の英語版第1弾で\n計算してみましょ", "img": "booster_pack.jpg", "cap": "英語版第1弾のパック"}, {"w": "m", "t": "1パック11枚。\nそのうちレアは1枚", "img": "booster_pack.jpg"}, {"w": "m", "t": "102種類のうち、絵がキラキラ\n光るホロのカードは16種類", "img": "charizard_card.jpg", "cap": "ホロのリザードン"}, {"w": "m", "t": "ホロが出るのは約3パックに1枚と\n言われていたわ。会社の公式の\n数字ではないけどね", "img": "booster_box.jpg"}, {"w": "z", "t": "16種類のうちリザードンは1種類。\n3かける16で、\n平均48パックなのだ", "img": "charizard_card.jpg", "say": "16種類のうちリザードンは1種類。3かける16で、平均48パックなのだ"}, {"w": "m", "t": "このくじみたいな仕組みは、\n1999年に「賭博だ」と\n裁判になったの", "img": "booster_pack.jpg"}, {"w": "z", "t": "えっ、裁判なのだ！？", "img": "booster_pack.jpg", "face": "surprise"}, {"w": "m", "t": "その裁判の結末は、\n本編で掘っているわ", "img": "honpen.jpg"}, {"w": "z", "t": "下の動画から、\n本編に行けるのだ！", "img": "honpen.jpg", "face": "happy"}]}
+{
+ "no": 6,
+ "title": "ホロのリザードンが出るまで、平均48パック。【ポケモン雑学採掘所】",
+ "hook": [
+  "英語版の第1弾",
+  "ホロのリザードンは",
+  "48パック"
+ ],
+ "hl": "48パック",
+ "lead": "1999年の英語版ポケモンカード第1弾は1パック11枚。ホロのカードは16種類で、約3パックに1枚と言われていた。リザードンを狙うと平均48パックほどになる。",
+ "article": "https://poketango.com/zatsugaku/pokemon-card-gambling-lawsuit.html",
+ "video": "U9y9S9UH-ks",
+ "pokemon": [
+  [
+   "charizard",
+   "リザードン",
+   "Charizard"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "z",
+   "t": "ホロのリザードンを当てるには、\nパックを何個買えばいいのだ？",
+   "img": "charizard_card.jpg"
+  },
+  {
+   "w": "m",
+   "t": "1999年の英語版第1弾で\n計算してみましょ",
+   "img": "charizard_card.jpg",
+   "cap": "ホロのリザードン"
+  },
+  {
+   "w": "m",
+   "t": "1パック11枚。\nそのうちレアは1枚",
+   "img": "booster_pack.jpg"
+  },
+  {
+   "w": "m",
+   "t": "102種類のうち、絵がキラキラ\n光るホロのカードは16種類",
+   "img": "charizard_card.jpg",
+   "cap": "ホロのリザードン"
+  },
+  {
+   "w": "m",
+   "t": "ホロが出るのは約3パックに1枚と\n言われていたわ。会社の公式の\n数字ではないけどね",
+   "img": "booster_box.jpg"
+  },
+  {
+   "w": "z",
+   "t": "16種類のうちリザードンは1種類。\n3かける16で、\n平均48パックなのだ",
+   "img": "charizard_card.jpg",
+   "say": "16種類のうちリザードンは1種類。3かける16で、平均48パックなのだ",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "t": "このくじみたいな仕組みは、\n1999年に「賭博だ」と\n裁判になったの",
+   "img": "booster_pack.jpg"
+  },
+  {
+   "w": "z",
+   "t": "えっ、裁判なのだ！？",
+   "img": "booster_pack.jpg",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "その裁判の結末は、\n本編で掘っているわ",
+   "img": "honpen.jpg"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "honpen.jpg",
+   "face": "happy"
+  }
+ ]
+}
