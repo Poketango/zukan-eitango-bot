@@ -254,28 +254,28 @@
    "w": "m",
    "face": "normal",
    "t": "イスラム教の聖典コーランは、「マイシル」を禁じているの。\n運まかせで、他人の財産を手に入れることよ。",
-   "img": "commons:Roulette Wheel (8423486930).jpg",
+   "img": "commons:13-02-27-spielbank-wiesbaden-by-RalfR-093.jpg^commons:Mesa-de-ruleta-casino-ciudad-de-mexico25-04-2023.jpg",
    "label": "マイシル＝運まかせで財を得ること"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "ファトワは、カードのやり取りが\nこのマイシルに似ていると考えたのね。",
-   "img": "commons:Roulette Wheel (8423486930).jpg",
+   "img": "commons:13-02-27-spielbank-wiesbaden-by-RalfR-093.jpg^commons:Mesa-de-ruleta-casino-ciudad-de-mexico25-04-2023.jpg",
    "label": "マイシル＝運まかせで財を得ること"
   },
   {
    "w": "m",
    "face": "think",
    "t": "じつはアメリカでも1999年に、パックは賭博だと\n任天堂が訴えられているの。",
-   "img": "../004/booster_box.jpg^../004/booster_pack.jpg^art:25",
-   "label": "ポケモンカードのパック"
+   "img": "../004/charizard_card.jpg^../004/booster_pack.jpg",
+   "label": "第4回の話（アメリカの裁判）"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "この採掘場の第4回で掘った裁判ね。\n国も宗教も違うのに、同じ所が引っかかったの。",
-   "img": "../004/booster_box.jpg^../004/booster_pack.jpg^art:25",
+   "img": "../004/charizard_card.jpg^../004/booster_pack.jpg",
    "label": "第4回の話（アメリカの裁判）"
   },
   {
@@ -385,6 +385,20 @@
    "t": "1匹が姿を変えるポケモンは、\n変態のほうなのだ。",
    "img": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー",
    "label": "キャタピーの進化"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "シェロミさんは「正しい言葉ではないけれど、\nもう定着してしまった」とも言っているわ。",
+   "img": "commons:Monarch butterfly stages of development (28273604424).jpg",
+   "label": "チョウの幼虫・さなぎ・成虫"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "いまさら「変態」に\n言いかえるのは、むずかしいのだ。",
+   "img": "commons:Monarch butterfly stages of development (28273604424).jpg",
+   "label": "チョウの幼虫・さなぎ・成虫"
   },
   {
    "w": "m",
@@ -513,8 +527,15 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "アメリカのユダヤ人の団体の会長も、\nこのうわさを強く非難したの。",
+   "img": "commons:ADL logo (2018).svg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "label": "ADL（アメリカのユダヤ人の団体）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "その年の秋、サウジアラビアのイスラム学者も、\nこのうわさを打ち消しているわ。",
-   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "img": "commons:Riyadh Skyline (Kingdom Center).jpg",
    "label": "サウジアラビアの首都リヤド"
   },
   {
@@ -695,6 +716,20 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "役所のサイトに残る文面で、理由に挙がっているのは賭博だけ。\n進化論や六芒星は書かれていないの。",
+   "img": "commons:مبنى دار الإفتاء المصرية.png^commons:Egypt (orthographic projection).svg",
+   "label": "エジプトのファトワ庁（カイロ）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "国によって、\n問題にした所が違うのだ。",
+   "img": "commons:مبنى دار الإفتاء المصرية.png^commons:Egypt (orthographic projection).svg",
+   "label": "エジプトのファトワ庁（カイロ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "サウジアラビアでは、店からカードが消えて、\n学校ではポケモンの服が集められたと報じられたの。",
    "img": "../004/booster_box.jpg^../004/booster_pack.jpg^art:25",
    "label": "ポケモンカードのパック"
@@ -765,7 +800,7 @@
    "w": "m",
    "face": "normal",
    "t": "次の日、国の上級ウラマー評議会が、「ポケモンGOの\nファトワは、まだ出していない」と打ち消したわ。",
-   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "img": "commons:Riyadh Skyline (Kingdom Center).jpg",
    "label": "サウジアラビアの首都リヤド",
    "say": "次の日、国の、じょうきゅうウラマー評議会が、ポケモンGOのファトワは、まだ出していない、と打ち消したわ。"
   },
@@ -773,14 +808,14 @@
    "w": "z",
    "face": "think",
    "t": "ウラマー評議会って、\nだれのことなのだ？",
-   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "img": "commons:Riyadh Skyline (Kingdom Center).jpg",
    "label": "サウジアラビアの首都リヤド"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "ウラマーは、イスラム教の学者たちのこと。\nその中でも位の高い学者の集まりよ。",
-   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "img": "commons:Riyadh Skyline (Kingdom Center).jpg",
    "label": "サウジアラビアの首都リヤド"
   },
   {

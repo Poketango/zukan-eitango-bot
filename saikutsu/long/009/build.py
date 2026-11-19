@@ -16,6 +16,8 @@ def T(sub, t, sec=None, **kw):
     L.append({"type": "title", "sub": sub, "t": t, **({"sec": sec} if sec else {}), **kw})
 
 # 画像（コモンズのファイル名は 2026-11-20 に内蔵ブラウザで実在と中身を確かめた）
+RIYADH2 = "commons:Riyadh Skyline (Kingdom Center).jpg"
+CHARI = "../004/charizard_card.jpg^" + "../004/booster_pack.jpg"
 RIYADH = "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg"
 SAUDI = "commons:Saudi Arabia (orthographic projection).svg^commons:Saudi Arabia location map.png"
 ARABIA = "commons:Arabian Peninsula Map.png^" + SAUDI
@@ -33,7 +35,7 @@ HEXA = "commons:Hexagram - Davidstern.jpg"
 NOA = "commons:Nintendo of America Headquarters.jpg"
 TEMPLE = "commons:Japanese Map symbol (Temple).svg"
 GO = "commons:Pokemon GO players in México City.jpg^commons:Pokémon Go players in Anchorage, Alaska.jpg"
-ROULETTE = "commons:Roulette Wheel (8423486930).jpg"
+ROULETTE = "commons:13-02-27-spielbank-wiesbaden-by-RalfR-093.jpg^commons:Mesa-de-ruleta-casino-ciudad-de-mexico25-04-2023.jpg"
 PACK = "../004/booster_pack.jpg^art:25"
 BOX = "../004/booster_box.jpg^" + PACK
 KOGA = "web:https://images.pokemontcg.io/gym2/115_hires.png^art:42"
@@ -83,8 +85,8 @@ S("m", "normal", "当時は、カードを賭けて\n取り合う遊びもあっ
 S("z", "think", "レアが出るまで買うのは、\nたしかにくじ引きみたいなのだ。", PACK, label="ポケモンカードのパック")
 S("m", "normal", "イスラム教の聖典コーランは、「マイシル」を禁じているの。\n運まかせで、他人の財産を手に入れることよ。", ROULETTE, label="マイシル＝運まかせで財を得ること")
 S("m", "normal", "ファトワは、カードのやり取りが\nこのマイシルに似ていると考えたのね。", ROULETTE, label="マイシル＝運まかせで財を得ること")
-S("m", "think", "じつはアメリカでも1999年に、パックは賭博だと\n任天堂が訴えられているの。", BOX, label="ポケモンカードのパック")
-S("m", "normal", "この採掘場の第4回で掘った裁判ね。\n国も宗教も違うのに、同じ所が引っかかったの。", BOX, label="第4回の話（アメリカの裁判）")
+S("m", "think", "じつはアメリカでも1999年に、パックは賭博だと\n任天堂が訴えられているの。", CHARI, label="第4回の話（アメリカの裁判）")
+S("m", "normal", "この採掘場の第4回で掘った裁判ね。\n国も宗教も違うのに、同じ所が引っかかったの。", CHARI, label="第4回の話（アメリカの裁判）")
 S("z", "surprise", "砂漠の国でもアメリカでも、\nパックは怪しまれていたのだ。", BOX, label="ポケモンカードのパック")
 
 # ---- 第三層 ----
@@ -102,6 +104,8 @@ S("m", "normal", "虫が、幼虫からさなぎ、成虫へと\n姿を変える
 S("m", "normal", "キャタピーがトランセルになって、\nバタフリーになるのは、まさにこれね。", CHAIN, label="キャタピーの進化")
 S("m", "normal", "生き物の進化は、何世代もかけて、集団の遺伝子が\n変わること。1匹の体の中では起きないの。", DTREE, label="ダーウィンのノートの図（1837年）")
 S("z", "happy", "1匹が姿を変えるポケモンは、\n変態のほうなのだ。", CHAIN, label="キャタピーの進化")
+S("m", "normal", "シェロミさんは「正しい言葉ではないけれど、\nもう定着してしまった」とも言っているわ。", MONARCH, label="チョウの幼虫・さなぎ・成虫")
+S("z", "think", "いまさら「変態」に\n言いかえるのは、むずかしいのだ。", MONARCH, label="チョウの幼虫・さなぎ・成虫")
 S("m", "normal", "ゲームの元の言葉は、日本語の「進化」。\n英語版でも、進化を表す evolve になったの。", CHAIN, label="キャタピーの進化",
   say="ゲームの元の言葉は、日本語の進化。英語版でも、進化を表す、イボルブになったの。")
 S("z", "sad", "言葉ひとつで、\n宗教の問題になってしまったのだ。", DARWIN, label="チャールズ・ダーウィン（イギリスの博物学者）")
@@ -123,7 +127,8 @@ S("m", "normal", "そのうえで「ポケモンは、ポケット・モンス�
 S("z", "surprise", "名前の意味まで、\nわざわざ説明したのだ？", NOA, label="任天堂オブアメリカ（アメリカの子会社）")
 S("m", "think", "当時、「ポケモンは日本語で『私はユダヤ人』という\n意味だ」といううわさが流れていたからよ。", RIYADH, label="当時流れたうわさ", big="私はユダヤ人？", bf="mincho")
 S("z", "shock", "ぜんぜん違うのだ！\nポケット・モンスターなのだ！", RIYADH, label="当時流れたうわさ")
-S("m", "normal", "その年の秋、サウジアラビアのイスラム学者も、\nこのうわさを打ち消しているわ。", RIYADH, label="サウジアラビアの首都リヤド")
+S("m", "normal", "アメリカのユダヤ人の団体の会長も、\nこのうわさを強く非難したの。", "commons:ADL logo (2018).svg^" + RIYADH2, label="ADL（アメリカのユダヤ人の団体）")
+S("m", "normal", "その年の秋、サウジアラビアのイスラム学者も、\nこのうわさを打ち消しているわ。", RIYADH2, label="サウジアラビアの首都リヤド")
 S("m", "normal", "宗教の印をめぐっては、その2年前の1999年、\nアメリカでも騒ぎがあったの。", KOGA, label="キョウ秘伝 変わり身の術（英語版）")
 S("m", "normal", "11歳の男の子が、日本語のカードの中に、\n赤い卍の印を見つけたの。", KOGA, label="キョウ秘伝 変わり身の術（英語版）")
 S("m", "normal", "「キョウ秘伝 変わり身の術」というカード。\nゴルバットとメタモンの横に、卍が描かれていたわ。", KOGA, label="英語版では印が描きかえられた", mark=[0.27, 0.27, 0.08])
@@ -151,6 +156,8 @@ S("m", "normal", "ファトワは見解だから、売るのを止めるかは�
 S("m", "normal", "エジプトでも、ファトワを出す国の役所が、\nカードは賭博にあたると判断したわ。", IFTA, label="エジプトのファトワ庁（カイロ）")
 S("m", "normal", "エジプトは、アフリカの北東の国。\n首都カイロは、アラブの国々の中でも大きな町よ。", CAIRO, label="エジプトの首都カイロ")
 S("z", "think", "アラビア半島の外まで\n広がっていたのだ。", CAIRO, label="エジプトの首都カイロ")
+S("m", "normal", "役所のサイトに残る文面で、理由に挙がっているのは賭博だけ。\n進化論や六芒星は書かれていないの。", IFTA, label="エジプトのファトワ庁（カイロ）")
+S("z", "surprise", "国によって、\n問題にした所が違うのだ。", IFTA, label="エジプトのファトワ庁（カイロ）")
 S("m", "normal", "サウジアラビアでは、店からカードが消えて、\n学校ではポケモンの服が集められたと報じられたの。", BOX, label="ポケモンカードのパック")
 S("z", "sad", "服まで…。ポケモン好きの子には、\nつらい春だったのだ。", BOX, label="ポケモンカードのパック")
 
@@ -164,10 +171,10 @@ S("m", "normal", "7月20日、ロイターなどが、「サウジアラビア�
 S("z", "happy", "めたんが読んでいた、\n最初のニュースなのだ！", GO, label="2016年夏、ポケモンGOの流行")
 S("m", "think", "でもそれは、\n新しいファトワではなかったの。", MUFTI, label="ファトワ第21758号", big="15年前のファトワ", bf="mincho")
 S("m", "normal", "ポケモンの質問がたくさん来たので、委員会が\nサイトに2001年のファトワを載せ直しただけなの。", MUFTI, label="ファトワ第21758号", ans=True)
-S("m", "normal", "次の日、国の上級ウラマー評議会が、「ポケモンGOの\nファトワは、まだ出していない」と打ち消したわ。", RIYADH, label="サウジアラビアの首都リヤド",
+S("m", "normal", "次の日、国の上級ウラマー評議会が、「ポケモンGOの\nファトワは、まだ出していない」と打ち消したわ。", RIYADH2, label="サウジアラビアの首都リヤド",
   say="次の日、国の、じょうきゅうウラマー評議会が、ポケモンGOのファトワは、まだ出していない、と打ち消したわ。")
-S("z", "think", "ウラマー評議会って、\nだれのことなのだ？", RIYADH, label="サウジアラビアの首都リヤド")
-S("m", "normal", "ウラマーは、イスラム教の学者たちのこと。\nその中でも位の高い学者の集まりよ。", RIYADH, label="サウジアラビアの首都リヤド")
+S("z", "think", "ウラマー評議会って、\nだれのことなのだ？", RIYADH2, label="サウジアラビアの首都リヤド")
+S("m", "normal", "ウラマーは、イスラム教の学者たちのこと。\nその中でも位の高い学者の集まりよ。", RIYADH2, label="サウジアラビアの首都リヤド")
 S("z", "surprise", "古いファトワが、\n新しいニュースになっていたのだ。", GO, label="2016年夏、ポケモンGOの流行")
 S("m", "normal", "ただ、評議会の学者のひとりは、新聞に「国の安全を損なうので\n許されない」と、自分の考えを話していたの。", RIYADH, label="サウジアラビアの首都リヤド")
 S("m", "normal", "公式の見解と、ひとりの学者の考え。\nそれが混ざって、世界のニュースになったのね。", GO, label="2016年夏、ポケモンGOの流行")
