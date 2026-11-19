@@ -1,0 +1,8 @@
+もんすぺ	モンスペ	0	words.json
+ポリゴン２	ポリゴンツー	5	words.json
+ポリゴンＺ	ポリゴンゼット	5	words.json
+タイプ：ヌル	タイプヌル	3	words.json
+アドノ	アドノ	1	words.json
+イプシロン	イプシロン	1	words.json
+トゥールーズ	トゥールーズ	3	words.json
+キャタピー	キャタピー	2	自動（エンジンの読み キャ'タ/ピ'イ）
