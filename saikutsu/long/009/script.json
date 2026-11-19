@@ -1,0 +1,945 @@
+{
+ "no": 9,
+ "title": "ポケモンの「進化」が、サウジアラビアで禁止の理由になった。",
+ "neta": "カタールの宗教指導者も禁止に加わった",
+ "thumb": {
+  "layout": "v2",
+  "pre": "サウジアラビアの宗教見解",
+  "big": [
+   "ポケモン",
+   "禁止"
+  ],
+  "hl": 1,
+  "hl_color": "red",
+  "fonts": [
+   "mincho",
+   "rampart"
+  ],
+  "pre_font": "maru",
+  "pre_size": 62,
+  "big_w": [
+   700,
+   600
+  ],
+  "big_size": [
+   200,
+   330
+  ],
+  "big_y": 120,
+  "big_gap": -6,
+  "back": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+  "photo": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー",
+  "photo_label": "理由は「進化」",
+  "chara": null
+ },
+ "lines": [
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2001年の春、サウジアラビアで、\nポケモンを禁じる宗教の見解が出たの。",
+   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "sec": "ポケモン雑学採掘場",
+   "label": "サウジアラビアの首都リヤド"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "禁止！？\nポケモンの何がいけなかったのだ？",
+   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "label": "サウジアラビアの首都リヤド"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "理由のひとつは、\nポケモンの「進化」だったの。",
+   "img": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー",
+   "big": "理由は「進化」",
+   "bf": "mincho"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "進化がだめなら、\nポケモンは何もできないのだ！",
+   "img": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー"
+  },
+  {
+   "type": "op",
+   "w": "m",
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘場。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学さいくつじょう。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "めたん、休憩中に\n何を読んでいるのだ？",
+   "img": "commons:Pokemon GO players in México City.jpg^commons:Pokémon Go players in Anchorage, Alaska.jpg",
+   "sec": "導入　10年前のニュース",
+   "label": "2016年夏、ポケモンGOの流行"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "10年前、2016年の夏のニュース。\nポケモンGOが世界中ではやっていたころね。",
+   "img": "commons:Pokemon GO players in México City.jpg^commons:Pokémon Go players in Anchorage, Alaska.jpg",
+   "label": "2016年夏、ポケモンGOの流行"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのころ「サウジアラビアが、ポケモンを禁止」と\n世界中で報じられたの。",
+   "img": "commons:Pokemon GO players in México City.jpg^commons:Pokémon Go players in Anchorage, Alaska.jpg",
+   "label": "2016年夏、ポケモンGOの流行"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "GOが禁止！？\nそんなことがあったのだ？",
+   "img": "commons:Pokemon GO players in México City.jpg^commons:Pokémon Go players in Anchorage, Alaska.jpg",
+   "label": "2016年夏、ポケモンGOの流行"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "でも調べてみると、そのニュースは少し違っていたの。\n話の始まりは、もっと前の2001年なのよ。",
+   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "label": "サウジアラビアの首都リヤド"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "15年前なのだ。\nそこから掘ってほしいのだ。",
+   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "label": "サウジアラビアの首都リヤド"
+  },
+  {
+   "type": "title",
+   "sub": "本日の採掘",
+   "t": "ポケモンは、なぜサウジアラビアで禁じられた？",
+   "font": "mincho"
+  },
+  {
+   "type": "title",
+   "sub": "第一層",
+   "t": "2001年、ポケモンを禁じる「ファトワ」",
+   "sec": "第一層　ファトワ第21758号",
+   "font": "fude",
+   "x": {
+    "head": "2001年、サウジアラビアで\nポケモンを禁じる\n宗教の見解が出た",
+    "img": [
+     "commons:المفتي عبد العزيز آل الشيخ.jpg^commons:مفتي المملكة عبد العزيز آل الشيخ.jpg"
+    ],
+    "bubble": "カードの売り買いもだめなのだ",
+    "who": "z",
+    "post": "2001年3月、サウジアラビアの宗教の委員会が、ポケモンのカードとゲームを禁じる見解（ファトワ）を出しました。委員会の長は国でいちばん位の高い宗教指導者。子どもに遊ばせないよう勧め、カードの売り買いも禁じました。理由は何だったと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "サウジアラビアは、アラビア半島の大部分をしめる国。\nイスラム教の聖地メッカがある国ね。",
+   "img": "commons:Saudi Arabia (orthographic projection).svg^commons:Saudi Arabia location map.png",
+   "label": "サウジアラビア"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2001年3月、この国の宗教の専門家の委員会が、\nポケモンについての見解を出したの。",
+   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "label": "サウジアラビアの首都リヤド"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "委員会の長は、国でいちばん位の高い宗教指導者、\n大ムフティーのアブドゥルアジーズ師。",
+   "img": "commons:المفتي عبد العزيز آل الشيخ.jpg^commons:مفتي المملكة عبد العزيز آل الشيخ.jpg",
+   "label": "大ムフティー　アブドゥルアジーズ師",
+   "say": "委員会の長は、国でいちばん位の高い宗教指導者、だいムフティーの、アブドゥルアジーズ師。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ムフティーって、\nどういう人なのだ？",
+   "img": "commons:المفتي عبد العزيز آل الشيخ.jpg^commons:مفتي المملكة عبد العزيز آل الشيخ.jpg",
+   "label": "大ムフティー　アブドゥルアジーズ師"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "イスラム教の決まりにもとづいて、ものごとが\nよいか悪いかの見解を出す学者のこと。",
+   "img": "commons:المفتي عبد العزيز آل الشيخ.jpg^commons:مفتي المملكة عبد العزيز آل الشيخ.jpg",
+   "label": "大ムフティー　アブドゥルアジーズ師"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その見解を「ファトワ」と呼ぶの。\nポケモンのファトワは、第21758号よ。",
+   "img": "commons:المفتي عبد العزيز آل الشيخ.jpg^commons:مفتي المملكة عبد العزيز آل الشيخ.jpg",
+   "label": "ファトワ第21758号",
+   "say": "その見解をファトワと呼ぶの。ポケモンのファトワは、だい、にまんいっせんななひゃくごじゅうはちごうよ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ファトワは、\n国の法律とは違うのだ？",
+   "img": "commons:المفتي عبد العزيز آل الشيخ.jpg^commons:مفتي المملكة عبد العزيز آل الشيخ.jpg",
+   "label": "ファトワ第21758号"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "法律とは別のもの。\nでも、この国ではとても重く受け止められるの。",
+   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "label": "サウジアラビアの首都リヤド"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "結論は「子どもに遊ばせないように」。\nカードの売り買いも禁じられたの。",
+   "img": "../004/booster_box.jpg^../004/booster_pack.jpg^art:25",
+   "label": "ポケモンカードのパック",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "ずいぶん厳しいのだ。\n理由が気になるのだ。",
+   "img": "../004/booster_box.jpg^../004/booster_pack.jpg^art:25",
+   "label": "ポケモンカードのパック"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "見解が挙げた理由は3つ。\n賭博、進化論、それから宗教の印よ。",
+   "img": "row:../004/booster_pack.jpg|賭博;commons:Charles Darwin by Julia Margaret Cameron, c. 1868.jpg|進化論;commons:Hexagram - Davidstern.jpg|宗教の印",
+   "label": "ファトワが挙げた3つの理由"
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "理由その1　カードは「賭博」",
+   "sec": "第二層　賭博",
+   "font": "reggae",
+   "x": {
+    "head": "ポケモンカードは\n「賭博」にあたる\nサウジとエジプトの判断",
+    "img": [
+     "../004/booster_pack.jpg^art:25"
+    ],
+    "bubble": "レア狙いはくじ引きなのだ",
+    "who": "z",
+    "post": "2001年、サウジアラビアとエジプトの宗教の判断は、ポケモンカードを賭博にあたるとしました。中身のわからないパックを買い、珍しいカードが出るかは運しだい。イスラム教が禁じる「運まかせで他人の財を得ること」に似ているという理由です。あなたはパックを何個まで買いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1つ目は賭博。中身のわからないパックを買って、\n珍しいカードが出るかは運しだいでしょ。",
+   "img": "../004/booster_pack.jpg^art:25",
+   "label": "ポケモンカードのパック"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "当時は、カードを賭けて\n取り合う遊びもあったの。",
+   "img": "../004/booster_pack.jpg^art:25",
+   "label": "ポケモンカードのパック"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "レアが出るまで買うのは、\nたしかにくじ引きみたいなのだ。",
+   "img": "../004/booster_pack.jpg^art:25",
+   "label": "ポケモンカードのパック"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "イスラム教の聖典コーランは、「マイシル」を禁じているの。\n運まかせで、他人の財産を手に入れることよ。",
+   "img": "commons:Roulette Wheel (8423486930).jpg",
+   "label": "マイシル＝運まかせで財を得ること"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ファトワは、カードのやり取りが\nこのマイシルに似ていると考えたのね。",
+   "img": "commons:Roulette Wheel (8423486930).jpg",
+   "label": "マイシル＝運まかせで財を得ること"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "じつはアメリカでも1999年に、パックは賭博だと\n任天堂が訴えられているの。",
+   "img": "../004/booster_box.jpg^../004/booster_pack.jpg^art:25",
+   "label": "ポケモンカードのパック"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この採掘場の第4回で掘った裁判ね。\n国も宗教も違うのに、同じ所が引っかかったの。",
+   "img": "../004/booster_box.jpg^../004/booster_pack.jpg^art:25",
+   "label": "第4回の話（アメリカの裁判）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "砂漠の国でもアメリカでも、\nパックは怪しまれていたのだ。",
+   "img": "../004/booster_box.jpg^../004/booster_pack.jpg^art:25",
+   "label": "ポケモンカードのパック"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "理由その2　「進化」は進化論",
+   "sec": "第三層　進化論",
+   "font": "mincho",
+   "x": {
+    "head": "ポケモンの「進化」は\n生き物の学者から見ると\n「変態」に近い",
+    "img": [
+     "commons:Monarch butterfly stages of development (28273604424).jpg"
+    ],
+    "bubble": "キャタピーは虫だったのだ",
+    "who": "z",
+    "post": "2001年のサウジアラビアのファトワは、ポケモンの「進化」が進化論にもとづくとして問題にしました。でも昆虫学者のシェロミさんによれば、1匹の体が変わるポケモンの進化は、むしろ虫の「変態」。生き物の進化は、何世代もかけて集団に起きる変化です。キャタピーの進化、どう呼びますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2つ目の理由が、進化論。\nポケモンの進化は、ダーウィンの考えにもとづく、とね。",
+   "img": "commons:Charles Darwin by Julia Margaret Cameron, c. 1868.jpg",
+   "label": "チャールズ・ダーウィン（イギリスの博物学者）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "進化論は、生き物が長い時間をかけて、\n少しずつ別の種に分かれていくという考え。",
+   "img": "commons:Darwin Tree 1837.png^commons:Darwin Tree 1837 cropped.png",
+   "label": "ダーウィンのノートの図（1837年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "人も生き物も神がつくったという教えと、\nぶつかると考えられたのね。",
+   "img": "commons:Darwin Tree 1837.png^commons:Darwin Tree 1837 cropped.png",
+   "label": "ダーウィンのノートの図（1837年）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でも、ポケモンの進化って、\nダーウィンの話とは違う気がするのだ。",
+   "img": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー",
+   "label": "キャタピーの進化"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "いいところに気づいたわね。\n生き物の学者も、同じことを言っているの。",
+   "img": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー",
+   "label": "キャタピーの進化"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "昆虫学者のマタン・シェロミさんは、ポケモンの進化は\n進化ではなく「変態」だと言っているの。",
+   "img": "commons:Monarch butterfly stages of development (28273604424).jpg",
+   "label": "チョウの幼虫・さなぎ・成虫",
+   "big": "進化ではなく変態",
+   "bf": "rampart",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "へんたい！？\nいきなり何を言うのだ！",
+   "img": "commons:Monarch butterfly stages of development (28273604424).jpg",
+   "label": "チョウの幼虫・さなぎ・成虫"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "虫が、幼虫からさなぎ、成虫へと\n姿を変えることを「変態」と言うの。",
+   "img": "commons:Monarch butterfly stages of development (28273604424).jpg",
+   "label": "チョウの幼虫・さなぎ・成虫",
+   "mark": [
+    0.83,
+    0.3,
+    0.17
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "キャタピーがトランセルになって、\nバタフリーになるのは、まさにこれね。",
+   "img": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー",
+   "label": "キャタピーの進化"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "生き物の進化は、何世代もかけて、集団の遺伝子が\n変わること。1匹の体の中では起きないの。",
+   "img": "commons:Darwin Tree 1837.png^commons:Darwin Tree 1837 cropped.png",
+   "label": "ダーウィンのノートの図（1837年）"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "1匹が姿を変えるポケモンは、\n変態のほうなのだ。",
+   "img": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー",
+   "label": "キャタピーの進化"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ゲームの元の言葉は、日本語の「進化」。\n英語版でも、進化を表す evolve になったの。",
+   "img": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー",
+   "label": "キャタピーの進化",
+   "say": "ゲームの元の言葉は、日本語の進化。英語版でも、進化を表す、イボルブになったの。"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "言葉ひとつで、\n宗教の問題になってしまったのだ。",
+   "img": "commons:Charles Darwin by Julia Margaret Cameron, c. 1868.jpg",
+   "label": "チャールズ・ダーウィン（イギリスの博物学者）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ちなみに、ポケモンを作った田尻智さんは、\n子どものころ虫とりに夢中だった人よ。",
+   "img": "art:10",
+   "label": "キャタピー"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "だから、虫の変態みたいな\n進化になったのだ？",
+   "img": "art:10",
+   "label": "キャタピー"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "田尻さん本人が、進化と変態を結びつけて話した記録は\n見つからなかったわ。そこは想像にとどめておきましょ。",
+   "img": "art:10",
+   "label": "キャタピー"
+  },
+  {
+   "type": "title",
+   "sub": "第四層",
+   "t": "理由その3　カードに「宗教の印」？",
+   "sec": "第四層　宗教の印",
+   "font": "deco",
+   "x": {
+    "head": "日本では寺の印の「卍」\nアメリカで問題になり\nカードの絵が描きかえられた",
+    "img": [
+     "web:https://images.pokemontcg.io/gym2/115_hires.png^art:42"
+    ],
+    "bubble": "同じ印で意味が変わるのだ",
+    "who": "z",
+    "post": "1999年、アメリカの男の子が日本のポケモンカード「キョウ秘伝 変わり身の術」に赤い卍を見つけました。日本では寺院を表す印ですが、アメリカではナチスのかぎ十字に見えて問題に。任天堂オブアメリカは製造をやめ、英語版では印を描きかえました。同じ印で意味が変わる例、ほかに知っていますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "3つ目は、カードに描かれた印。ファトワには、\nほとんどのカードに六芒星がある、と書かれていたの。",
+   "img": "commons:Hexagram - Davidstern.jpg",
+   "label": "六芒星（ダビデの星）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "六芒星は、ユダヤ教の印で、イスラエルの国旗にもある形。\nファトワはこれをイスラエルの象徴と呼んでいたわ。",
+   "img": "commons:Hexagram - Davidstern.jpg",
+   "label": "六芒星（ダビデの星）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ほかにも、十字架やフリーメイソンの三角形、\n日本の神道の印があると書かれていたの。",
+   "img": "commons:Hexagram - Davidstern.jpg",
+   "label": "六芒星（ダビデの星）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "そんな印、\nカードにあったのだ？",
+   "img": "../004/booster_pack.jpg^art:25",
+   "label": "ポケモンカードのパック"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "どのカードの、どの絵のことなのかは、\n当時の報道からはわからないの。",
+   "img": "../004/booster_pack.jpg^art:25",
+   "label": "ポケモンカードのパック"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "任天堂の広報は「宗教の印は描いていない。\nキャラクターも名前も空想のものです」と答えたわ。",
+   "img": "commons:Nintendo of America Headquarters.jpg",
+   "label": "任天堂オブアメリカ（アメリカの子会社）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのうえで「ポケモンは、ポケット・モンスターの\n略です」とまで説明しているの。",
+   "img": "commons:Nintendo of America Headquarters.jpg",
+   "label": "任天堂オブアメリカ（アメリカの子会社）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "名前の意味まで、\nわざわざ説明したのだ？",
+   "img": "commons:Nintendo of America Headquarters.jpg",
+   "label": "任天堂オブアメリカ（アメリカの子会社）"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "当時、「ポケモンは日本語で『私はユダヤ人』という\n意味だ」といううわさが流れていたからよ。",
+   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "label": "当時流れたうわさ",
+   "big": "私はユダヤ人？",
+   "bf": "mincho"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "ぜんぜん違うのだ！\nポケット・モンスターなのだ！",
+   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "label": "当時流れたうわさ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その年の秋、サウジアラビアのイスラム学者も、\nこのうわさを打ち消しているわ。",
+   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "label": "サウジアラビアの首都リヤド"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "宗教の印をめぐっては、その2年前の1999年、\nアメリカでも騒ぎがあったの。",
+   "img": "web:https://images.pokemontcg.io/gym2/115_hires.png^art:42",
+   "label": "キョウ秘伝 変わり身の術（英語版）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "11歳の男の子が、日本語のカードの中に、\n赤い卍の印を見つけたの。",
+   "img": "web:https://images.pokemontcg.io/gym2/115_hires.png^art:42",
+   "label": "キョウ秘伝 変わり身の術（英語版）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "「キョウ秘伝 変わり身の術」というカード。\nゴルバットとメタモンの横に、卍が描かれていたわ。",
+   "img": "web:https://images.pokemontcg.io/gym2/115_hires.png^art:42",
+   "label": "英語版では印が描きかえられた",
+   "mark": [
+    0.27,
+    0.27,
+    0.08
+   ]
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "卍って、日本だと\nお寺の印なのだ。",
+   "img": "commons:Japanese Map symbol (Temple).svg",
+   "label": "日本の地図記号「寺院」"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。日本では寺院を表す、縁起のいい印。\nでもアメリカでは、ナチスのかぎ十字に見えたの。",
+   "img": "commons:Japanese Map symbol (Temple).svg",
+   "label": "日本の地図記号「寺院」"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "任天堂オブアメリカは、このカードの製造をやめて、\n英語版では印を描きかえたの。",
+   "img": "web:https://images.pokemontcg.io/gym2/115_hires.png^art:42",
+   "label": "英語版では印が描きかえられた",
+   "mark": [
+    0.27,
+    0.27,
+    0.08
+   ],
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "「ある文化で問題のないものが、\n別の文化でもそうとは限らない」とね。",
+   "img": "web:https://images.pokemontcg.io/gym2/115_hires.png^art:42",
+   "label": "任天堂オブアメリカのコメント"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "同じ絵でも、国が変わると、\n見え方が変わるのだ。",
+   "img": "commons:Japanese Map symbol (Temple).svg",
+   "label": "日本の地図記号「寺院」"
+  },
+  {
+   "type": "title",
+   "sub": "第五層",
+   "t": "禁止は、まわりの国へ広がった",
+   "sec": "第五層　カタール・ドバイ・エジプト",
+   "font": "potta",
+   "x": {
+    "head": "ポケモン禁止の見解は\nカタール、ドバイ、エジプトへ\n広がった",
+    "img": [
+     "commons:Arabian Peninsula Map.png^commons:Saudi Arabia (orthographic projection).svg^commons:Saudi Arabia location map.png"
+    ],
+    "bubble": "理由が5つに増えたのだ",
+    "who": "z",
+    "post": "2001年、サウジアラビアのあと、カタールを拠点にする有名な学者もポケモンを禁じるファトワを出しました。理由は進化論、自然に反する空想、強い者が生き残る暴力、賭博、六芒星の5つ。ドバイやエジプトの宗教の役所も、賭博などを理由に問題にしました。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "サウジアラビアの見解は、\nまわりの国にも広がったの。",
+   "img": "commons:Arabian Peninsula Map.png^commons:Saudi Arabia (orthographic projection).svg^commons:Saudi Arabia location map.png",
+   "label": "アラビア半島の国々"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "4月には、カタールを拠点にする有名な学者、\nカラダーウィー師もファトワを出したわ。",
+   "img": "commons:Qardawi.JPG^commons:Yusuf al-Qaradawi.jpg",
+   "label": "ユースフ・カラダーウィー師",
+   "say": "しがつには、カタールを拠点にする有名な学者、カラダーウィー師も、ファトワを出したわ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "カタールは、アラビア半島から突き出た、\n小さな半島の国。首都はドーハね。",
+   "img": "commons:Doha Skyline 01.jpg",
+   "label": "カタールの首都ドーハ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "師が挙げた理由は5つ。進化論、自然の決まりに合わない空想、\n強いものだけが生き残る争い…",
+   "img": "commons:Qardawi.JPG^commons:Yusuf al-Qaradawi.jpg",
+   "label": "ユースフ・カラダーウィー師"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それに、カード集めの賭博と、六芒星よ。",
+   "img": "commons:Qardawi.JPG^commons:Yusuf al-Qaradawi.jpg",
+   "label": "ユースフ・カラダーウィー師"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "理由が3つから、\n5つに増えているのだ。",
+   "img": "commons:Qardawi.JPG^commons:Yusuf al-Qaradawi.jpg",
+   "label": "ユースフ・カラダーウィー師"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アラブ首長国連邦のドバイでも、宗教の役所が、\n賭博と進化論を理由に「イスラムに合わない」と判断したの。",
+   "img": "commons:Dubai Creek 12.jpg^commons:United Arab Emirates (orthographic projection).svg",
+   "label": "ドバイ（アラブ首長国連邦）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ただ、役所の人は「売るのを禁じる力はない」\nとも言っているわ。",
+   "img": "commons:Dubai Creek 12.jpg^commons:United Arab Emirates (orthographic projection).svg",
+   "label": "ドバイ（アラブ首長国連邦）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ファトワが出ても、\nお店で売れるのだ？",
+   "img": "commons:Dubai Creek 12.jpg^commons:United Arab Emirates (orthographic projection).svg",
+   "label": "ドバイ（アラブ首長国連邦）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ファトワは見解だから、売るのを止めるかは、\n国や役所しだいなの。",
+   "img": "commons:Dubai Creek 12.jpg^commons:United Arab Emirates (orthographic projection).svg",
+   "label": "ドバイ（アラブ首長国連邦）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "エジプトでも、ファトワを出す国の役所が、\nカードは賭博にあたると判断したわ。",
+   "img": "commons:مبنى دار الإفتاء المصرية.png^commons:Egypt (orthographic projection).svg",
+   "label": "エジプトのファトワ庁（カイロ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "エジプトは、アフリカの北東の国。\n首都カイロは、アラブの国々の中でも大きな町よ。",
+   "img": "commons:Cairo skyline, Nile River, Egypt.jpg^commons:Egypt (orthographic projection).svg",
+   "label": "エジプトの首都カイロ"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "アラビア半島の外まで\n広がっていたのだ。",
+   "img": "commons:Cairo skyline, Nile River, Egypt.jpg^commons:Egypt (orthographic projection).svg",
+   "label": "エジプトの首都カイロ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "サウジアラビアでは、店からカードが消えて、\n学校ではポケモンの服が集められたと報じられたの。",
+   "img": "../004/booster_box.jpg^../004/booster_pack.jpg^art:25",
+   "label": "ポケモンカードのパック"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "服まで…。ポケモン好きの子には、\nつらい春だったのだ。",
+   "img": "../004/booster_box.jpg^../004/booster_pack.jpg^art:25",
+   "label": "ポケモンカードのパック"
+  },
+  {
+   "type": "title",
+   "sub": "最深層",
+   "t": "2016年、15年前のファトワが「新しいニュース」に",
+   "sec": "最深層　ポケモンGOの夏",
+   "font": "train",
+   "x": {
+    "head": "2016年の「サウジが\nポケモンを禁止」は\n15年前のファトワだった",
+    "img": [
+     "commons:Pokemon GO players in México City.jpg^commons:Pokémon Go players in Anchorage, Alaska.jpg"
+    ],
+    "bubble": "古い話が新しく見えたのだ",
+    "who": "z",
+    "post": "2016年7月、ポケモンGOの流行中に「サウジアラビアがポケモンを禁じるファトワを新しく出した」と世界中で報じられました。実は質問が多かったため、2001年のファトワをサイトに載せ直しただけ。次の日、上級ウラマー評議会は新しいファトワは出していないと打ち消しました。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それから15年。2016年の夏、\nポケモンGOが世界中ではやったの。",
+   "img": "commons:Pokemon GO players in México City.jpg^commons:Pokémon Go players in Anchorage, Alaska.jpg",
+   "label": "2016年夏、ポケモンGOの流行"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "7月20日、ロイターなどが、「サウジアラビアが\nポケモンを禁じるファトワを新しく出した」と伝えたわ。",
+   "img": "commons:Pokemon GO players in México City.jpg^commons:Pokémon Go players in Anchorage, Alaska.jpg",
+   "label": "2016年夏、ポケモンGOの流行",
+   "say": "しちがつはつかに、ロイターなどが、サウジアラビアがポケモンを禁じるファトワを、新しく出した、と伝えたわ。"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "めたんが読んでいた、\n最初のニュースなのだ！",
+   "img": "commons:Pokemon GO players in México City.jpg^commons:Pokémon Go players in Anchorage, Alaska.jpg",
+   "label": "2016年夏、ポケモンGOの流行"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "でもそれは、\n新しいファトワではなかったの。",
+   "img": "commons:المفتي عبد العزيز آل الشيخ.jpg^commons:مفتي المملكة عبد العزيز آل الشيخ.jpg",
+   "label": "ファトワ第21758号",
+   "big": "15年前のファトワ",
+   "bf": "mincho"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンの質問がたくさん来たので、委員会が\nサイトに2001年のファトワを載せ直しただけなの。",
+   "img": "commons:المفتي عبد العزيز آل الشيخ.jpg^commons:مفتي المملكة عبد العزيز آل الشيخ.jpg",
+   "label": "ファトワ第21758号",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "次の日、国の上級ウラマー評議会が、「ポケモンGOの\nファトワは、まだ出していない」と打ち消したわ。",
+   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "label": "サウジアラビアの首都リヤド",
+   "say": "次の日、国の、じょうきゅうウラマー評議会が、ポケモンGOのファトワは、まだ出していない、と打ち消したわ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ウラマー評議会って、\nだれのことなのだ？",
+   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "label": "サウジアラビアの首都リヤド"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ウラマーは、イスラム教の学者たちのこと。\nその中でも位の高い学者の集まりよ。",
+   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "label": "サウジアラビアの首都リヤド"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "古いファトワが、\n新しいニュースになっていたのだ。",
+   "img": "commons:Pokemon GO players in México City.jpg^commons:Pokémon Go players in Anchorage, Alaska.jpg",
+   "label": "2016年夏、ポケモンGOの流行"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ただ、評議会の学者のひとりは、新聞に「国の安全を損なうので\n許されない」と、自分の考えを話していたの。",
+   "img": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
+   "label": "サウジアラビアの首都リヤド"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "公式の見解と、ひとりの学者の考え。\nそれが混ざって、世界のニュースになったのね。",
+   "img": "commons:Pokemon GO players in México City.jpg^commons:Pokémon Go players in Anchorage, Alaska.jpg",
+   "label": "2016年夏、ポケモンGOの流行"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "エジプトでは、イスラム教の学問の中心アズハルの副総長が、\nポケモンGOを「有害な熱狂」と批判したの。",
+   "img": "commons:Cairo - Islamic district - Al Azhar Mosque and University.JPG^commons:Al-Azhar Mosque (Cairo).jpg",
+   "label": "アズハル（エジプト・カイロ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でもあとで、自分のSNSで\n「禁じたわけではない」と説明しているわ。",
+   "img": "commons:Cairo - Islamic district - Al Azhar Mosque and University.JPG^commons:Al-Azhar Mosque (Cairo).jpg",
+   "label": "アズハル（エジプト・カイロ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "エジプトやクウェートは、軍の施設などで\n撮影すると危ない、と注意をよびかけたの。",
+   "img": "commons:Cairo skyline, Nile River, Egypt.jpg^commons:Egypt (orthographic projection).svg",
+   "label": "エジプトの首都カイロ"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "GOのときの心配は、宗教より、\n安全のほうだったのだ。",
+   "img": "commons:Cairo skyline, Nile River, Egypt.jpg^commons:Egypt (orthographic projection).svg",
+   "label": "エジプトの首都カイロ"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "今日の答え。サウジアラビアでポケモンが禁じられた\n理由は、賭博、進化論、宗教の印の3つ。",
+   "img": "row:../004/booster_pack.jpg|賭博;commons:Charles Darwin by Julia Margaret Cameron, c. 1868.jpg|進化論;commons:Hexagram - Davidstern.jpg|宗教の印",
+   "sec": "まとめ",
+   "label": "ファトワが挙げた3つの理由"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "なかでも「進化」は、本当は虫の変態に近いのに、\n言葉ひとつで宗教の問題になってしまったの。",
+   "img": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー",
+   "label": "キャタピーの進化"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "キャタピーがバタフリーになるだけで、\nダーウィンまで呼ばれていたのだ。",
+   "img": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー",
+   "label": "キャタピーの進化"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "ほんとね。言葉の選び方ひとつで、\n遠い国の子どもの遊びまで変わってしまうの。",
+   "img": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー",
+   "label": "キャタピーの進化"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "あなたなら、ポケモンの「進化」に\nどんな名前をつける？コメントで教えてね。",
+   "img": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー",
+   "label": "キャタピーの進化"
+  },
+  {
+   "type": "title",
+   "sub": "おまけ",
+   "t": "今日のポケモンの英語名",
+   "sec": "今日のポケモンの英語名",
+   "font": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "今日のポケモンの英語名。1匹目は、\n変態の真ん中、さなぎのトランセル。",
+   "img": "art:11",
+   "label": "Metapod（メタポッド）",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "英語ではメタポッド。「変わる」のメタと、\n豆のさやを表すポッドを合わせた名前と言われているわ。",
+   "img": "art:11",
+   "label": "Metapod（メタポッド）",
+   "lf": "hachi",
+   "ety": [
+    "Metapod（メタポッド）",
+    "英語　meta（変化）＋pod（さや）"
+   ],
+   "say": "英語ではメタポッド。かわる、のメタと、まめのさやを表すポッドを合わせた名前と言われているわ。"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "2匹目は、卍のカードに描かれていたメタモン。\nディトー。",
+   "img": "art:132",
+   "label": "Ditto（ディトー）",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "dittoは英語で「同じく」という意味。\n何にでも同じ姿に変身するメタモンにぴったりね。",
+   "img": "art:132",
+   "label": "Ditto（ディトー）",
+   "lf": "hachi",
+   "ety": [
+    "Ditto（ディトー）",
+    "英語　ditto（同上・同じく）"
+   ],
+   "say": "ディトーは英語で、おなじく、という意味。何にでも同じ姿に変身するメタモンにぴったりね。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日出てきたポケモンの英語名は、\n英単語帳サイト「もんすぺ！」でも調べられるわ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "もんすぺ！には、ポケモンの雑学のコラムもあるの。\n動画の続きみたいに読めるわよ。",
+   "img": "site:",
+   "label": "「もんすぺ！」雑学コラムもあります"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の採掘はここまでなのだ。\nチャンネル登録もよろしくなのだ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "type": "ed"
+  }
+ ]
+}
