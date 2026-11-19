@@ -533,7 +533,7 @@ def fixed_kana(ln, speaker):
     """VOICEVOX の読みに直し表を当てる。直すところが無ければ None"""
     import urllib.request, urllib.parse
     if ln.get("kana"): return ln["kana"]
-    text = ln.get("say") or ln["t"]
+    text = yomi.clean(ln.get("say") or ln["t"])
     try:
         yomi.prepare(P.VV, text)                   # ポケモン名をユーザー辞書に（崩れる名前だけ）
         q = json.loads(urllib.request.urlopen(urllib.request.Request(P.VV + "/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": speaker}), method="POST"), timeout=90).read())
@@ -759,7 +759,7 @@ def accent_dump(L, out_dir):
     out, todo = [], []
     for i, ln in enumerate(L):
         if ln.get("type") in ("title", "ed") or not ln.get("t"): continue
-        text = ln.get("say") or ln["t"]
+        text = yomi.clean(ln.get("say") or ln["t"])
         yomi.prepare(vv, text)
         q = json.loads(req("/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": 3})))
         k = ln.get("kana") or q.get("kana", "")

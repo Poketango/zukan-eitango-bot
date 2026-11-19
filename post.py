@@ -192,6 +192,10 @@ def center(d, y, text, font, fill, stroke=0, sfill=None):
 def tts(text, speaker, speed=1.0, pitch=0.0, intonation=1.0):
     """読み上げ音声を numpy 配列（44.1kHz, -1〜1）で返す。エンジンが無ければ None"""
     try:
+        import yomi; text = yomi.clean(text)
+    except Exception:
+        pass
+    try:
         try:
             import yomi; yomi.prepare(VV, text)    # ポケモン名をユーザー辞書に（崩れる名前だけ）
         except Exception:
@@ -199,6 +203,14 @@ def tts(text, speaker, speed=1.0, pitch=0.0, intonation=1.0):
         q = urllib.request.urlopen(urllib.request.Request(
             f"{VV}/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": speaker}), method="POST"), timeout=60).read()
         q = json.loads(q)
+        try:                                       # 2026-11-20 句の割れすぎ（補助動詞・数字）を直す。失敗しても元の読みで進む
+            import yomi
+            k2 = yomi.autofix(q.get("kana", ""), text)
+            if k2 and k2 != q.get("kana", ""):
+                q["accent_phrases"] = json.loads(urllib.request.urlopen(urllib.request.Request(
+                    f"{VV}/accent_phrases?" + urllib.parse.urlencode({"text": k2, "speaker": speaker, "is_kana": "true"}), method="POST"), timeout=60).read())
+        except Exception:
+            pass
         q.update(speedScale=speed, pitchScale=pitch, intonationScale=intonation, outputSamplingRate=SR, volumeScale=1.3,
                  prePhonemeLength=0.05, postPhonemeLength=0.15)
         wav = urllib.request.urlopen(urllib.request.Request(f"{VV}/synthesis?speaker={speaker}", data=json.dumps(q).encode(),

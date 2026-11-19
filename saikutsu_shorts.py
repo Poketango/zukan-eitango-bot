@@ -41,7 +41,7 @@ def tts(line, speaker):
     def req(path, data=None):
         h = {"Content-Type": "application/json"} if data else {}
         return urllib.request.urlopen(urllib.request.Request(vv + path, data=data, headers=h, method="POST"), timeout=90).read()
-    text = line.get("say") or line["t"]
+    text = yomi.clean(line.get("say") or line["t"])
     try:
         yomi.prepare(vv, text)                     # ポケモン名をユーザー辞書に（崩れる名前だけ）
         q = json.loads(req("/audio_query?" + urllib.parse.urlencode({"text": text, "speaker": speaker})))
