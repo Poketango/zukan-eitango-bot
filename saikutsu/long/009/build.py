@@ -188,7 +188,7 @@ T("おまけ", "今日のポケモンの英語名", "今日のポケモンの英
 S("m", "happy", "今日のポケモンの英語名。1匹目は、\n変態の真ん中、さなぎのトランセル。", "art:11", label="Metapod（メタポッド）", lf="hachi")
 S("m", "normal", "英語ではメタポッド。「変わる」のメタと、\n豆のさやを表すポッドを合わせた名前と言われているわ。", "art:11", label="Metapod（メタポッド）", lf="hachi",
   ety=["Metapod（メタポッド）", "英語　meta（変化）＋pod（さや）"],
-  say="英語ではメタポッド。かわる、のメタと、まめのさやを表すポッドを合わせた名前と言われているわ。")
+  say="英語ではメタポッド。かわるという意味のメタと、まめのさやを表すポッドを合わせた名前と言われているわ。")
 S("m", "happy", "2匹目は、卍のカードに描かれていたメタモン。\nディトー。", "art:132", label="Ditto（ディトー）", lf="hachi")
 S("m", "normal", "dittoは英語で「同じく」という意味。\n何にでも同じ姿に変身するメタモンにぴったりね。", "art:132", label="Ditto（ディトー）", lf="hachi",
   ety=["Ditto（ディトー）", "英語　ditto（同上・同じく）"],
@@ -205,7 +205,7 @@ script = {
     "thumb": {"layout": "v2", "pre": "サウジアラビアの宗教見解", "big": ["ポケモン", "禁止"], "hl": 1, "hl_color": "red",
               "fonts": ["mincho", "rampart"], "pre_font": "maru", "pre_size": 62,
               "big_w": [700, 600], "big_size": [200, 330], "big_y": 120, "big_gap": -6,
-              "back": RIYADH, "photo": CHAIN, "photo_label": "理由は「進化」", "chara": None},
+              "back": RIYADH, "photo": "row:art:10>art:11>art:12", "photo_label": "理由は「進化」", "chara": None},
     "lines": L,
 }
 here = os.path.dirname(os.path.abspath(__file__))

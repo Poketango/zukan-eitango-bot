@@ -28,7 +28,7 @@
   "big_y": 120,
   "big_gap": -6,
   "back": "commons:Kingdom Centre at night.jpg^commons:Riyadh Skyline (Kingdom Center).jpg",
-  "photo": "row:art:10|キャタピー>art:11|トランセル>art:12|バタフリー",
+  "photo": "row:art:10>art:11>art:12",
   "photo_label": "理由は「進化」",
   "chara": null
  },
@@ -894,7 +894,7 @@
     "Metapod（メタポッド）",
     "英語　meta（変化）＋pod（さや）"
    ],
-   "say": "英語ではメタポッド。かわる、のメタと、まめのさやを表すポッドを合わせた名前と言われているわ。"
+   "say": "英語ではメタポッド。かわるという意味のメタと、まめのさやを表すポッドを合わせた名前と言われているわ。"
   },
   {
    "w": "m",
