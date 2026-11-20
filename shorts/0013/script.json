@@ -1,0 +1,68 @@
+{
+ "no": 13,
+ "title": "のどの試験に合格したモンスターボールが、回収された理由。【ポケモン雑学採掘場】",
+ "hook": [
+  "安全試験に合格",
+  "それでも",
+  "2500万個回収"
+ ],
+ "hl": "2500万個回収",
+ "lead": "1999年のバーガーキングのモンスターボールは、のどに詰まるかの試験には合格していた。でも半分の殻が赤ちゃんの口と鼻をふさぐ危なさは、試験の対象外だった。",
+ "article": "https://poketango.com/zatsugaku/burger-king-poke-ball-recall.html",
+ "video": "3JgGAffljnY",
+ "pokemon": [
+  [
+   "mewtwo",
+   "ミュウツー",
+   "Mewtwo"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "袋に「安全試験済み」と\n書かれたモンスターボールが、\n回収されたことがあるの",
+   "img": "commons:Burger King Poké Ball - closed.jpg"
+  },
+  {
+   "w": "z",
+   "t": "安全なのに回収？\nおかしいのだ",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "face": "think"
+  },
+  {
+   "w": "m",
+   "t": "1999年、アメリカの\nバーガーキングのおまけ。\n直径は7センチほど",
+   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "cap": "バーガーキング（アメリカ）"
+  },
+  {
+   "w": "m",
+   "t": "大きいから、のどに詰まるかの\n試験には合格していたの",
+   "img": "commons:SmallPartsTestFixtureCPSCgov.jpg",
+   "cap": "のどの試験の道具（CPSC）"
+  },
+  {
+   "w": "m",
+   "t": "でも、半分の殻が赤ちゃんの\n口と鼻をふさぐ危なさは、\n試験に入っていなかったの",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "t": "試験の外側に、\n危なさがあったのだ",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "face": "sad"
+  },
+  {
+   "w": "m",
+   "t": "このボールの話は、\n本編でくわしく掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/3JgGAffljnY/maxresdefault.jpg^web:https://i.ytimg.com/vi/3JgGAffljnY/hqdefault.jpg^commons:Burger King Poké Ball - closed.jpg"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/3JgGAffljnY/maxresdefault.jpg^web:https://i.ytimg.com/vi/3JgGAffljnY/hqdefault.jpg^commons:Burger King Poké Ball - closed.jpg",
+   "face": "happy"
+  }
+ ]
+}
