@@ -1,0 +1,70 @@
+{
+ "no": 14,
+ "title": "同じ1999年、小さすぎるポケモンのボールと大きすぎるボールがあった。【ポケモン雑学採掘場】",
+ "hook": [
+  "1999年",
+  "2つのポケモンのボール",
+  "正反対の危なさ"
+ ],
+ "hl": "正反対の危なさ",
+ "lead": "1999年、ハズブロ社のポケモンのゴムボール（約4.4センチ）はのどに詰まる事故を、バーガーキングのモンスターボール（約7センチ）は顔をふさぐ事故を起こした。",
+ "article": "https://poketango.com/zatsugaku/burger-king-poke-ball-recall.html",
+ "video": "3JgGAffljnY",
+ "pokemon": [
+  [
+   "squirtle",
+   "ゼニガメ",
+   "Squirtle"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "1999年、アメリカでは\n2つのポケモンのボールが\n問題になったの",
+   "img": "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ"
+  },
+  {
+   "w": "z",
+   "t": "2つとも\nポケモンのボールなのだ？",
+   "img": "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "1つはハズブロ社の\nゴムボール。直径は\n1.72インチ、約4.4センチ",
+   "img": "commons:Colorful Super ball Large.png",
+   "cap": "ゴムのボール（イメージ）",
+   "kana": "ヒト'ツワ/ハズブ'ロシャノ/ゴムボ'オル、チョッケエワ'、イッテンナナニ'インチ、ヤク'/ヨンテンヨンセ'ンチ"
+  },
+  {
+   "w": "m",
+   "t": "小さい球の決まりの線、\n1.75インチより少し小さく、\n7歳の男の子がのどに詰まらせたの",
+   "img": "commons:Colorful Super ball Large.png",
+   "cap": "ゴムのボール（イメージ）",
+   "kana": "チイサ'イ/タ'マノ/キマリノ'/セ'ン、イッテンナナゴ'インチヨリ/ス'コシ/チイサ'ク、ナナ'サイノ/オトコ'ノコガ/ノ'ドニ/ツマラセ'タノ"
+  },
+  {
+   "w": "m",
+   "t": "もう1つは、バーガーキングの\nおまけのボール。こちらは\n半分の殻が顔をふさいだの",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "t": "小さすぎても、\n大きくても危なかったのだ",
+   "img": "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ",
+   "face": "think"
+  },
+  {
+   "w": "m",
+   "t": "このボールの話は、\n本編でくわしく掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/3JgGAffljnY/maxresdefault.jpg^web:https://i.ytimg.com/vi/3JgGAffljnY/hqdefault.jpg^commons:Burger King Poké Ball - closed.jpg"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/3JgGAffljnY/maxresdefault.jpg^web:https://i.ytimg.com/vi/3JgGAffljnY/hqdefault.jpg^commons:Burger King Poké Ball - closed.jpg",
+   "face": "happy"
+  }
+ ]
+}
