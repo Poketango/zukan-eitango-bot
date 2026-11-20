@@ -633,6 +633,8 @@ def thumbnail(d, out_dir):
     import glob
     th = json.load(open(os.path.join(d, "script.json"), encoding="utf-8")).get("thumb")
     if not th: return
+    if th.get("file") and os.path.exists(os.path.join(d, th["file"])):   # 2026-11-21 ブラウザのcanvasで作り込んだサムネを、そのまま使う
+        Image.open(os.path.join(d, th["file"])).convert("RGB").resize((1280, 720), Image.LANCZOS).save(os.path.join(out_dir, "thumbnail.png")); return
     if th.get("layout") == "v2": return thumbnail_v2(th, out_dir)
     W, H = 1280, 720
     cand = sorted(glob.glob("/usr/share/fonts/**/NotoSerifCJK-Black.ttc", recursive=True) + glob.glob("/usr/share/fonts/**/NotoSerifCJK-Bold.ttc", recursive=True))
