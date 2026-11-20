@@ -1,0 +1,995 @@
+{
+ "no": 10,
+ "title": "安全試験に合格したモンスターボールが、2500万個回収された。",
+ "neta": "バーガーキングがモンスターボール型のおもちゃを回収",
+ "thumb": {
+  "layout": "v2",
+  "pre": "安全試験に合格したのに",
+  "big": [
+   "2500万個",
+   "回収"
+  ],
+  "hl": 1,
+  "hl_color": "red",
+  "fonts": [
+   "mincho",
+   "mincho"
+  ],
+  "pre_font": "maru",
+  "pre_size": 62,
+  "big_w": [
+   700,
+   520
+  ],
+  "big_size": [
+   200,
+   330
+  ],
+  "big_y": 120,
+  "big_gap": -6,
+  "back": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+  "photo": "commons:Burger King Poké Ball - opened.jpg",
+  "photo_label": "モンスターボールのおまけ",
+  "chara": null
+ },
+ "lines": [
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1999年の冬、アメリカのバーガーキングは、\nあるおまけを「捨ててください」と呼びかけたの。",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "sec": "ポケモン雑学採掘場",
+   "label": "バーガーキングのおまけ"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "おまけを捨てる！？\nいったい何のおまけなのだ？",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "label": "バーガーキングのおまけ"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "モンスターボールよ。\n2500万個以上も配られたものなの。",
+   "img": "row:commons:Burger King Poké Ball - closed.jpg|閉じた形;commons:Burger King Poké Ball - opened.jpg|開いた形",
+   "big": "2500万個を回収",
+   "bf": "mincho",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "そんなにたくさん！\nポケモンのおまけが、なぜなのだ？",
+   "img": "row:commons:Burger King Poké Ball - closed.jpg|閉じた形;commons:Burger King Poké Ball - opened.jpg|開いた形"
+  },
+  {
+   "type": "op",
+   "w": "m",
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘場。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学さいくつじょう。"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の休憩のおやつは、\nフライドポテトなのだ。",
+   "img": "commons:BK-French-Fries.jpg",
+   "sec": "導入　ポテトとボール",
+   "label": "フライドポテト"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのポテト、昔のアメリカでは、\nモンスターボールと交換でもらえたのよ。",
+   "img": "commons:BK-French-Fries.jpg",
+   "label": "フライドポテト"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ボールを渡すと、ポテト？\nどういうことなのだ？",
+   "img": "commons:BK-French-Fries.jpg",
+   "label": "フライドポテト"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "おまけのボールを返しに来た人に、\nお店が小さいポテトを配ったの。",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "label": "バーガーキングのおまけ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "配ったおまけを、お店が\n急いで取り戻そうとしていたのね。",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "label": "バーガーキングのおまけ"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "取り戻すほどの何かが、\nあったのだ？",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "label": "バーガーキングのおまけ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日は、このボールに何があったのか。\nアメリカの国の役所の記録から掘っていくわ。",
+   "img": "commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
+   "label": "米国 消費者製品安全委員会"
+  },
+  {
+   "type": "title",
+   "sub": "本日の採掘",
+   "t": "モンスターボールは、なぜ回収された？",
+   "font": "mincho"
+  },
+  {
+   "type": "title",
+   "sub": "第一層",
+   "t": "1999年、ポケモン映画のおまけ",
+   "sec": "第一層　映画とおまけ",
+   "font": "reggae",
+   "x": {
+    "head": "1999年、バーガーキングの\nおまけは57種類の\nポケモンのおもちゃ",
+    "img": [
+     "row:commons:Burger King Poké Ball - closed.jpg|閉じた形;commons:Burger King Poké Ball - opened.jpg|開いた形"
+    ],
+    "bubble": "ボールに入っていたのだ",
+    "who": "z",
+    "post": "1999年11月、アメリカでポケモンの最初の映画が公開されたとき、バーガーキングはキッズミールに57種類のポケモンのおもちゃを付けました。おもちゃはモンスターボールの形の入れ物入り。人気で品切れが続き、店でおもちゃを交換する会まで開かれました。あなたなら、何を交換に出しますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1999年11月10日、アメリカで\nポケモンの最初の映画が公開されたの。",
+   "img": "wiki:en:Pokémon:_The_First_Movie^art:150",
+   "label": "アメリカ版の映画"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "日本では『ミュウツーの逆襲』の題で、\n前の年の夏に公開された映画ね。",
+   "img": "art:150",
+   "label": "ミュウツー"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ミュウツーが出てくる、\nあの映画なのだ！",
+   "img": "art:150",
+   "label": "ミュウツー"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アメリカでは前の年の1998年に、ゲームとアニメが\n始まったばかり。ブームのまっただ中だったの。",
+   "img": "wiki:en:Pokémon:_The_First_Movie^art:150",
+   "label": "アメリカ版の映画"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アメリカでも、公開の週末から\n大ヒットになったの。",
+   "img": "wiki:en:Pokémon:_The_First_Movie^art:150",
+   "label": "アメリカ版の映画"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この映画に合わせて、バーガーキングが、\nキッズミールにポケモンのおまけを付けたの。",
+   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "label": "バーガーキング（アメリカ）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "キッズミールって、\nお子さま向けのセットのことなのだ？",
+   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "label": "バーガーキング（アメリカ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。おもちゃは全部で57種類。\nモンスターボールの形の入れ物に入っていたの。",
+   "img": "row:commons:Burger King Poké Ball - closed.jpg|閉じた形;commons:Burger King Poké Ball - opened.jpg|開いた形",
+   "label": "おまけの入れ物"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ボールの直径は7センチほど。\n色は、赤と白のほかに、濃いピンクもあったわ。",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "label": "実物のボール（赤と白）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "テニスボールくらいの、\nけっこう大きいボールなのだ。",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "label": "実物のボール（赤と白）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "人気はすごくて、店ではおもちゃが\n足りなくなってしまったの。",
+   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "label": "バーガーキング（アメリカ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "品切れのおわびに、限定のポスターを配って、\nテレビでも広告を流したわ。",
+   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "label": "バーガーキング（アメリカ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "さらにバーガーキングは、毎週火曜の夜に、\n店でおもちゃを交換する会を開いたの。",
+   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "label": "バーガーキング（アメリカ）"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "交換会は楽しそうなのだ。\nレアなおもちゃを狙うのだ。",
+   "img": "row:commons:Burger King Poké Ball - closed.jpg|閉じた形;commons:Burger King Poké Ball - opened.jpg|開いた形",
+   "label": "おまけの入れ物"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ただし、おもちゃをお金で売り買いするのは禁止。\n交換だけ、という決まりだったの。",
+   "img": "row:commons:Burger King Poké Ball - closed.jpg|閉じた形;commons:Burger King Poké Ball - opened.jpg|開いた形",
+   "label": "おまけの入れ物"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "金メッキのポケモンカードも、\nセットにして1ドル99セントで売っていたわ。",
+   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "label": "バーガーキング（アメリカ）"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ポケモンの人気が、\nアメリカで爆発していたのだ。",
+   "img": "row:commons:Burger King Poké Ball - closed.jpg|閉じた形;commons:Burger King Poké Ball - opened.jpg|開いた形",
+   "label": "おまけの入れ物"
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "袋には「すべての年齢に」",
+   "sec": "第二層　全年齢向けのおまけ",
+   "font": "mincho",
+   "x": {
+    "head": "「安全試験済み\nすべての年齢に」と\n書かれたモンスターボール",
+    "img": [
+     "commons:Burger King Poké Ball - opened.jpg"
+    ],
+    "bubble": "殻が顔をふさいだのだ",
+    "who": "z",
+    "post": "1999年のバーガーキングのモンスターボールの袋には「安全試験済み、すべての年齢におすすめ」と書かれていました。ところが12月、カリフォルニア州で生後13か月の女の子が、顔に張りついたボールの半分の殻で息ができなくなり亡くなりました。のどに詰まったのではありませんでした。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ボールの袋には、こう書かれていたの。\n「安全試験済み。すべての年齢におすすめ」",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "label": "袋の表示（英語を訳したもの）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "すべての年齢なら、\n赤ちゃんにも安心ということなのだ？",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "label": "袋の表示（英語を訳したもの）"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "そう読めるわね。\nでも、そこに落とし穴があったの。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "開いたところ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "このボールは、2つの半分の殻に、\nぱかっと分かれるつくりだったの。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "開いたところ",
+   "mark": [
+    0.24,
+    0.45,
+    0.22
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1999年12月11日、カリフォルニア州の\nソノラという町で、事故が起きたの。",
+   "img": "commons:Map of California highlighting Tuolumne County.svg^commons:Map of USA CA.svg",
+   "label": "カリフォルニア州トゥオルミ郡"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ソノラは、カリフォルニアの山あいにある町。\n昔、金を掘る人たちが集まってできた町よ。",
+   "img": "commons:Sonora CA.jpg^commons:Sonora, California 001.jpg",
+   "label": "ソノラ（カリフォルニア州）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "生後13か月の女の子が、ベビーサークルの中で、\n亡くなっているのが見つかったの。",
+   "img": "commons:Sonora CA.jpg^commons:Sonora, California 001.jpg",
+   "label": "ソノラ（カリフォルニア州）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ベビーサークルって、\nどういうものなのだ？",
+   "img": "commons:Sonora CA.jpg^commons:Sonora, California 001.jpg",
+   "label": "ソノラ（カリフォルニア州）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "赤ちゃんを中で遊ばせておく、\n柵で囲った小さな囲いのことよ。",
+   "img": "commons:Sonora CA.jpg^commons:Sonora, California 001.jpg",
+   "label": "ソノラ（カリフォルニア州）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "顔には、ボールの半分の殻が、\n鼻と口をふさぐように張りついていたの。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "ボールの半分の殻",
+   "mark": [
+    0.24,
+    0.45,
+    0.22
+   ],
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "そんな…。\nおまけのボールで…。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "ボールの半分の殻"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "このとき、のどに詰まったわけではないの。\n殻がふたのように顔をおおって、息ができなくなったのね。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "ボールの半分の殻"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "英語では、のどに詰まるのはチョーキング、\n口と鼻をふさがれるのはサフォケーションと区別するの。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "ボールの半分の殻",
+   "ety": [
+    "choking／suffocation",
+    "英語　choke（のどに詰まる）／suffocate（息をふさがれる）"
+   ]
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "のどに詰まるのとは、\n違う危なさなのだ。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "ボールの半分の殻"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "小さい子は、顔に張りついたものを\n自分ではうまく外せないの。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "ボールの半分の殻"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "回収までの16日",
+   "sec": "第三層　回収までの16日",
+   "font": "train",
+   "x": {
+    "head": "モンスターボールの回収は\n2500万個以上\n返すとポテトと交換",
+    "img": [
+     "commons:BK-French-Fries.jpg"
+    ],
+    "bubble": "ポテトと交換なのだ",
+    "who": "z",
+    "post": "1999年12月27日、アメリカの消費者製品安全委員会とバーガーキングは、おまけのモンスターボール2500万個以上の回収を発表しました。殻を2つとも店に返すと、小さいフライドポテトと交換。中のポケモンのおもちゃは遊び続けてよいとされました。最初の事故からは16日たっていました。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "事故のあと、地元の保安官事務所が、\nボールの危なさを知らせたの。",
+   "img": "commons:Sonora CA.jpg^commons:Sonora, California 001.jpg",
+   "label": "ソノラ（カリフォルニア州）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "保安官は、アメリカの郡ごとにいる、\n警察のような役目の人ね。",
+   "img": "commons:Sonora CA.jpg^commons:Sonora, California 001.jpg",
+   "label": "ソノラ（カリフォルニア州）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でもその後、カンザス州でも、生後18か月の\n女の子の顔に、殻が張りついたの。",
+   "img": "commons:Map of USA KS.svg",
+   "label": "カンザス州"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "お父さんが引きはがして、2回目でようやく外れたの。\nその子は助かったわ。",
+   "img": "commons:Downtown Leavenworth, Kansas.jpg",
+   "label": "カンザス州レブンワース"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "助かってよかったのだ…。\nでも、同じことが2回も起きたのだ。",
+   "img": "commons:Downtown Leavenworth, Kansas.jpg",
+   "label": "カンザス州レブンワース"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "このあとバーガーキングは、ようやく回収に応じたの。\n発表は12月27日よ。",
+   "img": "commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
+   "label": "米国 消費者製品安全委員会"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "本当は12月29日に発表する予定だったけれど、\n話が先にもれて、2日早めたの。",
+   "img": "commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
+   "label": "米国 消費者製品安全委員会"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "おもちゃの安全を見張るアメリカの役所、\n消費者製品安全委員会と一緒の発表ね。",
+   "img": "commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
+   "label": "米国 消費者製品安全委員会"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "委員会は、新聞の取材に、バーガーキングは\n対応を引き延ばした、と批判したの。",
+   "img": "commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
+   "label": "米国 消費者製品安全委員会"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "バーガーキングは、ボールが原因だという結論は\nまだ出ていなかった、と説明したわ。",
+   "img": "commons:Burgerkingheadquarters.jpg",
+   "label": "バーガーキングの旧本社"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "最初の事故から回収まで、\n16日かかったのだ。",
+   "img": "commons:Burgerkingheadquarters.jpg",
+   "label": "バーガーキングの旧本社"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "回収の数は、2500万個以上。\n3歳未満の子からは、すぐ取り上げるように、と。",
+   "img": "row:commons:Burger King Poké Ball - closed.jpg|閉じた形;commons:Burger King Poké Ball - opened.jpg|開いた形",
+   "big": "2500万個以上",
+   "bf": "rampart",
+   "label": "回収されたボール"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ボールの殻を2つとも店に返すと、\n小さいフライドポテトと交換してくれたの。",
+   "img": "commons:BK-French-Fries.jpg",
+   "label": "フライドポテト",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "さっきのポテトの話は、\nここにつながるのだ。",
+   "img": "commons:BK-French-Fries.jpg",
+   "label": "フライドポテト"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "中のポケモンのおもちゃは、そのまま遊んでよかったの。\n危ないのは、入れ物のボールだけ。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "回収はボールだけ"
+  },
+  {
+   "type": "title",
+   "sub": "第四層",
+   "t": "なぜ試験に合格していたのか",
+   "sec": "第四層　試験のすき間",
+   "font": "deco",
+   "x": {
+    "head": "モンスターボールは\nのどの試験に合格していた\n顔をふさぐ試験はなかった",
+    "img": [
+     "commons:SmallPartsTestFixtureCPSCgov.jpg"
+    ],
+    "bubble": "試験の外だったのだ",
+    "who": "z",
+    "post": "1999年に回収されたバーガーキングのモンスターボールは、のどに詰まらないかを調べる試験には合格していました。直径は約7センチで、3歳未満向けの球の決まり（約4.4センチの穴を通るものはだめ）よりずっと大きかったのです。でも、半分の殻が顔をふさぐ危なさは、当時の試験に入っていませんでした。"
+   }
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でも、袋には安全試験済みと書いてあったのだ。\nどういうことなのだ？",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "label": "袋の表示（英語を訳したもの）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "試験は、本当に受けて合格していたの。\nのどに詰まらないかを調べる試験よ。",
+   "img": "commons:SmallPartsTestFixtureCPSCgov.jpg",
+   "label": "のどの試験の道具（CPSC）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "写真の筒は、小さい部品を調べる道具。筒にすっぽり入る部品は、\n3歳未満の子のおもちゃに使えないの。",
+   "img": "commons:SmallPartsTestFixtureCPSCgov.jpg",
+   "label": "のどの試験の道具（CPSC）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "子どもの口に入る大きさを、\n筒でまねているのだ。",
+   "img": "commons:SmallPartsTestFixtureCPSCgov.jpg",
+   "label": "のどの試験の道具（CPSC）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アメリカには、1994年にできた子どもの安全の法律があって、\n3歳未満の子に、小さい球のおもちゃを売ってはいけないの。",
+   "img": "commons:SmallPartsTestFixtureCPSCgov.jpg",
+   "label": "のどの試験の道具（CPSC）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "決まりの線は、直径1.75インチ。\nだいたい4.4センチの穴を通る球はだめ、という決まりね。",
+   "img": "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ",
+   "label": "決まりの線は約4.4センチ",
+   "say": "決まりの線は、直径、いってんななごインチ。だいたい、よんてんよんセンチの穴を通る球はだめ、という決まりね。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "モンスターボールは、直径7センチほど。\nこの線より、ずっと大きかったの。",
+   "img": "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ",
+   "label": "決まりの線は約4.4センチ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "当時の報道によれば、このボールは、\nのどに詰まるかの試験には、すべて合格していたの。",
+   "img": "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ",
+   "label": "決まりの線は約4.4センチ"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "大きいから、のどには\n詰まらないのだ。",
+   "img": "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ",
+   "label": "決まりの線は約4.4センチ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも当時の試験は、のどに詰まるかを見るものだけ。\n顔をふさぐ危なさは、試験に入っていなかったの。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "ボールの半分の殻",
+   "big": "試験の外側",
+   "bf": "mincho",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "決まりの文にも、球の半分の形についての項目は\nなかったの。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "ボールの半分の殻"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "決まりを守っていても、\n危ないことがあったのだ。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "ボールの半分の殻"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "半分の殻は、赤ちゃんの顔に\nかぶさってしまう大きさと形だったのね。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "ボールの半分の殻",
+   "mark": [
+    0.24,
+    0.45,
+    0.22
+   ]
+  },
+  {
+   "type": "title",
+   "sub": "第五層",
+   "t": "2つ目の事故と、2度目の呼びかけ",
+   "sec": "第五層　2度目の呼びかけ",
+   "font": "fude",
+   "x": {
+    "head": "回収の発表から約1か月\nモンスターボールで\n2人目の赤ちゃんが亡くなった",
+    "img": [
+     "commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg"
+    ],
+    "bubble": "国じゅうで探したのだ",
+    "who": "z",
+    "post": "2000年1月25日、インディアナ州で生後4か月の男の子が、顔に張りついたモンスターボールの殻で亡くなりました。回収の発表から約1か月後のことです。バーガーキングと国の委員会はもう一度「壊して捨てて」と呼びかけ、新聞広告や約8000店のポスター、全国の小児科への知らせで、残ったボールを探しました。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "回収の発表から、約1か月後。\n2000年1月25日に、2つ目の事故が起きたの。",
+   "img": "commons:Map of USA IN.svg",
+   "label": "インディアナ州"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "インディアナ州で、生後4か月の男の子が、\nベビーベッドの中で亡くなったの。",
+   "img": "commons:Indianapolis skyline - 2014 April - Chris Bowman.jpg",
+   "label": "インディアナポリス"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "顔には、やはりボールの半分の殻が\n張りついていたわ。",
+   "img": "commons:Baby bed 2010.jpg",
+   "label": "ベビーベッド（イメージ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "男の子のおじいさんは、記者にこう話したの。",
+   "img": "commons:Baby bed 2010.jpg",
+   "label": "ベビーベッド（イメージ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "「子どもに食べ物を買いに行って、\n命にかかわるおもちゃを持ち帰るなんて、信じられない」",
+   "img": "commons:Baby bed 2010.jpg",
+   "label": "おじいさんの言葉（AP通信）"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "…言葉が出ないのだ。",
+   "img": "commons:Baby bed 2010.jpg",
+   "label": "ベビーベッド（イメージ）",
+   "v": "namida"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "委員会とバーガーキングは、その2日後、\nもう一度「ボールを壊して捨てて」と呼びかけたの。",
+   "img": "commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
+   "label": "米国 消費者製品安全委員会"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今度は、殻をつなぐ留め具も、\n一緒に返すように変わっていたわ。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "殻をつなぐ留め具",
+   "mark": [
+    0.83,
+    0.62,
+    0.15
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "全国紙のUSAトゥデイに広告を出して、\n約8000の店にポスターを貼ったの。",
+   "img": "commons:USA Today Newspaper Vending Machine.jpg",
+   "label": "USAトゥデイ（全国紙）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "救急病院1万か所と、小児科5万6千か所にも、\n知らせを送ったわ。",
+   "img": "commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
+   "label": "米国 消費者製品安全委員会",
+   "say": "救急病院、いちまんかしょと、小児科、ごまんろくせんかしょにも、知らせを送ったわ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "テレビやラジオでも、\n3歳未満の子から取り上げて、と呼びかけたの。",
+   "img": "commons:USA Today Newspaper Vending Machine.jpg",
+   "label": "USAトゥデイ（全国紙）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "国じゅうで、\nボールを探していたのだ。",
+   "img": "row:commons:Burger King Poké Ball - closed.jpg|閉じた形;commons:Burger King Poké Ball - opened.jpg|開いた形",
+   "label": "回収されたボール"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その年の12月、委員会は、回収されたおもちゃの\n「危険な12品」に、このボールをもう一度載せたの。",
+   "img": "commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
+   "label": "危険な12品（2000年12月）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "1年たっても、\nまだ家に残っていたのだ。",
+   "img": "row:commons:Burger King Poké Ball - closed.jpg|閉じた形;commons:Burger King Poké Ball - opened.jpg|開いた形",
+   "label": "回収されたボール"
+  },
+  {
+   "type": "title",
+   "sub": "最深層",
+   "t": "同じ年、小さすぎたポケモンのボール",
+   "sec": "最深層　もう1つのボール",
+   "font": "potta",
+   "x": {
+    "head": "1999年、ポケモンのボールで\n小さすぎた事故と\n大きすぎた事故があった",
+    "img": [
+     "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ"
+    ],
+    "bubble": "正反対の危なさなのだ",
+    "who": "z",
+    "post": "1999年には、ハズブロ社のポケモンのゴムボール（直径約4.4センチ）で7歳の男の子がのどを詰まらせて亡くなる事故もありました。決まりの線よりわずかに小さいものの、4歳以上向けとして売られていました。のどに詰まった小さいボールと、顔をふさいだ大きいボール。どちらもポケモンのボールでした。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "じつは同じ1999年、別のポケモンのボールでも、\n子どもが亡くなっていたの。",
+   "img": "commons:Colorful Super ball Large.png",
+   "label": "ゴムのボール（イメージ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1月、7歳の男の子が、ハズブロ社の、\nポケモンのゴムボールをのどに詰まらせたの。",
+   "img": "commons:Colorful Super ball Large.png",
+   "label": "ゴムのボール（イメージ）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "バーガーキングの\nボールとは、別の事故なのだ？",
+   "img": "commons:Colorful Super ball Large.png",
+   "label": "ゴムのボール（イメージ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ええ。半年以上も前の、\nまったく別のおもちゃの事故よ。",
+   "img": "commons:Colorful Super ball Large.png",
+   "label": "ゴムのボール（イメージ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハズブロは、アメリカの大きなおもちゃ会社。\nボールの直径は1.72インチ、約4.4センチよ。",
+   "img": "commons:Colorful Super ball Large.png",
+   "label": "ゴムのボール（イメージ）",
+   "say": "ハズブロは、アメリカの大きなおもちゃ会社。ボールの直径は、いってんななにインチ、やく、よんてんよんセンチよ。"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "さっきの決まりの線は、\n1.75インチだったのだ！",
+   "img": "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ",
+   "label": "決まりの線は約4.4センチ",
+   "say": "さっきの決まりの線は、いってんななごインチだったのだ！"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。線より、ほんの少しだけ小さかったの。\nでも、4歳以上向けとして売られていたわ。",
+   "img": "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ",
+   "label": "決まりの線は約4.4センチ",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "3歳未満の子のための決まりは、\nこのボールには当てはまらなかったのね。",
+   "img": "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ",
+   "label": "決まりの線は約4.4センチ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "両親はハズブロと、おもちゃ屋のトイザらスを訴えたけれど、\n2004年、裁判所は訴えを退けたわ。",
+   "img": "commons:Colorful Super ball Large.png",
+   "label": "ゴムのボール（イメージ）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "トイザらスは、\nおもちゃ屋さんのチェーンなのだ。",
+   "img": "commons:Colorful Super ball Large.png",
+   "label": "ゴムのボール（イメージ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。ボールを売ったお店として訴えられたの。\nボールの大きさに過失がある、という訴えね。",
+   "img": "commons:Colorful Super ball Large.png",
+   "label": "ゴムのボール（イメージ）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "片方は小さくて、のどに詰まった。\nもう片方は大きくて、顔をふさいだのだ。",
+   "img": "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ",
+   "label": "2つのポケモンのボール"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "同じ年、同じポケモンのボールで、\n正反対の危なさが見つかったのね。",
+   "img": "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ",
+   "label": "2つのポケモンのボール",
+   "big": "小さすぎても、大きくても",
+   "bf": "mincho"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "今日の答え。モンスターボールが回収されたのは、\n半分の殻が、赤ちゃんの口と鼻をふさいだから。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "sec": "まとめ",
+   "label": "ボールの半分の殻"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "のどの試験には合格していても、\nその試験が見ていない危なさがあったの。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "ボールの半分の殻"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "大きさではなくて、\nボールの形そのものが危なかったのだ。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "ボールの半分の殻"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ちなみに当時は、日本にもバーガーキングがあったけれど、\nこのボールが日本で配られた記録は見つからなかったわ。",
+   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "label": "バーガーキング（アメリカ）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "日本にもあったのだ？",
+   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "label": "バーガーキング（アメリカ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ええ。日本のバーガーキングは2001年にいったん撤退して、\n2007年にまた戻ってきたの。",
+   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "label": "バーガーキング（アメリカ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "あなたの家にも、昔のおまけが眠っていない？\n小さい子のいる家なら、一度見てみてね。",
+   "img": "row:commons:Burger King Poké Ball - closed.jpg|閉じた形;commons:Burger King Poké Ball - opened.jpg|開いた形",
+   "label": "バーガーキングのおまけ"
+  },
+  {
+   "type": "title",
+   "sub": "おまけ",
+   "t": "今日のポケモンの英語名",
+   "sec": "今日のポケモンの英語名",
+   "font": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "今日の英語名は、まずモンスターボール。\n英語では、ポケボールよ。",
+   "img": "commons:Pokebola-pokeball-png-0.png",
+   "label": "Poké Ball（ポケボール）",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンを入れるボールだから、ポケボール。\n回収の発表では、ポケモンボールと書かれていたわ。",
+   "img": "commons:Pokebola-pokeball-png-0.png",
+   "label": "Poké Ball（ポケボール）",
+   "lf": "hachi",
+   "ety": [
+    "Poké Ball（ポケボール）",
+    "英語　Poké（ポケモン）＋ball（ボール）"
+   ]
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "2匹目は、映画でミュウツーにコピーされたゼニガメ。\nスクワートル。",
+   "img": "art:7",
+   "label": "Squirtle（スクワートル）",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "squirtは、水を噴き出すこと。turtleは、カメ。\n水を吹くカメにぴったりの名前ね。",
+   "img": "art:7",
+   "label": "Squirtle（スクワートル）",
+   "lf": "hachi",
+   "ety": [
+    "Squirtle（スクワートル）",
+    "英語　squirt（噴き出す）＋turtle（カメ）"
+   ],
+   "say": "スクワートは、水を噴き出すこと。タートルは、カメ。水を吹くカメにぴったりの名前ね。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日出てきたポケモンの英語名は、\n英単語帳サイト「もんすぺ！」でも調べられるわ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "もんすぺ！には、ポケモンの雑学のコラムもあるの。\n動画の続きみたいに読めるわよ。",
+   "img": "site:",
+   "label": "「もんすぺ！」雑学コラムもあります"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の採掘はここまでなのだ。\nチャンネル登録もよろしくなのだ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "type": "ed"
+  }
+ ]
+}
