@@ -1,0 +1,68 @@
+{
+ "no": 15,
+ "title": "ポケモンのおまけが足りなくて、バーガーキングが交換会を開いた。【ポケモン雑学採掘場】",
+ "hook": [
+  "1999年のアメリカ",
+  "おまけが足りない",
+  "店で交換会"
+ ],
+ "hl": "店で交換会",
+ "lead": "1999年、ポケモン映画に合わせたバーガーキングの57種類のおまけは品切れが続き、店は毎週火曜の夜におもちゃを交換する会を開いた。お金での売り買いは禁止だった。",
+ "article": "https://poketango.com/zatsugaku/burger-king-poke-ball-recall.html",
+ "video": "3JgGAffljnY",
+ "pokemon": [
+  [
+   "mewtwo",
+   "ミュウツー",
+   "Mewtwo"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "1999年のアメリカでは、\nポケモンのおまけが\n足りなくなったの",
+   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "cap": "バーガーキング（アメリカ）"
+  },
+  {
+   "w": "z",
+   "t": "おまけが足りない？\nどこの話なのだ？",
+   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "cap": "バーガーキング（アメリカ）",
+   "face": "think"
+  },
+  {
+   "w": "m",
+   "t": "バーガーキングが、ポケモン映画に\n合わせて付けた、57種類の\nおもちゃよ",
+   "img": "row:art:150|ミュウツー;commons:Burger King Poké Ball - closed.jpg|おまけの入れ物"
+  },
+  {
+   "w": "m",
+   "t": "品切れが続いたので、毎週火曜の\n夜に、店でおもちゃを\n交換する会を開いたの",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "t": "ただし、お金での売り買いは\n禁止。交換だけ、という\n決まりだったわ",
+   "img": "commons:Burger King Poké Ball - closed.jpg"
+  },
+  {
+   "w": "z",
+   "t": "お店が交換会を\n開くほどの人気だったのだ",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "face": "happy"
+  },
+  {
+   "w": "m",
+   "t": "このボールの話は、\n本編でくわしく掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/3JgGAffljnY/maxresdefault.jpg^web:https://i.ytimg.com/vi/3JgGAffljnY/hqdefault.jpg^commons:Burger King Poké Ball - closed.jpg"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/3JgGAffljnY/maxresdefault.jpg^web:https://i.ytimg.com/vi/3JgGAffljnY/hqdefault.jpg^commons:Burger King Poké Ball - closed.jpg",
+   "face": "happy"
+  }
+ ]
+}
