@@ -29,6 +29,10 @@ def _voice():
     except Exception as ex:
         print("アクセント指定なしで読む:", repr(ex)[:100])
     q.update(speedScale=post.SPEED, outputSamplingRate=SR, volumeScale=1.3, prePhonemeLength=0.05, postPhonemeLength=0.15)
+    try:
+        import yomi; yomi.set_pauses(q, LINE, post.SPEED)
+    except Exception:
+        pass
     wav = req(f"/synthesis?speaker={post.ZUNDA}", json.dumps(q).encode())
     with wave.open(io.BytesIO(wav)) as w:
         a = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768

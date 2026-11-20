@@ -53,6 +53,7 @@ def tts(line, speaker):
         if kana:
             q["accent_phrases"] = json.loads(req("/accent_phrases?" + urllib.parse.urlencode({"text": kana, "speaker": speaker, "is_kana": "true"})))
         q.update(speedScale=SPEED, outputSamplingRate=SR, volumeScale=1.25, prePhonemeLength=0.05, postPhonemeLength=0.12)
+        yomi.set_pauses(q, text, SPEED)            # 2026-11-20 読点の間は短く、文の切れ目は長く
         wav = req(f"/synthesis?speaker={speaker}", json.dumps(q).encode())
         with wave.open(io.BytesIO(wav)) as w:
             a = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768

@@ -64,7 +64,36 @@ def plain(s):
 def clean(text):
     """エンジンに渡す前の下ごしらえ（2026-11-20）。カタカナの間の「・」は無音の間になって「ポ'ケット、モ'ンスタア」と割れるので消す
     （「ポケットモンスター」なら 1 句で読まれる）。並べる言葉は台本で「、」を使う"""
-    return re.sub(r"(?<=[ァ-ヴー])・(?=[ァ-ヴー])", "", text)
+    text = re.sub(r"(?<=[ァ-ヴー])・(?=[ァ-ヴー])", "", text)
+    # 2026-11-20 短い語句の「」を外す。「」は読点と同じ 0.3〜0.4 秒の間になり、「ポケモンGOを、有害な熱狂、と」のように
+    # 途中で息継ぎしたような読みになる（実践者の指摘：一拍置く必要がなければ消す）。長いせりふの引用は人も間を置くので残す
+    return re.sub(r"[「『]([^「」『』、。？！]{1,12})[」』]", r"\1", text)
+
+
+# ---------- 間（ポーズ）の長さ（2026-11-20） ----------
+#   エンジンは読点・句点・「」のたびに 0.27〜0.41 秒の間を入れる（1.3 倍速でも 0.21〜0.32 秒）。
+#   実践者（note「VOICEVOXで自然な音声を作るために気をつけていること」）は読点の間を 0.10〜0.15 秒に縮めている。
+#   読点は短く、文の切れ目（。！？）は少し長く残して、息継ぎと文の区切りを聞き分けられるようにする。
+PAUSE_COMMA = 0.13          # 秒（再生したときの長さ）
+PAUSE_SENT = 0.30
+_PUNC = r"[、。，．,！？!?…‥「」『』（）()\s]+"
+
+
+def set_pauses(q, text, speed):
+    """audio_query の間を、原文の記号の種類に合わせた長さにする。記号と間の数が合わなければ一律に縮める"""
+    try:
+        pm = [p for p in q.get("accent_phrases", []) if p.get("pause_mora")]
+        body = re.sub(_PUNC + "$", "", re.sub("^" + _PUNC, "", text.strip()))
+        groups = re.findall(_PUNC, body)
+        if pm and len(groups) == len(pm):
+            for p, g in zip(pm, groups):
+                sec = PAUSE_SENT if re.search(r"[。．！？!?…‥]", g) else PAUSE_COMMA
+                p["pause_mora"]["vowel_length"] = sec * speed
+            return "matched"
+        q["pauseLengthScale"] = 0.5
+        return "scaled"
+    except Exception:
+        return "error"
 
 
 # ---------- エンジンとのやりとり ----------

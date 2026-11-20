@@ -213,6 +213,10 @@ def tts(text, speaker, speed=1.0, pitch=0.0, intonation=1.0):
             pass
         q.update(speedScale=speed, pitchScale=pitch, intonationScale=intonation, outputSamplingRate=SR, volumeScale=1.3,
                  prePhonemeLength=0.05, postPhonemeLength=0.15)
+        try:
+            import yomi; yomi.set_pauses(q, text, speed)   # 2026-11-20 読点の間は短く、文の切れ目は長く
+        except Exception:
+            pass
         wav = urllib.request.urlopen(urllib.request.Request(f"{VV}/synthesis?speaker={speaker}", data=json.dumps(q).encode(),
                                                             headers={"Content-Type": "application/json"}), timeout=120).read()
         with wave.open(io.BytesIO(wav)) as w:
