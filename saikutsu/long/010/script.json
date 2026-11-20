@@ -452,7 +452,7 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "このあとバーガーキングは、ようやく回収に応じたの。\n発表は12月27日よ。",
+   "t": "このあと、バーガーキングは、ようやく回収に応じたの。\n発表は12月27日よ。",
    "img": "commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
    "label": "米国 消費者製品安全委員会"
   },
@@ -460,15 +460,22 @@
    "w": "m",
    "face": "normal",
    "t": "本当は12月29日に発表する予定だったけれど、\n話が先にもれて、2日早めたの。",
-   "img": "commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
+   "img": "commons:CPSC Logo.svg^commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
    "label": "米国 消費者製品安全委員会"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "おもちゃの安全を見張るアメリカの役所、\n消費者製品安全委員会と一緒の発表ね。",
-   "img": "commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
-   "label": "米国 消費者製品安全委員会"
+   "img": "commons:Toy Safety (6555492605).jpg^commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
+   "label": "委員会の職員（2011年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "発表の文には、ボールのどちらの半分も、\n子どもの顔に張りつくおそれがある、と書かれていたの。",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "label": "回収の発表（英語を訳したもの）"
   },
   {
    "w": "m",
@@ -580,6 +587,13 @@
    "img": "row:commons:Colorful Super ball Large.png|約4.4センチ;commons:Burger King Poké Ball - opened.jpg|約7センチ",
    "label": "決まりの線は約4.4センチ",
    "kana": "キマリノ'/セ'ンワ、チョッケエ'、イッテンナナゴ'インチ、ダイタイ'、ヨンテンヨンセ'ンチノ/アナ'オ/ト'オル/タ'マワ/ダメト'/イウ'/キマリネ'"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この決まりが効き目を持ったのは1995年。\nボールが配られる4年前ね。",
+   "img": "commons:SmallPartsTestFixtureCPSCgov.jpg",
+   "label": "のどの試験の道具（CPSC）"
   },
   {
    "w": "m",
@@ -749,7 +763,21 @@
    "w": "m",
    "face": "normal",
    "t": "その年の12月、委員会は、回収されたおもちゃの\n「危険な12品」に、このボールをもう一度載せたの。",
-   "img": "commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
+   "img": "commons:Toy Safety (6555492605).jpg^commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
+   "label": "危険な12品（2000年12月）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "危険な12品って、\nどういうものなのだ？",
+   "img": "commons:CPSC Logo.svg^commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
+   "label": "危険な12品（2000年12月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "回収されたおもちゃの中から、とくに気をつけてほしいものを、\n委員会が選んで並べた一覧よ。",
+   "img": "commons:CPSC Logo.svg^commons:Seal of the United States Consumer Product Safety Commission.svg^commons:CPSC Logo.svg",
    "label": "危険な12品（2000年12月）"
   },
   {
@@ -806,9 +834,17 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "ハズブロは、アメリカの大きなおもちゃ会社。\nボールの直径は1.72インチ、約4.4センチよ。",
+   "t": "ポケモン・パワーバウンサーという名前の、\nよく跳ねるゴムのボールだったの。",
    "img": "commons:Colorful Super ball Large.png",
    "label": "ゴムのボール（イメージ）",
+   "say": "ポケモンパワーバウンサーという名前の、よく跳ねるゴムのボールだったの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハズブロは、アメリカの大きなおもちゃ会社。\nボールの直径は1.72インチ、約4.4センチよ。",
+   "img": "commons:Hasbro, Inc. Pawtucket world headquarters.jpg",
+   "label": "ハズブロの本社",
    "kana": "ハズブ'ロワ、アメリカノ'/オ'オキナ/オモ'チャガイシャ、ボオルノ'/チョッケエワ'、イッテンナナニ'インチ、ヤク'/ヨンテンヨンセ'ンチヨ"
   },
   {
@@ -838,22 +874,22 @@
    "w": "m",
    "face": "normal",
    "t": "両親はハズブロと、おもちゃ屋のトイザらスを訴えたけれど、\n2004年、裁判所は訴えを退けたわ。",
-   "img": "commons:Colorful Super ball Large.png",
-   "label": "ゴムのボール（イメージ）"
+   "img": "commons:Moynihan-courthouse.jpg",
+   "label": "ニューヨークの連邦地裁"
   },
   {
    "w": "z",
    "face": "think",
    "t": "トイザらスは、\nおもちゃ屋さんのチェーンなのだ。",
-   "img": "commons:Colorful Super ball Large.png",
-   "label": "ゴムのボール（イメージ）"
+   "img": "commons:Toys R Us (13140771593).jpg",
+   "label": "トイザらス（アメリカ）"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "そう。ボールを売ったお店として訴えられたの。\nボールの大きさに過失がある、という訴えね。",
-   "img": "commons:Colorful Super ball Large.png",
-   "label": "ゴムのボール（イメージ）"
+   "img": "commons:Toys R Us (13140771593).jpg",
+   "label": "トイザらス（アメリカ）"
   },
   {
    "w": "z",
@@ -905,15 +941,22 @@
    "w": "z",
    "face": "surprise",
    "t": "日本にもあったのだ？",
-   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
-   "label": "バーガーキング（アメリカ）"
+   "img": "commons:Burger King Namba 2020-09.jpg^commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "label": "今の日本のバーガーキング"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "ええ。日本のバーガーキングは2001年にいったん撤退して、\n2007年にまた戻ってきたの。",
-   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
-   "label": "バーガーキング（アメリカ）"
+   "img": "commons:Burger King Namba 2020-09.jpg^commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "label": "今の日本のバーガーキング"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "古いおまけが、知らないうちに\n家に残っていたら、こわいのだ。",
+   "img": "row:commons:Burger King Poké Ball - closed.jpg|閉じた形;commons:Burger King Poké Ball - opened.jpg|開いた形",
+   "label": "バーガーキングのおまけ"
   },
   {
    "w": "m",
