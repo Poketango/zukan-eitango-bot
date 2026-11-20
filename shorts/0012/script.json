@@ -1,0 +1,67 @@
+{
+ "no": 12,
+ "title": "モンスターボールを返すと、ポテトがもらえた。【ポケモン雑学採掘場】",
+ "hook": [
+  "1999年のアメリカ",
+  "モンスターボールを",
+  "ポテトと交換"
+ ],
+ "hl": "ポテトと交換",
+ "lead": "1999年、アメリカのバーガーキングは、おまけのモンスターボールを返しに来た人に小さいフライドポテトを渡した。2500万個以上の回収だった。",
+ "article": "https://poketango.com/zatsugaku/burger-king-poke-ball-recall.html",
+ "video": "3JgGAffljnY",
+ "pokemon": [
+  [
+   "mewtwo",
+   "ミュウツー",
+   "Mewtwo"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "1999年のアメリカでは、\nモンスターボールを返すと\nポテトがもらえたの",
+   "img": "commons:Burger King Poké Ball - closed.jpg"
+  },
+  {
+   "w": "z",
+   "t": "ボールとポテトを交換？\nどういうことなのだ？",
+   "img": "commons:Burger King Poké Ball - closed.jpg",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "バーガーキングが、ポケモン映画に\n合わせて配ったおまけの\n入れ物なの",
+   "img": "commons:Burger King, Quitman.JPG^commons:Burger King exterior in Houston, TX.jpg",
+   "cap": "バーガーキング（アメリカ）"
+  },
+  {
+   "w": "m",
+   "t": "ところが、半分の殻が赤ちゃんの\n顔に張りつく事故が起きて、\n回収になったの",
+   "img": "commons:Burger King Poké Ball - opened.jpg",
+   "cap": "半分に分かれるボール"
+  },
+  {
+   "w": "m",
+   "t": "回収は2500万個以上。\n返した人には、\n小さいポテトを配ったのよ",
+   "img": "commons:BK-French-Fries.jpg",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "t": "おまけを取り戻すための\nポテトだったのだ",
+   "img": "commons:BK-French-Fries.jpg"
+  },
+  {
+   "w": "m",
+   "t": "このボールの話は、\n本編でくわしく掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/3JgGAffljnY/maxresdefault.jpg^web:https://i.ytimg.com/vi/3JgGAffljnY/hqdefault.jpg^commons:Burger King Poké Ball - closed.jpg"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/3JgGAffljnY/maxresdefault.jpg^web:https://i.ytimg.com/vi/3JgGAffljnY/hqdefault.jpg^commons:Burger King Poké Ball - closed.jpg",
+   "face": "happy"
+  }
+ ]
+}
