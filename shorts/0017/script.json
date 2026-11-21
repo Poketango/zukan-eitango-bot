@@ -1,0 +1,82 @@
+{
+ "no": 17,
+ "title": "日本でポケモンGOが始まった日、韓国の岬が遊べるようになった。【ポケモン雑学採掘場】",
+ "hook": [
+  "2016年7月22日",
+  "日本で配信",
+  "韓国の岬が遊べた"
+ ],
+ "hl": "韓国の岬が遊べた",
+ "lead": "2016年7月22日に日本でポケモンGOが始まると、配信されていなかった韓国の蔚山のカンジョルゴッという岬のあたりでも遊べるようになった。日本の区画に入っていたと報じられた。",
+ "article": "https://poketango.com/zatsugaku/pokemon-go-sokcho-korea.html",
+ "video": "7-rI1Oe3fnE",
+ "pokemon": [
+  [
+   "charmander",
+   "ヒトカゲ",
+   "Charmander"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "日本でポケモンGOが\n始まった日、韓国の岬でも\n遊べるようになったの",
+   "img": "commons:Ganjeolgot, Ulsan on August 16th, 2018.jpg",
+   "cap": "蔚山のカンジョルゴッ"
+  },
+  {
+   "w": "z",
+   "t": "韓国の岬？\n日本の話ではないのだ？",
+   "img": "commons:Ganjeolgot, Ulsan on August 16th, 2018.jpg",
+   "cap": "蔚山のカンジョルゴッ",
+   "face": "think"
+  },
+  {
+   "w": "m",
+   "t": "2016年の夏、韓国では\nポケモンGOが正式には\n配信されていなかったの",
+   "img": "commons:South Korea adm location map.svg",
+   "cap": "2016年夏の韓国"
+  },
+  {
+   "w": "m",
+   "t": "でも7月22日、日本で始まると、\n南東の蔚山の岬だけ、\n遊べるようになったのよ",
+   "img": "commons:South Korea adm location map.svg",
+   "mark": [
+    0.648,
+    0.6,
+    0.05
+   ],
+   "cap": "蔚山のカンジョルゴッ",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "t": "ゲームの区画で、日本の側に\n入っていたと報じられたの",
+   "img": "commons:South Korea adm location map.svg",
+   "mark": [
+    0.648,
+    0.6,
+    0.05
+   ],
+   "cap": "蔚山のカンジョルゴッ"
+  },
+  {
+   "w": "z",
+   "t": "区画の線1本で、\n遊べる所が決まるのだ",
+   "img": "commons:Busan as seen from Korea Observatory in Tsushima.jpg",
+   "cap": "対馬から見た釜山",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "韓国でポケモンGOをめぐって\n起きたことは、本編で\nくわしく掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/7-rI1Oe3fnE/maxresdefault.jpg^web:https://i.ytimg.com/vi/7-rI1Oe3fnE/hqdefault.jpg^commons:Ganjeolgot, Ulsan on August 16th, 2018.jpg"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/7-rI1Oe3fnE/maxresdefault.jpg^web:https://i.ytimg.com/vi/7-rI1Oe3fnE/hqdefault.jpg^commons:Ganjeolgot, Ulsan on August 16th, 2018.jpg",
+   "face": "happy"
+  }
+ ]
+}
