@@ -81,7 +81,7 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "地図がないと困るわよね。\nじつは、地図のせいでポケモンGOが遊べなかった国があるの。",
+   "t": "地図がないと困るわよね。じつは、地図のせいで\nポケモンGOが遊べなかった国があるの。",
    "img": "commons:App-augmented-reality-game-gps-163042.jpg",
    "label": "ポケモンGO（2016年〜）"
   },
@@ -221,7 +221,7 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "書き込まれたのは、韓国のゲーム情報サイト、\nインベンの掲示板。次の日には、サイトの記者が束草まで確かめに行ったわ。",
+   "t": "書き込まれたのは、韓国のゲーム情報サイト、\nインベンの掲示板よ。",
    "img": "commons:South Korea adm location map.svg",
    "label": "束草（ソクチョ）",
    "mark": [
@@ -233,7 +233,14 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "束草のコンビニの店員さんは、\nお客さんは来ないのに、ポケモンだけ来る、と書き込んだそうよ。",
+   "t": "次の日には、サイトの記者が\n束草まで確かめに行ったわ。",
+   "img": "commons:View of Sokcho 01.jpg",
+   "label": "束草の町"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "束草のコンビニの店員さんは、お客さんは\n来ないのに、ポケモンだけ来る、と書き込んだそうよ。",
    "img": "commons:View of Sokcho 01.jpg",
    "label": "束草の町"
   },
@@ -345,7 +352,7 @@
    "w": "m",
    "face": "normal",
    "t": "宿の予約も増えたの。旅行会社のアプリでは、\n束草の予約が前の週の5倍ほどになったわ。",
-   "img": "commons:Sokcho, Sokcho Beach.jpg",
+   "img": "commons:Sokcho, Sokcho Beach.jpg^commons:Sokcho Beach 20221209 003.jpg",
    "label": "束草の海水浴場"
   },
   {
@@ -444,7 +451,19 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "ネットには、遊べない所をひし形のマス目で塗った地図が\n出回ったの。束草のあたりは、そのマス目から外れていたのね。",
+   "t": "ネットには、遊べない所を\nひし形のマス目で塗った地図が出回ったの。",
+   "img": "commons:South Korea adm location map.svg",
+   "label": "遊べない区画の外",
+   "mark": [
+    0.546,
+    0.117,
+    0.05
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "束草のあたりは、\nそのマス目から外れていたのね。",
    "img": "commons:South Korea adm location map.svg",
    "label": "遊べない区画の外",
    "mark": [
@@ -493,7 +512,7 @@
   {
    "w": "z",
    "face": "think",
-   "t": "国じゅうのブレーカーを落としたのに、\n別の配線の部屋だけ、電気がついていたようなものなのだ。",
+   "t": "国じゅうのブレーカーを落としたのに、別の\n配線の部屋だけ、電気がついていたようなものなのだ。",
    "img": "commons:South Korea adm location map.svg",
    "label": "束草（ソクチョ）",
    "mark": [
@@ -665,7 +684,7 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "だから韓国のグーグルマップでは、\n電車やバスの案内はできても、車や歩きの道案内ができないの。",
+   "t": "だから韓国のグーグルマップでは、電車やバスの\n案内はできても、車や歩きの道案内ができないの。",
    "img": "commons:Google Maps Logo 2020.svg",
    "label": "韓国のグーグルマップ"
   },
@@ -844,8 +863,8 @@
    "img": "commons:Pokémon Go Release Map.svg",
    "label": "黄色が韓国（2017年1月24日）",
    "mark": [
-    0.628,
-    0.215,
+    0.807,
+    0.278,
     0.03
    ]
   },
@@ -859,7 +878,7 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "遅れたのは地図のせいではなく、\nたくさんの人を受け止める準備のためだった、とも説明したわ。",
+   "t": "遅れたのは地図のせいではなく、たくさんの人を\n受け止める準備のためだった、とも説明したわ。",
    "img": "commons:Ingress Logo vector.svg",
    "label": "ナイアンティックの説明"
   },
@@ -882,7 +901,7 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "そして、グーグルの地図のほう。\n2025年2月、グーグルはもう一度、持ち出しを申し込んだの。",
+   "t": "そして、グーグルの地図のほう。2025年2月、\nグーグルはもう一度、持ち出しを申し込んだの。",
    "img": "commons:Googleplex HQ (cropped).jpg",
    "label": "2025年2月 もう一度申し込み"
   },
@@ -925,15 +944,15 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "地図に、韓国の土地の緯度と経度を出さないこと。\nデータは、韓国の会社のサーバーで処理してから出すこと。",
-   "img": "commons:Google Maps Logo 2020.svg",
+   "t": "地図に、韓国の土地の緯度と経度を出さないこと。\nデータは、韓国の会社のサーバーで処理すること。",
+   "img": "commons:Google Street View car in Bern.jpg",
    "label": "許可の条件"
   },
   {
    "w": "z",
    "face": "surprise",
    "t": "条件がびっしりなのだ。\n地図って、国にとってそんなに大事なのだ。",
-   "img": "commons:Google Maps Logo 2020.svg",
+   "img": "commons:Korean Peninsula at night from space.jpg",
    "label": "許可の条件"
   },
   {
@@ -966,7 +985,7 @@
   {
    "w": "m",
    "face": "normal",
-   "t": "地図を外に出せない国のルールと、\nゲームのマス目のすき間が重なって、町に人が押し寄せたのね。",
+   "t": "地図を外に出せない国のルールと、ゲームの\nマス目のすき間が重なって、町に人が押し寄せたのね。",
    "img": "commons:동해상사고속 속초동서울시외 1546호.png",
    "label": "ソウルと束草を結ぶバス"
   },
