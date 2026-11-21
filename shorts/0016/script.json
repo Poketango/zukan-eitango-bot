@@ -1,0 +1,87 @@
+{
+ "no": 16,
+ "title": "ポケモンGOのために、ソウル発のバスが売り切れた。【ポケモン雑学採掘場】",
+ "hook": [
+  "2016年の韓国",
+  "バスが売り切れ",
+  "目当てはポケモンGO"
+ ],
+ "hl": "バスが売り切れ",
+ "lead": "2016年7月、ポケモンGOが配信されていなかった韓国で、北東の港町・束草のあたりだけ遊べると分かり、ソウルから束草へのバスが売り切れた。",
+ "article": "https://poketango.com/zatsugaku/pokemon-go-sokcho-korea.html",
+ "video": "7-rI1Oe3fnE",
+ "pokemon": [
+  [
+   "bulbasaur",
+   "フシギダネ",
+   "Bulbasaur"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "2016年の夏、韓国で\nソウル発のバスが\n売り切れたの",
+   "img": "commons:동해상사고속 속초동서울시외 1546호.png",
+   "cap": "ソウルと束草を結ぶバス"
+  },
+  {
+   "w": "z",
+   "t": "売り切れ？\nどこへ行くバスなのだ？",
+   "img": "commons:동해상사고속 속초동서울시외 1546호.png",
+   "cap": "ソウルと束草を結ぶバス",
+   "face": "think"
+  },
+  {
+   "w": "m",
+   "t": "北東の港町、束草よ。\n北朝鮮との境目に\n近い町なの",
+   "img": "commons:South Korea adm location map.svg",
+   "mark": [
+    0.546,
+    0.117,
+    0.05
+   ],
+   "cap": "束草（ソクチョ）"
+  },
+  {
+   "w": "m",
+   "t": "韓国ではポケモンGOが\n配信されていなかったのに、\n束草だけは遊べたの",
+   "img": "commons:South Korea adm location map.svg",
+   "mark": [
+    0.546,
+    0.117,
+    0.05
+   ],
+   "cap": "束草（ソクチョ）",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "t": "国の中で、そこだけ\n遊べたのだ！？",
+   "img": "commons:South Korea adm location map.svg",
+   "mark": [
+    0.546,
+    0.117,
+    0.05
+   ],
+   "cap": "束草（ソクチョ）",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "市は無料Wi-Fiの地図を出して、\n半島で唯一の聖地、と\n呼びかけたわ",
+   "img": "commons:Korea-Sokcho-Expo Tower-01.jpg",
+   "cap": "束草の夜の町"
+  },
+  {
+   "w": "m",
+   "t": "なぜ束草だけ遊べたのかは、\n本編でくわしく掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/7-rI1Oe3fnE/maxresdefault.jpg^web:https://i.ytimg.com/vi/7-rI1Oe3fnE/hqdefault.jpg^commons:동해상사고속 속초동서울시외 1546호.png"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/7-rI1Oe3fnE/maxresdefault.jpg^web:https://i.ytimg.com/vi/7-rI1Oe3fnE/hqdefault.jpg^commons:동해상사고속 속초동서울시외 1546호.png",
+   "face": "happy"
+  }
+ ]
+}
