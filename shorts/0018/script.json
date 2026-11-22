@@ -1,0 +1,78 @@
+{
+ "no": 18,
+ "title": "ゴッホ美術館が、ピカチュウのカードを配るのをやめた。【ポケモン雑学採掘場】",
+ "hook": [
+  "ゴッホ美術館",
+  "ピカチュウのカード",
+  "配布中止"
+ ],
+ "hl": "配布中止",
+ "lead": "2023年、ゴッホ美術館がポケモン展で無料で配ったピカチュウのカードに、ネットで最高約600ドルの値がつき、美術館は10月13日を最後に配布をやめた。",
+ "article": "https://poketango.com/zatsugaku/van-gogh-museum-pikachu-card.html",
+ "video": "SusLVj3uWjc",
+ "pokemon": [
+  [
+   "pikachu",
+   "ピカチュウ",
+   "Pikachu"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "ゴッホ美術館が、\nピカチュウのカードを\n配るのをやめたことがあるの",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "cap": "帽子をかぶったピカチュウ"
+  },
+  {
+   "w": "z",
+   "t": "美術館で、ポケモンの\nカードを配っていたのだ？",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "cap": "帽子をかぶったピカチュウ",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "2023年、オランダのゴッホ美術館が\n開館50周年で、ポケモンと\n組んだ展示をしたの",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "cap": "ゴッホ美術館（アムステルダム）"
+  },
+  {
+   "w": "m",
+   "t": "ゴッホの自画像の帽子を\nかぶったピカチュウのカードを、\n館内の課題を解くと配ったのよ",
+   "img": "row:commons:Zelfportret met grijze vilthoed - s0016V1962 - Van Gogh Museum.jpg|ゴッホの自画像>web:https://images.pokemontcg.io/svp/85_hires.png|ピカチュウ",
+   "cap": "灰色のフェルト帽"
+  },
+  {
+   "w": "m",
+   "t": "ところがネットで\n最高で約600ドルの値がつき、\n転売する人が集まったの",
+   "img": "commons:EBay logo.svg",
+   "cap": "最高で約600ドル",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "t": "無料のカードが、\n600ドルなのだ！？",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "cap": "帽子をかぶったピカチュウ",
+   "face": "shock"
+  },
+  {
+   "w": "m",
+   "t": "美術館は10月13日を最後に、\n館内でカードを配るのを\nやめたわ",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "cap": "2023年10月13日"
+  },
+  {
+   "w": "m",
+   "t": "このあと美術館の中で\n起きたことは、本編で\nくわしく掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/SusLVj3uWjc/maxresdefault.jpg^web:https://i.ytimg.com/vi/SusLVj3uWjc/hqdefault.jpg^commons:Van Gogh Museum 7206 rt HDR.jpg"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/SusLVj3uWjc/maxresdefault.jpg^web:https://i.ytimg.com/vi/SusLVj3uWjc/hqdefault.jpg^commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "face": "happy"
+  }
+ ]
+}
