@@ -620,7 +620,7 @@
    "w": "m",
    "face": "normal",
    "t": "高いものでは、\n約600ドルの値がついた、と報じられたの。",
-   "img": "commons:EBay logo.svg^commons:EBay former logo.svg",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
    "label": "最高で約600ドル",
    "big": "最高で約600ドル",
    "bf": "rampart",
@@ -724,9 +724,9 @@
    "x": {
     "head": "ピカチュウのカードをめぐり\nゴッホ美術館の職員が\n少なくとも4人停職",
     "img": [
-     "commons:Van Gogh Museum 7206 rt HDR.jpg"
+     "web:https://images.pokemontcg.io/svp/85_hires.png"
     ],
-    "bubble": "中の人までなのだ",
+    "bubble": "職員までなのだ",
     "who": "z",
     "post": "2024年1月、オランダの新聞ヘット・パロールが、ゴッホ美術館の職員が少なくとも4人、ピカチュウのカードをめぐって停職になったと報じました。カードがいつ手に入るかを来館者に教えたり、1人はカードを1箱持ち出したりしたと報じられています。美術館は、行動規範に反したと説明しました。"
    }
@@ -870,7 +870,7 @@
    "w": "m",
    "face": "normal",
    "t": "逆よ。刷り直されたの。2024年2月10日から、\nオランダのおもちゃ屋さんなどでも配られたわ。",
-   "img": "commons:Gare Centrale distributeur cartes pokémon.jpg",
+   "img": "commons:Pokémon Trading Card Game logo.svg",
    "label": "2024年2月10日から お店で配布",
    "ans": true
   },
@@ -878,14 +878,14 @@
    "w": "m",
    "face": "normal",
    "t": "ポケモンの商品を、29.99ユーロより多く\n買うと、1枚もらえる、という形ね。",
-   "img": "commons:Gare Centrale distributeur cartes pokémon.jpg",
+   "img": "commons:Pokémon Trading Card Game logo.svg",
    "label": "29.99ユーロより多く買うと1枚"
   },
   {
    "w": "z",
    "face": "happy",
    "t": "それなら、美術館の出口で\n取り合わなくていいのだ。",
-   "img": "commons:Gare Centrale distributeur cartes pokémon.jpg",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
    "label": "お店で配布"
   },
   {
