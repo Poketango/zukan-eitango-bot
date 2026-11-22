@@ -180,7 +180,8 @@
    "face": "normal",
    "t": "鍵は日本よ。ゴッホは、日本の\n浮世絵が大好きだったの。",
    "img": "commons:Courtisane (naar Eisen) - s0116V1962 - Van Gogh Museum.jpg",
-   "label": "ゴッホが浮世絵を写した「花魁」"
+   "label": "ゴッホが浮世絵を写した「花魁」",
+   "say": "鍵は、にほんよ。ゴッホは、日本の浮世絵が大好きだったの。"
   },
   {
    "w": "m",
@@ -437,7 +438,8 @@
    "face": "normal",
    "t": "そう。このピカチュウを描いたのは、\nイラストレーターの木村直代さんよ。",
    "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
-   "label": "絵　木村直代さん"
+   "label": "絵　木村直代さん",
+   "say": "そう。このピカチュウを描いたのは、イラストレーターの、きむらなおよさんよ。"
   },
   {
    "type": "title",
@@ -474,7 +476,8 @@
    "face": "normal",
    "t": "ポケモンカードの、特別に配られるプロモカードで、\n番号は085なの。",
    "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
-   "label": "プロモカード 085"
+   "label": "プロモカード 085",
+   "say": "ポケモンカードの、特別に配られるプロモカードで、番号は、ゼロ、ハチ、ゴ、なの。"
   },
   {
    "w": "m",
@@ -733,7 +736,8 @@
    "face": "normal",
    "t": "2024年1月24日、アムステルダムの新聞、\nヘット・パロールが報じたの。",
    "img": "commons:Water reflection of canal houses at blue hour in Damrak Amsterdam the Netherlands.jpg",
-   "label": "2024年1月24日の報道"
+   "label": "2024年1月24日の報道",
+   "kana": "ニセンニジュウヨ'ネン/イチガツ'/ニジュウヨッカ'、アム_ステ'ルダムノ/シンブン'、ヘットパロ'オルガ/ホオジタ'ノ"
   },
   {
    "w": "m",
@@ -764,7 +768,8 @@
    "face": "normal",
    "t": "カードがいつ手に入るかを、\n来館者に前もって教えていたというの。",
    "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
-   "label": "カードの情報を教えていた"
+   "label": "カードの情報を教えていた",
+   "say": "カードがいつ、てにはいるかを、来館者に前もって教えていたというの。"
   },
   {
    "w": "m",
@@ -897,7 +902,8 @@
    "img": "commons:Amandelbloesem - s0176V1962 - Van Gogh Museum.jpg",
    "label": "ゴッホ「花咲くアーモンドの枝」",
    "big": "陽気で幸せに",
-   "bf": "mincho"
+   "bf": "mincho",
+   "say": "日本の美術をまなべば、より陽気で、幸せにならずにはいられない。"
   },
   {
    "w": "m",
