@@ -1,0 +1,1076 @@
+{
+ "no": 12,
+ "title": "なぜゴッホ美術館の職員は、ピカチュウのカードで停職になったのか？",
+ "neta": "ゴッホ美術館のピカチュウで職員が停職",
+ "thumb": {
+  "file": "thumbnail.png",
+  "layout": "v2",
+  "pre": "ゴッホ美術館の職員が",
+  "big": [
+   "カードで",
+   "停職"
+  ],
+  "hl": 1,
+  "hl_color": "red",
+  "fonts": [
+   "mincho",
+   "mincho"
+  ],
+  "pre_font": "maru",
+  "pre_size": 62,
+  "back": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+  "photo": "web:https://images.pokemontcg.io/svp/85_hires.png",
+  "photo_label": "帽子をかぶったピカチュウ",
+  "chara": null
+ },
+ "lines": [
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2023年の秋、オランダのゴッホ美術館で、\n職員が少なくとも4人、仕事を外されたの。",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "sec": "ポケモン雑学採掘場",
+   "label": "ゴッホ美術館（アムステルダム）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "名画を盗んだのだ？\n大事件なのだ。",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "label": "ゴッホ美術館（アムステルダム）"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "絵ではないの。原因は、帽子をかぶった\nピカチュウの、カード1枚よ。",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "帽子をかぶったピカチュウのカード",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "ピカチュウのカードで、\n美術館の人が処分されたのだ！？",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "帽子をかぶったピカチュウのカード"
+  },
+  {
+   "type": "op",
+   "w": "m",
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘場。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学さいくつじょう。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "このヘルメット、毎日かぶっていると\n頭が蒸れるのだ。帽子に替えたいのだ。",
+   "img": "commons:Zelfportret met grijze vilthoed - s0016V1962 - Van Gogh Museum.jpg^commons:Vincent van Gogh - Self-portrait with grey felt hat - Google Art Project.jpg",
+   "sec": "導入　帽子のピカチュウ",
+   "label": "フェルトの帽子"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "帽子といえば、ゴッホの帽子を\nかぶったピカチュウがいるのよ。",
+   "img": "row:commons:Zelfportret met grijze vilthoed - s0016V1962 - Van Gogh Museum.jpg^commons:Vincent van Gogh - Self-portrait with grey felt hat - Google Art Project.jpg|ゴッホの自画像（1887年）>web:https://images.pokemontcg.io/svp/85_hires.png|ピカチュウのカード（2023年）",
+   "label": "自画像とピカチュウ"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ゴッホって、ひまわりの絵の、\nあの画家なのだ？",
+   "img": "commons:Zonnebloemen - s0031V1962 - Van Gogh Museum.jpg",
+   "label": "ゴッホ「ひまわり」（1889年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。19世紀のオランダの画家、\nフィンセント・ファン・ゴッホよ。",
+   "img": "commons:Zelfportret met grijze vilthoed - s0016V1962 - Van Gogh Museum.jpg^commons:Vincent van Gogh - Self-portrait with grey felt hat - Google Art Project.jpg",
+   "label": "ゴッホの自画像（1887年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この自画像は、灰色のフェルト帽の自画像。\nゴッホがパリにいた1887年の絵ね。",
+   "img": "commons:Zelfportret met grijze vilthoed - s0016V1962 - Van Gogh Museum.jpg^commons:Vincent van Gogh - Self-portrait with grey felt hat - Google Art Project.jpg",
+   "label": "灰色のフェルト帽の自画像"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2023年、この帽子をピカチュウにかぶせた\nカードが、美術館で配られたの。",
+   "img": "row:commons:Zelfportret met grijze vilthoed - s0016V1962 - Van Gogh Museum.jpg^commons:Vincent van Gogh - Self-portrait with grey felt hat - Google Art Project.jpg|ゴッホの自画像（1887年）>web:https://images.pokemontcg.io/svp/85_hires.png|ピカチュウのカード（2023年）",
+   "label": "自画像とピカチュウ"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "かわいいのだ。\nもらったらうれしいのだ。",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "帽子をかぶったピカチュウのカード"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ところがこのカードのせいで、美術館は\n配るのをやめて、職員まで処分されたの。",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "label": "ゴッホ美術館"
+  },
+  {
+   "type": "title",
+   "sub": "本日の採掘",
+   "t": "ピカチュウのカードで、美術館に何が起きた？",
+   "font": "mincho"
+  },
+  {
+   "type": "title",
+   "sub": "第一層",
+   "t": "なぜゴッホ美術館に、ポケモンが？",
+   "sec": "第一層　ゴッホと日本",
+   "font": "mincho",
+   "x": {
+    "head": "ゴッホ美術館が\nポケモンと組んだのは\n開館50周年の企画だった",
+    "img": [
+     "commons:Van Gogh Museum 7206 rt HDR.jpg"
+    ],
+    "bubble": "50歳なのだ",
+    "who": "z",
+    "post": "オランダのゴッホ美術館は、2023年にポケモンと組んで展示をしました。開館は1973年で、50周年の企画です。館長は、ゴッホが日本の浮世絵に深い関心を持っていたこと、そしてポケモンが日本の絵の文化の象徴であることを理由に挙げました。美術館とポケモン、意外な組み合わせだと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ゴッホ美術館は、オランダの首都、\nアムステルダムにある美術館よ。",
+   "img": "commons:Water reflection of canal houses at blue hour in Damrak Amsterdam the Netherlands.jpg",
+   "label": "アムステルダム（オランダ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ゴッホの絵を世界でいちばん多く持っていて、\n開いたのは1973年なの。",
+   "img": "commons:Bezoekers tijdens de opening, Bestanddeelnr 926-8880.jpg",
+   "label": "1973年の開館の日"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "開館の日には、オランダのユリアナ女王が\n館内を見て回ったのよ。",
+   "img": "commons:Koningin Juliana wordt rondgeleid door het museum, Bestanddeelnr 926-4520.jpg",
+   "label": "1973年 ユリアナ女王"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "だから2023年は、ちょうど50周年。\nその記念の企画の1つが、ポケモンだったの。",
+   "img": "commons:Van Gogh Museum Amsterdam.jpg",
+   "label": "開館50周年（2023年）",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でも、どうしてポケモンなのだ？\n美術館とゲームは、遠い気がするのだ。",
+   "img": "commons:Van Gogh Museum Amsterdam.jpg",
+   "label": "開館50周年（2023年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "鍵は日本よ。ゴッホは、日本の\n浮世絵が大好きだったの。",
+   "img": "commons:Courtisane (naar Eisen) - s0116V1962 - Van Gogh Museum.jpg",
+   "label": "ゴッホが浮世絵を写した「花魁」"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "パリにいたころ、浮世絵を何百枚も\n集めていて、今も美術館が持っているわ。",
+   "img": "commons:Courtisane (naar Eisen) - s0116V1962 - Van Gogh Museum.jpg",
+   "label": "ゴッホが浮世絵を写した「花魁」"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "歌川広重の梅の木の版画を、\n油絵でそっくり写したりもしたの。",
+   "img": "row:commons:Utagawa Hiroshige Plum Garden at Kameido (Kameido Umeyashiki).jpeg|広重「亀戸梅屋舗」>commons:Bloeiende pruimenboomgaard (naar Hiroshige) - s0115V1962 - Van Gogh Museum.jpg|ゴッホの模写（1887年）",
+   "label": "広重の版画とゴッホの模写"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "見比べると、ゴッホのほうが空の赤が強くて、\n色がずっとあざやかなのよ。",
+   "img": "row:commons:Utagawa Hiroshige Plum Garden at Kameido (Kameido Umeyashiki).jpeg|広重「亀戸梅屋舗」>commons:Bloeiende pruimenboomgaard (naar Hiroshige) - s0115V1962 - Van Gogh Museum.jpg|ゴッホの模写（1887年）",
+   "label": "広重の版画とゴッホの模写"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "まわりの漢字の飾りまで\nまねしているのだ。",
+   "img": "commons:Bloeiende pruimenboomgaard (naar Hiroshige) - s0115V1962 - Van Gogh Museum.jpg",
+   "label": "ゴッホの模写（1887年）",
+   "mark": [
+    0.1,
+    0.5,
+    0.12
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "雨の中の橋の絵も写したわ。\n細い線で雨を描く、広重の描き方ね。",
+   "img": "row:commons:Hiroshige, Sudden shower over Shin-Ōhashi bridge and Atake, 1857.jpg|広重「大はしあたけの夕立」>commons:Brug in de regen (naar Hiroshige) - s0114V1962 - Van Gogh Museum.jpg|ゴッホの模写（1887年）",
+   "label": "広重の版画とゴッホの模写"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "パリの画材屋さんの主人を描いた絵では、\n後ろの壁を、浮世絵で埋めつくしたほどよ。",
+   "img": "commons:Van Gogh - Portrait of Pere Tanguy 1887-8.JPG",
+   "label": "タンギー爺さん（1887年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "南フランスのアルルに移ったときは、\n日本のように美しい土地だと手紙に書いたの。",
+   "img": "commons:Vincent van Gogh - De brug van Langlois - Google Art Project.jpg",
+   "label": "アルルの跳ね橋（1888年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "弟のテオには、自分の仕事はすべて\n日本の美術がもとになっている、とまで書いたわ。",
+   "img": "commons:Portret van Theo van Gogh - s0157V1962 - Van Gogh Museum.jpg",
+   "label": "弟のテオ（1887年）",
+   "big": "すべて日本の美術がもと",
+   "bf": "mincho"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ゴッホといえば、耳を切った\n画家なのだ。帽子の絵も、そのあとなのだ？",
+   "img": "commons:Vincent van Gogh - Self-portrait with bandaged ear (1889, Courtauld Institute).jpg",
+   "label": "耳に包帯をした自画像（1889年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ちがうの。耳を傷つけたのは、\n南フランスのアルルにいた1888年の12月。",
+   "img": "commons:Vincent van Gogh - Self-portrait with bandaged ear (1889, Courtauld Institute).jpg",
+   "label": "耳に包帯をした自画像（1889年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "灰色のフェルト帽の自画像は、その1年ほど前、\nパリで描いたものよ。耳はまだ無事ね。",
+   "img": "commons:Zelfportret met grijze vilthoed - s0016V1962 - Van Gogh Museum.jpg^commons:Vincent van Gogh - Self-portrait with grey felt hat - Google Art Project.jpg",
+   "label": "灰色のフェルト帽の自画像（1887年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ちなみに、耳に包帯をした自画像の\n後ろの壁にも、浮世絵がかかっているの。",
+   "img": "commons:Vincent van Gogh - Self-portrait with bandaged ear (1889, Courtauld Institute).jpg",
+   "label": "後ろの壁に浮世絵",
+   "mark": [
+    0.78,
+    0.35,
+    0.2
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "館長は、ポケモンは日本の絵の文化の\n象徴だから、組む意味がある、と話したの。",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "label": "館長の説明"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "目的は、若い世代にゴッホを知ってもらうこと。\nポケモンの宣伝ではない、ともね。",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "label": "館長の説明"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモン社の担当者も、ポケモンとゴッホの名画は、\n発想のもとが強くつながっている、と話したわ。",
+   "img": "commons:International Pokémon logo.svg",
+   "label": "ポケモン社の説明"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "日本の絵を好きになった画家と、\n日本で生まれたポケモン、なのだ。",
+   "img": "row:commons:Zelfportret met grijze vilthoed - s0016V1962 - Van Gogh Museum.jpg^commons:Vincent van Gogh - Self-portrait with grey felt hat - Google Art Project.jpg|ゴッホの自画像（1887年）>web:https://images.pokemontcg.io/svp/85_hires.png|ピカチュウのカード（2023年）",
+   "label": "自画像とピカチュウ"
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "ポケモンになった、6枚の名画",
+   "sec": "第二層　6枚の名画",
+   "font": "reggae",
+   "x": {
+    "head": "ゴッホ美術館に\nポケモン版の名画が\n6枚並んだ",
+    "img": [
+     "commons:Zonnebloemen - s0031V1962 - Van Gogh Museum.jpg",
+     "art:192"
+    ],
+    "bubble": "キマワリがいるのだ",
+    "who": "z",
+    "post": "2023年9月28日から2024年1月7日まで、ゴッホ美術館にポケモン版の名画が6枚並びました。ひまわりにはキマワリ、寝室にはカビゴンとゴンベ、カラスのいる麦畑にはアーマーガア。どれもポケモン社のイラストレーターが描いた新しい絵です。あなたならどの絵をポケモンにしますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "展示は、2023年9月28日から、\n2024年1月7日まで開かれたわ。",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "label": "2023年9月28日〜2024年1月7日"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "9月12日の予告の動画では、ひまわり畑を、\nピカチュウとイーブイが走っていたの。",
+   "img": "row:art:25|ピカチュウ;art:133|イーブイ",
+   "label": "2023年9月12日の予告"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "最後に、ひまわりの間から\nキマワリが顔を出す、という流れね。",
+   "img": "art:192",
+   "label": "キマワリ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモン社のイラストレーターたちが、\nゴッホの名画をもとに、新しく6枚を描いたの。",
+   "img": "row:commons:Zonnebloemen - s0031V1962 - Van Gogh Museum.jpg|ひまわり;commons:Vincent van Gogh - De slaapkamer - Google Art Project.jpg|寝室;commons:Korenveld met kraaien - s0149V1962 - Van Gogh Museum.jpg|カラスのいる麦畑",
+   "label": "もとになったゴッホの名画（一部）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "まず、ひまわり。花びんのひまわりの中に、\nキマワリがまぎれこんでいるの。",
+   "img": "row:commons:Zonnebloemen - s0031V1962 - Van Gogh Museum.jpg|ゴッホ「ひまわり」>art:192|キマワリ",
+   "label": "ひまわり → キマワリ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ゴッホの寝室の絵では、ベッドに\nカビゴンが寝ころんで、ゴンベもいるわ。",
+   "img": "row:commons:Vincent van Gogh - De slaapkamer - Google Art Project.jpg|ゴッホ「寝室」;art:143|カビゴン;art:446|ゴンベ",
+   "label": "寝室 → カビゴンとゴンベ"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ベッドがつぶれそうなのだ。\nカビゴンは重さ460キロなのだ。",
+   "img": "art:143",
+   "label": "カビゴン（重さ460kg）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この寝室は、ゴッホがアルルで借りた\n黄色い家の、2階の部屋なの。",
+   "img": "commons:Vincent van Gogh - The yellow house ('The street').jpg",
+   "label": "アルルの黄色い家",
+   "mark": [
+    0.33,
+    0.45,
+    0.1
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "カラスのいる麦畑には、\nカラスのポケモン、アーマーガア。",
+   "img": "row:commons:Korenveld met kraaien - s0149V1962 - Van Gogh Museum.jpg|カラスのいる麦畑>art:823|アーマーガア",
+   "label": "カラスのいる麦畑 → アーマーガア"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "麦畑の絵は、ゴッホが亡くなった\n1890年の夏に描かれたものよ。",
+   "img": "commons:Korenveld met kraaien - s0149V1962 - Van Gogh Museum.jpg",
+   "label": "カラスのいる麦畑（1890年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "麦わら帽子をかぶった自画像は、\nイーブイになったわ。",
+   "img": "row:commons:Zelfportret met strohoed - s0164V1962 - Van Gogh Museum.jpg|麦わら帽子の自画像>art:133|イーブイ",
+   "label": "麦わら帽子の自画像 → イーブイ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "絵を描いている自画像は、\n絵かきのポケモン、ドーブルね。",
+   "img": "row:commons:Zelfportret als schilder - s0022V1962 - Van Gogh Museum.jpg|画家としての自画像>art:235|ドーブル",
+   "label": "画家としての自画像 → ドーブル"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして6枚目が、灰色のフェルト帽の自画像。\nこれが、ピカチュウになったの。",
+   "img": "row:commons:Zelfportret met grijze vilthoed - s0016V1962 - Van Gogh Museum.jpg^commons:Vincent van Gogh - Self-portrait with grey felt hat - Google Art Project.jpg|ゴッホの自画像（1887年）>web:https://images.pokemontcg.io/svp/85_hires.png|ピカチュウのカード（2023年）",
+   "label": "灰色のフェルト帽 → ピカチュウ",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ピカチュウの耳が、\n帽子の横から出ているのだ。",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "帽子をかぶったピカチュウのカード",
+   "mark": [
+    0.3,
+    0.27,
+    0.12
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。このピカチュウを描いたのは、\nイラストレーターの木村直代さんよ。",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "絵　木村直代さん"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "開幕の日、美術館の売店で",
+   "sec": "第三層　開幕の日",
+   "font": "potta",
+   "x": {
+    "head": "ゴッホ美術館の開幕日\n警備員いわく\n「フェルメール展より混んでいる」",
+    "img": [
+     "commons:Van Gogh Museum, Kurokawa wing.jpg"
+    ],
+    "bubble": "そんなにいたのだ",
+    "who": "z",
+    "post": "2023年9月28日、ポケモン展が始まったゴッホ美術館には人が押し寄せ、売店で商品を取り合う動画が広まりました。警備員は、同じ年に近くで開かれた大人気のフェルメール展より混んでいる、と話したと報じられています。美術館は次の日から、商品を1人1点までにしました。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "このカードは、お店で売られたわけではないの。\n美術館の中で、もらえたのよ。",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "美術館でもらえたカード"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "カードの名前は、灰色のフェルト帽のピカチュウ。\nほかのカードと同じように遊べる、本物よ。",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "Pikachu with Grey Felt Hat"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンカードの、特別に配られるプロモカードで、\n番号は085なの。",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "プロモカード 085"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "6歳以上向けの冊子を持って、館内の絵を回って\n課題を解くと、出口で1枚もらえたの。",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "label": "館内の課題を解くと1枚"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "冊子の名前は、ポケモン・アドベンチャー。\nオランダ語と英語で用意されていたの。",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "label": "冊子「ポケモン・アドベンチャー」"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "カードは封をしたまま、\n1人に1枚だけ渡されたわ。",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "出口で1人1枚"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "しかも、18歳未満は入館料が無料。\n大人は、入館料を払って入るのね。",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "label": "18歳未満は入館無料"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "子どもは、ただで\nピカチュウがもらえるのだ。",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "帽子をかぶったピカチュウのカード"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ほかに、アメリカやイギリスのポケモンセンターの\n通販でも、限定の商品を買うと付いてきたわ。",
+   "img": "commons:Pokémon Trading Card Game logo.svg",
+   "label": "ポケモンセンターの通販"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして2023年9月28日、展示が始まった日。\n美術館に、人が押し寄せたの。",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "label": "2023年9月28日 開幕",
+   "big": "開幕の日に大混乱",
+   "bf": "rampart"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "売店で、限定の商品を取り合う人たちの\n動画が、ネットに広まったわ。",
+   "img": "commons:Van Gogh Museum Amsterdam.jpg",
+   "label": "売店で商品の取り合い"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "警備員は、フェルメール展より\n混んでいる、と話したと報じられたの。",
+   "img": "commons:Johannes Vermeer - Het melkmeisje - Google Art Project.jpg",
+   "label": "フェルメール「牛乳を注ぐ女」"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "フェルメールって、ゴッホとは\nちがう画家なのだ？",
+   "img": "commons:Johannes Vermeer - Het melkmeisje - Google Art Project.jpg",
+   "label": "フェルメール「牛乳を注ぐ女」"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "17世紀のオランダの画家よ。その年の春、\n近くの国立美術館で、大きな展覧会があったの。",
+   "img": "commons:Johannes Vermeer - Het melkmeisje - Google Art Project.jpg",
+   "label": "17世紀のオランダの画家"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "チケットが売り切れるほどの人気だった、\nその展覧会よりも混んでいた、ということね。",
+   "img": "commons:Johannes Vermeer - Het melkmeisje - Google Art Project.jpg",
+   "label": "2023年春のフェルメール展"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "次の日の9月29日、ポケモン社は\n通販のお客さんに謝ったの。",
+   "img": "commons:Pokémon Trading Card Game logo.svg",
+   "label": "2023年9月29日 謝罪"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "通販の商品は、あまりの人気で\nすべて売り切れました、とね。",
+   "img": "commons:Pokémon Trading Card Game logo.svg",
+   "label": "通販の商品はすべて売り切れ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "美術館も、売店の商品は\n1人1点までと決めたわ。",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "label": "売店の商品は1人1点まで"
+  },
+  {
+   "type": "title",
+   "sub": "第四層",
+   "t": "出口で配るカードに、値段がついた",
+   "sec": "第四層　転売と配布中止",
+   "font": "reggae",
+   "x": {
+    "head": "美術館で無料のピカチュウ\nネットでは最高で\n約600ドルに",
+    "img": [
+     "web:https://images.pokemontcg.io/svp/85_hires.png"
+    ],
+    "bubble": "高すぎるのだ",
+    "who": "z",
+    "post": "ゴッホ美術館の館内の課題を解くともらえたピカチュウのカードは、ネットで80ユーロを超え、最高で約600ドルの値がつきました。美術館は2023年10月13日を最後に、館内での配布をやめました。理由は、ごく一部の人たちが望ましくない状況を作った、と発表しています。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "問題は、カードのほうよ。\nすぐにネットで、高い値段がついたの。",
+   "img": "commons:EBay logo.svg^commons:EBay former logo.svg",
+   "label": "ネットの売り買い"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "イギリスのガーディアン紙によれば、\nネットでは80ユーロを超えたわ。",
+   "img": "commons:EBay logo.svg^commons:EBay former logo.svg",
+   "label": "80ユーロ超（約1万3000円）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "高いものでは、\n約600ドルの値がついた、と報じられたの。",
+   "img": "commons:EBay logo.svg^commons:EBay former logo.svg",
+   "label": "最高で約600ドル",
+   "big": "最高で約600ドル",
+   "bf": "rampart",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "美術館でもらえるカードが、\n600ドルなのだ！？",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "帽子をかぶったピカチュウのカード"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "カードを目当てに美術館に来て、\nもらったカードを売る人たちが現れたの。",
+   "img": "commons:Marktplaats Logo.png",
+   "label": "オランダの売り買いのサイト"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "美術館の出口の外で、もらったばかりの\nカードを買い取ろうとする人もいたわ。",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "label": "美術館の出口の外"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "絵を見に来た子どもが、\nかわいそうなのだ。",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "帽子をかぶったピカチュウのカード"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "10月12日、ポケモン社は、通販でカードの商品を\n30ドル以上買うと付ける、と発表したの。",
+   "img": "commons:Pokémon Trading Card Game logo.svg",
+   "label": "2023年10月12日 ポケモン社"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして美術館は、10月13日を最後に、\n館内でカードを配るのをやめたわ。",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "label": "2023年10月13日 配布をやめた",
+   "big": "カードの配布中止",
+   "bf": "mincho",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "翌日の発表で、美術館とポケモン社は、\nこう書いたの。",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "label": "美術館とポケモン社の発表"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ごく一部の人たちが、\n望ましくない状況を作った。",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "label": "美術館とポケモン社の発表",
+   "big": "望ましくない状況",
+   "bf": "mincho"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "来館者と職員の安全を、\nとても重く受け止めている、とね。",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "label": "美術館とポケモン社の発表"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "来館者が、安全に楽しく絵を見られるように、\nカードを配るのはやめる、という発表だったわ。",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "label": "美術館とポケモン社の発表"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "これで、さわぎは\nおさまったのだ？",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "label": "ゴッホ美術館"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "外のさわぎはね。でも、本当の問題は、\n美術館の中にもあったの。",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "label": "美術館の中で"
+  },
+  {
+   "type": "title",
+   "sub": "第五層",
+   "t": "カードの箱は、どこへ消えた",
+   "sec": "第五層　職員の処分",
+   "font": "fude",
+   "x": {
+    "head": "ピカチュウのカードをめぐり\nゴッホ美術館の職員が\n少なくとも4人停職",
+    "img": [
+     "commons:Van Gogh Museum 7206 rt HDR.jpg"
+    ],
+    "bubble": "中の人までなのだ",
+    "who": "z",
+    "post": "2024年1月、オランダの新聞ヘット・パロールが、ゴッホ美術館の職員が少なくとも4人、ピカチュウのカードをめぐって停職になったと報じました。カードがいつ手に入るかを来館者に教えたり、1人はカードを1箱持ち出したりしたと報じられています。美術館は、行動規範に反したと説明しました。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2024年1月24日、アムステルダムの新聞、\nヘット・パロールが報じたの。",
+   "img": "commons:Water reflection of canal houses at blue hour in Damrak Amsterdam the Netherlands.jpg",
+   "label": "2024年1月24日の報道"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ゴッホ美術館の職員が、少なくとも4人、\nカードをめぐって停職になっていた、と。",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "label": "職員が少なくとも4人停職",
+   "big": "職員が停職",
+   "bf": "mincho",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "美術館で働く人たちが、\nいったい何をしたのだ？",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "label": "職員が少なくとも4人停職"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "報道によると、警備員や、荷物の預かり所、\nチケット売り場で働く人たちよ。",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "label": "警備員・荷物預かり所・チケット売り場"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "カードがいつ手に入るかを、\n来館者に前もって教えていたというの。",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "カードの情報を教えていた"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして1人は、カードを1箱、\n持ち出していたと報じられたわ。",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "カードを1箱持ち出した",
+   "big": "カードを1箱",
+   "bf": "rampart"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "1箱って、1枚どころでは\nないのだ！",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "カードを1箱持ち出した"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "中には、25年も勤めてきた\n職員もいたと伝えられているの。",
+   "img": "commons:Van Gogh Museum Amsterdam.jpg",
+   "label": "勤めて25年の職員も"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "ふだんは、来館者を守る\n側の人たちなのだ。",
+   "img": "commons:Van Gogh Museum Amsterdam.jpg",
+   "label": "警備員・荷物預かり所・チケット売り場"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "停職は、2023年の12月の半ば。\nこの人たちは、美術館を去ったわ。",
+   "img": "commons:Van Gogh Museum Amsterdam.jpg",
+   "label": "2023年12月 停職"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "報道が出たのは、展示が終わった2週間あと。\nそれまで、外には知られていなかったのね。",
+   "img": "commons:Van Gogh Museum Amsterdam.jpg",
+   "label": "2024年1月7日 展示が終わった"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "美術館は、決められた手順と\n行動規範に反した、とだけ説明したの。",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "label": "美術館の説明"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1人1人のことは話さないので、\nくわしいことは言えない、ともね。",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "label": "美術館の説明"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "外の転売よりも、中の人の\nほうがショックなのだ。",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "label": "ゴッホ美術館"
+  },
+  {
+   "type": "title",
+   "sub": "最深層",
+   "t": "ゴッホが日本に見ていたもの",
+   "sec": "最深層　その後のピカチュウ",
+   "font": "mincho",
+   "x": {
+    "head": "配布をやめたピカチュウ\n2024年2月から\nオランダのお店でも配られた",
+    "img": [
+     "web:https://images.pokemontcg.io/svp/85_hires.png"
+    ],
+    "bubble": "やっと手に入るのだ",
+    "who": "z",
+    "post": "ゴッホ美術館が配布をやめたピカチュウのカードは、2024年2月10日からオランダのおもちゃ屋などで、ポケモンの商品を29.99ユーロより多く買うともらえるようになりました。いっぽうゴッホは、日本の美術を学べば、より陽気で幸せにならずにはいられない、と手紙に書いています。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "このカードは、そのあと\nどうなったと思う？",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "帽子をかぶったピカチュウのカード"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "もう手に入らなくて、\nもっと高くなったのだ？",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "帽子をかぶったピカチュウのカード"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "逆よ。刷り直されたの。2024年2月10日から、\nオランダのおもちゃ屋さんなどでも配られたわ。",
+   "img": "commons:Gare Centrale distributeur cartes pokémon.jpg",
+   "label": "2024年2月10日から お店で配布",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンの商品を、29.99ユーロより多く\n買うと、1枚もらえる、という形ね。",
+   "img": "commons:Gare Centrale distributeur cartes pokémon.jpg",
+   "label": "29.99ユーロより多く買うと1枚"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "それなら、美術館の出口で\n取り合わなくていいのだ。",
+   "img": "commons:Gare Centrale distributeur cartes pokémon.jpg",
+   "label": "お店で配布"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "最後に、ゴッホの手紙をもう1つ。\n1888年の9月、弟のテオに書いたものよ。",
+   "img": "commons:Vincent van Gogh - The yellow house ('The street').jpg",
+   "label": "アルルの黄色い家（1888年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "日本の美術を学べば、より陽気で、\n幸せにならずにはいられない。",
+   "img": "commons:Amandelbloesem - s0176V1962 - Van Gogh Museum.jpg",
+   "label": "ゴッホ「花咲くアーモンドの枝」",
+   "big": "陽気で幸せに",
+   "bf": "mincho"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "美術館とポケモン社の発表でも、\nこの手紙が引かれていたの。",
+   "img": "commons:Amandelbloesem - s0176V1962 - Van Gogh Museum.jpg",
+   "label": "ゴッホ「花咲くアーモンドの枝」"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "同じ手紙で、ゴッホは日本の画家のことを\nこう書いているの。",
+   "img": "commons:Portret van Theo van Gogh - s0157V1962 - Van Gogh Museum.jpg",
+   "label": "弟のテオへの手紙（1888年9月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "日本の画家は、たった一本の草の葉を\n研究することに、時間を使う、とね。",
+   "img": "commons:Bloeiende pruimenboomgaard (naar Hiroshige) - s0115V1962 - Van Gogh Museum.jpg",
+   "label": "ゴッホの模写（1887年）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "草1本を、ずっと\n見つめるのだ。",
+   "img": "commons:Bloeiende pruimenboomgaard (naar Hiroshige) - s0115V1962 - Van Gogh Museum.jpg",
+   "label": "ゴッホの模写（1887年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "小さな生き物を、じっくり観察する。\nなんだか、ポケモンの図鑑みたいよね。",
+   "img": "art:192",
+   "label": "キマワリ"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "陽気で幸せになるはずが、\n取り合いになってしまったのだ。",
+   "img": "commons:Amandelbloesem - s0176V1962 - Van Gogh Museum.jpg",
+   "label": "ゴッホ「花咲くアーモンドの枝」"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "今日の答え。美術館で無料で配ったカードに、\nネットで何万円もの値段がついた。",
+   "img": "row:commons:Zelfportret met grijze vilthoed - s0016V1962 - Van Gogh Museum.jpg^commons:Vincent van Gogh - Self-portrait with grey felt hat - Google Art Project.jpg|ゴッホの自画像（1887年）>web:https://images.pokemontcg.io/svp/85_hires.png|ピカチュウのカード（2023年）",
+   "sec": "まとめ",
+   "label": "自画像とピカチュウ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その値段が、外の転売屋だけでなく、\n美術館の中の人まで動かしてしまったのね。",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "label": "ゴッホ美術館"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ピカチュウの帽子1つで、\n美術館がひっくり返ったのだ。",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "帽子をかぶったピカチュウのカード"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "あなたなら、このカードをもらったら、\n売る？　それとも飾る？",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "label": "帽子をかぶったピカチュウのカード"
+  },
+  {
+   "type": "title",
+   "sub": "おまけ",
+   "t": "今日のポケモンの英語名",
+   "sec": "今日のポケモンの英語名",
+   "font": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "今日の英語名は、ゴッホの絵に\n入ったポケモンから3匹よ。",
+   "img": "row:art:192|キマワリ;art:235|ドーブル;art:823|アーマーガア",
+   "label": "ゴッホの絵に入ったポケモン",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "まず、キマワリ。\nサンフローラ。",
+   "img": "art:192",
+   "label": "Sunflora（サンフローラ）",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "sunは、太陽。floraは、ラテン語で\n花や植物を表す言葉よ。",
+   "img": "art:192",
+   "label": "Sunflora（サンフローラ）",
+   "lf": "hachi",
+   "ety": [
+    "Sunflora（サンフローラ）",
+    "英語　sun（太陽）＋ラテン語　flora（花・植物）"
+   ],
+   "say": "サンは、太陽。フローラは、ラテン語で花や植物を表す言葉よ。"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "次は、ドーブル。\nスミアグル。",
+   "img": "art:235",
+   "label": "Smeargle（スミアグル）",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "smearは、絵の具を塗りつけること。\nそこに、犬のビーグルを合わせた名前ね。",
+   "img": "art:235",
+   "label": "Smeargle（スミアグル）",
+   "lf": "hachi",
+   "ety": [
+    "Smeargle（スミアグル）",
+    "英語　smear（塗りつける）＋beagle（犬のビーグル）"
+   ],
+   "say": "スミアは、絵の具を塗りつけること。そこに、犬のビーグルを合わせた名前ね。"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "最後は、アーマーガア。\nコーヴィナイト。",
+   "img": "art:823",
+   "label": "Corviknight（コーヴィナイト）",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "corvusは、ラテン語でカラス。\nknightは、よろいを着た騎士のことよ。",
+   "img": "art:823",
+   "label": "Corviknight（コーヴィナイト）",
+   "lf": "hachi",
+   "ety": [
+    "Corviknight（コーヴィナイト）",
+    "ラテン語　corvus（カラス）＋英語　knight（騎士）"
+   ],
+   "say": "コルヴスは、ラテン語でカラス。ナイトは、よろいを着た騎士のことよ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日出てきたポケモンの英語名は、\n英単語帳サイト「もんすぺ！」でも調べられるわ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "もんすぺ！には、ポケモンの雑学のコラムもあるの。\n動画の続きみたいに読めるわよ。",
+   "img": "site:",
+   "label": "「もんすぺ！」雑学コラムもあります"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の採掘はここまでなのだ。\nチャンネル登録もよろしくなのだ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "type": "ed"
+  }
+ ]
+}
