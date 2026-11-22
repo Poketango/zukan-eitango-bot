@@ -1,0 +1,78 @@
+{
+ "no": 19,
+ "title": "ピカチュウのカードで、ゴッホ美術館の職員が停職になった。【ポケモン雑学採掘場】",
+ "hook": [
+  "ゴッホ美術館",
+  "ピカチュウのカードで",
+  "職員が停職"
+ ],
+ "hl": "職員が停職",
+ "lead": "2023年のポケモン展で配ったピカチュウのカードをめぐり、ゴッホ美術館の職員が少なくとも4人停職になったと、2024年1月に報じられた。",
+ "article": "https://poketango.com/zatsugaku/van-gogh-museum-pikachu-card.html",
+ "video": "SusLVj3uWjc",
+ "pokemon": [
+  [
+   "pikachu",
+   "ピカチュウ",
+   "Pikachu"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "ピカチュウのカードで、\nゴッホ美術館の職員が\n停職になったの",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "cap": "ゴッホ美術館（アムステルダム）"
+  },
+  {
+   "w": "z",
+   "t": "美術館の人が、\nポケモンのカードで\n停職なのだ？",
+   "img": "commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "cap": "ゴッホ美術館（アムステルダム）",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "2023年、ゴッホ美術館は\nポケモン展で、帽子をかぶった\nピカチュウのカードを配ったの",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "cap": "館内でもらえたカード"
+  },
+  {
+   "w": "m",
+   "t": "このカードは、ネットで\n高い値段で売られて、\n配るのをやめたほどだったの",
+   "img": "commons:EBay logo.svg",
+   "cap": "ネットで高値に"
+  },
+  {
+   "w": "m",
+   "t": "2024年1月、職員が少なくとも\n4人、停職になっていたと\nオランダの新聞が報じたの",
+   "img": "commons:Van Gogh Museum, Kurokawa wing.jpg",
+   "cap": "職員が少なくとも4人停職",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "t": "カードが手に入る時間を\n来館者に教えたり、1人は\n1箱持ち出したりしたとされるわ",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "cap": "報じられた中身"
+  },
+  {
+   "w": "z",
+   "t": "1箱は、さすがに\nダメなのだ…",
+   "img": "web:https://images.pokemontcg.io/svp/85_hires.png",
+   "cap": "報じられた中身",
+   "face": "sad"
+  },
+  {
+   "w": "m",
+   "t": "なぜゴッホとポケモンだったのかも、\n本編でくわしく掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/SusLVj3uWjc/maxresdefault.jpg^web:https://i.ytimg.com/vi/SusLVj3uWjc/hqdefault.jpg^commons:Van Gogh Museum 7206 rt HDR.jpg"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/SusLVj3uWjc/maxresdefault.jpg^web:https://i.ytimg.com/vi/SusLVj3uWjc/hqdefault.jpg^commons:Van Gogh Museum 7206 rt HDR.jpg",
+   "face": "happy"
+  }
+ ]
+}
