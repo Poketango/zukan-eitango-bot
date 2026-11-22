@@ -31,3 +31,6 @@ s010_1 2026-11-23 07:34 morning
 s010_4 2026-11-23 12:34 noon
 s010_6 2026-11-23 17:04 evening
 s011_1 2026-11-23 20:07 card
+kowai_Haunter 2026-11-13 kowai
+kowai_Lampent 2026-11-22 09:34 kowai
+kowai_Dusknoir 2026-11-29 09:34 kowai
