@@ -17,17 +17,24 @@
   ],
   "pre_font": "maru",
   "pre_size": 62,
-  "back": "web:https://zenodo.org/records/5783187/files/figure.png@crop=0,0,1,0.44",
-  "photo": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1",
+  "back": "commons:20251225 Tropical rainforest in the Xishuangbanna Tropical Botanical Garden, Chinese Academy of Sciences.jpg",
+  "photo": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1",
   "photo_label": "メスの生殖器（顕微鏡）",
-  "chara": null
+  "chara": null,
+  "big_w": 600,
+  "sticker": {
+   "img": "art:25",
+   "h": 300,
+   "x": 520,
+   "y": 400
+  }
  },
  "lines": [
   {
    "w": "m",
    "face": "normal",
    "t": "これは、ブラジルで見つかったクモの、\nメスの生殖器を、顕微鏡で見たものよ。",
-   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1",
    "sec": "ポケモン雑学採掘場",
    "label": "新種のクモ（メス）の生殖器"
   },
@@ -35,14 +42,14 @@
    "w": "z",
    "face": "surprise",
    "t": "黄色くて、両側に\n赤茶色の丸があるのだ。",
-   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1",
    "label": "新種のクモ（メス）の生殖器"
   },
   {
    "w": "m",
    "face": "think",
    "t": "似ていると思わない？　このクモの名前は、\nエピクラティヌス・ピカチュウ。",
-   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1|クモのメスの生殖器;art:25|ピカチュウ",
+   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1|クモのメスの生殖器;art:25|ピカチュウ",
    "label": "ピカチュウの顔に見える",
    "ans": true,
    "say": "似ていると思わない？　このクモの名前は、エピクラティヌス、ピカチュウ。"
@@ -51,7 +58,7 @@
    "w": "z",
    "face": "shock",
    "t": "ピカチュウのほっぺなのだ！\n生殖器なのに、なのだ！？",
-   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1|クモのメスの生殖器;art:25|ピカチュウ",
+   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1|クモのメスの生殖器;art:25|ピカチュウ",
    "label": "ピカチュウの顔に見える"
   },
   {
@@ -79,7 +86,7 @@
    "w": "m",
    "face": "normal",
    "t": "学名は、ラテン語の形の2語で書くの。\n1語目が属、2語目が種の名前ね。",
-   "img": "commons:Carl von Linné.jpg",
+   "img": "commons:Linnaeus1758-title-page.jpg",
    "label": "学名＝属の名前＋種の名前"
   },
   {
@@ -126,7 +133,7 @@
    "x": {
     "head": "ブラジルの新種のクモ\nメスの生殖器が\nピカチュウの顔に見える",
     "img": [
-     "web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1",
+     "web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1",
      "art:25"
     ],
     "bubble": "ほっぺがあるのだ",
@@ -184,7 +191,7 @@
    "w": "m",
    "face": "normal",
    "t": "メスの生殖器は、その形に合うようにできている。\nだから、形がちがえば別の種類だとわかるのよ。",
-   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1",
    "label": "メスの生殖器（おなかの下側）"
   },
   {
@@ -198,7 +205,7 @@
    "w": "m",
    "face": "normal",
    "t": "そして名前の理由の欄に、こう書いたの。\nメスの生殖器は、ピカチュウの顔に似ている。",
-   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1",
    "label": "論文に書かれた名前の理由",
    "big": "ピカチュウの顔に似ている",
    "bf": "mincho",
@@ -208,7 +215,7 @@
    "w": "z",
    "face": "surprise",
    "t": "論文に、まじめに\nそう書いてあるのだ！？",
-   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1|クモのメスの生殖器;art:25|ピカチュウ",
+   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1|クモのメスの生殖器;art:25|ピカチュウ",
    "label": "論文に書かれた名前の理由"
   },
   {
@@ -238,8 +245,8 @@
    "w": "m",
    "face": "normal",
    "t": "ちなみに、ピカチュウのクモのメスが\n採れたのは2005年。名前がつくまで15年よ。",
-   "img": "commons:Instituto Butantan01.jpg",
-   "label": "2005年採集→2020年命名"
+   "img": "web:https://zenodo.org/records/4297379/files/figure.png@crop=0,0.5,0.5,1",
+   "label": "メスの標本（2005年採集）"
   },
   {
    "w": "z",
@@ -336,8 +343,8 @@
    "w": "m",
    "face": "normal",
    "t": "近い仲間には、はねが赤い種類もいるの。\n黄色に黒だから、ピカチュウだったのね。",
-   "img": "commons:Hiperantha testacea MHNT.ZOO.2004.0.561.jpg",
-   "label": "同じヒペランタ属の甲虫"
+   "img": "web:https://zenodo.org/records/5783183/files/figure.png@crop=0,0,1,0.235",
+   "label": "黄色に黒"
   },
   {
    "w": "m",
@@ -398,7 +405,7 @@
    "label": "伝説の鳥3羽の英語名",
    "ety": [
     "Binburrum articuno / zapdos / moltres",
-    "属名 Binburrum＋Articuno（フリーザー）・Zapdos（サンダー）・Moltres（ファイヤー）"
+    "属名 Binburrum＋伝説の鳥3羽の英語名"
    ],
    "say": "名前は、ビンブルム、アーティクノ、ザプドス、モルトレス。3羽の英語名よ。"
   },
@@ -465,8 +472,8 @@
    "w": "m",
    "face": "normal",
    "t": "しかも、ビンブルムという属の名前をつけたのは、\n論文を一緒に書いたポロック先生。1995年よ。",
-   "img": "commons:Pyrochroa.coccinea.female.jpg",
-   "label": "1995年 ビンブルム属ができた"
+   "img": "web:https://zenodo.org/records/15732179/files/figure.png",
+   "label": "ビンブルム属の甲虫（論文の図）"
   },
   {
    "w": "z",
@@ -479,8 +486,8 @@
    "w": "m",
    "face": "normal",
    "t": "名づけたのは、当時オーストラリア国立大学の\n大学院生だった、シャオさんよ。",
-   "img": "commons:CSIRO ScienceImage 11191 Aerial view of the CSIRO Black Mountain laboratories.jpg",
-   "label": "名づけた人"
+   "img": "commons:Telstra Tower from ANU campus, Canberra Australia.jpg",
+   "label": "オーストラリア国立大学"
   },
   {
    "w": "m",
@@ -548,8 +555,8 @@
    "w": "m",
    "face": "normal",
    "t": "2016年、カナダのヨーク大学の大学院生が、\nこのあたりのハチを調べて、8つの新種を発表したの。",
-   "img": "commons:Elqui valley (48338545916).jpg",
-   "label": "2016年に8つの新種"
+   "img": "commons:York University, Toronto, Canada - May 2023 6.jpg",
+   "label": "ヨーク大学（カナダ）"
   },
   {
    "w": "m",
@@ -603,15 +610,15 @@
    "w": "m",
    "face": "normal",
    "t": "同じ論文の新種の名前も、面白いのよ。\n1つは、道路の急カーブ注意の標識から取ったの。",
-   "img": "commons:Elqui valley (48338545916).jpg",
-   "label": "急カーブ注意から取った名前"
+   "img": "commons:Senal curva cerrada argentina.png",
+   "label": "急カーブの標識（例）"
   },
   {
    "w": "z",
    "face": "surprise",
    "t": "標識から名前を\n取ってもいいのだ！？",
-   "img": "commons:Elqui valley (48338545916).jpg",
-   "label": "急カーブ注意から取った名前"
+   "img": "commons:Senal curva cerrada argentina.png",
+   "label": "急カーブの標識（例）"
   },
   {
    "w": "m",
@@ -624,8 +631,8 @@
    "w": "m",
    "face": "normal",
    "t": "ほかにも、南米のラクダの仲間、グアナコ。\n現地のケチュア語で、川を表す、マユ。",
-   "img": "commons:Elqui valley (48338545916).jpg",
-   "label": "グアナコ・マユ（ケチュア語で川）"
+   "img": "commons:Guanaco (Lama guanicoe) Leona Amarga 3.jpg",
+   "label": "グアナコ"
   },
   {
    "type": "title",
@@ -896,7 +903,7 @@
    "w": "m",
    "face": "think",
    "t": "今日の答え。ピカチュウの顔の生殖器は、\n種を見分けるための、大事な手がかりだった。",
-   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1|クモのメスの生殖器;art:25|ピカチュウ",
+   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1|クモのメスの生殖器;art:25|ピカチュウ",
    "sec": "まとめ",
    "label": "クモのメスの生殖器とピカチュウ"
   },
@@ -904,7 +911,7 @@
    "w": "m",
    "face": "normal",
    "t": "その大事な場所に、研究者が\nピカチュウを見つけた、というわけね。",
-   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1|クモのメスの生殖器;art:25|ピカチュウ",
+   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1|クモのメスの生殖器;art:25|ピカチュウ",
    "label": "ピカチュウの顔に見える"
   },
   {
