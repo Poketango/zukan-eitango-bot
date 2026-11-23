@@ -14,6 +14,7 @@
 #     sil:A              A を黒いシルエットにして「？」を重ねる（答えを言う前）
 #     ファイル名          台本と同じフォルダの画像
 #     「A^B」は A が取れないとき B を使う
+#     「A@crop=x0,y0,x1,y1」は A の一部（左上と右下を画像の幅・高さに対する割合で）だけを使う（論文の図の1コマなど）
 #   行のほかの項目：label（画像の上の札）、cap（画像の左下の説明）、mark [x,y,r]（赤い丸。画像の中の割合）、
 #     big（画面いっぱいの大きな文字）、sec（右上の帯を変える）、face、say、kana
 #   環境変数：NUM（回番号）、MODE=sheet（音声なしで1行1コマの一覧だけ作る）／full（動画を作る）
@@ -221,6 +222,9 @@ def load(ref):
     im = None
     alts = [ref] if ref.startswith("row:") else ref.split("^")      # 並べる図は、中のそれぞれの画像で予備を選ぶ
     for alt in alts:
+        crop = None
+        if "@crop=" in alt and not ref.startswith("row:"):   # 「画像@crop=x0,y0,x1,y1」で画像の一部（割合）を切り出す（2026-11-24、論文の図の1コマを見せる）
+            alt, _, c = alt.partition("@crop="); crop = [float(v) for v in c.split(",")]
         try:
             kind, _, arg = alt.partition(":")
             if kind == "art": im = art(arg)
@@ -239,6 +243,8 @@ def load(ref):
             else: im = Image.open(os.path.join(DIR, alt)).convert("RGBA")
         except Exception as e:
             print("画像を取れない:", alt, repr(e)[:160]); im = None
+        if im is not None and crop:
+            W0, H0 = im.size; im = im.crop((int(crop[0] * W0), int(crop[1] * H0), int(crop[2] * W0), int(crop[3] * H0)))
         if im is not None: break
     _IMG[ref] = im
     return im
