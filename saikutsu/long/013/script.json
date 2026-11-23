@@ -1,0 +1,1027 @@
+{
+ "no": 13,
+ "title": "ピカチュウの顔をした、クモの生殖器。ポケモンの名前がついた生き物7選",
+ "neta": "メスの体の一部がピカチュウの顔に見えるクモ",
+ "thumb": {
+  "layout": "v2",
+  "pre": "ブラジルの新種のクモ",
+  "big": [
+   "生殖器が",
+   "ピカチュウ"
+  ],
+  "hl": 0,
+  "hl_color": "red",
+  "fonts": [
+   "mincho",
+   "mincho"
+  ],
+  "pre_font": "maru",
+  "pre_size": 62,
+  "back": "web:https://zenodo.org/records/5783187/files/figure.png@crop=0,0,1,0.44",
+  "photo": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1",
+  "photo_label": "メスの生殖器（顕微鏡）",
+  "chara": null
+ },
+ "lines": [
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "これは、ブラジルで見つかったクモの、\nメスの生殖器を、顕微鏡で見たものよ。",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1",
+   "sec": "ポケモン雑学採掘場",
+   "label": "新種のクモ（メス）の生殖器"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "黄色くて、両側に\n赤茶色の丸があるのだ。",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1",
+   "label": "新種のクモ（メス）の生殖器"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "似ていると思わない？　このクモの名前は、\nエピクラティヌス・ピカチュウ。",
+   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1|クモのメスの生殖器;art:25|ピカチュウ",
+   "label": "ピカチュウの顔に見える",
+   "ans": true,
+   "say": "似ていると思わない？　このクモの名前は、エピクラティヌス、ピカチュウ。"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "ピカチュウのほっぺなのだ！\n生殖器なのに、なのだ！？",
+   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1|クモのメスの生殖器;art:25|ピカチュウ",
+   "label": "ピカチュウの顔に見える"
+  },
+  {
+   "type": "op",
+   "w": "m",
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘場。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学さいくつじょう。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "さっき、坑道で見たことのない\n虫を見つけたのだ。新種かもしれないのだ。",
+   "img": "commons:Pyrochroa.coccinea.female.jpg",
+   "sec": "導入　学名のきまり",
+   "label": "見たことのない虫"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "新種なら、名前をつけられるわね。\n生き物の世界共通の名前、学名よ。",
+   "img": "commons:Carl von Linné.jpg",
+   "label": "リンネ（学名の形を広めた学者）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "学名は、ラテン語の形の2語で書くの。\n1語目が属、2語目が種の名前ね。",
+   "img": "commons:Carl von Linné.jpg",
+   "label": "学名＝属の名前＋種の名前"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ルールは、ほかの生き物と同じ名前を\n使わないこと。由来は自由に決められるの。",
+   "img": "commons:Carl von Linné.jpg",
+   "label": "ほかと同じ名前は使えない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "新種の論文には、名前の由来を書く欄があるの。\nそこに、ポケモンの名前が出てくるのよ。",
+   "img": "commons:Carl von Linné.jpg",
+   "label": "論文の「名前の由来」の欄"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして、研究者が論文で\nポケモンの名前をつけた生き物がいるの。",
+   "img": "row:art:25|ピカチュウ;art:144|フリーザー;art:6|リザードン;art:795|フェローチェ",
+   "label": "学名になったポケモン"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "前にこのチャンネルでも、キモリの名前のクモや、\nプテラの名前の翼竜を紹介したわね。",
+   "img": "row:art:252|キモリ;art:142|プテラ",
+   "label": "以前の回で紹介"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日は、まだ紹介していない7つを、\n論文に書かれた名前の理由ごと掘るわよ。",
+   "img": "row:art:25|ピカチュウ;art:144|フリーザー;art:6|リザードン;art:795|フェローチェ",
+   "label": "今日の7つ"
+  },
+  {
+   "type": "title",
+   "sub": "第一層",
+   "t": "メスの生殖器が、ピカチュウの顔",
+   "sec": "第一層　ピカチュウ顔のクモ",
+   "font": "reggae",
+   "x": {
+    "head": "ブラジルの新種のクモ\nメスの生殖器が\nピカチュウの顔に見える",
+    "img": [
+     "web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1",
+     "art:25"
+    ],
+    "bubble": "ほっぺがあるのだ",
+    "who": "z",
+    "post": "ブラジルで見つかったクモに、エピクラティヌス・ピカチュウという学名がついています。2020年の論文に書かれた理由は、メスの生殖器の形がピカチュウの顔に似ているから。同じ論文では、スター・ウォーズのダース・ベイダーの名前のクモも新種になりました。あなたにはピカチュウに見えますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "最初は、さっきのクモ。見つかったのは、\nブラジルの北東部、マラニョン州よ。",
+   "img": "commons:Maranhao in Brazil.svg",
+   "label": "ブラジル・マラニョン州"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2020年に、サンパウロにあるブタンタン研究所の\n2人の研究者が、新種として発表したの。",
+   "img": "commons:Instituto Butantan01.jpg",
+   "label": "ブタンタン研究所（サンパウロ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "体の長さは、5ミリから7ミリほど。\n背中が茶色い、小さなクモよ。",
+   "img": "web:https://zenodo.org/records/4297379/files/figure.png@crop=0,0,0.5,0.5",
+   "label": "エピクラティヌス属のオス",
+   "ety": [
+    "Epicratinus pikachu（エピクラティヌス・ピカチュウ）",
+    "ラテン語の属名 Epicratinus＋pikachu（ピカチュウ）"
+   ]
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でも、どうして生殖器なのだ？\n顔や体の色で決めればいいのだ。",
+   "img": "web:https://zenodo.org/records/4297379/files/figure.png@crop=0,0,0.5,0.5",
+   "label": "エピクラティヌス属のオス"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "クモは、見た目のよく似た種類が多いの。\nだから、生殖器の形で見分けることが多いのよ。",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png",
+   "label": "論文の図（生殖器の形）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "オスは、触肢という頭の先の短い腕に、\n複雑な形の交尾の道具を持っているの。",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0,0.33,0.53",
+   "label": "オスの触肢（交尾の道具）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "メスの生殖器は、その形に合うようにできている。\nだから、形がちがえば別の種類だとわかるのよ。",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1",
+   "label": "メスの生殖器（おなかの下側）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "論文には、体の色よりも、生殖器の図が\nたくさん載っているわ。",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png",
+   "label": "論文の図（生殖器の形）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして名前の理由の欄に、こう書いたの。\nメスの生殖器は、ピカチュウの顔に似ている。",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1",
+   "label": "論文に書かれた名前の理由",
+   "big": "ピカチュウの顔に似ている",
+   "bf": "mincho",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "論文に、まじめに\nそう書いてあるのだ！？",
+   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1|クモのメスの生殖器;art:25|ピカチュウ",
+   "label": "論文に書かれた名前の理由"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "しかも、この論文で新種になったのは11種。\nほかの名前も、なかなかなのよ。",
+   "img": "commons:Instituto Butantan01.jpg",
+   "label": "同じ論文で11種が新種に"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "スター・ウォーズから、アナキン、\nダース・ベイダー、ドゥークー伯爵。",
+   "img": "commons:Instituto Butantan01.jpg",
+   "label": "スター・ウォーズの名前",
+   "say": "スターウォーズから、アナキン、ダースベイダー、ドゥークー伯爵。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ストリートファイターから、ザンギエフと、\nエドモンド本田。ゼルダや、スティッチもいるわ。",
+   "img": "commons:Instituto Butantan01.jpg",
+   "label": "ゲームやアニメの名前",
+   "say": "ストリートファイターから、ザンギエフと、エドモンド本田。ゼルダや、スティッチもいるわ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ちなみに、ピカチュウのクモのメスが\n採れたのは2005年。名前がつくまで15年よ。",
+   "img": "commons:Instituto Butantan01.jpg",
+   "label": "2005年採集→2020年命名"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "名前をつけた人が、\nゲーム好きなのがわかるのだ。",
+   "img": "web:https://zenodo.org/records/4297379/files/figure.png@crop=0,0,0.5,0.5",
+   "label": "エピクラティヌス属のクモ"
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "はねの先が、ピカチュウの耳",
+   "sec": "第二層　ピカチュウのタマムシ",
+   "font": "potta",
+   "x": {
+    "head": "ブラジルのタマムシ\n黄色いはねの先が黒い\nだから名前はピカチュウ",
+    "img": [
+     "web:https://zenodo.org/records/5783183/files/figure.png@crop=0,0,1,0.235",
+     "art:25"
+    ],
+    "bubble": "耳の先なのだ",
+    "who": "z",
+    "post": "ブラジルの海辺で見つかったタマムシの仲間に、ヒペランタ・ピカチュウという学名がついています。黄色い上ばねの先だけが黒く、ピカチュウの耳の先の黒にそっくり。体の長さは約26ミリで、2021年に新種として発表されました。はねを広げた姿、ピカチュウに見えますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ピカチュウの名前の生き物は、ほかにもいるの。\n次は、同じブラジルの甲虫よ。",
+   "img": "commons:Bahia in Brazil.svg",
+   "label": "ブラジル・バイーア州"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "場所は、バイーア州の海辺。\nレスチンガという、砂地の林よ。",
+   "img": "web:https://zenodo.org/records/5783187/files/figure.png@crop=0,0,1,0.44",
+   "label": "海辺の砂地の林（レスチンガ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2019年に採集されて、2021年に新種に。\n名前は、ヒペランタ・ピカチュウ。",
+   "img": "web:https://zenodo.org/records/5783183/files/figure.png@crop=0,0.235,0.52,0.47",
+   "label": "ヒペランタ・ピカチュウ",
+   "ety": [
+    "Hiperantha pikachu（ヒペランタ・ピカチュウ）",
+    "ラテン語の属名 Hiperantha＋pikachu（ピカチュウ）"
+   ],
+   "say": "2019年に採集されて、2021年に新種に。名前は、ヒペランタ、ピカチュウ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "黄色い甲虫なのだ。\nでも、どこがピカチュウなのだ？",
+   "img": "web:https://zenodo.org/records/5783183/files/figure.png@crop=0,0.235,0.52,0.47",
+   "label": "ヒペランタ・ピカチュウ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "はねを広げたところを、見て。\n黄色いはねの先だけが、黒いでしょう？",
+   "img": "web:https://zenodo.org/records/5783183/files/figure.png@crop=0,0,1,0.235",
+   "label": "はねの先だけが黒い",
+   "mark": [
+    0.1,
+    0.12,
+    0.08
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "論文は、黄色い上ばねと、先の黒い帯が\nピカチュウに似ている、と書いたの。",
+   "img": "row:web:https://zenodo.org/records/5783183/files/figure.png@crop=0,0,1,0.235|ヒペランタ・ピカチュウ;art:25|ピカチュウ",
+   "label": "耳の先の黒",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ピカチュウの耳の先も、\n黒いのだ！",
+   "img": "row:web:https://zenodo.org/records/5783183/files/figure.png@crop=0,0,1,0.235|ヒペランタ・ピカチュウ;art:25|ピカチュウ",
+   "label": "耳の先の黒"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "タマムシの仲間で、体の長さは約26ミリ。\n今日の7つの中で、いちばん大きいわ。",
+   "img": "web:https://zenodo.org/records/5783183/files/figure.png@crop=0,0.235,0.52,0.47",
+   "label": "体の長さ 約26ミリ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "近い仲間には、はねが赤い種類もいるの。\n黄色に黒だから、ピカチュウだったのね。",
+   "img": "commons:Hiperantha testacea MHNT.ZOO.2004.0.561.jpg",
+   "label": "同じヒペランタ属の甲虫"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ちなみに、中国の広東省の洞窟には、\n体が黄色いから、ピカチュウと名づけたクモもいるの。",
+   "img": "commons:Guangdong in China (+all claims hatched).svg",
+   "label": "中国・広東省"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そちらは、体の長さが2ミリもない、\nとても小さなクモよ。",
+   "img": "commons:Guangdong in China (+all claims hatched).svg",
+   "label": "体の長さ 2ミリ未満"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "伝説の3羽になった、珍しすぎる甲虫",
+   "sec": "第三層　伝説の鳥の甲虫",
+   "font": "rampart",
+   "x": {
+    "head": "フリーザー、サンダー、ファイヤー\n3種の甲虫の名前の理由は\n「伝説級に珍しいから」",
+    "img": [
+     "row:web:https://zenodo.org/records/15732179/files/figure.png@crop=0.25,0.32,0.5,0.62|フリーザーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.62,0.64,0.95,1|サンダーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.06,0.64,0.36,1|ファイヤーの名"
+    ],
+    "bubble": "標本が1匹なのだ",
+    "who": "z",
+    "post": "オーストラリアの甲虫3種に、フリーザー、サンダー、ファイヤーの英語名がつきました。理由は色や形ではなく、伝説のポケモンのように珍しいから。サンダーとファイヤーは標本が世界に1匹ずつしかありません。どれも1995年ごろに採集され、新種になったのは2020年でした。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "次は、オーストラリア。\n伝説の鳥ポケモン、3羽そろっているの。",
+   "img": "row:art:144|フリーザー;art:145|サンダー;art:146|ファイヤー",
+   "label": "伝説の鳥ポケモン"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アカハネムシという、甲虫の仲間よ。\nヨーロッパの種類は、こんなに赤いの。",
+   "img": "commons:Pyrochroa.coccinea.female.jpg",
+   "label": "アカハネムシの仲間（ヨーロッパ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2020年、オーストラリアにだけいる仲間に、\n新種が3つ見つかったの。",
+   "img": "row:web:https://zenodo.org/records/15732179/files/figure.png@crop=0.25,0.32,0.5,0.62|フリーザーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.62,0.64,0.95,1|サンダーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.06,0.64,0.36,1|ファイヤーの名",
+   "label": "オーストラリアの新種3つ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "名前は、ビンブルム・アーティクノ、ザプドス、\nモルトレス。3羽の英語名よ。",
+   "img": "row:web:https://zenodo.org/records/15732179/files/figure.png@crop=0.25,0.32,0.5,0.62|フリーザーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.62,0.64,0.95,1|サンダーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.06,0.64,0.36,1|ファイヤーの名",
+   "label": "伝説の鳥3羽の英語名",
+   "ety": [
+    "Binburrum articuno / zapdos / moltres",
+    "属名 Binburrum＋Articuno（フリーザー）・Zapdos（サンダー）・Moltres（ファイヤー）"
+   ],
+   "say": "名前は、ビンブルム、アーティクノ、ザプドス、モルトレス。3羽の英語名よ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "冷たい色と、黄色と、炎の色の\n虫なのだ？",
+   "img": "row:web:https://zenodo.org/records/15732179/files/figure.png@crop=0.25,0.32,0.5,0.62|フリーザーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.62,0.64,0.95,1|サンダーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.06,0.64,0.36,1|ファイヤーの名",
+   "label": "3つの新種"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それが、フリーザーの名前の虫は、\n全身こげ茶色なの。",
+   "img": "web:https://zenodo.org/records/15732179/files/figure.png@crop=0.25,0.32,0.5,0.62",
+   "label": "フリーザーの名前の虫は、こげ茶色"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ぜんぜん、氷っぽく\nないのだ。",
+   "img": "web:https://zenodo.org/records/15732179/files/figure.png@crop=0.25,0.32,0.5,0.62",
+   "label": "フリーザーの名前の虫は、こげ茶色"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "名前の理由は、色ではなかったのよ。\n論文には、珍しさ、と書いてあるの。",
+   "img": "row:web:https://zenodo.org/records/15732179/files/figure.png@crop=0.25,0.32,0.5,0.62|フリーザーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.62,0.64,0.95,1|サンダーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.06,0.64,0.36,1|ファイヤーの名",
+   "label": "名前の理由は、珍しさ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "フリーザーの名前の虫は、知られている標本が5匹。\nサンダーとファイヤーは、たった1匹ずつ。",
+   "img": "web:https://zenodo.org/records/15732179/files/figure.png@crop=0.06,0.64,0.36,1",
+   "label": "標本は 5匹・1匹・1匹",
+   "big": "標本が1匹だけ",
+   "bf": "rampart",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "世界に1匹なのだ！？\nそれは、まさに伝説なのだ。",
+   "img": "web:https://zenodo.org/records/15732179/files/figure.png@crop=0.62,0.64,0.95,1",
+   "label": "サンダーの名前の虫（標本は1匹）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "フリーザーの虫は南オーストラリア州、\nほかの2つはクイーンズランド州の山で採れたの。",
+   "img": "row:commons:South Australia locator-MJC.png|南オーストラリア州;commons:Queensland locator-MJC.png|クイーンズランド州",
+   "label": "見つかった場所"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "どれも1995年ごろに、わなにかかった虫よ。\nそれから25年、首都キャンベラの標本庫にあったの。",
+   "img": "commons:CSIRO ScienceImage 11191 Aerial view of the CSIRO Black Mountain laboratories.jpg",
+   "label": "キャンベラの国の標本庫"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "しかも、ビンブルムという属の名前をつけたのは、\n論文を一緒に書いたポロック先生。1995年よ。",
+   "img": "commons:Pyrochroa.coccinea.female.jpg",
+   "label": "1995年 ビンブルム属ができた"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "自分で作った仲間に、\n25年後に伝説の鳥が加わったのだ。",
+   "img": "row:web:https://zenodo.org/records/15732179/files/figure.png@crop=0.25,0.32,0.5,0.62|フリーザーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.62,0.64,0.95,1|サンダーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.06,0.64,0.36,1|ファイヤーの名",
+   "label": "2020年 伝説の鳥の3種"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "名づけたのは、当時オーストラリア国立大学の\n大学院生だった、シャオさんよ。",
+   "img": "commons:CSIRO ScienceImage 11191 Aerial view of the CSIRO Black Mountain laboratories.jpg",
+   "label": "名づけた人"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "子どものころ、ポケモントレーナーに\nあこがれていたんですって。",
+   "img": "row:art:144|フリーザー;art:145|サンダー;art:146|ファイヤー",
+   "label": "子どものころの夢"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのポロック先生いわく、新種の名前は、\nほかのどの種ともちがう必要がある。",
+   "img": "commons:CSIRO ScienceImage 11191 Aerial view of the CSIRO Black Mountain laboratories.jpg",
+   "label": "ポロック先生の言葉"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "だから、誰も思いつかない名前にするのは、\n1つの方法だ、とね。",
+   "img": "commons:CSIRO ScienceImage 11191 Aerial view of the CSIRO Black Mountain laboratories.jpg",
+   "label": "ポロック先生の言葉",
+   "big": "誰も思いつかない名前",
+   "bf": "mincho"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "伝説の鳥の名前の虫なんて、\nたしかに誰も思いつかないのだ。",
+   "img": "row:web:https://zenodo.org/records/15732179/files/figure.png@crop=0.25,0.32,0.5,0.62|フリーザーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.62,0.64,0.95,1|サンダーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.06,0.64,0.36,1|ファイヤーの名",
+   "label": "3つの新種"
+  },
+  {
+   "type": "title",
+   "sub": "第四層",
+   "t": "チリの山にすむ、リザードンのハチ",
+   "sec": "第四層　リザードンのハチ",
+   "font": "fude",
+   "x": {
+    "head": "チリの山にすむハチ\n名前は\nチリコラ・チャリザード",
+    "img": [
+     "web:https://binary.pensoft.net/fig/89303@crop=0.51,0,1,0.27",
+     "art:6"
+    ],
+    "bubble": "リザードンなのだ",
+    "who": "z",
+    "post": "チリの乾いた山にすむハチに、リザードンの英語名をつけたチリコラ・チャリザードがいます。2016年の論文の理由は、このハチが似ている架空の怪物への敬意。同じ論文の新種には、道の急カーブ注意の標識から取った名前もあります。研究者の名前のつけ方、自由すぎませんか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "次は、南米のチリ。ハチの話よ。",
+   "img": "row:commons:Atacama in Chile.svg|アタカマ州;commons:Coquimbo in Chile.svg|コキンボ州",
+   "label": "チリ・アタカマ州とコキンボ州"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アタカマ州とコキンボ州の、乾いた山。\n標高650メートルから2400メートルほどの所よ。",
+   "img": "commons:Elqui valley (48338545916).jpg",
+   "label": "コキンボ州の山（エルキ渓谷）",
+   "say": "アタカマ州と、コキンボ州の、乾いた山。標高650メートルから、2400メートルほどの所よ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2016年、カナダのヨーク大学の大学院生が、\nこのあたりのハチを調べて、8つの新種を発表したの。",
+   "img": "commons:Elqui valley (48338545916).jpg",
+   "label": "2016年に8つの新種"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その1つが、チリコラ・チャリザード。\nチャリザードは、リザードンの英語名よ。",
+   "img": "row:web:https://binary.pensoft.net/fig/89303@crop=0,0,0.49,0.27|チリコラ・チャリザード;art:6|リザードン",
+   "label": "リザードンの英語名",
+   "ety": [
+    "Chilicola charizard（チリコラ・チャリザード）",
+    "属名 Chilicola＋Charizard（リザードンの英語名）"
+   ],
+   "say": "その1つが、チリコラ、チャリザード。チャリザードは、リザードンの英語名よ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ハチなのに、炎の\nリザードンなのだ？",
+   "img": "web:https://binary.pensoft.net/fig/89303@crop=0,0,0.49,0.27",
+   "label": "チリコラ・チャリザード（オス）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "論文には、このハチが似ている、\n架空の怪物への敬意、と書いてあるの。",
+   "img": "web:https://binary.pensoft.net/fig/89303@crop=0.51,0,1,0.27",
+   "label": "オスの顔（論文の図）",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "顔を正面から見ると、細長くて、\n黄色い模様があるわね。",
+   "img": "web:https://binary.pensoft.net/fig/89303@crop=0.51,0,1,0.27",
+   "label": "オスの顔（論文の図）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "リザードンの顔の、\nあごのあたりに見えなくもないのだ。",
+   "img": "row:web:https://binary.pensoft.net/fig/89303@crop=0.51,0,1,0.27|ハチの顔;art:6|リザードン",
+   "label": "ハチの顔とリザードン"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "体の長さは、約6ミリ。\n巣の内側を、セロハンのような膜で塗るハチなの。",
+   "img": "web:https://binary.pensoft.net/fig/89303@crop=0,0,0.49,0.27",
+   "label": "体の長さ 約6ミリ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "同じ論文の新種の名前も、面白いのよ。\n1つは、道路の急カーブ注意の標識から取ったの。",
+   "img": "commons:Elqui valley (48338545916).jpg",
+   "label": "急カーブ注意から取った名前"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "標識から名前を\n取ってもいいのだ！？",
+   "img": "commons:Elqui valley (48338545916).jpg",
+   "label": "急カーブ注意から取った名前"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ほかの種と重ならなければ、いいのよ。\n見つけた場所へ向かう道にあった標識なんですって。",
+   "img": "commons:Elqui valley (48338545916).jpg",
+   "label": "名前の由来は自由"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ほかにも、南米のラクダの仲間、グアナコ。\n現地のケチュア語で、川を表す、マユ。",
+   "img": "commons:Elqui valley (48338545916).jpg",
+   "label": "グアナコ・マユ（ケチュア語で川）"
+  },
+  {
+   "type": "title",
+   "sub": "第五層",
+   "t": "フェローチェとドラメシヤ",
+   "sec": "第五層　フェローチェとドラメシヤ",
+   "font": "train",
+   "x": {
+    "head": "シンガポールの新種のゴキブリ\n名前はフェローチェ\n細長い脚と長い触角",
+    "img": [
+     "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png"
+    ],
+    "bubble": "そっくりなのだ",
+    "who": "z",
+    "post": "シンガポールの森で見つかったゴキブリに、ノクティコラ・フェロモサという学名がついています。フェロモサはフェローチェの英語名。長い触角と細い脚が似ていて、2023年に新種として発表されました。名づけた研究者は、自分を虫取り少年と呼んでいます。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "次は、ゴキブリに似たポケモン。\nウルトラビーストのフェローチェよ。",
+   "img": "art:795",
+   "label": "フェローチェ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "シンガポールの真ん中にある森、\nブキ・ティマ自然保護区で見つかったの。",
+   "img": "row:commons:Singapore in its region.svg|シンガポール;commons:Forest path, Bukit Timah Nature Reserve, Singapore 01.jpg|ブキ・ティマ自然保護区",
+   "label": "シンガポール",
+   "say": "シンガポールの真ん中にある森、ブキティマ自然保護区で見つかったの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2016年の調査で採れたゴキブリが、\nよく調べると、新種だったの。",
+   "img": "commons:Forest path, Bukit Timah Nature Reserve, Singapore 01.jpg",
+   "label": "2016年の調査"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ボルネオ島の種類とそっくりだったから、\nオスの生殖器を解剖して、ちがいを確かめたのよ。",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png@crop=0.37,0.18,0.98,0.76",
+   "label": "ノクティコラ・フェロモサ（オス）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この仲間のゴキブリは、洞窟で暮らす種類が多いの。\nでもこの種類は森にすんで、はねも長いのよ。",
+   "img": "commons:Forest path, Bukit Timah Nature Reserve, Singapore 01.jpg",
+   "label": "森にすむ、はねの長い種類"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "また生殖器なのだ。\n虫の見分けには大事なのだ。",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png@crop=0.37,0.18,0.98,0.76",
+   "label": "ノクティコラ・フェロモサ（オス）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2023年に発表された名前は、\nノクティコラ・フェロモサ。",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png",
+   "label": "ノクティコラ・フェロモサ",
+   "ety": [
+    "Nocticola pheromosa（ノクティコラ・フェロモサ）",
+    "属名 Nocticola＋Pheromosa（フェローチェの英語名）"
+   ],
+   "say": "2023年に発表された名前は、ノクティコラ、フェロモサ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "長い触角、細長い脚、うすい色。\nそこが、フェローチェに似ているんですって。",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png",
+   "label": "フェローチェと実物",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "並べると、触角の長さが\nそっくりなのだ。",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png",
+   "label": "フェローチェと実物"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "名づけた研究者は、記事にこう書いたの。\nこの虫取り少年の、ポケモンの旅は終わらない。",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png",
+   "label": "名づけた研究者の言葉",
+   "big": "虫取り少年の旅は終わらない",
+   "bf": "mincho"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "見つかっているのは、まだオスだけ。\nメスを探すのが、次の目標なんですって。",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png@crop=0.37,0.18,0.98,0.76",
+   "label": "メスはまだ見つかっていない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "次は、中国の雲南省。\n熱帯の森が広がる、シーサンパンナよ。",
+   "img": "row:commons:Yunnan in China (+all claims hatched).svg|中国・雲南省;commons:20251225 Tropical rainforest in the Xishuangbanna Tropical Botanical Garden, Chinese Academy of Sciences.jpg|シーサンパンナの森",
+   "label": "中国・雲南省シーサンパンナ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2022年、ここのカニグモの新種に、\nドラメシヤの名前がついたの。",
+   "img": "web:https://binary.pensoft.net/fig/641944@crop=0,0.37,1,1",
+   "label": "フリナラクネ・ドリーピー（メス）",
+   "ety": [
+    "Phrynarachne dreepy（フリナラクネ・ドリーピー）",
+    "属名 Phrynarachne＋Dreepy（ドラメシヤの英語名）"
+   ]
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ドラメシヤって、\nどんなポケモンなのだ？",
+   "img": "art:885",
+   "label": "ドラメシヤ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ドラパルトの角に入って、\n勢いよく飛ばされる小さなドラゴンよ。",
+   "img": "row:art:885|ドラメシヤ;art:887|ドラパルト",
+   "label": "ドラメシヤとドラパルト"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "論文の理由は、ドラメシヤの三角の頭が、\nこのクモのおなかの形を思い出させるから。",
+   "img": "row:web:https://binary.pensoft.net/fig/641944@crop=0,0.37,1,1|クモのおなか;art:885|ドラメシヤの頭",
+   "label": "三角の形",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "メスは体の長さが約8ミリで、生きているときは\n緑色。オスは2ミリほどしかないの。",
+   "img": "row:web:https://binary.pensoft.net/fig/641944@crop=0,0.37,1,1|メス（約8ミリ）;web:https://binary.pensoft.net/fig/641944@crop=0,0,1,0.37|オス（約2ミリ）",
+   "label": "メスとオス"
+  },
+  {
+   "type": "title",
+   "sub": "最深層",
+   "t": "ミニリュウの名前の寄生虫？",
+   "sec": "最深層　ミニリュウの寄生虫",
+   "font": "mincho",
+   "x": {
+    "head": "カメの寄生虫\nヘドルリス・ドラティニ\n論文にポケモンの文字はない",
+    "img": [
+     "commons:Hydromedusa tectifera.jpg",
+     "art:147"
+    ],
+    "bubble": "なぞなのだ",
+    "who": "z",
+    "post": "アルゼンチンのカメに寄生する線虫に、ヘドルリス・ドラティニという学名がついています。ドラティニはミニリュウの英語名と同じつづり。でも論文の説明は、ドラゴンと小さいを組み合わせた、だけで、ポケモンには一言も触れていません。ミニリュウの英語名の成り立ちも同じです。偶然だと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "最後に、なぞの1つを。\nアルゼンチンの、ブエノスアイレス州の川よ。",
+   "img": "commons:Buenos Aires Province in Argentina.svg",
+   "label": "アルゼンチン・ブエノスアイレス州"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ここにすむ、首の長いカメの体の中に、\n寄生する虫がいるの。",
+   "img": "commons:Hydromedusa tectifera.jpg",
+   "label": "首の長いカメ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "細長い糸のような虫、線虫の仲間で、\nメスでも体の長さは1センチほど。",
+   "img": "commons:Hydromedusa tectifera.jpg",
+   "label": "カメに寄生する線虫"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この虫は、まず川のヨコエビという小さな生き物に\n入って、それをカメが食べると、うつるの。",
+   "img": "commons:Hydromedusa tectifera.jpg",
+   "label": "ヨコエビ → カメ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この仲間の寄生虫で、その道のりを\n初めて確かめた論文でもあるのよ。",
+   "img": "commons:Hydromedusa tectifera.jpg",
+   "label": "うつる道のりを初めて確かめた"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2020年に発表された名前は、\nヘドルリス・ドラティニ。",
+   "img": "art:147",
+   "label": "ヘドルリス・ドラティニ",
+   "say": "2020年に発表された名前は、ヘドルリス、ドラティニ。"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ドラティニって、\nミニリュウの英語名なのだ！",
+   "img": "art:147",
+   "label": "ミニリュウ（Dratini）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そうなの。つづりもまったく同じ。\nでも、論文にポケモンの文字は1つもないの。",
+   "img": "commons:Hydromedusa tectifera.jpg",
+   "label": "論文にポケモンの文字はない",
+   "big": "ポケモンの文字はない",
+   "bf": "mincho"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "名前の理由は、2つの言葉の組み合わせ。\nドラは、ドラゴン。ティニは、小さい。",
+   "img": "art:147",
+   "label": "論文に書かれた名前の理由",
+   "ety": [
+    "Hedruris dratini（ヘドルリス・ドラティニ）",
+    "dra＝英語 dragon（ドラゴン）＋tini＝英語 tiny（小さい）"
+   ]
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ミニリュウの英語名も、\nドラゴンと、小さいなのだ？",
+   "img": "art:147",
+   "label": "ミニリュウの英語名"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう言われているわね。小さなドラゴン。\nミニリュウという日本語の名前と同じ意味よ。",
+   "img": "art:147",
+   "label": "ミニ＋リュウ＝小さな竜",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "学名は、由来の説明が短くてもいいの。\nポケモンが元かは、名づけた人しか知らないのよ。",
+   "img": "commons:Hydromedusa tectifera.jpg",
+   "label": "由来は書いた人だけが知っている"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "名前の理由を、全部は書かない\nこともあるのだ。",
+   "img": "commons:Hydromedusa tectifera.jpg",
+   "label": "カメに寄生する線虫"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "今日の答え。ピカチュウの顔の生殖器は、\n種を見分けるための、大事な手がかりだった。",
+   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1|クモのメスの生殖器;art:25|ピカチュウ",
+   "sec": "まとめ",
+   "label": "クモのメスの生殖器とピカチュウ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その大事な場所に、研究者が\nピカチュウを見つけた、というわけね。",
+   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0,0.56,0.335,1|クモのメスの生殖器;art:25|ピカチュウ",
+   "label": "ピカチュウの顔に見える"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ボクの虫も、何かのポケモンに\n似ていないか、よく見てみるのだ。",
+   "img": "row:web:https://zenodo.org/records/15732179/files/figure.png@crop=0.25,0.32,0.5,0.62|フリーザーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.62,0.64,0.95,1|サンダーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.06,0.64,0.36,1|ファイヤーの名",
+   "label": "ポケモンの名前の虫"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "あなたなら、どのポケモンの名前を\n新種につけたい？",
+   "img": "row:art:25|ピカチュウ;art:144|フリーザー;art:6|リザードン;art:795|フェローチェ",
+   "label": "あなたなら？"
+  },
+  {
+   "type": "title",
+   "sub": "おまけ",
+   "t": "今日のポケモンの英語名",
+   "sec": "今日のポケモンの英語名",
+   "font": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "今日の英語名は、甲虫になった\n伝説の鳥の3羽よ。",
+   "img": "row:art:144|フリーザー;art:145|サンダー;art:146|ファイヤー",
+   "label": "伝説の鳥ポケモン",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "まず、フリーザー。\nアーティクノ。",
+   "img": "art:144",
+   "label": "Articuno（アーティクノ）",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "arcticは、北極の。unoは、スペイン語で1。\n3羽の1羽目、という意味ね。",
+   "img": "art:144",
+   "label": "Articuno（アーティクノ）",
+   "lf": "hachi",
+   "ety": [
+    "Articuno（アーティクノ）",
+    "英語　arctic（北極の）＋スペイン語　uno（1）"
+   ],
+   "say": "アークティックは、北極の。ウノは、スペイン語でいち。3羽の、1羽目、という意味ね。"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "次は、サンダー。\nザプドス。",
+   "img": "art:145",
+   "label": "Zapdos（ザプドス）",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "zapは、電気がバチッと走ること。\ndosは、スペイン語で2よ。",
+   "img": "art:145",
+   "label": "Zapdos（ザプドス）",
+   "lf": "hachi",
+   "ety": [
+    "Zapdos（ザプドス）",
+    "英語　zap（電気がバチッと走る）＋スペイン語　dos（2）"
+   ],
+   "say": "ザップは、電気がバチッと走ること。ドスは、スペイン語で、に、よ。"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "最後は、ファイヤー。\nモルトレス。",
+   "img": "art:146",
+   "label": "Moltres（モルトレス）",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "moltenは、とけた。tresは、スペイン語で3。\n3羽の数が、名前に入っているの。",
+   "img": "art:146",
+   "label": "Moltres（モルトレス）",
+   "lf": "hachi",
+   "ety": [
+    "Moltres（モルトレス）",
+    "英語　molten（とけた）＋スペイン語　tres（3）"
+   ],
+   "say": "モルテンは、とけた。トレスは、スペイン語で、さん。3羽の数が、名前に入っているの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日出てきたポケモンの英語名は、\n英単語帳サイト「もんすぺ！」でも調べられるわ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "もんすぺ！には、ポケモンの雑学のコラムもあるの。\n動画の続きみたいに読めるわよ。",
+   "img": "site:",
+   "label": "もんすぺ！の雑学コラム"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の採掘はここまでなのだ。\nチャンネル登録もよろしくなのだ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "type": "ed"
+  }
+ ]
+}
