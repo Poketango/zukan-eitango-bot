@@ -671,7 +671,7 @@
    "x": {
     "head": "シンガポールの新種のゴキブリ\n名前はフェローチェ\n細長い脚と長い触角",
     "img": [
-     "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png"
+     "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png^art:795"
     ],
     "bubble": "そっくりなのだ",
     "who": "z",
@@ -711,7 +711,7 @@
    "w": "m",
    "face": "normal",
    "t": "ボルネオ島の種類とそっくりだったから、\nオスの生殖器を解剖して、ちがいを確かめたのよ。",
-   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png@crop=0.37,0.18,0.98,0.76",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png@crop=0.37,0.18,0.98,0.76^art:795",
    "label": "ノクティコラ・フェロモサ（オス）"
   },
   {
@@ -725,14 +725,14 @@
    "w": "z",
    "face": "think",
    "t": "また生殖器なのだ。\n虫の見分けには大事なのだ。",
-   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png@crop=0.37,0.18,0.98,0.76",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png@crop=0.37,0.18,0.98,0.76^art:795",
    "label": "ノクティコラ・フェロモサ（オス）"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "2023年に発表された名前は、\nノクティコラ・フェロモサ。",
-   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png^art:795",
    "label": "ノクティコラ・フェロモサ",
    "ety": [
     "Nocticola pheromosa（ノクティコラ・フェロモサ）",
@@ -744,7 +744,7 @@
    "w": "m",
    "face": "normal",
    "t": "長い触角、細長い脚、うすい色。\nそこが、フェローチェに似ているんですって。",
-   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png^art:795",
    "label": "フェローチェと実物",
    "ans": true
   },
@@ -752,14 +752,14 @@
    "w": "z",
    "face": "happy",
    "t": "並べると、触角の長さが\nそっくりなのだ。",
-   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png^art:795",
    "label": "フェローチェと実物"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "名づけた研究者は、記事にこう書いたの。\nこの虫取り少年の、ポケモンの旅は終わらない。",
-   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png^art:795",
    "label": "名づけた研究者の言葉",
    "big": "虫取り少年の旅は終わらない",
    "bf": "mincho"
@@ -768,7 +768,7 @@
    "w": "m",
    "face": "normal",
    "t": "見つかっているのは、まだオスだけ。\nメスを探すのが、次の目標なんですって。",
-   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png@crop=0.37,0.18,0.98,0.76",
+   "img": "web:https://www.science.nus.edu.sg/wp-content/uploads/sites/11/2024/01/Nocticola-pheromosa-FB.png@crop=0.37,0.18,0.98,0.76^art:795",
    "label": "メスはまだ見つかっていない"
   },
   {
