@@ -729,6 +729,13 @@ def thumbnail_v2(th, out_dir):
         sh = Image.new("RGBA", fr.size, (0, 0, 0, 0)); sh.putalpha(fr.getchannel("A").point(lambda v: int(v * 0.6))); sh = sh.filter(ImageFilter.GaussianBlur(14))
         x_ = W - fr.width - 36; y_ = max(10, (H - fr.height) // 2 + 20)
         im.alpha_composite(sh, (x_ + 12, y_ + 14)); im.alpha_composite(fr, (x_, y_))
+    st = th.get("sticker")                         # 写真に重ねるポケモンなど {"img", "h", "x", "y"}（2026-11-24。題材がポケモンだと一目でわかるように）
+    sm = load(st["img"]) if st else None
+    if sm is not None:
+        k = st.get("h", 300) / sm.height; sm = sm.resize((int(sm.width * k), int(sm.height * k)), Image.LANCZOS)
+        sx, sy = min(st.get("x", 520), W - sm.width), min(st.get("y", 400), H - sm.height)
+        sh = Image.new("RGBA", sm.size, (0, 0, 0, 0)); sh.putalpha(sm.getchannel("A").point(lambda v: int(v * 0.7))); sh = sh.filter(ImageFilter.GaussianBlur(10))
+        im.alpha_composite(sh, (max(0, min(sx + 8, W - sm.width)), max(0, min(sy + 8, H - sm.height)))); im.alpha_composite(sm, (sx, sy))
     ch = th.get("chara", ["z", "shock"])           # 立ち絵は必須ではない（2026-11-17）。"chara": null で出さない
     if ch:
         t_ = SS.tachie(ch[0], False, 520 if photo is None else 330, ch[1] if len(ch) > 1 else "surprise")
