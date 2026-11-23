@@ -19,7 +19,7 @@
   "pre_size": 62,
   "back": "commons:20251225 Tropical rainforest in the Xishuangbanna Tropical Botanical Garden, Chinese Academy of Sciences.jpg",
   "photo": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1",
-  "photo_label": "メスの生殖器（顕微鏡）",
+  "photo_label": "メスの生殖器",
   "chara": null,
   "big_w": 600,
   "sticker": {
@@ -345,6 +345,13 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "標本は、オスが3匹、メスが2匹の、\nあわせて5匹よ。",
+   "img": "web:https://zenodo.org/records/5783183/files/figure.png@crop=0,0.235,0.52,0.47",
+   "label": "標本は5匹"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "近い仲間には、はねが赤い種類もいるの。\n黄色に黒だから、ピカチュウだったのね。",
    "img": "web:https://zenodo.org/records/5783183/files/figure.png@crop=0,0,1,0.235",
    "label": "黄色に黒"
@@ -464,6 +471,13 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "サンダーとファイヤーの名前の虫は、\n体の長さが、どちらも4ミリほどよ。",
+   "img": "row:web:https://zenodo.org/records/15732179/files/figure.png@crop=0.62,0.64,0.95,1|サンダーの名;web:https://zenodo.org/records/15732179/files/figure.png@crop=0.06,0.64,0.36,1|ファイヤーの名",
+   "label": "体の長さ 約4ミリ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "フリーザーの虫は南オーストラリア州、\nほかの2つはクイーンズランド州の山で採れたの。",
    "img": "row:commons:South Australia locator-MJC.png|南オーストラリア州;commons:Queensland locator-MJC.png|クイーンズランド州",
    "label": "見つかった場所"
@@ -547,6 +561,13 @@
    "w": "m",
    "face": "normal",
    "t": "次は、南米のチリ。ハチの話よ。",
+   "img": "row:commons:Atacama in Chile.svg|アタカマ州;commons:Coquimbo in Chile.svg|コキンボ州",
+   "label": "チリ・アタカマ州とコキンボ州"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "チリは、南米の西側に、\n南北に細長くのびる国ね。",
    "img": "row:commons:Atacama in Chile.svg|アタカマ州;commons:Coquimbo in Chile.svg|コキンボ州",
    "label": "チリ・アタカマ州とコキンボ州"
   },
@@ -675,6 +696,13 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "シンガポールは、マレー半島の南の端にある、\n小さな島国よ。",
+   "img": "commons:Singapore in its region.svg",
+   "label": "シンガポール"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "2016年の調査で採れたゴキブリが、\nよく調べると、新種だったの。",
    "img": "commons:Forest path, Bukit Timah Nature Reserve, Singapore 01.jpg",
    "label": "2016年の調査"
@@ -753,6 +781,13 @@
   {
    "w": "m",
    "face": "normal",
+   "t": "シーサンパンナは、ラオスやミャンマーとの\n国境に近い、中国の南の端よ。",
+   "img": "row:commons:Yunnan in China (+all claims hatched).svg|中国・雲南省;commons:20251225 Tropical rainforest in the Xishuangbanna Tropical Botanical Garden, Chinese Academy of Sciences.jpg|シーサンパンナの森",
+   "label": "中国・雲南省シーサンパンナ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
    "t": "2022年、ここのカニグモの新種に、\nドラメシヤの名前がついたの。",
    "img": "web:https://binary.pensoft.net/fig/641944@crop=0,0.37,1,1",
    "label": "フリナラクネ・ドリーピー（メス）",
@@ -825,21 +860,21 @@
    "w": "m",
    "face": "normal",
    "t": "細長い糸のような虫、線虫の仲間で、\nメスでも体の長さは1センチほど。",
-   "img": "commons:Hydromedusa tectifera.jpg",
-   "label": "カメに寄生する線虫"
+   "img": "commons:Hedruris chandleri (YPM IZ 095347).jpeg",
+   "label": "同じ属の線虫（別の種類）"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "この虫は、まず川のヨコエビという小さな生き物に\n入って、それをカメが食べると、うつるの。",
-   "img": "commons:Hydromedusa tectifera.jpg",
-   "label": "ヨコエビ → カメ"
+   "img": "commons:Hyalella azteca.jpg",
+   "label": "ヨコエビの仲間 → カメ"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "この仲間の寄生虫で、その道のりを\n初めて確かめた論文でもあるのよ。",
-   "img": "commons:Hydromedusa tectifera.jpg",
+   "img": "commons:Hydromedusa tectifera neck Corse 2012.jpg",
    "label": "うつる道のりを初めて確かめた"
   },
   {
@@ -896,7 +931,7 @@
    "w": "m",
    "face": "normal",
    "t": "学名は、由来の説明が短くてもいいの。\nポケモンが元かは、名づけた人しか知らないのよ。",
-   "img": "commons:Hydromedusa tectifera.jpg",
+   "img": "commons:Hedruris chandleri (YPM IZ 095347).jpeg",
    "label": "由来は書いた人だけが知っている"
   },
   {
