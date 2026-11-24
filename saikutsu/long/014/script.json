@@ -1,0 +1,1145 @@
+{
+ "no": 14,
+ "title": "ポケモンGOの動画を上げたロシアの男が、有罪になった。",
+ "neta": "教会でポケモンGOをしたブロガーに有罪判決",
+ "thumb": {
+  "layout": "v2",
+  "pre": "ロシアの教会で",
+  "big": [
+   "ポケGO動画",
+   "有罪判決"
+  ],
+  "hl": 1,
+  "hl_color": "red",
+  "fonts": [
+   "mincho",
+   "mincho"
+  ],
+  "pre_font": "maru",
+  "pre_size": 66,
+  "back": "commons:Вознесенский-Храм-и-Храм-на-Крови-Екатеринбург.jpg",
+  "photo": "commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg",
+  "photo_label": "教会でポケモンGO",
+  "chara": null,
+  "big_w": 640
+ },
+ "lines": [
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2017年の5月、ロシアの裁判所で、\n22歳の若者に判決が出たの。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "sec": "ポケモン雑学採掘場",
+   "label": "エカテリンブルク（ロシア）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "22歳なのだ？\nいったい何をしたのだ？",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "エカテリンブルク（ロシア）"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "教会の中でポケモンGOをして、\nその動画をネットに上げたの。",
+   "img": "row:commons:Church on the Blood, Yekaterinburg 05.jpg|血の上の教会;commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg|ポケモンGO",
+   "label": "教会でポケモンGO"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "判決は、禁錮3年6か月。\n執行猶予つきだったけれどね。",
+   "img": "commons:Church on the Blood, Yekaterinburg 05.jpg",
+   "label": "禁錮3年6か月（執行猶予つき）",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "ポケモンGOの動画で、\n有罪になったのだ！？",
+   "img": "row:commons:Church on the Blood, Yekaterinburg 05.jpg|血の上の教会;commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg|ポケモンGO",
+   "label": "教会でポケモンGO"
+  },
+  {
+   "type": "op",
+   "w": "m",
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘場。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学さいくつじょう。"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "この坑道の奥だと、スマホの電波が\n届かなくて、ポケモンGOができないのだ。",
+   "img": "commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg",
+   "sec": "導入　遊んではいけない場所",
+   "label": "2016年7月 配信開始"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "坑道は危ないから、遊ばなくていいの。\n遊ぶ場所は、配信のときから問題だったのよ。",
+   "img": "commons:Callinstraße Ecke Hahnenstraße in Hannover, Pokémon Go-Spielende (77955).jpg",
+   "label": "ポケモンGOを遊ぶ人たち"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2016年の7月に配信されると、\nいろいろな国で、人が集まりすぎたの。",
+   "img": "commons:Callinstraße Ecke Hahnenstraße in Hannover, Pokémon Go-Spielende (77955).jpg",
+   "label": "ポケモンGOを遊ぶ人たち"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "日本でも、公園に人があふれて\nニュースになっていたのだ。",
+   "img": "commons:Callinstraße Ecke Hahnenstraße in Hannover, Pokémon Go-Spielende (77955).jpg",
+   "label": "ポケモンGOを遊ぶ人たち"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ロシアでは、まだ正式に\n配信されていなかったの。",
+   "img": "commons:Sverdlovsk in Russia.svg",
+   "label": "ロシアは正式配信なし"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それでも、ほかの国のアプリを入れる\nなどして、遊ぶ人が増えていたのね。",
+   "img": "commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg",
+   "label": "正式配信の前から遊ばれていた"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "大統領の報道官、ペスコフさんは、\n記者にこう答えているわ。",
+   "img": "commons:Dmitry Peskov portrait (cropped).jpg",
+   "label": "ペスコフ大統領報道官"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンは、クレムリンを\n訪れる理由にはならない。",
+   "img": "commons:View to Moscow river from Bolshoy Moskvoretsky Bridge.jpg",
+   "label": "クレムリン（モスクワ）",
+   "big": "理由にはならない",
+   "bf": "mincho"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "クレムリンまで、ポケモン探しの\n場所になりそうだったのだ。",
+   "img": "commons:View to Moscow river from Bolshoy Moskvoretsky Bridge.jpg",
+   "label": "クレムリン（モスクワ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そんな中で、ある若者の動画が、\n国じゅうの騒ぎになったの。",
+   "img": "commons:Church on the Blood, Yekaterinburg 05.jpg",
+   "label": "血の上の教会"
+  },
+  {
+   "type": "title",
+   "sub": "本日の採掘",
+   "t": "ポケモンGOの動画で、なぜ有罪になった？",
+   "font": "mincho"
+  },
+  {
+   "type": "title",
+   "sub": "第一層",
+   "t": "テレビの警告",
+   "sec": "第一層　テレビの警告",
+   "font": "mincho",
+   "x": {
+    "head": "ロシアの国営テレビは\n教会でポケモンを捕まえると\n最長3年の禁錮と警告した",
+    "img": [
+     "commons:Church on the Blood, Yekaterinburg 05.jpg"
+    ],
+    "bubble": "3年なのだ！？",
+    "who": "z",
+    "post": "2016年7月、ロシアの国営テレビのニュース局は、ポケモンGOの特集で、教会でポケモンを捕まえると最長3年の禁錮になりうると警告しました。これを見たエカテリンブルクの21歳のブロガーは、確かめると言って教会に入り、その動画を公開します。あなたなら、この警告を本気にしますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2016年7月15日。ロシアの国営の\nニュース局、ロシア24が、特集を流したの。",
+   "img": "commons:View to Moscow river from Bolshoy Moskvoretsky Bridge.jpg",
+   "label": "7月15日 国営テレビ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンGOを遊ぶと、どんな罪に\nなりうるか、という特集よ。",
+   "img": "commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg",
+   "label": "ポケモンGOと法律"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "人の家に入って遊ぶと、罰金。\n国境のそばで遊ぶと、禁錮2年まで。",
+   "img": "commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg",
+   "label": "人の家＝罰金　国境＝最長2年"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "選挙の投票所で遊んでも、\n罰せられるかもしれない、と言っていたわ。",
+   "img": "commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg",
+   "label": "投票所でも罰せられる？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして、教会で遊ぶと、\n最長3年の禁錮になりうる、と。",
+   "img": "commons:Church on the Blood, Yekaterinburg 09.jpg",
+   "label": "教会＝最長3年の禁錮",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "教会でスマホをいじるだけで、\n3年なのだ！？",
+   "img": "commons:Church on the Blood, Yekaterinburg 09.jpg",
+   "label": "教会＝最長3年の禁錮"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "スマホを持っているだけで\n捕まるなんて、大げさなのだ。",
+   "img": "commons:Church on the Blood, Yekaterinburg 09.jpg",
+   "label": "教会＝最長3年の禁錮"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう思ったのは、ずんだもんだけじゃないわ。\nこの特集を、ナンセンスだ、と言った若者がいたの。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "エカテリンブルク"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ルスラン・ソコロフスキー。\n当時21歳の、動画投稿者よ。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "ソコロフスキー（21歳）",
+   "say": "ルスラン、ソコロフスキー。当時21歳の、動画投稿者よ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "住んでいたのは、ロシアの真ん中あたり、\nウラル山脈の東の大きな町。",
+   "img": "commons:Sverdlovsk in Russia.svg",
+   "mark": [
+    0.265,
+    0.55,
+    0.05
+   ],
+   "label": "エカテリンブルクの場所"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "エカテリンブルクという町ね。\nモスクワから東へ、千キロ以上も離れているわ。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "エカテリンブルク",
+   "say": "エカテリンブルクという町ね。モスクワから東へ、せんキロ以上も離れているわ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ナンセンスと言うだけなら、\n何も起きないのだ。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "エカテリンブルク"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "彼は、それを自分で確かめることにしたの。\n教会で本当にポケモンGOをして、動画にするとね。",
+   "img": "row:commons:Church on the Blood, Yekaterinburg 05.jpg|血の上の教会;commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg|ポケモンGO",
+   "label": "自分で確かめる"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "行き先に選んだのは、町で\nいちばん有名な教会だったの。",
+   "img": "commons:Екатеринбург 0002 Храм-На-Крови 2.jpg",
+   "label": "血の上の教会（エカテリンブルク）"
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "血の上の教会",
+   "sec": "第二層　血の上の教会",
+   "font": "mincho",
+   "x": {
+    "head": "ポケモンGOの動画が撮られた教会は\n皇帝一家が銃殺された\n屋敷の跡に建っている",
+    "img": [
+     "commons:Екатеринбург 0002 Храм-На-Крови 2.jpg",
+     "commons:Ipatiev House in 1918.jpg"
+    ],
+    "bubble": "重い場所なのだ",
+    "who": "z",
+    "post": "ポケモンGOの動画が撮られたロシアの「血の上の教会」は、1918年に最後の皇帝ニコライ2世の一家が銃殺されたイパチェフ館の跡に、2003年に建てられました。館は1977年、のちの大統領エリツィンが州の党の責任者だったときに取り壊されています。教会の名前の意味、知っていましたか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ロシアで信じる人がいちばん多い宗教は、\nキリスト教の一つの、ロシア正教よ。",
+   "img": "commons:Church on the Blood, Yekaterinburg 02.jpg",
+   "label": "ロシア正教の教会"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "金色の玉ねぎのような屋根が、\nロシア正教の教会の目印ね。",
+   "img": "commons:Church on the Blood, Yekaterinburg 02.jpg",
+   "label": "玉ねぎ形の屋根"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この教会の名前は、\n血の上の教会。",
+   "img": "commons:Екатеринбург 0002 Храм-На-Крови 2.jpg",
+   "label": "血の上の教会",
+   "big": "血の上の教会",
+   "bf": "mincho"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "名前が怖すぎるのだ。\nどんな血なのだ？",
+   "img": "commons:Екатеринбург 0002 Храм-На-Крови 2.jpg",
+   "label": "血の上の教会"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "答えは、この教会が建つ前の、\nこの場所にあるわ。",
+   "img": "commons:Вознесенский-Храм-и-Храм-на-Крови-Екатеринбург.jpg",
+   "label": "教会が建つ前は？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ここには、イパチェフ館という、\n商人のお屋敷が建っていたの。",
+   "img": "commons:Ipatiev House in 1918.jpg",
+   "label": "イパチェフ館（1918年）",
+   "ans": true,
+   "say": "ここには、イパチェフかん、という、商人のお屋敷が建っていたの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1917年の革命で、ロシアの皇帝は\n位を追われたの。",
+   "img": "commons:Валентин А. Серов - Портрет Николая II (Третьяковская галерея).jpg",
+   "label": "最後の皇帝 ニコライ2世"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "最後の皇帝、ニコライ2世と、\n妻と、5人の子どもたちね。",
+   "img": "commons:Russian Imperial Family 1913.jpg",
+   "label": "ニコライ2世の一家（1913年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "一家は捕らえられて、\nこの屋敷に閉じこめられたの。",
+   "img": "commons:Ipatiev House in 1918.jpg",
+   "label": "イパチェフ館（1918年）"
+  },
+  {
+   "w": "m",
+   "face": "sad",
+   "t": "そして1918年7月17日の夜明け前、\n地下室で、一家は銃殺されたの。",
+   "img": "commons:Ipatyev house basement.jpg",
+   "label": "イパチェフ館の地下室",
+   "kana": "ソシテ/セ'ンキュウヒャク/ジュウハ'チネン/シチガツ/ジュウシチ'ニチノ/ヨア'ケマエ、チカ'シツデ/イ'ッカワ/ジュウサツサレタノ'"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "子どもたちもなのだ……\nだから、血の上なのだ。",
+   "img": "commons:Ipatyev house basement.jpg",
+   "label": "イパチェフ館の地下室"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "屋敷は、そのあとも残っていたけれど、\n1977年に取り壊されたの。",
+   "img": "commons:Ipatiev House in 1930.jpg",
+   "label": "イパチェフ館（1930年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "取り壊しの指揮をとったのは、\n当時この州の、共産党のトップだった人。",
+   "img": "commons:Ipatiev House in 1930.jpg",
+   "label": "1977年 取り壊し"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "のちに、ロシアの最初の大統領になる、\nボリス・エリツィンよ。",
+   "img": "commons:View to Moscow river from Bolshoy Moskvoretsky Bridge.jpg",
+   "label": "指揮をとったのは エリツィン",
+   "say": "のちに、ロシアの最初の大統領になる、ボリス、エリツィンよ。"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "あの大統領が、\n関わっていたのだ！？",
+   "img": "commons:View to Moscow river from Bolshoy Moskvoretsky Bridge.jpg",
+   "label": "指揮をとったのは エリツィン"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ソ連が終わると、ロシア正教会は\n一家を聖人として認めたの。",
+   "img": "commons:Вознесенский-Храм-и-Храм-на-Крови-Екатеринбург.jpg",
+   "label": "一家は聖人に（2000年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして2003年、屋敷の跡に建ったのが、\nこの血の上の教会なの。",
+   "img": "commons:Church on the Blood, Yekaterinburg 05.jpg",
+   "label": "2003年 屋敷の跡に建った"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ふつうの教会より、ずっと\n特別な場所だったのだ。",
+   "img": "commons:Church on the Blood, Yekaterinburg 05.jpg",
+   "label": "血の上の教会"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "8月11日の動画",
+   "sec": "第三層　8月11日の動画",
+   "font": "mincho",
+   "x": {
+    "head": "教会でポケモンGOをした動画は\n最後のひとことで\n大きな騒ぎになった",
+    "img": [
+     "commons:Church on the Blood, Yekaterinburg 09.jpg"
+    ],
+    "bubble": "そのひとことなのだ",
+    "who": "z",
+    "post": "2016年8月11日、ロシアのブロガーが、教会でポケモンGOをする動画を公開しました。最後に「いちばん珍しいポケモン、イエスは捕まえられなかった」と言ったことが信者の反発を呼び、9月に身柄を拘束されます。アムネスティは彼を「良心の囚人」と呼びました。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2016年8月11日。ソコロフスキーさんは、\n1本の動画を公開したの。",
+   "img": "commons:Church on the Blood, Yekaterinburg 09.jpg",
+   "label": "2016年8月11日 動画を公開"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "スマホを手に、教会の中を歩きながら、\nポケモンを探す動画よ。",
+   "img": "row:commons:Church on the Blood, Yekaterinburg 05.jpg|血の上の教会;commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg|ポケモンGO",
+   "label": "教会の中でポケモンを探す"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "スマホを持って教会を歩いて、\nいったい誰が傷つくのか、と問いかけたの。",
+   "img": "row:commons:Church on the Blood, Yekaterinburg 05.jpg|血の上の教会;commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg|ポケモンGO",
+   "label": "誰が傷つくのか？"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "でも、騒ぎになったのは、\n動画の最後のひとことだったの。",
+   "img": "commons:Church on the Blood, Yekaterinburg 09.jpg",
+   "label": "最後のひとこと"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "いちばん珍しいポケモン、イエスは\n捕まえられなかった、と言ったのよ。",
+   "img": "commons:Church on the Blood, Yekaterinburg 09.jpg",
+   "label": "いちばん珍しいポケモン",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "キリスト教の教会で、\nそれを言ったのだ！？",
+   "img": "commons:Church on the Blood, Yekaterinburg 09.jpg",
+   "label": "キリスト教の教会"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "信者から見れば、祈りの場所と\n信じているものを、からかわれたことになるわね。",
+   "img": "commons:Вознесенский-Храм-и-Храм-на-Крови-Екатеринбург.jpg",
+   "label": "信者から見ると"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "動画は、判決のときまでに、\n190万回以上も再生されたの。",
+   "img": "row:commons:Church on the Blood, Yekaterinburg 05.jpg|血の上の教会;commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg|ポケモンGO",
+   "label": "190万回以上 再生"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "地元の警察の報道官は、個人の考えとして、\n少なくとも5年は刑務所に入れるべきだ、と言ったわ。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "警察の報道官「少なくとも5年」"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして9月2日の朝、彼は\n借りていた部屋で、身柄を拘束されたの。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "2016年9月2日 拘束"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "次の日、裁判所は、拘置所に\n2か月入れておくと決めたの。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "9月3日 拘置所へ"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "テレビが言っていたことが、\n本当になってしまったのだ。",
+   "img": "commons:Church on the Blood, Yekaterinburg 09.jpg",
+   "label": "テレビの警告どおりに"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "教会の側からも、いろいろな声が出たの。\nある司祭は、こう言ったわ。",
+   "img": "commons:Church on the Blood, Yekaterinburg 02.jpg",
+   "label": "教会の関係者の声"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンは、自分の引き出しか\n公衆浴場で捕まえなさい。教会は祈りの家だ。",
+   "img": "commons:Church on the Blood, Yekaterinburg 02.jpg",
+   "label": "ある司祭の言葉",
+   "big": "教会は祈りの家",
+   "bf": "mincho"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "教会のメディアの担当者は、司祭が本人と\n話して、教会の意味を伝えるべきだと言ったの。",
+   "img": "commons:Church on the Blood, Yekaterinburg 02.jpg",
+   "label": "教会の広報の担当者"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "いっぽう、人権団体のアムネスティは、\n彼を良心の囚人と呼んだの。",
+   "img": "commons:2012-09-15 anti-Putin march and rally in Moscow L1070093.jpg",
+   "label": "アムネスティ「良心の囚人」"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アムネスティがそう呼んだのは、\n拘束から5日後、9月7日のことよ。",
+   "img": "commons:2012-09-15 anti-Putin march and rally in Moscow L1070093.jpg",
+   "label": "2016年9月7日"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "良心の囚人って、\nどういう意味なのだ？",
+   "img": "commons:2012-09-15 anti-Putin march and rally in Moscow L1070093.jpg",
+   "label": "良心の囚人とは？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "考えや意見を言っただけで、\n捕まった人のことよ。",
+   "img": "commons:2012-09-15 anti-Putin march and rally in Moscow L1070093.jpg",
+   "label": "意見を言っただけで捕まった人",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "教会の人は傷ついて、人権団体は\n自由を守れと言う。どっちの話もわかるのだ。",
+   "img": "commons:Church on the Blood, Yekaterinburg 02.jpg",
+   "label": "信者の感情と表現の自由"
+  },
+  {
+   "type": "title",
+   "sub": "第四層",
+   "t": "3年の根拠になった法律",
+   "sec": "第四層　信者の感情の法律",
+   "font": "mincho",
+   "x": {
+    "head": "教会でのポケモンGOに\n3年と言われた根拠は\n2013年にできた法律だった",
+    "img": [
+     "commons:Moscow July 2011-34a.jpg"
+    ],
+    "bubble": "パンクの祈りなのだ",
+    "who": "z",
+    "post": "ロシアには、信者の感情を侮辱すると罰せられる法律があります。2012年、モスクワの大聖堂でバンドのプッシー・ライオットが「パンクの祈り」を演奏した事件のあと、2013年に定められました。礼拝の場所では最長3年の禁錮。テレビの警告の「3年」はここから来ています。"
+   }
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "それにしても、テレビはどうして\n3年と言えたのだ？",
+   "img": "commons:Church on the Blood, Yekaterinburg 09.jpg",
+   "label": "なぜ3年？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "3年には、ちゃんと根拠の法律があるの。\nきっかけは、2012年のモスクワよ。",
+   "img": "commons:Moscow July 2011-34a.jpg",
+   "label": "モスクワの大聖堂"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "モスクワの大きな大聖堂で、女性たちの\nバンドが、許可なく演奏をしたの。",
+   "img": "commons:Moscow July 2011-34a.jpg",
+   "label": "2012年2月21日"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "バンドの名前は、プッシー・ライオット。\nプーチン大統領を批判する歌だったわ。",
+   "img": "commons:2012-09-15 anti-Putin march and rally in Moscow L1070093.jpg",
+   "label": "プッシー・ライオット"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "歌の題は、聖母マリアさま、\nプーチンを追い払って。",
+   "img": "commons:Moscow July 2011-34a.jpg",
+   "label": "「パンクの祈り」"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "大聖堂の中で、\nそれを歌ったのだ！？",
+   "img": "commons:Moscow July 2011-34a.jpg",
+   "label": "「パンクの祈り」"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "メンバー3人は、禁錮2年の判決を\n受けたの。",
+   "img": "commons:Maria Alyokhina and Nadezhda Tolokonnikova.jpg",
+   "label": "メンバーに禁錮2年"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この事件のあと、2013年に、\n刑法の148条が厳しくなったの。",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "label": "2013年 刑法148条を改正"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "法律の改正は、2013年6月、\n国会の下院で、全員の賛成で決まったの。",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "label": "2013年6月 全員一致で可決"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "信者の感情を侮辱すること。\nふつうの場所なら、禁錮1年まで。",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "label": "信者の感情の侮辱＝最長1年"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして、教会のような礼拝の場所なら、\n禁錮3年まで。",
+   "img": "commons:Moscow July 2011-34a.jpg",
+   "label": "礼拝の場所＝最長3年",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "テレビの3年は、\nこの法律から来ていたのだ。",
+   "img": "commons:Moscow July 2011-34a.jpg",
+   "label": "礼拝の場所＝最長3年"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ソコロフスキーさんの罪名は、\nこの148条だけではなかったの。",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "label": "罪名は1つではない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "宗教への憎しみをあおった、という罪。\nこちらは最長5年の、282条ね。",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "label": "282条＝最長5年"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それに、ペンの形をした隠しカメラを\n持っていた、という罪もついたの。",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "label": "カメラ付きのペン"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ペンまで、罪になったのだ。",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "label": "カメラ付きのペン"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ここが大事なところよ。調べられたのは、\n教会の動画だけではなかったの。",
+   "img": "row:commons:Church on the Blood, Yekaterinburg 05.jpg|血の上の教会;commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg|ポケモンGO",
+   "label": "調べられたのは教会の動画だけ？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "彼がそれまでに上げていた、ほかの動画も、\nまとめて罪に問われたの。",
+   "img": "commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg",
+   "label": "ほかの動画もまとめて",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "拘置所のあとは自宅で軟禁されたけれど、\n女友達が家に来たことが、条件違反にされたの。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "10月 拘置所に戻る"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "それで、また拘置所に\n戻されたのだ。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "10月 拘置所に戻る"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "自宅に戻れたのは、2017年の2月。\n裁判は、3月に始まったの。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "2017年3月 裁判が始まる"
+  },
+  {
+   "type": "title",
+   "sub": "第五層",
+   "t": "判決の日",
+   "sec": "第五層　判決",
+   "font": "mincho",
+   "x": {
+    "head": "ポケモンGOの動画の裁判で\n裁判官は「ポケモンで\n裁かれているのではない」",
+    "img": [
+     "commons:E-burg asv2019-05 img46 view from VysotSky.jpg"
+    ],
+    "bubble": "どういうことなのだ",
+    "who": "z",
+    "post": "2017年5月11日、エカテリンブルクの地区裁判所は、ポケモンGOの動画などで罪に問われたブロガーに、執行猶予つきの禁錮3年6か月を言い渡しました。裁判官は「教会でポケモンをしたから裁かれている、というのは誤りだ」と述べています。では、何が罪だったのでしょう？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2017年5月11日。エカテリンブルクの\n地区の裁判所で、判決の日が来たの。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "2017年5月11日 判決"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "検察が求めたのは、\n刑務所に入る、禁錮3年6か月よ。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "検察の求め＝実刑3年6か月"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "本当に、刑務所に\n入るところだったのだ。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "検察の求め＝実刑3年6か月"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "判決は、禁錮3年6か月。\nただし、執行猶予がついたの。",
+   "img": "commons:Church on the Blood, Yekaterinburg 05.jpg",
+   "label": "判決＝3年6か月 執行猶予つき",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "執行猶予って、\nどういうことなのだ？",
+   "img": "commons:Church on the Blood, Yekaterinburg 05.jpg",
+   "label": "執行猶予とは？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "決められた期間、罪を犯さなければ、\n刑務所には入らなくていい、という意味よ。",
+   "img": "commons:Church on the Blood, Yekaterinburg 05.jpg",
+   "label": "期間中に罪を犯さなければ入らない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ほかに、9本の動画を消すことと、\n大勢が集まる行事への参加も禁じられたの。",
+   "img": "commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg",
+   "label": "動画9本を削除　行事への参加禁止"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして裁判官は、こう言ったわ。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "裁判官の言葉"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "教会でポケモンをしたから裁かれている、\nというのは、誤りだ。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "裁判官の言葉",
+   "big": "ポケモンではない",
+   "bf": "mincho"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ポケモンのせいでは\nないのだ？",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "ポケモンのせいではない？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "裁かれたのは、動画の中の言葉。\n信者を侮辱し、憎しみをあおったとされたのね。",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "label": "裁かれたのは動画の中の言葉"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも、きっかけがポケモンGOの\n動画だったのは、確かなことよ。",
+   "img": "row:commons:Church on the Blood, Yekaterinburg 05.jpg|血の上の教会;commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg|ポケモンGO",
+   "label": "きっかけはポケモンGOの動画"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "このあと、7月の控訴審で、\n刑は2年3か月に短くなったの。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "控訴審＝2年3か月"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "カメラのペンの罪は、\nこのとき判決から外されたわ。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "ペンの罪は外された"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "判決について聞かれたペスコフ報道官は、\nコメントを避けたの。",
+   "img": "commons:Dmitry Peskov portrait (cropped).jpg",
+   "label": "ペスコフ報道官はコメントせず"
+  },
+  {
+   "type": "title",
+   "sub": "最深層",
+   "t": "その後のソコロフスキー",
+   "sec": "最深層　その後",
+   "font": "mincho",
+   "x": {
+    "head": "ポケモンGOの動画で有罪になったブロガー\n7年後に欧州人権裁判所が\nロシアの違反を認めた",
+    "img": [
+     "commons:Courtroom European Court of Human Rights 01.JPG"
+    ],
+    "bubble": "7年後なのだ",
+    "who": "z",
+    "post": "教会でポケモンGOをした動画などで有罪になったロシアのブロガーは、その後テロリストと過激派のリストに載せられ、銀行の口座も止められました。2024年6月、欧州人権裁判所は、この有罪判決が表現の自由を侵したと全員一致で認めています。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "判決のあとも、話は終わらなかったの。\n2017年の夏、彼の名前は、ある名簿に載ったの。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "2017年夏 ある名簿に"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "国が作っている、テロリストと\n過激派の名簿よ。",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "label": "テロリストと過激派の名簿"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "テロリストなのだ！？\n動画を上げただけなのに、なのだ。",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "label": "テロリストと過激派の名簿"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "載ると、銀行の口座が止められるの。\n自分のお金を、自由に使えなくなったのね。",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "label": "銀行の口座が止められた"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのあと、ロシアでは2018年の終わりに、\n憎しみをあおる罪の法律がゆるめられたの。",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "label": "2018年 法律の改正"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2019年、その罪の分の刑は\nなくなって、前科も消されたの。",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "label": "2019年 前科が消された"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2020年には、名簿からも外されたわ。",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "label": "2020年 名簿から外された"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして2024年6月。フランスの\n欧州人権裁判所が、判決を出したの。",
+   "img": "commons:Courtroom European Court of Human Rights 01.JPG",
+   "label": "欧州人権裁判所（フランス）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ヨーロッパの国々が加わる、人権の約束が\n守られたかを判断する裁判所よ。",
+   "img": "commons:Piece of Berlin Wall in front of the European Court of Human Rights, Strasbourg.jpg",
+   "label": "欧州人権裁判所（ストラスブール）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "結論は、全員一致。ロシアは彼の\n表現の自由を侵した、と認めたの。",
+   "img": "commons:Courtroom European Court of Human Rights 01.JPG",
+   "label": "表現の自由を侵した（全員一致）",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ポケモンGOの動画が、\nヨーロッパの裁判所まで行ったのだ。",
+   "img": "commons:Courtroom European Court of Human Rights 01.JPG",
+   "label": "欧州人権裁判所"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でも、ロシアは、その判決を\n守らないといけないのだ？",
+   "img": "commons:Courtroom European Court of Human Rights 01.JPG",
+   "label": "ロシアは従う？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ロシアは2022年に、この人権の約束から\n外れたの。だから、従うかはわからないわ。",
+   "img": "commons:Piece of Berlin Wall in front of the European Court of Human Rights, Strasbourg.jpg",
+   "label": "ロシアは2022年に脱退"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それでも、外れる前の出来事について、\n裁判所は判断を出し続けているのよ。",
+   "img": "commons:Courtroom European Court of Human Rights 01.JPG",
+   "label": "外れる前の出来事は判断する"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ちなみに、ロシアでポケモンGOが\n正式に配信されたのは、2018年の9月。",
+   "img": "commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg",
+   "label": "ロシアで正式配信＝2018年9月"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "動画から、2年あとのことだったの。",
+   "img": "commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg",
+   "label": "ロシアで正式配信＝2018年9月"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "今日の答え。有罪になったのは、\nポケモンを捕まえたことではなかったの。",
+   "img": "commons:Church on the Blood, Yekaterinburg 05.jpg",
+   "sec": "まとめ",
+   "label": "血の上の教会"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "皇帝一家が殺された場所に建つ教会で、\n信者が大切にするものを笑ったこと。",
+   "img": "commons:Вознесенский-Храм-и-Храм-на-Крови-Екатеринбург.jpg",
+   "label": "血の上の教会"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それが、信者の感情を守る法律と、\n表現の自由の、ぶつかり合いになったのね。",
+   "img": "commons:Courtroom European Court of Human Rights 01.JPG",
+   "label": "信者の感情と表現の自由"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "テレビの警告を確かめに行ったら、\n本当に裁判になったのだ。",
+   "img": "row:commons:Church on the Blood, Yekaterinburg 05.jpg|血の上の教会;commons:App-augmented-reality-game-gps-163042 (cropped).jpg^commons:App-augmented-reality-game-gps-163042.jpg|ポケモンGO",
+   "label": "教会でポケモンGO"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ボクは坑道の外に出てから、\n遊ぶ場所を考えて、ポケモンを探すのだ。",
+   "img": "commons:Callinstraße Ecke Hahnenstraße in Hannover, Pokémon Go-Spielende (77955).jpg",
+   "label": "遊ぶ場所を考えて"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "あなたは、お寺や教会で\nポケモンGOをするのは、ありだと思う？",
+   "img": "commons:Church on the Blood, Yekaterinburg 09.jpg",
+   "label": "あなたはどう思う？"
+  },
+  {
+   "type": "title",
+   "sub": "おまけ",
+   "t": "今日のポケモンの英語名",
+   "sec": "今日のポケモンの英語名",
+   "font": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "今日の英語名は、ポケモンGOで\n最初に選べる3匹よ。",
+   "img": "row:art:1|フシギダネ;art:4|ヒトカゲ;art:7|ゼニガメ",
+   "label": "ポケモンGOで最初に選べる3匹",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "まず、フシギダネ。\nバルバソー。",
+   "img": "art:1",
+   "label": "Bulbasaur（バルバソー）",
+   "lf": "hachi",
+   "say": "まず、フシギダネ。バルバソー。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "bulbは、植物の球根。saurは、\nギリシャ語のトカゲから来た言葉よ。",
+   "img": "art:1",
+   "label": "Bulbasaur（バルバソー）",
+   "lf": "hachi",
+   "ety": [
+    "Bulbasaur（バルバソー）",
+    "英語　bulb（球根）＋ギリシャ語　sauros（トカゲ）"
+   ],
+   "say": "バルブは、植物の球根。ソーは、ギリシャ語のトカゲから来た言葉よ。"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "次は、ヒトカゲ。\nチャーマンダー。",
+   "img": "art:4",
+   "label": "Charmander（チャーマンダー）",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "charは、黒くこがすこと。そこに、\nサラマンダーを合わせた名前ね。",
+   "img": "art:4",
+   "label": "Charmander（チャーマンダー）",
+   "lf": "hachi",
+   "ety": [
+    "Charmander（チャーマンダー）",
+    "英語　char（こがす）＋salamander（サラマンダー）"
+   ],
+   "say": "チャーは、黒くこがすこと。そこに、サラマンダーを合わせた名前ね。"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "最後は、ゼニガメ。\nスクワートル。",
+   "img": "art:7",
+   "label": "Squirtle（スクワートル）",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "squirtは、水をピュッと噴き出すこと。\nturtleは、カメのことよ。",
+   "img": "art:7",
+   "label": "Squirtle（スクワートル）",
+   "lf": "hachi",
+   "ety": [
+    "Squirtle（スクワートル）",
+    "英語　squirt（水を噴き出す）＋turtle（カメ）"
+   ],
+   "say": "スクワートは、水をピュッと噴き出すこと。タートルは、カメのことよ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日出てきたポケモンの英語名は、\n英単語帳サイト「もんすぺ！」でも調べられるわ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "もんすぺ！には、ポケモンの雑学のコラムもあるの。\n動画の続きみたいに読めるわよ。",
+   "img": "site:",
+   "label": "もんすぺ！の雑学コラム"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の採掘はここまでなのだ。\nチャンネル登録もよろしくなのだ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "type": "ed"
+  }
+ ]
+}
