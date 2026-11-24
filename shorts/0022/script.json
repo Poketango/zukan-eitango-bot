@@ -1,0 +1,78 @@
+{
+ "no": 22,
+ "title": "教会でポケモンGO、テレビは「最長3年の禁錮」と警告した。【ポケモン雑学採掘場】",
+ "hook": [
+  "ロシアの国営テレビ",
+  "教会でポケモンGO",
+  "最長3年"
+ ],
+ "hl": "最長3年",
+ "lead": "2016年7月、ロシアの国営ニュース局ロシア24は、教会でポケモンを捕まえると最長3年の禁錮になりうると警告した。根拠は2013年に厳しくなった、信者の感情を侮辱する罪だった。",
+ "article": "https://poketango.com/zatsugaku/pokemon-go-church-russia.html",
+ "video": "Uq5x01wCkxw",
+ "pokemon": [
+  [
+   "pikachu",
+   "ピカチュウ",
+   "Pikachu"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "2016年7月、ロシアの国営テレビが\nポケモンGOの特集で\nこう警告したの",
+   "img": "commons:Church on the Blood, Yekaterinburg 05.jpg",
+   "cap": "ロシアの教会"
+  },
+  {
+   "w": "z",
+   "t": "どんな警告\nなのだ？",
+   "img": "commons:Church on the Blood, Yekaterinburg 05.jpg",
+   "cap": "ロシアの教会",
+   "face": "think"
+  },
+  {
+   "w": "m",
+   "t": "教会でポケモンを捕まえると、\n最長3年の禁錮に\nなりうる、と",
+   "img": "commons:Church on the Blood, Yekaterinburg 09.jpg",
+   "cap": "教会＝最長3年の禁錮",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "t": "スマホをいじるだけで\n3年なのだ！？",
+   "img": "commons:Church on the Blood, Yekaterinburg 09.jpg",
+   "cap": "教会＝最長3年の禁錮",
+   "face": "shock"
+  },
+  {
+   "w": "m",
+   "t": "根拠は、2013年に厳しくなった、\n信者の感情を\n侮辱する罪よ",
+   "img": "commons:Duma building (2013-05-07).jpg",
+   "cap": "2013年 刑法148条を改正"
+  },
+  {
+   "w": "m",
+   "t": "礼拝の場所なら、最長3年。\n前の年に大聖堂で起きた\n事件がきっかけだったの",
+   "img": "commons:Moscow July 2011-34a.jpg",
+   "cap": "モスクワの大聖堂"
+  },
+  {
+   "w": "m",
+   "t": "この警告を、ナンセンスだと言って\n確かめに行った若者が\nいたのよ",
+   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "cap": "エカテリンブルク"
+  },
+  {
+   "w": "m",
+   "t": "その若者がどうなったかは、\n本編でくわしく掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/Uq5x01wCkxw/maxresdefault.jpg^web:https://i.ytimg.com/vi/Uq5x01wCkxw/hqdefault.jpg^commons:Church on the Blood, Yekaterinburg 05.jpg"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/Uq5x01wCkxw/maxresdefault.jpg^web:https://i.ytimg.com/vi/Uq5x01wCkxw/hqdefault.jpg^commons:Church on the Blood, Yekaterinburg 05.jpg",
+   "face": "happy"
+  }
+ ]
+}
