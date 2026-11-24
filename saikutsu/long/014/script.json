@@ -275,7 +275,7 @@
    "sec": "第二層　血の上の教会",
    "font": "mincho",
    "x": {
-    "head": "ポケモンGOの動画が撮られた教会は\n皇帝一家が銃殺された\n屋敷の跡に建っている",
+    "head": "ポケモンGOの教会は\n皇帝一家が銃殺された\n屋敷の跡に建っている",
     "img": [
      "commons:Екатеринбург 0002 Храм-На-Крови 2.jpg",
      "commons:Ipatiev House in 1918.jpg"
@@ -502,14 +502,14 @@
    "w": "m",
    "face": "normal",
    "t": "そして9月2日の朝、彼は\n借りていた部屋で、身柄を拘束されたの。",
-   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "img": "commons:Дом Севастьянова Екатеринбург 30.jpg",
    "label": "2016年9月2日 拘束"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "次の日、裁判所は、拘置所に\n2か月入れておくと決めたの。",
-   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "img": "commons:Yekaterinburg Plotinka 005 2965.jpg",
    "label": "9月3日 拘置所へ"
   },
   {
@@ -546,28 +546,28 @@
    "w": "m",
    "face": "normal",
    "t": "いっぽう、人権団体のアムネスティは、\n彼を良心の囚人と呼んだの。",
-   "img": "commons:2012-09-15 anti-Putin march and rally in Moscow L1070093.jpg",
+   "img": "commons:Amnesty International at London Pride 2015 - 29445624290.jpg",
    "label": "アムネスティ「良心の囚人」"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "アムネスティがそう呼んだのは、\n拘束から5日後、9月7日のことよ。",
-   "img": "commons:2012-09-15 anti-Putin march and rally in Moscow L1070093.jpg",
+   "img": "commons:Amnesty International at London Pride 2015 - 29445624290.jpg",
    "label": "2016年9月7日"
   },
   {
    "w": "z",
    "face": "think",
    "t": "良心の囚人って、\nどういう意味なのだ？",
-   "img": "commons:2012-09-15 anti-Putin march and rally in Moscow L1070093.jpg",
+   "img": "commons:Amnesty International at London Pride 2015 - 29445624290.jpg",
    "label": "良心の囚人とは？"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "考えや意見を言っただけで、\n捕まった人のことよ。",
-   "img": "commons:2012-09-15 anti-Putin march and rally in Moscow L1070093.jpg",
+   "img": "commons:Amnesty International at London Pride 2015 - 29445624290.jpg",
    "label": "意見を言っただけで捕まった人",
    "ans": true
   },
@@ -727,21 +727,21 @@
    "w": "m",
    "face": "normal",
    "t": "拘置所のあとは自宅で軟禁されたけれど、\n女友達が家に来たことが、条件違反にされたの。",
-   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "img": "commons:Дом Севастьянова Екатеринбург 30.jpg",
    "label": "10月 拘置所に戻る"
   },
   {
    "w": "z",
    "face": "sad",
    "t": "それで、また拘置所に\n戻されたのだ。",
-   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "img": "commons:Дом Севастьянова Екатеринбург 30.jpg",
    "label": "10月 拘置所に戻る"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "自宅に戻れたのは、2017年の2月。\n裁判は、3月に始まったの。",
-   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "img": "commons:Yekaterinburg Plotinka 005 2965.jpg",
    "label": "2017年3月 裁判が始まる"
   },
   {
@@ -851,14 +851,14 @@
    "w": "m",
    "face": "normal",
    "t": "このあと、7月の控訴審で、\n刑は2年3か月に短くなったの。",
-   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "img": "commons:Yekaterinburg Plotinka 005 2965.jpg",
    "label": "控訴審＝2年3か月"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "カメラのペンの罪は、このとき、\n判決から外されたわ。",
-   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "img": "commons:Yekaterinburg Plotinka 005 2965.jpg",
    "label": "ペンの罪は外された"
   },
   {
@@ -875,7 +875,7 @@
    "sec": "最深層　その後",
    "font": "mincho",
    "x": {
-    "head": "ポケモンGOの動画で有罪になったブロガー\n7年後に欧州人権裁判所が\nロシアの違反を認めた",
+    "head": "ポケモンGOの動画で有罪\n7年後に欧州人権裁判所が\nロシアの違反を認めた",
     "img": [
      "commons:Courtroom European Court of Human Rights 01.JPG"
     ],
@@ -909,7 +909,7 @@
    "w": "m",
    "face": "normal",
    "t": "載ると、銀行の口座が止められるの。\n自分のお金を、自由に使えなくなったのね。",
-   "img": "commons:Duma building (2013-05-07).jpg",
+   "img": "commons:Current Russian ruble (banknotes).png",
    "label": "銀行の口座が止められた"
   },
   {
@@ -930,7 +930,7 @@
    "w": "m",
    "face": "normal",
    "t": "2020年には、名簿からも外されたわ。",
-   "img": "commons:E-burg asv2019-05 img46 view from VysotSky.jpg",
+   "img": "commons:Дом Севастьянова Екатеринбург 30.jpg",
    "label": "2020年 名簿から外された"
   },
   {
