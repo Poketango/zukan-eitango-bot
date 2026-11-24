@@ -1,0 +1,78 @@
+{
+ "no": 23,
+ "title": "ポケモンGOの動画が撮られた教会は、皇帝一家が銃殺された場所に建っていた。【ポケモン雑学採掘場】",
+ "hook": [
+  "ポケモンGOの教会",
+  "皇帝一家の",
+  "銃殺の跡"
+ ],
+ "hl": "銃殺の跡",
+ "lead": "2016年にロシアのブロガーがポケモンGOをした「血の上の教会」は、1918年に最後の皇帝ニコライ2世の一家が銃殺されたイパチェフ館の跡に、2003年に建てられた。",
+ "article": "https://poketango.com/zatsugaku/pokemon-go-church-russia.html",
+ "video": "Uq5x01wCkxw",
+ "pokemon": [
+  [
+   "pikachu",
+   "ピカチュウ",
+   "Pikachu"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "ロシアの、血の上の教会。\nここでポケモンGOをした動画が、\n裁判になったの",
+   "img": "commons:Екатеринбург 0002 Храм-На-Крови 2.jpg",
+   "cap": "血の上の教会（エカテリンブルク）"
+  },
+  {
+   "w": "z",
+   "t": "名前が怖すぎるのだ。\nどんな血なのだ？",
+   "img": "commons:Екатеринбург 0002 Храм-На-Крови 2.jpg",
+   "cap": "血の上の教会",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "ここにはもともと、\nイパチェフ館という\nお屋敷があったの",
+   "img": "commons:Ipatiev House in 1918.jpg",
+   "cap": "イパチェフ館（1918年）"
+  },
+  {
+   "w": "m",
+   "t": "1918年、最後の皇帝\nニコライ2世の一家が、\nこの地下室で銃殺されたの",
+   "img": "commons:Russian Imperial Family 1913.jpg",
+   "cap": "ニコライ2世の一家",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "t": "だから、\n血の上なのだ……",
+   "img": "commons:Ipatyev house basement.jpg",
+   "cap": "イパチェフ館の地下室",
+   "face": "sad"
+  },
+  {
+   "w": "m",
+   "t": "屋敷は1977年に取り壊されたの。\n指揮したのは、のちの大統領\nエリツィンよ",
+   "img": "commons:Ipatiev House in 1930.jpg",
+   "cap": "1977年 取り壊し"
+  },
+  {
+   "w": "m",
+   "t": "一家は聖人とされ、\n2003年に、跡地に\nこの教会が建ったの",
+   "img": "commons:Church on the Blood, Yekaterinburg 05.jpg",
+   "cap": "2003年 跡地に建った"
+  },
+  {
+   "w": "m",
+   "t": "この教会で何が起きたかは、\n本編でくわしく掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/Uq5x01wCkxw/maxresdefault.jpg^web:https://i.ytimg.com/vi/Uq5x01wCkxw/hqdefault.jpg^commons:Church on the Blood, Yekaterinburg 05.jpg"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/Uq5x01wCkxw/maxresdefault.jpg^web:https://i.ytimg.com/vi/Uq5x01wCkxw/hqdefault.jpg^commons:Church on the Blood, Yekaterinburg 05.jpg",
+   "face": "happy"
+  }
+ ]
+}
