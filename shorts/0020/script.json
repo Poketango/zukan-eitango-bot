@@ -1,0 +1,79 @@
+{
+ "no": 20,
+ "title": "ピカチュウの顔をした、クモの生殖器。【ポケモン雑学採掘場】",
+ "hook": [
+  "ブラジルのクモ",
+  "生殖器が",
+  "ピカチュウ"
+ ],
+ "hl": "ピカチュウ",
+ "lead": "2020年にブラジルで新種になったクモ Epicratinus pikachu は、メスの生殖器がピカチュウの顔に似ていることから名づけられた。",
+ "article": "https://poketango.com/zatsugaku/pokemon-scientific-names-7.html",
+ "video": "7NPFK3ihSwg",
+ "pokemon": [
+  [
+   "pikachu",
+   "ピカチュウ",
+   "Pikachu"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "これは、ブラジルの新種のクモの、\nメスの体の一部を\n顕微鏡で見たものよ",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1",
+   "cap": "新種のクモ（メス）"
+  },
+  {
+   "w": "z",
+   "t": "黄色くて、両側に\n赤茶色の丸が\nあるのだ",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1",
+   "cap": "新種のクモ（メス）",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "このクモの名前は、\nエピクラティヌス・ピカチュウ。\n2020年に新種になったの",
+   "img": "row:web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1|クモ;art:25|ピカチュウ",
+   "cap": "ピカチュウの顔に見える",
+   "ans": true,
+   "say": "このクモの名前は、エピクラティヌス、ピカチュウ。2020年に新種になったの"
+  },
+  {
+   "w": "m",
+   "t": "論文の名前の理由の欄には、\nメスの生殖器が、ピカチュウの\n顔に似ている、と書いてあるの",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1",
+   "cap": "論文に書かれた名前の理由"
+  },
+  {
+   "w": "z",
+   "t": "生殖器が、\nピカチュウなのだ！？",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png@crop=0.04,0.6,0.3,1",
+   "cap": "メスの生殖器",
+   "face": "shock"
+  },
+  {
+   "w": "m",
+   "t": "クモは見た目の似た種類が多いから、\n生殖器の形で\n見分けることが多いのよ",
+   "img": "web:https://zenodo.org/records/4297381/files/figure.png",
+   "cap": "論文の図"
+  },
+  {
+   "w": "m",
+   "t": "このメスが採れたのは2005年。\n名前がつくまで\n15年かかったの",
+   "img": "commons:Maranhao in Brazil.svg",
+   "cap": "ブラジル・マラニョン州"
+  },
+  {
+   "w": "m",
+   "t": "ポケモンの名前がついた生き物を、\n本編で7つ掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/7NPFK3ihSwg/maxresdefault.jpg^web:https://i.ytimg.com/vi/7NPFK3ihSwg/hqdefault.jpg^art:25"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/7NPFK3ihSwg/maxresdefault.jpg^web:https://i.ytimg.com/vi/7NPFK3ihSwg/hqdefault.jpg^art:25",
+   "face": "happy"
+  }
+ ]
+}
