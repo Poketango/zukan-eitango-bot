@@ -1,0 +1,88 @@
+{
+ "no": 21,
+ "title": "標本が世界に1匹だけの、サンダーの名前の甲虫。【ポケモン雑学採掘場】",
+ "hook": [
+  "オーストラリアの甲虫",
+  "サンダーの名前",
+  "標本は1匹"
+ ],
+ "hl": "標本は1匹",
+ "lead": "2020年にオーストラリアで新種になった甲虫 Binburrum articuno・zapdos・moltres。名前の理由は色ではなく珍しさで、サンダーとファイヤーの名前の種は標本が1匹ずつしかない。",
+ "article": "https://poketango.com/zatsugaku/pokemon-scientific-names-7.html",
+ "video": "7NPFK3ihSwg",
+ "pokemon": [
+  [
+   "articuno",
+   "フリーザー",
+   "Articuno"
+  ],
+  [
+   "zapdos",
+   "サンダー",
+   "Zapdos"
+  ],
+  [
+   "moltres",
+   "ファイヤー",
+   "Moltres"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "オーストラリアには、伝説の鳥\nポケモン3羽の名前がついた\n甲虫がいるの",
+   "img": "row:art:144|フリーザー;art:145|サンダー;art:146|ファイヤー",
+   "cap": "伝説の鳥ポケモン"
+  },
+  {
+   "w": "z",
+   "t": "氷と、電気と、\n炎の色の虫\nなのだ？",
+   "img": "row:art:144|フリーザー;art:145|サンダー;art:146|ファイヤー",
+   "cap": "伝説の鳥ポケモン",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "それが、フリーザーの名前の虫は、\n全身こげ茶色なの",
+   "img": "web:https://zenodo.org/records/15732179/files/figure.png@crop=0.25,0.32,0.5,0.62",
+   "cap": "ビンブルム・アーティクノ"
+  },
+  {
+   "w": "m",
+   "t": "名前の理由は、色ではなくて、\n珍しさ。論文に\nそう書いてあるのよ",
+   "img": "web:https://zenodo.org/records/15732179/files/figure.png",
+   "cap": "論文に書かれた名前の理由",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "t": "サンダーとファイヤーの名前の虫は、\n知られている標本が、\nたった1匹ずつなの",
+   "img": "web:https://zenodo.org/records/15732179/files/figure.png@crop=0.62,0.64,0.95,1",
+   "cap": "標本は1匹だけ"
+  },
+  {
+   "w": "z",
+   "t": "世界に1匹なのだ！？\nまさに伝説なのだ",
+   "img": "web:https://zenodo.org/records/15732179/files/figure.png@crop=0.62,0.64,0.95,1",
+   "cap": "標本は1匹だけ",
+   "face": "shock"
+  },
+  {
+   "w": "m",
+   "t": "どれも1995年ごろに採れて、\n25年、首都キャンベラの\n標本庫にあったのよ",
+   "img": "commons:CSIRO ScienceImage 11191 Aerial view of the CSIRO Black Mountain laboratories.jpg",
+   "cap": "キャンベラの標本庫"
+  },
+  {
+   "w": "m",
+   "t": "ポケモンの名前がついた生き物を、\n本編で7つ掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/7NPFK3ihSwg/maxresdefault.jpg^web:https://i.ytimg.com/vi/7NPFK3ihSwg/hqdefault.jpg^art:145"
+  },
+  {
+   "w": "z",
+   "t": "下の動画から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/7NPFK3ihSwg/maxresdefault.jpg^web:https://i.ytimg.com/vi/7NPFK3ihSwg/hqdefault.jpg^art:145",
+   "face": "happy"
+  }
+ ]
+}
