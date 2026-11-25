@@ -18,7 +18,7 @@
   "pre_font": "maru",
   "pre_size": 66,
   "back": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
-  "photo": "web:https://images.pokemontcg.io/base1/4_hires.png",
+  "photo": "web:https://images.pokemontcg.io/base1/4_hires.png@crop=0,0,1,0.6",
   "photo_label": "英語版ポケモンカード",
   "chara": null,
   "big_w": 640
@@ -220,7 +220,7 @@
    "w": "m",
    "face": "normal",
    "t": "でも、作るのにお金がかかりすぎる、と断られて、\n安く作れて、さっと遊べるゲームを頼まれたの。",
-   "img": "commons:Richard Garfield (Spiel 2014 cropped).jpg",
+   "img": "commons:MagicTheGatheringCards.jpg",
    "label": "安く作れて、さっと遊べるゲームを"
   },
   {
@@ -264,14 +264,14 @@
    "w": "m",
    "face": "normal",
    "t": "いっぽう日本では、1996年の10月20日に、\nポケモンカードが出ていたの。",
-   "img": "commons:POKEMON card battle.jpg",
+   "img": "commons:Pokémon Trading Card Game logo.svg^web:https://images.pokemontcg.io/base1/logo.png",
    "label": "日本 1996年10月20日"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "売っていたのは、出版社の\nメディアファクトリーよ。",
-   "img": "commons:POKEMON card battle.jpg",
+   "img": "commons:Pokémon Trading Card Game logo.svg^web:https://images.pokemontcg.io/base1/logo.png",
    "label": "メディアファクトリー"
   },
   {
@@ -331,35 +331,35 @@
    "w": "m",
    "face": "normal",
    "t": "休み時間の交換で取り合いが起きて、\nカードを禁止する小学校も出たの。",
-   "img": "commons:Pokemon collection.jpg",
+   "img": "commons:POKEMON card battle.jpg",
    "label": "カード禁止の小学校も"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "ニューヨーク州や、ニューハンプシャー州の\n小学校の話が、新聞に載っているわ。",
-   "img": "commons:Pokemon collection.jpg",
+   "img": "commons:POKEMON card battle.jpg",
    "label": "カード禁止の小学校も"
   },
   {
    "w": "z",
    "face": "think",
    "t": "学校で禁止されるほど、\nはやっていたのだ。",
-   "img": "commons:Pokemon collection.jpg",
+   "img": "commons:POKEMON card battle.jpg",
    "label": "カード禁止の小学校も"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "同じ1999年の9月には、カードのパックは\n賭博だ、という裁判まで起きたわ。",
-   "img": "commons:Pokemon collection.jpg",
+   "img": "../004/booster_pack.jpg^commons:Pokemon collection.jpg",
    "label": "パックは賭博？（1999年9月）"
   },
   {
    "w": "z",
    "face": "happy",
    "t": "それは前に、この採掘場で\n掘った話なのだ。",
-   "img": "commons:Pokemon collection.jpg",
+   "img": "../004/booster_pack.jpg^commons:Pokemon collection.jpg",
    "label": "パックは賭博？（1999年9月）"
   },
   {
@@ -428,7 +428,7 @@
    "w": "m",
    "face": "normal",
    "t": "ハズブロの会長は、ウィザーズのおかげで、\n伸びているゲームの分野に大きく広がれる、と。",
-   "img": "commons:Hasbro, Inc. world headquarters Pawtucket.jpg",
+   "img": "row:commons:Hasbro, Inc. world headquarters Pawtucket.jpg|ハズブロ>commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ",
    "label": "ハズブロ会長の言葉"
   },
   {
@@ -442,7 +442,7 @@
    "w": "m",
    "face": "normal",
    "t": "そこにカードまで加わって、ポケモンの\n売り上げが、一気にふくらんだのね。",
-   "img": "commons:Hasbro world headquarters.jpg",
+   "img": "row:art:25|ポケモン;web:https://images.pokemontcg.io/base1/4_hires.png|カード",
    "label": "おもちゃとカードの両方"
   },
   {
@@ -494,14 +494,14 @@
    "w": "m",
    "face": "normal",
    "t": "3億9800万ドルから、1億9000万ドルへ。\nハズブロは、その理由の1つにポケモンを挙げたわ。",
-   "img": "commons:Hasbro world headquarters.jpg",
+   "img": "commons:Hasbro, Inc. world headquarters Pawtucket.jpg",
    "label": "3.98億→1.9億ドル"
   },
   {
    "w": "z",
    "face": "sad",
    "t": "上がるのも落ちるのも、\n速すぎるのだ。",
-   "img": "commons:Hasbro world headquarters.jpg",
+   "img": "commons:Pokemon collection.jpg",
    "label": "ゲームの売り上げ半分に"
   },
   {
@@ -524,21 +524,21 @@
    "w": "m",
    "face": "normal",
    "t": "ここで、ウィザーズが持っていた、\nある特許の話をしておくわね。",
-   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png@crop=0.12,0.08,0.88,0.56^commons:MagicTheGatheringCards.jpg",
    "label": "アメリカの特許の図"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "1997年の9月に認められた、トレーディング\nカードゲームの遊び方の特許よ。",
-   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png@crop=0.12,0.08,0.88,0.56^commons:MagicTheGatheringCards.jpg",
    "label": "1997年9月2日に登録"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "申しこんだのは、マジックが出た次の年の\n1994年。認められるまで、3年かかったの。",
-   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png@crop=0.12,0.08,0.88,0.56^commons:MagicTheGatheringCards.jpg",
    "label": "1994年に申しこみ"
   },
   {
@@ -552,21 +552,21 @@
    "w": "m",
    "face": "normal",
    "t": "ギネス世界記録にも、最初のトレーディング\nカードゲームの特許として載っているわ。",
-   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png@crop=0.12,0.08,0.88,0.56^commons:MagicTheGatheringCards.jpg",
    "label": "ギネス世界記録にも"
   },
   {
    "w": "z",
    "face": "surprise",
    "t": "ゲームの遊び方に、\n特許があるのだ？",
-   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png@crop=0.12,0.08,0.88,0.56^commons:MagicTheGatheringCards.jpg",
    "label": "アメリカの特許の図"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "中身を読むと、まず、自分の山札を組んで、\nそこから手札を引くこと。",
-   "img": "web:https://patentimages.storage.googleapis.com/e6/2b/7c/a37a16dddfe211/US5662332-drawings-page-7.png^commons:Magic The Gathering players.JPG",
+   "img": "web:https://patentimages.storage.googleapis.com/e6/2b/7c/a37a16dddfe211/US5662332-drawings-page-7.png@crop=0.12,0.28,0.88,0.78^commons:Magic The Gathering players.JPG",
    "label": "山札（ライブラリ）から手札を引く"
   },
   {
@@ -588,28 +588,28 @@
    "w": "z",
    "face": "think",
    "t": "ポケモンカードでも、ねむりになったら、\nカードを横に向けるのだ。",
-   "img": "commons:Magic The Gathering players.JPG",
+   "img": "row:commons:MagicTheGatheringCards.jpg|マジック;web:https://images.pokemontcg.io/base1/58_hires.png|ポケモンカード",
    "label": "タップ＝カードを横に倒す"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "そうね。ただ、ねむりとこの特許の関係を\n書いた資料は、見つからなかったわ。",
-   "img": "commons:Magic The Gathering players.JPG",
+   "img": "row:commons:MagicTheGatheringCards.jpg|マジック;web:https://images.pokemontcg.io/base1/58_hires.png|ポケモンカード",
    "label": "ねむりとの関係は確かめられず"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "ウィザーズは、ほかの会社がこの遊び方を使うなら、\n使用料を払ってもらう仕組みも作っていたの。",
-   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "img": "commons:MagicTheGatheringCards.jpg",
    "label": "使用料を払えば使える"
   },
   {
    "w": "z",
    "face": "think",
    "t": "カードゲームを作る会社は、\nみんな気になる特許なのだ。",
-   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "img": "commons:MagicTheGatheringCards.jpg",
    "label": "使用料を払えば使える"
   },
   {
@@ -740,7 +740,7 @@
    "w": "m",
    "face": "normal",
    "t": "そのあと2006年からは、ポケモンUSAが\n自分でカードを売るようになったわ。",
-   "img": "wiki:en:New York City",
+   "img": "commons:Pokémon Trading Card Game logo.svg^web:https://images.pokemontcg.io/base1/logo.png",
    "label": "2006年からは自社で"
   },
   {
@@ -791,15 +791,15 @@
    "w": "m",
    "face": "normal",
    "t": "その次の日の、10月1日。ウィザーズは、\nシアトルにある国の裁判所に訴えを出したの。",
-   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
-   "label": "10月1日 シアトルで提訴",
+   "img": "commons:Seattle - old Federal Court House 03.jpg",
+   "label": "当時のシアトルの連邦裁判所",
    "ans": true
   },
   {
    "w": "z",
    "face": "shock",
    "t": "ほんとに、契約が切れた\n次の日なのだ。",
-   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "img": "commons:Seattle - old Federal Court House 03.jpg",
    "label": "10月1日 シアトルで提訴"
   },
   {
@@ -827,49 +827,49 @@
    "w": "m",
    "face": "normal",
    "t": "訴えの中身は、特許の侵害、契約の違反、\nそれに、会社の秘密を勝手に使ったこと。",
-   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png@crop=0.12,0.08,0.88,0.56^commons:MagicTheGatheringCards.jpg",
    "label": "特許・契約・会社の秘密"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "ウィザーズの元社員は、少なくとも7人が\nポケモンUSAに移っていた、と報じられたわ。",
-   "img": "wiki:en:New York City",
+   "img": "row:commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ>wiki:en:New York City|ポケモンUSA",
    "label": "元社員 少なくとも7人"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "絵の責任者や、イベントの担当、\n計画を管理する責任者などよ。",
-   "img": "wiki:en:New York City",
+   "img": "row:commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ>wiki:en:New York City|ポケモンUSA",
    "label": "絵・イベント・計画の担当"
   },
   {
    "w": "z",
    "face": "think",
    "t": "その特許って、\nさっきのタップの特許なのだ？",
-   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png@crop=0.12,0.08,0.88,0.56^commons:MagicTheGatheringCards.jpg",
    "label": "どの特許かは報道に出ていない"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "どの特許なのかは、当時の報道には\n名前が出ていないの。",
-   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png@crop=0.12,0.08,0.88,0.56^commons:MagicTheGatheringCards.jpg",
    "label": "どの特許かは報道に出ていない"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "ポケモンUSAの側は、契約が終わった次の日に\n訴えられた、とだけ話していたわ。",
-   "img": "wiki:en:New York City",
+   "img": "web:https://images.pokemontcg.io/base1/4_hires.png",
    "label": "契約が終わった次の日に訴えられた"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "結末は、3か月後の12月。和解よ。\nその中身は、公表されていないの。",
-   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "img": "commons:Seattle - old Federal Court House 03.jpg",
    "label": "12月 和解（中身は秘密）",
    "ans": true
   },
@@ -877,21 +877,21 @@
    "w": "z",
    "face": "think",
    "t": "和解って、\nどういうことなのだ？",
-   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "img": "commons:Seattle - old Federal Court House 03.jpg",
    "label": "和解とは"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "判決を待たずに、おたがいが約束を結んで、\n裁判を終わらせることよ。",
-   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "img": "commons:Seattle - old Federal Court House 03.jpg",
    "label": "判決の前に約束して終わらせる"
   },
   {
    "w": "z",
    "face": "think",
    "t": "どっちの言い分が通ったのか、\nわからないまま終わったのだ。",
-   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "img": "row:commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ;commons:Nintendo of America Headquarters.jpg|任天堂（アメリカ）",
    "label": "12月 和解（中身は秘密）"
   },
   {
@@ -905,21 +905,21 @@
    "w": "m",
    "face": "normal",
    "t": "2014年、ウィザーズは、ネットで遊ぶカードゲーム、\nヘックスの会社を、特許などの侵害で訴えたわ。",
-   "img": "commons:Magic The Gathering players.JPG",
+   "img": "commons:Magic the Gathering - Trade.jpg",
    "label": "2014年 ヘックスの会社を提訴"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "これも、訴えてから1年4か月ほどで、\n使用料を払う約束を結んで和解しているの。",
-   "img": "commons:Magic The Gathering players.JPG",
+   "img": "commons:MagicTheGatheringCards.jpg",
    "label": "2015年 使用料の約束で和解"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "その特許も、今はもう期限が切れているわ。",
-   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png@crop=0.12,0.08,0.88,0.56^commons:MagicTheGatheringCards.jpg",
    "label": "今は期限切れ"
   },
   {
