@@ -620,6 +620,8 @@ def slot_now(now):
 
 # 2026-11-14 型を7つに増やし、投稿ごとに順番に回す（どの型が伸びるかを比べるため）
 KINDS = ["name", "plus", "scary", "real3", "speed5", "which", "rank"]
+# 2026-11-25 1回目の判断：中央値が上位2つの rank（1,056回）と scary（999回）を2回ずつ出す。外す型はなし
+KINDS = ["rank", "name", "scary", "plus", "real3", "rank", "speed5", "scary", "which"]
 STYLE = None
 LOG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "shorts_log.jsonl")   # 型の比べ用の記録
 
@@ -627,7 +629,10 @@ if __name__ == "__main__":
     en, jp, names, stats, origins = (get_json(n) for n in ("pokedex_en.json", "pokedex_jp.json", "pokemon_names_jp.json", "pokedex_stats.json", "name_origins.json"))
     now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) + datetime.timedelta(hours=9)
     n = int(os.environ["N"]) if os.environ.get("N") else (now.date() - START).days * SLOTS_PER_DAY + slot_now(now)
-    kind = os.environ.get("KIND") or KINDS[n % len(KINDS)]
+    # 2026-11-25 夜の回が talk になるぶん型が飛ばされないよう、「これまでに出した talk 以外の本数」で順番を回す
+    try: idx = sum(1 for l in open(LOG, encoding="utf-8") if l.strip() and json.loads(l)["kind"] != "talk")
+    except Exception: idx = n
+    kind = os.environ.get("KIND") or KINDS[idx % len(KINDS)]
     # 2026-11-16 てこ入れ：夜19:05の回は、掛け合いの新しい型「英語名の意味」を出す（台本 talk/ が残っているかぎり）
     import talk
     try: done0 = {json.loads(l)["title"] for l in open(LOG, encoding="utf-8") if l.strip()}
@@ -635,7 +640,7 @@ if __name__ == "__main__":
     tpath, TS = talk.next_script(done0)
     if (os.environ.get("KIND") == "talk") or (not os.environ.get("KIND") and slot_now(now) == 2 and TS is not None):
         kind = "talk"
-    m = n // len(KINDS)
+    m = idx   # 出題の番号。投稿ごとに必ず変わる（同じ型が1周に2回出ても同じ出題にならない）
     import music
     STYLE = music.style(n * 101 + (KINDS.index(kind) if kind in KINDS else 7), "quiz")
     bgm_label = music.label(STYLE) if kind != "scary" else "horror/" + str(STYLE["seed"])

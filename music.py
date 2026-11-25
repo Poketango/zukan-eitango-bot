@@ -13,9 +13,9 @@ PROGS = {"major": [[0, 4, 5, 3], [0, 5, 3, 4], [3, 4, 2, 5], [0, 3, 4, 4], [5, 3
          "minor": [[0, 5, 2, 6], [0, 3, 4, 0], [0, 6, 5, 6], [5, 6, 0, 0]],
          "dorian": [[0, 3, 0, 3], [0, 6, 3, 0]], "mixolydian": [[0, 6, 3, 0], [0, 3, 6, 0]],
          "lydian": [[0, 1, 0, 1], [0, 1, 4, 3]]}
-LEADS = ["square", "pulse25", "triangle", "pluck", "bell", "saw", "organ", "marimba"]
+LEADS = ["square", "pulse25", "triangle", "pluck", "bell", "saw", "organ", "marimba", "vibes"]   # 2026-11-25 vibes を追加
 BASSES = ["triangle", "square", "saw", "sine", "pluck"]
-DRUMS = ["four", "rock", "half", "shuffle", "bossa", "breaks", "none"]
+DRUMS = ["four", "rock", "half", "shuffle", "bossa", "breaks", "disco", "none"]   # 2026-11-25 disco を追加（none は最後に置く）
 MOODS = {  # 型ごとに合う雰囲気
     "quiz": dict(tempo=(118, 152), scales=["major", "mixolydian", "penta", "lydian"]),
     "fast": dict(tempo=(140, 172), scales=["major", "minor", "dorian", "minpenta"]),
@@ -50,6 +50,9 @@ def osc(kind, f, n, t0=0):
         return np.sin(2 * np.pi * f * t + 3.0 * np.exp(-t * 6) * np.sin(2 * np.pi * f * 3.5 * t))
     if kind == "marimba":
         return np.sin(2 * np.pi * f * t) * np.exp(-t * 9) + 0.3 * np.sin(2 * np.pi * f * 4 * t) * np.exp(-t * 30)
+    if kind == "vibes":   # ビブラフォン風（ゆれるやわらかい鉄琴。2026-11-25 追加）
+        trem = 1 - 0.35 * (0.5 + 0.5 * np.sin(2 * np.pi * 5.5 * t))
+        return (np.sin(2 * np.pi * f * t) + 0.25 * np.sin(2 * np.pi * f * 4 * t) * np.exp(-t * 12)) * np.exp(-t * 3.5) * trem
     if kind == "pluck":   # カープラス＝ストロング（はじく弦）
         p = max(2, int(SR / f)); buf = np.random.default_rng(int(f)).uniform(-1, 1, p); out = np.zeros(n)
         for i in range(n):
@@ -69,7 +72,7 @@ def note(kind, f, length, vol):
         w = _CACHE[key]
     else: w = osc(kind, f, n)
     t = np.arange(n) / SR
-    if kind in ("pluck", "bell", "marimba"): env = np.minimum(1, t * 400)
+    if kind in ("pluck", "bell", "marimba", "vibes"): env = np.minimum(1, t * 400)
     else: env = np.minimum(1, t * 150) * np.clip(1 - t / length, 0, 1) ** 0.6
     return (w * env * vol).astype(np.float32)
 
@@ -106,6 +109,7 @@ PATTERNS = {  # 16分音符16個ぶん：k=キック s=スネア h=ハット o=�
     "shuffle": ["k..hs..hk..hs..h", ""],
     "bossa": ["k..k..k.k..k..k.", "c.c.ccc.c.c.ccc."],
     "breaks": ["k.h.s.hkh.k.s.h.", "........c......."],
+    "disco": ["k.o.k.o.k.o.k.o.", "....s.......s..c"],   # 2026-11-25 追加：裏拍のオープンハット
 }
 
 
