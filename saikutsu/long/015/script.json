@@ -331,21 +331,21 @@
    "w": "m",
    "face": "normal",
    "t": "休み時間の交換で取り合いが起きて、\nカードを禁止する小学校も出たの。",
-   "img": "commons:POKEMON card battle.jpg",
+   "img": "commons:Pokemon collection.jpg",
    "label": "カード禁止の小学校も"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "ニューヨーク州や、ニューハンプシャー州の\n小学校の話が、新聞に載っているわ。",
-   "img": "commons:POKEMON card battle.jpg",
+   "img": "row:commons:New York Locator Map with US.PNG|ニューヨーク州;commons:New Hampshire Locator Map with US.PNG|ニューハンプシャー州",
    "label": "カード禁止の小学校も"
   },
   {
    "w": "z",
    "face": "think",
    "t": "学校で禁止されるほど、\nはやっていたのだ。",
-   "img": "commons:POKEMON card battle.jpg",
+   "img": "web:https://images.pokemontcg.io/base1/58_hires.png",
    "label": "カード禁止の小学校も"
   },
   {
