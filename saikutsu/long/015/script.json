@@ -1,0 +1,1057 @@
+{
+ "no": 15,
+ "title": "英語版ポケモンカードを失った会社は、その翌日、任天堂を訴えた。",
+ "neta": "カードの元販売元が任天堂を訴えた",
+ "thumb": {
+  "layout": "v2",
+  "pre": "契約が切れた翌日",
+  "big": [
+   "任天堂を",
+   "提訴"
+  ],
+  "hl": 1,
+  "hl_color": "red",
+  "fonts": [
+   "mincho",
+   "mincho"
+  ],
+  "pre_font": "maru",
+  "pre_size": 66,
+  "back": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+  "photo": "web:https://images.pokemontcg.io/base1/4_hires.png",
+  "photo_label": "英語版ポケモンカード",
+  "chara": null,
+  "big_w": 640
+ },
+ "lines": [
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2003年の10月1日。アメリカのある会社が、\n任天堂を裁判所に訴えたの。",
+   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "label": "シアトル（アメリカ）",
+   "sec": "ポケモン雑学採掘場"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "任天堂を訴えるなんて、\nどこの会社なのだ？",
+   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "label": "シアトル（アメリカ）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "英語のポケモンカードを、\n4年あまり作ってきた会社よ。",
+   "img": "web:https://images.pokemontcg.io/base1/4_hires.png",
+   "label": "英語版の最初のポケモンカード"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "しかも訴えたのは、カードを作る契約が\n切れた、その次の日だったの。",
+   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "label": "契約が切れた次の日",
+   "big": "契約が切れた翌日",
+   "bf": "mincho",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "次の日なのだ！？\nいったい何があったのだ？",
+   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "label": "契約が切れた次の日"
+  },
+  {
+   "type": "op",
+   "w": "m",
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘場。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学さいくつじょう。"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "坑道の奥で、英語のポケモンカードを\n拾ったのだ。キモリなのだ。",
+   "img": "web:https://images.pokemontcg.io/ex1/75_hires.png",
+   "label": "英語版のキモリのカード",
+   "sec": "導入　坑道のキモリ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "あら、EXルビー&サファイアね。\n2003年の6月に、アメリカで出たセットよ。",
+   "img": "row:web:https://images.pokemontcg.io/ex1/logo.png|EXルビー&サファイア;web:https://images.pokemontcg.io/ex1/75_hires.png|キモリ",
+   "label": "2003年6月のセット"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "実はこのセットから、海外のカードを\n売る会社が、がらりと替わったの。",
+   "img": "row:web:https://images.pokemontcg.io/ex1/75_hires.png|キモリ;web:https://images.pokemontcg.io/ex1/73_hires.png|アチャモ;web:https://images.pokemontcg.io/ex1/59_hires.png|ミズゴロウ",
+   "label": "このセットから会社が替わった"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ボクがルビサファで遊んでいたころに、\nそんなことが起きていたのだ？",
+   "img": "web:https://images.pokemontcg.io/ex1/75_hires.png",
+   "label": "英語版のキモリのカード"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "替わる前に作っていたのは、\nウィザーズ・オブ・ザ・コースト。",
+   "img": "commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg",
+   "label": "ウィザーズ・オブ・ザ・コースト",
+   "say": "替わる前に作っていたのは、ウィザーズ、オブ、ザ、コースト。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日は、この会社とポケモンカードの、\n4年あまりの話を掘るわ。",
+   "img": "row:commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ;web:https://images.pokemontcg.io/base1/4_hires.png|英語版のポケモンカード",
+   "label": "ウィザーズとポケモンカード"
+  },
+  {
+   "type": "title",
+   "sub": "本日の採掘",
+   "t": "カードを失った会社は、なぜ任天堂を訴えた？",
+   "font": "mincho"
+  },
+  {
+   "type": "title",
+   "sub": "第一層",
+   "t": "海岸の魔法使いたち",
+   "font": "mincho",
+   "sec": "第一層　海岸の魔法使いたち",
+   "x": {
+    "head": "英語版ポケモンカードを\n最初に売った会社は\n自宅の地下室で生まれた",
+    "img": [
+     "commons:Peter Adkison-2007.jpg"
+    ],
+    "bubble": "地下室なのだ",
+    "who": "z",
+    "post": "英語版のポケモンカードを1999年から売ったのは、ウィザーズ・オブ・ザ・コーストという会社でした。1990年、航空機メーカーで働いていたピーター・アドキソンが、自宅の地下室で始めた会社です。1993年、数学者が作ったカードゲームで大当たりします。そのゲーム、わかりますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ウィザーズ・オブ・ザ・コーストは、\n海岸の魔法使いたち、という意味よ。",
+   "img": "commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg",
+   "label": "海岸の魔法使いたち",
+   "say": "ウィザーズ、オブ、ザ、コーストは、海岸の魔法使いたち、という意味よ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1990年に、アメリカの西の端、\nワシントン州で生まれた会社なの。",
+   "img": "commons:Washington Locator Map with US.PNG",
+   "label": "ワシントン州（アメリカの北西）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "始めたのは、ピーター・アドキソン。\n飛行機の会社ボーイングで働いていた人よ。",
+   "img": "commons:Peter Adkison-2007.jpg",
+   "label": "ピーター・アドキソン（創業者）",
+   "say": "始めたのは、ピーター、アドキソン。飛行機の会社ボーイングで働いていた人よ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "最初の仕事場は、\nなんと自宅の地下室だったの。",
+   "img": "commons:Peter Adkison-2007.jpg",
+   "label": "最初の仕事場は自宅の地下室"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ボクたちの坑道と同じで、\n地下から始まった会社なのだ。",
+   "img": "commons:Peter Adkison-2007.jpg",
+   "label": "最初の仕事場は自宅の地下室"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1993年、この会社が出したのが、\nマジック・ザ・ギャザリング。",
+   "img": "commons:MagicTheGatheringCards.jpg",
+   "label": "マジック（1993年）",
+   "say": "1993年、この会社が出したのが、マジック、ザ、ギャザリング。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "集めたカードで自分の山札を組んで戦う、\nトレーディングカードゲームのさきがけよ。",
+   "img": "commons:Magic The Gathering players.JPG",
+   "label": "マジックで遊ぶ人たち"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ポケモンカードと、\n同じ遊び方なのだ。",
+   "img": "commons:Magic The Gathering players.JPG",
+   "label": "マジックで遊ぶ人たち"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そうね。作ったのは、\nリチャード・ガーフィールドという数学者。",
+   "img": "commons:Richard Garfield (Spiel 2014 cropped).jpg",
+   "label": "リチャード・ガーフィールド",
+   "say": "そうね。作ったのは、リチャード、ガーフィールドという数学者。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "大学で、組み合わせを数える数学を研究して、\n博士号を取った人よ。",
+   "img": "commons:Richard Garfield (Spiel 2014 cropped).jpg",
+   "label": "数学の博士"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ガーフィールドさんが最初に持ちこんだのは、\nロボラリーという、ボードゲームだったの。",
+   "img": "commons:Richard Garfield (Spiel 2014 cropped).jpg",
+   "label": "最初はボードゲームを持ちこんだ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも、作るのにお金がかかりすぎる、と断られて、\n安く作れて、さっと遊べるゲームを頼まれたの。",
+   "img": "commons:Richard Garfield (Spiel 2014 cropped).jpg",
+   "label": "安く作れて、さっと遊べるゲームを"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "それで、カードだけで\n遊べるゲームになったのだ。",
+   "img": "commons:MagicTheGatheringCards.jpg",
+   "label": "マジック・ザ・ギャザリング"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1993年の夏のゲームの大会では、\nウィザーズが持ちこんだ250万枚が売り切れたそうよ。",
+   "img": "commons:Magic the Gathering - Trade.jpg",
+   "label": "250万枚が売り切れ"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "数学者の作ったゲームが、\nそんなに売れたのだ！",
+   "img": "commons:Magic the Gathering - Trade.jpg",
+   "label": "250万枚が売り切れ"
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "海を渡ったポケモンカード",
+   "font": "mincho",
+   "sec": "第二層　海を渡ったカード",
+   "x": {
+    "head": "英語版ポケモンカードは\n6週間たらずで\n40万パック以上売れた",
+    "img": [
+     "web:https://images.pokemontcg.io/base1/4_hires.png"
+    ],
+    "bubble": "勢いがすごいのだ",
+    "who": "z",
+    "post": "英語版のポケモンカードは1999年1月にアメリカで発売され、6週間たらずで40万パック以上が売れました。休み時間の交換が騒ぎになり、ニューヨーク州などではカードを禁止する小学校も出ました。あなたの学校では、カードの持ちこみは自由でしたか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "いっぽう日本では、1996年の10月20日に、\nポケモンカードが出ていたの。",
+   "img": "commons:POKEMON card battle.jpg",
+   "label": "日本 1996年10月20日"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "売っていたのは、出版社の\nメディアファクトリーよ。",
+   "img": "commons:POKEMON card battle.jpg",
+   "label": "メディアファクトリー"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして1998年の夏。英語版を作る権利を\n手に入れたのが、ウィザーズだったの。",
+   "img": "row:commons:Pokémon Trading Card Game logo.svg^web:https://images.pokemontcg.io/base1/logo.png|ポケモンカード>commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ",
+   "label": "1998年 英語版の権利",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "マジックの会社なら、カードゲームの\n売り方はよく知っているのだ。",
+   "img": "row:commons:Pokémon Trading Card Game logo.svg^web:https://images.pokemontcg.io/base1/logo.png|ポケモンカード>commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ",
+   "label": "1998年 英語版の権利"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのときウィザーズが出した知らせの題は、\nポケモンカードの権利を、捕まえた！",
+   "img": "commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg",
+   "label": "権利を捕まえた！"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ポケモンらしい\n言い方なのだ。",
+   "img": "commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg",
+   "label": "権利を捕まえた！"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アメリカで発売されたのは、1999年の1月。\n最初のセットは、この絵柄よ。",
+   "img": "row:web:https://images.pokemontcg.io/base1/4_hires.png|リザードン;web:https://images.pokemontcg.io/base1/58_hires.png|ピカチュウ",
+   "label": "最初のセット（1999年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "売れ行きは、6週間たらずで、\n40万パック以上。",
+   "img": "commons:Pokemon collection.jpg",
+   "label": "6週間で40万パック以上",
+   "big": "6週間で40万パック",
+   "bf": "potta",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "すごい勢いなのだ！\nお店から消えそうなのだ。",
+   "img": "commons:Pokemon collection.jpg",
+   "label": "6週間で40万パック以上"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "休み時間の交換で取り合いが起きて、\nカードを禁止する小学校も出たの。",
+   "img": "commons:Pokemon collection.jpg",
+   "label": "カード禁止の小学校も"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ニューヨーク州や、ニューハンプシャー州の\n小学校の話が、新聞に載っているわ。",
+   "img": "commons:Pokemon collection.jpg",
+   "label": "カード禁止の小学校も"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "学校で禁止されるほど、\nはやっていたのだ。",
+   "img": "commons:Pokemon collection.jpg",
+   "label": "カード禁止の小学校も"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "同じ1999年の9月には、カードのパックは\n賭博だ、という裁判まで起きたわ。",
+   "img": "commons:Pokemon collection.jpg",
+   "label": "パックは賭博？（1999年9月）"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "それは前に、この採掘場で\n掘った話なのだ。",
+   "img": "commons:Pokemon collection.jpg",
+   "label": "パックは賭博？（1999年9月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。そのときは、ウィザーズも\n訴えられた側の1つだったのよ。",
+   "img": "commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg",
+   "label": "ウィザーズも訴えられた側"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "350億円の買収",
+   "font": "mincho",
+   "sec": "第三層　350億円の買収",
+   "x": {
+    "head": "2000年、ポケモンカードは\nおもちゃの大会社ハズブロの\n売り上げの15％だった",
+    "img": [
+     "commons:Hasbro, Inc. world headquarters Pawtucket.jpg"
+    ],
+    "bubble": "カードだけでなのだ",
+    "who": "z",
+    "post": "1999年9月、アメリカのおもちゃの大会社ハズブロは、英語版ポケモンカードを売るウィザーズを3億2500万ドルで買うと発表しました。2000年の報告書には、ポケモンカードだけで会社全体の売り上げの15％と書かれています。そのころ、カードを集めていましたか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ブームの真っ最中の、1999年の9月9日。\n大きな発表があったの。",
+   "img": "commons:Hasbro, Inc. world headquarters Pawtucket.jpg",
+   "label": "ハズブロの本社"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アメリカのおもちゃの大会社ハズブロが、\nウィザーズを買う、と発表したのよ。",
+   "img": "row:commons:Hasbro, Inc. world headquarters Pawtucket.jpg|ハズブロ>commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ",
+   "label": "ハズブロがウィザーズを買う"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハズブロの本社は、アメリカの東の\nロードアイランド州にあるわ。",
+   "img": "commons:Rhode Island Locator Map with US.PNG",
+   "label": "ロードアイランド州"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "買った値段は、3億2500万ドル。\n当時のお金で、およそ350億円ね。",
+   "img": "commons:Hasbro, Inc. world headquarters Pawtucket.jpg",
+   "label": "約350億円で買収",
+   "big": "3億2500万ドル",
+   "bf": "mincho",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "カードゲームの会社に、\nそんなに払ったのだ！？",
+   "img": "commons:Hasbro, Inc. world headquarters Pawtucket.jpg",
+   "label": "約350億円で買収"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハズブロの会長は、ウィザーズのおかげで、\n伸びているゲームの分野に大きく広がれる、と。",
+   "img": "commons:Hasbro, Inc. world headquarters Pawtucket.jpg",
+   "label": "ハズブロ会長の言葉"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハズブロは、その前の年から、\nポケモンのおもちゃも作っていた会社なの。",
+   "img": "commons:Hasbro world headquarters.jpg",
+   "label": "ポケモンのおもちゃも作っていた"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そこにカードまで加わって、ポケモンの\n売り上げが、一気にふくらんだのね。",
+   "img": "commons:Hasbro world headquarters.jpg",
+   "label": "おもちゃとカードの両方"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "会社が毎年、国に出す報告書があるの。\n2000年の分には、こう書いてあるわ。",
+   "img": "commons:Hasbro world headquarters.jpg",
+   "label": "アメリカの役所に出した報告書"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンカードだけで、\n会社全体の売り上げの15％。",
+   "img": "commons:Hasbro, Inc. world headquarters Pawtucket.jpg",
+   "label": "ポケモンカード＝売り上げの15％",
+   "big": "売り上げの15％",
+   "bf": "mincho",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "おもちゃの大会社なのに、\nカードだけで15％なのだ！？",
+   "img": "commons:Hasbro, Inc. world headquarters Pawtucket.jpg",
+   "label": "ポケモンカード＝売り上げの15％"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ただ、このブームは長く続かなかったの。\n売れ行きは、急に落ちていったわ。",
+   "img": "commons:Pokemon collection.jpg",
+   "label": "ブームの終わり"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2000年の12月、ウィザーズは、\n本社で約100人をクビにしているの。",
+   "img": "commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg",
+   "label": "約100人を解雇"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "次の年の1月から3月、ハズブロのアメリカでの\nゲームの売り上げは、前の年の半分ほどに。",
+   "img": "commons:Hasbro world headquarters.jpg",
+   "label": "ゲームの売り上げ半分に"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "3億9800万ドルから、1億9000万ドルへ。\nハズブロは、その理由の1つにポケモンを挙げたわ。",
+   "img": "commons:Hasbro world headquarters.jpg",
+   "label": "3.98億→1.9億ドル"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "上がるのも落ちるのも、\n速すぎるのだ。",
+   "img": "commons:Hasbro world headquarters.jpg",
+   "label": "ゲームの売り上げ半分に"
+  },
+  {
+   "type": "title",
+   "sub": "第四層",
+   "t": "カードを横に倒す特許",
+   "font": "mincho",
+   "sec": "第四層　カードを倒す特許",
+   "x": {
+    "head": "マジックの会社は\nカードを横に倒す遊び方の\n特許を持っていた",
+    "img": [
+     "commons:Magic The Gathering players.JPG"
+    ],
+    "bubble": "遊び方に特許なのだ",
+    "who": "z",
+    "post": "英語版ポケモンカードを売っていたウィザーズは、1997年に、トレーディングカードゲームの遊び方の特許を取りました。使ったカードを90度回して横に倒す、と書かれています。ギネス世界記録にも最初のトレカの特許として載っています。遊び方の特許、ありだと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ここで、ウィザーズが持っていた、\nある特許の話をしておくわね。",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "label": "アメリカの特許の図"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1997年の9月に認められた、トレーディング\nカードゲームの遊び方の特許よ。",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "label": "1997年9月2日に登録"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "申しこんだのは、マジックが出た次の年の\n1994年。認められるまで、3年かかったの。",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "label": "1994年に申しこみ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "考えた人は、マジックを作った\nガーフィールドさん。",
+   "img": "commons:Richard Garfield (Spiel 2014 cropped).jpg",
+   "label": "考えた人 ガーフィールド"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ギネス世界記録にも、最初のトレーディング\nカードゲームの特許として載っているわ。",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "label": "ギネス世界記録にも"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ゲームの遊び方に、\n特許があるのだ？",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "label": "アメリカの特許の図"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "中身を読むと、まず、自分の山札を組んで、\nそこから手札を引くこと。",
+   "img": "web:https://patentimages.storage.googleapis.com/e6/2b/7c/a37a16dddfe211/US5662332-drawings-page-7.png^commons:Magic The Gathering players.JPG",
+   "label": "山札（ライブラリ）から手札を引く"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして、使ったカードを、元の向きから\n90度回して、横に倒すこと。",
+   "img": "commons:Magic The Gathering players.JPG",
+   "label": "使ったカードを90度回す",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "マジックで、タップと呼ばれる動きよ。\n特許の文にも、この言葉が出てくるの。",
+   "img": "commons:Magic The Gathering players.JPG",
+   "label": "タップ＝カードを横に倒す"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ポケモンカードでも、ねむりになったら、\nカードを横に向けるのだ。",
+   "img": "commons:Magic The Gathering players.JPG",
+   "label": "タップ＝カードを横に倒す"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そうね。ただ、ねむりとこの特許の関係を\n書いた資料は、見つからなかったわ。",
+   "img": "commons:Magic The Gathering players.JPG",
+   "label": "ねむりとの関係は確かめられず"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ウィザーズは、ほかの会社がこの遊び方を使うなら、\n使用料を払ってもらう仕組みも作っていたの。",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "label": "使用料を払えば使える"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "カードゲームを作る会社は、\nみんな気になる特許なのだ。",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "label": "使用料を払えば使える"
+  },
+  {
+   "type": "title",
+   "sub": "第五層",
+   "t": "取り戻されたカード",
+   "font": "mincho",
+   "sec": "第五層　取り戻されたカード",
+   "x": {
+    "head": "英語版ポケモンカードの会社は\n4年あまりで交代\n最後のセットはスカイリッジ",
+    "img": [
+     "web:https://images.pokemontcg.io/ecard3/146_hires.png"
+    ],
+    "bubble": "4年あまりなのだ",
+    "who": "z",
+    "post": "2003年3月、英語版ポケモンカードを作っていたウィザーズは、ルビー・サファイアから先を作る提案が断られたと発表しました。5年で世界に約100億枚を売ったと言います。最後のセットは2003年5月のスカイリッジでした。持っているカードに、このマークはありますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "いっぽうで、ポケモンの側も動いていたの。\n2001年の2月、ニューヨークに会社ができたわ。",
+   "img": "wiki:en:New York City",
+   "label": "2001年2月 ニューヨーク"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "名前は、ポケモンUSA。アジアの外のポケモンを\n管理するための会社よ。",
+   "img": "wiki:en:New York City",
+   "label": "ポケモンUSA（2001年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アメリカでの権利を、ポケモンの側の\n手に取り戻すための会社でもあったの。",
+   "img": "row:commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ>wiki:en:New York City|ポケモンUSA",
+   "label": "権利をポケモンの側へ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2002年までに、ウィザーズの上の役職の\n2人が、ポケモンUSAに移っていたわ。",
+   "img": "row:commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ>wiki:en:New York City|ポケモンUSA",
+   "label": "ウィザーズの幹部2人が移った"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "カードを作っていた会社の人が、\n相手の会社に行ったのだ…。",
+   "img": "row:commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ>wiki:en:New York City|ポケモンUSA",
+   "label": "ウィザーズの幹部2人が移った"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして2003年の3月11日。\nウィザーズの社長が、こう発表したの。",
+   "img": "commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg",
+   "label": "2003年3月11日の発表"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ルビー・サファイアから先も作りたい、という\n提案が、株式会社ポケモンに断られた、と。",
+   "img": "web:https://images.pokemontcg.io/ex1/logo.png",
+   "label": "提案は断られた",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "社長は、公正で妥当な提案だったと思う、\nとも話しているわ。",
+   "img": "commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg",
+   "label": "公正で妥当な提案だった（社長）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ウィザーズによると、5年で世界に売った\nポケモンカードは、約100億枚。",
+   "img": "commons:Pokemon collection.jpg",
+   "label": "ウィザーズの発表 約100億枚"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "100億枚も売ったのに、\nそれで終わりなのだ…。",
+   "img": "commons:Pokemon collection.jpg",
+   "label": "ウィザーズの発表 約100億枚"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ウィザーズが最後に出したのは、\n2003年5月の、スカイリッジというセット。",
+   "img": "row:web:https://images.pokemontcg.io/ecard3/logo.png|スカイリッジ;web:https://images.pokemontcg.io/ecard3/146_hires.png|リザードン",
+   "label": "最後のセット（2003年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのすぐあと、6月18日に出たのが、\nさっきのEXルビー&サファイアよ。",
+   "img": "row:web:https://images.pokemontcg.io/ecard3/146_hires.png|スカイリッジ>web:https://images.pokemontcg.io/ex1/75_hires.png|EXルビー&サファイア",
+   "label": "6月18日 次のセット"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "売ったのは、任天堂のアメリカの会社。\n本社は、ウィザーズと同じワシントン州よ。",
+   "img": "commons:Nintendo of America Headquarters.jpg",
+   "label": "任天堂のアメリカの会社"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ボクのキモリは、会社が替わった\n最初のセットのカードだったのだ。",
+   "img": "web:https://images.pokemontcg.io/ex1/75_hires.png",
+   "label": "会社が替わった最初のセット"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして、ウィザーズとの最後の契約が\n切れたのが、2003年の9月30日。",
+   "img": "web:https://images.pokemontcg.io/base1/4_hires.png",
+   "label": "契約切れ 2003年9月30日"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのあと2006年からは、ポケモンUSAが\n自分でカードを売るようになったわ。",
+   "img": "wiki:en:New York City",
+   "label": "2006年からは自社で"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2009年には、イギリスの会社とひとつになって、\n今のポケモンの海外の会社になったの。",
+   "img": "wiki:en:New York City",
+   "label": "2009年 今の海外の会社に"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "日本でも、発売元はメディアファクトリーから、\n株式会社ポケモンに替わっているわ。",
+   "img": "commons:POKEMON card battle.jpg",
+   "label": "日本の発売元も替わった"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ただ、作っていた会社と裁判になった話は、\n日本では見つからなかったわ。",
+   "img": "row:commons:POKEMON card battle.jpg|日本;web:https://images.pokemontcg.io/base1/4_hires.png|海外",
+   "label": "日本と海外のちがい"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "海外では、会社が替わるときに、\n裁判まで起きたのだ。",
+   "img": "row:commons:POKEMON card battle.jpg|日本;web:https://images.pokemontcg.io/base1/4_hires.png|海外",
+   "label": "日本と海外のちがい"
+  },
+  {
+   "type": "title",
+   "sub": "最深層",
+   "t": "契約が切れた次の日",
+   "font": "mincho",
+   "sec": "最深層　次の日の訴え",
+   "x": {
+    "head": "英語版ポケモンカードの契約が\n切れた次の日、元の会社は\n任天堂を訴えた",
+    "img": [
+     "commons:Space Needle Mount Ranier Seattle Washington USA.jpg"
+    ],
+    "bubble": "次の日なのだ！？",
+    "who": "z",
+    "post": "2003年9月30日に英語版ポケモンカードの契約が切れると、作っていたウィザーズは翌日の10月1日、任天堂のアメリカの会社やポケモンUSAなどをシアトルの連邦裁判所に訴えました。訴えた相手には、移った元幹部2人の名前もありました。結末はどうなったと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その次の日の、10月1日。ウィザーズは、\nシアトルにある国の裁判所に訴えを出したの。",
+   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "label": "10月1日 シアトルで提訴",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "ほんとに、契約が切れた\n次の日なのだ。",
+   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "label": "10月1日 シアトルで提訴"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "訴えた相手は、任天堂のアメリカの会社、\n株式会社ポケモン、ポケモンUSA。",
+   "img": "row:commons:Nintendo of America Headquarters.jpg|任天堂（アメリカ）;wiki:en:New York City|ポケモンUSA",
+   "label": "訴えられた会社"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして、ポケモンUSAに移った、\nウィザーズの元幹部の2人よ。",
+   "img": "row:commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ>wiki:en:New York City|ポケモンUSA",
+   "label": "移った元幹部2人も"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "移った人まで、\n名前を出して訴えたのだ！？",
+   "img": "row:commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ>wiki:en:New York City|ポケモンUSA",
+   "label": "移った元幹部2人も"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "訴えの中身は、特許の侵害、契約の違反、\nそれに、会社の秘密を勝手に使ったこと。",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "label": "特許・契約・会社の秘密"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ウィザーズの元社員は、少なくとも7人が\nポケモンUSAに移っていた、と報じられたわ。",
+   "img": "wiki:en:New York City",
+   "label": "元社員 少なくとも7人"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "絵の責任者や、イベントの担当、\n計画を管理する責任者などよ。",
+   "img": "wiki:en:New York City",
+   "label": "絵・イベント・計画の担当"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "その特許って、\nさっきのタップの特許なのだ？",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "label": "どの特許かは報道に出ていない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "どの特許なのかは、当時の報道には\n名前が出ていないの。",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "label": "どの特許かは報道に出ていない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンUSAの側は、契約が終わった次の日に\n訴えられた、とだけ話していたわ。",
+   "img": "wiki:en:New York City",
+   "label": "契約が終わった次の日に訴えられた"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "結末は、3か月後の12月。和解よ。\nその中身は、公表されていないの。",
+   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "label": "12月 和解（中身は秘密）",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "和解って、\nどういうことなのだ？",
+   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "label": "和解とは"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "判決を待たずに、おたがいが約束を結んで、\n裁判を終わらせることよ。",
+   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "label": "判決の前に約束して終わらせる"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "どっちの言い分が通ったのか、\nわからないまま終わったのだ。",
+   "img": "commons:Space Needle Mount Ranier Seattle Washington USA.jpg",
+   "label": "12月 和解（中身は秘密）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも、タップの特許の話は、\nここで終わりではなかったの。",
+   "img": "commons:Magic The Gathering players.JPG",
+   "label": "タップの特許のその後"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2014年、ウィザーズは、ネットで遊ぶカードゲーム\nヘックスの会社を、特許などの侵害で訴えたわ。",
+   "img": "commons:Magic The Gathering players.JPG",
+   "label": "2014年 ヘックスの会社を提訴"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "これも、訴えてから1年4か月ほどで、\n使用料を払う約束を結んで和解しているの。",
+   "img": "commons:Magic The Gathering players.JPG",
+   "label": "2015年 使用料の約束で和解"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その特許も、今はもう期限が切れているわ。",
+   "img": "web:https://patentimages.storage.googleapis.com/4a/cb/fa/ece7df22cbde7d/US5662332-drawings-page-2.png^commons:MagicTheGatheringCards.jpg",
+   "label": "今は期限切れ"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "今日の答え。ウィザーズが訴えたのは、\nポケモンカードを失った、その次の日。",
+   "img": "web:https://images.pokemontcg.io/base1/4_hires.png",
+   "label": "契約が切れた翌日に提訴",
+   "sec": "まとめ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "約100億枚も売れたカードを、\n取り戻したい側と、手放したくない側がいたのね。",
+   "img": "row:commons:Wizards of the Coast logo (2021).svg^commons:MagicTheGatheringCards.jpg|ウィザーズ;wiki:en:New York City|ポケモンUSA",
+   "label": "手放したくない側と取り戻したい側"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ボクのキモリのカードが、そんな争いの\nすぐあとに出ていたなんて、知らなかったのだ。",
+   "img": "web:https://images.pokemontcg.io/ex1/75_hires.png",
+   "label": "英語版のキモリのカード"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "あなたは、ウィザーズのころのカードと、\nそのあとのカード、どっちが好き？",
+   "img": "row:web:https://images.pokemontcg.io/base1/4_hires.png|ウィザーズのころ;web:https://images.pokemontcg.io/ex1/75_hires.png|そのあと",
+   "label": "あなたはどっち？"
+  },
+  {
+   "type": "title",
+   "sub": "おまけ",
+   "t": "今日のポケモンの英語名",
+   "font": "hachi",
+   "sec": "今日のポケモンの英語名"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "今日の英語名は、EXルビー&サファイアにいた、\nホウエン地方の最初の3匹よ。",
+   "img": "row:art:252|キモリ;art:255|アチャモ;art:258|ミズゴロウ",
+   "label": "ホウエン地方の最初の3匹",
+   "lf": "hachi"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "まず、キモリ。\nトゥリーコ。",
+   "img": "art:252",
+   "label": "Treecko（トゥリーコ）",
+   "lf": "hachi",
+   "say": "まず、キモリ。トゥリーコ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "treeは木。geckoは、ヤモリのことよ。",
+   "img": "art:252",
+   "label": "Treecko（トゥリーコ）",
+   "lf": "hachi",
+   "ety": [
+    "Treecko（トゥリーコ）",
+    "英語　tree（木）＋gecko（ヤモリ）"
+   ],
+   "say": "ツリーは木。ゲッコーは、ヤモリのことよ。"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "次は、アチャモ。\nトーチック。",
+   "img": "art:255",
+   "label": "Torchic（トーチック）",
+   "lf": "hachi",
+   "say": "次は、アチャモ。トーチック。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "torchは、たいまつ。chickは、ひよこね。",
+   "img": "art:255",
+   "label": "Torchic（トーチック）",
+   "lf": "hachi",
+   "ety": [
+    "Torchic（トーチック）",
+    "英語　torch（たいまつ）＋chick（ひよこ）"
+   ],
+   "say": "トーチは、たいまつ。チックは、ひよこね。"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "最後は、ミズゴロウ。\nマッドキップ。",
+   "img": "art:258",
+   "label": "Mudkip（マッドキップ）",
+   "lf": "hachi",
+   "say": "最後は、ミズゴロウ。マッドキップ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "mudskipperは、干潟にすむ魚、\nトビハゼやムツゴロウの仲間のことよ。",
+   "img": "art:258",
+   "label": "Mudkip（マッドキップ）",
+   "lf": "hachi",
+   "ety": [
+    "Mudkip（マッドキップ）",
+    "英語　mudskipper（トビハゼの仲間）から"
+   ],
+   "say": "マッドスキッパーは、干潟にすむ魚、トビハゼやムツゴロウの仲間のことよ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日出てきたポケモンの英語名は、\n英単語帳サイト「もんすぺ！」でも調べられるわ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "w": "m",
+   "face": "happy",
+   "t": "もんすぺ！には、ポケモンの雑学のコラムもあるの。\n動画の続きみたいに読めるわよ。",
+   "img": "site:",
+   "label": "もんすぺ！の雑学コラム"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の採掘はここまでなのだ。\nチャンネル登録もよろしくなのだ。",
+   "img": "site:",
+   "label": "「もんすぺ！」で検索"
+  },
+  {
+   "type": "ed"
+  }
+ ]
+}
