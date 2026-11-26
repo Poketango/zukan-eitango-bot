@@ -111,8 +111,12 @@ def load_img(d, spec):
         return load_img(d, alts[-1])
     if spec.startswith("web:"):                       # 本編のサムネ（https://i.ytimg.com/vi/ID/maxresdefault.jpg）など
         import saikutsu_long as SL
-        url = spec[4:]
-        return SL._get(url, "web_" + re.sub(r"[^A-Za-z0-9._-]", "_", url)[-120:]), False
+        url, _, c = spec[4:].partition("@crop=")    # 2026-11-26：本編と同じ「URL@crop=x0,y0,x1,y1」に対応（無いと 0020 で落ちていた）
+        im = SL._get(url, "web_" + re.sub(r"[^A-Za-z0-9._-]", "_", url)[-120:])
+        if c:
+            x0, y0, x1, y1 = [float(v) for v in c.split(",")]
+            im = im.crop((int(im.width * x0), int(im.height * y0), int(im.width * x1), int(im.height * y1)))
+        return im, False
     if re.match(r"(art|wiki|commons|csearch|row|table|sil|paper|site):", spec):
         import saikutsu_long as SL                    # 循環を避けてここで読む
         SL.DIR = d
