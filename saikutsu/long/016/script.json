@@ -1,0 +1,1048 @@
+{
+ "no": 16,
+ "title": "山火事の5日後、ポケモン社は「次の世界大会はハワイ」と発表した。",
+ "neta": "世界大会のハワイ開催発表が山火事と重なった",
+ "thumb": {
+  "layout": "v2",
+  "pre": "ポケモン世界大会の発表に",
+  "big": [
+   "今は",
+   "来ないで"
+  ],
+  "hl": 1,
+  "hl_color": "red",
+  "fonts": [
+   "mincho",
+   "mincho"
+  ],
+  "pre_font": "maru",
+  "pre_size": 60,
+  "back": "commons:Lahaina fire - 8 august.jpg",
+  "photo": "commons:Maui community of Lahaina burned by wildfire - 53119882503.jpg",
+  "photo_label": "山火事のラハイナ",
+  "chara": null,
+  "big_w": 620,
+  "big_size": [
+   170,
+   230
+  ],
+  "sticker": {
+   "img": "art:25",
+   "h": 230,
+   "x": 470,
+   "y": 470
+  }
+ },
+ "lines": [
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2023年8月13日、横浜。\nポケモンの世界大会が、最終日を迎えたの。",
+   "img": "commons:Pacifico-Yokohama-01.jpg",
+   "sec": "ポケモン雑学採掘場",
+   "label": "パシフィコ横浜"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "閉会式で、次の年の開催地が発表されたわ。\nハワイの、ホノルルよ。",
+   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "label": "ホノルル（ハワイ州）"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ハワイなのだ！？\n選手もファンも、大喜びなのだ。",
+   "img": "commons:Waikiki Skyline (7733357776).jpg",
+   "label": "ホノルルのワイキキ"
+  },
+  {
+   "w": "m",
+   "face": "sad",
+   "t": "ところが、発表の投稿には、\n「今は来ないで」という返事が並んだの。",
+   "img": "commons:Maui community of Lahaina burned by wildfire - 53119882503.jpg",
+   "label": "ラハイナ（2023年8月）",
+   "big": "今は来ないで",
+   "bf": "mincho",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "来ないで！？\nハワイで、いったい何があったのだ？",
+   "img": "commons:Maui community of Lahaina burned by wildfire - 53119882503.jpg",
+   "label": "ラハイナ（2023年8月）"
+  },
+  {
+   "type": "op",
+   "w": "m",
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘場。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学さいくつじょう。"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "今日の坑道は、蒸し暑いのだ。\n南の島の海で、泳ぎたいのだ。",
+   "img": "commons:Waikiki Skyline (7733357776).jpg",
+   "sec": "導入　南の島の世界大会",
+   "label": "南の島の海"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "南の島といえば、ポケモンの世界大会は、\nハワイで何度も開かれているのよ。",
+   "img": "commons:Hilton Waikoloa Village Resort (2008) 05.JPG",
+   "label": "ハワイ島のホテル"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "世界大会がハワイで！？\nうらやましすぎるのだ。",
+   "img": "commons:Hilton Waikoloa Village (53313376225).jpg",
+   "label": "ハワイ島のホテル"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして2023年、4回目のハワイでの開催が\n決まった日に、あの返事が並んだの。",
+   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "label": "4回目のハワイ開催"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "めでたい発表なのに、\nなんで来ないでなのだ？",
+   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "label": "4回目のハワイ開催"
+  },
+  {
+   "type": "title",
+   "sub": "本日の採掘",
+   "t": "ハワイでの世界大会は、なぜ「来ないで」と言われた？",
+   "font": "mincho"
+  },
+  {
+   "type": "title",
+   "sub": "第一層",
+   "t": "南の島の世界大会",
+   "sec": "第一層　ハワイの世界大会",
+   "font": "mincho",
+   "x": {
+    "head": "ポケモンの世界大会は\nハワイ島のホテルで\n3回も開かれていた",
+    "img": [
+     "commons:Hilton Waikoloa Village Resort (2008) 05.JPG"
+    ],
+    "bubble": "3回もなのだ",
+    "who": "z",
+    "post": "ポケモンの世界大会は、2007年、2010年、2012年の3回、ハワイ島ワイコロアのホテルで開かれました。2010年のゲーム部門は、ハートゴールド・ソウルシルバーで、伝説のポケモンを2匹まで使えるルールでした。あなたはそのころ、何で遊んでいましたか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモンの世界大会がはじめてハワイに\n来たのは、2007年の8月よ。",
+   "img": "commons:Hilton Waikoloa Village Resort (2008) 05.JPG",
+   "label": "2007年の世界大会の会場"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "会場は、ハワイ島のワイコロアにある、\n海辺の大きなホテルだったの。",
+   "img": "commons:Hilton Waikoloa Village (53313376225).jpg",
+   "label": "ヒルトン・ワイコロア"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ハワイ島？\nハワイとは、違う島なのだ？",
+   "img": "commons:Hawaiian Islands Full Relief Template.png",
+   "label": "ハワイ州の島々"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハワイ州には、大きな島がいくつもあるの。\nいちばん大きい島の名前が、ハワイ島よ。",
+   "img": "commons:Map of Hawaii highlighting Hawaii County.svg^commons:Hilton Waikoloa Village (53313376225).jpg",
+   "label": "ハワイ島"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "このときは、カードゲームの大会で、\nおよそ30か国の選手が集まったわ。",
+   "img": "commons:Pokémon World Championships 2014.jpg",
+   "label": "世界大会の会場（2014年）"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "南の島で世界一を決めるなんて、\nぜいたくな大会なのだ。",
+   "img": "commons:Hilton Waikoloa Village Resort (2008) 05.JPG",
+   "label": "2007年の世界大会の会場"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "カードの大会なのだ。\nゲームの対戦は、なかったのだ？",
+   "img": "commons:Pokémon World Championships 2014.jpg",
+   "label": "世界大会の会場（2014年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ゲームの部門の世界大会が始まったのは、\n2009年の、アメリカのサンディエゴからよ。",
+   "img": "commons:Pokémon World Championships 2014.jpg",
+   "label": "ゲームの部門は2009年から"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして2010年、ゲームの大会も\nいっしょに、ハワイ島へ来たの。",
+   "img": "commons:Hilton Waikoloa Village Resort (2008) 05.JPG",
+   "label": "2010年もハワイ島"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "2010年なら、ハートゴールドと\nソウルシルバーのころなのだ！",
+   "img": "wiki:en:Pokémon HeartGold and SoulSilver",
+   "label": "ハートゴールド・ソウルシルバー"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その年のルールは、カイオーガや\nグラードンを、2匹まで使えたのよ。",
+   "img": "row:art:382|カイオーガ;art:383|グラードン",
+   "label": "2010年の世界大会のルール"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "伝説が2匹並ぶダブルバトル、\nボクも大好きだったのだ。",
+   "img": "row:art:382|カイオーガ;art:383|グラードン",
+   "label": "2010年の世界大会のルール"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "このハワイで勝ったのが、アメリカの\nレイ・リッツォさん。10代前半の部門よ。",
+   "img": "commons:Hilton Waikoloa Village (53313376225).jpg",
+   "label": "2010年 シニア部門で優勝",
+   "say": "このハワイで勝ったのが、アメリカの、レイ、リッツォさん。じゅうだい前半の部門よ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2011年は、いちばん上の年齢の部門で優勝。\n2012年、またハワイ島で優勝したの。",
+   "img": "commons:Hilton Waikoloa Village Resort (2008) 05.JPG",
+   "label": "3年続けて世界一",
+   "ans": true,
+   "say": "2011年は、いちばん上の年齢の部門で優勝。2012年、またハワイ島で優勝したの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "3年続けての世界一は、\nギネス世界記録にもなっているわ。",
+   "img": "commons:Hilton Waikoloa Village Resort (2008) 05.JPG",
+   "label": "ギネス世界記録"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2012年の決勝の相手は、ウルフ・グリックさん。\nのちの2016年に、自分も世界一になる選手よ。",
+   "img": "commons:Hilton Waikoloa Village Resort (2008) 05.JPG",
+   "label": "2012年の決勝",
+   "say": "2012年の決勝の相手は、ウルフ、グリックさん。のちの2016年に、自分も世界一になる選手よ。"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ハワイ島で、2回も\n優勝しているのだ。",
+   "img": "commons:Hilton Waikoloa Village (53313376225).jpg",
+   "label": "ハワイ島のホテル"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でも、なんで世界大会は、\nハワイばかりなのだ？",
+   "img": "commons:Hawaiian Islands Full Relief Template.png",
+   "label": "なぜハワイ？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それが、選んだ理由の公式の説明は、\n見つからなかったの。",
+   "img": "commons:Hawaiian Islands Full Relief Template.png",
+   "label": "なぜハワイ？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ただ、ポケモンにとってハワイが特別な\n場所になったのは、このあとよ。",
+   "img": "commons:Waikiki Skyline (7733357776).jpg",
+   "label": "ハワイとポケモン"
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "アローラの元になった島",
+   "sec": "第二層　アローラはハワイ",
+   "font": "reggae",
+   "x": {
+    "head": "サン・ムーンのアローラは\n最初からずっと\nハワイが元だった",
+    "img": [
+     "art:10114"
+    ],
+    "bubble": "首が長いのだ",
+    "who": "z",
+    "post": "2016年のポケモン サン・ムーンの舞台、アローラ地方。ディレクターの大森滋さんは、元にするのは最初からずっとハワイがいいと思っていた、と話しています。音楽にもハワイの伝統のリズムが使われました。アローラで、いちばん好きなポケモンは？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2016年に出た、ポケットモンスター\nサン・ムーン。舞台は、アローラ地方よ。",
+   "img": "wiki:en:Pokémon Sun and Moon",
+   "label": "サン・ムーン（2016年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ディレクターの大森滋さんは、\nアメリカの雑誌に、こう話しているわ。",
+   "img": "wiki:en:Pokémon Sun and Moon",
+   "label": "大森滋さんの言葉",
+   "say": "ディレクターの、おおもりしげるさんは、アメリカの雑誌に、こう話しているわ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "「地方の元にするのは、最初からずっと、\nハワイがいいと思っていた」",
+   "img": "commons:Waikiki Skyline (7733357776).jpg",
+   "label": "TIME（2016年10月）",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "最初から、\nハワイに決めていたのだ。",
+   "img": "commons:Waikiki Skyline (7733357776).jpg",
+   "label": "TIME（2016年10月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "増田順一さんも、音楽に、\nハワイの伝統のリズムを入れたと話しているの。",
+   "img": "row:art:722|モクロー;art:725|ニャビー;art:728|アシマリ",
+   "label": "アローラの最初の3匹"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "見なれたポケモンも、アローラでは、\n姿が変わったわね。",
+   "img": "row:art:10100|ライチュウ;art:10103|ロコン;art:10114|ナッシー",
+   "label": "アローラのすがた"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ナッシーの首が、\nとんでもなく伸びているのだ！",
+   "img": "art:10114",
+   "label": "アローラのナッシー"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "南の島の強い日差しで、首が伸びた。\n図鑑には、そう書かれているわ。",
+   "img": "art:10114",
+   "label": "アローラのナッシー"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ロコンは、南の島の雪山にすんで、\nこおりタイプになったの。",
+   "img": "art:10103",
+   "label": "アローラのロコン"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ハワイに、\n雪山があるのだ？",
+   "img": "art:10103",
+   "label": "アローラのロコン"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハワイ島の高い山には、\n冬になると、雪がつもるのよ。",
+   "img": "commons:Map of Hawaii highlighting Hawaii County.svg^commons:Hilton Waikoloa Village (53313376225).jpg",
+   "label": "ハワイ島の高い山"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "アローラの元になったハワイで\n世界大会をしたら、盛り上がるのだ。",
+   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "label": "ホノルル（オアフ島）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモン社も、きっとそう考えたのね。\n話は、2023年8月の横浜に移るわ。",
+   "img": "commons:Pacifico Yokohama 2012.JPG",
+   "label": "パシフィコ横浜"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "横浜の閉会式",
+   "sec": "第三層　横浜の閉会式",
+   "font": "potta",
+   "x": {
+    "head": "ポケモン世界大会の\n「次はハワイ」の発表は\n山火事のお見舞いとセットだった",
+    "img": [
+     "commons:Pacifico Yokohama 2012.JPG"
+    ],
+    "bubble": "同じ場でなのだ",
+    "who": "z",
+    "post": "2023年8月13日、横浜の世界大会の閉会式で、株式会社ポケモンの石原恒和社長が、次の開催地をホノルルと発表しました。同じ場で、ハワイの山火事の被害にあった人たちへのお見舞いも述べています。この発表、あなたはどう感じますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2023年の世界大会は、8月11日から\n13日まで、パシフィコ横浜で開かれたの。",
+   "img": "commons:Pacifico Yokohama 2012.JPG",
+   "label": "パシフィコ横浜"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "世界大会が日本で開かれたのは、\nこのときが初めてだったのよ。",
+   "img": "commons:Pacifico Yokohama 2012.JPG",
+   "label": "日本で初めての世界大会"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "横浜で世界一が決まるなんて、\nボクも見に行きたかったのだ。",
+   "img": "commons:Pacifico Yokohama 2012.JPG",
+   "label": "日本で初めての世界大会"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "世界大会って、\nだれでも出られるのだ？",
+   "img": "commons:Pacifico Yokohama 2012.JPG",
+   "label": "パシフィコ横浜"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "いいえ。世界の各地の大会で、成績を\n積んだ選手が招かれる大会よ。",
+   "img": "commons:Pokémon World Championships 2014.jpg",
+   "label": "招かれた選手の大会"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして閉会式の最後には、次の年の\n開催地を発表するのが、毎年の流れなの。",
+   "img": "commons:Pacifico-Yokohama-01.jpg",
+   "label": "閉会式で次の開催地"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "前の年のロンドン大会の閉会式でも、\n横浜での開催が発表されたわ。",
+   "img": "commons:Entrance of the 2022 London Pokémon World Championships - August 2022.jpg",
+   "label": "2022年のロンドン大会"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "最終日の閉会式で、社長の石原恒和さんが、\n次の開催地を発表したわ。",
+   "img": "commons:Pacifico-Yokohama-01.jpg",
+   "label": "閉会式（8月13日）",
+   "say": "最終日の閉会式で、社長の、いしはらつねかずさんが、次の開催地を発表したわ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "次は、ハワイのホノルル。\nアローラの元になった場所だ、と。",
+   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "label": "次はホノルル",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "やっぱりハワイなのだ！\n4回目のハワイなのだ。",
+   "img": "commons:Waikiki Skyline (7733357776).jpg",
+   "label": "4回目のハワイ開催"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ホノルルは、ハワイ島とは別の、\nオアフ島にある州の中心の町よ。",
+   "img": "commons:Map of Hawaii highlighting Oahu.svg^commons:Skyline of Honolulu Hawaii.JPG",
+   "label": "オアフ島（ホノルル）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ただ、石原さんはこのとき、\nもう1つの話もしていたの。",
+   "img": "commons:Pacifico-Yokohama-01.jpg",
+   "label": "閉会式（8月13日）"
+  },
+  {
+   "w": "m",
+   "face": "sad",
+   "t": "ハワイの山火事で被害にあった人たちに、\n心からのお見舞いを伝えたのよ。",
+   "img": "commons:Lahaina fire - 8 august.jpg",
+   "label": "ハワイの山火事"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして、助けになるために、何ができるか\n考えている、と続けたわ。",
+   "img": "commons:Lahaina fire - 8 august.jpg",
+   "label": "ハワイの山火事"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "山火事なのだ？\nそんな大変なことが、起きていたのだ？",
+   "img": "commons:Lahaina fire - 8 august.jpg",
+   "label": "ハワイの山火事"
+  },
+  {
+   "type": "title",
+   "sub": "第四層",
+   "t": "王国の都が燃えた",
+   "sec": "第四層　マウイ島の山火事",
+   "font": "fude",
+   "x": {
+    "head": "ハワイ王国の都だった町ラハイナが\n2023年8月の山火事で焼け\n102人が亡くなった",
+    "img": [
+     "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg"
+    ],
+    "bubble": "言葉が出ないのだ",
+    "who": "z",
+    "post": "2023年8月8日、マウイ島の町ラハイナを山火事がおそい、102人が亡くなりました。アメリカの山火事で、この100年あまりで最悪の被害です。ラハイナは1820年から1845年まで、ハワイ王国の都でした。ポケモンの世界大会の閉会式は、その5日後でした。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "閉会式の5日前、8月8日のこと。\nハワイのマウイ島で、山火事が起きたの。",
+   "img": "commons:Map of Hawaii highlighting Maui.svg^commons:Location map Maui.png",
+   "label": "マウイ島"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "火は強い風にあおられて、\n海辺の町、ラハイナに燃え広がったわ。",
+   "img": "commons:Lahaina fire - 8 august.jpg",
+   "label": "燃えるラハイナ（8月8日）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ラハイナは、1820年から1845年まで、\nハワイ王国の都だった町よ。",
+   "img": "commons:Front Street Lahaina at Sunset.jpg",
+   "label": "火事の前のラハイナ"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ハワイに、\n王国があったのだ？",
+   "img": "commons:Lahaina Front Street.jpg",
+   "label": "火事の前のラハイナ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ええ。今はアメリカの州だけど、\nもとは、王さまが治める国だったの。",
+   "img": "commons:Maui-Lahaina-Courthouse-front.JPG",
+   "label": "ラハイナの古い役所"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1800年代には、クジラをとる船が\nたくさん集まる港町としても、栄えたわ。",
+   "img": "commons:Lahaina Hawaii 2016 Harbor.jpg",
+   "label": "ラハイナの港（2016年）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "歴史のある、\n古い港町だったのだ。",
+   "img": "commons:Lahaina Hawaii 2016 Harbor.jpg",
+   "label": "ラハイナの港（2016年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "町の広場には、1873年に植えられた、\n大きなバニヤンツリーがあったわ。",
+   "img": "commons:Lahaina Banyan Tree.jpg",
+   "label": "ラハイナのバニヤンツリー"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "これが1本の木なのだ！？\n森みたいに、広がっているのだ。",
+   "img": "commons:Lahaina Banyan Tree.jpg",
+   "label": "ラハイナのバニヤンツリー"
+  },
+  {
+   "w": "m",
+   "face": "sad",
+   "t": "火事で、その町の大部分が焼けたの。\n焼けた建物は、2200棟あまり。",
+   "img": "commons:Maui community of Lahaina burned by wildfire - 53119882503.jpg",
+   "label": "焼けたラハイナ",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "sad",
+   "t": "焼けた広さは、およそ8.8平方キロ。\n東京ドームの、およそ190個分よ。",
+   "img": "commons:Maui wildfires 2023.jpg",
+   "label": "宇宙から見たマウイ島",
+   "kana": "ヤケタ/ヒ'ロサワ、オヨソ/ハ'チテンハチ/ヘエホオキ'ロ。トオキョオド'オムノ、オヨソ/ヒャクキュウジュ'ッコブンヨ"
+  },
+  {
+   "w": "m",
+   "face": "sad",
+   "t": "亡くなった人は、102人。\n2024年の6月に、警察が確かめた数よ。",
+   "img": "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg",
+   "label": "102人が亡くなった"
+  },
+  {
+   "w": "m",
+   "face": "sad",
+   "t": "アメリカの山火事で、この100年あまりで、\nいちばん多くの人が亡くなったの。",
+   "img": "commons:Maui Fire Department truck along the street with the burned community of Lahaina in the background.jpg",
+   "label": "この100年あまりで最悪"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "そんなに多くの人が、\n亡くなってしまったのだ…。",
+   "img": "commons:Maui Fire Department truck along the street with the burned community of Lahaina in the background.jpg",
+   "label": "この100年あまりで最悪",
+   "v": "namida"
+  },
+  {
+   "w": "m",
+   "face": "sad",
+   "t": "閉会式の8月13日は、まだ行方のわからない\n人を、探している最中だったの。",
+   "img": "commons:Hawaii Army National Guard fighting Maui wildfires, August 9, 2023.jpg",
+   "label": "山火事と戦う州兵（8月9日）"
+  },
+  {
+   "type": "title",
+   "sub": "第五層",
+   "t": "来ないで、と、来てほしい",
+   "sec": "第五層　来ないで、来てほしい",
+   "font": "mincho",
+   "x": {
+    "head": "ポケモン世界大会の\nハワイ開催の発表に\n「今は来ないで」の返事",
+    "img": [
+     "commons:Maui community of Lahaina burned by wildfire - 53119882503.jpg"
+    ],
+    "bubble": "どっちも本音なのだ",
+    "who": "z",
+    "post": "ハワイでの世界大会の発表には、「地元はまだ苦しんでいるから来ないで」という返事が並びました。一方、ハワイ州の知事は8月22日、西マウイ以外は安全だとして、来れば地元の経済を支えることになると呼びかけました。あなたなら、行きますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "山火事の5日後に、ポケモン社は、\n「次はハワイ」と発表したの。",
+   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "label": "山火事の5日後の発表"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "Xの公式の投稿にも、\n開催地の発表が載ったわ。",
+   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "label": "Xの公式の投稿"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ポケモン社は、山火事のことを\n知らなかったのだ？",
+   "img": "commons:Maui community of Lahaina burned by wildfire - 53119882503.jpg",
+   "label": "発表への返事"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "知っていたはずよ。閉会式で、\nお見舞いを伝えていたんだもの。",
+   "img": "commons:Pacifico-Yokohama-01.jpg",
+   "label": "閉会式でお見舞い"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それでも、その発表のすぐ下に、\nこんな返事が並んだの。",
+   "img": "commons:Maui community of Lahaina burned by wildfire - 53119882503.jpg",
+   "label": "発表への返事"
+  },
+  {
+   "w": "m",
+   "face": "sad",
+   "t": "「よりによって、\n最悪の場所だ」",
+   "img": "commons:Maui community of Lahaina burned by wildfire - 53119882503.jpg",
+   "label": "発表への返事"
+  },
+  {
+   "w": "m",
+   "face": "sad",
+   "t": "「地元はまだ苦しんでいるから、\n来ないでほしい」",
+   "img": "commons:Car burned in Lahaina, Hawaii following wildfire - 53119394866.jpg",
+   "label": "発表への返事"
+  },
+  {
+   "w": "m",
+   "face": "sad",
+   "t": "「別の島に変えることを、考えてほしい」",
+   "img": "commons:Car burned in Lahaina, Hawaii following wildfire - 53119394866.jpg",
+   "label": "発表への返事"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でも、大会はホノルルなのだ。\nマウイ島とは、別の島なのだ。",
+   "img": "row:commons:Map of Hawaii highlighting Oahu.svg^commons:Skyline of Honolulu Hawaii.JPG|オアフ島（大会）;commons:Map of Hawaii highlighting Maui.svg^commons:Location map Maui.png|マウイ島（山火事）",
+   "label": "オアフ島とマウイ島"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そうね。オアフ島とマウイ島は、\n海をへだてた、別の島よ。",
+   "img": "row:commons:Map of Hawaii highlighting Oahu.svg^commons:Skyline of Honolulu Hawaii.JPG|オアフ島（大会）;commons:Map of Hawaii highlighting Maui.svg^commons:Location map Maui.png|マウイ島（山火事）",
+   "label": "オアフ島とマウイ島"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それでも同じハワイ州で、たくさんの人が\n悲しみの中にいた時期だったの。",
+   "img": "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg",
+   "label": "同じハワイ州"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それに、ハワイ州の観光局も、\n8月12日に、こう呼びかけていたわ。",
+   "img": "commons:Maui Fire Department truck along the street with the burned community of Lahaina in the background.jpg",
+   "label": "ハワイ州の観光局"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "西マウイへの観光の旅は、\n強く控えてほしい、と。",
+   "img": "commons:Maui Fire Department truck along the street with the burned community of Lahaina in the background.jpg",
+   "label": "西マウイへの旅は控えて"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "州も、来ないでって\n言っていたのだ。",
+   "img": "commons:Maui Fire Department truck along the street with the burned community of Lahaina in the background.jpg",
+   "label": "西マウイへの旅は控えて"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ところが8月22日、ハワイ州の知事、\nジョシュ・グリーンさんは、こう話したの。",
+   "img": "commons:Josh Green Official Photo 2022 (cropped).jpg",
+   "label": "ジョシュ・グリーン知事"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "西マウイのほかは安全。来てくれれば、\n地元の経済を支えることになる、と。",
+   "img": "commons:Josh Green Official Photo 2022 (cropped).jpg",
+   "label": "ジョシュ・グリーン知事",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "今度は、\n来てほしいのだ！？",
+   "img": "commons:Josh Green Official Photo 2022 (cropped).jpg",
+   "label": "ジョシュ・グリーン知事"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "9月8日には、観光局も、10月8日から\n西マウイの観光を再び開くと発表したわ。",
+   "img": "commons:Lahaina Hawaii 2016 Harbor.jpg",
+   "label": "10月8日に西マウイを再開"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ただ、焼けたラハイナの町は、\n入れないままだったの。",
+   "img": "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg",
+   "label": "ラハイナは閉じたまま"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハワイには、観光で暮らす人がとても多いの。\n来ないでも、来てほしいも、地元の声なのよ。",
+   "img": "commons:Waikiki Skyline (7733357776).jpg",
+   "label": "観光の島ハワイ"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "どっちの気持ちも、\nわかるのだ…。",
+   "img": "commons:Waikiki Skyline (7733357776).jpg",
+   "label": "観光の島ハワイ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そしてポケモン社は、発表と同じ\n8月13日に、寄付も発表していたわ。",
+   "img": "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg",
+   "label": "発表と同じ日に寄付"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "20万ドル、日本円で約2900万円を、\n山火事の被害を助ける基金に寄付したの。",
+   "img": "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg",
+   "label": "20万ドルを寄付",
+   "kana": "ニジュウマン'ドル、ニホンエンデ/ヤク/ニセンキュウヒャクマ'ンエンオ、ヤマ'カジノ/ヒガイオ/タスケ'ル/キ'キンニ/キフシタ'ノ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "寄付先は、グローバルギビングという、\n寄付を集めて届けるアメリカの団体の基金よ。",
+   "img": "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg",
+   "label": "ハワイの山火事の基金",
+   "say": "寄付先は、グローバル、ギビングという、寄付を集めて届けるアメリカの団体の基金よ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "社員が寄付したら、会社が同じ額を\n上乗せする仕組みも作ったわ。",
+   "img": "commons:Hawaii Army National Guard fighting Maui wildfires, August 9, 2023.jpg",
+   "label": "社員の寄付に上乗せ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "担当の副社長、コリン・パーマーさんは、\nこう話しているの。",
+   "img": "commons:Hawaii Army National Guard fighting Maui wildfires, August 9, 2023.jpg",
+   "label": "ポケモン社の言葉",
+   "say": "担当の副社長、コリン、パーマーさんは、こう話しているの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "「いちばん大切なのは、子どもと家族、\nそして被害にあった地域を助けること」",
+   "img": "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg",
+   "label": "ポケモン社の言葉"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "すぐに、寄付も\n決めていたのだ。",
+   "img": "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg",
+   "label": "ポケモン社の言葉"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "それなら、発表を少し\n待つこともできたのだ？",
+   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "label": "発表を待てた？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "どうして予定どおり発表したのか、\nポケモン社の説明は、見つからなかったわ。",
+   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "label": "発表を待てた？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "発表は取り消されず、大会は、\nそのままホノルルで開かれることになったの。",
+   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "label": "開催地はそのまま"
+  },
+  {
+   "type": "title",
+   "sub": "最深層",
+   "t": "2024年8月、ホノルル",
+   "sec": "最深層　2024年のホノルル",
+   "font": "mincho",
+   "x": {
+    "head": "ハワイの山火事から1年\nホノルルのポケモン世界大会に\n50以上の国と地域から3000人",
+    "img": [
+     "commons:Line to buy merchandise at Pokemon World Championships (54277323262).jpg"
+    ],
+    "bubble": "すごい人なのだ",
+    "who": "z",
+    "post": "2024年8月16日から18日、ポケモンの世界大会がホノルルのハワイ・コンベンション・センターで開かれ、50を超える国と地域から3000人あまりの選手が集まりました。ハワイでの世界大会は4回目、州都ホノルルでは初めてでした。行ってみたいですか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2024年4月、会場と日付が発表されたわ。\nハワイ・コンベンション・センターよ。",
+   "img": "commons:Hawaii Convention Center.jpg",
+   "label": "ホノルルの会場",
+   "say": "2024年4月、会場と日付が発表されたわ。ハワイ、コンベンションセンターよ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして8月16日から18日まで、\n世界大会が、ホノルルで開かれたの。",
+   "img": "commons:Aerial View of the Hawaii Convention Center at night (iau0919a).jpg",
+   "label": "2024年8月16〜18日"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "選手は、3000人あまり。\n50を超える国と地域から、集まったわ。",
+   "img": "commons:Line to buy merchandise at Pokemon World Championships (54277323262).jpg",
+   "label": "ホノルルの会場（2024年）"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "すごい人なのだ！\nグッズの列が、ずっと続いているのだ。",
+   "img": "commons:Line to buy merchandise at Pokemon World Championships (54277323262).jpg",
+   "label": "グッズの列（2024年8月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "地元の新聞によると、大会に来た人が使う\nお金は、5700万ドルあまりと見積もられたの。",
+   "img": "commons:Waikiki Beach and Diamond Head at night.jpg",
+   "label": "5700万ドルあまり",
+   "kana": "ジモトノ/シ'ンブンニ/ヨ'ルト、タイカイニ/キ'タ/ヒトガ/ツカウ/オカネワ、ゴセンナナヒャクマンドルアマリト/ミツモラレタ'ノ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "日本円にすると、80億円あまり。\n観光の島には、大きなお金よ。",
+   "img": "commons:Waikiki Beach and Diamond Head at night.jpg",
+   "label": "80億円あまり"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "それだけのお金が、\nハワイの町に落ちるのだ。",
+   "img": "commons:Waikiki Beach and Diamond Head at night.jpg",
+   "label": "80億円あまり"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "知事の、来てくれれば地元を支える、\nという言葉は、こういうことでもあるのね。",
+   "img": "commons:Josh Green Official Photo 2022 (cropped).jpg",
+   "label": "ジョシュ・グリーン知事"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハワイ島で3回開かれた、ハワイの大会。\n州の中心のホノルルでは、これが初めてよ。",
+   "img": "commons:Hawaii Convention Center.jpg",
+   "label": "ホノルルでは初めて"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その閉会式では、次の2025年がアナハイム、\n2026年がサンフランシスコと発表されたわ。",
+   "img": "commons:Aerial View of the Hawaii Convention Center at night (iau0919a).jpg",
+   "label": "次の開催地の発表"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "そのころ、マウイ島の\nラハイナは、どうなっていたのだ？",
+   "img": "commons:Map of Hawaii highlighting Maui.svg^commons:Location map Maui.png",
+   "label": "マウイ島"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "焼けた町の片付けと、\n立て直しが続いていたわ。",
+   "img": "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg",
+   "label": "ラハイナのその後"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして、あの広場のバニヤンツリー。\n火事のあと、新しい葉を出したの。",
+   "img": "commons:Lahaina Banyan Tree (June 2019).jpg",
+   "label": "火事の前の姿（2019年）",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2023年の9月に、州の役所が、\nその新しい葉の映像を公開したわ。",
+   "img": "commons:Lahaina Banyan Tree (June 2019).jpg",
+   "label": "火事の前の姿（2019年）"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "あの木は、\nまだ生きていたのだ…！",
+   "img": "commons:Lahaina Banyan Tree (June 2019).jpg",
+   "label": "火事の前の姿（2019年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "150年、町の広場に立ってきた木よ。\n幹は焼けても、根は生きていたの。",
+   "img": "commons:Lahaina Banyan Tree.jpg",
+   "label": "150年の木"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "今日の答え。ハワイ開催を発表したのは、\nマウイ島が燃えた、5日後だったから。",
+   "img": "commons:Lahaina fire - 8 august.jpg",
+   "label": "山火事の5日後の発表",
+   "sec": "まとめ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "アローラの元だから選んだ、ハワイ。\nその同じハワイで、町が焼けたばかりだったの。",
+   "img": "art:10114",
+   "label": "アローラの元のハワイ"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "来ないでも、来てほしいも、\nどっちも、ハワイの人の本当の声なのだ。",
+   "img": "commons:Waikiki Skyline (7733357776).jpg",
+   "label": "ハワイの人の声"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "あなたなら、発表の時期を、\nずらしたほうがよかったと思う？",
+   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "label": "あなたならどうする？"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の採掘はここまでなのだ。\nチャンネル登録も、よろしくなのだ。",
+   "img": "commons:Waikiki Skyline (7733357776).jpg",
+   "label": "ホノルル（ハワイ州）"
+  },
+  {
+   "type": "ed"
+  }
+ ]
+}
