@@ -1,7 +1,7 @@
 # ポケモン雑学採掘場のショート（@poke_zatsugaku、2026-11-15〜）
 #   ・台本と素材は shorts/NNNN/script.json と同じフォルダの画像。Claudeが深く調べた話だけを並べる（自動でネタを作らない）
 #   ・めたん（解説）とずんだもん（聞き役）。画面の上に見出し、中央に大きな画像、下に字幕、両下の隅に小さな立ち絵
-#   ・最後に end_card でサイトのアドレスとホーム画面
+#   ・2026-11-27：もんすぺ！（poketango.com）への誘導をやめた。締めのサイト画面（end_card）も概要欄のサイトのリンクも付けない
 #   ・投稿済みは posted_saikutsu.json に残し、まだ出していない一番若い番号を出す。台本が尽きたら何もしない
 import os, re, sys, json, glob, wave, subprocess, datetime, io, urllib.request, urllib.parse
 import numpy as np
@@ -308,8 +308,6 @@ def build(d, out):
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 30000).astype(np.int16).tobytes())
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", "_s/v.mp4", "-i", "_s/a.wav", "-map", "0:v", "-map", "1:a", "-c:v", "copy",
                     "-c:a", "aac", "-b:a", "160k", "-shortest", out], check=True)
-    import end_card
-    end_card.add(out)
     # 音の大きさをそろえる（長い動画と同じ基準）
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", out, "-c:v", "copy", "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
                     "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "_s/norm.mp4"], check=True)
@@ -329,12 +327,9 @@ def credits_text():
 
 
 def meta(s):
-    site = P.SITE
-    pages = "\n".join(f"{ja}（{en}）の英語版図鑑 → {site}/p/{slug}.html" for slug, ja, en in s["pokemon"])
+    # 2026-11-27：もんすぺ！への誘導はやめた（記事・図鑑ページ・サイトのリンクを載せない）
     desc = (f"{s['lead']}\n\n"
-            f"▼この話の記事（出典つき）\n{s['article']}\n"
-            + (f"▼くわしくは本編で\nhttps://youtu.be/{s['video']}\n" if s.get("video") else "")
-            + f"\n{pages}\n\nポケモンの英語名と図鑑は「もんすぺ！」→ {site}\n\n"
+            + (f"▼くわしくは本編で\nhttps://youtu.be/{s['video']}\n\n" if s.get("video") else "")
             + credits_text() +
             "音声：VOICEVOX:四国めたん、VOICEVOX:ずんだもん\n立ち絵：坂本アヒル様\n効果音：OtoLogic（https://otologic.jp）\n"
             "※ファンが運営する非公式のチャンネルです。株式会社ポケモン、任天堂、クリーチャーズ、ゲームフリークとは関係ありません。\n\n"
