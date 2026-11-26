@@ -250,6 +250,55 @@ S("m", "normal", "あなたなら、発表の時期を、\nずらしたほうが
 S("z", "happy", "今日の採掘はここまでなのだ。\nチャンネル登録も、よろしくなのだ。", WAIKIKI, label="ホノルル（ハワイ州）")
 L.append({"type": "ed"})
 
+# 2026-11-27 frames を見て、同じ写真の続きを分けた（ホテル、横浜の会場、焼けた灯台、ホノルルの眺め）
+WK3 = "commons:Hilton Waikoloa Village (53313260659).jpg"
+WK4 = "commons:Hilton Waikoloa Village (53312032887).jpg"
+WK5 = "commons:Hilton Waikoloa Village (53313376255).jpg"
+WK6 = "commons:Hilton Waikoloa Village Resort (2008) 22.JPG"
+PAC3 = "commons:Pacifico Yokohama 2016.jpg"
+PAC4 = "commons:PACIFIC CONVENTION PLAZA YOKOHAMA ExhibitionHall 2003.jpg"
+LAH7 = "commons:Maui community of Lahaina burned by wildfire - 53119593884.jpg"
+LAH8 = "commons:Maui community of Lahaina burned by wildfire - 53119801025.jpg"
+LAH9 = "commons:Maui community of Lahaina burned by wildfire - 53119800690.jpg"
+WAIKIKI3 = "commons:Waikiki in the afternoon (5171241484).jpg"
+OVR = [
+ ("ハワイ島？", MAP_BIG, None),
+ ("南の島で世界一を決めるなんて", WK3, None),
+ ("2011年は", WK4, None),
+ ("3年続けての世界一は", WK5, None),
+ ("2012年の決勝の相手は", WK6, None),
+ ("でも、なんで世界大会は", WK3, None),
+ ("それが、選んだ理由の公式", WK3, None),
+ ("世界大会が日本で開かれたのは", PAC4, "パシフィコ横浜の展示ホール"),
+ ("横浜で世界一が決まるなんて", PAC4, "パシフィコ横浜の展示ホール"),
+ ("世界大会って、", WCS14, "世界大会の会場（2014年）"),
+ ("そして閉会式の最後には", PAC3, None),
+ ("前の年のロンドン大会", None, None),
+ ("最終日の閉会式で", PAC3, None),
+ ("知っていたはずよ。", PAC3, None),
+ ("それでも、その発表のすぐ下に", LAH9, None),
+ ("「よりによって", LAH9, None),
+ ("「地元はまだ", LAH8, None),
+ ("火事で、その町の大部分", LAH9, None),
+ ("そしてポケモン社は、発表と同じ", PACIFICO, None),
+ ("寄付先は、", LAH_TRUCK, None),
+ ("社員が寄付したら", LAH7, None),
+ ("担当の副社長", WCS14, "ポケモン社の言葉"),
+ ("「いちばん大切なのは", SAT, "ポケモン社の言葉"),
+ ("すぐに、寄付も", LAH7, None),
+ ("それなら、発表を少し", PAC3, None),
+ ("どうして予定どおり", PAC3, None),
+ ("発表は取り消されず", HCC, "開催地はそのまま"),
+ ("ハワイには、観光で暮らす人", WAIKIKI3, None),
+ ("どっちの気持ちも", WAIKIKI3, None),
+ ("あなたなら、発表の時期", HCC_N, None),
+]
+for key, img, lab in OVR:
+    hit = [l for l in L if l.get("t", "").startswith(key)]
+    assert len(hit) == 1, key
+    if img: hit[0]["img"] = img
+    if lab: hit[0]["label"] = lab
+
 script = {
     "no": 16,
     "title": "山火事の5日後、ポケモン社は「次の世界大会はハワイ」と発表した。",

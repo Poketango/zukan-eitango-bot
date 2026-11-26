@@ -149,7 +149,7 @@
    "w": "z",
    "face": "think",
    "t": "ハワイ島？\nハワイとは、違う島なのだ？",
-   "img": "commons:Hawaiian Islands Full Relief Template.png",
+   "img": "commons:Map of Hawaii highlighting Hawaii County.svg^commons:Hilton Waikoloa Village (53313376225).jpg",
    "label": "ハワイ州の島々"
   },
   {
@@ -170,7 +170,7 @@
    "w": "z",
    "face": "happy",
    "t": "南の島で世界一を決めるなんて、\nぜいたくな大会なのだ。",
-   "img": "commons:Hilton Waikoloa Village Resort (2008) 05.JPG",
+   "img": "commons:Hilton Waikoloa Village (53313260659).jpg",
    "label": "2007年の世界大会の会場"
   },
   {
@@ -228,7 +228,7 @@
    "w": "m",
    "face": "normal",
    "t": "2011年は、いちばん上の年齢の部門で優勝。\n2012年、またハワイ島で優勝したの。",
-   "img": "commons:Hilton Waikoloa Village Resort (2008) 05.JPG",
+   "img": "commons:Hilton Waikoloa Village (53312032887).jpg",
    "label": "3年続けて世界一",
    "ans": true,
    "say": "2011年は、いちばんうえの年齢の部門で優勝。2012年、またハワイ島で優勝したの。"
@@ -237,14 +237,14 @@
    "w": "m",
    "face": "normal",
    "t": "3年続けての世界一は、\nギネス世界記録にもなっているわ。",
-   "img": "commons:Hilton Waikoloa Village Resort (2008) 05.JPG",
+   "img": "commons:Hilton Waikoloa Village (53313376255).jpg",
    "label": "ギネス世界記録"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "2012年の決勝の相手は、ウルフ・グリックさん。\nのちの2016年に、自分も世界一になる選手よ。",
-   "img": "commons:Hilton Waikoloa Village Resort (2008) 05.JPG",
+   "img": "commons:Hilton Waikoloa Village Resort (2008) 22.JPG",
    "label": "2012年の決勝",
    "say": "2012年の決勝の相手は、ウルフ、グリックさん。のちの2016年に、自分も世界一になる選手よ。"
   },
@@ -259,14 +259,14 @@
    "w": "z",
    "face": "think",
    "t": "でも、なんで世界大会は、\nハワイばかりなのだ？",
-   "img": "commons:Hawaiian Islands Full Relief Template.png",
+   "img": "commons:Hilton Waikoloa Village (53313260659).jpg",
    "label": "なぜハワイ？"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "それが、選んだ理由の公式の説明は、\n見つからなかったの。",
-   "img": "commons:Hawaiian Islands Full Relief Template.png",
+   "img": "commons:Hilton Waikoloa Village (53313260659).jpg",
    "label": "なぜハワイ？"
   },
   {
@@ -412,22 +412,22 @@
    "w": "m",
    "face": "normal",
    "t": "世界大会が日本で開かれたのは、\nこのときが初めてだったのよ。",
-   "img": "commons:Pacifico Yokohama 2012.JPG",
-   "label": "日本で初めての世界大会"
+   "img": "commons:PACIFIC CONVENTION PLAZA YOKOHAMA ExhibitionHall 2003.jpg",
+   "label": "パシフィコ横浜の展示ホール"
   },
   {
    "w": "z",
    "face": "happy",
    "t": "横浜で世界一が決まるなんて、\nボクも見に行きたかったのだ。",
-   "img": "commons:Pacifico Yokohama 2012.JPG",
-   "label": "日本で初めての世界大会"
+   "img": "commons:PACIFIC CONVENTION PLAZA YOKOHAMA ExhibitionHall 2003.jpg",
+   "label": "パシフィコ横浜の展示ホール"
   },
   {
    "w": "z",
    "face": "think",
    "t": "世界大会って、\nだれでも出られるのだ？",
-   "img": "commons:Pacifico Yokohama 2012.JPG",
-   "label": "パシフィコ横浜"
+   "img": "commons:Pokémon World Championships 2014.jpg",
+   "label": "世界大会の会場（2014年）"
   },
   {
    "w": "m",
@@ -440,7 +440,7 @@
    "w": "m",
    "face": "normal",
    "t": "そして閉会式の最後には、次の年の\n開催地を発表するのが、毎年の流れなの。",
-   "img": "commons:Pacifico-Yokohama-01.jpg",
+   "img": "commons:Pacifico Yokohama 2016.jpg",
    "label": "閉会式で次の開催地"
   },
   {
@@ -454,7 +454,7 @@
    "w": "m",
    "face": "normal",
    "t": "最終日の閉会式で、社長の石原恒和さんが、\n次の開催地を発表したわ。",
-   "img": "commons:Pacifico-Yokohama-01.jpg",
+   "img": "commons:Pacifico Yokohama 2016.jpg",
    "label": "閉会式（8月13日）",
    "kana": "サイシュ'ウビノ/ヘエカイ'シキデ、シャチョオノ'、イシハラ/ツネ'カズサンガ、ツギ'ノ/カイサイ'チオ/ハッピョオシタ'ワ"
   },
@@ -593,7 +593,7 @@
    "w": "m",
    "face": "sad",
    "t": "火事で、その町の大部分が焼けたの。\n焼けた建物は、2200棟あまり。",
-   "img": "commons:Maui community of Lahaina burned by wildfire - 53119882503.jpg",
+   "img": "commons:Maui community of Lahaina burned by wildfire - 53119800690.jpg",
    "label": "焼けたラハイナ",
    "ans": true,
    "kana": "カ'ジデ、ソノ'/マチ'ノ/ダイブ'ブンガ/ヤケタ'ノ。ヤケタ'/タテ'モノワ、ニセンニヒャクトウア'マリ"
@@ -676,28 +676,28 @@
    "w": "m",
    "face": "normal",
    "t": "知っていたはずよ。閉会式で、\nお見舞いを伝えていたんだもの。",
-   "img": "commons:Pacifico-Yokohama-01.jpg",
+   "img": "commons:Pacifico Yokohama 2016.jpg",
    "label": "閉会式でお見舞い"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "それでも、その発表のすぐ下に、\nこんな返事が並んだの。",
-   "img": "commons:Maui community of Lahaina burned by wildfire - 53119882503.jpg",
+   "img": "commons:Maui community of Lahaina burned by wildfire - 53119800690.jpg",
    "label": "発表への返事"
   },
   {
    "w": "m",
    "face": "sad",
    "t": "「よりによって、\n最悪の場所だ」",
-   "img": "commons:Maui community of Lahaina burned by wildfire - 53119882503.jpg",
+   "img": "commons:Maui community of Lahaina burned by wildfire - 53119800690.jpg",
    "label": "発表への返事"
   },
   {
    "w": "m",
    "face": "sad",
    "t": "「地元はまだ苦しんでいるから、\n来ないでほしい」",
-   "img": "commons:Car burned in Lahaina, Hawaii following wildfire - 53119394866.jpg",
+   "img": "commons:Maui community of Lahaina burned by wildfire - 53119801025.jpg",
    "label": "発表への返事"
   },
   {
@@ -789,21 +789,21 @@
    "w": "m",
    "face": "normal",
    "t": "ハワイには、観光で暮らす人がとても多いの。\n来ないでも、来てほしいも、地元の声なのよ。",
-   "img": "commons:Waikiki Skyline (7733357776).jpg",
+   "img": "commons:Waikiki in the afternoon (5171241484).jpg",
    "label": "観光の島ハワイ"
   },
   {
    "w": "z",
    "face": "think",
    "t": "どっちの気持ちも、\nわかるのだ…。",
-   "img": "commons:Waikiki Skyline (7733357776).jpg",
+   "img": "commons:Waikiki in the afternoon (5171241484).jpg",
    "label": "観光の島ハワイ"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "そしてポケモン社は、発表と同じ\n8月13日に、寄付も発表していたわ。",
-   "img": "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg",
+   "img": "commons:Pacifico-Yokohama-01.jpg",
    "label": "発表と同じ日に寄付"
   },
   {
@@ -818,7 +818,7 @@
    "w": "m",
    "face": "normal",
    "t": "寄付先は、グローバルギビングという、\n寄付を集めて届けるアメリカの団体の基金よ。",
-   "img": "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg",
+   "img": "commons:Maui Fire Department truck along the street with the burned community of Lahaina in the background.jpg",
    "label": "ハワイの山火事の基金",
    "say": "寄付先は、グローバル、ギビングという、寄付を集めて届けるアメリカの団体の基金よ。"
   },
@@ -826,14 +826,14 @@
    "w": "m",
    "face": "normal",
    "t": "社員が寄付したら、会社が同じ額を\n上乗せする仕組みも作ったわ。",
-   "img": "commons:Hawaii Army National Guard fighting Maui wildfires, August 9, 2023.jpg",
+   "img": "commons:Maui community of Lahaina burned by wildfire - 53119593884.jpg",
    "label": "社員の寄付に上乗せ"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "担当の副社長、コリン・パーマーさんは、\nこう話しているの。",
-   "img": "commons:Hawaii Army National Guard fighting Maui wildfires, August 9, 2023.jpg",
+   "img": "commons:Pokémon World Championships 2014.jpg",
    "label": "ポケモン社の言葉",
    "say": "担当の副社長、コリン、パーマーさんは、こう話しているの。"
   },
@@ -841,35 +841,35 @@
    "w": "m",
    "face": "normal",
    "t": "「いちばん大切なのは、子どもと家族、\nそして被害にあった地域を助けること」",
-   "img": "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg",
+   "img": "commons:Maui wildfires 2023.jpg",
    "label": "ポケモン社の言葉"
   },
   {
    "w": "z",
    "face": "think",
    "t": "すぐに、寄付も\n決めていたのだ。",
-   "img": "commons:2023 Maui fires - Lahaina damage via Coast Guard 2.jpg",
+   "img": "commons:Maui community of Lahaina burned by wildfire - 53119593884.jpg",
    "label": "ポケモン社の言葉"
   },
   {
    "w": "z",
    "face": "think",
    "t": "それなら、発表を少し\n待つこともできたのだ？",
-   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "img": "commons:Pacifico Yokohama 2016.jpg",
    "label": "発表を待てた？"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "どうして予定どおり発表したのか、\nポケモン社の説明は、見つからなかったわ。",
-   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "img": "commons:Pacifico Yokohama 2016.jpg",
    "label": "発表を待てた？"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "発表は取り消されず、大会は、\nそのままホノルルで開かれることになったの。",
-   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "img": "commons:Hawaii Convention Center.jpg",
    "label": "開催地はそのまま"
   },
   {
@@ -1031,7 +1031,7 @@
    "w": "m",
    "face": "normal",
    "t": "あなたなら、発表の時期を、\nずらしたほうがよかったと思う？",
-   "img": "commons:Skyline of Honolulu Hawaii.JPG",
+   "img": "commons:Aerial View of the Hawaii Convention Center at night (iau0919a).jpg",
    "label": "あなたならどうする？"
   },
   {
