@@ -4,32 +4,27 @@
  "neta": "世界大会のハワイ開催発表が山火事と重なった",
  "thumb": {
   "layout": "v2",
-  "pre": "山火事の5日後に",
+  "pre": "ポケモン世界大会の発表に",
   "big": [
-   "なぜハワイで",
-   "世界大会？"
+   "ハワイに",
+   "来ないで"
   ],
   "hl": 1,
-  "hl_color": "yellow",
+  "hl_color": "red",
   "fonts": [
    "mincho",
    "mincho"
   ],
   "pre_font": "maru",
-  "pre_size": 60,
-  "back": "commons:Waikiki Skyline (7733357776).jpg",
+  "pre_size": 78,
+  "back": "commons:2023 Maui fires - Lahaina damage via Coast Guard.jpg",
   "chara": null,
-  "big_w": 660,
+  "big_w": 1180,
   "big_size": [
-   150,
-   170
+   230,
+   270
   ],
-  "sticker": {
-   "img": "art:10114",
-   "h": 640,
-   "x": 860,
-   "y": 50
-  }
+  "big_y": 140
  },
  "lines": [
   {
