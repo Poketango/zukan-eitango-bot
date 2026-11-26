@@ -4,28 +4,32 @@
  "neta": "世界大会のハワイ開催発表が山火事と重なった",
  "thumb": {
   "layout": "v2",
-  "pre": "ポケモン世界大会の発表に",
+  "pre": "山火事の5日後に",
   "big": [
-   "今は",
-   "来ないで"
+   "なぜハワイで",
+   "世界大会？"
   ],
   "hl": 1,
-  "hl_color": "red",
+  "hl_color": "yellow",
   "fonts": [
    "mincho",
    "mincho"
   ],
   "pre_font": "maru",
   "pre_size": 60,
-  "back": "commons:Lahaina fire - 8 august.jpg",
-  "photo": "commons:Maui community of Lahaina burned by wildfire - 53119882503.jpg",
-  "photo_label": "山火事のラハイナ",
+  "back": "commons:Waikiki Skyline (7733357776).jpg",
   "chara": null,
-  "big_w": 620,
+  "big_w": 660,
   "big_size": [
-   170,
-   230
-  ]
+   150,
+   170
+  ],
+  "sticker": {
+   "img": "art:10114",
+   "h": 640,
+   "x": 860,
+   "y": 50
+  }
  },
  "lines": [
   {
