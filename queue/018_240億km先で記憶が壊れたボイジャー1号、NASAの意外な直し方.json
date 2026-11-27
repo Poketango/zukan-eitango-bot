@@ -1,0 +1,15 @@
+{
+ "title": "240億km先で記憶が壊れたボイジャー1号、NASAの意外な直し方",
+ "description": "2024年4月20日、NASAジェット推進研究所の会議室で、ボイジャー1号のチームが歓声を上げました。5か月ぶりに、探査機の状態を示すまともなデータが地球に届いた瞬間です。\n\nボイジャー1号は1977年に打ち上げられ、いまは太陽系の外の星間空間を飛んでいます。2023年11月14日から、命令は受け取れているのに、読めないデータしか送ってこなくなりました。チームはメモリーの中身を送り返させる命令で調べ、データをまとめるコンピューター（FDS）のメモリーの約3%が壊れていて、その一部を受け持つチップ1つが動いていないと突き止めました。宇宙線が当たったか、46年で寿命が来たかは、はっきりしていません。\n\n意外なのは直し方です。チップは修理できず、壊れた所にあったプログラムを別の場所へ移そうにも、丸ごと入る空きがどこにもありませんでした。そこでチームは、プログラムを小分けにしてメモリーのすき間に分けて書き込み、ばらばらになっても一つのプログラムとして動くように、ほかの部分からの参照も書き直しました。約240億km先までは電波が片道約22時間半。4月18日に送った命令の結果がわかったのは、往復でおよそ45時間後の4月20日でした。5月19日には科学データの送信も再開し、6月には4つの観測装置すべてが元通りに戻りました。\n\n※図「ボイジャー1号の記憶」は、直し方の考え方を示す説明用のイメージで、実際のメモリーの配置ではありません。会議室の場面と最後の音声は、NASAが公開した2024年4月20日の実際の映像です。\n\n出典\n・NASA JPL「NASA's Voyager 1 Resumes Sending Engineering Updates to Earth」 https://www.jpl.nasa.gov/news/nasas-voyager-1-resumes-sending-engineering-updates-to-earth/\n・NASA「Engineers Pinpoint Cause of Voyager 1 Issue, Are Working on Solution」 https://science.nasa.gov/blogs/voyager/2024/04/04/engineers-pinpoint-cause-of-voyager-1-issue-are-working-on-solution/\n・NASA JPL「Voyager 1 Returning Science Data From All Four Instruments」 https://www.jpl.nasa.gov/news/voyager-1-returning-science-data-from-all-four-instruments/\n\n映像: NASA/JPL-Caltech「Voyager 1 Team Reacts to Receiving Engineering Data From Spacecraft」（パブリックドメイン）、NASA Goddard Scientific Visualization Studio「How Far Away Is Voyager 1? One Light-Day, Explained」（パブリックドメイン、ウィキメディア・コモンズ）\n締めの音声: NASA JPL 会議室の実際の映像の音声（2024年4月20日）\n効果音: OtoLogic（https://otologic.jp）\nBGM: OtoLogic（https://otologic.jp）\n\n#shorts #ボイジャー1号 #NASA #探査機 #宇宙",
+ "tags": [
+  "ボイジャー1号",
+  "Voyager 1",
+  "NASA",
+  "探査機",
+  "星間空間",
+  "メモリー故障",
+  "遠隔修理",
+  "宇宙の雑学"
+ ],
+ "experiment": "タイトル終わり=理由なし"
+}
