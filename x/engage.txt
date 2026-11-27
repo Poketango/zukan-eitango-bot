@@ -30,9 +30,10 @@
 2026-11-25 @PokemonGOAppJP https://x.com/PokemonGOAppJP/status/2125439348304674867 https://x.com/zukan_eitango/status/2125550317609853217 views=6
 2026-11-25 @PokemonGOAppJP https://x.com/PokemonGOAppJP/status/2125463866737852694 https://x.com/zukan_eitango/status/2125550464976695569 views=3
 2026-11-25 @Pokemon_cojp https://x.com/Pokemon_cojp/status/2125409141841662143 https://x.com/zukan_eitango/status/2125550575328899096 views=6
-2026-11-26 @Pokemon_cojp https://x.com/Pokemon_cojp/status/2125891095301165356 https://x.com/zukan_eitango/status/2125913725987340429
-2026-11-26 @Pokemon_cojp https://x.com/Pokemon_cojp/status/2125786626735341961 https://x.com/zukan_eitango/status/2125913845617361162
-2026-11-26 @PokemonGOAppJP https://x.com/PokemonGOAppJP/status/2125847068514087208 https://x.com/zukan_eitango/status/2125913962621665690
-2026-11-26 @PokemonGOAppJP https://x.com/PokemonGOAppJP/status/2125756455340962295 https://x.com/zukan_eitango/status/2125914083438567845
-2026-11-26 @poke_times https://x.com/poke_times/status/2125786631735050402 https://x.com/zukan_eitango/status/2125914208831434965
-2026-11-26 @poke_times https://x.com/poke_times/status/2125843262523007265 https://x.com/zukan_eitango/status/2125914334387999078
+2026-11-26 @Pokemon_cojp https://x.com/Pokemon_cojp/status/2125891095301165356 https://x.com/zukan_eitango/status/2125913725987340429 views=5
+2026-11-26 @Pokemon_cojp https://x.com/Pokemon_cojp/status/2125786626735341961 https://x.com/zukan_eitango/status/2125913845617361162 views=4
+2026-11-26 @PokemonGOAppJP https://x.com/PokemonGOAppJP/status/2125847068514087208 https://x.com/zukan_eitango/status/2125913962621665690 views=4
+2026-11-26 @PokemonGOAppJP https://x.com/PokemonGOAppJP/status/2125756455340962295 https://x.com/zukan_eitango/status/2125914083438567845 views=2
+2026-11-26 @poke_times https://x.com/poke_times/status/2125786631735050402 https://x.com/zukan_eitango/status/2125914208831434965 views=2
+2026-11-26 @poke_times https://x.com/poke_times/status/2125843262523007265 https://x.com/zukan_eitango/status/2125914334387999078 views=4
+2026-11-27 @anipoke_PR https://x.com/anipoke_PR/status/2126266032793047455 返信URL未取得(X検証画面のため)
