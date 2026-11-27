@@ -1,0 +1,1097 @@
+{
+ "no": 17,
+ "title": "【焼けた塔の元ネタ？】金閣が燃えた夜、鳳凰だけは屋根にいなかった。",
+ "neta": "焼けた塔のモデルは本当に放火された金閣",
+ "thumb": {
+  "layout": "v2",
+  "pre": "焼けた塔の元ネタ？",
+  "big": [
+   "金閣",
+   "放火"
+  ],
+  "hl": 1,
+  "hl_color": "red",
+  "fonts": [
+   "mincho",
+   "mincho"
+  ],
+  "pre_font": "maru",
+  "pre_size": 60,
+  "back": "commons:Kawabata Ryūshi - Kinkakuji-Temple on Fire.jpg",
+  "photo": "commons:Burned Kinkaku.jpg",
+  "photo_label": "1950年の金閣",
+  "chara": null,
+  "big_w": 620,
+  "big_size": [
+   200,
+   200
+  ]
+ },
+ "lines": [
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1950年7月2日の、夜明け前。\n京都で、国宝の金閣が燃えたの。",
+   "img": "commons:Kawabata Ryūshi - Kinkakuji-Temple on Fire.jpg",
+   "sec": "ポケモン雑学採掘場",
+   "label": "川端龍子『金閣炎上』（1950年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "建物は、ほとんど焼け落ちたわ。\n火をつけたのは、寺の若い僧だった。",
+   "img": "commons:Burned Kinkaku.jpg",
+   "label": "焼けた金閣（1950年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも、屋根のてっぺんにいるはずの鳳凰は、\n焼けなかったの。",
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "label": "金閣の屋根の鳳凰",
+   "big": "鳳凰は無事",
+   "bf": "mincho",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "鳳凰って、ホウオウなのだ！？\nなんで鳳凰だけ、無事だったのだ？",
+   "img": "art:250",
+   "label": "ホウオウ"
+  },
+  {
+   "type": "op",
+   "w": "m",
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘場。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学さいくつじょう。"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の坑道は、紅葉の葉っぱが\n吹きこんで、きれいなのだ。",
+   "img": "ecruteak_art.png",
+   "sec": "導入　ふたつの塔の町",
+   "label": "紅葉の町"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "紅葉といえば、ジョウト地方の\nエンジュシティを思い出すわね。",
+   "img": "ecruteak_art.png",
+   "label": "エンジュシティ（HGSS）"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ハートゴールドで、何十時間も\nいた町なのだ。塔が2つあるのだ。",
+   "img": "ecruteak_hgss.png",
+   "label": "エンジュシティ（HGSS）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その片方は、焼けた塔。\n昔、火事で焼けた塔よ。",
+   "img": "burned_1f.png",
+   "label": "焼けた塔"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "エンジュは、京都が元になった町だと、\nファンの間では言われているの。",
+   "img": "ecruteak_anime.png",
+   "label": "アニメのエンジュシティ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして京都には、本当に焼けた\n金色の建物があるのよ。",
+   "img": "commons:Burned Kinkaku.jpg",
+   "label": "焼けた金閣（1950年）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "焼けた塔の元は、\nその金閣なのだ？",
+   "img": "row:burned_1f.png|カネの塔（焼けた塔）;bell_hgss.png|スズの塔",
+   "label": "エンジュの2つの塔"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今日は、ゲームの塔の言い伝えと、\n本当に燃えた金閣を、並べて掘るわ。",
+   "img": "row:commons:Kinkaku-ji the Golden Temple in Kyoto overlooking the lake - high rez.JPG|金閣（鹿苑寺）;commons:Ginkaku-ji after being restored in 2008.jpg|銀閣（慈照寺）",
+   "label": "ゲームの塔と京都の寺"
+  },
+  {
+   "type": "title",
+   "sub": "本日の採掘",
+   "t": "焼けた金閣の鳳凰は、なぜ無事だった？",
+   "font": "mincho"
+  },
+  {
+   "type": "title",
+   "sub": "第一層",
+   "t": "カネの塔とスズの塔",
+   "sec": "第一層　エンジュの2つの塔",
+   "font": "mincho",
+   "x": {
+    "head": "ポケモンの焼けた塔は\n昔は「カネの塔」と\n呼ばれていた",
+    "img": [
+     "burned_1f.png"
+    ],
+    "bubble": "名前があったのだ",
+    "who": "z",
+    "post": "ポケモン金銀のエンジュシティにある焼けた塔。町の人は、昔の名前を「カネの塔」と呼びます。およそ150年前に雷が落ちて焼け、もう1つの塔は「スズの塔」。英語版では、カネを Brass、スズを Tin と訳しました。あなたはどちらの塔が好きですか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモン金銀が出たのは、1999年。\n舞台はジョウト地方よ。",
+   "img": "wiki:en:Pokémon Gold and Silver",
+   "label": "ポケモン金・銀（1999年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2009年には、作り直した\nハートゴールドとソウルシルバーが出たわ。",
+   "img": "wiki:en:Pokémon HeartGold and SoulSilver",
+   "label": "ハートゴールド・ソウルシルバー"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その間の2000年には、\nポケモンクリスタルも出ているわね。",
+   "img": "wiki:en:Pokémon Gold and Silver",
+   "label": "ポケモンクリスタル（2000年）"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ボクがやりこんだのは、\nハートゴールドのほうなのだ。",
+   "img": "wiki:en:Pokémon HeartGold and SoulSilver",
+   "label": "ハートゴールド・ソウルシルバー"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "万歩計のポケウォーカーも、\n毎日持ち歩いていたのだ。",
+   "img": "wiki:en:Pokémon HeartGold and SoulSilver",
+   "label": "ハートゴールド・ソウルシルバー"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "エンジュシティには、\n大きな塔が2つ建っているの。",
+   "img": "ecruteak_hgss.png",
+   "label": "エンジュシティ（HGSS）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "片方が、焼けた塔。\n中は黒こげで、床に大きな穴があいているわ。",
+   "img": "burned_1f.png",
+   "label": "焼けた塔の1階（HGSS）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "金銀のころは、\nもっと地味な見た目だったのだ。",
+   "img": "burned_1f_gs.png",
+   "label": "焼けた塔の1階（金銀）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "町の僧が、この塔の昔話を\n聞かせてくれるのよ。",
+   "img": "brass_bg.png",
+   "label": "焼けた塔の中"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "「今から、およそ150年前、\n1つの塔に、雷が落ちたそうです」",
+   "img": "brass_bg.png",
+   "label": "ゲームの中の言葉",
+   "bf": "mincho",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "焼けた塔は、昔は「カネの塔」と\n呼ばれていたの。",
+   "img": "brass_gs.png",
+   "label": "カネの塔（金銀）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "もう1つが、「スズの塔」。\n今も焼けずに建っている塔よ。",
+   "img": "bell_hgss.png",
+   "label": "スズの塔（HGSS）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "僧の話では、カネの塔は\n「ポケモンを起こす塔」と言われていたの。",
+   "img": "brass_gs.png",
+   "label": "ポケモンを起こす塔"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "スズの塔は、\n「ポケモンを休める塔」よ。",
+   "img": "bell_hgss.png",
+   "label": "ポケモンを休める塔"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "起こす塔と、休める塔。\n2つで1組の塔なのだ。",
+   "img": "row:burned_1f.png|カネの塔（焼けた塔）;bell_hgss.png|スズの塔",
+   "label": "起こす塔と休める塔"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "カネとスズ。\nどっちも、金属の名前なのだ。",
+   "img": "row:burned_1f.png|カネの塔（焼けた塔）;bell_hgss.png|スズの塔",
+   "label": "カネの塔とスズの塔"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そうね。でも、カネには鐘、\nスズには鈴の意味も重なるのよ。",
+   "img": "row:burned_1f.png|カネの塔（焼けた塔）;bell_hgss.png|スズの塔",
+   "label": "カネ＝金・鐘　スズ＝錫・鈴"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "鐘と鈴。どっちも、\n鳴らすものでもあるのだ。",
+   "img": "bell_bg.png",
+   "label": "スズの塔の中"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "英語版では、そこが訳しにくかったの。\nカネはブラス、つまり真ちゅう。",
+   "img": "brass_gs.png",
+   "label": "英語では Brass Tower",
+   "say": "英語版では、そこが訳しにくかったの。カネはブラス、つまり、しんちゅう。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "スズはティン。金属のスズね。\nでもハートゴールドで、名前が変わったわ。",
+   "img": "bell_hgss.png",
+   "label": "英語では Tin Tower"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "英語版では、ベルタワー。\n鈴のほうの意味に、変えたのよ。",
+   "img": "bell_summit.png",
+   "label": "2009年から Bell Tower",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "日本語の名前は、1つで\n2つの意味を持っていたのだ。",
+   "img": "row:burned_1f.png|カネの塔（焼けた塔）;bell_hgss.png|スズの塔",
+   "label": "1つの名前に2つの意味"
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "雷と3匹とホウオウ",
+   "sec": "第二層　焼けた塔の言い伝え",
+   "font": "fude",
+   "x": {
+    "head": "焼けた塔で死んだ3匹を\nよみがえらせたのが\nホウオウだった",
+    "img": [
+     "row:art:243|ライコウ;art:244|エンテイ;art:245|スイクン"
+    ],
+    "bubble": "伝説の3匹なのだ",
+    "who": "z",
+    "post": "ポケモン金銀の言い伝えでは、およそ150年前、カネの塔に雷が落ちて燃え、名もないポケモンが3匹死にました。空から現れたホウオウが3匹をよみがえらせ、ライコウ、エンテイ、スイクンになったといいます。3匹の中で、だれが好きですか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "僧の話には、続きがあるの。\nカネの塔が焼けたとき、ポケモンが3匹死んだ。",
+   "img": "burned_b1f.png",
+   "label": "焼けた塔の地下（HGSS）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "すると、ホウオウが空から現れて、\n3匹をよみがえらせたそうよ。",
+   "img": "art:250",
+   "label": "ホウオウ"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "それが、ライコウ、エンテイ、\nスイクンなのだ！",
+   "img": "row:art:243|ライコウ;art:244|エンテイ;art:245|スイクン",
+   "label": "よみがえった3匹",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "雷のライコウ、炎のエンテイ、\n火を消した雨のスイクン、ね。",
+   "img": "row:art:243|ライコウ;art:244|エンテイ;art:245|スイクン",
+   "label": "雷・炎・雨"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "塔に落ちた雷、塔を焼いた炎、\n炎を消した雨。それが3匹の元とされているの。",
+   "img": "row:art:243|ライコウ;art:244|エンテイ;art:245|スイクン",
+   "label": "雷・炎・雨から生まれた3匹"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "焼けた塔の地下で、3匹が\nいっせいに逃げるのは、名場面なのだ。",
+   "img": "beasts_hgss.png",
+   "label": "焼けた塔の地下の3匹（HGSS）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "金銀のころは、こんな画面だったわね。",
+   "img": "beasts_gs.png",
+   "label": "焼けた塔の地下の3匹（金銀）"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "クリスタルでは、逃げたスイクンを\nあちこち追いかけたのだ。",
+   "img": "art:245",
+   "label": "スイクン"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "英語版の言い伝えには、銀色の大きなポケモンが\nカネの塔の上で休んでいた、ともあるわ。",
+   "img": "art:249",
+   "label": "ルギア"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ルギアなのだ。\n塔が焼けて、出ていったのだ？",
+   "img": "art:249",
+   "label": "ルギア"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう言われているわ。そしてホウオウは、\nスズの塔のてっぺんに来るの。",
+   "img": "hooh_bell.png",
+   "label": "スズの塔のホウオウ（HGSS）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ホウオウは、アニメでも1997年の\n第1話で、空を飛ぶ姿が描かれているの。",
+   "img": "art:250",
+   "label": "アニメ第1話のホウオウ"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "金銀が出る前から、\n出ていたのだ！？",
+   "img": "art:250",
+   "label": "アニメ第1話（1997年）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ホウオウが金、ルギアが銀。\nゲームの名前と、同じなのだ。",
+   "img": "row:art:250|ホウオウ（金）;art:249|ルギア（銀）",
+   "label": "金のホウオウ・銀のルギア"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ホウオウの名前の元は、\n中国から伝わった、鳳凰という鳥よ。",
+   "img": "art:250",
+   "label": "ホウオウ＝鳳凰"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ホウオウの専用の技も、\nせいなるほのお、なのだ。",
+   "img": "art:250",
+   "label": "専用の技「せいなるほのお」"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "鳳凰は、よい世の中になると現れる、\nめでたい鳥とされてきたの。",
+   "img": "art:250",
+   "label": "めでたい鳥、鳳凰"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その鳳凰の像が、京都の金閣と銀閣の\n屋根のてっぺんに、立っているの。",
+   "img": "row:commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg|金閣の鳳凰;commons:Ginkakuji 2011-04 (5760370533).jpg|銀閣の鳳凰",
+   "label": "金閣と銀閣の鳳凰",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "金と銀に、\n鳳凰！？",
+   "img": "row:commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg|金閣の鳳凰;commons:Ginkakuji 2011-04 (5760370533).jpg|銀閣の鳳凰",
+   "label": "金閣と銀閣の鳳凰"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "モデルはどこ？",
+   "sec": "第三層　ファンの説",
+   "font": "reggae",
+   "x": {
+    "head": "ポケモンの焼けた塔とスズの塔の\nモデルは公式に\n発表されていない",
+    "img": [
+     "row:commons:Kinkaku-ji the Golden Temple in Kyoto overlooking the lake - high rez.JPG|金閣（鹿苑寺）;commons:Ginkaku-ji after being restored in 2008.jpg|銀閣（慈照寺）"
+    ],
+    "bubble": "説が割れているのだ",
+    "who": "z",
+    "post": "エンジュシティの2つの塔のモデルは、公式には発表されていません。ファンの間では、金閣と銀閣、そして雷などで4回焼けた東寺の五重塔が挙がります。金銀の伝説の2匹、ホウオウの名前の元の鳳凰は、金閣と銀閣の屋根にいます。あなたはどの説だと思いますか？"
+   }
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "じゃあ、カネの塔が金閣、\nスズの塔が銀閣で、決まりなのだ。",
+   "img": "row:commons:Kinkaku-ji the Golden Temple in Kyoto overlooking the lake - high rez.JPG|金閣（鹿苑寺）;commons:Ginkaku-ji after being restored in 2008.jpg|銀閣（慈照寺）",
+   "label": "金閣と銀閣"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう言うファンは多いわ。でも、\n公式に発表された話では、ないの。",
+   "img": "row:commons:Kinkaku-ji the Golden Temple in Kyoto overlooking the lake - high rez.JPG|金閣（鹿苑寺）;commons:Ginkaku-ji after being restored in 2008.jpg|銀閣（慈照寺）",
+   "label": "公式の発表はない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "海外のポケモンの百科事典では、\n逆の組み合わせが書かれているくらいよ。",
+   "img": "row:commons:Kinkaku-ji the Golden Temple in Kyoto overlooking the lake - high rez.JPG|金閣（鹿苑寺）;commons:Ginkaku-ji after being restored in 2008.jpg|銀閣（慈照寺）",
+   "label": "ファンの説は割れている"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そこでは、スズの塔は、\n金閣と、別の寺の塔を混ぜたもの、とされているわ。",
+   "img": "row:commons:Kinkaku-ji the Golden Temple in Kyoto overlooking the lake - high rez.JPG|金閣（鹿苑寺）;commons:Ginkaku-ji after being restored in 2008.jpg|銀閣（慈照寺）",
+   "label": "海外の百科事典の説"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "逆なのだ？\nファンでも、意見が割れているのだ。",
+   "img": "row:burned_1f.png|カネの塔（焼けた塔）;bell_hgss.png|スズの塔",
+   "label": "ファンの説は割れている"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それに、ゲームの塔は細長い塔よね。\n英語版では、9階建てと言っているの。",
+   "img": "bell_hgss.png",
+   "label": "スズの塔（HGSS）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "金閣は、3階建て。\n形はだいぶ違うわ。",
+   "img": "commons:Shariden, Kinkaku-ji, Kyoto, East View 20130811 1.jpg",
+   "label": "金閣（3階建て）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "たしかに。金閣は、\n塔って感じじゃないのだ。",
+   "img": "commons:Shariden, Kinkaku-ji, Kyoto, East View 20130811 1.jpg",
+   "label": "金閣（3階建て）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そこで名前が挙がるのが、京都の東寺。\n五重塔の高さは、およそ55メートル。",
+   "img": "commons:Five roofs of Toji-ji, Kyoto.jpg",
+   "label": "東寺の五重塔",
+   "say": "そこで名前が挙がるのが、京都の、とうじ。五重塔の高さは、およそ55メートル。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "東寺は、平安京ができてまもなく、\n都の入り口に建てられた寺よ。",
+   "img": "commons:Tō-ji reflected in Hyōtan Pond.jpg",
+   "label": "東寺（教王護国寺）",
+   "say": "とうじは、平安京ができてまもなく、都の入り口に建てられた寺よ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "木で造られた塔では、\n日本でいちばん高い塔よ。",
+   "img": "commons:Tō-ji reflected in Hyōtan Pond.jpg",
+   "label": "木造の塔で日本一"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そしてこの塔は、雷の火などで、\nこれまで4回も焼けているの。",
+   "img": "commons:Toji-pagoda-closeupzoom-dec2013-.jpg",
+   "label": "4回焼けた五重塔",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "雷で焼けた塔！\nカネの塔と、そっくりなのだ。",
+   "img": "commons:Toji Temple light-up (51473618820).jpg",
+   "label": "東寺の五重塔"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "今の塔は、1644年に\n建て直されたものよ。",
+   "img": "commons:Five roofs of Toji-ji, Kyoto.jpg",
+   "label": "1644年に建て直し"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "つまり、モデルは1つとは限らないの。\n京都の寺の、いいとこ取りかもしれないわ。",
+   "img": "commons:Kyoto city map.png",
+   "label": "京都市"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "京都の寺をめぐって、\nゲームの元を探すのも、楽しそうなのだ。",
+   "img": "commons:Kyoto city map.png",
+   "label": "京都市"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "じゃあ、金閣が本当に焼けた話は、\nどうつながるのだ？",
+   "img": "commons:Burned Kinkaku.jpg",
+   "label": "焼けた金閣（1950年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それは、金閣と鳳凰の話を\n掘ってみると、見えてくるわ。",
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "label": "金閣の鳳凰"
+  },
+  {
+   "type": "title",
+   "sub": "第四層",
+   "t": "金閣と銀閣",
+   "sec": "第四層　金閣と銀閣",
+   "font": "deco",
+   "x": {
+    "head": "銀閣には\n銀が一度も\n貼られていなかった",
+    "img": [
+     "commons:Ginkaku-ji after being restored in 2008.jpg"
+    ],
+    "bubble": "銀閣なのに！？",
+    "who": "z",
+    "post": "京都の銀閣（慈照寺の観音殿）には、銀箔が貼られていません。2007年の調べで、建てられたときから銀は貼られていなかったとわかりました。銀閣という呼び名は、江戸時代に広まったものです。ポケモン金銀のスズの塔の元とも言われる建物です。銀閣に行ったことはありますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "金閣の本当の名前は、鹿苑寺の舎利殿。\n寺の建物の1つよ。",
+   "img": "commons:Kinkaku-ji the Golden Temple in Kyoto overlooking the lake - high rez.JPG",
+   "label": "鹿苑寺の舎利殿（金閣）",
+   "say": "金閣の本当の名前は、ろくおんじの、しゃりでん。寺の建物の1つよ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1397年、室町幕府の将軍だった\n足利義満が、ここに屋敷を造り始めたの。",
+   "img": "commons:Yoshimitsu Ashikaga.jpg",
+   "label": "足利義満",
+   "say": "1397年、室町幕府の将軍だった、あしかがよしみつが、ここに屋敷を造り始めたの。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "義満が亡くなったあと、\n屋敷は寺に変わり、鹿苑寺になったわ。",
+   "img": "commons:Kinkaku-ji in November 2016 -04.jpg",
+   "label": "屋敷が寺になった",
+   "say": "よしみつが亡くなったあと、屋敷は寺に変わり、ろくおんじになったわ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "金閣は3階建てで、\n階ごとに、建て方が違うの。",
+   "img": "commons:Shariden, Kinkaku-ji, Kyoto, East View 20130811 1.jpg",
+   "label": "3階建ての舎利殿"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1階は貴族の屋敷、2階は武士の家、\n3階は禅の寺の造りよ。",
+   "img": "commons:Shariden, Kinkaku-ji, Kyoto, East View 20130811 1.jpg",
+   "label": "1階・2階・3階で違う造り"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "1つの建物に、\n3つの建て方なのだ。",
+   "img": "commons:Kinkaku-ji in November 2016 -04.jpg",
+   "label": "3つの建て方"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "金ピカなのは、\n義満の趣味なのだ？",
+   "img": "commons:Ashikaga Yoshimitsu Admiring the Golden Pavilion LACMA M.2007.152.67.jpg",
+   "label": "金閣を眺める義満（浮世絵）",
+   "say": "きんぴかなのは、よしみつの趣味なのだ？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "金箔を貼ったのは義満よ。でも明治の\n修理の前には、金箔はほとんどはげていたの。",
+   "img": "commons:Kusakabe Kimbei 1337 Kinkakuji.JPG",
+   "label": "明治時代の金閣の写真"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "はげていたのだ！？\nじゃあ、ずっと金色じゃなかったのだ。",
+   "img": "commons:Kusakabe Kimbei 1337 Kinkakuji.JPG",
+   "label": "明治時代の金閣の写真"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして、銀閣。こちらは、\n義満の孫の足利義政が建てた、観音殿よ。",
+   "img": "commons:Ginkaku-ji after being restored in 2008.jpg",
+   "label": "慈照寺の観音殿（銀閣）",
+   "say": "そして、ぎんかく。こちらは、よしみつの孫の、あしかがよしまさが建てた、かんのんでんよ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "金閣から、およそ90年あと。\n1489年に、屋根の骨組みが組まれたわ。",
+   "img": "commons:Ginkakuji Kō getsudai.jpg",
+   "label": "1489年に棟上げ"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "銀閣だから、\n銀がぴかぴかなのだ。",
+   "img": "commons:Silver Pavilion (31313034916).jpg",
+   "label": "慈照寺の観音殿（銀閣）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それが、銀は一度も貼られていないの。\n2007年の調べで、わかったことよ。",
+   "img": "commons:Ginkaku-ji after being restored in 2008.jpg",
+   "label": "銀は貼られていない",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "銀閣なのに、\n銀がないのだ！？",
+   "img": "commons:Silver Pavilion (31313034916).jpg",
+   "label": "銀は貼られていない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "上の階は、黒い漆の塗りだったの。\n銀閣という呼び名は、江戸時代に広まったものよ。",
+   "img": "commons:Sunlight through clouds and view of Ginkaku-ji Temple from above, Kyoto, Japan.jpg",
+   "label": "銀閣の呼び名は江戸時代から"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "銀閣の庭には、白い砂を\n山の形に盛った、向月台もあるわ。",
+   "img": "commons:Ginkakuji Kō getsudai.jpg",
+   "label": "銀閣の庭の向月台",
+   "say": "ぎんかくの庭には、白い砂を、山の形に盛った、こうげつだいもあるわ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "銀のかわりに、\n白い砂が光っているみたいなのだ。",
+   "img": "commons:Ginkakuji Kō getsudai.jpg",
+   "label": "銀閣の庭の向月台"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも屋根の上には、どちらにも\n鳳凰が立っているの。",
+   "img": "row:commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg|金閣の鳳凰;commons:Ginkakuji 2011-04 (5760370533).jpg|銀閣の鳳凰",
+   "label": "金閣と銀閣の鳳凰"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "金閣は金色の鳳凰。\n銀閣は銅の鳳凰で、東を向いているわ。",
+   "img": "row:commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg|金閣の鳳凰;commons:Ginkakuji 2011-04 (5760370533).jpg|銀閣の鳳凰",
+   "label": "金の鳳凰と銅の鳳凰"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "金と銀の建物に、\nどっちもホウオウがいるのだ。",
+   "img": "art:250",
+   "label": "ホウオウ"
+  },
+  {
+   "type": "title",
+   "sub": "第五層",
+   "t": "1950年7月2日",
+   "sec": "第五層　金閣が燃えた日",
+   "font": "fude",
+   "x": {
+    "head": "1950年に放火された金閣\n屋根の鳳凰だけは\n前に下ろされていて無事だった",
+    "img": [
+     "commons:Burned Kinkaku.jpg"
+    ],
+    "bubble": "鳳凰は無事なのだ",
+    "who": "z",
+    "post": "1950年7月2日の未明、京都の金閣が寺の若い僧の放火で焼けました。国宝の建物も、中の足利義満の像も焼けましたが、屋根の鳳凰は、火事の前に屋根から下ろされて寺にしまわれていたので、焼けずに残りました。いまは京都市の文化財です。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1950年7月2日の夜明け前。\n午前3時7分に、消防の見張り台が火を見つけたわ。",
+   "img": "commons:Kawabata Ryūshi - Kinkakuji-Temple on Fire.jpg",
+   "label": "1950年7月2日",
+   "say": "1950年7月2日の夜明け前。午前3時7分に、消防の見張り台が、火を見つけたわ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "最初に見せた絵は、日本画家の川端龍子が、\nその年に描いた『金閣炎上』よ。",
+   "img": "commons:Kawabata Ryūshi - Kinkakuji-Temple on Fire.jpg",
+   "label": "川端龍子『金閣炎上』",
+   "say": "最初に見せた絵は、日本画家の、かわばたりゅうしが、その年に描いた、きんかくえんじょう、よ。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "火をつけたのは、この寺で修行していた\n21歳の僧。大学に通う学生でもあったの。",
+   "img": "commons:Burned Kinkaku.jpg",
+   "label": "21歳の見習いの僧"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "消防が駆けつけたけれど、\n古い木の建物は、あっという間に燃えたわ。",
+   "img": "commons:Kawabata Ryūshi - Kinkakuji-Temple on Fire.jpg",
+   "label": "燃える金閣"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "お寺の人が、\n自分で火をつけたのだ！？",
+   "img": "commons:Burned Kinkaku.jpg",
+   "label": "焼けた金閣（1950年）"
+  },
+  {
+   "w": "m",
+   "face": "sad",
+   "t": "国宝の建物も、中にあった\n足利義満の像も、焼けてしまったわ。",
+   "img": "commons:Lost statue of Ashikaga Yoshimitsu at Kinkaku-ji.jpg",
+   "label": "焼けた足利義満の像",
+   "say": "国宝の建物も、中にあった、あしかがよしみつの像も、焼けてしまったわ。"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "550年あまり残っていたものが、\n一晩で、なくなったのだ…。",
+   "img": "commons:Burned Kinkaku.jpg",
+   "label": "焼けた金閣（1950年）",
+   "v": "namida"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "どうして、\nそんなことをしたのだ？",
+   "img": "commons:Burned Kinkaku.jpg",
+   "label": "焼けた金閣（1950年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "僧は、金閣と死ぬつもりだった、と\n話したそうよ。",
+   "img": "commons:Burned Kinkaku.jpg",
+   "label": "本当の理由はわからない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも裁判では、自分の動機について、\nはっきりとは答えなかったの。",
+   "img": "commons:Burned Kinkaku.jpg",
+   "label": "本当の理由はわからない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "判決は、懲役7年。\n僧は、出てきた次の年に、病気で亡くなったわ。",
+   "img": "commons:Burned Kinkaku.jpg",
+   "label": "判決は懲役7年"
+  },
+  {
+   "w": "z",
+   "face": "sad",
+   "t": "金閣も僧も、\nどっちも助からなかったのだ。",
+   "img": "commons:Burned Kinkaku.jpg",
+   "label": "焼けた金閣（1950年）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "それで、屋根の鳳凰は、\nどうして無事だったのだ？",
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "label": "金閣の鳳凰"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "鳳凰は、火事の前に\n屋根から下ろされていたの。",
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "label": "火事の前に下ろされていた",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "古い鳳凰は寺の中にしまわれ、\n屋根には、代わりの鳳凰が付いていたのよ。",
+   "img": "commons:雪の金閣寺 Kinkakuji temple in snow (5360758678).jpg",
+   "label": "今の金閣の屋根の鳳凰"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "だから、建物が焼けても、\n本物の鳳凰は残ったのだ！",
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "label": "焼けなかった鳳凰"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "焼け残った鳳凰は、1999年に\n京都市の文化財になっているわ。",
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "label": "京都市の文化財（1999年）"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "炎をくぐり抜けた鳳凰。\nまるで、本物のホウオウなのだ。",
+   "img": "art:250",
+   "label": "ホウオウ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ほんとうは、炎の中にいなかったから\n無事だったのだけれどね。",
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "label": "火事のときは屋根にいなかった"
+  },
+  {
+   "type": "title",
+   "sub": "最深層",
+   "t": "よみがえった金閣",
+   "sec": "最深層　よみがえった金閣",
+   "font": "deco",
+   "x": {
+    "head": "放火から5年で\n金閣は建て直された",
+    "img": [
+     "commons:Golden Pavilion Kinkaku-ji 2024.jpg"
+    ],
+    "bubble": "5年でなのだ",
+    "who": "z",
+    "post": "1950年に焼けた金閣は、1952年に工事を始め、1955年10月に建て直されました。明治の修理のときの細かい図面が残っていたおかげで、元の姿どおりに造れたといいます。1987年には、ふつうの5倍の厚さの金箔を、およそ20万枚貼り直しました。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "焼けた金閣は、1952年に工事を始めて、\n1955年の10月に建て直されたの。",
+   "img": "commons:Golden Pavilion Kinkaku-ji 2024.jpg",
+   "label": "1955年に再建"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "たった5年で、\n元どおりなのだ？",
+   "img": "commons:Kinkaku-ji in November 2016 -04.jpg",
+   "label": "1955年に再建"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "明治の修理のときに、細かい図面を\n作っていたおかげで、元の姿で造れたのよ。",
+   "img": "commons:Kusakabe Kimbei 1337 Kinkakuji.JPG",
+   "label": "明治の修理の図面のおかげ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1987年には、金箔を貼り直したわ。\nふつうの5倍の厚さの金箔を、およそ20万枚。",
+   "img": "commons:Kinkakuji (Golden Pavilion), Kyoto, Japan.jpg",
+   "label": "5倍の厚さの金箔",
+   "say": "1987年には、金箔を貼り直したわ。ふつうの5倍の厚さの金箔を、およそ20万まい。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "使った金は、およそ20キロよ。",
+   "img": "commons:Kinkakuji (Golden Pavilion), Kyoto, Japan - 34036736784.jpg",
+   "label": "金はおよそ20キロ"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "だから今の金閣は、\nこんなに金ピカなのだ。",
+   "img": "commons:雪の金閣寺 Kinkakuji temple in snow (5360756490).jpg",
+   "label": "今の金閣",
+   "say": "だから今の金閣は、こんなに、きんぴかなのだ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でも、建物は新しくなったのだ。\n元の金閣は、もう戻らないのだ。",
+   "img": "commons:Golden Pavilion Kinkaku-ji 2024.jpg",
+   "label": "建て直された金閣"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そうね。だからこそ、火事の前から\n残った鳳凰は、大切にされているのよ。",
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "label": "火事の前から残る鳳凰"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この放火は、小説にもなったわ。\n三島由紀夫の『金閣寺』。1956年よ。",
+   "img": "commons:Yukio Mishima, 1955.jpg",
+   "label": "三島由紀夫（1955年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "水上勉も、僧の生い立ちを調べて、\n1979年に『金閣炎上』を書いたわ。",
+   "img": "commons:雪の金閣寺 Kinkakuji temple in snow (5360758678).jpg",
+   "label": "水上勉『金閣炎上』（1979年）",
+   "say": "みずかみつとむも、僧の生い立ちを調べて、1979年に、きんかくえんじょう、を書いたわ。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "絵も小説も、\nみんな同じ火事を描いているのだ。",
+   "img": "commons:Kawabata Ryūshi - Kinkakuji-Temple on Fire.jpg",
+   "label": "川端龍子『金閣炎上』"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1994年には、金閣も銀閣も東寺も、\n世界遺産に選ばれたの。",
+   "img": "row:commons:Kinkaku-ji the Golden Temple in Kyoto overlooking the lake - high rez.JPG|金閣（鹿苑寺）;commons:Ginkaku-ji after being restored in 2008.jpg|銀閣（慈照寺）",
+   "label": "古都京都の文化財（世界遺産）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ゲームの焼けた塔は、\nずっと焼けたままなのだ。",
+   "img": "burned_1f.png",
+   "label": "焼けた塔（HGSS）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハートゴールドでも、焼けた塔は\n建て直されなかったわね。",
+   "img": "brass_bg.png",
+   "label": "焼けた塔（HGSS）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "焼けた塔は、焼け跡のまま。\n伝説のポケモンがよみがえった場所としてね。",
+   "img": "burned_b1f.png",
+   "label": "焼けた塔の地下（HGSS）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "金閣は、建物は焼けたけれど、\n鳳凰を残して、よみがえったの。",
+   "img": "commons:Kinkaku-ji the Golden Temple in Kyoto overlooking the lake - high rez.JPG",
+   "label": "よみがえった金閣"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "炎の中からよみがえるのは、\nホウオウの言い伝えと、同じなのだ。",
+   "img": "art:250",
+   "label": "ホウオウ"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "今日の答え。金閣の鳳凰は、火事の前に\n屋根から下ろされていたから、焼けなかった。",
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "label": "今日の答え",
+   "sec": "まとめ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "焼けた塔のモデルが金閣かどうかは、\n公式には、わからないままよ。",
+   "img": "row:burned_1f.png|カネの塔（焼けた塔）;bell_hgss.png|スズの塔",
+   "label": "モデルは公式には不明"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でも、エンジュの町を歩くと、\n京都の寺に行きたくなるのだ。",
+   "img": "ecruteak_art.png",
+   "label": "エンジュシティ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "あなたは、焼けた塔のモデルは、\nどこだと思う？",
+   "img": "row:commons:Kinkaku-ji the Golden Temple in Kyoto overlooking the lake - high rez.JPG|金閣（鹿苑寺）;commons:Ginkaku-ji after being restored in 2008.jpg|銀閣（慈照寺）",
+   "label": "あなたはどの説？"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の採掘はここまでなのだ。\nチャンネル登録も、よろしくなのだ。",
+   "img": "ecruteak_art.png",
+   "label": "エンジュシティ"
+  },
+  {
+   "type": "ed"
+  }
+ ]
+}
