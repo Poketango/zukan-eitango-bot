@@ -2,31 +2,7 @@
  "no": 16,
  "title": "山火事の5日後、ポケモン社は「次の世界大会はハワイ」と発表した。",
  "neta": "世界大会のハワイ開催発表が山火事と重なった",
- "thumb": {
-  "layout": "v2",
-  "pre": "ポケモン世界大会の発表に",
-  "big": [
-   "今は",
-   "来ないで"
-  ],
-  "hl": 1,
-  "hl_color": "red",
-  "fonts": [
-   "mincho",
-   "mincho"
-  ],
-  "pre_font": "maru",
-  "pre_size": 60,
-  "back": "commons:Lahaina fire - 8 august.jpg",
-  "photo": "commons:Maui community of Lahaina burned by wildfire - 53119882503.jpg",
-  "photo_label": "山火事のラハイナ",
-  "chara": null,
-  "big_w": 620,
-  "big_size": [
-   170,
-   230
-  ]
- },
+ "thumb": {"file": "thumbnail.jpg"},
  "lines": [
   {
    "w": "m",
