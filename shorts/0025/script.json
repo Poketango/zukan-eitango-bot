@@ -1,0 +1,79 @@
+{
+ "no": 25,
+ "title": "金閣が放火された夜、屋根の鳳凰だけは無事だった。理由はホウオウの伝説と逆。【ポケモン雑学採掘場】",
+ "hook": [
+  "ホウオウの元ネタ",
+  "金閣の鳳凰は",
+  "なぜ無事？"
+ ],
+ "hl": "なぜ無事？",
+ "lead": "1950年7月2日、京都の金閣は寺の若い僧の放火で焼け落ちた。それでも屋根の鳳凰は焼けなかった。火事の前に屋根から下ろされ、寺の中にしまわれていたからだ。",
+ "video": "ubBsytbkA9k",
+ "experiment": "冒頭=A今まで",
+ "pokemon": [
+  [
+   "ho-oh",
+   "ホウオウ",
+   "Ho-Oh"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "ホウオウの名前の元は、\n鳳凰というめでたい鳥。\nその像が、金閣の屋根にいるの",
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "cap": "金閣の屋根の鳳凰"
+  },
+  {
+   "w": "z",
+   "t": "金ピカの、\nあの金閣なのだ？",
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "cap": "金閣の屋根の鳳凰",
+   "face": "surprise"
+  },
+  {
+   "w": "m",
+   "t": "1950年7月2日の夜明け前。\nその金閣が、放火で\n焼け落ちたの",
+   "img": "commons:Burned Kinkaku.jpg",
+   "cap": "焼けた金閣（1950年）"
+  },
+  {
+   "w": "m",
+   "t": "火をつけたのは、\nこの寺で修行していた\n21歳の僧だったわ",
+   "img": "commons:Kawabata Ryūshi - Kinkakuji-Temple on Fire.jpg",
+   "cap": "川端龍子『金閣炎上』"
+  },
+  {
+   "w": "z",
+   "t": "屋根の鳳凰も、\n燃えてしまったのだ？",
+   "img": "commons:Burned Kinkaku.jpg",
+   "cap": "焼けた金閣",
+   "face": "sad"
+  },
+  {
+   "w": "m",
+   "t": "それが、無事だったの。\n鳳凰は火事の前に、屋根から\n下ろされていたのよ",
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "cap": "火事の前に下ろされていた",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "t": "炎をくぐったのでは\nなかったのだ！",
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "cap": "焼け残った鳳凰",
+   "face": "happy"
+  },
+  {
+   "w": "m",
+   "t": "焼けた塔の元ネタ説まで、\n本編でくわしく掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/ubBsytbkA9k/maxresdefault.jpg^web:https://i.ytimg.com/vi/ubBsytbkA9k/hqdefault.jpg^commons:Kinkaku-ji the Golden Temple in Kyoto overlooking the lake - high rez.JPG"
+  },
+  {
+   "w": "z",
+   "t": "説明欄から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/ubBsytbkA9k/maxresdefault.jpg^web:https://i.ytimg.com/vi/ubBsytbkA9k/hqdefault.jpg^commons:Kinkaku-ji the Golden Temple in Kyoto overlooking the lake - high rez.JPG",
+   "face": "happy"
+  }
+ ]
+}
