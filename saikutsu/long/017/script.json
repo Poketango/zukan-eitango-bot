@@ -3,29 +3,7 @@
  "title": "【焼けた塔の元ネタ？】金閣が燃えた夜、鳳凰だけは屋根にいなかった。",
  "neta": "焼けた塔のモデルは本当に放火された金閣",
  "thumb": {
-  "layout": "v2",
-  "pre": "焼けた塔の元ネタ？",
-  "big": [
-   "金閣",
-   "放火"
-  ],
-  "hl": 1,
-  "hl_color": "red",
-  "fonts": [
-   "mincho",
-   "mincho"
-  ],
-  "pre_font": "maru",
-  "pre_size": 60,
-  "back": "commons:Kawabata Ryūshi - Kinkakuji-Temple on Fire.jpg",
-  "photo": "commons:Burned Kinkaku.jpg",
-  "photo_label": "1950年の金閣",
-  "chara": null,
-  "big_w": 620,
-  "big_size": [
-   200,
-   200
-  ]
+  "file": "thumbnail.jpg"
  },
  "lines": [
   {
@@ -165,7 +143,7 @@
    "w": "m",
    "face": "normal",
    "t": "その間の2000年には、\nポケモンクリスタルも出ているわね。",
-   "img": "wiki:en:Pokémon Gold and Silver",
+   "img": "wiki:en:Pokémon Crystal^wiki:en:Pokémon Gold and Silver",
    "label": "ポケモンクリスタル（2000年）"
   },
   {
@@ -180,8 +158,8 @@
    "w": "z",
    "face": "happy",
    "t": "万歩計のポケウォーカーも、\n毎日持ち歩いていたのだ。",
-   "img": "wiki:en:Pokémon HeartGold and SoulSilver",
-   "label": "ハートゴールド・ソウルシルバー"
+   "img": "wiki:en:Pokéwalker^wiki:en:Pokémon HeartGold and SoulSilver",
+   "label": "ポケウォーカー"
   },
   {
    "w": "m",
@@ -426,7 +404,7 @@
    "w": "m",
    "face": "normal",
    "t": "ホウオウの名前の元は、\n中国から伝わった、鳳凰という鳥よ。",
-   "img": "art:250",
+   "img": "wiki:en:Pokémon Gold and Silver",
    "label": "ホウオウ＝鳳凰"
   },
   {
@@ -440,8 +418,8 @@
    "w": "m",
    "face": "normal",
    "t": "鳳凰は、よい世の中になると現れる、\nめでたい鳥とされてきたの。",
-   "img": "art:250",
-   "label": "めでたい鳥、鳳凰"
+   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "label": "金閣の屋根の鳳凰"
   },
   {
    "w": "m",
@@ -847,14 +825,14 @@
    "w": "z",
    "face": "think",
    "t": "どうして、\nそんなことをしたのだ？",
-   "img": "commons:Burned Kinkaku.jpg",
-   "label": "焼けた金閣（1950年）"
+   "img": "commons:Kusakabe Kimbei 1337 Kinkakuji.JPG",
+   "label": "焼ける前の金閣（明治時代）"
   },
   {
    "w": "m",
    "face": "normal",
    "t": "僧は、金閣と死ぬつもりだった、と\n話したそうよ。",
-   "img": "commons:Burned Kinkaku.jpg",
+   "img": "commons:Kusakabe Kimbei 1337 Kinkakuji.JPG",
    "label": "本当の理由はわからない"
   },
   {
@@ -875,8 +853,8 @@
    "w": "z",
    "face": "sad",
    "t": "金閣も僧も、\nどっちも助からなかったのだ。",
-   "img": "commons:Burned Kinkaku.jpg",
-   "label": "焼けた金閣（1950年）"
+   "img": "commons:Kawabata Ryūshi - Kinkakuji-Temple on Fire.jpg",
+   "label": "川端龍子『金閣炎上』"
   },
   {
    "w": "z",
@@ -904,8 +882,8 @@
    "w": "z",
    "face": "surprise",
    "t": "だから、建物が焼けても、\n本物の鳳凰は残ったのだ！",
-   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
-   "label": "焼けなかった鳳凰"
+   "img": "commons:雪の金閣寺 Kinkakuji temple in snow (5360758678).jpg",
+   "label": "火事のあとも残る鳳凰"
   },
   {
    "w": "m",
@@ -925,7 +903,7 @@
    "w": "m",
    "face": "normal",
    "t": "ほんとうは、炎の中にいなかったから\n無事だったのだけれどね。",
-   "img": "commons:Kinkaku-ji, Ginkaku-ji and Daitoku-ji - KyotoTemples401.jpg",
+   "img": "commons:Kawabata Ryūshi - Kinkakuji-Temple on Fire.jpg",
    "label": "火事のときは屋根にいなかった"
   },
   {
@@ -1043,8 +1021,8 @@
    "w": "m",
    "face": "normal",
    "t": "ハートゴールドでも、焼けた塔は\n建て直されなかったわね。",
-   "img": "brass_bg.png",
-   "label": "焼けた塔（HGSS）",
+   "img": "burned_anime.png",
+   "label": "アニメの焼けた塔",
    "kana": "ハアトゴ'オルドデモ、ヤケタ'/ト'オワ/タテナオサレ'ナカッタワネ"
   },
   {

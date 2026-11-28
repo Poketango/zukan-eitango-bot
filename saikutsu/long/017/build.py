@@ -281,14 +281,32 @@ S("m", "normal", "あなたは、焼けた塔のモデルは、\nどこだと思
 S("z", "happy", "今日の採掘はここまでなのだ。\nチャンネル登録も、よろしくなのだ。", E_ART, label="エンジュシティ")
 L.append({"type": "ed"})
 
+# 2026-11-28 frames を見て、同じ画像の続きすぎを散らした（ホウオウの絵、焼けた金閣の写真、金閣の鳳凰）
+CRYSTAL = "wiki:en:Pokémon Crystal^" + GS
+WALKER = "wiki:en:Pokéwalker^" + HGSS
+OVR = [
+ ("その間の2000年には", CRYSTAL, "ポケモンクリスタル（2000年）"),
+ ("万歩計のポケウォーカーも", WALKER, "ポケウォーカー"),
+ ("ホウオウの名前の元は", GS, "ホウオウ＝鳳凰"),
+ ("鳳凰は、よい世の中に", KIN_PHX, "金閣の屋根の鳳凰"),
+ ("どうして、", KIN_OLD, "焼ける前の金閣（明治時代）"),
+ ("僧は、金閣と死ぬつもり", KIN_OLD, "本当の理由はわからない"),
+ ("金閣も僧も", FIRE_ART, "川端龍子『金閣炎上』"),
+ ("だから、建物が焼けても", KIN_SNOW, "火事のあとも残る鳳凰"),
+ ("ほんとうは、炎の中に", FIRE_ART, "火事のときは屋根にいなかった"),
+ ("ハートゴールドでも、焼けた塔は", B_ANI, "アニメの焼けた塔"),
+]
+for key, img, lab in OVR:
+    hit = [l for l in L if l.get("t", "").startswith(key)]
+    assert len(hit) == 1, key
+    if img: hit[0]["img"] = img
+    if lab: hit[0]["label"] = lab
+
 script = {
     "no": 17,
     "title": "【焼けた塔の元ネタ？】金閣が燃えた夜、鳳凰だけは屋根にいなかった。",
     "neta": "焼けた塔のモデルは本当に放火された金閣",
-    "thumb": {"layout": "v2", "pre": "焼けた塔の元ネタ？", "big": ["金閣", "放火"], "hl": 1, "hl_color": "red",
-              "fonts": ["mincho", "mincho"], "pre_font": "maru", "pre_size": 60,
-              "back": FIRE_ART, "photo": BURNED, "photo_label": "1950年の金閣", "chara": None, "big_w": 620,
-              "big_size": [200, 200]},
+    "thumb": {"file": "thumbnail.jpg"},
     "lines": L,
 }
 here = os.path.dirname(os.path.abspath(__file__))
