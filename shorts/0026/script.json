@@ -1,0 +1,77 @@
+{
+ "no": 26,
+ "title": "スズの塔のモデルとされる銀閣に、銀は一度も貼られていない。【ポケモン雑学採掘場】",
+ "hook": [
+  "スズの塔のモデル？",
+  "銀閣に",
+  "銀はゼロ"
+ ],
+ "hl": "銀はゼロ",
+ "lead": "京都の銀閣（慈照寺の観音殿）には、銀箔が一度も貼られていなかったことが2007年の調べでわかった。上の階は黒い漆塗りで、銀閣という呼び名は江戸時代に広まった。",
+ "video": "ubBsytbkA9k",
+ "experiment": "冒頭=B驚きから",
+ "pokemon": [
+  [
+   "ho-oh",
+   "ホウオウ",
+   "Ho-Oh"
+  ]
+ ],
+ "lines": [
+  {
+   "w": "m",
+   "t": "京都の銀閣には、\n銀が一度も\n貼られていないの",
+   "img": "commons:Ginkaku-ji after being restored in 2008.jpg",
+   "cap": "銀閣（慈照寺）"
+  },
+  {
+   "w": "z",
+   "t": "銀閣なのに、\n銀がないのだ！？",
+   "img": "commons:Ginkaku-ji after being restored in 2008.jpg",
+   "cap": "銀閣（慈照寺）",
+   "face": "shock"
+  },
+  {
+   "w": "m",
+   "t": "2007年の調べで、\nわかったことよ",
+   "img": "commons:Ginkaku-ji after being restored in 2008.jpg",
+   "cap": "2007年の調べ",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "t": "上の階は、\n黒い漆の塗りだったの",
+   "img": "commons:Ginkaku-ji after being restored in 2008.jpg",
+   "cap": "黒い漆の塗り"
+  },
+  {
+   "w": "m",
+   "t": "銀閣という呼び名は、\n江戸時代に広まった\nものなのよ",
+   "img": "commons:Ginkakuji Kō getsudai.jpg",
+   "cap": "江戸時代からの呼び名"
+  },
+  {
+   "w": "z",
+   "t": "ポケモン金銀の、\nスズの塔のモデルとも\n言われているのだ",
+   "img": "web:https://raw.githubusercontent.com/Poketango/zukan-eitango-bot/main/saikutsu/long/017/bell_hgss.png",
+   "cap": "スズの塔（ファンの説）"
+  },
+  {
+   "w": "m",
+   "t": "屋根には、ホウオウの\n元になった鳳凰も\n立っているわ",
+   "img": "commons:Ginkakuji 2011-04 (5760370533).jpg",
+   "cap": "銀閣の鳳凰"
+  },
+  {
+   "w": "m",
+   "t": "金閣と焼けた塔の話は、\n本編でくわしく掘っているわ",
+   "img": "web:https://i.ytimg.com/vi/ubBsytbkA9k/maxresdefault.jpg^web:https://i.ytimg.com/vi/ubBsytbkA9k/hqdefault.jpg^commons:Ginkaku-ji after being restored in 2008.jpg"
+  },
+  {
+   "w": "z",
+   "t": "説明欄から、\n本編に行けるのだ！",
+   "img": "web:https://i.ytimg.com/vi/ubBsytbkA9k/maxresdefault.jpg^web:https://i.ytimg.com/vi/ubBsytbkA9k/hqdefault.jpg^commons:Ginkaku-ji after being restored in 2008.jpg",
+   "face": "happy"
+  }
+ ]
+}
