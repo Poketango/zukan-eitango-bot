@@ -1,0 +1,1063 @@
+{
+ "no": 18,
+ "title": "無人発電所のモデルとされる原発は、ポケモン赤緑の2年後に本当に止まった。",
+ "neta": "無人発電所のモデルは日本初の原子力発電所",
+ "thumb": {
+  "layout": "v2",
+  "pre": "無人発電所のモデル",
+  "big": [
+   "ゲームの",
+   "2年後に停止"
+  ],
+  "hl": 1,
+  "hl_color": "red",
+  "fonts": [
+   "mincho",
+   "mincho"
+  ],
+  "pre_font": "maru",
+  "pre_size": 66,
+  "back": "commons:Tokai NPP and Tokai II NPP 1986.jpg",
+  "photo": "pp_out_rb.png",
+  "photo_label": "むじんはつでんしょ",
+  "chara": null,
+  "big_w": 640
+ },
+ "lines": [
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1998年3月31日。茨城県の東海村で、\n1つの発電所が、運転を終えたの。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "sec": "ポケモン雑学採掘場",
+   "label": "東海発電所（茨城県東海村）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "日本で最初に、原子力で電気を売った\n発電所よ。",
+   "img": "commons:Tokai NPP and Tokai II NPP 1986.jpg",
+   "label": "東海発電所（1986年、空から）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その2年前、ポケモン赤と緑には、\n誰もいない発電所が出ていたわ。",
+   "img": "pp_out_rb.png",
+   "label": "むじんはつでんしょ（赤緑）",
+   "big": "無人発電所",
+   "bf": "dot",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "サンダーがいる、あの発電所なのだ！？\nモデルが、本物の原発なのだ？",
+   "img": "zapdos_rb.png",
+   "label": "サンダー（赤緑）"
+  },
+  {
+   "type": "op",
+   "w": "m",
+   "t": "ポケモンの深い雑学を掘り出す、\nポケモン雑学採掘場。",
+   "say": "ポケモンの深い雑学を掘り出す、ポケモン雑学さいくつじょう。"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "今日の坑道は、\nライトがチカチカするのだ。",
+   "img": "pp_anime.png",
+   "sec": "導入　電気を吸うサンダー",
+   "label": "誰もいない発電所"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "電気が足りないのかしら。\nアニメに、そんな回があったわね。",
+   "img": "pp_anime.png",
+   "label": "アニメ（2020年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2020年のアニメで、町が停電したの。\n原因は、発電所の電気を吸うサンダーだった。",
+   "img": "zapdos_anime.png",
+   "label": "アニメのサンダー（2020年）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "停電の犯人が、\nサンダーだったのだ！",
+   "img": "zapdos_anime.png",
+   "label": "停電の原因はサンダー"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "サンダーは、昔から\n発電所にいるポケモンなのだ。",
+   "img": "art:145",
+   "label": "サンダー"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "最初は1996年の赤と緑。\nむじんはつでんしょ、という場所よ。",
+   "img": "wiki:en:Pokémon Red and Blue",
+   "label": "ポケモン赤・緑（1996年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "この発電所には、モデルになった\n本物の発電所がある、と言われているの。",
+   "img": "row:pp_out_rb.png|無人発電所（赤緑）;commons:TOKAI-1 NPP.JPG|東海発電所",
+   "label": "ファンの説"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "それが、さっきの原発なのだ？",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "東海発電所"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう言われているわ。今日は、ゲームの発電所と、\n本物の発電所のその後を、並べて掘るわ。",
+   "img": "row:pp_out_rb.png|無人発電所（赤緑）;commons:TOKAI-1 NPP.JPG|東海発電所",
+   "label": "ゲームと現実"
+  },
+  {
+   "type": "title",
+   "sub": "本日の採掘",
+   "t": "無人発電所のモデルとされる原発は、今どうなっている？",
+   "font": "dot"
+  },
+  {
+   "type": "title",
+   "sub": "第一層",
+   "t": "誰もいない発電所",
+   "sec": "第一層　むじんはつでんしょ",
+   "font": "dot",
+   "x": {
+    "head": "ポケモン赤緑の\n無人発電所は\n「捨てられた発電所」",
+    "img": [
+     "pp_in_rb.png"
+    ],
+    "bubble": "サンダーがいたのだ",
+    "who": "z",
+    "post": "ポケモン赤緑のむじんはつでんしょ。なみのりでしか入れない、誰もいない発電所です。中にはでんきポケモンがすみつき、道具だと思って調べるとビリリダマ。いちばん奥にはサンダーがいます。ファイアレッドの英語版の説明は「何年も前に捨てられた発電所」。サンダー、捕まえましたか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "むじんはつでんしょは、\nカントー地方の東の端にあるの。",
+   "img": "pp_townmap.png",
+   "label": "むじんはつでんしょの場所"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "10ばんどうろの、すぐそばよ。\nでも、道からは歩いて入れないの。",
+   "img": "route10_rg.png",
+   "label": "10ばんどうろ（赤緑）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "なみのりで、\n川を下っていくのだ。",
+   "img": "route10_rg.png",
+   "label": "なみのりで入る"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "中には、人が1人もいない。\nだから、無人発電所なの。",
+   "img": "pp_out_rb.png",
+   "label": "むじんはつでんしょ（赤緑）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "広い建物の中は、\n機械とでんきポケモンだらけよ。",
+   "img": "pp_in_rb.png",
+   "label": "発電所の中（赤緑）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "出てくるのは、ピカチュウ、コイル、\nレアコイル、ビリリダマ。",
+   "img": "row:art:25|ピカチュウ;art:81|コイル;art:82|レアコイル;art:100|ビリリダマ",
+   "label": "発電所の野生のポケモン"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "赤ではエレブー、緑ではライチュウも\nまれに出てくるわ。",
+   "img": "row:art:125|エレブー（赤）;art:26|ライチュウ（緑）",
+   "label": "バージョンで違うポケモン"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ピカチュウ版では、ピカチュウもエレブーも\n出ない代わりに、ベトベターが出てくるの。",
+   "img": "row:art:88|ベトベター;art:89|ベトベトン",
+   "label": "ピカチュウ版の発電所"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "発電所に、\nヘドロのポケモンなのだ！？",
+   "img": "art:88",
+   "label": "ベトベター"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "落ちている道具を調べたら、\nビリリダマだったことがあるのだ。",
+   "img": "art:100",
+   "label": "道具に化けたビリリダマ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ボールに似た見た目を、\nうまく使った仕掛けね。",
+   "img": "row:art:100|ビリリダマ;art:101|マルマイン",
+   "label": "モンスターボールに似たポケモン"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "床には、わざマシンも落ちているわ。\nかみなりと、リフレクターよ。",
+   "img": "pp_in_rb.png",
+   "label": "わざマシン25「かみなり」"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "でんきタイプの発電所で、\nかみなりを拾えるのだ。",
+   "img": "pp_in_rb.png",
+   "label": "発電所で拾える技"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして、いちばん奥にいるのが、\nサンダー。レベル50よ。",
+   "img": "zapdos_rb.png",
+   "label": "サンダー（赤緑）",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "ボクはファイアレッドで、\n何十回もボールを投げたのだ。",
+   "img": "zapdos_frlg.png",
+   "label": "サンダー（ファイアレッド）",
+   "kana": "ボ'クワ/ファイアレ'ッドデ、ナンジュッカイモ/ボ'オルオ/ナ'ゲタノダ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2004年のファイアレッドでも、\n同じ発電所が出てくるわね。",
+   "img": "pp_in_frlg.png",
+   "label": "発電所の中（ファイアレッド）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "英語版の説明には、こう書いてあるの。\n「何年も前に捨てられた発電所」。",
+   "img": "wiki:en:Pokémon FireRed and LeafGreen",
+   "label": "ファイアレッドの英語版の説明",
+   "bf": "mincho"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "「機械のいくつかは、まだ動いている」\nとも書かれているわ。",
+   "img": "pp_in_frlg.png",
+   "label": "まだ動く機械"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "捨てられたのに、\n機械は動いているのだ。",
+   "img": "pp_in_frlg.png",
+   "label": "捨てられた発電所"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2018年のレッツゴーでも、\n名前は無人発電所のままよ。",
+   "img": "pp_out_lgpe.png",
+   "label": "無人発電所（レッツゴー）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ただ、行き方は、なみのりではなく、\nシースキーという技になったわ。",
+   "img": "wiki:en:Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!",
+   "label": "レッツゴーではシースキー"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "中では、古い機械が並んでいて、\n今もサンダーが待っているわ。",
+   "img": "pp_in_lgpe.png",
+   "label": "発電所の中（レッツゴー）"
+  },
+  {
+   "type": "title",
+   "sub": "第二層",
+   "t": "カントーは関東",
+   "sec": "第二層　モデルはどこ？",
+   "font": "reggae",
+   "x": {
+    "head": "カントー地方の\n無人発電所は\n茨城県の東海村の場所",
+    "img": [
+     "row:pp_townmap.png|カントー地方（タウンマップ）;commons:Japan Kanto Region large.png|関東地方"
+    ],
+    "bubble": "地図が似ているのだ",
+    "who": "z",
+    "post": "ポケモンのカントー地方は、関東地方によく似た地形です。ファンの対応表では、むじんはつでんしょは茨城県東海村の東海発電所の場所にあたるとされます。公式の発表はなく、ゲームの中で原子力という言葉も出てきません。あなたはこの説、ありだと思いますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "カントー地方の地図と、関東地方の地図を、\n並べてみるわね。",
+   "img": "row:pp_townmap.png|カントー地方（タウンマップ）;commons:Japan Kanto Region large.png|関東地方",
+   "label": "カントーと関東"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "海岸の形が、\nかなり似ているのだ！",
+   "img": "row:pp_townmap.png|カントー地方（タウンマップ）;commons:Japan Kanto Region large.png|関東地方",
+   "label": "カントーと関東"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "カントーが関東を元にしていることは、\n広く知られているわ。",
+   "img": "row:pp_townmap.png|カントー地方（タウンマップ）;commons:Japan Kanto Region large.png|関東地方",
+   "label": "カントー＝関東"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ファンの対応表では、町や道路が\n本物の場所に当てはめられているの。",
+   "img": "townmap_rb.png",
+   "label": "ファンの対応表"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "イワヤマトンネルは筑波山、\nシオンタウンは牛久市、というようにね。",
+   "img": "commons:Japan Kanto Region large.png",
+   "label": "ファンの説",
+   "say": "イワヤマトンネルは、つくばさん、シオンタウンは、うしくし、というようにね。"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "その表で、むじんはつでんしょに\n当てられているのが、ここ。",
+   "img": "commons:Tokai in Ibaraki.PNG",
+   "label": "茨城県東海村"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "茨城県の東海村にある、\n東海発電所よ。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "東海発電所",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "東海村は、\n茨城県のどのあたりなのだ？",
+   "img": "commons:Tokai in Ibaraki.PNG",
+   "label": "茨城県東海村"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "茨城県の北のほうで、\n太平洋に面した村よ。",
+   "img": "commons:Tokai in Ibaraki.PNG",
+   "label": "太平洋に面した村"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "県庁のある水戸市の、\nすぐ北どなりの村ね。",
+   "img": "commons:Tokai station east exit.jpg",
+   "label": "東海駅（東海村）"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "でも、ゲームの中では\n原発なんて言っていたのだ？",
+   "img": "pp_in_rb.png",
+   "label": "発電所の中（赤緑）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "言っていないわ。ゲームの中では、\n原子力という言葉は、一度も出てこないの。",
+   "img": "pp_in_rb.png",
+   "label": "原子力とは書かれていない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ゲームを作った人たちが、モデルについて\n話した記録も、見つからなかった。",
+   "img": "wiki:en:Pokémon Red and Blue",
+   "label": "公式の発表はない"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "だから、これはあくまでファンの説よ。\n根拠は、地図の上の場所なの。",
+   "img": "row:pp_townmap.png|カントー地方（タウンマップ）;commons:Japan Kanto Region large.png|関東地方",
+   "label": "根拠は地図の場所"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "それでも、場所が同じなら、\n気になるのだ。",
+   "img": "row:pp_out_rb.png|無人発電所（赤緑）;commons:TOKAI-1 NPP.JPG|東海発電所",
+   "label": "ゲームと現実"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そうね。じゃあ、その東海発電所が\nどんな発電所だったのかを、掘ってみましょう。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "東海発電所"
+  },
+  {
+   "type": "title",
+   "sub": "第三層",
+   "t": "日本で最初の原子の火",
+   "sec": "第三層　原子力の村",
+   "font": "mincho",
+   "x": {
+    "head": "日本で最初の原子炉は\n1957年に\n茨城県の東海村で動いた",
+    "img": [
+     "commons:Nuclear Reactor Japan Stamp in 1957.JPG"
+    ],
+    "bubble": "切手になったのだ",
+    "who": "z",
+    "post": "1957年8月27日、茨城県東海村で、日本で最初の原子炉JRR-1が臨界に達しました。同じ年には記念の切手も出ています。9年後の1966年には、同じ村の東海発電所が、日本で初めて原子力の電気を売り始めました。東海村、行ったことありますか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "東海村は、日本で原子力が\n最初に始まった村なの。",
+   "img": "commons:Tokai-mura Japan Atomic Energy Agency Gate.jpg",
+   "label": "東海村の日本原子力研究開発機構"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1957年8月27日の朝。日本で最初の\n原子炉が、ここで動き出したわ。",
+   "img": "commons:Japan Research Reactor No.1.jpg",
+   "label": "日本で最初の原子炉 JRR-1",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "研究のための、小さな原子炉よ。\nその年には、記念の切手も出たの。",
+   "img": "commons:Nuclear Reactor Japan Stamp in 1957.JPG",
+   "label": "1957年の記念切手"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "熱の出力は、50キロワット。\n今の原発の、何万分の1の大きさね。",
+   "img": "commons:Japan Research Reactor No.1.jpg",
+   "label": "熱出力50キロワット"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "原子炉の切手なのだ！\nそれくらい、大きな出来事だったのだ。",
+   "img": "commons:Nuclear Reactor Japan Stamp in 1957.JPG",
+   "label": "日本原子炉完成記念の切手"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "このときから東海村は、原子力の研究所や\n会社が集まる村になっていったの。",
+   "img": "commons:Tokai-mura Japan Atomic Energy Agency Gate.jpg",
+   "label": "原子力の村"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのあと、同じ村に研究所の原子炉が\nいくつも建っていったの。",
+   "img": "commons:HD.15.031 (11824391473).jpg",
+   "label": "日本原子力研究所の研究炉"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして1961年、電気を売るための\n原子力発電所の工事が始まった。",
+   "img": "commons:Tokai NPP and Tokai II NPP 1974.jpg",
+   "label": "東海発電所（1974年、空から）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "それが、東海発電所。\n日本原子力発電という会社の発電所よ。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "東海発電所"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "炉は、イギリスから買ったの。\n日本で最初の原発は、イギリス生まれよ。",
+   "img": "row:commons:Calder Hall nuclear power station (11823864155).jpg|コールダーホール（イギリス）;commons:TOKAI-1 NPP.JPG|東海発電所（日本）",
+   "label": "イギリスから来た原子炉"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "元になったのは、イギリスの\nコールダーホールという発電所よ。",
+   "img": "commons:Calder Hall nuclear power station (11823864155).jpg",
+   "label": "コールダーホール（イギリス）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "コールダーホールは、世界で最初の\n商業用の原発と言われているわ。",
+   "img": "commons:Calder Hall, fuel loading.jpg",
+   "label": "燃料を入れる作業（コールダーホール）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1956年に、エリザベス女王が\n開所式に来た発電所ね。",
+   "img": "commons:Calder Hall, Queen opening.jpg",
+   "label": "開所式のエリザベス女王（1956年）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "女王が来た発電所の、\n日本版なのだ！",
+   "img": "row:commons:Calder Hall nuclear power station (11823864155).jpg|コールダーホール（イギリス）;commons:TOKAI-1 NPP.JPG|東海発電所（日本）",
+   "label": "イギリス版と日本版"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "炉の型は、マグノックス炉と呼ばれるわ。\n燃料を、マグネシウムの合金で包むの。",
+   "img": "commons:MAGNOX.jpg",
+   "label": "マグノックス炉",
+   "ety": [
+    "マグノックス（Magnox）",
+    "英語　magnesium（マグネシウム）＋non-oxidising（さびない）"
+   ]
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "燃料は天然のウラン。黒鉛のブロックの間で\n燃やして、炭酸ガスで熱を運ぶの。",
+   "img": "commons:MAGNOX.jpg",
+   "label": "黒鉛と炭酸ガス"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1966年7月25日。東海発電所は、\n日本で初めて、原子力の電気を売り始めた。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "1966年7月25日　営業運転",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "出力は、16.6万キロワット。\nこれが、日本の原発の第一号よ。",
+   "img": "commons:Tokai NPP and Tokai II NPP 1986.jpg",
+   "label": "出力16.6万キロワット",
+   "kana": "シュ'ツリョクワ、ジュウロクテンロクマ'ンキロワット。コレガ'、ニホンノ/ゲンパツノ/ダイイチ'ゴオヨ"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "そのころは、まだ\nポケモンもなかったのだ。",
+   "img": "commons:Tokai NPP and Tokai II NPP 1986.jpg",
+   "label": "1966年"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そう。赤と緑が出るのは、\nその30年後の1996年よ。",
+   "img": "wiki:en:Pokémon Red and Blue",
+   "label": "30年後に赤と緑"
+  },
+  {
+   "type": "title",
+   "sub": "第四層",
+   "t": "ゲームの2年後",
+   "sec": "第四層　運転を終えた日",
+   "font": "reggae",
+   "x": {
+    "head": "無人発電所のモデルとされる\n東海発電所は\n赤緑の2年後に止まった",
+    "img": [
+     "row:pp_out_rb.png|無人発電所（赤緑）;commons:TOKAI-1 NPP.JPG|東海発電所"
+    ],
+    "bubble": "本当に止まったのだ",
+    "who": "z",
+    "post": "ポケモン赤緑が出たのは1996年2月27日。モデルとされる東海発電所は、その約2年後の1998年3月31日に営業運転を終えました。理由は、お金がかかりすぎて、採算が合わなくなったこと。ゲームとは関係ありません。この偶然、知っていましたか？"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ポケモン赤と緑が出たのは、\n1996年2月27日。",
+   "img": "wiki:en:Pokémon Red and Blue",
+   "label": "1996年2月27日"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのとき、東海発電所は、\nまだ動いていたの。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "1996年の東海発電所"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "赤と緑が大ヒットして、1998年の9月には\nピカチュウ版も出たわね。",
+   "img": "wiki:en:Pokémon Red and Blue",
+   "label": "1998年にはピカチュウ版"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも、約2年後の1998年3月31日。\n東海発電所は、営業運転を終えたわ。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "1998年3月31日　運転終了",
+   "ans": true,
+   "big": "運転終了",
+   "bf": "mincho"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "ゲームで「無人」になったあとで、\n本物も止まったのだ！？",
+   "img": "row:pp_out_rb.png|無人発電所（赤緑）;commons:TOKAI-1 NPP.JPG|東海発電所",
+   "label": "ゲームの2年後"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "時期が重なったのは、偶然よ。\nゲームが先に知っていたわけではないの。",
+   "img": "row:pp_out_rb.png|無人発電所（赤緑）;commons:TOKAI-1 NPP.JPG|東海発電所",
+   "label": "ただの偶然"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "どうして、\n止めたのだ？",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "止めた理由は？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "お金よ。運転と修理にお金がかかりすぎて、\n売る電気に見合わなくなったの。",
+   "img": "commons:Tokai NPP and Tokai II NPP 1986.jpg",
+   "label": "採算が合わなくなった",
+   "ans": true
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "古い型の炉で、出力も小さかった。\nだから、続けるほど損になったのね。",
+   "img": "commons:MAGNOX.jpg",
+   "label": "古い型の小さな炉"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "営業運転は、1966年から1998年までの、\nおよそ32年間よ。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "およそ32年間"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ゲームの中では、\nその後どうなったのだ？",
+   "img": "pp_in_gs.png",
+   "label": "金銀のカントー"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "1999年の金と銀では、\nカントーの発電所が、動いているの。",
+   "img": "pp_out_gs.png",
+   "label": "はつでんしょ（金銀）",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "直っているのだ！",
+   "img": "pp_in_gs.png",
+   "label": "発電所の中（金銀）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "名前も、むじんはつでんしょではなく、\nただの、はつでんしょ。科学者が働いているわ。",
+   "img": "pp_in_gs.png",
+   "label": "はつでんしょ（金銀）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でもロケット団の下っ端が、\n大事な部品を盗んでいくの。",
+   "img": "pp_in_gs.png",
+   "label": "盗まれた部品"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "部品の名前は、\n「きかいのぶひん」よ。",
+   "img": "pp_in_hgss.png",
+   "label": "きかいのぶひん",
+   "bf": "dot"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "取り返して所長に渡すと、お礼に\nわざマシンがもらえるのよ。",
+   "img": "pp_in_gs.png",
+   "label": "お礼のわざマシン"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "金銀では、でんじほう。\nハートゴールドでは、チャージビームなのだ。",
+   "img": "pp_out_hgss.png",
+   "label": "金銀はでんじほう、HGSSはチャージビーム"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "部品が戻らないと、\nリニアが動かないのだ。",
+   "img": "train_hgss.png",
+   "label": "リニア（ハートゴールド）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハナダジムのプールに隠された部品を\n見つけて返すと、発電所が元に戻るの。",
+   "img": "pp_out_hgss.png",
+   "label": "はつでんしょ（ハートゴールド）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ハートゴールドの英語版の説明は、\n「カントー地方の全ての電気を作る発電所」。",
+   "img": "wiki:en:Pokémon HeartGold and SoulSilver",
+   "label": "ハートゴールドの英語版の説明",
+   "bf": "mincho"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "捨てられた発電所が、\nカントーの電気を全部作っているのだ。",
+   "img": "train_gs.png",
+   "label": "リニア（金銀）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも、本物の東海発電所は、\n二度と動かなかった。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "東海発電所"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "止まった発電所には、\n片付けの仕事が残るの。",
+   "img": "commons:Tokai NPP and Tokai II NPP 1986.jpg",
+   "label": "止まった発電所"
+  },
+  {
+   "type": "title",
+   "sub": "最深層",
+   "t": "終わらない片付け",
+   "sec": "最深層　廃止措置",
+   "font": "fude",
+   "x": {
+    "head": "東海発電所の解体は\n2001年に始まり\n今の予定は2035年度",
+    "img": [
+     "commons:TOKAI-1 NPP.JPG"
+    ],
+    "bubble": "まだ終わらないのだ",
+    "who": "z",
+    "post": "1998年に止まった東海発電所は、2001年12月から、日本の原発で初めての本格的な解体の作業に入りました。最初は2017年ごろに終わる予定でしたが、何度も延び、2023年の届け出では2035年度。片付けは、運転より長くかかるかもしれません。"
+   }
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "原発を止めたあとの片付けを、\n廃止措置と言うの。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "廃止措置"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "燃料を運び出して、\n建物や機械を、少しずつ解体していくのよ。",
+   "img": "commons:Tokai NPP and Tokai II NPP 1986.jpg",
+   "label": "燃料を出して、解体する"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "東海発電所では、燃料の運び出しは、\nもう終わっているの。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "燃料は運び出し済み"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "東海発電所の廃止措置が始まったのは、\n2001年12月4日。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "2001年12月4日"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2006年8月からは、原子炉の熱を運ぶ\n大きな熱交換器の撤去も始まったわ。",
+   "img": "commons:Tokai NPP and Tokai II NPP 1986.jpg",
+   "label": "熱交換器の撤去（2006年から）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "日本の商業用の原発で、\n最初に廃止措置に入った1基になったの。",
+   "img": "commons:TOKAI-1 and 2 NPP.jpg",
+   "label": "解体でも最初の原発",
+   "ans": true
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "どのくらいで、\n終わるのだ？",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "いつ終わる？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "最初の計画では、\n2017年ごろに終わる予定だったわ。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "最初の予定は2017年ごろ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "でも、何度も延びて、2023年の届け出では、\n2035年度になったの。",
+   "img": "commons:TOKAI-1 and 2 NPP.jpg",
+   "label": "今の予定は2035年度",
+   "ans": true,
+   "big": "2035年度",
+   "bf": "mincho"
+  },
+  {
+   "w": "z",
+   "face": "shock",
+   "t": "2001年から2035年なのだ！？\n30年以上かかるのだ。",
+   "img": "commons:TOKAI-1 and 2 NPP.jpg",
+   "label": "30年以上"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "運転していたのが約32年。\n片付けも、同じくらいかかる計算ね。",
+   "img": "commons:TOKAI-1 and 2 NPP.jpg",
+   "label": "運転32年、片付け30年以上"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "どうして、\nそんなに時間がかかるのだ？",
+   "img": "commons:MAGNOX.jpg",
+   "label": "なぜ長い？"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "原子炉の中の黒鉛のブロックや制御棒は、\n放射能が比較的高いごみになるの。",
+   "img": "commons:MAGNOX.jpg",
+   "label": "黒鉛のブロックと制御棒"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "黒鉛は、炭のなかまなのだ。\nそれが、危ないごみになるのだ？",
+   "img": "commons:MAGNOX.jpg",
+   "label": "黒鉛＝炭素のかたまり"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "30年以上、炉の中で放射線を浴びたから。\n黒鉛そのものが、放射能を持つようになるの。",
+   "img": "commons:MAGNOX.jpg",
+   "label": "放射線を浴びた黒鉛"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そのごみをどこに埋めるか、\nどんな容器に入れるかが、決まらないのよ。",
+   "img": "commons:MAGNOX.jpg",
+   "label": "ごみの行き先"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2023年の届け出では、原子炉そのものの\n解体に手をつけるのも、2029年度に延びたわ。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "原子炉の解体は2029年度から"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "原子炉は、\nまだそのまま残っているのだ。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "まだ残る原子炉"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "燃料はもうないけれど、原子炉の本体は、\n今も建物の中にあるのよ。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "原子炉の本体は残っている"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "イギリスの元になった発電所も、\n2003年に止まったの。",
+   "img": "commons:Calder Hall nuclear power station (11823864155).jpg",
+   "label": "コールダーホール（イギリス）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2007年には、大きな冷却塔が\n爆破で解体されたわ。",
+   "img": "commons:Calder Hall, tower demolition.jpg",
+   "label": "冷却塔の解体（2007年）"
+  },
+  {
+   "w": "z",
+   "face": "surprise",
+   "t": "女王が来た発電所も、\nもう止まっているのだ。",
+   "img": "commons:Calder Hall, tower demolition.jpg",
+   "label": "冷却塔の解体（2007年）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "東海発電所のとなりには、\n1978年からの東海第二発電所があるの。",
+   "img": "commons:TOKAI-1 and 2 NPP.jpg",
+   "label": "東海発電所と東海第二発電所"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "出力は110万キロワット。\n東海発電所の6倍以上よ。",
+   "img": "commons:Tokai NPP and Tokai II NPP 1986.jpg",
+   "label": "東海第二　110万キロワット",
+   "kana": "シュ'ツリョクワ、ヒャクジュウマ'ンキロワット。トオカイハツデ'ンショノ、ロクバイイ'ジョオヨ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "東海第二は、2011年3月の\n東日本大震災で止まってから、動いていないの。",
+   "img": "commons:Tokai Daini Nuclear Power Plant (02810451).jpg",
+   "label": "東海第二（2011年5月）"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "2026年8月、地震や津波への備えの工事が、\n2028年度の後半まで延びると発表されたわ。",
+   "img": "commons:Tokai Daini Nuclear Power Plant (02810451).jpg",
+   "label": "工事の完了は2028年度の後半へ"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "村には、止まった発電所が\n2つ並んでいるのだ。",
+   "img": "commons:TOKAI-1 and 2 NPP.jpg",
+   "label": "止まった2つの発電所"
+  },
+  {
+   "w": "m",
+   "face": "think",
+   "t": "今日の答え。無人発電所のモデルとされる\n東海発電所は、赤緑の2年後に止まった。",
+   "img": "row:pp_out_rb.png|無人発電所（赤緑）;commons:TOKAI-1 NPP.JPG|東海発電所",
+   "label": "今日の答え",
+   "sec": "まとめ"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "そして止まってから、もうすぐ30年。\n今も、片付けの途中よ。",
+   "img": "commons:TOKAI-1 NPP.JPG",
+   "label": "今も片付けの途中"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "ゲームのサンダーは、レッツゴーでも\n同じ発電所で待っているけれど。",
+   "img": "pp_out_lgpe.png",
+   "label": "今もサンダーがいる発電所"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "本物の発電所では、片付けが\nまだ何年も続くのよ。",
+   "img": "commons:Tokai NPP and Tokai II NPP 1986.jpg",
+   "label": "片付けは2035年度まで"
+  },
+  {
+   "w": "z",
+   "face": "think",
+   "t": "ゲームでは、何年も前に\n捨てられた発電所だったのだ。",
+   "img": "pp_in_frlg.png",
+   "label": "何年も前に捨てられた発電所"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "本物は、捨てられたのではなく、\n人が片付け続けているのだ。",
+   "img": "commons:TOKAI-1 and 2 NPP.jpg",
+   "label": "片付け続ける発電所"
+  },
+  {
+   "w": "m",
+   "face": "normal",
+   "t": "あなたは、無人発電所の\nサンダーを、捕まえた？",
+   "img": "zapdos_frlg.png",
+   "label": "あなたは捕まえた？"
+  },
+  {
+   "w": "z",
+   "face": "happy",
+   "t": "今日の採掘はここまでなのだ。\nチャンネル登録も、よろしくなのだ。",
+   "img": "zapdos_rb.png",
+   "label": "サンダー（赤緑）"
+  },
+  {
+   "type": "ed"
+  }
+ ]
+}
